@@ -1,6 +1,9 @@
 # Umail
 ## Định nghĩa
 Umail là dịch vụ email (thư điện tử) theo tên miền riêng nhằm hỗ trợ các doanh nghiệp kết nối, tương tác với các khách hàng hay đối tác một cách nhanh chóng, chuyên nghiệp hơn. Với Umail, doanh nghiệp có ngay một hệ thống quản lý tập trung email nhân viên, đồng thời tăng cường khả năng bảo mật với các cơ chế chống virus/ spam hiện đại.
+
+![umail](https://user-images.githubusercontent.com/111716161/185857220-1916d7db-10a8-4fd2-befd-8235f26c0247.png)
+
 ## Phân Loại
 - Umail có 4 phân loại cho người dùng:
   - Cá nhân
@@ -32,6 +35,6 @@ Umail là dịch vụ email (thư điện tử) theo tên miền riêng nhằm h
 - Trong quá trình sử dụng Umail, khách hàng có thể nâng cấp lên gói cao hơn hoặc mua thêm nhiều user (tài khoản email) nếu muốn mà không bị gián đoạn dịch vụ.
 - Bảo hành dịch vụ trọn đời.
 ## Cách đăng ký Email Umail
-- Doanh nghiệp có nhu cầu đăng ký umail, tạo email theo tên miền riêng tại 4s có thể liên hệ theo một trong số những cách sau:
+Doanh nghiệp có nhu cầu đăng ký umail, tạo email theo tên miền riêng tại 4s có thể liên hệ theo một trong số những cách sau:
  - Gọi điện thoại đến Tổng đài 1900 6680 hoặc hotline 0901191616 để Web4s hỗ trợ
-  Gửi email đến địa chỉ: sales@nhanhoa.com hoặc contact@sm4s.vn  
+ - Gửi email đến địa chỉ: sales@nhanhoa.com hoặc contact@sm4s.vn  
