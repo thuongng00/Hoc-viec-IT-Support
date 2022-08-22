@@ -49,6 +49,7 @@ Trên server của Github có những workflow scripts chạy tự động. Dev 
 - Github Package Registry.
 
 Với tính năng này, cho phép lập trình viên duy trì distribution registries của họ, bao gồm npm, docker, maven, nuget và Ruby gems.
+
 - Mở rộng mối quan hệ.
 
 Gặp gỡ những dev mới, chia sẻ kinh nghiệm bản thân.
