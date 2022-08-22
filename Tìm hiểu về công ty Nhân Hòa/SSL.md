@@ -18,9 +18,13 @@ Nhiều tên miền hợp nhất trong 1 chứng thư số:
 ### Wildcard SSL Certificate (Wildcard SSL)
 Sản phẩm lý tưởng dành cho các cổng thương mại điện tử. Mỗi e-store là một sub-domain và được chia sẻ trên một hoặc nhiều địa chỉ IP. Khi đó, để triển khai giải pháp bảo bảo mật giao dịch trực tuyến (đặt hàng, thanh toán, đăng ký & đăng nhập tài khoản,…) bằng SSL, chúng ta có thể dùng duy nhất một chứng chỉ số Wildcard cho tên miền chính của website và tất cả sub-domain.
 ## SSL làm việc như thế nào?
-![ssl](https://user-images.githubusercontent.com/111716161/185857518-138f3a9a-ccf7-4ef3-832a-387b2fa50d1d.png)
+<p align="center">
+  <img width="800" height="350" src="https://user-images.githubusercontent.com/111716161/185857518-138f3a9a-ccf7-4ef3-832a-387b2fa50d1d.png">
+</p>
 
-![ssl1](https://user-images.githubusercontent.com/111716161/185857590-7bceac28-20d6-43fb-aaf6-e32f66a188b4.jpg)
+<p align="center">
+  <img width="800" height="350" src="https://user-images.githubusercontent.com/111716161/185857590-7bceac28-20d6-43fb-aaf6-e32f66a188b4.jpg">
+</p>
 
 ### Trình duyệt làm thế nào để kiểm tra một SSL là có thực hay không ?
 
