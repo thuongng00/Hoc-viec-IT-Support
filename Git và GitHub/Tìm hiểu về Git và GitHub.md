@@ -1,7 +1,7 @@
 # Git
 ## Định nghĩa
 GIT là một hệ thống kiểm soát phiên bản phân tán (Distributed Version Control System – DVCS ) mà các developer triển sử dụng trên toàn thế giới. Nó giúp chúng ta theo dõi những thay đổi của mã nguồn theo dòng thời gian, và là một phần không thể thiếu khi làm việc theo nhóm.
-<img src="https://imgur.com/dxDtvNZ"/>
+![cafedev-git-vs-github](https://user-images.githubusercontent.com/111716161/185839706-6ca73def-b920-4786-819b-828a1972a315.png)
 ## Version Control System – VCS là gì?
 VCS là viết tắt của Version Control System là hệ thống kiểm soát các phiên bản phân tán mã nguồn mở. Các VCS sẽ lưu trữ tất cả các file trong toàn bộ dự án và ghi lại toàn bộ lịch sử thay đổi của file. Mỗi sự thay đổi được lưu lại sẽ được và thành một version (phiên bản).
 VCS nghĩa là hệ thống giúp lập trình viên có thể lưu trữ nhiều phiên bản khác nhau của một mã nguồn được nhân bản (clone) từ một kho chứa mã nguồn (repository), mỗi thay đổi vào mã nguồn trên local sẽ có thể ủy thác (commit) rồi đưa lên server nơi đặt kho chứa chính.
