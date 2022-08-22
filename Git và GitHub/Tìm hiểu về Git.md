@@ -1,7 +1,9 @@
 # Git
 ## Định nghĩa
 GIT là một hệ thống kiểm soát phiên bản phân tán (Distributed Version Control System – DVCS ) mà các developer triển sử dụng trên toàn thế giới. Nó giúp chúng ta theo dõi những thay đổi của mã nguồn theo dòng thời gian, và là một phần không thể thiếu khi làm việc theo nhóm.
-![cafedev-git-vs-github](https://user-images.githubusercontent.com/111716161/185839706-6ca73def-b920-4786-819b-828a1972a315.png)
+<p align="center">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/111716161/185839706-6ca73def-b920-4786-819b-828a1972a315.png">
+</p>
 ## Version Control System – VCS là gì?
 VCS là viết tắt của Version Control System là hệ thống kiểm soát các phiên bản phân tán mã nguồn mở. Các VCS sẽ lưu trữ tất cả các file trong toàn bộ dự án và ghi lại toàn bộ lịch sử thay đổi của file. Mỗi sự thay đổi được lưu lại sẽ được và thành một version (phiên bản).
 
@@ -15,12 +17,14 @@ Lập trình viên có thể xem lại danh sách các sự thay đổi của fi
 ## Git hoạt động như thế nào?
 Sự khác biệt chính giữa Git và bất kỳ VCS nào khác (bao gồm Subversion…) là cách Git nghĩ về dữ liệu của nó.
 - Về mặt khái niệm, hầu hết các hệ thống khác đều lưu trữ thông tin dưới dạng danh sách các thay đổi dựa trên file. Các hệ thống này (CVS, Subversion, Perforce, Bazaar, v.v.) coi thông tin chúng lưu giữ dưới dạng một tập hợp các file và những thay đổi được thực hiện đối với mỗi file theo thời gian.
- 
-![git1](https://user-images.githubusercontent.com/111716161/185839954-61059334-b80c-4064-8769-94e78aeb9759.png)
+ <p align="center">
+  <img width="600" height="200" src="https://user-images.githubusercontent.com/111716161/185839954-61059334-b80c-4064-8769-94e78aeb9759.png">
+</p>
 - Git không nghĩ đến hoặc lưu trữ dữ liệu của mình theo cách này. Thay vào đó, Git coi thông tin được lưu trữ là một tập hợp các snapshot – ảnh chụp toàn bộ nội dung tất cả các file tại thời điểm.
 Mỗi khi bạn “commit”, Git sẽ “chụp” và tạo ra một snapshot cùng một tham chiếu tới snapshot đó. Để hiệu quả, nếu các tệp không thay đổi, Git sẽ không lưu trữ lại file — chỉ là một liên kết đến tệp giống file trước đó mà nó đã lưu trữ. Git nghĩ về dữ liệu của nó giống như dưới đây:
-
-![git2](https://user-images.githubusercontent.com/111716161/185840151-ee23bb42-423d-4684-b742-e4143baeaea9.png)
+<p align="center">
+  <img width="600" height="200" src="https://user-images.githubusercontent.com/111716161/185840151-ee23bb42-423d-4684-b742-e4143baeaea9.png">
+</p>
 ## Lợi ích của Git
 - Dễ sử dụng, thao tác nhanh, gọn, lẹ và rất an toàn.
 - Sễ dàng kết hợp các phân nhánh (branch), có thể giúp quy trình làm việc code theo nhóm đơn giản hơn rất nhiều.
