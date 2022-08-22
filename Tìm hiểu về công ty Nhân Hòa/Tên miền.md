@@ -25,10 +25,10 @@ Ngoài cách phân loại theo vị trí địa lý của website, chúng ta cò
 - Tên miền tối đa chỉ có 63 ký tự bao gồm cả đuôi tên miền.
 - Tên miền không được chứa các ký tự đặc biệt (@#$%^&*^).
 - Tên miền được chứa dấu (-) tuy nhiên dấu trừ không được đứng đầu tiên và cuối cùng trong tên miền.
-- Tên miền gồm các ký tự trong bảng chữ cái (a-z) và các số từ 0-9 
+- Tên miền gồm các ký tự trong bảng chữ cái (a-z) và các số từ 0-9.
 - Không có các cụm từ xâm phạm đến chủ quyền, lợi ích, an ninh quốc gia hoặc vi phạm đạo đức xã hội, thuần phong, mỹ tục của dân tộc.
-- Rõ ràng, nghiêm túc, ngắn gọn. .
-- Không gây hiểu nhầm hoặc xuyên tạc do tính đa âm, đa nghĩa hoặc khi không dùng dấu trong tiếng Việt
+- Rõ ràng, nghiêm túc, ngắn gọn. 
+- Không gây hiểu nhầm hoặc xuyên tạc do tính đa âm, đa nghĩa hoặc khi không dùng dấu trong tiếng Việt.
 - Các tên miền liên quan đến chủ quyền, lợi ích quốc gia, an ninh quốc gia, quốc tế. 
 - Tên miền là tên các đại bàn trọng yếu thuộc khu vực biên giới, hải đảo, tên các đảo, quần đảo thuộc chủ quyền quốc gia. 
 - Tên miền là tên các di sản văn hóa thế giới được UNESCO công nhận.
