@@ -2,7 +2,9 @@
 ## Định nghĩa
 GitHub là một dịch vụ cung cấp kho lưu trữ mã nguồn Git cho các dự án phần mềm cho phép chúng ta lưu trữ và truy cập các dự án của mình một cách dễ dàng từ các máy chủ của họ.  Điều quan trọng chúng ta cần nhớ là GitHub không phải là Git. GitHub chỉ là một dịch vụ lưu trữ. Có những công ty khác cung cấp dịch vụ lưu trữ làm điều tương tự như GitHub, chẳng hạn như Bitbucket và GitLab.
 
-![github-la-gi](https://user-images.githubusercontent.com/111716161/185856800-8451f6f3-7e35-43a7-93d2-a66f87a7ade5.jpg)
+<p align="center">
+  <img width="600" height="400" src="https://user-images.githubusercontent.com/111716161/185856800-8451f6f3-7e35-43a7-93d2-a66f87a7ade5.jpg">
+</p>
 
 ## Lịch sử của GitHub
 GitHub được viết bằng Ruby on Rails và Erlang do Tom Preston-Werner, Chris Wanstrath, và PJ Hyett phát triển trang web được đưa ra và chạy chính thức vào tháng 4 năm 2008.
