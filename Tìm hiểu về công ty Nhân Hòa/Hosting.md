@@ -40,3 +40,11 @@ Subdomain chỉ số lượng tên miền phụ lưu trên hosting. Ví dụ nha
 Park domain là tên miền hoạt động song song với tên miền chính, sử dụng chung tài nguyên và dữ liệu trên hosting website. Ví dụ nhanhoa.com là tên miền chính, nhanhoa.vn là park domain.
 ### Webmail
 Webmail là số lượng tài khoản email trên nền tảng web cho phép truy cập máy chủ để gửi và nhận email doanh nghiệp nhanh chóng hơn.
+## Tiêu chí chọn gói Hosting phù hợp
+- Chọn gói hosting có dung lượng phù hợp với dữ liệu trên web. Tránh lãng phí tài nguyên và tiết kiệm chi phí.
+- Ưu tiên chọn ổ cứng SSD.
+- Ưu tiên băng thông không giới hạn.
+- Ưu tiên không giới hạn FTP account để quản lý sự cố hosting tốt hơn.
+- Nên chọn hosting trong nước để tốc độ đường truyền tốt hơn, giá mua rẻ hơn và được tư vấn hỗ trợ nhanh chóng hơn.
+- Ưu tiên chọn gói hosting có ngôn ngữ lập trình và hệ điều hành tương thích với website để có tốc độ tải nhanh hơn.
+- Chọn nhà cung cấp hosting uy tín để được sử dụng sản phẩm có chất lượng tốt hơn. Mọi lỗi phát sinh sẽ được hỗ trợ kỹ thuật kịp thời, nhanh chóng.
