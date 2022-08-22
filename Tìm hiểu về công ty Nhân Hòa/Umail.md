@@ -2,7 +2,7 @@
 ## Định nghĩa
 Umail là dịch vụ email (thư điện tử) theo tên miền riêng nhằm hỗ trợ các doanh nghiệp kết nối, tương tác với các khách hàng hay đối tác một cách nhanh chóng, chuyên nghiệp hơn. Với Umail, doanh nghiệp có ngay một hệ thống quản lý tập trung email nhân viên, đồng thời tăng cường khả năng bảo mật với các cơ chế chống virus/ spam hiện đại.
 ## Phân Loại
-- UMail có 4 phân loại cho người dùng
+- Umail có 4 phân loại cho người dùng:
   - Cá nhân
   - Cơ bản
   - Doanh nghiệp
