@@ -16,3 +16,21 @@ Nhiều tên miền hợp nhất trong 1 chứng thư số:
 - Chứng thư số SSL SANs có thể tích hợp với tất cả các loại chứng thư số SSL của GlobalSign bao gồm: Chứng thực tên miền (DV SSL), Chứng thực tổ chức doanh nghiệp (OV SSL) và Chứng thực mở rộng cao cấp (EV SSL).
 ### Wildcard SSL Certificate (Wildcard SSL)
 Sản phẩm lý tưởng dành cho các cổng thương mại điện tử. Mỗi e-store là một sub-domain và được chia sẻ trên một hoặc nhiều địa chỉ IP. Khi đó, để triển khai giải pháp bảo bảo mật giao dịch trực tuyến (đặt hàng, thanh toán, đăng ký & đăng nhập tài khoản,…) bằng SSL, chúng ta có thể dùng duy nhất một chứng chỉ số Wildcard cho tên miền chính của website và tất cả sub-domain.
+## Tại sao nên sử dụng SSL?
+- Bạn đăng ký domain để sử dụng các dịch vụ website, email v.v... -> luôn có những lỗ hổng bảo mật -> hacker tấn công -> SSL bảo vệ website và khách hàng của bạn.
+- Bảo mật dữ liệu: dữ liệu được mã hóa và chỉ người nhận đích thực mới có thể giải mã.
+- Toàn vẹn dữ liệu: dữ liệu không bị thay đổi bởi tin tặc.
+- Chống chối bỏ: đối tượng thực hiện gửi dữ liệu không thể phủ nhận dữ liệu của mình.
+## Lợi ích khi sử dụng SSL
+Bạn đăng ký domain để sử dụng các dịch vụ website, email v.v… -> luôn có những lỗ hổng bảo mật -> hacker tấn công -> SSL bảo vệ website và khách hàng của bạn.
+- Bảo mật và mã hóa các thông điệp trao đổi giữa trình duyệt và server.
+- Bảo mật các giao dịch giữa khách hàng và doanh nghiệp, các dịch vụ truy nhập hệ thống.
+- Bảo mật webmail và các ứng dụng như Outlook Web Acess, Exchange, và Office Communication Server.
+- Bảo mật các ứng dụng ảo hóa như Citrix Delivery Platform hoặc các ứng dụng điện toán mây.
+- Bảo mật dịch vụ FTP.
+- Bảo mật truy cập Control panel.
+- Bảo mật các dịch vụ truyền dữ liệu trong mạng nội bộ, file sharing, extranet.
+- Bảo mật VPN Access Servers, Citrix Access Gateway.
+- Nâng cao hình ảnh, thương hiệu và uy tín doanh nghiệp.
+- Nâng cao thứ hạng website trên kết quả tìm kiếm Google (SEO).
+- Tạo lợi thế cạnh tranh, tăng niềm tin của khách hàng đối với website, tăng số lượng giao dịch, giá trị giao dịch trực tuyến của khách hàng. Website không được xác thực và bảo mật sẽ luôn ẩn chứa nguy cơ bị xâm nhập dữ liệu, dẫn đến hậu quả khách hàng không tin tưởng sử dụng dịch vụ.
