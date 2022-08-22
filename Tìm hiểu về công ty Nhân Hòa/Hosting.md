@@ -8,8 +8,9 @@ Hosting được dùng để lưu trữ dữ liệu website, dùng làm email ho
 - Phân loại theo kiểu lưu trữ: hosting thường và Cloud Hosting.
 - Phân loại theo vị trí đặt máy chủ: hosting Việt Nam và hosting nước ngoài.
 ## Cách hosting hoạt động
-- Hosting dùng để lưu trữ dữ liệu của người dùng trên máy chủ. Nên nguyên lý hoạt động của nó cũng gần giống như một máy chủ.
-- Hosting là nơi lưu trữ dữ liệu mà chủ website tải lên. Khi có người dùng muốn truy cập trang web thì trình duyệt sẽ gửi yêu cầu đến hosting. Sau đó hosting sẽ phản hồi lại và trả thông tin tương ứng đáp ứng nhu cầu của người dùng.
+Hosting dùng để lưu trữ dữ liệu của người dùng trên máy chủ. Nên nguyên lý hoạt động của nó cũng gần giống như một máy chủ.
+
+Hosting là nơi lưu trữ dữ liệu mà chủ website tải lên. Khi có người dùng muốn truy cập trang web thì trình duyệt sẽ gửi yêu cầu đến hosting. Sau đó hosting sẽ phản hồi lại và trả thông tin tương ứng đáp ứng nhu cầu của người dùng.
 ## Ưu, nhược điểm
 ### Ưu điểm 
 Ưu điểm khi so sánh với VPS, máy chủ riêng.
@@ -38,7 +39,7 @@ MySQL là hệ thống quản trị cơ sở dữ liệu. Số lượng MySQL c�
 ### Domain
 Domain trong bảng thông số kỹ thuật hosting chỉ số tên miền website có thể lưu trên hosting. Một hosting có thể lưu vào tên miền tương ứng với vào website khác nhau.
 ### Subdomain/ Park Domain
-Subdomain chỉ số lượng tên miền phụ lưu trên hosting. Ví dụ nhanhoa.com là tên miền chính, kb.nhanhoa.con, wiki.nhanhoa.com, blog.nhanhoa.com là tên miền phụ.
+Subdomain chỉ số lượng tên miền phụ lưu trên hosting. Ví dụ: nhanhoa.com là tên miền chính, kb.nhanhoa.com, wiki.nhanhoa.com, blog.nhanhoa.com là tên miền phụ.
 
 Park domain là tên miền hoạt động song song với tên miền chính, sử dụng chung tài nguyên và dữ liệu trên hosting website. Ví dụ nhanhoa.com là tên miền chính, nhanhoa.vn là park domain.
 ### Webmail
