@@ -53,3 +53,8 @@ Với tính năng này, cho phép lập trình viên duy trì distribution regis
 - Mở rộng mối quan hệ.
 
 Gặp gỡ những dev mới, chia sẻ kinh nghiệm bản thân.
+ ## Tạo tài khoản GitHub
+ 
+ Bước 1: Đầu tiên bạn hãy vào trang web Github.com, sau đó nhập đầy đủ thông tin tài khoản của bạn và nhấn Sign up for Github.
+ 
+ Bước 2: Lúc này bạn hãy vào Email để kích hoạt tài khoản của mình nhé.
