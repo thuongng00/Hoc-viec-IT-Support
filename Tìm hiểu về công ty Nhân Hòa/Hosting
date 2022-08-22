@@ -1,0 +1,12 @@
+# Hosting
+## Định nghĩa
+Hosting là không gian lưu trữ dữ liệu nằm trên máy chủ để người dùng có thể xuất bản website hoặc ứng dụng lên internet. Thuê hosting chính là thuê một vị trí trên máy chủ để nhằm mục đích lưu trữ dữ liệu.
+
+Hosting được dùng để lưu trữ dữ liệu website, dùng làm email hosting, lưu trữ dữ liệu phần mềm, ứng dụng muốn xuất bản trên internet.
+## Phân loại
+- Phân loại theo mã nguồn: Windows Hosting, Linux Hosting, Wordpress Hosting.
+- Phân loại theo kiểu lưu trữ: hosting thường và Cloud Hosting.
+- Phân loại theo vị trí đặt máy chủ: hosting Việt Nam và hosting nước ngoài.
+## Cách hosting hoạt động
+- Hosting dùng để lưu trữ dữ liệu của người dùng trên máy chủ. Nên nguyên lý hoạt động của nó cũng gần giống như một máy chủ.
+- Hosting là nơi lưu trữ dữ liệu mà chủ website tải lên. Khi có người dùng muốn truy cập trang web thì trình duyệt sẽ gửi yêu cầu đến hosting. Sau đó hosting sẽ phản hồi lại và trả thông tin tương ứng đáp ứng nhu cầu của người dùng.
