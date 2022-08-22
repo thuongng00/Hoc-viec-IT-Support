@@ -5,8 +5,9 @@ Tên miền là địa chỉ duy nhất của website trên internet. Nếu khô
 Ví dụ: Nhanhoa.com là tên miền - địa chỉ website trên Internet của công ty TNHH Phần mềm Nhân Hòa. Việc gõ nhanhoa.com sẽ dễ dàng hơn rất nhiều so với tìm kiếm địa chỉ IP 154.78.625.98.
 
 Tên miền trên toàn thế giới được cấp phát và quản trị bởi tổ chức quản trị tên miền ICANN và mỗi quốc gia lại có đơn vị quản trị riêng biệt. Tại Việt Nam cơ quan quản trị tên miền là Trung tâm Internet Việt Nam (viết tắt là VNNIC).
-
-![tenmien](https://user-images.githubusercontent.com/111716161/185858235-db0ed0c2-f5e4-4212-81ef-4956077ffc25.png)
+<p align="center">
+  <img width="800" height="500" src="https://user-images.githubusercontent.com/111716161/185858235-db0ed0c2-f5e4-4212-81ef-4956077ffc25.png">
+</p>
 
 ## Cấu trúc tên miền
 - Mỗi tên miền gồm 2 phần: Tên riêng được chọn làm tên miền + đuôi tên miền. Hai phần này được phân tách bởi dấu “.”.
