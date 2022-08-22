@@ -8,8 +8,8 @@
 - Ví dụ: Với tên miền Google. com thì “Google” là cụm tên riêng và “com” là đuôi tên miền.
 ## Phân loại
 Có hàng tỉ website trên internet nên có hàng tỉ tên miền được sử dụng. Tuy nhiên để dễ nhớ cho người sử dụng và kinh doanh, những tên miền đó chỉ được phân loại theo từng nhóm sau đây. 
-- Phân loại theo đuôi tên miền 
-Đuôi tên miền là phần mở rộng của tên miền xuất hiện sau dấu “.” và phần tên riêng được chọn làm tên miền. Theo cách này chúng ta phân tên miền thành 2 loại: Tên miền quốc tế và Tên miền quốc gia.
+- Phân loại theo đuôi tên miền: 
+\nĐuôi tên miền là phần mở rộng của tên miền xuất hiện sau dấu “.” và phần tên riêng được chọn làm tên miền. Theo cách này chúng ta phân tên miền thành 2 loại: Tên miền quốc tế và Tên miền quốc gia.
   - Tên miền quốc tế 
 Tên miền quốc tế là tên miền cấp cao nhất được cấp phát và quản trị bởi tổ chức quản trị tên miền quốc tế ICANN. Tên miền quốc tế được sử dụng trên toàn thế giới và không có sự phân biệt giữa các quốc gia và vị trí địa lý. Tên miền quốc tế được phân biệt bằng các đuôi tên miền như “.com”, “.net”, “.org”,... Ví dụ: Facebook.com là tên miền quốc tế đại diện cho công ty Facebook, youtube.com,...
   - Tên miền quốc gia
