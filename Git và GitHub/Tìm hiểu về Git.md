@@ -25,6 +25,7 @@ Mỗi khi bạn “commit”, Git sẽ “chụp” và tạo ra một snapshot 
 <p align="center">
   <img width="600" height="200" src="https://user-images.githubusercontent.com/111716161/185840151-ee23bb42-423d-4684-b742-e4143baeaea9.png">
 </p>
+
 ## Lợi ích của Git
 - Dễ sử dụng, thao tác nhanh, gọn, lẹ và rất an toàn.
 - Sễ dàng kết hợp các phân nhánh (branch), có thể giúp quy trình làm việc code theo nhóm đơn giản hơn rất nhiều.
