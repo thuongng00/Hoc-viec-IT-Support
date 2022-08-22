@@ -23,3 +23,20 @@ Nhược điểm khi so sánh với VPS, máy chủ riêng.
 - Khả năng bảo mật kém hơn.
 - Chỉ phù hợp với các website nhỏ.
 - Người dùng ít quyền kiểm soát đến cấu hình server.
+## Thông số kỹ thuật của một gói hosting
+### Dung lượng lưu trữ
+Dung lượng lưu trữ chỉ độ lớn dữ liệu tối đa mà người dùng có thể tải lên web. Một gói hosting sẽ có dung lượng từ 2GB đến 10GB.
+Bên cạnh dung lượng thì sẽ có ổ đĩa. Có 2 kiểu ổ đĩa là HDD và SSD. Trong đó ổ SSD có tốc độ truy suất cao hơn, nhanh hơn gấp 300 lần so với ổ HDD.
+### Băng thông/tháng
+Chỉ số băng thông/tháng chỉ độ lớn dữ liệu tối đa mà người dùng có thể tải lên và tải xuống trên web. Băng thông càng lớn thì tốc độ tải dữ liệu càng nhanh. Tốt nhất là nên ưu tiên chọn băng thông không giới hạn.
+### FTP Account
+FTP Account là tài khoản dùng để đăng nhập và quản trị hosting. Có thể phân quyền cho từng tài khoản. Ưu tiên chọn hosting không giới hạn FTP Account để có thể xử lý kịp thời mọi lỗi trên web.
+### MySQL
+MySQL là hệ thống quản trị cơ sở dữ liệu. Số lượng MySQL càng lớn thì giá hosting càng cao do khả năng quản trị dữ liệu trên hosting cũng tăng theo.
+### Domain
+Domain trong bảng thông số kỹ thuật hosting chỉ số tên miền website có thể lưu trên hosting. Một hosting có thể lưu vào tên miền tương ứng với vào website khác nhau.
+### Subdomain/ Park Domain
+Subdomain chỉ số lượng tên miền phụ lưu trên hosting. Ví dụ nhanhoa.com là tên miền chính, kb.nhanhoa.con, wiki.nhanhoa.com, blog.nhanhoa.com là tên miền phụ.
+Park domain là tên miền hoạt động song song với tên miền chính, sử dụng chung tài nguyên và dữ liệu trên hosting website. Ví dụ nhanhoa.com là tên miền chính, nhanhoa.vn là park domain.
+### Webmail
+Webmail là số lượng tài khoản email trên nền tảng web cho phép truy cập máy chủ để gửi và nhận email doanh nghiệp nhanh chóng hơn.
