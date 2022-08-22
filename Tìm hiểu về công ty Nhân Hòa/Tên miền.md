@@ -10,8 +10,7 @@ Tên miền trên toàn thế giới được cấp phát và quản trị bởi
 - Ví dụ: Với tên miền Google. com thì “Google” là cụm tên riêng và “com” là đuôi tên miền.
 ## Phân loại
 Có hàng tỉ website trên internet nên có hàng tỉ tên miền được sử dụng. Tuy nhiên để dễ nhớ cho người sử dụng và kinh doanh, những tên miền đó chỉ được phân loại theo từng nhóm sau đây. 
-- Phân loại theo đuôi tên miền: 
-
+### Phân loại theo đuôi tên miền: 
 Đuôi tên miền là phần mở rộng của tên miền xuất hiện sau dấu “.” và phần tên riêng được chọn làm tên miền. Theo cách này chúng ta phân tên miền thành 2 loại: Tên miền quốc tế và Tên miền quốc gia.
   - Tên miền quốc tế 
  
@@ -28,7 +27,7 @@ Ví dụ: .VN ( tên miền Việt Nam - viết tắt của Việt Nam), .cn ( t
 Một số tên miền quốc gia .vn nổi tiếng tại Việt Nam như tuoitre.vn, dantri.vn. Đặc biệt tên miền quốc gia còn được các nhãn hàng  quốc tế lớn tận dụng để làm website riêng với ngôn ngữ riêng ứng với từng quốc gia. 
     
 Ví dụ: Google.com.vn là tên miền đại diện cho website của Google tại Việt Nam có ngôn ngữ sử dụng chính là tiếng Việt; Google.com.usa là tên miền đại diện cho website của Google tại Mỹ có ngôn ngữ sử dụng chính là tiếng Anh.
-- Phân loại theo cấp tên miền: 
+### Phân loại theo cấp tên miền: 
 Ngoài cách phân loại theo vị trí địa lý của website, chúng ta còn có thể phân loại tên miền theo cấp: tên miền cấp 1, tên miền cấp 2, tên miền cấp 3, subdomain (tên miền phụ).
   - Tên miền cấp 1 ( TLD - top level domain): là tên miền chỉ có 1 cụm đuôi tên miền và chỉ có một dấu “.” trong tên miền được đăng ký. Thông thường các tên miền cấp 1 thường là các tên miền quốc tế.
   
