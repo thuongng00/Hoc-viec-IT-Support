@@ -191,7 +191,7 @@ Kết quả:
 | Hàng 4 | 4 x 1 | 4 x 2 | 4 x 3 | 4 x 4 |
 
 <a name="meo"></a>
-##*Mẹo:*
+## *Mẹo:*
 
 - Sử dụng trang http://markdownlivepreview.com/ paste vào đó đoạn markdown bạn viết và xem trước để chỉnh sửa cho phù hợp.
 
