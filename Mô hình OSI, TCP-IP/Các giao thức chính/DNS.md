@@ -16,7 +16,7 @@
 
 [DNS bị lỗi thì điều gì sẽ xảy ra?](#loi)
 
-[Nguyên nhân DNS dễ bị tấn công](#tancong)
+[Nguyên nhân DNS dễ bị tấn công?](#tancong)
 
 # Giao thức DNS
 <a name="dnslagi"></a>
@@ -25,6 +25,10 @@
 DNS viết tắt của Domain Name System có nghĩa là hệ thống phân giải tên miền. DNS là hệ thống cho phép thiết lập tương ứng giữa địa chỉ IP và tên miền trên Internet.
 
 DNS được phát minh vào năm 1984 cho Internet và đây là một trong số các chuẩn công nghiệp của các cổng bao gồm cả TCP/IP. Hệ thống phân giải tên miền chính là chìa khóa chủ chốt của nhiều dịch vụ mạng hiện nay như Internet, Mail server, Web server…
+
+<p align="center">
+  <img width="600" height="300" src="https://vietnix.vn/wp-content/uploads/2022/02/dns-la-gi.webp">
+</p>
 
 <a name="dnsdungdelamgi"></a>
 ## DNS dùng để làm gì?
