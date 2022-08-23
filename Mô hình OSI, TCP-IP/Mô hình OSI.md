@@ -11,19 +11,25 @@
   
  [Bảy tầng trong mô hình OSI](#baytang)
   
-   [*1.Tầng vật lý*](#tang1)
+   [*1. Tầng vật lý*](#tang1)
    
-   [*2.Tầng liên kết dữ liệu*](#tang2)
+   [*2. Tầng liên kết dữ liệu*](#tang2)
    
-   [*3.Tầng mạng*](#tang3)
+   [*3. Tầng mạng*](#tang3)
    
-   [*4.Tầng giao vận*](#tang4)
+   [*4. Tầng giao vận*](#tang4)
 
-   [*5.Tầng phiên*](#tang5)
+   [*5. Tầng phiên*](#tang5)
                   
-   [*6.Tầng trình diễn*](#tang6)
+   [*6. Tầng trình diễn*](#tang6)
         
-   [*7.Tầng ứng dụng*](#tang7)
+   [*7. Tầng ứng dụng*](#tang7)
+ 
+ [Quá trình hoạt động của mô hình OSI](#quatrinhhoatdong)
+ 
+   [*Xử lý dữ liệu từ máy gửi*](#maygui)
+   
+   [*Xử lý dữ liệu ở máy nhận*](#maynhan)
    
 <a name="mohinhosi"></a>
 # Mô hình OSI
@@ -152,3 +158,27 @@ Khi các đối tượng ứng dụng AE (Application Entity) được thiết l
 Tầng Application có các dịch vụ ứng dụng cho các tác vụ email, chuyển tệp, cho các phần mềm. Telnet, FTP là 2 ứng dụng tồn tại ở tầng này.
 
 Ví dụ ứng dụng ở tầng Application: WWW, Telnet, HTTP, FTP, NFS, SNMP.
+
+<a name="quatrinhhoatdong"></a>
+# Quá trình hoạt động của mô hình OSI
+
+<a name="maygui"></a>
+## Xử lý dữ liệu từ máy gửi
+- Tại tầng 7 Application, bạn gửi dữ liệu vào máy tính dưới các dạng văn bản, hình ảnh,…
+- Tầng 6 Presentation tiếp nhận thông tin được chuyển xuống từ tầng 7, lúc này thông tin được tiến hành mã hóa và nén dữ liệu.
+- Sau khi đã được mã hóa và nén, dữ liệu được chuyển xuống tầng 5 Session. Các dữ liệu sẽ được xử lý sau đó bổ sung thêm các thông tin cần thiết (thông tin gửi/nhận). Đơn giản hơn bạn có thể hiểu đây là bước xác nhận các thông tin.
+- Khi xác nhận xong, dữ liệu được đẩy xuống tầng 4 Transport. Ở bước này các dữ liệu được chia thành nhiều phần nhỏ, đồng thời nó cũng được bổ sung thêm các thông tin như phương thức vận chuyển để đảm báo tính bảo mật.
+- Tầng 3 Network, khi xuống tới tầng này, các phần dữ liệu vừa được chia nhỏ lại tiếp tục được chia ra thành nhiều gói thông tin khác nhau. Sau đó các gói thông tin sẽ được vận chuyển theo đúng tuyến đường đi đã được định sẵn.
+- Tiếp nối quá trình, dữ liệu được chuyển tới Tầng 2 Data Link. Các gói thông tin nhỏ từ tầng 3 xuống tiếp tục được cắt nhỏ thành những Frame, đồng thời được bổ sung thông tin kiểm tra các gói tin chứa dữ liệu này, mục đích để có thể kiểm tra ở đầu máy nhận khi thông tin tới.
+- Tầng cuối cùng trong mô hình, tầng 1 Physical. Các Frame khi được chuyển xuống đây sẽ được chuyển thành các chuỗi bit nhị phân, sau đó được đưa lên, phá tin hiệu trên các công cụ truyền dẫn (dây cáp quang) để chuyển tới được máy nhận.
+- Các gói tin dữ liệu khi được chuyển xuống các tầng dưới sẽ được gắn thêm các header của tầng đó, chỉ riêng ở tầng 2 gói tin được gắn thêm FCS.
+
+<a name="maynhan"></a>
+## Xử lý dữ liệu ở máy nhận
+- Dữ liệu từ máy đến tiếp xúc đầu tiên với tầng 1 của máy nhận. Ở đây, các dữ liệu sẽ được kiểm tra đồng bộ và đưa các chuỗi bit nhị phân vào vùng đệm, sau đó là gửi thông báo cho Tầng 2 “dữ liệu đã được nhận).
+- Tầng 2 Data Link, nơi kiểm tra xem có lỗi nào đối với các Frame dữ liệu vừa gửi không. Phương thức kiểm tra đó là kiểm tra xem FCS có trong các Frame đó hay không. Khi phát hiện Frame bị lỗi thì sẽ hủy bỏ Frame đó. Tiếp đến là quá trình kiểm tra địa chỉ Data Link (địa chỉ MAC Address) có khớp với địa chỉ máy nhận hay không. Kiểm tra thấy đúng, các lớp Data Link sẽ gỡ bỏ Header để chuyển dữ liệu lên tầng 3 Network.
+- Tầng 3 Network tiếp nhận và kiểm tra địa chỉ gói tin dư liệu có phải là địa chỉ máy nhận không (địa chỉ ở tầng này là địa chỉ IP). Nếu đúng các gói tin dữ liệu tiếp tục được gỡ bở Header của tầng Network rồi được chuyển tới tầng 4 Transport.
+- Khi thông tin lên tới tầng 4 sẽ được hỗ trợ phục hồi và xử lý lỗi bằng cách gửi các gói tin ACK, NAK. Đây là những gói tin dùng để phản hồi xem các gói chứa dữ liệu đã được gửi đến máy nhận hay chưa. Khi các gói tin đã được phục hồi xong sẽ được chuyển tiếp lên tầng 5 Session của mô hình 7 tầng OSI.
+- Tầng 5 Session sẽ kiểm tra để chắc chắn rằng các gói tin nguyên vẹn từ máy gửi tới máy nhận. Tiếp tục gỡ bỏ các Header của tầng 5 và chuyển tiếp thông tin đi.
+- Tầng 6 Presentation tiếp nhận, tiến hành chuyển đổi định dạng dữ liệu để xử lý gói tin và đưa lên tầng 7.
+- Tầng cuối cùng, Application nhận dữ liệu, gỡ bỏ nốt Header, kết thúc quá trình nhận dữ liệu đến.
