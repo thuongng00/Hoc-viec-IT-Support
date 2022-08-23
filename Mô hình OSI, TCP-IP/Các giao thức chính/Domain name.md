@@ -45,8 +45,6 @@ Subdomain còn gọi là tên miền con, là những tên này được tạo t
     <a name="hoatdong"><a/>
 ## Hoạt động của tên miền
 
-![image](https://user-images.githubusercontent.com/62273292/158509437-926fcac1-cd9e-4889-9992-f2d053ddb685.png)
-
 - Domain là đường tắt đi đến server host website của bạn. Một domain name như một địa chỉ nhà vì đó là cách mọi người tìm thấy bạn trên World Wide Web.
 - Chúng tôi gọi thanh trên đầu trình duyệt web là thanh địa chỉ. Đó là nơi bạn nhập domain để tìm một trang web khác.
 - Nếu một tên miền là địa chỉ thì máy chủ (Hosting) chứa website của bạn giống như một tòa nhà.
