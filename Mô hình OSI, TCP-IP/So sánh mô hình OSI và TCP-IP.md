@@ -1,4 +1,7 @@
 # So sánh mô hình OSI và mô hình TCP/IP
+<p align="center">
+  <img src=""/>
+  </p>
 ## Giống nhau
 
 Mô hình OSI và TCP/IP có một số điểm chung như sau:
@@ -8,7 +11,11 @@ Mô hình OSI và TCP/IP có một số điểm chung như sau:
 
 ## Khác nhau
 
-|  | Mô hình OSI | Mô hình TCP/IP| 
+ <div align="center">
+  <b>Bảng so sánh mô hình OSI và mô hình TCP/IP</b>
+  </div>
+  
+| Nội dung | Mô hình OSI | Mô hình TCP/IP| 
 |--------------|-------|------|
 | Độ tin cậy phổ biến | Nhiều người cho rằng đây là mô hình cũ, chỉ để tham khảo, số người sử dụng hạn chế hơn so với TCP/IP | Được chuẩn hóa, nhiều người tin cậy và sử dụng phổ biến trên toàn cầu |
 | Phương pháp tiếp cận | Tiếp cận theo chiều dọc | Tiếp cận theo chiều ngang | 
