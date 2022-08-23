@@ -1,6 +1,20 @@
 # Mục lục
 
+[Giao thức FTP là gì?](#ftplagi)
+
+[Mô hình hoạt động của giao thức FTP](#mohinh)
+
+[Phương thức truyền dữ liệu với FTP](#phuongthuc)
+
+[Kênh dữ liệu trong FTP](#kenhdulieu)
+
+[Dữ liệu trong FTP](#dulieu)
+
+[Cách xây dựng một máy chủ FTP đơn giản](#cachxaydung)
+
 # Giao thức FTP
+
+<a name="ftplagi"></a>
 ## Giao thức FTP là gì?
 FTP được viết tắt từ File Transfer Protocol được hiểu là giao thức chuyển nhượng tập tin. Đây là một giao thức truyền tải tập tin từ một máy tính đến máy tính khác, thường là một máy tính cá nhân và server thông qua một mạng TCP hoặc mạng Internet.
   
@@ -12,6 +26,7 @@ Thông qua giao thức FTP, người dùng có thể tải dữ liệu như hìn
   <img src="https://www.totolink.vn/public/uploads/img_article/giaothucftplaginhungdieubanchuabietvegiaothucftp-1.png">
 </p>
 
+<a name="mohinh"></a>
 ## Mô hình hoạt động của giao thức FTP
 Giao thức FTP hoạt động dựa trên mô hình cơ bản của việc truyền và nhận dữ liệu từ máy Client đến máy Server. Quá trình truyền nhận dữ liệu giữa máy Client và Server lại được tạo nên từ 2 tiến trình TCP logic là Control Connection và Data Connection.
 
@@ -23,6 +38,7 @@ Giao thức FTP hoạt động dựa trên mô hình cơ bản của việc truy
 
 - Data Connection: Khác với tiến trình Control Connection, Data Connection là một kết nối dữ liệu TCP được tạo ra với mục đích chuyên biệt là truyền tải dữ liệu giữa máy Client và máy Server. Kết nối sẽ tự động ngắt khi quá trình truyền tải dữ liệu hoàn tất.
 
+<a name="phuongthuc"></a>
 ## Phương thức truyền dữ liệu với FTP
 
 Có 3 phương thức truyền dữ liệu là stream mode, block mode, và compressed mode.
@@ -54,10 +70,12 @@ Phương thức truyền dữ liệu sử dụng 1 kỹ thuật nén đơn giả
 Thông tin sau khi được nén, sẽ được xử lí như Block mode, với trường Header.
 
 Trong thực tế, việc nén dữ liệu thường được thực hiện ở chỗ khác, làm cho phương thức Compressed mode trở nên không cần thiết.
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/111716161/186089680-94f93ca7-00cf-4cc2-b9a3-714fa9071467.png"/>
 </p>
 
+<a name="kenhdulieu"></a>
 ## Kênh dữ liệu trong FTP
 
 Kênh dữ liệu được tạo ra giữa Server – PI và User – PI, được sử dụng trong quá trình thiết lập kết nối và chứng thực được duy trì trong suốt phiên kết nối FTP. Các lệnh và các hồi đáp được trao đổi giữa bộ phận PI qua kênh điều khiển, nhưng dữ liệu thì không.
@@ -78,6 +96,7 @@ Phương thức này là một phương thức tạo kết nối bị động.
 - Sau đó phía Server-DTP lắng nghe trên cổng này một kết nối TCP đến từ User-DTP.
 - Theo mặc định, phía Client sẽ sử dụng cùng cổng mà nó sử dụng cho Control Connection như trong trường hợp chủ động. Tuy nhiên, trong phương pháp này, Client cũng có thể chọn sử dụng một cổng khác cho Data Connection nếu cần thiết.
 
+<a name="dulieu"></a>
 ## Dữ liệu trong FTP
 Các tập tin trong giao thức FTP được coi như một tập hợp các byte. FTP không quan tâm nội dung tập tin, sẽ chỉ đơn giản là di chuyển các tệp tin, các byte cùng 1 thời điểm, từ nơi này sang nơi khác.
 ### FTP Data Types
@@ -96,3 +115,13 @@ Ngoài việc xác định một loại dữ liệu tệp tin, ta cũng có th�
 - File Structure: là 1 luồng byte liền kề không có cấu trúc bên trong. Đây là cách mặc định và được sử dụng cho hầu hết các loại tệp.
 - Record Structure: bao gồm một tập hợp các bản ghi, mỗi bản ghi được phân định bằng đánh dấu end-of-record.
 - Page Structure: chứa 1 trang dữ liệu được lập chỉ mục đặc biệt. Cấu trúc này không được sử dụng phổ biến. Nó được tạo ra cho 1 máy tính cổ xưa được sử dụng trong ARPAnet đời đầu.
+
+<a name="cachxaydung"></a>
+## Cách xây dựng một máy chủ FTP đơn giản
+Trước đây, việc xây dựng một máy chủ FTP khá phức tạp và tốn kém đối với mọi người. Nhất là các doanh nghiệp chưa có riêng cho mình một phòng server và những hộ gia đình có nhu cầu sử dụng nhưng ngại thực hiện vì chi phí tốn kém. Nhưng giờ đây, việc xây dựng một máy chủ FTP để truyền và nhận dữ liệu trở nên hoàn toàn dễ dàng khi được tích hợp sẵn trên các Router.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186090097-5f8312c4-a122-46eb-9fd2-0f5f02c5f08f.png"/>
+</p>
+
+Các doanh nghiệp hay hộ gia đình chỉ cần sở hữu một thiết bị Router có tích hợp tính năng FTP. Sau đó, đầu tư thêm 1 bộ nhớ ngoài như USB hoặc ổ cứng với dung lượng thích hợp với nhu cầu cần sử dụng. Kết nối bộ nhớ với Router và cài đặt các thông số cần thiết theo hướng dẫn từ nhà sản xuất. Vậy là một máy chủ FTP đã được dựng thành công.
