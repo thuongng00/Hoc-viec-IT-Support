@@ -1,11 +1,23 @@
 # Mục lục
 
+[Giao thức SNMP là gì?](#snmp)
+
+[Các thành phần của giao thức SNMP](#thanhphan)
+
+[Giao thức SNMP hoạt động như thế nào?](#hoatdong)
+
+[Cấu trúc của SNMP](#cautruc)
+
+[Lợi ích của SNMP](#loiich)
+
 # Giao thức SNMP
 
+<a name="snmp"></a>
 ## Giao thức SNMP là gì?
 SNMP (Simple Network Management Protocol) là một giao thức tầng ứng dụng được Hội đồng Kiến trúc Internet (IAB) xác định trong RFC1157 để trao đổi thông tin quản lý giữa các thiết bị mạng. Nó là một phần của Transmission Control Protocol/Internet Protocol (TCP/IP).
 
-## Các thành phần của giao thức SMNP
+<a name="thanhphan"></a>
+## Các thành phần của giao thức SNMP
 ### 1. SNMP Manager
 Trình quản lý hoặc hệ thống quản lý là một thực thể riêng biệt có trách nhiệm giao tiếp với các thiết bị mạng được triển khai SNMP agent. Đây thường là một máy tính được sử dụng để chạy một hoặc nhiều hệ thống quản lý mạng.
 
@@ -26,7 +38,8 @@ Các chức năng chính của SNMP agent:
 - Báo hiệu sự kiện cho trình quản lý.
 - Hoạt động như một proxy cho một số nút mạng không quản lý được – SNMP.
 
-## Giao thức SNMp hoạt động như thế nào?
+<a name="hoatdong"></a>
+## Giao thức SNMP hoạt động như thế nào?
 
 SNMP thực hiện vô số chức năng, dựa trên sự pha trộn giữa truyền tin push-and-pull giữa các thiết bị mạng và hệ thống quản lý. Nó có thể ra lệnh đọc hoặc ghi, chẳng hạn như đặt lại mật khẩu hoặc thay đổi cài đặt cấu hình. Nó có thể báo cáo lại mức độ sử dụng băng thông, CPU và bộ nhớ, với một số trình quản lý SNMP tự động gửi cho người quản trị một email hoặc thông báo tin nhắn văn bản nếu vượt quá ngưỡng xác định trước.
 
@@ -39,10 +52,12 @@ Trong hầu hết các trường hợp, SNMP hoạt động trong một mô hìn
 - SET: Được gửi bởi người quản lý SNMP cho agent để đưa ra các cấu hình hoặc lệnh.
 - TRAP: Một cảnh báo không đồng bộ được gửi bởi agent đến trình quản lý SNMP để chỉ ra một sự kiện quan trọng, chẳng hạn như lỗi hoặc sự cố, đã xảy ra.
 
+<a name="cautruc"></a>
 ## Cấu trúc của SNMP
 <p align="center">
   <img src="https://user-images.githubusercontent.com/111716161/186101169-58e5989f-9018-4cef-94f1-00a9a490d169.png"/>
 </p>
+
 Để gửi thông tin, SNMP sử dụng mô hình truyền thông phân lớp.
 - Layer 1 – Lớp ứng dụng (SNMP)
 - Layer 2 – Lớp vận chuyển (UDP)
@@ -50,6 +65,7 @@ Trong hầu hết các trường hợp, SNMP hoạt động trong một mô hìn
 - Layer 4 – Lớp Network interface
 Mặc dù mô hình nhiều lớp này có vẻ hơi khó hiểu, nhưng nó rất hiệu quả trong việc tách biệt các nhiệm vụ giao tiếp và hỗ trợ thiết kế, triển khai mạng.
 
+<a name="loiich"><a/>
 ## Lợi ích của SNMP
 Sử dụng SNMP cho phép bạn quản lý các asset mạng không có hệ điều hành, nhưng là các thành phần quan trọng của cơ sở hạ tầng. 
 
