@@ -45,11 +45,10 @@ Ngoài ra, hiện nay cũng có khá nhiều máy chủ email hỗ trợ các gi
 <a name="hoatdong"></a>
 ## Cách thức hoạt động của dịch vụ SMTP 
 Phương thức hoạt động của SMTP được diễn giải theo các bước sau:
-
-Đầu tiên, thông báo việc gửi email được chuyển đến một máy chủ SMTP đã chỉ định.
-Tiếp đến, máy chủ SMTP sẽ dựa vào tên miền của email nhận mà tiến hành liên lạc với một máy chủ DNS. Sau đó, DNS server bắt đầu tìm kiếm và phản hồi về host name của máy chủ SMTP đích cho tên miền của email nhận. 
-Trong trường hợp tên người nhận trùng khớp với một trong các tài khoản người dùng trong máy chủ đích, hệ thống sẽ chuyển thông báo email gốc đến máy chủ này. Cuối cùng, người nhận lấy thông báo bằng chương trình gửi và nhận email (ví dụ Outlook).
-Nếu máy chủ SMTP đầu tiên không liên lạc và không thể trực tiếp trao đổi thông tin với máy chủ đích, thì giao thức SMTP sẽ chuyển thông báo qua một hoặc nhiều máy chủ SMTP trung gian. Trong đó, một máy chủ trung gian tiến hành nhận thông báo gốc rồi gửi đến máy chủ đích. Hoặc có khi nó lại chuyển thông báo đó đến một server trung gian khác. Quá trình này được thực hiện nhiều lần, và liên tục cho đến khi thông báo được chuyển đến máy chủ đích hoặc hết thời gian lưu trữ.
+- Đầu tiên, thông báo việc gửi email được chuyển đến một máy chủ SMTP đã chỉ định.
+- Tiếp đến, máy chủ SMTP sẽ dựa vào tên miền của email nhận mà tiến hành liên lạc với một máy chủ DNS. Sau đó, DNS server bắt đầu tìm kiếm và phản hồi về host name của máy chủ SMTP đích cho tên miền của email nhận. 
+- Trong trường hợp tên người nhận trùng khớp với một trong các tài khoản người dùng trong máy chủ đích, hệ thống sẽ chuyển thông báo email gốc đến máy chủ này. Cuối cùng, người nhận lấy thông báo bằng chương trình gửi và nhận email (ví dụ Outlook).
+- Nếu máy chủ SMTP đầu tiên không liên lạc và không thể trực tiếp trao đổi thông tin với máy chủ đích, thì giao thức SMTP sẽ chuyển thông báo qua một hoặc nhiều máy chủ SMTP trung gian. Trong đó, một máy chủ trung gian tiến hành nhận thông báo gốc rồi gửi đến máy chủ đích. Hoặc có khi nó lại chuyển thông báo đó đến một server trung gian khác. Quá trình này được thực hiện nhiều lần, và liên tục cho đến khi thông báo được chuyển đến máy chủ đích hoặc hết thời gian lưu trữ.
 
 <a name="loiich"></a>
 ## Lợi ích của SMTP
