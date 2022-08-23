@@ -4,7 +4,7 @@
 
 [Đặc điểm](#dacdiem)
 
-[Sơ đồ hoạt động](#sodo)
+[Kết nối của HTTP](#ketnoi)
 
 [Các thành phần chính](#thanhphan)
 
@@ -49,8 +49,8 @@ HTTP sở hữu tính linh hoạt rất cao. Nó không có bất kỳ một gi�
 Bởi mọi phản hồi của HTTP là độc lập nên người dùng không thể tạo sự liên kết thông tin giữa các phản hồi được. Điều này có thể sẽ trở thành một nhược điểm đối với những trường hợp người dùng cần có các tương tác mạch lạc và bổ trợ cho nhau, ví dụ như shopping cart trên các trang thương mại điện tử.
 
 Để khắc phục vấn đề này, HTTP cho phép mở rộng tự do các header. Trong đó, người dùng có thể tự tạo cho mình session trên mỗi request nhằm mục đích chia sẻ các ngữ cảnh hoặc trạng thái giữa các request với nhau. Sở dĩ trường hợp này có thể thực hiện được vì bản thân HTTP là stateless.
-<a name="sodo"></a>
-## Sơ đồ hoạt động của HTTP
+<a name="ketnoi"></a>
+## Kết nối của HTTP
 HTTP hoạt động dựa trên mô hình Client – Server.
 
 Trong mô hình client – server, các máy tính của người dùng sẽ đóng vai trò làm máy khách (Client). Sau một thao tác nào đó của người dùng, các máy khách sẽ gửi yêu cầu đến máy chủ (Server) và chờ đợi câu trả lời từ những máy chủ này.
@@ -58,7 +58,19 @@ Trong mô hình client – server, các máy tính của người dùng sẽ đ�
 HTTP là một stateless protocol. Hay nói cách khác, request hiện tại không biết những gì đã hoàn thành trong request trước đó.
 
 HTTP cho phép tạo các yêu cầu gửi và nhận các kiểu dữ liệu, do đó cho phép xây dựng hệ thống độc lập với dữ liệu được truyển giao.
- 
+
+Một kết nối được kiểm soát tại layer truyền tải, do đó về cơ bản nằm ngoài phạm vi của HTTP. Dù HTTP không yêu cầu giao thức truyền tải cơ bản phải dựa trên sự kết nối, vì chỉ yêu cầu nó đáng tin cậy hoặc không bị mất message (ít nhất là trình báo 1 lỗi). Trong số hai giao thức truyền tải phổ biến nhất trên Internet, TCP thì đáng tin cậy còn UDP thì không. HTTP do đó dựa vào tiêu chuẩn TCP vốn là connection-based (dựa trên sự kết nối).
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62273292/158309790-b19c9f65-3f09-4744-96ff-2d81d97acc6f.png"/>
+  <p>
+
+Trước khi 1 client và server có thể trao đổi 1 cặp yêu cầu – phản hồi HTTP, chúng phải thiết lập 1 kết nối TCP, 1 quá trình vốn yêu cầu 1 số vòng lặp. Hoạt động mặc định của HTTP/1.0 là mở 1 kết nối TCP riêng biệt cho từng cặp yêu cầu – phản hồi HTTP. Điều này làm nó kém hiệu quả hơn việc chia sẻ 1 kết nối TCP đơn lẻ khi nhiều yêu cầu được gửi liên tiếp.
+
+Để giảm thiểu lỗ hỏng này, HTTP/1.1 đã giới thiệu pipelining (nhưng được chứng minh là khá khó để thực hiện) và kết nối liên tục: kết nối TCP bên dưới có thể được kiểm soát 1 phần bằng cách sử dụng tiêu đề Connection. HTTP/2 đã tiến 1 bước xa hơn bằng cách ghép các thông báo qua 1 kết nối duy nhất, giúp giữ cho kết nối ổn định và hiệu quả hơn.
+
+Các thử nghiệm đang được tiến hành để thiết kế một giao thức truyền tải tốt hơn phù hợp hơn với HTTP. Ví dụ: Google đang thử nghiệm QUIC được xây dựng trên UDP để cung cấp giao thức truyền tải cũng đáng tin cậy và hiệu quả hơn.
+  
 <a name="thanhphan"></a>
 ## Các thành phần chính của HTTP
 
