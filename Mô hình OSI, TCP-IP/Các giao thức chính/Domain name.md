@@ -1,36 +1,49 @@
+# Mục lục 
+
+[Domain là gì?](#domain)
+
+[Thành phần của tên miền](#thanhphan)
+
+[Hoạt động của tên miền](#hoatdong)
+
 # Domain name
 
+<a name="domain"><a/>
 ## Domain là gì?
 
-Tên miền hay còn gọi là Domain name (có thể gọi tắt là Domain)
+Tên miền hay còn gọi là Domain name (có thể gọi tắt là Domain).
 
 Tên miền - tên gọi của một website hoạt động trên Internet. Nó đóng vai trò là một địa chỉ IP tĩnh, cố định. Tên miền như là địa chỉ nhà hay mã zip code để giúp các thiết bị định tuyến vệ tinh dẫn đường cho hàng hóa, thông tin lưu thông. Một trình duyệt cần xác định tên, địa chỉ để dẫn đường chính xác đến nơi chứa website đó (web server).
+
 Một website trên Internet cần có ít nhất 2 thành phần là Web Server và Tên miền để hoạt động:
 
 Web server là một máy tính chứa file và database tạo nên website. Sau đó sẽ truyền các thông tin ra môi trường Internet khi user truy cập vào website của bạn từ máy chủ của họ.
 
 Domain là tên mọi người gõ lên trình duyệt. Vì domain name đã được trỏ về địa chỉ web server nên trình duyệt có thể gửi yêu cầu truy cập web server đó. Nếu không có domain, muốn truy cập website người dùng phải gõ một dãy số IP khó nhớ. Và điều nay chắc chắn là không ai muốn làm.
-
   - Nói tóm lại, Domain chính là một trong những điều kiện đầu tiên cần cho website. Đồng thời là địa chỉ của một trang web trên Internet, đường dẫn đến trang web của bạn. Hay có thể gọi là một “địa chỉ web”.
   - Khi nhập tên hay địa chỉ này vào thanh trình duyệt, người dùng sẽ truy cập vào website đó. Một doanh nghiệp cần có tên trên thị trường thì một website cũng vậy, cũng cần có tên trên Internet.
   - Domain name sẽ được cung cấp duy nhất cho mỗi website và sẽ ưu tiên cho ai đăng ký trước.
 
-## Tên miền bao gồm mấy thành phần? Có những cấp nào?
+  <a name="thanhphan"><a/>
+## Thành phần của tên miền
 
-**Domain bao gồm 2 thành phần:**
+### Domain bao gồm 2 thành phần:
 
-  - Tên: gồm các chữ cái từ a – z, các số 0 – 9, dấu gạch ngang “-“, tổng số ký từ nhỏ hơn 255. Ngoài ra tên miền các quốc gia có thể sẽ có dấu, như tên miền Tiếng Việt của “.vn”: tênmiền.vn
+  - Tên: gồm các chữ cái từ a – z, các số 0 – 9, dấu gạch ngang “-“, tổng số ký từ nhỏ hơn 255. Ngoài ra tên miền các quốc gia có thể sẽ có dấu, như tên miền Tiếng Việt của “.vn”: tênmiền.vn.
+
   - Phần Mở rộng (Đuôi) bắt đầu bằng dấu chấm “.” và bao gồm những phần mở rộng sẽ đề cập đến phần nội dung ở Mục 4.
 
-**Domain có 2 cấp chính và 1 cấp phụ, cụ thể như sau:**
+### Domain có 2 cấp chính và 1 cấp phụ, cụ thể như sau:
 
 Tên miền cấp 1 (Top Level Domain): những loại này có đặc điểm là chỉ có một dấu chấm “.” như: hostify.vn, vietnamnet.vn, vnnic.vn, google.com,…
 Tên miền cấp 2 (Second Level Domain) là các tên có 2 chấm như: thanhnien.com.vn, namabank.com.vn, …
+
 Subdomain còn gọi là tên miền con, là những tên này được tạo thêm từ cấp 1 hoặc cấp 2 như support.hostify.vn. Bạn có thể tạo được rất nhiều subdomain miễn phí từ domain gốc, số lượng subdomain được tạo sẽ phụ thuộc và gói host của nhà cung cấp hosting.
+
 * Lưu ý: Cần phân biệt subdomain với Tên miền cấp 2. Second Level Domain thường có đuôi của tên miền phổ biến. Và theo sau đó là đuôi của tên miền quốc gia.
 
-
-## Hoạt động của tên miền như thế nào?
+    <a name="hoatdong"><a/>
+## Hoạt động của tên miền
 
 ![image](https://user-images.githubusercontent.com/62273292/158509437-926fcac1-cd9e-4889-9992-f2d053ddb685.png)
 
@@ -54,11 +67,9 @@ Domain Name cũng có thể chuyển hướng. Nghĩa là khi người khác tru
 
   - Nếu để ý, bạn không thể tìm thấy trang web nào không có TLD. Mỗi domain đều được tạo thành từ một tên và một TLD.
 
-![image](https://user-images.githubusercontent.com/62273292/158510997-2556faba-546f-4dc2-8787-f960673b3756.png)
+Có rất nhiều loại tên với những phần mở rộng (đuôi) khác nhau. Một trong những loại phổ biến nhất là .com. Và còn có nhiều tùy chọn khác như .vn, .org, .net, .info, .io.
 
-Có rất nhiều loại tên với những phần mở rộng (đuôi) khác nhau. Một trong những loại phổ biến nhất là .com. Và còn có nhiều tùy chọn khác như .vn, .org, .net, .info, .io
-
-## Một số nhà cung cấp tại Việt Nam và quốc tế
+## Một số nhà cung cấp tên miền tại Việt Nam và quốc tế
 
 **Top nhà cung cấp tên miền uy tín nhất việt nam**
 - 1 Nhân Hòa
@@ -108,17 +119,15 @@ Kể từ ngày 20/12/2016, AZDIGI chính thức trở thành đại lý cung c�
 NameSilo là cái tên mà mình dành rất nhiều sự ưu tiên khi giới thiệu đến bạn và mình đang sử dụng khá nhiều tên miền tại NameSilo được hơn 3 năm. Điều này chứng tỏ nếu bạn đang băn khoăn xem nên mua tên miền ở đâu thì hãy ưu tiên lựa chọn NameSilo.
 
 Ưu điểm:
-
   - Mức giá cho các domain khá rẻ khi mua và khi gia hạn.
   - Miễn phí mãi mãi ẩn thông tin tên miền. 
   - Được nhiều người tin tưởng lựa chọn. Đội ngũ hỗ trợ tốt. 
-  - Bảng điều khiển tên miền dễ sử dụng
+  - Bảng điều khiển tên miền dễ sử dụng.
 
 
 - 2 Namecheap
 
 ![image](https://user-images.githubusercontent.com/62273292/158512487-a969dcaf-6ca6-44df-a070-74adae33862c.png)
-
 
 Namecheap được thành lập từ năm 2000 và được đánh giá là một trong những công ty cung cấp dịch vụ tên miền tốt nhất hiện nay. 
 
@@ -130,7 +139,6 @@ Namecheap tự hào với hơn 3 triệu khách hàng đăng ký cùng với hơ
 - Thanh toán dễ dàng bằng PayPal, thẻ Visa/MasterCard. 
 - Hỗ trợ Live chat cực nhanh. Support cực kì tốt. 
 - Miễn phí Domain Privacy. 
-
 
 **Nhược điểm:**
 
