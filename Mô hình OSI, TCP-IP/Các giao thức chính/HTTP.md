@@ -41,17 +41,16 @@ HTTP cho phép tạo các yêu cầu gửi và nhận các kiểu dữ liệu, d
 
 <a name="url"><a/>
 ### 1. Uniform Resource Locator (URL)
-Cấu trúc của một HTTP response:
+  
+Một URL được sử dụng để xác định duy nhất một tài nguyên trên Web và có cấu trúc như sau:
 ```
-Status-line = Phiên bản HTTP + Mã trạng thái + Trạng thái.
+protocol://hostname:port/path-and-file-name
 ```
-Có thể có hoặc không có các trường header.
-
-Một dòng trống để đánh dấu sự kết thúc của các trường header.
-
-Tùy chọn một thông điệp.
-
-Mã trạng thái: Thông báo về kết quả khi nhận được yêu cầu và xử lí bên server cho client.
+Trong một URL có 4 thành phần:
+- Protocol: giao thức tầng ứng dụng được sử dụng bởi client và server.
+- Hostname: tên DNS domain.
+- Port: Cổng TCP để server lắng nghe request từ client.
+- Path-and-file-name: Tên và vị trí của tài nguyên yêu cầu.
 
   <a name="requests"><a/>
 ### 2. HTTP – Requests
@@ -79,8 +78,9 @@ Giao thức HTTP định nghĩa một tập các phương thức request, client
   <img src ="https://user-images.githubusercontent.com/111716161/186068294-9256d038-b326-48d5-9790-bd2fd1607b3d.png"/>
     </p>
     
-    <a name="responses"><a/>
+<a name="responses"><a/>
 ### 3. HTTP – Responses
+  
 Cấu trúc của một HTTP response:
 ```
 Status-line = Phiên bản HTTP + Mã trạng thái + Trạng thái.
