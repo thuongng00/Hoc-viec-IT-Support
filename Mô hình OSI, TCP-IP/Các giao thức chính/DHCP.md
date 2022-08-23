@@ -8,7 +8,7 @@
 
 [Các thông điệp giao tiếp giữa DHCP server và DHCP client](#thongdiep)
 
-[Ưu, nhược điểm khi sử dụng DHCP)(#uunhuoc)
+[Ưu, nhược điểm khi sử dụng DHCP](#uunhuoc)
 
 # Giao thức DHCP
 
