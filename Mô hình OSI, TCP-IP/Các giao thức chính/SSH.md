@@ -1,13 +1,29 @@
 # Mục lục
 
+[Giao thức SSH là gì?](#sshlagi)
+
+[Kỹ thuật mã hóa trong SSH](#kythuat)
+
+[Cách thức xử lý các dạng mã hóa trong giao thức SSH](#cachthucxuly)
+
+[SSH nên sử dụng khi nào?](#sudungssh)
+
 # Giao thức SSH
-
+<a name="sshlagi"></a>
 ## Giao thức SSH là gì?
-
 ### Khái niệm
 SSH, còn được gọi là Secure Socket Shell, là một giao thức mạng cung cấp cho quản trị viên một cách an toàn để truy cập máy tính từ xa. SSH cũng đề cập đến bộ tiện ích thực hiện giao thức. Secure Shell cung cấp khả năng xác thực mạnh và bảo mật thông tin liên lạc giữa hai máy tính kết nối qua mạng không an toàn như Internet. SSH được sử dụng rộng rãi bởi các quản trị viên mạng, để quản lý hệ thống và ứng dụng từ xa, cho phép họ đăng nhập vào một máy tính khác qua mạng, thực thi lệnh và di chuyển các file từ máy tính này sang máy tính khác.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186093020-9a0b23cb-c144-49b9-af83-d210858157e8.png"/>
+</p>
+
 ### Cơ chế hoạt động
 SSH gồm cả giao thức mạng và bộ tiện ích cơ bản để triển khai chính giao thức đó. Cụ thể, SSH ứng dụng ảnh mô hình client-server, kết nối với vùng hiển thị Session và vùng Session chạy.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186092154-85e099a8-20e6-4d0d-8c16-04eae471aaa5.png"/>
+</p>
 
 Khi triển khai SSH hệ thống sẽ hỗ trợ cả giao thức ứng dụng, sử dụng cho trình giả lập Terminal hoặc truyền file. Trong thực tế, người ta còn sử dụng SSH để phát triển tunnel bảo mật cho các giao thức ứng dụng. 
 
@@ -23,6 +39,7 @@ Giao thức đảm nhiệm khá nhiều chức năng trong hệ thống điều 
 - Quản lý an toàn và hiệu quả thành phần hạ tầng mạng.
 - SSH có thể kết hợp với Terminal Session thay thế cho những chương trình Telnet có tính bảo mật thấp.
 
+<a name="kythuat"></a>
 ## Kỹ thuật mã hóa trong SSH
 
 Ưu điểm lớn nhất của SSH nằm ở khả năng mã hóa, truyền tải dữ liệu an toàn giữa thành phần Host và Client. Trong đó, Host chính là máy chủ từ xa cần liên kết với máy tính Client. Kỹ thuật mã hóa thông qua SSH có thể triển khai theo 3 phương thức khác nhau.
@@ -37,6 +54,7 @@ Chính bởi Key không truyền tải giữa Client và Host nên thuật toán
 Tuy nhiên cũng cần lưu ý rằng, Secret Token chỉ có thời hạn sử dụng trong một phiên SSH, nó hình thành từ chứng thực Client. Khi tạo mới Key, toàn bộ Packets giữa hai máy cần trải qua mã hóa bởi Private Key. Quá trình này gồm cả bước cung cấp mật khẩu bởi người dùng.
 
 **Mã hóa Asymmetric Encryption**
+
 Khác với Symmetric Encryption, phương thức Asymmetric Encryption lại dùng 2 khóa riêng biệt để phục vụ mã hóa và giải mã. Bao gồm khóa công khai Public Key và khóa riêng tư Private Key, hình thành cặp khóa Public-private key pair.
 Khóa Public Key công khai trên tất cả các thành phần liên quan. Tuy nhiên, nó cũng liên hệ trực tiếp với khóa riêng tư Private Key. Chính sự phụ thuộc này nên Public Key gần như không thể tự mã hóa thư, giải mã bất cứ thứ gì đã mã hóa bởi Private Key.
 
@@ -47,11 +65,13 @@ Vậy nhưng cũng cần lưu ý rằng Asymmetric Encryption không thể mã h
 Mỗi khi liên kết Symmetric chính thức thiết lập an toàn, máy chủ Server cũng đồng thời sử dụng Public Key của Client. Từ đó khởi tạo, thay đổi và truyền đến Client phục vụ quá trình chứng thực. Trường hợp Client giải thành công tin nhắn có nghĩa nó đang giữ Private Key. Phiên giao dịch SSH cũng đồng thời bắt đầu.
 
 **Mã hóa Hashing**
+
 Hashing một chiều là phương thức mã hóa ứng dụng phổ biến trong Secure Shell Connection. Khác với Symmetric Encryption và Asymmetric Encryption, Hashing không sử dụng vào mục đích giải mã. Chúng hình thành sau mỗi lần nhập liệu, không thể khai thác. Như vậy, Hashing sẽ không thể quay lại để giải mã.
 Thông thường, để tạo ra một mật mã Hash rất đơn giản qua một lần Input. Thế nhưng chúng ta lại không thể tạo ra Input thông qua chính lần Hash đó. Nói cách khác, Client đang giữ Input đó. Điều này có nghĩa chỉ Client có thể tạo một crypto-graphic hash để tiến hành xác định hai bên nhập Input.
 
 Giao thức SSH cần đến Hash để kiểm tra tính xác thực của tin nhắn. Quy trình xác thực này đảm bảo rằng lệnh không thể giả danh bởi bất cứ phương thức nào.
 
+<a name="cachthucxuly"></a>
 ## Cách thức xử lý các dạng mã hóa trong giao thức SSH
 Trong phần tiếp theo của chuyên mục giải đáp SSH là gì, FPT Cloud sẽ giúp bạn giải thích sâu hơn về cách thức xử lý các dạng mã hóa. Như đã đề cập, SSH hoạt động theo mô hình Client – Server để chứng thực hai máy từ xa.
 
@@ -73,7 +93,12 @@ Dưới đây là phần tóm tắt cách thức hoạt động của thuật to
 
 Mật khẩu mặc dù đã trải qua mạng mã hóa nhưng nếu người dùng không cẩn thận vẫn có thể bị lộ. Khi một bên nào đó thu thập thành công mật khẩu, tài khoản của người dùng dễ bị chiếm đoạt. Theo nhiều chuyên gia bảo mật, người dùng nên sử dụng SSH Key Pair, bộ khóa Asymmetric có chức năng xác thực thành viên không yêu cầu nhập mật khẩu.
 
+<a name="sudungssh"></a>
 ## SSH nên sử dụng khi nào?
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186093427-b95b3c90-3075-4ca9-8ba2-f6d332e1f48a.png"/>
+</p>
 
 Trong mô hình TCP / IP, giao thức SSH sẽ hoạt động tại tầng thứ 4. Đối tượng nhiệm vụ tương tác duy trì kết nối giữa máy chủ và máy khách. Thông qua cơ chế mã hóa chuyên biệt, giao thức này có thể đảm bảo dữ liệu truyền đi an toàn. So với Telnet, Rlogin đã khắc phục yếu điểm tốt về mặt bảo mật.
 
