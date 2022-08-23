@@ -1,6 +1,15 @@
 # Mục lục
 
+[Giao thức ARP là gì?](#arp)
+
+[Cơ chế hoạt động của ARP](#coche)
+
+[Các loại bản tin ARP](#bantin)
+
+[Các bước hoạt động của giao thức mạng ARP](#hoatdong)
+
 # Giao thức ARP
+<a name="arp"></a>
 ## Giao thức ARP là gì?
 
 ### Khái niệm
@@ -12,6 +21,7 @@ ARP được hình thành và phát triển vào đầu những năm 1980 như m
 ### Mục đích
 ARP cho phép một mạng quản lý các kết nối độc lập với những thiết bị vật lý cụ thể được gắn vào từng mạng. Điều này cho phép giao thức Internet vận hành hiệu quả hơn so với việc nó phải tự quản lý địa chỉ của các thiết bị phần cứng và mạng vật lý.
 
+<a name="coche"></a>
 ## Cơ chế hoạt động của ARP
 Quá trình hoạt động của ARP được bắt đầu khi một thiết bị nguồn trong một mạng IP có nhu cầu thực hiện gửi một gói tin IP. Trước hết thiết bị đó phải xác định được xem địa chỉ IP đích của gói tin có phải đang nằm cùng trong mạng nội bộ của mình hay không. Nếu đúng vậy thì thiết bị sẽ thực hiện gửi trực tiếp gói tin đến thiết bị đích. Nếu địa chỉ IP đích đang  nằm trên mạng khác, thì thiết bị sẽ gửi gói tin đến một trong các router nằm cùng ở trên mạng nội bộ để router này làm nhiệm vụ forward gói tin.
 
@@ -19,6 +29,7 @@ Cả hai trường hợp, bạn đều thấy được là thiết bị phải g
 
 ARP về cơ bản là một quá trình có 2 chiều request/response giữa các thiết bị trong cùng mạng nội bộ. Thiết bị nguồn request bằng cách gửi một bản tin local broadcast  lên trên toàn mạng. Thiết bị đích response bằng một bản tin unicast để trả lại cho thiết bị nguồn.
 
+<a name="bantin"></a>
 ## Các loại bản tin ARP
 
 ### ARP probe
@@ -63,6 +74,7 @@ Có 4 loại địa chỉ nằm trong một bản tin ARP  đó là:
 - Target Hardware Address: Địa chỉ lớp hai (hay còn được gọi là địa chỉ phần cứng) của thiết bị đích của bản tin.
 - Target Protocol Address: Địa chỉ lớp ba (hay gọi là  địa chỉ logic) của thiết bị đích của bản tin.
 
+<a name="hoatdong"></a>
 ## Các bước hoạt động của giao thức mạng ARP
 1. Source Device Checks Cache: Trong bước này, thiết bị sẽ  thực hiện kiểm tra cache (bộ đệm) của mình. Nếu đã có địa chỉ IP đích tương ứng với MAC nào đó rồi thì lập tức hệ thống chuyển sang bước 9.
 2. Source Device Generates ARP Request Message:  Hệ thống bắt đầu khởi tạo gói tin ARP Request với các trường địa chỉ như trên.
