@@ -16,10 +16,13 @@
 
 [Cấu trúc của một gói tin HTTP](#cautruc)
 
+[Các lỗi thường gặp khi duyệt giao thức HTTP](#loi)
+
 # Giao thức HTTP 
 
 <a name="khainiem"><a/>
 ## Khái niệm
+  
 HyperText Transfer Protocol – Giao thức truyền tải siêu văn bản: là một trong các giao thức chuẩn về mạng Internet, được dùng để liên hệ thông tin giữa máy cung cấp dịch vụ (Web server) và máy sử dụng dịch vụ (Web client).
 
 Là giao thức Client/Server dùng cho World Wide Web – WWW.
@@ -179,4 +182,20 @@ GET / HTTP/1.1
 
  Connection: Keep-Alive
     
-    
+ <a name="loi"><a/>
+ ## Các lỗi thường gặp khi duyệt giao thức HTTP
+   
+### HTTP 404: Not Found – Giao thức HTTP là gì
+Lỗi này xảy ra khá phổ biến. Nó được thể hiện bởi nhiều phản hồi khác nhau, ví dụ như 404 Error”, “Page cannot be displayed”, “Internet Explorer cannot display the webpage”… Nguyên nhân xảy ra lỗi này là vì địa chỉ trang web mà bạn truy cập không được tìm thấy trên máy chủ. Có thể vấn đề nằm ở tên miền bị lỗi hoặc địa chỉ web bạn soạn thảo bị sai chính tả.
+   
+Để khắc phục tình trạng này, trước tiên bạn hãy reload lại trang web đó. Nếu vẫn lỗi, hay kiểm tra lại lỗi text URL. Khi đã chắc chắn rằng URL bạn điền hoàn toàn đúng, thử xóa bớt các phân trang đi.
+
+### HTTP 500 Internet Server Error
+Tương tự như lỗi 404, lỗi 500 cũng làm gián đoạn quá trình truy cập web của bạn. Tuy nhiên, 500 xảy ra là do phía bên máy chủ gặp trục trặc, không phải do kết nối hay đường truyền của bạn. Lỗi này thường xảy ra trong thời gian ngắn, vì thế bạn có thể thử reload lại trang cho đến khi hết lỗi.
+
+Nếu reload rồi mà vẫn không được thì bạn chỉ còn cách liên lạc với người quản trị trang web để hỏi về cách khắc phục.
+
+### HTTP 403 Forbidden – Giao thức HTTP là gì
+Thông điệp HTTP 403 Forbidden được truyền đến khi thông tin luồng từ máy trạm bị máy chủ từ chối. Lỗi này thường xảy ra khi URL bị sai. Bạn nên kiểm tra lại kỹ chính tả trong URL. Nếu bạn chắc chắn URL là đúng thì nó có thể do nhầm lẫn của máy chủ. Trong trường hợp này bạn buộc phải liên hệ với quản trị viên.
+   
+Khi máy chủ đặt ra các giới hạn truy cập vào website con mà bạn lại không nằm trong trường hợp được phép truy cập thì tất nhiên cũng sẽ hiện ra lỗi HTTP 403 Forbidden. Riêng trường hợp này không có cách nào có thể khắc phục được cho đến khi truy cập của bạn được cấp phép.
