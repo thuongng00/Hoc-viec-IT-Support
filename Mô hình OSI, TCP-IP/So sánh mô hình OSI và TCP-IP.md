@@ -1,7 +1,11 @@
 # So sánh mô hình OSI và mô hình TCP/IP
+
 <p align="center">
-  <img src=""/>
+  <img src="https://user-images.githubusercontent.com/111716161/186063616-cf90e4d1-98a3-4b61-bac5-bd66cd9fb148.png" height = "400" width = "800"/>
+  
+  <img src="https://user-images.githubusercontent.com/111716161/186063836-741875d5-80c1-4577-8f6c-b639843762f1.jpg"/>
   </p>
+  
 ## Giống nhau
 
 Mô hình OSI và TCP/IP có một số điểm chung như sau:
