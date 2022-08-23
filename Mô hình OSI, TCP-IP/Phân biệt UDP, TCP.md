@@ -15,9 +15,13 @@ Một sự khác biệt đáng chú ý khác giữa TCP và UDP là TCP cung c�
 | Tình trạng kết nối| Yêu cầu kết nối được thiết lập để truyền dữ liệu (Kết nối phải được đóng khi quá trình truyền hoàn tất) | Giao thức không kết nối không có yêu cầu để mở, duy trì hoặc chấm dứt kết nối |
 | Giải trình tự dữ liệu | Có thể trình tự | Không thể trình tự |
 | Dữ liệu đảm bảo | Có thể đảm bảo cung cấp dữ liệu đến bộ định tuyến đích | Không thể đảm bảo cung cấp dữ liệu đến đích |
+| Định dạng gói | Phân đoạn | Biểu đồ dữ liệu của người dùng | 
+| Dung lượng | 8 byte | 20-60 byte |
+| Xử lý giao tiếp | Số cổng | Kết hợp số cổng và địa chỉ IP |
 | Truyền lại dữ liệu | Có thể truyền lại các gói bị mất | Không truyền lại các gói bị mất |
 | Kiểm tra lỗi | Kiểm tra lỗi rộng rãi và xác nhận dữ liệu | Cơ chế kiểm tra lỗi cơ bản sử dụng tổng kiểm tra |
-| Phương thức chuyển | Dữ liệu được đọc dưới dạng một luồng byte; thông điệp được truyền đến  ranh giới phân đoạn | Các gói UDP có ranh giới xác định; được gửi riêng lẻ và được kiểm tra tính toàn vẹn khi đến |
-| Tốc độ | Chậm hơn UDP | Nhanh hơn TCP |
+| Phương thức chuyển | Dữ liệu được đọc dưới dạng một luồng byte; thông điệp được truyền đến ranh giới phân đoạn | Các gói UDP có ranh giới xác định; được gửi riêng lẻ và được kiểm tra tính toàn vẹn khi đến |
+| Tốc độ truyền tải | Tốc độ truyền gói thấp | Tốc độ truyền gói cao |
+| Độ tin cậy | Đáng tin cậy hơn | Kém tin cậy hơn |
 | Broadcasting | Không hỗ trợ broadcasting | Có hỗ trợ broadcasting |
 | Nên sử dụng cho | Được sử dụng bởi HTTPS, HTTP, SMTP, POP, FTP, v.v | Hội nghị truyền hình, phát trực tuyến, DNS, VoIP, v.v. | 
