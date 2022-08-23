@@ -45,6 +45,10 @@ Khi người dùng muốn tải một trang web, một bản dịch phải xảy
 
 Để hiểu quy trình đằng sau quá trình phân giải DNS, điều quan trọng là phải tìm hiểu về các thành phần khác nhau mà một truy vấn DNS phải vượt qua. Đối với trình duyệt web, việc tra cứu DNS diễn ra ở chế độ ẩn. Và không yêu cầu sự tương tác từ máy tính của người dùng ngoài yêu cầu ban đầu.
 
+<p align="center">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/62273292/158499816-0df8df53-fea1-4bd5-990b-6bb36dd0115e.png">
+</p>
+
 <a name="banghi"></a>
 ## Các loại DNS bản ghi DNS thường sử dụng
 - CNAME Record: Là một bản ghi tên quy chuẩn (Canonical Name Record). Đây là một dạng bản ghi tài nguyên trong hệ thống tên miền.
@@ -107,3 +111,7 @@ Vì hệ thống tên miền khá phức tạp và người tấn công có th�
 Bên cạnh đó, DNS cũng có thể bị tấn công bằng phướng pháp tận dụng giao thức DNS để chuyển hướng người dùng truy cập vào các trang web độc hại nhằm đánh cắp dữ liệu nhạy cảm của cá nhân, doanh nghiệp.
 
 Ngoài ra, việc sử dụng server đệ quy sẽ lưu phản hồi vào bộ nhớ tạm để tăng tốc độ của các truy vấn tiếp theo. Nhằm giảm số lượng request thông tin, nhưng khá nguy hiểm và dễ bị tấn công bởi Man-In-The-Middle. Những kẻ tấn công có thể truy cập vào Over IP (VoIP) để đánh cắp thông tin, mạo danh, trích xuất dữ liệu, thông tin,…
+
+<p align="center">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/62273292/158502357-e5ee707a-444f-4eca-93fe-a9d3eb42b075.png">
+</p>
