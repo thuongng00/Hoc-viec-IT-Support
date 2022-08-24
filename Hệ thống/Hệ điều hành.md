@@ -5,19 +5,14 @@ Hệ điều hành (tiếng Anh: Operating System - viết tắt: OS) là một 
 
 Có vai trò trung gian trong việc giao tiếp giữa người sử dụng và thiết bị.
 
-## Tính năng của hệ điều hành
-Một hệ điều hành hoạt động như một giao diện giữa phần mềm và phần cứng máy tính.
-
-Hỗ trợ quản lý tài nguyên của hệ thống máy tính, đồng thời ẩn những chi tiết của tài nguyên phần cứng từ người dùng.
-
-Giúp kiểm soát và giám sát việc thực hiện tất cả các chương trình khác nằm trong máy tính, bao gồm các chương trình ứng dụng và phần mềm hệ thống khác.
-
-Là môi trường trung gian giữa phần cứng và người dùng, giúp bạn nhanh chóng truy cập và vận hành những tài nguyên khác.
-
-Tăng hiệu quả chia sẻ tài nguyên, đảm bảo sự công bằng giữa người dùng máy tính với các chương trình.
+## Chức năng của hệ điều hành
+- Tổ chức giao tiếp giữa người dùng và hệ thống. 
+- Cung cấp tài nguyên (bộ nhớ, thiết bị ngoại vi,...) cho các chương trình và tổ chức thực hiện các chương trình đó.
+- Tổ chức lưu trữ thông tin trên bộ nhớ ngoài, cung cấp các phương tiện để tìm kiếm và truy cập thông tin. 
+- Kiểm tra và hỗ trợ bằng phần mềm cho các thiết bị ngoại vi (chuột, bàn phím, màn hình, đĩa CD,...) để có thể khai thác chúng một cách thuận tiện và hiệu quả nhất.
+- Cung cấp các dịch vụ tiện ích hệ thống (làm việc với đĩa, truy cập mạng,...)
 
 Hệ điều hành quản lý tài nguyên phần cứng của máy tính, bao gồm:
-
 - Các thiết bị đầu vào như bàn phím và chuột.
 - Các thiết bị đầu ra như màn hình hiển thị, máy in và máy quét.
 - Các thiết bị mạng như modem, bộ định tuyến và kết nối mạng.
@@ -25,11 +20,27 @@ Hệ điều hành quản lý tài nguyên phần cứng của máy tính, bao g
 
 ## Các thành phần chính của hệ điều hành
 Hệ điều hành có các thành phần chính sau:
-
 - Kernel: Kernel cung cấp các điều khiển mức cơ bản trên tất cả các thiết bị phần cứng máy tính. Các vai trò chính bao gồm: đọc dữ liệu từ bộ nhớ và ghi dữ liệu vào bộ nhớ, xử lý các lệnh thực hiện, xác định cách dữ liệu được nhận và gửi bởi các thiết bị như màn hình, bàn phím, chuột và xác định cách diễn giải dữ liệu nhận được từ mạng.
 - Giao diện người dùng: User Interface cho phép việc tương tác với người dùng thông qua các graphical icons và một desktop hoặc thông qua một command line.
 - Giao diện lập trình ứng dụng: Application Programming Interfaces cho phép các application developers viết modular code.
 
+## Phân loại hệ điều hành
+Hệ điều hành gồm 3 loại chính: 
+### Đơn nhiệm một người dùng
+- Các chương trình phải được thực hiện lần lượt.
+- Mỗi lần làm việc chỉ có một người được đăng ký vào hệ thống.
+- Hệ điều hành này đơn giản và không đòi hỏi máy tính phải có bộ xử lý mạnh. 
+- Ví dụ: MOS là hệ điều hành thuộc loại này. 
+
+### Đa nhiệm một người dùng
+- Với hệ điều hành loại này chỉ cho phép một người được đăng ký vào hệ thống nhưng có thể kích hoạt cho hệ thống thực hiện đồng thời nhiều chương trình. 
+- Hệ điều hành loại này khá phức tạp và đòi hỏi máy tính phải có bộ xử lý đủ mạnh. 
+- Ví dụ: Windows 95 là hệ điều hành đa nhiệm một người dùng. 
+
+### Đa nhiệm nhiều người dùng
+- Cho phép nhiều người được đăng ký vào hệ thống. Người dùng có thể cho hệ thống thực hiện đồng thời nhiều chương trình.
+- Hệ điều hành loại này rất phức tạp, đòi hỏi máy phải có bộ xử lý mạnh, bộ nhớ trong lớn và thiết bị ngoại vi phong phú.
+- Ví dụ: Windows 2000 Server là một hệ điều hành đa nhiệm nhiều người dùng. 
 ## Hệ điều hành dùng cho máy tính
 Được thiết kế để sử dụng trên những thiết bị như: Máy tính để bàn, laptop,… Đây là hệ điều hành sử dụng GUI.
 
@@ -63,6 +74,4 @@ GUI của mỗi hệ điều hành có giao diện khác nhau, tuy nhiên các h
 
 **BlackBerry OS:** Hệ điều hành có mức độ bảo mật cao nhất.
 
-# Các hệ điều hành được sử dụng trong doanh nghiệp
 
-## Hệ điều hành Zoho One 
