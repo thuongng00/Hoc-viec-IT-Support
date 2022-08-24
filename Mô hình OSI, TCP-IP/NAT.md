@@ -43,3 +43,28 @@ Router (config-if) # ip nat outside
 ```
 ## Dynamic NAT
 Dynamic NAT được dùng để ánh xạ một địa chỉ IP này sang một địa chỉ khác một cách tự động, thông thường là ánh xạ từ một địa chỉ cục bộ sang một địa chỉ được đăng ký. Bất kỳ một địa chỉ IP nào nằm trong dải địa chỉ IP công cộng đã được định trước đều có thể được gán một thiết bị bên trong mạng.
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/111716161/186325539-bb283b89-1c01-424e-b1dc-2d86fcf3b798.png"/>
+ </p>
+ 
+### Cấu hình Dynamic NAT
+Xác định dải địa chỉ đại diện bên ngoài (public):các địa chỉ NAT
+```
+Router (config) # ip nat pool [name start ip] [name end ip] netmask [netmask]/prefix-lenght [prefix-lenght]
+```
+Thiết lập ACL cho phép những địa chỉ nội bộ bên trong nào được chuyển đổi: các địa chỉ được NAT
+```
+Router (config) # access-list [access-list-number-permit] source [source-wildcard]
+```
+Thiết lập mối quan hệ giữa địa chỉ nguồn đã được xác định trong ACL với dải địa chỉ đại diện ra bên ngoài.
+```
+Router (config) # ip nat inside source list <acl-number> pool <name>
+```
+Xác định các cổng kết nối vào mạng nội bộ
+```
+Router (config-if) # ip nat inside
+```
+Xác định các cổng kết nối ra bên ngoài
+```
+Router (config-if) # ip nat outside
+```
