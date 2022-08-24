@@ -112,9 +112,9 @@ Ý nghĩa của địa chỉ private: được sử dụng để bảo tô�
   
 ### Địa chỉ Broadcast
 Gồm 2 loại:
-  – Direct broadcast: ví dụ như 192.168.1.255.
-  – Local broadcast: 255.255.255.255.
-
++ Direct broadcast: ví dụ như 192.168.1.255.
++ Local broadcast: 255.255.255.255.
+  
 Để phân biệt hai loại địa chỉ này, ta xét ví dụ sau:
 ```
 Xét host có địa chỉ IP là 192.168.2.1. Khi host này gửi broadcast đến 255.255.255.255, tất cả các host thuộc mạng 192.168.2.0 sẽ nhận được gói broadcast này, còn nếu nó gửi broadcast đến địa chỉ 192.168.1.255 thì tất cả các host thuộc mạng 192.168.1.0 sẽ nhận được gói broadcast (các host thuộc mạng 192.168.2.0 sẽ không nhận được gói broadcast này).
@@ -152,7 +152,9 @@ Các subnet-mask chuẩn của các địa chỉ lớp A, B, C:
 ### Prefix length
 Một cách khác để xác định địa chỉ IP là sử dụng số prefix – length. Số prefix – length là số bit mạng trong một địa chỉ IP. Giá trị này được viết ngay sau địa chỉ IP và ngăn cách bởi dấu “/”.
 ```
-Ví dụ:    192.168.1.1/24
+Ví dụ:    
+
+192.168.1.1/24
 
 172.168.2.1/16
 
