@@ -1,6 +1,16 @@
+# Mục lục 
+
+[IPv6](#ipv6)
+
+[Cấu trúc Ipv6](#cautruc)
+
+[Chế độ địa chỉ](#chedo)
+
+<a name="ipv6"><a/>
 # IPv6
 IPv6 (Internet protocol version 6) là thể hệ địa chỉ Internet phiên bản mới hoạt động trên Layer 3,được thiết kế để thay thế cho phiên bản địa chỉ IPv4 trong hoạt động Internet. Vậy cấu trúc, địa chỉ của IPv6 là gì, nó có gì vượt trội hơn IPv4 mà lại được thúc đẩy để giải quyết vấn đề cạn kiệt địa chỉ cũng như những thiếu sót của IPv4 trong thời đại công nghệ như hiện nay.
 
+<a name="cautruc"><a/>
 # Cấu trúc IPv6
 
 Trong IPV6, thay vì sử dụng một địa chỉ nguồn và đích là 32bit để cung cấp khoảng 4.294.967.296 (232) địa chỉ  như IPv4, địa chỉ IPv6 có chiều dài 128bit, do đó độ dài của IP sẽ lớn hơn,tương đương với việc số địa chỉ được tạo ra từ bội số 128bit sẽ lớn hơn rất nhiều ,có thể lên đến 3.4x1038 địa chỉ.Ngoài ra,có một vài sự khác nhau trong cách biểu diễn địa chỉ của IPv6, một địa chỉ IPv6 thường được viết thành 8 nhóm, mỗi nhóm gồm có 4 số hex và mỗi nhóm được tách biệt với nhau bằng dấu “:”. 
@@ -31,6 +41,7 @@ Trong khi địa chỉ Unicast được sử dụng để phân biệt các host
 | 0:0:0:0:0:0:0:0 | ::/0 | Tuyến đường mặc định |
 | 0:0:0:0:0:0:0:1/128 | ::1/128 | Địa chỉ Loopback |
 
+<a name="chedo"><a/>
 # Chế độ địa chỉ
 Trong mạng máy tính, các chế độ địa chỉ đề cập đến việc lưu trữ một địa chỉ trên mạng. IPv6 cung cấp một số chế độ địa chỉ mà theo đó một máy chủ có thể được xử lý như: Unicast, Multicast và Anycast.
 
