@@ -10,6 +10,16 @@ NAT (Network Address Translation) giống như một Router, chuyển tiếp cá
 
 NAT cũng có thể coi như một Firewall (tường lửa) cơ bản. NAT duy trì một bảng thông tin về mỗi gói tin được gửi qua. Khi một máy tính trên mạng kết nối đến 1 website trên Internet header của địa chỉ IP nguồn được thay thế bằng địa chỉ Public đã được cấu hình sẵn trên NAT sever, sau khi có gói tin trở về NAT dựa vào bảng record mà nó đã lưu về các gói tin, thay đổi địa chỉ IP đích thành địa chỉ của PC trong mạng và chuyển tiếp đi. Thông qua cơ chế đó quản trị mạng có khả năng lọc các gói tin được gửi đến hay gửi từ một địa chỉ IP và cho phép hay ngăn truy cập đến một port cụ thể.
 
+# Cơ chế hoạt động của NAT
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/111716161/186326800-8127b6ba-a7f5-475d-aa92-52afcc93bf40.png"/>
+ </p>
+ 
+NAT hoạt động giống như một Router dùng để chuyển tiếp các gói tin giữa những lớp mạng khác nhau trên một mạng lớn. Khi gói tin đi qua Router, NAT dịch hay thay đổi một hoặc cả hai địa chỉ bên trong gói tin đó. Thông thường NAT thường thay đổi địa chỉ thường là địa chỉ riêng (IP Private) của một kết nối mạng thành địa chỉ công cộng (IP Public).
+
+NAT cũng được xem như một tường lửa cơ bản, duy trì một bảng thông tin về mỗi gói tin được gửi qua. Khi một máy tính trên mạng kết nối đến 1 website trên Internet header của địa chỉ IP nguồn được thay thế bằng địa chỉ Public đã được cấu hình sẵn trên NAT sever, sau khi có gói tin trở về NAT dựa vào bảng record mà nó đã lưu về các gói tin, thay đổi địa chỉ IP đích thành địa chỉ của PC trong mạng và chuyển tiếp đi. Thông qua cơ chế đó quản trị mạng có khả năng lọc các gói tin được gửi đến hay gửi từ một địa chỉ IP và cho phép hay ngăn truy cập đến một port cụ thể.
+
+
 # Các thuật ngữ liên quan đến NAT
 
 - Địa chỉ inside local: Đây là địa chỉ IP được đặt cho 1 thiết bị ở mạng nội bộ bên trong. Nó không được cung cấp bởi NIC (Network Information Center).
@@ -68,3 +78,63 @@ Xác định các cổng kết nối ra bên ngoài
 ```
 Router (config-if) # ip nat outside
 ```
+## NAT Overload
+Nat Overload là một dạng của Dynamic NAT, nó thực hiện ánh xạ nhiều địa chỉ IP thành một địa chỉ (many - to - one) và sử dụng các địa chỉ số cổng khác nhau để phân biệt cho từng chuyển đổi. NAT Overload còn có tên gọi là PAT (Port Address Translation).
+
+Chỉ số cổng được mã hóa 16 bit, do đó có tới 65536 địa chỉ nội bộ có thể được chuyển đổi sang một địa chỉ công cộng.
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/111716161/186325739-951de4cf-a009-462a-96e6-ccd173f15eec.png"/>
+ </p>
+ 
+### Cấu hình NAT Overload
+Xác định dãy địa chỉ bên trong cần chuyển dịch ra ngoài (private ip addresses range)
+```
+Router (config) # access-list <ACL-number> permit <source> <wildcard>
+```
+Cấu hình chuyển đổi địa chỉ IP sang cổng nối ra ngoài
+```
+Router (config) # ip nat inside source list <ACL-number> interface <interface> overload
+```
+Xác định các cổng nối vào mạng bên trong và nối ra mạng bên ngoài
+
+Đối với các cổng nối vào mạng bên trong:
+```
+Router (config-if) # ip nat inside
+```
+Đối với nối ra mạng bên ngoài:
+```
+Router (config-if) # ip nat outside
+```
+# Các lệnh kiểm tra cấu hình NAT
+Hiển thị bảng NAT đang hoạt động
+```
+R#show ip nat translation
+```
+Hiển thị trạng thái hoạt động của NAT
+```
+R#show ip nat statistics
+```
+Xóa bảng NAT
+```
+R#clear ip nat translation
+```
+Kiểm tra hoạt động của NAT, hiển thị các thông tin chuyển đổi NAT bởi router.
+```
+R#debug ip nat
+```
+Tóm lại, Static NAT được sử dụng để ánh xạ địa chỉ theo kiểu “one-to-one” và được chỉ định bởi người quản trị. Dynamic NAT là kiểu chuyển dịch địa chỉ dạng “one-to-one” một cách tự động. NAT Overload là kiểu chuyển dịch địa chỉ dạng “many-to-one” một cách tự động, sử dụng các chỉ số cổng (port) để phân biệt cho từng chuyển dịch.
+
+# Ưu, nhược điểm của NAT
+### Ưu điểm
+
+- Tiết kiệm địa chỉ IPv4: Lượng người dùng truy cập internet ngày càng tăng cao. Điều này dẫn đến nguy cơ thiếu hụt địa chỉ IPv4. Kỹ thuật NAT sẽ giúp giảm thiểu được số lượng địa chỉ IP cần sử dụng.
+- Giúp che giấu IP bên trong mạng LAN.
+- NAT có thể chia sẻ kết nối internet cho nhiều máy tính, thiết bị di động khác nhau trong mạng LAN chỉ với một địa chỉ IP public duy nhất.
+- NAT giúp nhà quản trị mạng lọc được các gói tin đến và xét duyệt quyền truy cập của IP public đến 1 port bất kỳ.
+
+### Nhược điểm 
+- CPU sẽ phải kiểm tra và tốn thời gian để thay đổi địa chỉ IP. Điều này làm tăng độ trễ trong quá trình switching. Làm ảnh hưởng đến tốc độ đường truyền của mạng internet.
+- Vì các máy chủ bên trong mạng đôi khi không thể truy cập được, một số ứng dụng có xu hướng gặp vấn đề về khả năng tương thích với NAT
+Vì giá trị bên trong các tiêu đề được thay đổi trong NAT, các giao thức đường hầm như IPSec có thể phức tạp để sử dụng. Bất cứ khi nào các giá trị bên trong tiêu đề được sửa đổi, việc kiểm tra tính toàn vẹn sẽ bị can thiệp khiến chúng không thành công.
+- NAT có khả năng che giấu địa chỉ IP trong mạng LAN nên kỹ thuật viên sẽ gặp khó khăn khi cần kiểm tra nguồn gốc IP hoặc truy tìm dấu vết của gói tin.
+- NAT cần kiểm tra tất cả các gói dữ liệu đến và đi chuyển đổi địa chỉ IP cục bộ và toàn cầu. Điều này làm cho tất cả các chi tiết dịch được lưu trữ bên trong bộ nhớ. Do đó, rất nhiều bộ nhớ cũng như bộ xử lý được sử dụng bởi NAT.
