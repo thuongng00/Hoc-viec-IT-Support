@@ -31,6 +31,7 @@ Trong khi địa chỉ Unicast được sử dụng để phân biệt các host
 | 0:0:0:0:0:0:0:0 | ::/0 | Tuyến đường mặc định |
 | 0:0:0:0:0:0:0:1/128 | ::1/128 | Địa chỉ Loopback |
 
+# Chế độ địa chỉ
 Trong mạng máy tính, các chế độ địa chỉ đề cập đến việc lưu trữ một địa chỉ trên mạng. IPv6 cung cấp một số chế độ địa chỉ mà theo đó một máy chủ có thể được xử lý như: Unicast, Multicast và Anycast.
 
 ### Địa chỉ Unicast
