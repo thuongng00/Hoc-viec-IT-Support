@@ -1,11 +1,30 @@
+# Mục lục 
+
+[IPv4 là gì?](#ipv4)
+
+[Cấu trúc của địa chỉ IPv4](#cautruc)
+
+[Phân lớp địa chỉ IPv4](#phanlop)
+
+[Phân loại địa chỉ IP](#phanloai)
+
+[Địa chỉ Broadcast, Subnet mask, số prefix length](#diachi)
+
+[Những điểm hạn chế của IPv4](#hanche)
+
+[Cách chia địa chỉ IPv4](#cachchia)
+
 # IPv4
+<a name="ipv4"><a/>
 ## IPv4 là gì?
+  
 IPv4 là phiên bản IP thế hệ thứ 4, nó được sử dụng nhiều nhất hiện nay bên cạnh IPv6. Hai phiên bản IP này là yếu tố chủ chốt cho việc giao tiếp giữa các thiết bị trong mạng internet.
 
 IPv4 được ra mắt vào năm 1981 trong phiên bản RFC 791 và đã được bộ quốc phòng Hoa Kỳ chuẩn hóa trong phiên bản MIL-STD-1777.
 
 IPv4 được ứng dụng trong các hệ thống chuyển mạch gói. Vai trò của nó là định hướng dữ liệu truyền đi. Khi truyền đi các gói tin, giao thức này chỉ đảm bảo phần truyền tải mà không để ý đến thứ tự truyền gói tin hoặc vấn đề gói tin có đến đích hay không, có lặp lại ở máy đích hay không. Vấn đề này sẽ được giải quyết ở tầng cao hơn của hệ thống TCP/IP. Một điều mà IPv4 đảm bảo được đó là tính toàn vẹn dữ liệu bằng cách sử dụng kết quả của việc chạy thuật toán Checksum để kiểm tra.
 
+  <a name="cautruc"><a/>
 ## Cấu trúc của địa chỉ IPv4
 Về cấu tạo, địa chỉ IPv4 sẽ có 32 bit và được biểu diễn thành một dãy số nhị phân và chia thành 4 cụm. Mỗi cụm như vậy sẽ gọi là octet. Mỗi octet sẽ là 8 bit và chúng được ngăn cách bằng dấu chấm (.).
 
@@ -20,7 +39,9 @@ Việc đặt địa chỉ IP phải tuân theo các quy tắc sau:
 - Nếu đặt tất cả các bit ở phần host bằng 0 thì số cuối cùng của địa chỉ IP sẽ bằng 0. Khi đó địa chỉ đó là một địa chỉ mạng, không thể dùng làm host. Ví dụ: 191.168.10.0 là một địa chỉ mạng.
 - Nếu đặt tất cả các bit ở phần host là 1 thì số cuối cùng của địa chỉ IP là 255. Khi đó địa chỉ này sẽ là một địa chỉ broadcast của mạng đó. Ví dụ: 192.168.10.255 là một địa chỉ broadcast.
 
+  <a name="phanlop"><a/>
 ## Phân lớp địa chỉ IPv4
+    
 Dựa vào cách chọn địa chỉ mạng mà địa chỉ IP được phân thành 5 lớp A, B, C, D, E. Đặc điểm của các lớp như sau:
 ### Lớp A
 
@@ -71,9 +92,10 @@ Các host chỉ có thể sử dụng địa chỉ IP trong 3 lớp A, B, C. Đ�
 - Lớp D từ 224 đến 239.
 - Lớp E từ 240 đến 255.
 
+<a name="phanloai"><a/>
 ## Phân loại địa chỉ IP
+      
 Địa chỉ IP được phân thành 2 loại: *private* và *public*.
-
 - Private: chỉ được sử dụng trong mạng nội bộ (mạng LAN), không được định tuyến trên môi trường Internet. Có thể được sử dụng lặp lại trong các mạng LAN khác nhau.
 - Public: là địa chỉ được sử dụng cho các gói tin đi trên môi trường Internet, được định tuyến trên môi trường Internet. Địa chỉ public phải là duy nhất cho mỗi host tham gia vào Internet.
 
@@ -85,12 +107,13 @@ Kỹ thuật NAT (Network Address Translation) được sử dụng để ch
 
 Ý nghĩa của địa chỉ private: được sử dụng để bảo tồn địa chỉ public.
 
+<a name="diachi"><a/>
 ## Địa chỉ Broadcast, Subnet mask, số prefix length
+  
 ### Địa chỉ Broadcast
 Gồm 2 loại:
-– Direct broadcast: ví dụ như 192.168.1.255
-
-– Local broadcast: 255.255.255.255
+  – Direct broadcast: ví dụ như 192.168.1.255.
+  – Local broadcast: 255.255.255.255.
 
 Để phân biệt hai loại địa chỉ này, ta xét ví dụ sau:
 ```
@@ -136,6 +159,7 @@ Ví dụ:    192.168.1.1/24
 10.0.0.8/8
 ```
 
+  <a name="hanche"><a/>
 ## Những điểm hạn chế của IPv4
 Vấn đề lớn nhất mà IPv4 không thể giải quyết được đó là tính bảo mật. Cấu trúc của IPv4 không có bất kỳ cách bảo mật nào và nó cũng không có công cụ nào để mã hóa dữ. Do đó khi liên lạc giữa các host sẽ không được bảo mật, nếu có thì chỉ ở mức tầng ứng dụng. Việc sử dụng IPSec để bảo mật cũng chỉ áp dụng được ở tầng 3 (Network layer) của mô hình OSI và chỉ có thể bảo mật lưu lượng truyền đi giữa các mạng.
 
@@ -143,6 +167,7 @@ Một hạn chế nữa của IPv4 đó là số lượng địa chỉ IP bị h
 
 Bạn có thể lên một số web để kiểm tra địa chỉ IP ví dụ như https://whatismyipaddress.com/. Khi đó bạn sẽ thấy hiện ra địa chỉ cả phiên bản IPv4 lẫn IPv6. Đây là một hành động nhằm giảm bớt sự ảnh hưởng của IPv4 để có thể dễ dàng thay thế bằng IPv6.
 
+<a name="cachchia"><a/>
 ## Cách chia địa chỉ IPv4
 ### 1. Đổi số nhị phân sang thập phân và ngược lại
 Hệ thập phân (hệ đếm cơ số 10) là 1 số có thể được ráp nối lại bởi 10 chữ số khác nhau (0 -> 9). Vd: 192, 128,…
@@ -150,7 +175,7 @@ Hệ thập phân (hệ đếm cơ số 10) là 1 số có thể được ráp n
 Hệ nhị phân (hay hệ đếm cơ số 2) là một hệ đếm chỉ dùng hai ký tự là 0 và 1 để biểu đạt một giá trị số. Vd: 100, 010,1000100,…
 
 + Cách đổi từ hệ nhị phân sang thập phân
-+ 
+
 Xếp các bit nhị phân vào bảng trên và xét vị trí nào có bit 1 thì ta lấy các số ở vị trí đó cộng lại với nhau sẽ ra số thập phân cần tìm.
 
 Ví dụ như ta muốn đổi từ 192 và 168 sang hệ nhị phân, ta làm như sau
@@ -160,6 +185,7 @@ Ví dụ như ta muốn đổi từ 192 và 168 sang hệ nhị phân, ta làm n
  </p>
 
 + Đổi thập phân sang nhị phân
+  
 Cách đổi trên có thể tóm gọn như sau: Đầu tiên bắt đầu ta lấy 128 so sánh với số cần đổi (SCĐ), tiếp đó ta cứ cộng dồn 128 với các số sau theo nguyên tắc:
 
 Nếu kết quả cộng dồn đó SCĐ thì bit tương ứng bên dưới sẽ là 0 và ta sẽ ta bỏ số cộng dồn đó ra (nhưở phép đổi 168 là ta bỏ 2 số 64 và 16).
