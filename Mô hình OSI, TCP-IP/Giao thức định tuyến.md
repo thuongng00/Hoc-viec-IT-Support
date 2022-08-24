@@ -3,5 +3,85 @@
 Định tuyến (Routing) là quá trình tìm kiếm và xác định đường đi tốt nhất trên một mạng máy tính để gói tin tới được đích thông qua các thiết bị định tuyến.
 
 Để làm được điều đó thì các thiết bị định tuyến cần phải dựa vào thông tin bẳng định tuyến (Routing Table) và giao thức định tuyến ( Routing Protocol).
+
+## Giao thức định tuyến
+
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/111716161/186310370-4efd3cd5-97be-458b-80d2-9125d6166e36.png"/>
+ </p>
+ 
+- Giao thức định tuyến được dùng trong khi thực hiện giải thuật/ thuật toán định tuyến để trao đổi thông tin giữa các mạng, cho phép các router xây dựng bảng định tuyến một cách linh hoạt. 
+    - Thu thập thông tin mạng: topo, tài nguyên. 
+    - Trao đổi dữ liệu giữa các nút trong quá trình tính toán đường đi. 
+    - Thiết lập bản định tuyến. 
+- Các giao thức/ giải thuật định tuyến thường được thực thi bởi các router.
+- Một số ví dụ về các giao thức định tuyến trên mạng Internet là RIP, IGRP, OSPF, BGP, và EIGRP.
+- Một số ví dụ về các giao thức định tuyến trên mạng Mobile wireless ad hoc Networks là AODV, DSR, OLSR.
+
+## Những khái niệm cơ bản liên quan đến định tuyến
+### Bảng định tuyến (routing tables)
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/111716161/186311501-8bbfc28f-f1aa-4e25-9f11-12a0c47234d9.png"/>
+ </p>
+ 
+ - Router sử dụng các giao thức định tuyến để xây dựng, cập nhật và duy trì thông tin trong bảng định tuyến.
+ - Các thông tin thông thường gồm:
+     - **Protocol type** - đặc tả giao thức định tuyến sử dụng để xây dựng mỗi phần tử trong bảng định tuyến.
+     - **Next-hop associations** - thông tin về router kế tiếp khi sử dụng chức năng chuyển tiếp gói tin. 
+     - **Routing metric** được sử dụng làm đơn vị cho tiêu chí định tuyến. Ví dụ RIP sử dụng hop count làm đơn vị định tuyến duy nhất; IGRP sử dụng băng thông, tải, trễ, và đơn vị tin cậy để tạo ra một đơn vị định tuyến riêng.
+### Đơn vị tiêu chí định tuyến
+- Bandwidth (Băng thông).
+- Delay (Trễ): Thời gian tối đa để gửi một gói tin trên một đường dẫn giữa 2 thiết bị đầu cuối.
+- Load (Tải): Tần suất hoạt động của tài nguyên mạng nào đó, ví dụ router hay đường dẫn mạng.
+- Reliability (độ tin cậy): Thường được đánh giá bằng khả năng chịu lỗi trên một đường dẫn mạng.
+- Hop count: số lượng bước trung chuyển từ nguồn tới đích.
+- Ticks: độ trễ của gói tin sử dụng IBM PC clock ticks. Một tick xấp xỉ 1/18 giây.
+- Cost: chi phí, thông thường dựa trên dung lượng/ lưu lượng dữ liệu gửi qua routers. 
+
+## Yêu cầu về giao thức định tuyến
+Cơ sở thiết kế các giao thức định tuyến: 
+- Optimization (Tối ưu): Đường đi của gói tin phải được tối ưu hóa dựa trên các đơn vị định tuyến được lựa chọn. 
+- Simplicity & low overhead (Đơn giản và chi phí điều khiển thấp): Các giao thức đinh tuyến được thiết kế đơn giản, hiệu quả sẽ mang lại chi phí tính toán thấp, tối ưu hóa bộ nhớ sử dụng sẽ rất hiệu quả khi mạng vận hành có quy mô lớn. 
+- Robustness & stability: các giao thức định tuyến phải được thiết kế với sự ổn định cao.
+- Flexibility (mềm dẻo): các giao thức định tuyến phải được thiết kế một cách mềm dẻo, linh hoạt để thích ứng nhanh với sự thay đổi topology hay các đặc tính riêng của mạng (băng thông, trễ, link-state, etc).
+- Rapid convergence: các giao thức định tuyến phải được thiết kế để quá trình tìm đường nhanh chóng hội tụ.
+
+***Phân loại theo cách xây dựng gồm 2 loại: Định tuyến động (Dynamic Route) và định tuyến tĩnh (Static route).***
 # Giao thức định tuyến động
+Định tuyến động là phương thức tự động chia sẻ, trao đổi thông tin giữa các thiết bị định tuyến dựa trên các giao thức định tuyến động.
+Tự động cập nhật thông tin bảng định tuyến nếu hệ thống có sự thay đổi.
+Tính toán và đưa ra tuyến đường chuyển thông tin tốt nhất.
+## Mục đích của định tuyến động
+
+Trong một mạng rất lớn có rất nhiều bộ định tuyến như mạng Internet, việc cập nhật bảng định tuyến bằng tay là không thể, vì vậy cần phải có giao thức định tuyến, giao thức định tuyến cho phép các Router xây dựng bảng định tuyến một cách linh hoạt đó là:
+
+- Khám phá mạng từ xa.
+- Duy trì việc cập nhật thông tin định tuyến.
+- Tính toán và chọn tuyến đường đi tốt nhất đến đích.
+- Nếu tuyến đường chuyển thông tin chính bị lỗi, tự tính toán và đưa ra tuyến đường chuyển thông tin backup.
+## Phân loại định tuyến động
+
+- Exterior Gateway Protocols: có giao thức BGP
+- Interior Gateway Protocols: Distance Vector Protocols và Link- State Protocols.
+- Giao thức Distance Vector: có giao thức RIPv1, RIPv2 và IGRP, EIGRP.
+- Giao thức Link- State: có giao thức OSPF và IS-IS
 # Giao thức định tuyến tĩnh
+Định tuyến tĩnh là phương pháp định tuyến theo phương thức người quản trị khai báo thông tin định tuyến cho thiết bị định tuyến theo phương thức thủ công.
+## Ưu, nhược điểm
+### Ưu điểm:
+- Sử dụng ít băng thông hơn so với các phương thức định tuyến khác.
+- Không tiêu tốn tài nguyên để tính toàn và phân tích gói tin định tuyến.
+- Dễ dàng triển khai, cấu hình.
+- Có tính bảo mật tốt hơn.
+### Nhược điểm:
+- Không có khả năng tự động cập nhật đường đi.
+- Phải cấu hình thủ công khi mạng có sự thay đổi.
+- Khả năng mở rộng kém, phù hợp với mô hình mạng nhỏ.
+### Những trường hợp sử dụng định tuyến tĩnh:
+- Đường truyền có băng thông thấp.
+- Người quản trị cần kiểm soát các kết nối trong hệ thống.
+- Hệ thống co các tuyến kết nối ít.
+- Kết nối dùng định tuyến tĩnh là đường dự phòng cho đường kết nối dùng giao thức định tuyến động.
+- Phương thức triển khai định tuyến tĩnh: Next hop hoặc Exit Interface.
+   - Next hop: thông tin sẽ chuyển đến Router kế tiếp nào trước khi đến đích.
+   - Exit Interface: thông tin sẽ được đưa ra cổng nào trước khi đến đích.
