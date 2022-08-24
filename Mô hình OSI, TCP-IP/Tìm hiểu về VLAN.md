@@ -6,7 +6,7 @@
 
 [Phân loại VLAN](#phanloai)
 
-[Khi nào bạn cần có một VLAN?](#khinaocanvlan)
+[Ứng dụng của VLAN?](#ungdung)
 
 [Cách hoạt động của VLAN](#hoatdong)
 
@@ -63,8 +63,8 @@ Thông thường mạng VLAN được chia làm 3 loại chính đó là:
 
 Cách cấu hình này cũng tương tự với VLAN dựa trên địa chỉ MAC nhưng nó lại sử dụng địa chỉ IP thay cho địa chỉ MAC. Và cách cấu hình này không được thông dụng cho lắm.
 
-<a name="khinaocanvlan"><a/>
-## Khi nào bạn cần phải có một VLAN?
+<a name="ungdung"><a/>
+## Ứng dụng của VLAN?
 Trước khi tạo ra VLAN bạn cần cân nhắc việc sử dụng VLAN trong các trường hợp sau:
 - Bạn đang có hơn 200 máy tính trong mạng LAN.
 - Lưu lượng quảng bá (broadcast traffic) nằm trong mạng LAN của bạn quá lớn.
