@@ -1,4 +1,21 @@
+# Mục lục
+
+[Vlan là gì?](#vlan)
+
+[Mục đích của một VLAN](#mucdich)
+
+[Phân loại VLAN](#phanloai)
+
+[Khi nào bạn cần có một VLAN?](#khinaocanvlan)
+
+[Cách hoạt động của VLAN](#hoatdong)
+
+[Cách thiết lập VLAN](#thietlap)
+
+
 # VLAN
+
+<a name="vlan"><a/> 
 ## VLAN là gì?
 LAN là một mạng cục bộ, đây là từ viết tắt của Local Area Network. Từ này được định nghĩa là tất cả các máy tính trong cùng một miền quảng bá (Broadcast domain). Các router ( bộ định tuyến) dùng để chặn tin quảng bá, trong khi switch (bộ chuyển mạch) chỉ định tiếp chúng. 
 
@@ -12,6 +29,7 @@ Tất cả các cổng trong một mạng VLAN đơn sẽ thuộc một miền q
 
 Đối với Network thì: VLAN = Broadcast domain= Logical Network , còn với switch thì sẽ là: VLAN = Logical switch.
 
+<a name="mucdich"><a/>
 ## Mục đích của một VLAN
 Trong công nghệ mạng LAN, VLAN giữ vị trí rất quan trọng. Những kỹ sư mạng dùng VLAN với nhiều mục đích khác nhau. Dưới đây là một số lợi ích mà mạng LAN ảo mang lại cho người dùng:
 
@@ -28,6 +46,8 @@ Phân vùng VLAN là một cách để bảo mật khi các thiết bị ở nh�
 *Quản lý dễ dàng*
 
 Sử dụng VLAN để nhóm các thiết bị có điểm chung lại với nhau giúp quản trị viên quản lý dễ dàng. Chẳng hạn như họ có thể cài các máy tính kế toán trên một VLAN, máy tính nguồn nhân lực ở một VLAN khác…
+
+<a name="phanloai"><a/>
 ## Phân loại VLAN
 
 Thông thường mạng VLAN được chia làm 3 loại chính đó là:
@@ -43,6 +63,7 @@ Thông thường mạng VLAN được chia làm 3 loại chính đó là:
 
 Cách cấu hình này cũng tương tự với VLAN dựa trên địa chỉ MAC nhưng nó lại sử dụng địa chỉ IP thay cho địa chỉ MAC. Và cách cấu hình này không được thông dụng cho lắm.
 
+<a name="khinaocanvlan"><a/>
 ## Khi nào bạn cần phải có một VLAN?
 Trước khi tạo ra VLAN bạn cần cân nhắc việc sử dụng VLAN trong các trường hợp sau:
 - Bạn đang có hơn 200 máy tính trong mạng LAN.
@@ -54,6 +75,7 @@ Ví dụ như: một công ty sử dụng điện thoại VoIP và một số ng
 
 Hoặc trường hợp chỉ để chuyển đổi một switch đơn thành nhiều switch ảo khác.
 
+<a name="hoatdong"><a/>
 ## Cách hoạt động của VLAN
 
 <p align = "center">
@@ -65,6 +87,7 @@ Hoặc trường hợp chỉ để chuyển đổi một switch đơn thành nhi
 - Tiếp đến, switch sẽ cho phép dữ liệu cần được gửi giữa các port khác nhau có cùng một Virtual LAN.
 - Vì hầu hết các mạng đều có nhiều hơn là chỉ một switch duy nhất. Vì vậy, cần có một cách nào đó để có thể gửi lưu lượng giữa hai switch trong mạng. Cách đơn giản nhất chính là gán một port trên mỗi switch của Virtual LAN và chạy một cable giữa chúng.
 
+<a name="thietlap"><a/>
 ## Cách thiết lập VLAN
 Trong phần cuối cùng, hãy cùng tìm hiểu xem cách thiết lập VLAN:
 
