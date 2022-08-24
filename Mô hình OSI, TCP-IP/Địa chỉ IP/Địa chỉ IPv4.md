@@ -1,5 +1,3 @@
-# Mục lục
-
 # IPv4
 ## IPv4 là gì?
 IPv4 là phiên bản IP thế hệ thứ 4, nó được sử dụng nhiều nhất hiện nay bên cạnh IPv6. Hai phiên bản IP này là yếu tố chủ chốt cho việc giao tiếp giữa các thiết bị trong mạng internet.
