@@ -12,6 +12,7 @@
 [Giao thức định tuyến động](#dynamic)
 - [Mục đích của giao thức định tuyến động](#mucdich)
 - [Phân loại giao thức định tuyến động](#phanloai)
+
 [Giao thức định tuyến tĩnh](#static)
 - [Ứng dụng của giao thức định tuyến tĩnh](#ungdung)
 - [Ưu, nhược điểm](#uunhuoc)
@@ -88,6 +89,8 @@ Trong một mạng rất lớn có rất nhiều bộ định tuyến như mạn
 - Duy trì việc cập nhật thông tin định tuyến.
 - Tính toán và chọn tuyến đường đi tốt nhất đến đích.
 - Nếu tuyến đường chuyển thông tin chính bị lỗi, tự tính toán và đưa ra tuyến đường chuyển thông tin backup.
+  
+<a name="phanloai"><a/>
 ## Phân loại giao thức định tuyến động
 
 - Exterior Gateway Protocols: có giao thức BGP
