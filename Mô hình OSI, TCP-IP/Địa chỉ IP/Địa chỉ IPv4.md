@@ -171,8 +171,11 @@ Nếu kết quả cộng dồn đó = SCĐ thì bit tương ứng bên dưới s
 ### 2. Subneting (chia mạng con)
 Subneting (chia subnet) là tổ hợp những kỹ thuật phân chia không gian địa chỉ của một lớp mạng cho trước thành nhiều lớp mạng nhỏ hơn bằng cách lấy một số bit ở phần Host Address để làm địa chỉ mạng cho mạng con (Subnet).
 
-Công thức tính
-Gọi n là số bit 1 tăng thêm của Subnet Mask (hay còn gọi là số bit mượn). Gọi m là số bit 0 còn lại của Subnet Mask (m = 32 – n – SM hiên tại). Ta làm theo 5 bước sau:
+**Công thức tính**
+
+Gọi n là số bit 1 tăng thêm của Subnet Mask (hay còn gọi là số bit mượn). 
+
+Gọi m là số bit 0 còn lại của Subnet Mask (m = 32 – n – SM hiên tại). Ta làm theo 5 bước sau:
 
 Bước 1: Số Subnet: 2^n.
 
@@ -182,9 +185,9 @@ Bước 3: Bước nhảy: 2^m.
 
 Bước 4: Subnet mask mới: 256 – Bước nhảy.
 
-Bước 5:Các Subnet ID gồm+ Subnet ID đầu tiên = 0+ Subnet ID kế tiếp = Subnet hiện tại + Bước nhảy.
+Bước 5: Các Subnet ID gồm + Subnet ID đầu tiên = 0 + Subnet ID kế tiếp = Subnet hiện tại + Bước nhảy.
 
-Bước 6:Trong Subnet ID.
+Bước 6: Trong Subnet ID.
 
 + Host đầu: Subnet ID + 1.
 + Host cuối: Subnet ID + Bước nhảy – 2.
