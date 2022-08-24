@@ -62,3 +62,7 @@ GUI của mỗi hệ điều hành có giao diện khác nhau, tuy nhiên các h
 **Symbian:** Đã từng là cú hick mạnh đưa Nokia lên đỉnh cao công nghệ.
 
 **BlackBerry OS:** Hệ điều hành có mức độ bảo mật cao nhất.
+
+# Các hệ điều hành được sử dụng trong doanh nghiệp
+
+## Hệ điều hành Zoho One 
