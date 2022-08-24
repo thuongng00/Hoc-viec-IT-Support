@@ -55,7 +55,11 @@ Ví dụ như: một công ty sử dụng điện thoại VoIP và một số ng
 Hoặc trường hợp chỉ để chuyển đổi một switch đơn thành nhiều switch ảo khác.
 
 ## Cách hoạt động của VLAN
-Vậy cách hoạt động của VLAN là gì? Dưới đây là chi tiết về cách thức hoạt động của mạng Virtual LAN:
+
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/111716161/186308512-4704a942-78b9-49cd-b6a3-3cb5ef89246a.png"/>
+ </p>
+ 
 - Các Virtual LAN ở trong mạng được xác định bằng một con số cụ thể.
 - Phạm vi giá trị hợp lệ là 1- 4094. Trên một switch VLAN, ta có thể chỉ định các cổng với số VLAN thích hợp.
 - Tiếp đến, switch sẽ cho phép dữ liệu cần được gửi giữa các port khác nhau có cùng một Virtual LAN.
