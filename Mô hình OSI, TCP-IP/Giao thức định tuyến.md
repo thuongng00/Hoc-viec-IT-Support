@@ -67,17 +67,30 @@ Trong một mạng rất lớn có rất nhiều bộ định tuyến như mạn
 - Giao thức Link- State: có giao thức OSPF và IS-IS
 # Giao thức định tuyến tĩnh
 Định tuyến tĩnh là phương pháp định tuyến theo phương thức người quản trị khai báo thông tin định tuyến cho thiết bị định tuyến theo phương thức thủ công.
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/111716161/186322685-99416298-9785-4ac4-9e17-a6d45c176c3f.png"/>
+ </p>
+ 
+Có thể hiểu đơn giản là router định tuyến dựa trên bảng định tuyến (routing table) và khi ban đầu cấu hình cơ bản cho một  router thì nó sẽ chỉ hiểu được những đường kết nối trực tiếp với nó. Khi một gói tin gửi đến router, nó sẽ xét xem trong bảng định tuyến có thông tin đích nơi gói tin cần đến hay không ? nếu có thông tin đích đến (tức là trong bảng định tuyến có tuyến đường – đích mà gói tin đi đến) thì router sẽ đẩy gói tin theo thông tin đã có trong bảng định tuyến đó và tiếp tục gửi gói tin đi đến đích. Vì vậy nên điều rất quan trọng trong việc định tuyến chính là thông tin trong bảng định tuyến.
+
+Trong nhiều trường hợp, nhân viên quản trị mạng sẽ Định Tuyến Tĩnh, tức là “khai báo” bằng tay cho router biết các tuyến đường có – cần có trong một hệ thống mạng và đưa vào bảng định tuyến của router. Không giống như Định Tuyến Động (Dynamic Routing), Định Tuyến Tĩnh (Static Routing) là cố định và không thay đổi mặc dù trong mạng có những sự thay đổi, trừ khi là do chính người quản trị phải khai báo lại cho router sự thay đổi đó.
+
+## Ứng dụng của định tuyến tĩnh 
+1. Định Tuyến Tĩnh có thể được sử dụng để xác định cổng ra từ một con router khi không có đường khác có sẵn thông tin trong bảng định tuyến. Điều này được gọi là Default Route.
+2. Định Tuyến Tĩnh có thể được sử dụng cho các mạng nhỏ chỉ có một hoặc hai con đường, điều này hiệu quả hơn vì một liên kết sẽ không bị quá lãng phí so với việc trao đổi thông tin trong Định Tuyến Động.
+3. Định Tuyến Tĩnh thường được sử dụng giúp chuyển thông tin định tuyến từ một giao thức định tuyến khác (routing redistribution).
+
 ## Ưu, nhược điểm
-### Ưu điểm:
+### Ưu điểm
 - Sử dụng ít băng thông hơn so với các phương thức định tuyến khác.
 - Không tiêu tốn tài nguyên để tính toàn và phân tích gói tin định tuyến.
 - Dễ dàng triển khai, cấu hình.
 - Có tính bảo mật tốt hơn.
-### Nhược điểm:
+### Nhược điểm
 - Không có khả năng tự động cập nhật đường đi.
 - Phải cấu hình thủ công khi mạng có sự thay đổi.
 - Khả năng mở rộng kém, phù hợp với mô hình mạng nhỏ.
-### Những trường hợp sử dụng định tuyến tĩnh:
+## Những trường hợp sử dụng định tuyến tĩnh
 - Đường truyền có băng thông thấp.
 - Người quản trị cần kiểm soát các kết nối trong hệ thống.
 - Hệ thống co các tuyến kết nối ít.
