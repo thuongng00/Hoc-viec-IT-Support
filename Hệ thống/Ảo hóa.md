@@ -21,6 +21,7 @@ Mặc dù hiệu suất của hệ thống ảo này không bằng hiệu suất
 Điều này cho phép linh hoạt hơn, kiểm soát và cách ly bằng cách loại bỏ sự phụ thuộc vào một nền tảng phần cứng nhất định. Mặc dù ban đầu có nghĩa là ảo hóa máy chủ, nhưng khái niệm ảo hóa đã lan rộng đến các ứng dụng, mạng, dữ liệu và máy tính để bàn.
 
 **Quá trình ảo hóa**
+
 Quá trình ảo hóa thực hiện theo các bước được liệt kê bên dưới:
 
 - Người giám sát tách các tài nguyên vật lý ra khỏi môi trường vật lý của chúng.
@@ -69,7 +70,11 @@ Kiểm tra ít phức tạp hơn trong môi trường ảo. Ngay cả khi gây r
 Các bản sao lưu có thể được thực hiện trên cả máy chủ ảo và máy ảo. Snapshots tự động được thực hiện suốt cả ngày để đảm bảo rằng tất cả dữ liệu đều được cập nhật. Hơn nữa, các máy ảo có thể dễ dàng di chuyển giữa nhau và được triển khai lại một cách hiệu quả.
 ### Cải thiện năng suất
 Ít tài nguyên vật lý hơn dẫn đến việc dành ít thời gian hơn cho việc quản lý và bảo trì máy chủ. Các nhiệm vụ có thể mất vài ngày hoặc vài tuần trong môi trường vật chất có thể được thực hiện trong vài phút ở môi trường ảo. Điều này cho phép các nhân viên dành phần lớn thời gian của họ cho các nhiệm vụ hiệu quả hơn, chẳng hạn như tăng doanh thu và thúc đẩy các sáng kiến kinh doanh.
- 
+
+Bên cạnh đó Ảo hóa còn có những nhược điểm sau:
+– Dữ liệu có thể gặp rủi ro: Làm việc trên các phiên bản ảo trên tài nguyên được chia sẻ có nghĩa là dữ liệu được lưu trữ trên tài nguyên của bên thứ ba khiến dữ liệu ở trong tình trạng dễ bị tấn công. 
+– Chi phí đầu tư ban đầu cao.
+
  # Lợi ích khi sử dụng ảo hóa
 - **Máy chủ chuyên dụng:** Ảo hóa cung cấp một cách hiệu quả về chi phí để tách email, cơ sở dữ liệu và máy chủ web, tạo ra một hệ thống toàn diện và đáng tin cậy hơn.
 Nhanh chóng triển khai và tái triển khai: Khi máy chủ vật lý gặp sự cố, máy chủ sao lưu có thể không phải lúc nào cũng sẵn sàng hoặc đã được cập nhật. Cũng có thể không có sẵn hình ảnh hoặc bản sao của máy chủ. Nếu đúng như vậy, thì quá trình triển khai lại có thể tốn nhiều thời gian. Tuy nhiên, nếu trung tâm dữ liệu được ảo hóa, thì quá trình này diễn ra nhanh chóng và khá đơn giản. Các công cụ sao lưu ảo, chẳng hạn như Veeam, có sẵn để đẩy nhanh quá trình này chỉ mất vài phút.
