@@ -15,7 +15,8 @@
 
 # VLAN
 
-<a name="vlan"><a/> 
+<a name="vlan"/>
+
 ## VLAN là gì?
 LAN là một mạng cục bộ, đây là từ viết tắt của Local Area Network. Từ này được định nghĩa là tất cả các máy tính trong cùng một miền quảng bá (Broadcast domain). Các router ( bộ định tuyến) dùng để chặn tin quảng bá, trong khi switch (bộ chuyển mạch) chỉ định tiếp chúng. 
 
@@ -29,25 +30,27 @@ Tất cả các cổng trong một mạng VLAN đơn sẽ thuộc một miền q
 
 Đối với Network thì: VLAN = Broadcast domain= Logical Network , còn với switch thì sẽ là: VLAN = Logical switch.
 
-<a name="mucdich"><a/>
+<a name="mucdich"/>
+
 ## Mục đích của một VLAN
 Trong công nghệ mạng LAN, VLAN giữ vị trí rất quan trọng. Những kỹ sư mạng dùng VLAN với nhiều mục đích khác nhau. Dưới đây là một số lợi ích mà mạng LAN ảo mang lại cho người dùng:
 
-*Cải thiện hiệu quả làm việc*
+**Cải thiện hiệu quả làm việc**
 
 VLAN có thể cải thiện hiệu suất làm việc cho các thiết bị nhờ vào khả năng chia LAN thành các đoạn nhỏ, mỗi đoạn là một vùng quảng bá riêng (broadcast domain). Ví dụ như khi điện thoại, desktop nằm trên một VLAN còn các máy trạm lại nằm một VLAN khác thì điện thoại, desktop sẽ không thấy bất cứ lưu lượng phát sóng nào do máy trạm tạo ra và ngược lại.
 
 Các kỹ sư mạng cũng có thể cài đặt một số quy tắc để xử lý lưu lượng khác nhau trên mỗi VLAN. Chẳng hạn như họ có thể ưu tiên cho phòng hội nghị nơi thường xuyên họp hành lưu lượng lớn hơn để các thiết bị kết nối mạng êm mượt, nhanh chóng.
 
-*Thắt chặt an ninh*
+**Thắt chặt an ninh**
 
 Phân vùng VLAN là một cách để bảo mật khi các thiết bị ở những VLAN khác nhau không thể truy cập vào nhau. Quay trở lại với ví dụ trên, có thể thấy nếu nhóm VLAN của điện thoại và desktop cài đặt quyền truy cập thì máy trạm sẽ không thể kết nối được với những thiết bị này.
 
-*Quản lý dễ dàng*
+**Quản lý dễ dàng**
 
 Sử dụng VLAN để nhóm các thiết bị có điểm chung lại với nhau giúp quản trị viên quản lý dễ dàng. Chẳng hạn như họ có thể cài các máy tính kế toán trên một VLAN, máy tính nguồn nhân lực ở một VLAN khác…
 
-<a name="phanloai"><a/>
+<a name="phanloai"/>
+
 ## Phân loại VLAN
 
 Thông thường mạng VLAN được chia làm 3 loại chính đó là:
@@ -63,7 +66,8 @@ Thông thường mạng VLAN được chia làm 3 loại chính đó là:
 
 Cách cấu hình này cũng tương tự với VLAN dựa trên địa chỉ MAC nhưng nó lại sử dụng địa chỉ IP thay cho địa chỉ MAC. Và cách cấu hình này không được thông dụng cho lắm.
 
-<a name="ungdung"><a/>
+<a name="ungdung"/>
+
 ## Ứng dụng của VLAN
 Trước khi tạo ra VLAN bạn cần cân nhắc việc sử dụng VLAN trong các trường hợp sau:
 - Bạn đang có hơn 200 máy tính trong mạng LAN.
@@ -75,7 +79,8 @@ Ví dụ như: một công ty sử dụng điện thoại VoIP và một số ng
 
 Hoặc trường hợp chỉ để chuyển đổi một switch đơn thành nhiều switch ảo khác.
 
-<a name="hoatdong"><a/>
+<a name="hoatdong"/>
+
 ## Cách hoạt động của VLAN
 
 <p align = "center">
@@ -87,7 +92,8 @@ Hoặc trường hợp chỉ để chuyển đổi một switch đơn thành nhi
 - Tiếp đến, switch sẽ cho phép dữ liệu cần được gửi giữa các port khác nhau có cùng một Virtual LAN.
 - Vì hầu hết các mạng đều có nhiều hơn là chỉ một switch duy nhất. Vì vậy, cần có một cách nào đó để có thể gửi lưu lượng giữa hai switch trong mạng. Cách đơn giản nhất chính là gán một port trên mỗi switch của Virtual LAN và chạy một cable giữa chúng.
 
-<a name="thietlap"><a/>
+<a name="thietlap"/>
+
 ## Cách thiết lập VLAN
 Trong phần cuối cùng, hãy cùng tìm hiểu xem cách thiết lập VLAN:
 
