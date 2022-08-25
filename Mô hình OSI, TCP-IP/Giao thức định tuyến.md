@@ -21,7 +21,7 @@
 <a name="gtdt"/>
 # Giao thức định tuyến
 
-<a name="khainiem"a/>
+<a name="khainiem"/>
 ## Khái niệm về định tuyến
 Định tuyến (Routing) là quá trình tìm kiếm và xác định đường đi tốt nhất trên một mạng máy tính để gói tin tới được đích thông qua các thiết bị định tuyến.
 
