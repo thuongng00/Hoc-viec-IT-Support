@@ -79,6 +79,7 @@ Dynamic NAT được dùng để ánh xạ một địa chỉ IP này sang một
  </p>
  
 ### Cấu hình Dynamic NAT
+
 Xác định dải địa chỉ đại diện bên ngoài (public):các địa chỉ NAT
 ```
 Router (config) # ip nat pool [name start ip] [name end ip] netmask [netmask]/prefix-lenght [prefix-lenght]
@@ -99,6 +100,7 @@ Xác định các cổng kết nối ra bên ngoài
 ```
 Router (config-if) # ip nat outside
 ```
+
 ## NAT Overload
 Nat Overload là một dạng của Dynamic NAT, nó thực hiện ánh xạ nhiều địa chỉ IP thành một địa chỉ (many - to - one) và sử dụng các địa chỉ số cổng khác nhau để phân biệt cho từng chuyển đổi. NAT Overload còn có tên gọi là PAT (Port Address Translation).
 
