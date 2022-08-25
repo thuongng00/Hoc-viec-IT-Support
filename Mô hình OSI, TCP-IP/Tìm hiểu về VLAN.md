@@ -73,6 +73,7 @@ Cách cấu hình này cũng tương tự với VLAN dựa trên địa chỉ MA
 <a name="ungdung"/>
 
 ## Ứng dụng của VLAN
+
 Trước khi tạo ra VLAN bạn cần cân nhắc việc sử dụng VLAN trong các trường hợp sau:
 - Bạn đang có hơn 200 máy tính trong mạng LAN.
 - Lưu lượng quảng bá (broadcast traffic) nằm trong mạng LAN của bạn quá lớn.
@@ -107,11 +108,12 @@ Trong phần cuối cùng, hãy cùng tìm hiểu xem cách thiết lập VLAN:
 - Cấu hình định tuyến giữa các Virtual LAN khi cần. Việc cấu hình hai hay nhiều Virtual LAN giao tiếp với nhau yêu cầu sử dụng một router nhận biết VLAN, hoặc một switch Layer 3.
 
 ### Cấu hình VLAN trên Switch Cisco
-Cấu hình VLAN có thể khác nhau ngay cả giữa các mô hình chuyển mạch Switch Cisco khác nhau.
-- Tạo VLAN mới
-- Đặt mỗi cổng trong VLAN thích hợp
 
-**Bước 1:** Khởi tạo 1 VLAN
+Cấu hình VLAN có thể khác nhau ngay cả giữa các mô hình chuyển mạch Switch Cisco khác nhau.
+- Tạo VLAN mới.
+- Đặt mỗi cổng trong VLAN thích hợp.
+
+**Bước 1:** Khởi tạo 1 VLAN.
 
 Switch#conf t
 
@@ -119,15 +121,15 @@ Enter configuration commands, one per line. End with CNTL/Z.
 
 Switch(config)#int vlan 2
 
-**Bước 2:** Đặt mô tả cho VLAN
+**Bước 2:** Đặt mô tả cho VLAN.
 
 Switch(config-if)#description marketing
 
-**Bước 3:** Đặt IP cho VLAN
+**Bước 3:** Đặt IP cho VLAN.
 
 Switch(config-if)#ip add 192.168.2.1 255.255.255.0
 
-**Bước 4:** Gán Port vào VLAN đã tạo
+**Bước 4:** Gán Port vào VLAN đã tạo.
 
 Switch(config)#interface fastEthernet 0/1
 
