@@ -1,18 +1,34 @@
 # Mục lục
 
-# NAT là gì?
+[NAT](#nat)
+
+[Cơ chế hoạt động của NAT](#coche)
+
+[Các thuật ngữ liên quan đến NAT](#thuatngu)
+
+[Các loại NAT hiện nay](#loai)
+
+[Các lệnh kiểm tra cấu hình NAT](#lenh)
+
+[Ưu, nhược điểm của NAT](#uunhuoc)
+
+# NAT
+## NAT là gì?
 Nat (Network Address Translation) là một kỹ thuật cho phép chuyển đổi từ một địa chỉ IP này thành một địa chỉ IP khác. Thông thường, NAT được dùng phổ biến trong mạng sử dụng địa chỉ cục bộ, cần truy cập đến mạng công cộng (Internet). Vị trí thực hiện NAT là router biên kết nối giữa hai mạng.
 <p align = "center">
   <img src="https://user-images.githubusercontent.com/111716161/186323926-3b4167ec-53b1-4919-a8b2-34bc7f10e53a.png"/>
  </p>
  
-# Nhiệm vụ của NAT 
+## Nhiệm vụ của NAT 
 
 NAT (Network Address Translation) giống như một Router, chuyển tiếp các gói tin giữa những lớp mạng khác nhau trên một mạng lớn. NAT dịch hay thay đổi một hoặc cả hai địa chỉ bên trong một gói tin khi gói tin đó đi qua một Router, hay một số thiết bị khác. Thông thường NAT thường thay đổi địa chỉ thường là địa chỉ riêng (IP Private) của một kết nối mạng thành địa chỉ công cộng (IP Public).
 
 NAT cũng có thể coi như một Firewall (tường lửa) cơ bản. NAT duy trì một bảng thông tin về mỗi gói tin được gửi qua. Khi một máy tính trên mạng kết nối đến 1 website trên Internet header của địa chỉ IP nguồn được thay thế bằng địa chỉ Public đã được cấu hình sẵn trên NAT sever, sau khi có gói tin trở về NAT dựa vào bảng record mà nó đã lưu về các gói tin, thay đổi địa chỉ IP đích thành địa chỉ của PC trong mạng và chuyển tiếp đi. Thông qua cơ chế đó quản trị mạng có khả năng lọc các gói tin được gửi đến hay gửi từ một địa chỉ IP và cho phép hay ngăn truy cập đến một port cụ thể.
 
+<a name="coche"/>
+
 # Cơ chế hoạt động của NAT
+  
 <p align = "center">
   <img src="https://user-images.githubusercontent.com/111716161/186326800-8127b6ba-a7f5-475d-aa92-52afcc93bf40.png"/>
  </p>
@@ -21,6 +37,7 @@ NAT hoạt động giống như một Router dùng để chuyển tiếp các g�
 
 NAT cũng được xem như một tường lửa cơ bản, duy trì một bảng thông tin về mỗi gói tin được gửi qua. Khi một máy tính trên mạng kết nối đến 1 website trên Internet header của địa chỉ IP nguồn được thay thế bằng địa chỉ Public đã được cấu hình sẵn trên NAT sever, sau khi có gói tin trở về NAT dựa vào bảng record mà nó đã lưu về các gói tin, thay đổi địa chỉ IP đích thành địa chỉ của PC trong mạng và chuyển tiếp đi. Thông qua cơ chế đó quản trị mạng có khả năng lọc các gói tin được gửi đến hay gửi từ một địa chỉ IP và cho phép hay ngăn truy cập đến một port cụ thể.
 
+<a name="thuatngu"/>
 
 # Các thuật ngữ liên quan đến NAT
 
@@ -29,8 +46,10 @@ NAT cũng được xem như một tường lửa cơ bản, duy trì một bản
 - Địa chỉ outside local: Đây là địa chỉ IP của một thiết bị nằm ở mạng bên ngoài. Các thiết bị thuộc mạng bên trong sẽ tìm thấy thiết bị thuộc mạng bên ngoài thông qua địa chỉ IP này. Địa chỉ outside local không nhất thiết phải được đăng ký với NIC. Nó hoàn toàn có thể là một địa chỉ Private.
 - Địa chỉ outside global: Đây là địa chỉ IP được đặt cho một thiết bị nằm ở mạng bên ngoài. Địa chỉ này là một IP hợp lệ trên mạng internet.
 
+<a name="loai"/>
+
 # Các loại NAT hiện nay
-Hiện nay NAT được phân chia thành nhiều chủng loại khác nhau. Nhưng nhìn chung kỹ thuật thường bao gồm các loại cơ bản như sau:
+Hiện nay NAT được phân chia thành nhiều chủng loại khác nhau. Nhưng nhìn chung kỹ thuật thường bao gồm các loại cơ bản: Static NAT, Dynamic NAT, NAT Overload.
 
 ## Static NAT
 Static NAT được dùng để chuyển đổi một địa chỉ IP này sang một địa chỉ khác một cách cố định, thông thường là từ một địa chỉ cục bộ sang một địa chỉ công cộng và quá trình này được cài đặt thủ công, nghĩa là địa chỉ ánh xạ và địa chỉ ánh xạ chỉ định rõ ràng tương ứng duy nhất.
@@ -107,6 +126,9 @@ Router (config-if) # ip nat inside
 ```
 Router (config-if) # ip nat outside
 ```
+
+<a name="lenh"/>
+
 # Các lệnh kiểm tra cấu hình NAT
 Hiển thị bảng NAT đang hoạt động
 ```
@@ -125,6 +147,8 @@ Kiểm tra hoạt động của NAT, hiển thị các thông tin chuyển đổ
 R#debug ip nat
 ```
 Tóm lại, Static NAT được sử dụng để ánh xạ địa chỉ theo kiểu “one-to-one” và được chỉ định bởi người quản trị. Dynamic NAT là kiểu chuyển dịch địa chỉ dạng “one-to-one” một cách tự động. NAT Overload là kiểu chuyển dịch địa chỉ dạng “many-to-one” một cách tự động, sử dụng các chỉ số cổng (port) để phân biệt cho từng chuyển dịch.
+
+<a name="uunhuoc"/>
 
 # Ưu, nhược điểm của NAT
 ### Ưu điểm
