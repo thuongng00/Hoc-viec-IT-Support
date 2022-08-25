@@ -80,7 +80,7 @@ Hoặc trường hợp chỉ để chuyển đổi một switch đơn thành nhi
 
 <p align = "center">
   <img src="https://user-images.githubusercontent.com/111716161/186308512-4704a942-78b9-49cd-b6a3-3cb5ef89246a.png"/>
- </p>
+</p>
  
 - Các Virtual LAN ở trong mạng được xác định bằng một con số cụ thể.
 - Phạm vi giá trị hợp lệ là 1- 4094. Trên một switch VLAN, ta có thể chỉ định các cổng với số VLAN thích hợp.
@@ -95,3 +95,30 @@ Trong phần cuối cùng, hãy cùng tìm hiểu xem cách thiết lập VLAN:
 - Chọn dải địa chỉ IP riêng cho để các thiết bị trên VLAN sử dụng.
 - Cấu hình thiết bị switch – động (dynamic) hoặc tĩnh (static). Đối với cấu hình tĩnh, admin mạng cần gán một số VLAN cho từng switch. Còn trong cấu hình động, admin cần gán một danh sách các địa chỉ MAC hoặc username đến số VLAN.
 - Cấu hình định tuyến giữa các Virtual LAN khi cần. Việc cấu hình hai hay nhiều Virtual LAN giao tiếp với nhau yêu cầu sử dụng một router nhận biết VLAN, hoặc một switch Layer 3.
+
+### Cấu hình VLAN trên Switch Cisco
+Cấu hình VLAN có thể khác nhau ngay cả giữa các mô hình chuyển mạch Switch Cisco khác nhau. Mục tiêu của bạn, bất kể lệnh là gì:
+- Tạo VLAN mới
+- Đặt mỗi cổng trong VLAN thích hợp
+
+**Bước 1:** Khởi tạo 1 VLAN
+
+Switch#conf t
+
+Enter configuration commands, one per line. End with CNTL/Z.
+
+Switch(config)#int vlan 2
+
+**Bước 2:** Đặt mô tả cho VLAN
+
+Switch(config-if)#description marketing
+
+**Bước 3:** Đặt IP cho VLAN
+
+Switch(config-if)#ip add 192.168.2.1 255.255.255.0
+
+**Bước 4:** Gán Port vào VLAN đã tạo
+
+Switch(config)#interface fastEthernet 0/1
+
+Switch(config-if)#switchport access vlan 2
