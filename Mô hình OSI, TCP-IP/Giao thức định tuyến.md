@@ -18,16 +18,16 @@
 - [Ưu, nhược điểm](#uunhuoc)
 - [Những trường hợp sử dụng giao thức định tuyến tĩnh](#sudung)
 
-<a name="gtdt"><a/>
+<a name="gtdt"/>
 # Giao thức định tuyến
 
-<a name="khainiem"><a/>
+<a name="khainiem"a/>
 ## Khái niệm về định tuyến
 Định tuyến (Routing) là quá trình tìm kiếm và xác định đường đi tốt nhất trên một mạng máy tính để gói tin tới được đích thông qua các thiết bị định tuyến.
 
 Để làm được điều đó thì các thiết bị định tuyến cần phải dựa vào thông tin bẳng định tuyến (Routing Table) và giao thức định tuyến ( Routing Protocol).
   
-<a name="khainiemcoban"><a/>
+<a name="khainiemcoban"/>
 ## Những khái niệm cơ bản liên quan đến định tuyến
 ### Bảng định tuyến (routing tables)
 <p align = "center">
@@ -48,7 +48,7 @@
 - Ticks: độ trễ của gói tin sử dụng IBM PC clock ticks. Một tick xấp xỉ 1/18 giây.
 - Cost: chi phí, thông thường dựa trên dung lượng/ lưu lượng dữ liệu gửi qua routers. 
 
-<a name="giaothucdinhtuyen"><a/>
+<a name="giaothucdinhtuyen"/>
 ## Giao thức định tuyến
 
 <p align = "center">
@@ -63,7 +63,7 @@
 - Một số ví dụ về các giao thức định tuyến trên mạng Internet là RIP, IGRP, OSPF, BGP, và EIGRP.
 - Một số ví dụ về các giao thức định tuyến trên mạng Mobile wireless ad hoc Networks là AODV, DSR, OLSR.
 
-<a name="yeucau"><a/>
+<a name="yeucau"/>
 ## Yêu cầu về giao thức định tuyến
 Cơ sở thiết kế các giao thức định tuyến: 
 - Optimization (Tối ưu): Đường đi của gói tin phải được tối ưu hóa dựa trên các đơn vị định tuyến được lựa chọn. 
@@ -74,13 +74,13 @@ Cơ sở thiết kế các giao thức định tuyến:
 
 ***Phân loại theo cách xây dựng gồm 2 loại: Định tuyến động (Dynamic Route) và định tuyến tĩnh (Static route).***
 
-<a name="dynamic"><a/>  
+<a name="dynamic"/>  
 # Giao thức định tuyến động
 Định tuyến động là phương thức tự động chia sẻ, trao đổi thông tin giữa các thiết bị định tuyến dựa trên các giao thức định tuyến động.
 Tự động cập nhật thông tin bảng định tuyến nếu hệ thống có sự thay đổi.
 Tính toán và đưa ra tuyến đường chuyển thông tin tốt nhất.
 
-<a name="mucdich"><a/>  
+<a name="mucdich"/>  
 ## Mục đích của giao thức định tuyến động
 
 Trong một mạng rất lớn có rất nhiều bộ định tuyến như mạng Internet, việc cập nhật bảng định tuyến bằng tay là không thể, vì vậy cần phải có giao thức định tuyến, giao thức định tuyến cho phép các Router xây dựng bảng định tuyến một cách linh hoạt đó là:
@@ -90,7 +90,7 @@ Trong một mạng rất lớn có rất nhiều bộ định tuyến như mạn
 - Tính toán và chọn tuyến đường đi tốt nhất đến đích.
 - Nếu tuyến đường chuyển thông tin chính bị lỗi, tự tính toán và đưa ra tuyến đường chuyển thông tin backup.
   
-<a name="phanloai"><a/>
+<a name="phanloai"/>
 ## Phân loại giao thức định tuyến động
 
 - Exterior Gateway Protocols: có giao thức BGP
@@ -98,7 +98,7 @@ Trong một mạng rất lớn có rất nhiều bộ định tuyến như mạn
 - Giao thức Distance Vector: có giao thức RIPv1, RIPv2 và IGRP, EIGRP.
 - Giao thức Link- State: có giao thức OSPF và IS-IS
 
-<a name="static"><a/>  
+<a name="static"/>  
 # Giao thức định tuyến tĩnh
 Định tuyến tĩnh là phương pháp định tuyến theo phương thức người quản trị khai báo thông tin định tuyến cho thiết bị định tuyến theo phương thức thủ công.
 <p align = "center">
@@ -109,13 +109,14 @@ Có thể hiểu đơn giản là router định tuyến dựa trên bảng đ�
 
 Trong nhiều trường hợp, nhân viên quản trị mạng sẽ Định Tuyến Tĩnh, tức là “khai báo” bằng tay cho router biết các tuyến đường có – cần có trong một hệ thống mạng và đưa vào bảng định tuyến của router. Không giống như Định Tuyến Động (Dynamic Routing), Định Tuyến Tĩnh (Static Routing) là cố định và không thay đổi mặc dù trong mạng có những sự thay đổi, trừ khi là do chính người quản trị phải khai báo lại cho router sự thay đổi đó.
 
-<a name="ungdung"><a/>
+<a name="ungdung"/>
+  
 ## Ứng dụng của giao thức định tuyến tĩnh 
 1. Định Tuyến Tĩnh có thể được sử dụng để xác định cổng ra từ một con router khi không có đường khác có sẵn thông tin trong bảng định tuyến. Điều này được gọi là Default Route.
 2. Định Tuyến Tĩnh có thể được sử dụng cho các mạng nhỏ chỉ có một hoặc hai con đường, điều này hiệu quả hơn vì một liên kết sẽ không bị quá lãng phí so với việc trao đổi thông tin trong Định Tuyến Động.
 3. Định Tuyến Tĩnh thường được sử dụng giúp chuyển thông tin định tuyến từ một giao thức định tuyến khác (routing redistribution).
 
-<a name="uunhuoc"><a/>
+<a name="uunhuoc"/>
 ## Ưu, nhược điểm
 ### Ưu điểm
 - Sử dụng ít băng thông hơn so với các phương thức định tuyến khác.
@@ -127,7 +128,7 @@ Trong nhiều trường hợp, nhân viên quản trị mạng sẽ Định Tuy�
 - Phải cấu hình thủ công khi mạng có sự thay đổi.
 - Khả năng mở rộng kém, phù hợp với mô hình mạng nhỏ.
 
-<a name="sudung"><a/>
+<a name="sudung"/>
 ## Những trường hợp sử dụng giao thức định tuyến tĩnh
 - Đường truyền có băng thông thấp.
 - Người quản trị cần kiểm soát các kết nối trong hệ thống.
