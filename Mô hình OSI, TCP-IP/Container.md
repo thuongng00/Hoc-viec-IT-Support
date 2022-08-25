@@ -18,6 +18,6 @@ Nếu một container bị tấn công, các ứng dụng trong các container k
 Các container cho phép các ứng dụng hoạt động cục bộ riêng lẻ giúp đơn giản hóa việc kiểm tra và gỡ lỗi do có một số khác biệt về các ứng dụng đang chạy trên máy trạm, máy chủ thử nghiệm hoặc bất kỳ môi trường sản xuất nào.
 
 ### 4. Tăng tính linh hoạt trên môi trường đám mây Cloud 
-– Sự cô lập của Container cho phép một ứng dụng trong một container chạy ở tốc độ chậm hơn hoặc nhanh hơn ứng dụng trong một container khác. Việc tách rời các hệ thống container này mang lại lợi ích cho người dùng và có thể triển khai theo nhiều cách.
-– Do tốc độ của một ứng dụng trong một hệ thống là độc lập với nhau, nên các ứng dụng có thể chạy trơn tru, tăng tốc độ chung của môi trường đám mây.
-–  Các container tạo điều kiện độc lập nền tảng, hiệu quả tài nguyên và đơn giản hóa hoạt động khi một môi trường lưu trữ đám mây tốt được hỗ trợ bởi một hệ điều hành tự cập nhật một cách nhất quán.
+- Sự cô lập của Container cho phép một ứng dụng trong một container chạy ở tốc độ chậm hơn hoặc nhanh hơn ứng dụng trong một container khác. Việc tách rời các hệ thống container này mang lại lợi ích cho người dùng và có thể triển khai theo nhiều cách.
+- Do tốc độ của một ứng dụng trong một hệ thống là độc lập với nhau, nên các ứng dụng có thể chạy trơn tru, tăng tốc độ chung của môi trường đám mây.
+- Các container tạo điều kiện độc lập nền tảng, hiệu quả tài nguyên và đơn giản hóa hoạt động khi một môi trường lưu trữ đám mây tốt được hỗ trợ bởi một hệ điều hành tự cập nhật một cách nhất quán.
