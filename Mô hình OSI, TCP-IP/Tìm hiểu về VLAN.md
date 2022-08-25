@@ -24,6 +24,10 @@ VLAN được định nghĩa là một mạng LAN ảo và VLAN là từ viết 
 
 Một VLAN được định nghĩa là một nhóm logic bao gồm các thiết bị mạng và được thiết lập dựa trên các yếu tố đó là: chức năng, bộ phận, ứng dụng,… của công ty. Về mặt kỹ thuật thì VLAN là một miền quảng bá được tạo bởi các switch. 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186563319-513e2d11-15f5-45af-8bce-538ed3886187.png"/>
+<p/>
+
 Việc tạo lập ra nhiều mạng LAN ảo trong cùng một mạng cục bộ (giữa các khoa trong một trường học hay giữa các cục trong một công ty,…) giúp giảm thiểu được miền quảng bá, tạo thuận lợi cho việc quản lý một mạng cục bộ rộng lớn. Còn VLAN sẽ tương đương như một mạng con (subnet).
 
 Tất cả các cổng trong một mạng VLAN đơn sẽ thuộc một miền quảng bá duy nhất.
@@ -103,7 +107,7 @@ Trong phần cuối cùng, hãy cùng tìm hiểu xem cách thiết lập VLAN:
 - Cấu hình định tuyến giữa các Virtual LAN khi cần. Việc cấu hình hai hay nhiều Virtual LAN giao tiếp với nhau yêu cầu sử dụng một router nhận biết VLAN, hoặc một switch Layer 3.
 
 ### Cấu hình VLAN trên Switch Cisco
-Cấu hình VLAN có thể khác nhau ngay cả giữa các mô hình chuyển mạch Switch Cisco khác nhau. Mục tiêu của bạn, bất kể lệnh là gì:
+Cấu hình VLAN có thể khác nhau ngay cả giữa các mô hình chuyển mạch Switch Cisco khác nhau.
 - Tạo VLAN mới
 - Đặt mỗi cổng trong VLAN thích hợp
 
