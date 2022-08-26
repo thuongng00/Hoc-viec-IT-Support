@@ -1,7 +1,42 @@
 Để cài đặt hệ điều hành Windows trước tiên ta phải tạo USB Boot hoặc đĩa DVD có chứa file ISO đã tải trên trang chủ của Microsoft khởi động bằng đĩa cài đặt. 
 
 - Link tải Windows 10: https://www.microsoft.com/en-au/software-download/windows10
+
+#### Yêu cầu về hệ thống:
+
+Bộ xử lý: Bộ xử lý có tốc độ 1 gigahertz (GHz) trở lên hoặc SoC
+
+RAM: 1 gigabyte (GB) cho 32 bit hoặc 2 GB cho 64 bit
+
+Dung lượng đĩa cứng: 16 GB cho HĐH 32 bit hoặc 20 GB cho HĐH 64 bit
+
+Cạc đồ họa: DirectX 9 trở lên có trình điều khiển WDDM 1.0
+
+Màn hình: 800 x 600
+
 - Link tải Windows 11: https://www.microsoft.com/en-us/software-download/windows11
+
+#### Yêu cầu về hệ thống: 
+
+Bộ xử lý:	1 gigahertz (GHz) hoặc tốc độ cao hơn có 2 lõi trở lên trên bộ xử lý 64 bit tương thích hoặc Hệ thống trên Chip (SoC).
+
+RAM:	4 gigabyte (GB).
+
+Dung lượng lưu trữ:	Lưu ý về thiết bị lưu trữ 64 GB trở lên
+
+Vi chương trình hệ thống:	UEFI, hỗ trợ Khởi động an toàn. 
+
+TPM:	Mô-đun nền tảng đáng tin cậy (TPM) phiên bản 2.0. 
+
+Card đồ họa:	Tương thích với DirectX 12 trở lên có trình điều khiển WDDM 2.0.
+
+Màn hình hiển thị:	Màn hình độ phân giải cao (720p) lớn hơn 9” theo đường chéo, 8 bit mỗi kênh màu.
+
+Tài khoản Microsoft và kết nối Internet:	Phiên bản Windows 11 Home yêu cầu có kết nối Internet và tài khoản Microsoft.
+
+Việc chuyển thiết bị ra khỏi Windows 11 Home ở chế độ S cũng yêu cầu có kết nối Internet. 
+
+Đối với tất cả phiên bản Windows 11, cần có quyền truy cập Internet để thực hiện cập nhật và tải xuống cũng như tận dụng một số tính năng. Cần có tài khoản Microsoft để sử dụng một số tính năng.
 
 ## *Hướng dẫn tạo USB Boot cài win bằng phần mềm Rufus.*
 
@@ -58,7 +93,6 @@ Hệ thống đang tiến hành cài đặt Windows 10.
 
 ![buoc5-1](https://user-images.githubusercontent.com/111716161/186880557-c8484b70-76d4-43d8-919f-a96027f907c5.png)
 
-
 **Bước 6:** Sau khi cài đặt xong và khởi động lại hệ thống sẽ yêu cầu thiết lập bàn phím, nhấn Next để chuyển sang bước tiếp theo.
 
 ![buoc6](https://user-images.githubusercontent.com/111716161/186880780-d0dd1c21-7502-494d-af2a-f1ef5a9ab53f.png)
@@ -77,11 +111,9 @@ Hệ thống đang tiến hành cài đặt Windows 10.
 
 Điền tên đăng nhập sau đó nhấn Next để tiếp tục. Nếu chưa có nhấn vào mục “Create account” hoặc truy cập trang web: https://signup.live.com/ để tiến hành đăng ký tài khoản mới.
 
-Nhập mật khẩu tương ứng:
+Nhập mật khẩu tương ứng (Nhập mật khẩu Microsoft):
 
 ![buoc9-1](https://user-images.githubusercontent.com/111716161/186880970-8e27a8b9-7c62-4161-9c88-b2e4c7fddc89.png)
-
-Nhập mật khẩu Microsoft
 
 **Bước 10:** “Create PIN” để đăng nhập Windows thay cho password.
 
