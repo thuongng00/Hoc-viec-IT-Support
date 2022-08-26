@@ -2,6 +2,13 @@
 
 Microsoft Windows (hoặc đơn giản là Windows) là tên của một hệ điều hành dựa trên giao diện người dùng đồ hoạ được phát triển và được phân phối bởi Microsoft. Nó bao gồm một vài các dòng hệ điều hành, mỗi trong số đó phục vụ một phần nhất định của ngành công nghiệp máy tính.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186856161-c2161f6b-f362-4bc0-98fb-ac5d02a6c82b.jpg"/>
+<p/>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186856449-80879401-e02a-497b-8ea8-7f5b8d9a2101.png"/>
+<p/>
+
 ## Lịch sử hình thành của Windows
 Phiên bản đầu tiên của hệ điều hành Windows được Microsoft ra mắt vào năm 1985, là hệ điều hành đầu tiên có giao diện đồ hoạ của hãng này, với tên gọi Windows 1.0 – tên mã nội bộ là Interface Manager.
 
@@ -34,11 +41,21 @@ Trước đó, các Windows 9x đều hoạt động như một phần mềm ch�
 
 ### Windows XP trở về sau
 *Windows 7*
+
+<p align="center">
+  <img width = "600" height ="300" src="https://user-images.githubusercontent.com/111716161/186856799-9a3e4323-17a2-49a2-ac9d-e244d7acb0db.jpg"/>
+<p/>
+
 Cải thiện những hạn chế trong Windows Vista, Windows 7 chinh phục người dùng với những tính năng vượt trội trong User Account Control, taskbar, Gadget trực tiếp lên desktop, chế độ Aero Peek, hoạt động Aero Snaps mới.
 
 Windows 7 vẫn được người dùng lựa chọn phổ biến trong những năm gần đây. Vào tháng 1/2020, Microsoft chính thức khai tử Windows 7.
 
 *Windows 8 và 8.1* 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186856958-a760da0d-56ac-4d0d-9caf-60e93ff71a50.jpg"/>
+<p/>
+
 Windows 8 chính thức được phát hành vào ngày 26/11/2012 cùng với nhiều thay đổi so với các hệ điều hành Windows trước đó.
 
 Windows 8/8.1 là một hệ điều hành lai (hybrid OS), có thể hoạt động tốt trên cả thiết bị cảm ứng và không cảm ứng, bỏ đi nút Start, giao diện người dùng đổi từ Metro sang Modern. 
@@ -49,11 +66,20 @@ Khi Windows mới được khởi động, màn hình Start sẽ hiện ra thay 
 
 *Windows 10*
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186857326-0a77f649-380c-4674-9fad-91f0c865b05f.png"/>
+<p/>
+
 Cuối năm 2015 tại San Francisco, Windows 10 được chính thức ra mắt, đánh dấu một đỉnh cao mới: lần đầu tiên các thiết bị cảm ứng hay không đều sử dụng chung được với nhau.
 
 Giao diện được thay đổi, Windows Title được tích hợp vào trong Menustart,  Settings đặc biệt thay thế Control Pannel là những “điểm cộng” xuất sắc của Windows phiên bản mới nhất này. 
 
 *Windows 11*
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/186857561-0d8fc1f8-9bb0-45e0-9d3b-cf8624048da4.jpg"/>
+<p/>
+
 Windows 11 là một hệ điều hành của Microsoft được công bố vào ngày 24 tháng 6 năm 2021, là một phần của họ hệ điều hành Windows NT. Windows 11 được phát hành rộng rãi vào ngày 5 tháng 10 năm 2021 dưới dạng bản nâng cấp miễn phí thông qua Windows Update cho các thiết bị đủ điều kiện chạy Windows 10.
 
 Những điểm mới của Windows 11 như thiết kế lại giao diện, cải thiện tốc độ và hiệu năng cho máy tính hay tính năng Snap Layouts, Snap Group để sắp xếp các cửa sổ, tối ưu hóa không gian làm việc,...
