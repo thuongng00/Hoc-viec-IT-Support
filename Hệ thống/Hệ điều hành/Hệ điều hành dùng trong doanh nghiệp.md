@@ -1,3 +1,13 @@
+# Mục lục
+
+[Hệ điều hành Windows](#win)
+
+[Hệ điều hành Linux](#linux)
+
+[Hệ điều hành MacOS](#mac)
+
+<a name="win"/>
+
 # Hệ điều hành Windows
 
 Microsoft Windows (hoặc đơn giản là Windows) là tên của một hệ điều hành dựa trên giao diện người dùng đồ hoạ được phát triển và được phân phối bởi Microsoft. Nó bao gồm một vài các dòng hệ điều hành, mỗi trong số đó phục vụ một phần nhất định của ngành công nghiệp máy tính.
@@ -105,6 +115,8 @@ Là đối tượng của nhiều tin tặc - hacker
 
 Do được sử dụng quá phổ biến nên nền tảng Windows tập trung rất nhiều sự chú ý của Hacker, vì thế phần lớn các virus, phần mềm gián điệp, mã độc… đều được viết để hoạt động trên nền tảng này. Việc phòng chống virus luôn phải được cập nhật thường xuyên và đầy đủ.
 
+<a name="linux"/>
+
 # Hệ điều hành Linux
 
 Linux là 1 hệ điều hành của máy tính và đã được phát triển vào những năm 1991. Linux được phát triển nên dựa vào hệ điều hành Unix và viết bằng ngôn ngữ C. 
@@ -198,5 +210,52 @@ Mageia đang là bản phân phối có thiết kế đơn giản gọn nhẹ v�
 
 Hiện tại đây đang là một trong những bản phân phối vô cùng nổi tiếng của hệ điều hành Linux và được phát triển dựa vào Slackware. Theo đó nó được thiết kế để có thể trở thành 1 hệ điều hành nhẹ, nhỏ và có khả năng hoạt động vô cùng mượt mà trên những chiếc máy tính cũ. 
 
+<a name="mac"/>
+
 # Hệ điều hành MacOS
 
+Mac OS (Macintosh Operating System) là một hệ điều hành có giao diện cửa sổ được phát triển bởi công ty Apple.
+
+Qua nhiều năm phát triển hệ điều hành Mac OS  đã và đang khẳng định tên tuổi và thương hiệu trên thị trường.
+
+## Những ưu điểm của Mac OS so với Windows
+- Sự ổn định: Mac OS của Apple được đánh giá là một nền tảng ổn định, tuy so với Windows không ai hoàn hảo hơn ai nhưng theo nhiều người nhận xét, Mac hoạt động một cách mượt mà hơn.
+- Tính năng bảo mật: Tuy cả 2 cùng thường xuyên phải đối mặc với sự cố bảo mật, virus và hacker nhưng so với Windows thì Mac OS vẫn tốt hơn rất nhiều.
+- Tính năng đồng bộ hóa: Khi sử dụng cùng lúc các sản phẩm của Apple như: iPhone, iPad, Macbook... bạn sẽ dể dàng trong việc kết nối và chia sẻ dữ liệu qua lại.
+- Sự tiện dụng: Không khó để người mới dùng lần đầu làm quen với hệ điều hành Mac OS bởi giao diện đơn giản, tất cả được sắp xếp mang tính logic cao.
+
+## Nhược điểm của Mac OS so với Windows
+- Giá thành: Mặc dù Microsoft được coi là luôn đặt lợi nhuận lên hàng đầu và Windows luôn bị chỉ trích vì giá thành đắt đỏ. Nhưng khi so sánh với Mac OS, thì giá thành của Windows vẫn còn thua kém khá nhiều.
+- Khả năng tương thích phần mềm: Số lượng ứng dụng dành cho Windows vượt trội hơn hẳn so với số lượng ứng dụng dành cho Mac OS. Hầu như các phần mềm nổi tiếng và thông dụng hiện nay đều có phiên bản dành cho Windows và một số ít trong đó có thêm phiên bảng dành cho Mac OS.
+
+## Các phiên bản của Mac OS hiện nay
+Tính đến hiện nay thì Mac OS đã có nhiều phiên bản trên thị trường, phiên bản mới là các cập nhật giúp cải tiến hiệu năng, giao diện... của sản phẩm. Dưới đây là những phiên bản Mac OS những năm gần đây:
+
+### Sierra 
+
+Ra mắt vào tháng 9 năm 2016 tạm biệt cái tên OS X, hệ điều hành của Mac từ lúc này đã trở thành macOS. Một lần nữa hệ điều hành trên máy tính lại bước đến gần hơn iOS, và Siri lúc này cũng đã có mặt trên macOS.
+
+Tính năng của macOS Sierra: tích hợp trợ lý ảo Siri, quản lý bộ nhớ trên thiết bị, tính năng hình ảnh trong hình ảnh, đồng bộ hóa với các thiết bị Apple, tối ưu hóa hiệu suất đồng bộ hóa iCloud,... 
+<p align="center">
+  <img width = "600" height ="300" src="https://user-images.githubusercontent.com/111716161/186860632-db360260-d574-494e-9d36-5be33f5aaa56.jpg"/>
+<p/>
+
+### High Sierra
+
+Ra mắt vào tháng 9 năm 2017 tập trung vào cải thiện hiệu năng và độ ổn định là chính. Apple File System là một ví dụ, đem việc chuyển các tập tin nhanh hơn và bảo mật hơn.
+
+Các tính năng mới: Ngăn Safari phát video tự động và quảng cáo theo dõi người dùng, tích hợp Spotlight vào mail, cho phép chỉnh sửa ảnh công cụ ngoài, hỗ trợ card đồ họa rời, hỗ trợ nhà phát triển nội dung thực tế ảo,...
+
+<p align="center">
+  <img width = "600" height ="300" src="https://user-images.githubusercontent.com/111716161/186861347-415a46a7-86a5-4296-a279-d67aa17d84a6.jpg"/>
+<p/>
+
+### Mojave
+
+Ra mắt vào tháng 9 năm 2018 với sự cải tiến về giao diện cũng như hiệu năng kèm vài tính năng mới như DarkMode...
+
+Các tính năng mới: Continuity Camera - sử dụng camera iPhone, iPad để quét tài liệu và hình ảnh được hiển thị trực tiếp trên máy Mac, chế độ tối, Desktop Stacks - tự sắp xếp lại các file trên màn hình theo định dạng cho gọn gàng hơn, Dynamic Desktops - chọn nhiều hình nền cho máy Mac và tự chuyển theo thời gian cài đặt sẵn, cải tiến trình tìm kiếm: Chế độ xem thư viện, xem siêu dữ liệu và Tác vụ nhanh, cải thiện bảo mật hệ điều hành và Safari, đánh dấu ảnh chụp màn hình,...
+
+<p align="center">
+  <img width = "600" height ="300" src="https://user-images.githubusercontent.com/111716161/186861807-b6a29fdf-097c-45df-95bc-097abc920475.jpg"/>
+<p/>
