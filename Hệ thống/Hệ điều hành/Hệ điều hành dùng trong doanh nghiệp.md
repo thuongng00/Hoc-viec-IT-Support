@@ -78,3 +78,59 @@ Hiện nay, tỷ lệ người sử dụng Windows “lậu” đang rất cao m
 Là đối tượng của nhiều tin tặc - hacker
 
 Do được sử dụng quá phổ biến nên nền tảng Windows tập trung rất nhiều sự chú ý của Hacker, vì thế phần lớn các virus, phần mềm gián điệp, mã độc… đều được viết để hoạt động trên nền tảng này. Việc phòng chống virus luôn phải được cập nhật thường xuyên và đầy đủ.
+
+# Hệ điều hành Linux
+
+Linux là 1 hệ điều hành của máy tính và đã được phát triển vào những năm 1991. Linux được phát triển nên dựa vào hệ điều hành Unix và viết bằng ngôn ngữ C. 
+
+Linux đang được phát hành miễn phí trên thị trường và cũng có nhiều những ưu điểm vượt trội vì vậy vẫn giữ được chỗ đứng trong lòng người dùng trước những ông lớn ví dụ như macOS hay Windows. 
+
+## Ưu và nhược điểm của hệ điều hành Linux 
+Với những thông tin cơ bản về khái niệm Linux là gì này có thể thấy rằng hệ điều hành Linux này vẫn đang chiếm được lòng tin của người dùng trên thị trường. Vậy ưu và nhược điểm của hệ điều hành Linux là gì?
+
+**Ưu điểm** 
+Ưu điểm của hệ điều hành Linux là gì? Là một hệ điều hành vẫn đang chiếm được lòng tin của nhiều người dùng trên thị trường, vậy ưu điểm của Linux là gì? Hãy cùng điểm qua một số những ưu điểm cụ thể sau đây: 
+
+Miễn phí, được hỗ trợ những ứng dụng văn phòng LibreOffice và OpenOffice. 
+Có tính bảo mật cao. 
+Không sợ xảy ra tình trạng lag, giật, không hoạt động,… trên những máy tính với cấu hình không cao. 
+
+**Nhược điểm** 
+Nhược điểm của hệ điều hành Linux là gì? Bên cạnh những ưu điểm nổi bật trên khi sử dụng hệ điều hành này bạn cũng cần lưu ý một số những nhược điểm nhất định sau đây: 
+
+Những nhà phát triển về phần mềm hiện tại vẫn chưa để tâm tới hệ điều hành vô cùng tiềm năng này vì vậy số lượng những phần mềm được hỗ trợ ở thời điểm hiện tại vẫn còn đang hạn chế. 
+Một số những nhà sản xuất hiện tại vẫn không phát triển driver để hỗ trợ cho nền tảng Linux.
+
+## Các hệ điều hành Linux đã phát hành 
+Linux vẫn luôn thường xuyên phân phối và nâng cấp tới cho người dùng những phiên bản điều hành mới. Theo đó dưới đây là một số những phiên bản luôn chữ đang rất phổ biến trên thị trường:
+
+*Ubuntu*
+Ubuntu hiện tại đang làm một bản phân phối vô cùng hiện đại và được nhiều người dùng biết tới. Mục tiêu của nó đó chính là đem đến cho người dùng những trải nghiệm tốt nhất ngay trên máy chủ và máy tính. 
+
+Hiện tại Ubuntu đã được cải tiến để phù hợp với tất cả yêu cầu của người dùng. Nhưng nó vẫn không làm mất đi những bản sắc riêng của bản thân. 
+
+*Linux Mint*
+Linux là gì và Linux Mint của hệ điều hành này là như thế nào? Hiện tại tôi đang là một trong các phiên bản phân phối đang được yêu thích nhất và được xây dựng ở trên nền tảng. Chính vì vậy nó đang kế thừa hầu hết những phần mềm và phương tiện sở hữu độc quyền. 
+
+*Debian*
+Debian đang là 1 hệ điều hành gồm có những phần mềm mã nguồn mở hoàn toàn miễn phí và hiện tại vẫn luôn được nhóm cộng đồng lập trình viên vô cùng yêu thích. Dù phát hành những phiên bản mới thường xuyên tuy nhiên Debian có một nhược điểm đó chính là cập nhật khá chậm so với những bản phân phối khác.
+
+*Fedora*
+Các hệ điều hành đã được phát hành bởi Linux là gì? Fedora Đang là một phần mềm khá phổ biến và tập trung chủ yếu vào những phần mềm miễn phí vì vậy người dùng khi sử dụng thường xuyên gặp những khó khăn liên quan tới quá trình cài đặt những trình điều khiển về đồ họa độc quyền. Phiên bản này ở thời điểm hiện tại vẫn không ngừng được phát triển và cải tiến thêm. 
+
+*CentOS/Red Hat Enterprise Linux*
+CentOS/ Red Hat Enterprise Linux là gì? Đây đang là 1 bản phân phối thương mại của Linux dành cho máy trạm và máy chủ. Hiện tại nó đang được phát triển dựa vào Fedora. Tuy nhiên có một nền tảng được hỗ trợ lâu dài và ổn định hơn. 
+
+*OpenSUSE/SUSE Linux Enterprise*
+Linux là gì? Theo đó hiện tại OpenSUSE đang là bạn phân phối khá mạnh thuộc hệ điều hành Linux. Nó được đánh giá là bản phân phối thuộc top thân thiện nhất với người dùng. 
+
+*Mageia/Mandriva*
+Mageia đang là bản phân phối có thiết kế đơn giản gọn nhẹ và linh hoạt hết mức có thể. Hiện tại nó được coi là một trong những tiền bối thuộc những bản phân phối của hệ điều hành Linux này. Ngoài ra nó còn cung cấp những từ cấu hình sạch và được thiết kế để giúp cho người dùng dễ dàng chỉnh sửa. 
+
+*Slackware Linux* 
+Ở thời điểm hiện tại Slackware đang là bản phân phối có tuổi đời lâu nhất của hệ điều hành Linux. Ngoài ra hiện tại nó vẫn được duy trì để sử dụng cũng như đều đặn đưa ra những bản phát hành mới nhất. 
+
+*Puppy Linux*
+Puppy Linux là gì? Hiện tại đây đang là một trong những bản phân phối vô cùng nổi tiếng của hệ điều hành Linux và được phát triển dựa vào Slackware. Theo đó nó được thiết kế để có thể trở thành 1 hệ điều hành nhẹ, nhỏ và có khả năng hoạt động vô cùng mượt mà trên những chiếc máy tính cũ. Với những thông tin về khái niệm của hệ điều hành Linux là gì trên. Vậy hiện tại nên lựa chọn phiên bản Linux nào?
+# Hệ điều hành MacOS
+
