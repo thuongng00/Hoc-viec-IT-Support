@@ -58,7 +58,7 @@ Trước đó, các Windows 9x đều hoạt động như một phần mềm ch�
 
 Cải thiện những hạn chế trong Windows Vista, Windows 7 chinh phục người dùng với những tính năng vượt trội trong User Account Control, taskbar, Gadget trực tiếp lên desktop, chế độ Aero Peek, hoạt động Aero Snaps mới.
 
-Windows 7 vẫn được người dùng lựa chọn phổ biến trong những năm gần đây. Vào tháng 1/2020, Microsoft chính thức khai tử Windows 7.
+Tuy Windows 7 vẫn được người dùng lựa chọn phổ biến trong những năm gần đây nhưng vào tháng 1/2020, Microsoft chính thức khai tử Windows 7.
 
 *Windows 8 và 8.1* 
 
