@@ -90,28 +90,31 @@ Giao diện được thay đổi, Windows Title được tích hợp vào trong 
   <img width = "600" height ="300" src="https://user-images.githubusercontent.com/111716161/186857561-0d8fc1f8-9bb0-45e0-9d3b-cf8624048da4.jpg"/>
 <p/>
 
-Windows 11 là một hệ điều hành của Microsoft được công bố vào ngày 24 tháng 6 năm 2021, là một phần của họ hệ điều hành Windows NT. Windows 11 được phát hành rộng rãi vào ngày 5 tháng 10 năm 2021 dưới dạng bản nâng cấp miễn phí thông qua Windows Update cho các thiết bị đủ điều kiện chạy Windows 10.
+Windows 11 là một hệ điều hành của Microsoft được công bố vào ngày 24 tháng 6 năm 2021, là một phần của hệ điều hành Windows NT. Windows 11 được phát hành rộng rãi vào ngày 5 tháng 10 năm 2021 dưới dạng bản nâng cấp miễn phí thông qua Windows Update cho các thiết bị đủ điều kiện chạy Windows 10.
 
 Những điểm mới của Windows 11 như thiết kế lại giao diện, cải thiện tốc độ và hiệu năng cho máy tính hay tính năng Snap Layouts, Snap Group để sắp xếp các cửa sổ, tối ưu hóa không gian làm việc,...
 
 ## Những điểm mạnh của nền tảng Windows
-Phổ biến và khả năng tương thích cao
+- Phổ biến và khả năng tương thích cao
+
 Vốn là một nền tảng chiếm thị phần sử dụng cao nhất hiện nay nên cũng không có gì khó hiểu khi hầu hết các nhà sản xuất đều đầu tư xây dựng phần mềm cũng như sản xuất phần cứng hỗ trợ cho hệ điều hành Windows.
 
-Hỗ trợ hầu hết các game và ứng dụng trên thế giới
+- Hỗ trợ hầu hết các game và ứng dụng trên thế giới
+
 Có thể nói rằng, Windows hỗ trợ đầy đủ các ứng dụng bạn cần và nhiều hơn rất nhiều, vượt trội hơn so với các hệ điều hành khác. Đơn giản một điều, các nhà viết ứng dụng luôn muốn nhắm đến một thị trường có số người sử dụng đông đảo như Windows.
 
-Hỗ trợ thao tác bằng cảm ứng (từ Windows 8)
+- Hỗ trợ thao tác bằng cảm ứng (từ Windows 8)
+
 Các dòng Laptop hỗ trợ màn hình cảm ứng đều được vận hành trên nền tảng Windows 8 trở lên. Windows 7 cũng hỗ trợ cảm ứng nhưng chưa hoàn thiện bằng Windows 8.
 
 ## Những hạn chế của Windows
 Song song với những thành ưu điểm thì Windows vẫn còn những khuyết điểm hiện hữu.
 
-Windows lậu quá nhiều
+- Windows lậu quá nhiều
 
 Hiện nay, tỷ lệ người sử dụng Windows “lậu” đang rất cao mà đặc biệt là Việt Nam. Có nhiều nguyên nhân khách quan dẫn đến vấn đề này nhưng nếu bạn là người nguyên tắc và tôn trọng bản quyền thì nên sử dụng các dòng máy được hỗ trợ sẵn hệ điều hành bản quyền.
 
-Là đối tượng của nhiều tin tặc - hacker
+- Là đối tượng của nhiều tin tặc - hacker
 
 Do được sử dụng quá phổ biến nên nền tảng Windows tập trung rất nhiều sự chú ý của Hacker, vì thế phần lớn các virus, phần mềm gián điệp, mã độc… đều được viết để hoạt động trên nền tảng này. Việc phòng chống virus luôn phải được cập nhật thường xuyên và đầy đủ.
 
@@ -121,28 +124,21 @@ Do được sử dụng quá phổ biến nên nền tảng Windows tập trung 
 
 Linux là 1 hệ điều hành của máy tính và đã được phát triển vào những năm 1991. Linux được phát triển nên dựa vào hệ điều hành Unix và viết bằng ngôn ngữ C. 
 
-Linux đang được phát hành miễn phí trên thị trường và cũng có nhiều những ưu điểm vượt trội vì vậy vẫn giữ được chỗ đứng trong lòng người dùng trước những ông lớn ví dụ như macOS hay Windows. 
+Linux đang được phát hành miễn phí trên thị trường và cũng có nhiều những ưu điểm vượt trội, vì vậy vẫn giữ được chỗ đứng trong lòng người dùng trước những ông lớn, ví dụ như macOS hay Windows. Hệ điều hành Linux vẫn chiếm được lòng tin của người dùng trên thị trường. 
 
 ## Ưu và nhược điểm của hệ điều hành Linux 
-Với những thông tin cơ bản về khái niệm Linux là gì này có thể thấy rằng hệ điều hành Linux này vẫn đang chiếm được lòng tin của người dùng trên thị trường. Vậy ưu và nhược điểm của hệ điều hành Linux là gì?
 
 **Ưu điểm** 
+- Miễn phí, được hỗ trợ những ứng dụng văn phòng LibreOffice và OpenOffice. 
+- Có tính bảo mật cao. 
+- Không sợ xảy ra tình trạng lag, giật, không hoạt động,… trên những máy tính với cấu hình không cao. 
 
-Ưu điểm của hệ điều hành Linux là gì? Là một hệ điều hành vẫn đang chiếm được lòng tin của nhiều người dùng trên thị trường, vậy ưu điểm của Linux là gì? Hãy cùng điểm qua một số những ưu điểm cụ thể sau đây: 
-
-Miễn phí, được hỗ trợ những ứng dụng văn phòng LibreOffice và OpenOffice. 
-Có tính bảo mật cao. 
-Không sợ xảy ra tình trạng lag, giật, không hoạt động,… trên những máy tính với cấu hình không cao. 
-
-**Nhược điểm** 
-
-Nhược điểm của hệ điều hành Linux là gì? Bên cạnh những ưu điểm nổi bật trên khi sử dụng hệ điều hành này bạn cũng cần lưu ý một số những nhược điểm nhất định sau đây: 
-
-Những nhà phát triển về phần mềm hiện tại vẫn chưa để tâm tới hệ điều hành vô cùng tiềm năng này vì vậy số lượng những phần mềm được hỗ trợ ở thời điểm hiện tại vẫn còn đang hạn chế. 
-Một số những nhà sản xuất hiện tại vẫn không phát triển driver để hỗ trợ cho nền tảng Linux.
+**Nhược điểm**  
+- Những nhà phát triển về phần mềm hiện tại vẫn chưa để tâm tới hệ điều hành vô cùng tiềm năng này vì vậy số lượng những phần mềm được hỗ trợ ở thời điểm hiện tại vẫn còn đang hạn chế. 
+- Một số những nhà sản xuất hiện tại vẫn không phát triển driver để hỗ trợ cho nền tảng Linux.
 
 ## Các hệ điều hành Linux đã phát hành 
-Linux vẫn luôn thường xuyên phân phối và nâng cấp tới cho người dùng những phiên bản điều hành mới. Theo đó dưới đây là một số những phiên bản luôn chữ đang rất phổ biến trên thị trường:
+Linux vẫn luôn thường xuyên phân phối và nâng cấp tới cho người dùng những phiên bản điều hành mới. Theo đó dưới đây là một số những phiên bản đang rất phổ biến trên thị trường:
 
 *Ubuntu*
 <p align="center">
@@ -158,7 +154,9 @@ Hiện tại Ubuntu đã được cải tiến để phù hợp với tất cả
   <img width = "600" height ="300" src="https://user-images.githubusercontent.com/111716161/186858281-56c6ce83-3ddf-49e6-aa1c-587bd8b7d2a7.png"/>
 <p/>
 
-Linux là gì và Linux Mint của hệ điều hành này là như thế nào? Hiện tại tôi đang là một trong các phiên bản phân phối đang được yêu thích nhất và được xây dựng ở trên nền tảng. Chính vì vậy nó đang kế thừa hầu hết những phần mềm và phương tiện sở hữu độc quyền. 
+Linux Mint là một bản phân phối Linux dựa trên nền tảng Ubuntu. Linux Mint có thêm nhiều tính năng mà Ubuntu không có như nhiều phần mềm được cài đặt sẵn, kể cả các phần mềm không phải mã nguồn mở như Java và Adobe Flash; và một số phần mềm được tạo ra bởi Linux Mint, như mintInstall, mintUpdate, mintNanny,...
+
+Phiên bản đầu tiên của Linux Mint là Ada, ra mắt vào 2006. Phiên bản ổn định mới nhất (20.1) là "Ulyssa". Tên của các phiên bản Linux Mint được sắp xếp theo bảng chữ cái.
 
 *Debian*
 <p align="center">
@@ -172,7 +170,7 @@ Debian đang là 1 hệ điều hành gồm có những phần mềm mã nguồn
   <img width = "600" height ="300" src="https://user-images.githubusercontent.com/111716161/186858682-19cd69d4-16a7-42c1-91ca-a873f9b1b9bb.jpg"/>
 <p/>
 
-Các hệ điều hành đã được phát hành bởi Linux là gì? Fedora Đang là một phần mềm khá phổ biến và tập trung chủ yếu vào những phần mềm miễn phí vì vậy người dùng khi sử dụng thường xuyên gặp những khó khăn liên quan tới quá trình cài đặt những trình điều khiển về đồ họa độc quyền. Phiên bản này ở thời điểm hiện tại vẫn không ngừng được phát triển và cải tiến thêm. 
+Fedora Đang là một phần mềm khá phổ biến và tập trung chủ yếu vào những phần mềm miễn phí vì vậy người dùng khi sử dụng thường xuyên gặp những khó khăn liên quan tới quá trình cài đặt những trình điều khiển về đồ họa độc quyền. Phiên bản này ở thời điểm hiện tại vẫn không ngừng được phát triển và cải tiến thêm. 
 
 *CentOS/Red Hat Enterprise Linux*
 
@@ -180,7 +178,7 @@ Các hệ điều hành đã được phát hành bởi Linux là gì? Fedora Đ
   <img width = "600" height ="300" src="https://user-images.githubusercontent.com/111716161/186858917-400116e3-8f1c-4ea9-99b5-85fedb05e450.png"/>
 <p/>
 
-CentOS/ Red Hat Enterprise Linux là gì? Đây đang là 1 bản phân phối thương mại của Linux dành cho máy trạm và máy chủ. Hiện tại nó đang được phát triển dựa vào Fedora. Tuy nhiên có một nền tảng được hỗ trợ lâu dài và ổn định hơn. 
+CentOS/ Red Hat Enterprise Linux đang là 1 bản phân phối thương mại của Linux dành cho máy trạm và máy chủ. Hiện tại nó đang được phát triển dựa vào Fedora. Tuy nhiên có một nền tảng được hỗ trợ lâu dài và ổn định hơn. 
 
 *OpenSUSE/SUSE Linux Enterprise*
 <p align="center">
