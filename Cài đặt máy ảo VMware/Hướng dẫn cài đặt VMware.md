@@ -37,3 +37,23 @@ Nhấn Install để bắt đầu cài đặt. Quá trình này sẽ diễn ra t
 
 ![image](https://user-images.githubusercontent.com/111716161/187020285-f70d109c-00f8-4b06-9849-39c0a68d192b.png)
 
+### Bước 8:
+Quá trình cài đặt hoàn tất thì sẽ xuất hiện bảng thông báo bên dưới. Và bạn tiếp tục nhập key bản quyền License để kích hoạt phần mềm. Nếu không thì bạn có thể nhấp vào Finish để dùng thử.
+
+![image](https://user-images.githubusercontent.com/111716161/187020312-df2b8c0c-485d-4bae-abfc-566feb875dd2.png)
+ 
+Key bản quyền miễn phí: 
+
+ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+
+YF390-0HF8P-M81RQ-2DXQE-M2UT6
+
+ZF71R-DMX85-08DQY-8YMNC-PPHV8
+
+FC11K-00DE0-0800Z-04Z5E-MC8T6
+
+Sau khi nhập key, nhấn Enter, cửa sổ hiện lên thì nhấn Finish. 
+
+![image](https://user-images.githubusercontent.com/111716161/187020380-01c46ab6-e118-4f3e-8f01-5ef96a099d13.png)
+
+Như vậy ta đã cài đặt xong VMware.
