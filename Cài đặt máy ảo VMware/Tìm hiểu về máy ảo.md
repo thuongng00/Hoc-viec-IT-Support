@@ -8,6 +8,15 @@ Công nghệ ảo hóa cho phép bạn chia sẻ một hệ thống với nhiề
 
 Khi máy ảo đang chạy và người dùng hoặc chương trình đưa ra lệnh yêu cầu tài nguyên bổ sung từ môi trường vật lý, hypervisor sẽ lập lịch yêu cầu tới tài nguyên của hệ thống vật lý để hệ điều hành và ứng dụng của máy ảo có thể truy cập nhóm tài nguyên vật lý được chia sẻ.
 
+# Tác dụng của máy ảo
+1. Dùng thử hệ điều hành mới
+2. Chạy phần mềm cũ hoặc không tương thích
+3. Phát triển phần mềm cho các nền tảng khác
+4. Xử lý phần mềm độc hại tiềm năng một cách an toàn
+5. Khám phá thêm về hệ thống
+6. Tận dụng lợi thế của "ảnh" chụp hệ thống trong máy ảo
+7. Sao chép một hệ thống vào máy khác
+
 # Lợi ích của việc sử dụng máy ảo
 
 - Tiết kiệm chi phí: Chạy nhiều môi trường ảo từ một phần cơ sở hạ tầng có nghĩa là bạn có thể giảm đáng kể ảnh hưởng lên cơ sở hạ tầng vật lý của mình. Điều này thúc đẩy lợi nhuận, vì giảm nhu cầu duy trì nhiều máy chủ, tiết kiệm chi phí bảo trì và lượng điện tiêu thụ.
