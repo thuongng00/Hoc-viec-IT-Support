@@ -1,0 +1,1 @@
+- Link tải VMware WorkStation 16 Pro: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
