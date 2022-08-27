@@ -3,6 +3,14 @@ Tải file cài đặt về máy.
 
 Link tải VMware WorkStation 16 Pro: https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
 
+Cấu hình khuyến nghị dành cho Vmware Workstation 16 như sau:
+
+- Hệ điều hành: Windows 7/ 8/ 10 / 11 hoặc Server 2008/ 2012/ 2016 (Hỗ trợ nền tảng 64 Bit)
+- CPU:3 GHz đa nhân hoặc cao hơn
+- Bộ nhớ RAM: Tối thiểu 2 GB (Khuyến nghị 4GB hoặc cao hơn)
+- Hỗ trợ: DirectX 10
+- Ổ đĩa trống: 5 GB
+- Độ phân giải: 1024 x 768
 ### Bước 2: 
 
 Mở file cài đặt đã tải. Ở màn hình cài đặt, nhấn Next để tiến hành. 
