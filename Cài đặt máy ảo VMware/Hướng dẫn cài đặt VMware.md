@@ -10,7 +10,7 @@ Mở file cài đặt đã tải. Ở màn hình cài đặt, nhấn Next để 
 ![image](https://user-images.githubusercontent.com/111716161/187020114-72fff79b-c0fd-4a8f-ae03-d1e92edcfa80.png)
 
 ### Bước 3:
-Nhấn vào I accept the terms in the License Agreement để đồng ý các điều khoản của Vmware, sau đó nhấn Next để tiếp tục.
+Nhấn vào "I accept the terms in the License Agreement" để đồng ý các điều khoản của Vmware, sau đó nhấn Next để tiếp tục.
 
 ![image](https://user-images.githubusercontent.com/111716161/187020137-c4a1eeb9-19cf-44a7-b6cc-79ee2675d3be.png)
 
