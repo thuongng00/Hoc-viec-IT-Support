@@ -57,3 +57,23 @@ Trên Linux: Bạn có thể set và get ra biến môi trường như sau:
 Các bạn để ý khi khai báo biến TEST chúng ta không dùng dấu $, dấu $ đầu dòng là ký hiệu của bash trên terminal. Khi truy cập giá trị biến TEST thì cần thêm dấu $ thành echo $TEST. Những biến khai báo trực tiếp trên terminal kiểu này sẽ không giữ được khi bạn thoát khỏi Terminal.
 
 ## Danh sách biến môi trường và cách cài đặt
+
+### Biến $PATH
+Biến PATH cho thấy đường dẫn tới các thư mục chứa câu lệnh (chương trình) để chạy khi bạn gõ trên terminal, các mục cách nhau dấu “:” ví dụ /usr/local/sbin; /usr/local/bin...
+
+Với biến PATH như trên thì bạn không cần biết ffmpeg, imagick cài ở đâu, mỗi khi bạn gõ lệnh ffmpeg hay convert (của imagick) trên terminal thì hệ thống tự biết tìm đến mục chứa nó để chạy.
+
+Muốn hiện đường dẫn tuyệt đối của một lệnh thì bạn gõ lệnh whereis:
+
+```
+1. whereis ffmpeg
+2. ffmpeg: /usr/local/bin/ffmpeg
+```
+
+Muốn hiện hết các mục chứa chương trình (câu lệnh) thì bạn echo $PATH:
+
+```
+1. echo $PATH 
+2. /usr/lib/jvm/java-7-openjdk-i386/bin:/home/nickfarrow/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/nickfarrow/Public/android-sdk-linux/tools:/home/nickfarrow/Public/android-sdk-linux/platform-tools:/home/nickfarrow/Public/android-ndk-r9d::/home/nickfarrow/D/DPublic/Google/google_appengine/
+```
+
