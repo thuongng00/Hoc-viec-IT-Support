@@ -22,9 +22,7 @@ Tại giao thức FTP, bạn có quyền quản lý toàn bộ các dữ liệu 
 
 Thông qua giao thức FTP, người dùng có thể tải dữ liệu như hình ảnh, văn bản, các tập tin media (nhạc, video)… từ máy tính của mình lên máy chủ đang đặt ở một nơi khác hoặc tải các tập tin có trên máy chủ về máy tính cá nhân.
 
-<p align="center">
-  <img src="https://www.totolink.vn/public/uploads/img_article/giaothucftplaginhungdieubanchuabietvegiaothucftp-1.png">
-</p>
+![image](https://user-images.githubusercontent.com/111716161/187117899-2c00cc23-cb58-4cd0-a0c6-2593c0e0eb93.png)
 
 <a name="mohinh"></a>
 ## Mô hình hoạt động của giao thức FTP
