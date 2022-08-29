@@ -82,3 +82,44 @@ Dấu nhắc mặc định cho non-root user là tên máy chủ %.
 
 Dấu nhắc mặc định cho root user là tên máy chủ #.
 
+3. Korn Shell
+
+Korn Shell (ksh):
+
+Được viết bởi David Korn tại AT & T Bell Labs
+
+Là một superset của Bourne Shell
+
+Có các tính năng tương tác tương đương với các tính năng trong C shell
+
+Bao gồm các tính năng lập trình tiện lợi như các hàm số học và các hàm C-like, cùng các phương thức thao tác chuỗi.
+
+Nhanh hơn C shell
+
+Chạy các script được viết cho Bourne shell.
+
+*Các lệnh trong Korn shell:*
+
+Lệnh tên đường dẫn đầy đủ là / bin / ksh.
+
+Dấu nhắc mặc định cho non-root user là $
+
+Dấu nhắc mặc định cho root user là #.
+
+4. GNU Bourne-Again Shell
+
+GNU Bourne-Again shell (bash):
+
+Tương thích với Bourne shell
+
+Kết hợp các tính năng hữu ích từ Korn và C Shell.
+
+Có các phím mũi tên cho phép tự động map để recall lệnh và chỉnh sửa.
+
+*Các lệnh trong GNU Bourne-Again Shell:*
+
+Lệnh tên đường dẫn đầy đủ là / bin / bash.
+
+Dấu nhắc mặc định cho non-root user là bash-x.xx$. (Trong đó x.xx cho biết số phiên bản shell là gì. Ví dụ: bash-3.50 $)
+
+Dấu nhắc mặc định cho root user bash-x.xx #. (Trong đó x.xx cho biết số phiên bản shell là gì. Ví dụ: bash-3.50 $ #).
