@@ -48,7 +48,23 @@ Shell là một chương trình cung cấp giao diện giao tiếp giữa ngư�
 
 ### Các loại Shell
 
-1. C Shell
+1. Bournce Shell
+
+Bourne Shell (sh):
+
+Là Shell được viết bởi Steve Bourne tại AT & T Bell Labs, là 1 UNIX shell đầu tiên. Shell này thích hợp sử dụng cho lập trình shell vì lợi thế về tính nhỏ gọn và tốc độ. Một nhược điểm của Bourne shell là nó thiếu các tính năng tương tác, ví dụ như tính năng gọi lại các lệnh đã sử dụng trước đó (lịch sử lệnh). Bourne Shell cũng không có các tính năng tích hợp số học và xử lý biểu thức logic.
+
+Bourne Shell là shell mặc định của Solaris OS, là shell tiêu chuẩn cho các script quản trị hệ thống Solaris.
+
+*Các lệnh trong Bourne shell:*
+
+Lệnh gọi tên đường dẫn đầy đủ là / bin / sh và / sbin / sh.
+
+Lời nhắc mặc định cho non-root user là $.
+
+Lời nhắc mặc định cho root user là #.
+
+2. C Shell
 
 C shell (csh):
 
@@ -65,3 +81,4 @@ Lệnh tên đường dẫn đầy đủ là / bin / csh
 Dấu nhắc mặc định cho non-root user là tên máy chủ %.
 
 Dấu nhắc mặc định cho root user là tên máy chủ #.
+
