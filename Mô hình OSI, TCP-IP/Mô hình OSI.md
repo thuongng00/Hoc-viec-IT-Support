@@ -102,6 +102,7 @@ Ví dụ ứng dụng ở tầng: V.35, V.24, FDDI, RJ45, Ethernet.
  <p align="center">
     <img src ="https://user-images.githubusercontent.com/111716161/186054336-e1c6aa84-dd63-4294-87d5-074244cecc09.png"/>
  </p>
+ 
 Trong tầng hai có 2 tầng con nhỏ hơn:
 - Tầng MAC: Media Access Control (Địa chỉ kiểm soát truy cập phương tiện).
 - Tầng LLC: Logical Link Control (Điều khiển Liên kết Logic)
