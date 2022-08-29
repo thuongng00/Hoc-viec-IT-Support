@@ -1,0 +1,1 @@
+Kernel là một chương trình máy tính, trái tim và cốt lõi của Hệ điều hành. Do Hệ điều hành có quyền kiểm soát hệ thống nên Kernel cũng có quyền kiểm soát mọi thứ trong hệ thống. Đây là phần quan trọng nhất của Hệ điều hành.
