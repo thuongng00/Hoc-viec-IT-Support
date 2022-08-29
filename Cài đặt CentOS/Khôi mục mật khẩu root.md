@@ -1,6 +1,6 @@
-Khôi phục mật khẩu root trên CentOS 7
-Lưu ý:
-– Chỉ có thể áp dụng khôi phục mật khẩu user nếu GRUB2 boot loader không set up mật khẩu khoá.
+Khôi phục mật khẩu root trên CentOS 7.
+
+*Lưu ý: Chỉ có thể áp dụng khôi phục mật khẩu user nếu GRUB2 boot loader không set up mật khẩu khoá.*
 
 ### Bước 1
 khởi động lại hệ thống, chỉnh sửa ‘grub2’
