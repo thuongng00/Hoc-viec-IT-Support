@@ -123,3 +123,11 @@ Lệnh tên đường dẫn đầy đủ là / bin / bash.
 Dấu nhắc mặc định cho non-root user là bash-x.xx$. (Trong đó x.xx cho biết số phiên bản shell là gì. Ví dụ: bash-3.50 $)
 
 Dấu nhắc mặc định cho root user bash-x.xx #. (Trong đó x.xx cho biết số phiên bản shell là gì. Ví dụ: bash-3.50 $ #).
+
+# Distribution/Distro
+
+Distribution là các bản phân phối linux hay còn gọi tắt là Distro giúp người dùng có thể tùy chỉnh và tự do phát triển và định hướng theo nhu cầu thực tế của mình cái mà hệ điều hành mã nguồn đóng bị hạn chế.
+
+Như hình dưới đây ta có thể thấy có rất nhiều bản Distro Linux:
+
+![image](https://user-images.githubusercontent.com/111716161/187122328-8fa25bba-a216-4cc5-86f0-6355273a2af3.png)
