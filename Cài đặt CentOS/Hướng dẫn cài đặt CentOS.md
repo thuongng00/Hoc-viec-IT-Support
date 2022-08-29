@@ -60,6 +60,9 @@ Bước 15: Chọn Customize Hardware để kiếm tra lại các thiếp lập.
 
 ![image](https://user-images.githubusercontent.com/111716161/187149532-1b4ca090-3771-4eb1-affa-6eeecaeffd27.png)
 
-Giao diện CentOS sau khi cài đặt thành công
 ![image](https://user-images.githubusercontent.com/111716161/187150899-1ce12c92-52d0-441e-83ac-ad26c95bea58.png)
+
+Giao diện CentOS sau khi cài đặt thành công
+
+![image](https://user-images.githubusercontent.com/111716161/187153535-6a0773f5-c428-4866-b335-dc7da0d06da3.png)
 
