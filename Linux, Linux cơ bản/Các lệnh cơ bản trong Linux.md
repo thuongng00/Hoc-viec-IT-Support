@@ -1,3 +1,5 @@
+Một số lệnh linux cơ bản, thường dùng, các dòng lệnh linux có thể thực hiện qua putty, lệnh về process, lệnh phân quyền, lệnh nén và giải nén.
+
 # FILE COMMANDS - CÁC LỆNH VỀ FILE
 li - Liệt kê thư mục
 
