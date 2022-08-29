@@ -18,5 +18,5 @@ Bước 2: Bật các tùy chọn như hình.
 
 ![image](https://user-images.githubusercontent.com/111716161/187162315-97c351d0-c191-464d-bcc1-1b0e2aed2f61.png)
 
-Bước 3: Nhấn Ok để hoàn tất cài đặt. 
+Bước 3: Nhấn Ok để hoàn tất.
 
