@@ -77,3 +77,12 @@ Muốn hiện hết các mục chứa chương trình (câu lệnh) thì bạn e
 2. /usr/lib/jvm/java-7-openjdk-i386/bin:/home/nickfarrow/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/nickfarrow/Public/android-sdk-linux/tools:/home/nickfarrow/Public/android-sdk-linux/platform-tools:/home/nickfarrow/Public/android-ndk-r9d::/home/nickfarrow/D/DPublic/Google/google_appengine/
 ```
 
+### HOME 
+Đường dẫn tới thư mục home của người dùng hiện tại, để tiện lợi hơn bạn có thể thay bằng dấu ~ trong nhiều trường hợp.
+
+### TERM (terminal)
+
+### DISPLAY
+Số (mã) màn hình mặc định các ứng dụng đồ họa sẽ chạy trên đó.
+
+Việc thiết lập giá trị cho các biến môi trường khá đơn giản. Trên Linux các biến môi trường lưu trong mục home của người dùng: .bashrc, .bash_profile, .bash_aliasses, /etc/profile ... Biến môi trường quan trọng nhất là PATH, nó lưu vị trí các mục chứa chương trình chạy trên hệ thống, thường là /usr/bin /bin, /usr/local/bin /sbin
