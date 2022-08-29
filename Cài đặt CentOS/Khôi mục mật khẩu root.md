@@ -25,7 +25,7 @@ rd.break
 
 ![image](https://user-images.githubusercontent.com/111716161/187154208-87bacbbb-97e0-4bd3-b01a-bf2416a61c50.png)
 
-### Bước 3:
+### Bước 3
 
 Remount filesystem và chuyển chế độ chroot
 - Hệ thống filesystem hiện tại đang ở chế độ “read only” được mount ở thư mục /sysroot/, để thực hiện khôi phục mật khẩu root thì ta cần thêm quyền ghi (write) trên filesystem. Ta sẽ tiến hành remount lại filesystem /sysroot/ với quyền đọc-ghi (read-write).
