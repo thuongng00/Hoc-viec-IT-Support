@@ -45,3 +45,19 @@ Bước 11:
 
 ![image](https://user-images.githubusercontent.com/111716161/187148954-704c6b58-2bbb-46e3-ba89-40d21213389c.png)
 
+Bước 12: 
+
+![image](https://user-images.githubusercontent.com/111716161/187149107-3d4624aa-af39-422c-8dfc-d9e2dc9543ef.png)
+
+Bước 13: 
+
+![image](https://user-images.githubusercontent.com/111716161/187149185-bd777f9d-fe0f-4214-971c-b83d856a9239.png)
+
+Bước 14: 
+
+![image](https://user-images.githubusercontent.com/111716161/187149235-0f2c43ae-9db0-478c-aca3-5cde57d00dfa.png)
+
+Bước 15: 
+
+![image](https://user-images.githubusercontent.com/111716161/187149532-1b4ca090-3771-4eb1-affa-6eeecaeffd27.png)
+
