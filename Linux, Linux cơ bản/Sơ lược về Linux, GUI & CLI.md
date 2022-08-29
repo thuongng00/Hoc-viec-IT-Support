@@ -1,133 +1,52 @@
-# Kernel
-Kernel là một chương trình máy tính, trái tim và cốt lõi của Hệ điều hành. Do Hệ điều hành có quyền kiểm soát hệ thống nên Kernel cũng có quyền kiểm soát mọi thứ trong hệ thống. Đây là phần quan trọng nhất của Hệ điều hành.
+# Linux
+Linux là một hệ điều hành máy tính mã nguồn mở, cách hoạt động giống như các hệ điều hành khác như: Microsoft Windows, Apple Mac OS, iOS, Google android ... Đây là một HĐH sử dụng cả giao diện GUI và command line.
 
-### Chức năng của Kernel
+Nhiệm vụ của Linux là cho phép giao tiếp giữa phần cứng và phần mềm máy tính, xử lý tiếp nhận thông tin đầu vào và trả kết quả ra màn hình, đây chính là chứ năng cơ bản nhất của một hệ điều hành.
 
-- Truy cập tài nguyên máy tính: Kernel có thể truy cập các tài nguyên máy tính khác nhau. Như CPU, thiết bị I/O và các tài nguyên khác. Nó hoạt động như một cầu nối giữa người dùng và tài nguyên của hệ thống.
-- Quản lý tài nguyên: Nhiệm vụ của Kernel là chia sẻ tài nguyên giữa các process khác nhau.
-- Quản lý bộ nhớ: Mỗi process cần một số không gian bộ nhớ. Vì vậy, bộ nhớ phải được phân bổ và truy cập để hoạt động. Tất cả những tác vụ quản lý bộ nhớ này được thực hiện bởi Kernel.
-- Quản lý thiết bị: Các thiết bị ngoại vi được kết nối trong hệ thống được sử dụng bởi các process. Vì vậy, việc phân bổ các thiết bị này được quản lý bởi Kernel.
+Linux xuất hiện giữa những năm 90, nó đã từng được sử dụng phát triển cho đồng hồ, và đến nay là được đưa vào máy tính. Nó có ở khắp mọi nơi như trong điện thoại, máy tính xách tay, PC, ô tô và thậm chí trong tủ lạnh của chúng ta. Nó rất nổi tiếng trên các cộng đồng lập trình viên, cũng như những người sử dụng bình thường yêu thích sử dụng máy tính bằng command line.
 
-### Các loại Kernel
-Có năm loại Kernel.
+Đối với Windows, nếu bạn muốn cài đặt một phần mềm nào đó thì sẽ lên trang chủ để tải về, sau đó cài đặt bằng cách sử dụng chuột để thao tác trên giao diện đồ họa GUI. Nhưng với Linux thì khác, hầu như những thao tác này đều thực hiện bằng command line, bởi trên Linux có một kho lưu trữ dữ liệu (ta gọi là repo), bạn chỉ cần chạy lệnh cài đặt là được. Đương nhiên chỉ những phần mềm nào được tích hợp trên repo đó.
 
-1. Monolithic Kernels
+Hệ điều hành là tập hợp nhiều phần mềm khác nhau, và mỗi phần mềm có một nhiệm vụ khác nhau.
 
-Monolithic Kernels là những Kernel mà các user service và kernel service được triển khai trong cùng một không gian bộ nhớ, tức là bộ nhớ khác nhau cho các user service, và kernel service không được sử dụng trong trường hợp này. Bằng cách đó, kích thước của Kernel được tăng lên và điều này sẽ làm tăng kích thước của Hệ điều hành. Vì không có User space và Kernel space riêng biệt, nên việc thực thi process sẽ nhanh hơn trong Monolithic Kernels.
+Hệ điều hành Linux có những thành phần dưới đây:
 
-![image](https://user-images.githubusercontent.com/111716161/187120927-aa9da6c0-89d1-486e-82d9-c874caba3f0f.png)
+![image](https://user-images.githubusercontent.com/111716161/187139312-26c2a276-5d3b-4175-afca-0cafd0d4460f.png)
 
-2. Microkernel
+### Kernel
+Kernel chính là phần nhân của linux, là thành phần quan trọng nhất và có nhiệm vụ thiết lập giao tiếp giữa các phần mềm và thiết bị phần cứng. Hơn thế nữa, nó còn đảm nhận việc quản lý tài nguyên của hệ thống.
 
-Một Microkernel khác với kernel Monolithic vì trong Microkernel, các dịch vụ người dùng và dịch vụ kernel được triển khai vào các không gian khác nhau. Vì sử dụng riêng User space và Kernel space, do đó, nó làm giảm kích thước của Kernel và do đó, làm giảm kích thước của Hệ điều hành.
+Nó có bốn nhiệm vụ chính như sau:
 
-![image](https://user-images.githubusercontent.com/111716161/187120982-df3249cd-d4cc-4ca3-9b79-36cc4301960b.png)
+- Quản lý thiết bị: Một máy tính sẽ có nhiều thiết bị như CPU, RAM, card âm thanh, card đồ họa, v.v. kernel sẽ lưu trữ tất cả dữ liệu liên quan đến tất cả các thiết bị trong trình điều khiển thiết bị driver (nếu không có kernel thì sẽ không thể để điều khiển các thiết bị). Do đó kernel biết mỗi thiết bị có thể làm gì và thao tác với nó như thế nào để mang lại hiệu suất tốt nhất.
+- Quản lý bộ nhớ: Một chức năng khác đó là quản lý bộ nhớ. Kernel theo dõi bộ nhớ đã sử dụng và chưa sử dụng và đảm bảo rằng các tiến trình không được sử dụng dữ liệu của nhau bằng địa chỉ bộ nhớ ảo.
+- Quản lý quy trình: Kernel chỉ định đủ thời gian và ưu tiên cho các quy trình trước khi CPU xử lý cho các quy trình khác.
+- Xử lý lệnh gọi hệ thống: Xử lý lệnh gọi hệ thống có nghĩa là một lập trình viên có thể viết một truy vấn hoặc yêu cầu Karnel thực hiện một tác vụ nào đó.
 
-3. Hybrid Kernel
+### System Libraries
+System Libraries là những thư viện / phần mềm đặc biệt giúp truy cập vào các tính năng của Karnel. Mỗi Karnel sẽ phải được kích hoạt để thực hiện một tác vụ các ứng dụng sẽ hoàn thành những tác vụ đó.
 
-Hybrid Kernel là sự kết hợp của cả Microkernel và Monolithic Kernel. Nó sử dụng tốc độ của Monolithic Kernels và tính mô đun của Microkernel.
+### System Tools
+Hệ điều hành Linux có một tập hợp các công cụ tiện ích, thường là các lệnh command line đơn giản. Nó là một phần mềm mà dự án GNU đã viết và xuất bản theo giấy phép mã nguồn mở của họ, nhằm giúp phần mềm cung cấp miễn phí cho tất cả mọi người.
 
-4. Nanokernel
+Với sự trợ giúp của các lệnh, bạn có thể truy cập file của mình, chỉnh sửa và thao tác dữ liệu trong thư mục hoặc file của bạn, thay đổi vị trí của file hoặc bất cứ một thao tác nào khác.
 
-Trong một Nanokrnel, như tên cho thấy, toàn bộ mã của kernel rất nhỏ, tức là mã thực thi trong chế độ đặc quyền của phần cứng là rất nhỏ.
+### Development Tools
+Với ba thành phần trên là hệ điều hành Linux có thể hoạt động được rồi đấy. Nhưng nhằm giúp các nhà phát triển có thể cập nhật hệ thống, cũng như tạo ra những công cụ khác thì Linux cho phép lập trình viên sử dụng những công cụ riêng của nó, ta gọi là toolchain.
 
-5. Exokernel
+### End User Tools
+Đây chính là tập hợp những phần mềm mà người dùng cài vào máy tính để sử dụng như: Trình duyệt web, phần mềm nghe nhạc, office ...
 
-Exokernel là một nhân hệ điều hành được phát triển bởi song song MIT và nhóm Hệ điều hành phân tán. Ở loại Kernel này, việc bảo vệ tài nguyên được tách ra khỏi quản lý và do đó, điều này dẫn đến việc cho phép chúng ta thực hiện các tùy chỉnh dành riêng cho ứng dụng.
+# Lý do nên sử dụng Linux
 
-# Operating System (hệ điều hành) GNU/Linux
+Linux là một mã nguồn mở: Nghĩa là bạn sẽ cài đặt miễn phí và không tốn một đồng nào cả. Nếu bạn sử dụng Windows thì sẽ phải bỏ ra một khoản tiền lớn để mua key bản quyền.
 
-GNU / Linux là sự kết hợp của các thành phần hệ điều hành và dịch vụ mà cùng nhau tạo ra hệ điều hành Linux. GNU / Linux được xem là phiên bản đầu tiên của Linux được xây dựng cùng với các thành phần và dịch vụ của GNU và hạt nhân Linux.
+Linux an toàn hơn Windows: Điều này hoàn toàn đúng, bởi Linux hỗ trợ các tùy chọn bảo mật khác nhau sẽ giúp bạn tránh khỏi vi rút, phần mềm độc hại, làm chậm máy, treo máy. Hơn nữa, nó sẽ giữ cho dữ liệu của bạn được bảo vệ. Với tính năng bảo mật này khiến nhiều nhà phát triển lựa chọn nó hơn là Windows, đương nhiên không phải nó luôn luôn an toàn, mà có chút phụ thuộc vào cách sử dụng cua mỗi người.
 
-Hệ thống GNU/Linux làm theo hệ điều hành UNIX. Kể từ đầu, GNU/Linux đã được thiết kế như là hệ thống đa tác vụ, đa người dùng. Những sự thật này là đủ làm cho GNU/Linux khác với các hệ điều hành nổi tiếng khác. Tuy nhiên, GNU/Linux vẫn còn khác hơn. Trái ngược với hệ điều hành khác, không có ai sở hữu GNU/Linux. Phần lớn việc phát triển nó được làm bởi người tình nguyện không được tiền.
+Linux là hệ điều hành linh hoạt và ứng dụng đa dạng: Vì nó có thể được sử dụng cho các ứng dụng máy tính để bàn, hệ thống nhúng và ứng dụng máy chủ server. Nó có thể được sử dụng từ đồng hồ đeo tay đến siêu máy tính. Nó có ở khắp mọi nơi trong điện thoại, máy tính xách tay, PC, ô tô và thậm chí trong tủ lạnh của chúng ta.
 
-# Shell
-Shell là một chương trình cung cấp giao diện giao tiếp giữa người dùng và hệ điều hành (OS). Hệ điều hành khởi động một shell cho mỗi người dùng khi người dùng đăng nhập hoặc mở một cửa sổ terminal hoặc console.
+Linux ổn định: Linux ổn định hơn các hệ điều hành khác. Linux không yêu cầu phải khởi động lại hệ thống để lấy lại hiệu suất. Nó hiếm khi bị treo, điều mà ta thường thấy ở Windows.
 
-![image](https://user-images.githubusercontent.com/111716161/187121434-0b288d28-5961-47f2-b75b-a0c7d670d953.png)
+Giao diện đồ họa + command line: Đây chính là đặc điểm rất hay trên Linux, nó vừa hỗ trợ giao diện GUI vừa hỗ trợ command line.
 
-### Các loại Shell
-
-1. Bournce Shell
-
-Bourne Shell (sh):
-
-Là Shell được viết bởi Steve Bourne tại AT & T Bell Labs, là 1 UNIX shell đầu tiên. Shell này thích hợp sử dụng cho lập trình shell vì lợi thế về tính nhỏ gọn và tốc độ. Một nhược điểm của Bourne shell là nó thiếu các tính năng tương tác, ví dụ như tính năng gọi lại các lệnh đã sử dụng trước đó (lịch sử lệnh). Bourne Shell cũng không có các tính năng tích hợp số học và xử lý biểu thức logic.
-
-Bourne Shell là shell mặc định của Solaris OS, là shell tiêu chuẩn cho các script quản trị hệ thống Solaris.
-
-*Các lệnh trong Bourne shell:*
-
-Lệnh gọi tên đường dẫn đầy đủ là / bin / sh và / sbin / sh.
-
-Lời nhắc mặc định cho non-root user là $.
-
-Lời nhắc mặc định cho root user là #.
-
-2. C Shell
-
-C shell (csh):
-
-Là một phần cải tiến UNIX được viết bởi Bill Joy - Đại học California Berkeley.
-
-Có các tính năng kết hợp để sử dụng tương tác, chẳng hạn như bí danh và lịch sử lệnh
-
-Hỗ trợ các tính năng lập trình tiện lợi, chẳng hạn như số học tích hợp và cú pháp biểu thức C-like.
-
-*Các lệnh trong C-shell:*
-
-Lệnh tên đường dẫn đầy đủ là / bin / csh
-
-Dấu nhắc mặc định cho non-root user là tên máy chủ %.
-
-Dấu nhắc mặc định cho root user là tên máy chủ #.
-
-3. Korn Shell
-
-Korn Shell (ksh):
-
-Được viết bởi David Korn tại AT & T Bell Labs
-
-Là một superset của Bourne Shell
-
-Có các tính năng tương tác tương đương với các tính năng trong C shell
-
-Bao gồm các tính năng lập trình tiện lợi như các hàm số học và các hàm C-like, cùng các phương thức thao tác chuỗi.
-
-Nhanh hơn C shell
-
-Chạy các script được viết cho Bourne shell.
-
-*Các lệnh trong Korn shell:*
-
-Lệnh tên đường dẫn đầy đủ là / bin / ksh.
-
-Dấu nhắc mặc định cho non-root user là $
-
-Dấu nhắc mặc định cho root user là #.
-
-4. GNU Bourne-Again Shell
-
-GNU Bourne-Again shell (bash):
-
-Tương thích với Bourne shell
-
-Kết hợp các tính năng hữu ích từ Korn và C Shell.
-
-Có các phím mũi tên cho phép tự động map để recall lệnh và chỉnh sửa.
-
-*Các lệnh trong GNU Bourne-Again Shell:*
-
-Lệnh tên đường dẫn đầy đủ là / bin / bash.
-
-Dấu nhắc mặc định cho non-root user là bash-x.xx$. (Trong đó x.xx cho biết số phiên bản shell là gì. Ví dụ: bash-3.50 $)
-
-Dấu nhắc mặc định cho root user bash-x.xx #. (Trong đó x.xx cho biết số phiên bản shell là gì. Ví dụ: bash-3.50 $ #).
-
-# Distribution/Distro
-
-Distribution là các bản phân phối linux hay còn gọi tắt là Distro giúp người dùng có thể tùy chỉnh và tự do phát triển và định hướng theo nhu cầu thực tế của mình cái mà hệ điều hành mã nguồn đóng bị hạn chế.
-
-Như hình dưới đây ta có thể thấy có rất nhiều bản Distro Linux:
-
-![image](https://user-images.githubusercontent.com/111716161/187122328-8fa25bba-a216-4cc5-86f0-6355273a2af3.png)
+Cộng đồng lớn: Có rất nhiều cộng đồng riêng về Linux ra đời, bởi vì nó là một mã nguồn mở nên kiến thức chia sẻ rất phổ biến.
