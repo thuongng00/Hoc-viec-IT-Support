@@ -34,5 +34,6 @@ getent passwd | wc -l
 ```
 grep -E '^UID_MIN|^UID_MAX' /etc/login.defs
 ```
-![image](https://user-images.githubusercontent.com/111716161/187381678-4b7e39e4-76a0-4d20-97d1-7e1c9e0cbd17.png)
+![image](https://user-images.githubusercontent.com/111716161/187382494-05970171-4316-472c-9089-ffd644c72c15.png)
+
 
