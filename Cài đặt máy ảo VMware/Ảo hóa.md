@@ -31,6 +31,7 @@ Quá trình ảo hóa thực hiện theo các bước được liệt kê bên d
 - Môi trường ảo thường được gọi là máy khách hoặc máy ảo. Máy ảo – VM – hoạt động giống như một tệp dữ liệu duy nhất có thể được chuyển từ máy tính này sang máy tính khác và được mở trên cả hai; nó được mong đợi sẽ thực hiện theo cùng một cách trên mọi máy tính.
 
 # Các loại ảo hóa
+
 ## Ảo hóa mạng
 Ảo hóa mạng là phương pháp kết hợp các tài nguyên có sẵn trong mạng bằng cách chia băng thông khả dụng thành các kênh, mỗi kênh độc lập với các kênh khác và có thể được gán – hoặc chỉ định lại – cho một máy chủ hoặc thiết bị cụ thể trong thời gian thực.
 
