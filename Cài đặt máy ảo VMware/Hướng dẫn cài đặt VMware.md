@@ -46,6 +46,7 @@ Nhấn Install để bắt đầu cài đặt. Quá trình này sẽ diễn ra t
 ![image](https://user-images.githubusercontent.com/111716161/187020285-f70d109c-00f8-4b06-9849-39c0a68d192b.png)
 
 ### Bước 8:
+
 Quá trình cài đặt hoàn tất thì sẽ xuất hiện bảng thông báo bên dưới. Và bạn tiếp tục nhập key bản quyền License để kích hoạt phần mềm. Nếu không thì bạn có thể nhấp vào Finish để dùng thử.
 
 ![image](https://user-images.githubusercontent.com/111716161/187020312-df2b8c0c-485d-4bae-abfc-566feb875dd2.png)
