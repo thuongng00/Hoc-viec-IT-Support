@@ -58,3 +58,9 @@ Bước 15:
 
 ![image](https://user-images.githubusercontent.com/111716161/187336388-731b6234-800e-45d6-8bcb-d9e9adeb16d0.png)
 
+Bước 16:
+
+![image](https://user-images.githubusercontent.com/111716161/187336586-cd3342a0-3659-474b-ae6e-6dd90e460b1e.png)
+
+![image](https://user-images.githubusercontent.com/111716161/187336615-fa53469d-c382-429b-90ed-5c41e9b26f58.png)
+
