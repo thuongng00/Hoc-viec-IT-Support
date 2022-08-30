@@ -64,3 +64,5 @@ Bước 16:
 
 ![image](https://user-images.githubusercontent.com/111716161/187336615-fa53469d-c382-429b-90ed-5c41e9b26f58.png)
 
+![image](https://user-images.githubusercontent.com/111716161/187338092-07438da7-da49-463f-aa19-91d475f54fb8.png)
+
