@@ -37,3 +37,4 @@ VirtualBox là một ứng dụng máy ảo mã nguồn mở tuyệt vời chạ
 VMware Workstation là phần mềm tạo máy ảo nổi tiếng, nó hỗ trợ những hệ điều hành mới phát hành như Windows 10, các phần cứng mới nhất, giao diện dễ sử dụng, xử lý đồ họa 3D tốt, kết nối tốt,... Phần mềm này có sẵn cho Windows và Linux và được rất nhiều người dùng ưa chuộng.
 
 ![image](https://user-images.githubusercontent.com/111716161/187020469-6170af35-e2b6-4368-89ed-93f183a2bc94.png)
+
