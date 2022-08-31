@@ -59,3 +59,32 @@
 | chmod [tên file=””][/tên]	| Thay đổi quyền cho file/thư mục (chỉ user sở hữu file mới thực hiện được) |
 | chown user [tên file=””][/tên]	| Thay đổi chủ sở hữu file/thư mục |
 | chgrp group [file][/file]	| Thay đổi group sở hữu file/thư mục |
+
+## 4. Các lệnh Quản lý services và process trong Linux
+| Lệnh Linux	| Mô tả |
+|-------------|-------|
+| top	| Lệnh top khá giống như Task Manager trong Windows. Nó đưa ra thông tin về tất cả tài nguyên hệ thống, các process đang chạy, tốc độ load trung bình… Lệnh top -d thiết lập khoảng thời gian làm mới lại hệ thống |
+| ps –u username	| Kiểm tra những process được thực hiện bởi một user nhất định |
+| ps –U root	| Kiểm tra mọi process ngoại trừ những process hệ thống |
+| ps –A	 | Kiểm tra mọi process trong hệ thống |
+| Ss	| Kiểm tra socket đang kết nối |
+| ss –l	 | Hiển thị các cổng đang mở |
+| w username	| Kiểm tra user đăng nhập, lịch sử đăng nhập, các process user đó đang chạy |
+| vmstat3	| Kiểm soát hành vi hệ thống, phần cứng và thông tin hệ thống trong Linux |
+| ps	| Hiển thị các chương trình hiện đang chạy |
+| uptime	| Hiển thị thời gian đã vận hành của hệ thống trong bao lâu |
+| rpm	| Kiểm tra, gỡ bỏ hoặc cài đặt 1 gói .rpm |
+| yum	| Cài đặt các ứng dụng đóng gói (giống rpm) |
+| wget	| Tải các ứng dụng từ một website về| 
+| sh	| Chạy một ứng dụng có đuôi .sh |
+| Startx	| Khởi động chế độ xwindows từ cửa sổ terminal |
+| yum update -y	| Update Linux (CentOS) |
+| stop/start/restart	| Dừng/ khởi động/khởi động lại một service hoặc ứng dụng, ví dụ: service mysql stop hoặc /etc/init.d/mysqld start |
+| kill	| Dừng proccess (thường dùng khi process bị treo). Chỉ có super-user mới có thể dừng tất cả các process còn user khác chỉ có thể dừng proccess mà user đó tạo ra |
+| kill PID hoặc %job	| Ngừng một process bằng số PID (Process Identification Number) hoặc số công việc |
+| pstree	| Hiển thị tất cả các process dưới dạng cây |
+| service –status-all	| Kiểm tra tất cả các service và tình trạng của nó |
+| whereis mysql	| Hiển thị nơi các file dịch vụ được cài đặt |
+| service –status-all  grep abc	| Xem tình trạng của process abc |
+| kill -9 PID	| Bắt buộc đóng một process ID |
+| kill -1 PID	Bắt buộc đóng một process ID và load lại cấu hình mặc định của process đó |
