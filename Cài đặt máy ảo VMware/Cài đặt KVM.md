@@ -5,6 +5,8 @@ egrep -c "svm|vmx" /proc/cpuinfo
 ```
 Nếu kết quả trả về 0 thì máy không hỗ trợ ảo hóa. Còn khác 0 tức là máy có hỗ trợ ảo hóa.
 
+![image](https://user-images.githubusercontent.com/111716161/187574420-fe341877-a83a-4497-964c-c31edb30d89a.png)
+
 ### Bước 2: Cài đặt các gói cần thiết
 ```
 yum -y install qemu-kvm libvirt virt-install bridge-utils virt-manager
