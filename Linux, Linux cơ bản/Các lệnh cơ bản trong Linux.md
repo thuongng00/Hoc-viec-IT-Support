@@ -52,3 +52,10 @@ Cat filename1 filename2>filename3 kết hợp hai tệp (1 và 2) và lưu trữ
 Để chuyển đổi một tệp sang sử dụng chữ hoa hoặc chữ thường, cat filename | tr a-z A-Z>output.txt
 ```
 
+### 5. cp
+
+Sử dụng lệnh cp để sao chép tệp từ thư mục hiện tại sang một thư mục khác.
+
+Ví dụ: lệnh cp img1.jpg /home/username/Pictures sẽ tạo một bản sao của img1.jpg (từ thư mục hiện tại của bạn) vào thư mục Pictures.
+
+### 6. 
