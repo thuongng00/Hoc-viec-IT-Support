@@ -146,3 +146,135 @@ Sử dụng lệnh df để nhận báo cáo về việc sử dụng dung lượ
 
 Nếu bạn muốn xem báo cáo bằng megabyte, hãy nhập df -m
 
+### 16. du
+
+Nếu bạn muốn kiểm tra xem một tệp hoặc một thư mục chiếm bao nhiêu dung lượng thì lệnh du (Disk Usage) là thứ bạn cần.
+
+Tuy nhiên, bản tóm tắt sử dụng đĩa sẽ hiển thị số khối đĩa thay vì định dạng kích thước thông thường.
+
+Nếu bạn muốn xem nó ở dạng byte, kilobyte và megabyte, hãy thêm đối số -h vào dòng lệnh.
+
+### 17. head
+
+Lệnh head được sử dụng để xem các dòng đầu tiên của bất kỳ tệp văn bản nào.
+
+Theo mặc định, nó sẽ hiển thị mười dòng đầu tiên, nhưng bạn có thể thay đổi con số này theo ý thích của mình.
+
+Ví dụ: nếu bạn chỉ muốn hiển thị năm dòng đầu tiên, hãy nhập head -n 5 filename.ext
+
+### 18. tail
+
+Lệnh này có chức năng tương tự như lệnh head, nhưng thay vì hiển thị các dòng đầu tiên, lệnh tail sẽ hiển thị mười dòng cuối cùng của tệp văn bản. Ví dụ: tail -n filename.ext
+
+### 19. diff
+
+Lệnh diff là viết tắt của different (khác biệt), lệnh diff so sánh nội dung của hai tệp theo từng dòng.
+
+Sau khi phân tích các tập tin, nó sẽ xuất ra những dòng không khớp. Các lập trình viên thường sử dụng lệnh này khi họ cần sửa đổi chương trình thay vì viết lại toàn bộ mã nguồn.
+
+Dạng đơn giản nhất của lệnh này là diff file1.ext file2.ext
+
+### 20. tar
+
+Lệnh tar là lệnh được sử dụng nhiều nhất để lưu trữ nhiều tệp vào một tarball - một định dạng tệp Linux phổ biến tương tự như định dạng zip, với việc nén là tùy chọn.
+
+Lệnh này khá phức tạp với một danh sách dài các chức năng như thêm tệp mới vào kho lưu trữ hiện có, liệt kê nội dung của kho lưu trữ, trích xuất nội dung từ kho lưu trữ và nhiều chức năng khác.
+
+Bạn có thể tìm hiểu thêm tại đây.
+
+### 21. chmod
+
+chmod là một lệnh Linux khác, được sử dụng để thay đổi quyền đọc, ghi và thực thi các tệp và thư mục. Vì lệnh này khá phức tạp, bạn có thể đọc toàn bộ hướng dẫn này để thực thi nó đúng cách.
+
+### 22. chown
+
+Trong Linux, tất cả các tệp được sở hữu bởi một người dùng (user) cụ thể. Lệnh chown cho phép bạn thay đổi hoặc chuyển quyền sở hữu tệp sang tên người dùng được chỉ định.
+
+Ví dụ: Lệnh chown user2 file.ext sẽ đặt user2 làm chủ sở hữu của file.ext.
+
+### 23. jobs
+
+Lệnh jobs sẽ hiển thị tất cả các công việc hiện tại cùng với trạng thái của chúng. Một công việc về cơ bản là một quá trình được bắt đầu bởi shell.
+
+### 24. kill
+
+Lệnh này rất hữu ích khi chương trình bị "đơ".
+
+Trong trường hợp bạn có một chương trình bị "đơ", bạn có thể tắt chương trình đó theo cách thủ công bằng cách sử dụng lệnh kill
+
+Nó sẽ gửi một tín hiệu nhất định đến ứng dụng hoạt động sai và hướng dẫn ứng dụng tự kết thúc.
+
+Có tổng cộng 64 tín hiệu mà bạn có thể sử dụng, nhưng mọi người thường chỉ sử dụng 2 tín hiệu:
+```
+SIGTERM (15) - yêu cầu chương trình ngừng chạy và cho nó một khoảng thời gian để lưu tất cả tiến trình của nó. Nếu bạn không chỉ định tín hiệu khi nhập lệnh hủy, tín hiệu này mặc định sẽ được sử dụng.
+SIGKILL (9) - buộc các chương trình phải dừng ngay lập tức. Tiến trình chưa được lưu sẽ bị mất.
+```
+
+Bên cạnh việc biết các tín hiệu, bạn cũng cần biết số nhận dạng quy trình (PID - Process ID) của chương trình bạn muốn tắt. Nếu bạn không biết PID là gì, chỉ cần chạy lệnh ps ux
+
+Sau khi biết tín hiệu bạn muốn sử dụng và PID của chương trình, hãy nhập cú pháp sau:
+```
+kill [tùy chọn tín hiệu] PID
+```
+
+Ví dụ, nếu muốn tắt chương trình có PID là 678 và lưu tất cả tiến trình của nó thì ta dùng lệnh: kill 678
+
+### 25. ping
+
+Sử dụng lệnh ping để kiểm tra trạng thái kết nối của bạn với máy chủ.
+
+Ví dụ: Chỉ cần nhập ping google.com, lệnh sẽ kiểm tra xem bạn có thể kết nối với Google hay không và cũng là cách đo thời gian phản hồi.
+
+### 26. wget
+
+Lệnh Linux cực kỳ hữu ích - bạn thậm chí có thể tải xuống các tệp từ internet với sự trợ giúp của lệnh wget. Để làm như vậy, chỉ cần gõ wget theo sau là liên kết tải xuống.
+
+### 27. uname
+
+Lệnh uname, viết tắt của Unix Name, sẽ in thông tin chi tiết về hệ thống Linux của bạn như tên máy, hệ điều hành, nhân, v.v.
+
+### 28. top
+
+Là một terminal tương đương với Task Manager trong Windows, lệnh top cùng sẽ hiển thị danh sách các tiến trình đang chạy và lượng CPU mà mỗi tiến trình sử dụng.
+
+Lệnh này rất hữu ích khi giúp bạn theo dõi việc sử dụng tài nguyên hệ thống, đặc biệt là biết quy trình nào cần được tắt nếu này tiêu tốn quá nhiều tài nguyên không cần thiết.
+
+### 29. history
+
+Khi sử dụng Linux trong một khoảng thời gian nhất định, bạn sẽ nhanh chóng nhận thấy rằng bạn có thể đã chạy hàng trăm lệnh mỗi ngày.
+
+Do đó, lệnh history đặc biệt hữu ích nếu bạn muốn xem lại các lệnh bạn đã nhập trước đó.
+
+### 30. man
+
+Bạn nhầm lẫn về chức năng của các lệnh Linux nhất định?
+
+Đừng lo, bạn có thể dễ dàng học cách sử dụng các lệnh linux ngay từ trong shell của Linux bằng cách sử dụng lệnh man
+
+Ví dụ, nhập man tail sẽ hiển thị hướng dẫn thủ công của lệnh tail.
+
+### 31. echo
+
+Lệnh echo được sử dụng để chuyển một số dữ liệu vào một tệp chỉ định.
+
+Ví dụ: Nếu bạn muốn thêm văn bản, Xin chào NIIT - ICT Hà Nội vào một tệp có tên là name.txt, bạn sẽ nhập echo Xin chào NIIT - ICT Hà Nội name.txt
+
+### 32. zip và unzip
+
+Sử dụng lệnh zip để nén các tệp của bạn thành một file zip và sử dụng lệnh unzip để giải nén các tệp đã nén từ một file zip.
+
+### 33. hostname
+
+Nếu bạn muốn biết tên host / network của mình, chỉ cần nhập lệnh hostname. Thêm -I vào cuối sẽ hiển thị địa chỉ IP của mạng của bạn.
+
+### 34. useradd và userdel
+
+Vì Linux là một hệ thống nhiều người dùng, điều này có nghĩa là nhiều người có thể tương tác với cùng một hệ thống cùng một lúc.
+
+Lệnh useradd được sử dụng để tạo người dùng mới, và passwd là thêm mật khẩu vào tài khoản của người dùng đó.
+
+Để thêm một người mới có tên niit, hãy sử dụng lệnh useradd niit
+
+Sau đó để thêm mật khẩu của người dùng này, sử dụng lệnh passwd 123456
+
+Để xóa người dùng cũng tương tự như thêm người dùng mới, ta sử dụng lệnh: userdel UserName
