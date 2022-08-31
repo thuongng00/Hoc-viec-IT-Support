@@ -86,6 +86,8 @@ Ngoài ra còn có các lệnh mkdir bổ sung:
 Để tạo một thư mục mới bên trong một thư mục khác, hãy sử dụng lệnh cơ bản của Linux này mkdir Music/Newfile
 Sử dụng tùy chọn p (viết tắt của từ parents) để tạo một thư mục ở giữa hai thư mục hiện có. Ví dụ: mkdir -p Music/2021/Newfile sẽ tạo tệp “2021” mới.
 ```
+![image](https://user-images.githubusercontent.com/111716161/187582818-cb76e8bb-a0a4-422c-b538-72c03486bd8c.png)
+
 ### 8. rmdir
 
 Nếu bạn cần xóa một thư mục, hãy sử dụng lệnh rmdir. Tuy nhiên, rmdir chỉ cho phép bạn xóa các thư mục trống.
