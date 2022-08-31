@@ -82,11 +82,10 @@ Các đối số trong mv tương tự như lệnh cp. Bạn cần nhập mv, t�
 Sử dụng lệnh mkdir để tạo một thư mục mới - nếu bạn nhập mkdir Music, nó sẽ tạo một thư mục có tên là Music.
 
 Ngoài ra còn có các lệnh mkdir bổ sung:
-
+```
 Để tạo một thư mục mới bên trong một thư mục khác, hãy sử dụng lệnh cơ bản của Linux này mkdir Music/Newfile
-
 Sử dụng tùy chọn p (viết tắt của từ parents) để tạo một thư mục ở giữa hai thư mục hiện có. Ví dụ: mkdir -p Music/2021/Newfile sẽ tạo tệp “2021” mới.
-
+```
 ### 8. rmdir
 
 Nếu bạn cần xóa một thư mục, hãy sử dụng lệnh rmdir. Tuy nhiên, rmdir chỉ cho phép bạn xóa các thư mục trống.
@@ -105,7 +104,7 @@ Lệnh touch cho phép bạn tạo một tệp mới trống thông qua dòng l�
 
 Ví dụ: nhập touch /home/username/Documents/index.html để tạo tệp HTML có tên index.html trong thư mục Documents
 
-## #11. locate
+### 11. locate
 
 Bạn có thể sử dụng lệnh locate để định vị tệp, giống như lệnh tìm kiếm trong Windows.
 
@@ -114,4 +113,36 @@ Hơn nữa, việc sử dụng đối số -i cùng với lệnh locate này s�
 Để tìm kiếm một tệp chứa hai từ trở lên, hãy sử dụng dấu *
 
 Ví dụ: locate -i java*niit sẽ tìm kiếm bất kỳ tệp nào có chứa từ java và niit, cho dù đó là chữ hoa hay chữ thường.
+
+### 12. find
+
+Tương tự như lệnh locate, sử dụng lệnh find cũng giúp tìm kiếm các tệp và thư mục. Sự khác biệt là bạn sử dụng lệnh find để định vị các tệp trong một thư mục nhất định.
+
+Ví dụ, lệnh find /home/ -name notes.txt sẽ tìm kiếm một tệp có tên là notes.txt trong thư mục home và các thư mục con của nó.
+
+Các biến thể khác khi sử dụng tìm kiếm là:
+```
+Để tìm các tệp trong thư mục sử dụng hiện tại, hãy sử dụng find -name notes.txt
+Để tìm kiếm thư mục sử dụng, / -type d -name notes.txt
+```
+
+### 13. grep
+
+Một lệnh Linux cơ bản khác chắc chắn hữu ích cho việc sử dụng hàng ngày là grep. Nó cho phép bạn tìm kiếm qua tất cả văn bản trong một tệp nhất định.
+
+Để minh họa, lệnh grep blue notepad.txt sẽ tìm kiếm từ "blue" trong tệp notepad.
+
+Các dòng có chứa từ được tìm kiếm sẽ được hiển thị đầy đủ.
+
+### 14. sudo
+
+sudo viết tắt của “SuperUser Do”, lệnh này cho phép bạn thực hiện các tác vụ yêu cầu quyền quản trị hoặc quyền root.
+
+Tuy nhiên, không nên sử dụng lệnh này hàng ngày vì có thể dễ xảy ra lỗi nếu bạn làm sai.
+
+### 15. df
+
+Sử dụng lệnh df để nhận báo cáo về việc sử dụng dung lượng ổ đĩa của hệ thống, được hiển thị bằng phần trăm và KBs.
+
+Nếu bạn muốn xem báo cáo bằng megabyte, hãy nhập df -m
 
