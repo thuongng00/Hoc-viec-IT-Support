@@ -73,6 +73,6 @@ Sau khi nhập key, nhấn Enter, cửa sổ hiện lên thì nhấn Finish.
 
 Như vậy ta đã cài đặt xong VMware.
 
-Giao diện hiển thị của VMware
+Giao diện của VMware
 
 ![image](https://user-images.githubusercontent.com/111716161/187020469-6170af35-e2b6-4368-89ed-93f183a2bc94.png)
