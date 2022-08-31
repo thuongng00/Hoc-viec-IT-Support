@@ -87,4 +87,15 @@
 | whereis mysql	| Hiển thị nơi các file dịch vụ được cài đặt |
 | service –status-all  grep abc	| Xem tình trạng của process abc |
 | kill -9 PID	| Bắt buộc đóng một process ID |
-| kill -1 PID	Bắt buộc đóng một process ID và load lại cấu hình mặc định của process đó |
+| kill -1 PID	| Bắt buộc đóng một process ID và load lại cấu hình mặc định của process đó |
+
+## 5. Một số lệnh hữu ích khác trong Linux
+| Lệnh Linux	| Mô tả |
+|-------------|-------|
+| clear	| Xoá trắng cửa sổ dòng lệnh |
+| hwclock	| Fix lịch của BIOS |
+| cal	| Xem lịch hệ thống |
+| date	| Xem lịch ngày, giờ hệ thống |
+| date –s “1 SEP 2022 15:29:00”	| Đặt ngày giờ hệ thống theo string |
+| date +%Y%m%d -s “20220901″	| Đặt ngày hệ thống (không thay đổi giờ) |
+date +%T -s “00:29:00″	Đặt giờ hệ thống, không thay đổi ngày
