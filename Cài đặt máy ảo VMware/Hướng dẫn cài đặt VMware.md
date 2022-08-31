@@ -1,3 +1,8 @@
+
+VMware Workstation được biết đến là một phần mềm ảo mà tại đây người dùng có thể tạo một máy ảo làm việc trên máy tính của bạn. Tuy nhiên, máy ảo này lại hoạt động độc lập, do đó đây sẽ là môi trường lý tưởng để người dùng có thể thử nghiệm một vài hệ điều hành mới như Linux hoặc truy cập những website có độ tin cậy thấp. Bên cạnh đó, bạn còn có thể in và plug in USB drive. Công dụng chính của việc sử dụng máy ảo là để hạn chế tối đa những rủi ro ảnh hưởng đến hệ điều hành của máy tính thật.
+
+# Các bước cài đặt
+
 ### Bước 1:
 Tải file cài đặt về máy.
 
