@@ -51,11 +51,67 @@ cat > filename để tạo một tệp mới tên là filename
 Cat filename1 filename2>filename3 kết hợp hai tệp (1 và 2) và lưu trữ kết quả đầu ra của chúng trong một tệp mới (3)
 Để chuyển đổi một tệp sang sử dụng chữ hoa hoặc chữ thường, cat filename | tr a-z A-Z>output.txt
 ```
+Ví dụ: Tệp bai1.txt nằm trong desktop có nội dung: 
+
+hoc linux 
+
+linux co ban
+
+Khi gõ lệnh cat bait.txt ta được kết quả như hình: 
+
+![image](https://user-images.githubusercontent.com/111716161/187577101-04f66a80-155e-4190-b6d7-0d07fb23017c.png)
 
 ### 5. cp
 
 Sử dụng lệnh cp để sao chép tệp từ thư mục hiện tại sang một thư mục khác.
 
-Ví dụ: lệnh cp img1.jpg /home/username/Pictures sẽ tạo một bản sao của img1.jpg (từ thư mục hiện tại của bạn) vào thư mục Pictures.
+Ví dụ: Sao chép tệp bai1.txt nằm trong desktop sang thư mục folder1 nằm trong desktop:
 
-### 6. 
+![image](https://user-images.githubusercontent.com/111716161/187577359-0e334c66-7ca1-40a2-b539-2a6d018fbd04.png)
+
+### 6. mv
+
+Công dụng chính của lệnh mv là di chuyển tệp, mặc dù nó cũng có thể được sử dụng để đổi tên tệp.
+
+Các đối số trong mv tương tự như lệnh cp. Bạn cần nhập mv, tên tệp và thư mục đich. 
+
+Để đổi tên tệp, lệnh Linux là mv ten-cu.ext ten-moi.ext
+
+### 7. mkdir
+
+Sử dụng lệnh mkdir để tạo một thư mục mới - nếu bạn nhập mkdir Music, nó sẽ tạo một thư mục có tên là Music.
+
+Ngoài ra còn có các lệnh mkdir bổ sung:
+
+Để tạo một thư mục mới bên trong một thư mục khác, hãy sử dụng lệnh cơ bản của Linux này mkdir Music/Newfile
+
+Sử dụng tùy chọn p (viết tắt của từ parents) để tạo một thư mục ở giữa hai thư mục hiện có. Ví dụ: mkdir -p Music/2021/Newfile sẽ tạo tệp “2021” mới.
+
+### 8. rmdir
+
+Nếu bạn cần xóa một thư mục, hãy sử dụng lệnh rmdir. Tuy nhiên, rmdir chỉ cho phép bạn xóa các thư mục trống.
+
+### 9. rm
+
+Lệnh rm được sử dụng để xóa các thư mục và nội dung bên trong chúng.
+
+Nếu bạn chỉ muốn xóa thư mục, thay vì sử dụng rmdir, hãy sử dụng rm -r
+
+Lưu ý: Hãy hết sức cẩn thận với lệnh này và kiểm tra kỹ xem bạn đang ở thư mục nào. Thao tác này sẽ xóa mọi thứ và KHÔNG THỂ HOÀN TÁC.
+
+### 10. touch
+
+Lệnh touch cho phép bạn tạo một tệp mới trống thông qua dòng lệnh Linux.
+
+Ví dụ: nhập touch /home/username/Documents/index.html để tạo tệp HTML có tên index.html trong thư mục Documents
+
+## #11. locate
+
+Bạn có thể sử dụng lệnh locate để định vị tệp, giống như lệnh tìm kiếm trong Windows.
+
+Hơn nữa, việc sử dụng đối số -i cùng với lệnh locate này sẽ làm cho nó không phân biệt chữ hoa chữ thường, vì vậy bạn có thể tìm kiếm một tệp ngay cả khi bạn không nhớ tên chính xác của nó.
+
+Để tìm kiếm một tệp chứa hai từ trở lên, hãy sử dụng dấu *
+
+Ví dụ: locate -i java*niit sẽ tìm kiếm bất kỳ tệp nào có chứa từ java và niit, cho dù đó là chữ hoa hay chữ thường.
+
