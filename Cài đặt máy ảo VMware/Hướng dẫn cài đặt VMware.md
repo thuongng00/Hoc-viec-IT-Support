@@ -60,7 +60,7 @@ Quá trình cài đặt hoàn tất thì sẽ xuất hiện bảng thông báo b
 
 ![image](https://user-images.githubusercontent.com/111716161/187020312-df2b8c0c-485d-4bae-abfc-566feb875dd2.png)
  
-Key bản quyền miễn phí: 
+*Key bản quyền miễn phí: 
 
 ZF3R0-FHED2-M80TY-8QYGC-NPKYF
 
@@ -68,7 +68,7 @@ YF390-0HF8P-M81RQ-2DXQE-M2UT6
 
 ZF71R-DMX85-08DQY-8YMNC-PPHV8
 
-FC11K-00DE0-0800Z-04Z5E-MC8T6
+FC11K-00DE0-0800Z-04Z5E-MC8T6*
 
 Sau khi nhập key, nhấn Enter, cửa sổ hiện lên thì nhấn Finish. 
 
