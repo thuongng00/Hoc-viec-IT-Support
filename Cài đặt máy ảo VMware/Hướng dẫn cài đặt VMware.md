@@ -11,6 +11,15 @@ Cấu hình khuyến nghị dành cho Vmware Workstation 16 như sau:
 - Hỗ trợ: DirectX 10
 - Ổ đĩa trống: 5 GB
 - Độ phân giải: 1024 x 768
+
+**Tính năng nổi bật của VMware Workstation 16 PRO** 
+- Hỗ trợ cài đặt đa dạng hệ điều hành điện toán đám mây với các vùng chứa như Docker, Kubernetes;
+- Hoạt động làm việc trên máy ảo như chạy, di chuyển, chia sẻ, kết nối vô cùng đơn giản, dễ sử dụng; 
+- Người dùng có thể thử nghiệm chạy cùng lúc nhiều hệ điều hành khác nhau trên máy tính; 
+- Bất kỳ hệ điều hành nào cũng có thể tạo máy ảo và thử nghiệm như hệ điều hành Linux, Windows,… 
+- Tối đa hóa các phần cứng, năng suất cho phép để dễ dàng thêm hoặc xóa máy tính ảo ra khỏi máy tính vật lý của bạn;
+- Khi kết nối với VMware vSphere, ESXi hoặc thậm chí các máy chủ, các server dự phòng, trạm workstation khác cũng rất đơn giản, tiện cho việc quản lý và điều khiển các máy ảo của VMware Workstation và máy chủ vật lý. 
+
 ### Bước 2: 
 
 Mở file cài đặt đã tải. Ở màn hình cài đặt, nhấn Next để tiến hành. 
@@ -28,7 +37,7 @@ Nhấn vào "I accept the terms in the License Agreement" để đồng ý các 
 ![image](https://user-images.githubusercontent.com/111716161/187020200-3eb64ab1-e7d4-46d5-85ee-c466d7da7a3a.png)
 
 ### Bước 5: 
-Bước này bạn có thể tích vào Check for product updates on startup để nhận cập nhật mới nhất từ nhà sản xuất. Nhấn Next để tiếp tục.
+Bước này bạn có thể tích vào "Check for product updates on startup" để nhận cập nhật mới nhất từ nhà sản xuất. Nhấn Next để tiếp tục.
 
 ![image](https://user-images.githubusercontent.com/111716161/187020229-159bb77f-0b73-472c-baea-4765c89951dc.png)
 
