@@ -98,4 +98,4 @@
 | date	| Xem lịch ngày, giờ hệ thống |
 | date –s “1 SEP 2022 15:29:00”	| Đặt ngày giờ hệ thống theo string |
 | date +%Y%m%d -s “20220901″	| Đặt ngày hệ thống (không thay đổi giờ) |
-date +%T -s “00:29:00″	Đặt giờ hệ thống, không thay đổi ngày
+| date +%T -s “00:29:00″	| Đặt giờ hệ thống, không thay đổi ngày | 
