@@ -27,3 +27,9 @@ Trong bourne shell sẽ có thêm một số phiên bản khác nhau như sau:
 - POSIX shell (sh)
 
 Hiện nay đa số người ta vẫn thích sử dụng kiểu Bourne shell và bourne Again shell (bash). Và trong series này chúng ta sẽ học thể loại bourne shell nhé.
+
+**C shell** 
+C shell có hai loại chính đó là:
+- C shell (csh)
+- TENEX/TOPS C shell (tcsh)
+
