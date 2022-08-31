@@ -19,6 +19,7 @@ Chúng ta có hai thể loại shell chính đó là:
 Ký tự nhắc lệnh là ký tự xuất hiện trên màn hình nhập lệnh, khi xuất hiện ký tự này tức là Linux đã sẵn sàng cho bạn nhập lệnh.
 
 **Bourne shell**
+
 Trong bourne shell sẽ có thêm một số phiên bản khác nhau như sau:
 - Bourne shell (sh)
 - Korn shell (ksh)
