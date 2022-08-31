@@ -7,16 +7,6 @@ Hãy mở Terminal của bạn lên và nhập lệnh sau:
 ```
 lsb_release -a
 ```
-
-Kết quả như sau:
-
-![image](https://user-images.githubusercontent.com/111716161/187593218-69a171ec-c9ae-4fa1-93d7-064da6052880.png)
-
-Phiên bản của CentOS sẽ được hiển thi trong mục Description mà mình đã bôi đỏ trong hình. Như bạn thấy thì máy tính của mình đang sử dụng phiên banr 7.5.1804.
-
-- 7 là phiên bản CentOS chính
-- 5 là phiên bản mới nhất của phiên bản chính
-- 1804 chính là mã ngày của phiên bản mới nhất này, có nghĩa là tháng 4 năm 2018 chính là thời điểm phát hành phiên bản 7.5.
 Lưu ý: Nếu bạn nhận thông báo lỗi lsb_release: command not found thì tức là máy bạn chưa được cài đặt gói redhat-lsb-core nhé. Hãy chạy lệnh dưới đây để cài đặt nó:
 ```
 sudo yum install redhat-lsb-core
@@ -26,3 +16,25 @@ sudo yum install redhat-lsb-core
 rpm (Red Hat Package Manager) là một công cụ quản lý gói cho các hệ thống dựa trên Red Hat như RHEL, CentOS và Fedora.
 
 Bạn có thể sử dụng công cụ rpm để hiển thị thông tin về gói centos-release, bao gồm phiên bản CentOS trong tên gọi của nó:
+```
+rpm --query centos-release
+```
+![image](https://user-images.githubusercontent.com/111716161/187610072-f37512e7-d584-41e4-95cc-5e97d94809bc.png)
+
+## 3. Kiểm tra version CentOS bằng file /etc/centos-release
+Package centos-release cung cấp file /etc/centos-release, vì vậy ta có thể kiểm tra thông tin bên trong file này.
+
+Hãy chạy lệnh sau nhé:
+
+```
+cat /etc/centos-release
+```
+![image](https://user-images.githubusercontent.com/111716161/187610377-207304f1-72d2-4c57-b129-6a29a220a581.png)
+
+## 4. Kiểm tra version CentOS bằng file /etc/os-release
+File /etc/os-rease chạy trên tất cả các bản phối Linux sử dụng systemd nên nó chỉ hoạt động trên CentOS7.
+```
+cat /etc/os-release
+```
+![image](https://user-images.githubusercontent.com/111716161/187610514-cbf1f777-ba41-4b05-99d4-506bb417646e.png)
+
