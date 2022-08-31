@@ -105,6 +105,8 @@ Lưu ý: Hãy hết sức cẩn thận với lệnh này và kiểm tra kỹ xem
 Lệnh touch cho phép bạn tạo một tệp mới trống thông qua dòng lệnh Linux.
 
 Ví dụ: nhập touch /home/username/Documents/index.html để tạo tệp HTML có tên index.html trong thư mục Documents
+ 
+![image](https://user-images.githubusercontent.com/111716161/187583249-60895685-e2dd-4e34-b38b-7449d7eb961f.png)
 
 ### 11. locate
 
@@ -128,6 +130,8 @@ Các biến thể khác khi sử dụng tìm kiếm là:
 Để tìm kiếm thư mục sử dụng, / -type d -name notes.txt
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/187586461-26a0ad02-9397-41b9-9e3e-48717b04a016.png)
+
 ### 13. grep
 
 Một lệnh Linux cơ bản khác chắc chắn hữu ích cho việc sử dụng hàng ngày là grep. Nó cho phép bạn tìm kiếm qua tất cả văn bản trong một tệp nhất định.
@@ -135,6 +139,8 @@ Một lệnh Linux cơ bản khác chắc chắn hữu ích cho việc sử dụ
 Để minh họa, lệnh grep blue notepad.txt sẽ tìm kiếm từ "blue" trong tệp notepad.
 
 Các dòng có chứa từ được tìm kiếm sẽ được hiển thị đầy đủ.
+
+![image](https://user-images.githubusercontent.com/111716161/187586797-b9ad5a3c-4e5e-466b-aa6e-b2bba12c9af9.png)
 
 ### 14. sudo
 
@@ -148,6 +154,8 @@ Sử dụng lệnh df để nhận báo cáo về việc sử dụng dung lượ
 
 Nếu bạn muốn xem báo cáo bằng megabyte, hãy nhập df -m
 
+![image](https://user-images.githubusercontent.com/111716161/187586874-0d308ede-d3c6-44af-92a9-c95d7f763566.png)
+
 ### 16. du
 
 Nếu bạn muốn kiểm tra xem một tệp hoặc một thư mục chiếm bao nhiêu dung lượng thì lệnh du (Disk Usage) là thứ bạn cần.
@@ -156,17 +164,25 @@ Tuy nhiên, bản tóm tắt sử dụng đĩa sẽ hiển thị số khối đ�
 
 Nếu bạn muốn xem nó ở dạng byte, kilobyte và megabyte, hãy thêm đối số -h vào dòng lệnh.
 
+![image](https://user-images.githubusercontent.com/111716161/187586959-1d3d850b-d160-4089-8a2a-1c398a83466f.png)
+
 ### 17. head
 
 Lệnh head được sử dụng để xem các dòng đầu tiên của bất kỳ tệp văn bản nào.
 
 Theo mặc định, nó sẽ hiển thị mười dòng đầu tiên, nhưng bạn có thể thay đổi con số này theo ý thích của mình.
 
-Ví dụ: nếu bạn chỉ muốn hiển thị năm dòng đầu tiên, hãy nhập head -n 5 filename.ext
+Ví dụ: nếu bạn chỉ muốn hiển thị năm dòng đầu tiên, hãy nhập head -n 5 notepad.txt
+
+![image](https://user-images.githubusercontent.com/111716161/187587179-4c60f844-3032-4d82-99b9-0335698a47ff.png)
 
 ### 18. tail
 
-Lệnh này có chức năng tương tự như lệnh head, nhưng thay vì hiển thị các dòng đầu tiên, lệnh tail sẽ hiển thị mười dòng cuối cùng của tệp văn bản. Ví dụ: tail -n filename.ext
+Lệnh này có chức năng tương tự như lệnh head, nhưng thay vì hiển thị các dòng đầu tiên, lệnh tail sẽ hiển thị dòng cuối cùng của tệp văn bản. 
+
+Ví dụ: tail -n  3 notepad.txt
+
+![image](https://user-images.githubusercontent.com/111716161/187587304-9fe87235-5a98-4a09-b96f-0273dbca9632.png)
 
 ### 19. diff
 
@@ -259,7 +275,7 @@ Ví dụ, nhập man tail sẽ hiển thị hướng dẫn thủ công của l�
 
 Lệnh echo được sử dụng để chuyển một số dữ liệu vào một tệp chỉ định.
 
-Ví dụ: Nếu bạn muốn thêm văn bản, Xin chào NIIT - ICT Hà Nội vào một tệp có tên là name.txt, bạn sẽ nhập echo Xin chào NIIT - ICT Hà Nội name.txt
+Ví dụ: Nếu bạn muốn thêm văn bản, "Hello world" vào một tệp có tên là bai2.txt, bạn sẽ nhập echo Hello world bai2.txt
 
 ### 32. zip và unzip
 
