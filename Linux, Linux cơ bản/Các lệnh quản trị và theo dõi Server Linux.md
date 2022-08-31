@@ -36,3 +36,26 @@
 | exit	| Thoát khỏi terminal |
 | halt	| Tắt máy (tương tự shutdown) |
 | sleep	| Cho hệ thống ngừng hoạt động trong một thời gian (ngủ – tương tự Windows) |
+
+## 3. Các lệnh về quản lý user trong Linux
+| Lệnh Linux	| Mô tả |
+|-------------|-------|
+| passwd	| Đổi mật khẩu (standard user có thể đổi pass của họ còn user root thì thay đổi được password của mọi user) |
+| pwck	| Kiểm tra syntax và định dạng của dữ liệu user/password (/etc/passwd) |
+| useradd	| Tạo user mới, ví dụ: useradd -c “test user 1” -g group1 |
+| userdel	| Xóa User |
+| usermod	| Thay đổi thông tin user (group, name…) |
+| groupadd	| Tạo một nhóm user mới |
+| groupdel	| Xóa nhóm user | 
+| groupmod	| Thay đổi thông tin group, ví dụ, groupmod -n “old group name”  “new name” |
+| who /w	| Hiển thị những user đang đăng nhập hệ thống |
+| uname	| Hiển thị tên của hệ thống (host) |
+| id	| Hiển thị user ID (Chỉ danh của user) |
+| logname	| Hiển thị tên user đang login |
+| su	| Cho phép đăng nhập với tên user khác (tương tự secondary logon của Windows) |
+| groups	| Hiển thị nhóm của user hiện tại |
+| #vi /etc/passwd	| Xem danh sách user |
+| #vi /etc/group	| Xem danh sách nhóm (group) |
+| chmod [tên file=””][/tên]	| Thay đổi quyền cho file/thư mục (chỉ user sở hữu file mới thực hiện được) |
+| chown user [tên file=””][/tên]	| Thay đổi chủ sở hữu file/thư mục |
+| chgrp group [file][/file]	| Thay đổi group sở hữu file/thư mục |
