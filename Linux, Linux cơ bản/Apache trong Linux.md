@@ -36,3 +36,13 @@ yum remove httpd -y
 ```
 httpd -v
 ```
+
+# Các file/thư mục quan trọng của Apache
+- /var/html/ : là thư mục gốc chứa các file htm , html , images …. tạo thành nội dung cho trang web
+- /etc/httpd/ : thư mục chứa tất cả các file cấu hình cho Apache :
+- /etc/httpd/conf/httpd.conf : file cấu hình chính của dịch vụ Apache
+- /etc/httpd/conf.d/ : thư mục chứa các cấu hình bổ sung cho Apache
+- /etc/httpd/conf.d/vhost.conf : file cấu hình virtual host
+- /etc/httpd/conf.modules.d/ : thư mục chứa file cấu hình của các modules
+- /var/log/httpd/error_log : file chứa log lỗi dịch vụ
+- /var/log/httpd/access_log : file chứa log đăng nhập
