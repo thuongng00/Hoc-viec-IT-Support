@@ -82,3 +82,6 @@ Chọn Customize Hardware để kiếm tra lại các thiếp lập. Nhấn Fini
 
 ![image](https://user-images.githubusercontent.com/111716161/187170846-db17bc92-7b15-411c-a959-b34be32a8e8b.png)
 
+Giao diện Ubuntu sau khi cài đặt hoàn tất.
+
+![image](https://user-images.githubusercontent.com/111716161/187849708-7b472435-f7f7-43cc-905b-b665df4e62f9.png)
