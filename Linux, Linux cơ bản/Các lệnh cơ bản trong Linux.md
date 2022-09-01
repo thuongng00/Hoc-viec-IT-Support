@@ -321,7 +321,11 @@ tar -xzf tar-file-name.tar.gz
 
 ls -lS
 
+![image](https://user-images.githubusercontent.com/111716161/187815683-5921ac41-b0cc-4579-ae74-0416e1fd33fc.png)
+
 ls -lSr
+
+![image](https://user-images.githubusercontent.com/111716161/187815725-26c676ca-e599-498c-8284-a5c456a28758.png)
 
 ### 38. Lệnh liệt kê kích thước các thư mục
 
@@ -331,23 +335,27 @@ du -sh /*
 
 df -h
 
+![image](https://user-images.githubusercontent.com/111716161/187815983-ae4b9f98-1b3e-49c8-a598-87873fe3667d.png)
+
+
 ### 40. Lệnh đếm tất cả các tệp và thư mục trong một thư mục
 
 ls | wc -l
 
-### 41. Lệnh đổi tên tệp hoặc thư mục:
+![image](https://user-images.githubusercontent.com/111716161/187816012-557e2426-5eb6-4b72-95e4-249e6b6d3b06.png)
 
-mv name new_name
 
-### 42. Lệnh xóa toàn bộ thư mục với tất cả nội dung của nó
+### 41. Lệnh xóa toàn bộ thư mục với tất cả nội dung của nó
 
 rm -rf dir_name
 
-### 43. Tạo một liên kết tượng trưng
+### 42. Tạo một liên kết tượng trưng
 
 ln -s [TARGET DIRECTORY OR FILE] ./[SHORTCUT]
 
 Ví dụ:
 
 ln -s /usr/local/apache/logs ./logs
+
+![image](https://user-images.githubusercontent.com/111716161/187816132-a30986a0-d743-4197-a5f7-c9b5b8dd1313.png)
 
