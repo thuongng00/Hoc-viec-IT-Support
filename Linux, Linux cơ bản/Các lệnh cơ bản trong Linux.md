@@ -243,6 +243,8 @@ Sử dụng lệnh ping để kiểm tra trạng thái kết nối của bạn v
 
 Ví dụ: Chỉ cần nhập ping google.com, lệnh sẽ kiểm tra xem bạn có thể kết nối với Google hay không và cũng là cách đo thời gian phản hồi.
 
+![image](https://user-images.githubusercontent.com/111716161/187814193-08d6f97c-2a70-402a-afbb-4e57121cf36f.png)
+
 ### 26. wget
 
 Lệnh Linux cực kỳ hữu ích - bạn thậm chí có thể tải xuống các tệp từ internet với sự trợ giúp của lệnh wget. Để làm như vậy, chỉ cần gõ wget theo sau là liên kết tải xuống.
@@ -250,6 +252,8 @@ Lệnh Linux cực kỳ hữu ích - bạn thậm chí có thể tải xuống c
 ### 27. uname
 
 Lệnh uname, viết tắt của Unix Name, sẽ in thông tin chi tiết về hệ thống Linux của bạn như tên máy, hệ điều hành, nhân, v.v.
+
+![image](https://user-images.githubusercontent.com/111716161/187814027-92df0a44-29bd-4b7b-905c-66152e376981.png)
 
 ### 28. top
 
@@ -271,11 +275,15 @@ Bạn nhầm lẫn về chức năng của các lệnh Linux nhất định?
 
 Ví dụ, nhập man tail sẽ hiển thị hướng dẫn thủ công của lệnh tail.
 
+![image](https://user-images.githubusercontent.com/111716161/187813950-a18e70bf-f70f-4d9e-b22e-2a80ac358f88.png)
+
 ### 31. echo
 
 Lệnh echo được sử dụng để chuyển một số dữ liệu vào một tệp chỉ định.
 
-Ví dụ: Nếu bạn muốn thêm văn bản, "Hello world" vào một tệp có tên là bai2.txt, bạn sẽ nhập echo Hello world bai2.txt
+Ví dụ: Nếu bạn muốn thêm văn bản, "Hello world" vào một tệp có tên là bai2.txt, bạn sẽ nhập echo "Hello world" >> bai2.txt
+
+![image](https://user-images.githubusercontent.com/111716161/187814582-d9c84a7a-a3ff-43c6-a7a4-abc54fad67ad.png)
 
 ### 32. zip và unzip
 
@@ -284,6 +292,8 @@ Sử dụng lệnh zip để nén các tệp của bạn thành một file zip v
 ### 33. hostname
 
 Nếu bạn muốn biết tên host / network của mình, chỉ cần nhập lệnh hostname. Thêm -I vào cuối sẽ hiển thị địa chỉ IP của mạng của bạn.
+
+![image](https://user-images.githubusercontent.com/111716161/187814646-1f8fd635-6edf-4a85-9e88-6b188b11bcaa.png)
 
 ### 34. useradd và userdel
 
@@ -296,3 +306,48 @@ Lệnh useradd được sử dụng để tạo người dùng mới, và passwd
 Sau đó để thêm mật khẩu của người dùng này, sử dụng lệnh passwd 123456
 
 Để xóa người dùng cũng tương tự như thêm người dùng mới, ta sử dụng lệnh: userdel UserName
+
+### 35. Lệnh lưu trữ tệp của các thư mục
+
+tar -czf new-tar-file-name.tar.gz file-or-folder-to-archive
+
+tar -czf new-tar-file-name.tar.gz file1 file2 folder1 folder2
+
+### 36. Hủy lưu trữ
+
+tar -xzf tar-file-name.tar.gz
+
+### 37. Lệnh liệt kê và sắp xếp các tệp theo kích thước
+
+ls -lS
+
+ls -lSr
+
+### 38. Lệnh liệt kê kích thước các thư mục
+
+du -sh /*
+
+### 39. Lệnh xem ổ đĩa còn trống bao nhiêu
+
+df -h
+
+### 40. Lệnh đếm tất cả các tệp và thư mục trong một thư mục
+
+ls | wc -l
+
+### 41. Lệnh đổi tên tệp hoặc thư mục:
+
+mv name new_name
+
+### 42. Lệnh xóa toàn bộ thư mục với tất cả nội dung của nó
+
+rm -rf dir_name
+
+### 43. Tạo một liên kết tượng trưng
+
+ln -s [TARGET DIRECTORY OR FILE] ./[SHORTCUT]
+
+Ví dụ:
+
+ln -s /usr/local/apache/logs ./logs
+
