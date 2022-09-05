@@ -105,18 +105,18 @@ Virtual Host là file cấu hình trong Apache để cho phép nhiều domain c�
 
 Tất cả các file vhost sẽ nằm trong thư mục /etc/httpd/conf.d/. Để tiện quản lý mỗi website nên có một vhost riêng, ví dụ: hostvn.net.conf
 
-Trong ví dụ này sẽ tạo website thuong.com với vhost tương ứng là /etc/httpd/conf.d/thuong.com.conf
+Trong ví dụ này sẽ tạo website nganthuong.com với vhost tương ứng là /etc/httpd/conf.d/nganthuong.com.conf
 
-`nano /etc/httpd/conf.d/thuong.com.conf`
+`nano /etc/httpd/conf.d/nganthuong.com.conf`
 
 Dán nội dung sau vào
 
 ```
 <VirtualHost *:80>
-ServerAdmin thuong@gmail.com
-ServerName thuong.vn
-ServerAlias www.thuong.vn
-DocumentRoot /home/thuong.vn/public_html
+ServerAdmin nganthuong@gmail.com
+ServerName nganthuong.vn
+ServerAlias www.nganthuong.vn
+DocumentRoot /home/nganthuong.vn/public_html
 ErrorLog logs/error
 CustomLog logs/access combined
 </VirtualHost>
@@ -124,11 +124,11 @@ CustomLog logs/access combined
 
 Tiếp theo các bạn cần tạo thư mục chứa mã nguồn website và thư mục chứa file log bằng các lệnh sau
 
-`mkdir -p /home/thuong.com/public_html`
+`mkdir -p /home/nganthuong.com/public_html`
 
-`mkdir -p /home/thuong.com/logs`
+`mkdir -p /home/nganthuong.com/logs`
 
-`chown -R apache:apache /home/thuong.com`
+`chown -R apache:apache /home/nganthuong.com`
 
 Reload lại Apache để cập nhật cấu hình
 
@@ -136,7 +136,7 @@ Reload lại Apache để cập nhật cấu hình
 
 Sau khi cấu hình hoàn tất các bạn trỏ tên miền về vps sau đó tạo file /home/hostvn.net/public_html/index.html
 
-`nano /home/thuong.com/public_html/index.html`
+`nano /home/nganthuong.com/public_html/index.html`
 
 Dán nội dung sau vào
 
@@ -145,7 +145,7 @@ Dán nội dung sau vào
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>TRANCHINH.COM - Hướng dẫn cài đặt Apache trên CentOS 7</title>
+	<title>NGANTHUONG.COM - Hướng dẫn cài đặt Apache trên CentOS 7</title>
 </head>
 <body>
 	<p><center> Hello World</center></p>
