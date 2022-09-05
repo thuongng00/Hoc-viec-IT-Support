@@ -77,7 +77,8 @@ Theo mặc định thì khi truy cập IP của VPS hoặc khi trỏ một tên 
 
 Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
    
-``<VirtualHost *:80>
+```
+<VirtualHost *:80>
 	DocumentRoot /var/www/html
   
 	ServerName www.example.com
@@ -93,7 +94,8 @@ Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
 	</Directory>
   
 </VirtualHost>
-Screenshot_113``
+Screenshot_113
+```
 
 5.5. Tạo virtual host (vhost) cho website
 
