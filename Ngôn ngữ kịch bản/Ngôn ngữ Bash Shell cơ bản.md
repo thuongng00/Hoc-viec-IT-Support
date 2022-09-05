@@ -57,3 +57,52 @@ Cú pháp until:
 
 # Các mẹo dùng Bash
 
+### Tạo alias (viết tắt)
+Việc này giúp bạn tiết kiệm thời gian bằng cách gõ alias để chạy một command dài nào đó thường xuyên. Ví dụ:
+
+Chạy nano ~/.bash_profile và thêm dòng dưới đây vào:
+
+![image](https://user-images.githubusercontent.com/111716161/188350265-2cf55971-8648-4a5f-8984-8e8a9add8c8a.png)
+
+Sau khi sửa bạn cần cập nhật lại:
+
+![image](https://user-images.githubusercontent.com/111716161/188350311-e83699d1-3b8a-42b1-8432-38727addc05d.png)
+
+### Di chuyển nhanh chóng
+Chạy nano ~/.bashrc và thêm vào dòng dưới đây:
+
+![image](https://user-images.githubusercontent.com/111716161/188350411-2e955d48-c07d-44a8-9a8d-f12637316bac.png)
+
+Bây giờ, bạn cần cập nhật lại bashrc và việc di chuyển tới một đường dẫn dài trở nên rất đơn giản:
+
+![image](https://user-images.githubusercontent.com/111716161/188350473-3a99e84f-4f57-4451-9a19-538c7b46eb6f.png)
+
+### Chạy lại command trước đó
+Cái này giúp bạn thực thi lại lệnh ngay trước đó. Bạn có thể sử dụng phím mũi tên UP cũng được. Nhưng có thể đôi khi nó vẫn hữu ích.
+
+Để thực thi command ngay trước đó, chạy:
+
+![image](https://user-images.githubusercontent.com/111716161/188350508-a22b89d5-e335-4537-bb03-ec2b8f007b81.png)
+
+### Exit traps
+Làm cho các tập lệnh bash của bạn hoàn hảo hơn bằng cách thực hiện dọn dẹp một cách đáng tin cậy.
+
+![image](https://user-images.githubusercontent.com/111716161/188350598-4615ece0-3e78-4453-9ebe-8e1a62739fea.png)
+
+### Lưu lại các biến môi trường
+Khi bạn thực thi export FOO = BAR, biến của bạn chỉ được lưu trong shell làm việc hiện tại. Để có thể lưu và tiếp tục sử dụng trong tương lai, bạn hãy thêm nó vào tệp ~/.bash_profile như sau:
+
+![image](https://user-images.githubusercontent.com/111716161/188350658-4a321a94-b880-41c4-8bc3-e1fbe52db799.png)
+
+### Truy cập các script của bạn
+Bạn có thể dễ dàng sử dụng các script bằng cách tạo một thư mục bin trong thư mục HOME của bạn với mkdir ~/bin. Bây giờ tất cả các script bạn để trong đó có thể sử dụng chỉ bằng cách gọi tên ở bất kỳ nơi đâu.
+
+Nếu trong trường hợp có lỗi, hãy thử thêm code dưới đây vào cuối ~/.bash_profile và chạy source ~/.bash_profile để thử lại xem sao nhé.
+
+![image](https://user-images.githubusercontent.com/111716161/188350697-1ebeaab7-9db6-47f4-b95c-35810610f50d.png)
+
+### Debug trong Bash shell
+Bạn có thể dễ dàng debug trong khi học bash shell (bash script) hoặc trong khi làm bằng cách thêm các option vào command. Ví dụ, -n để chỉ kiểm tra cú pháp mà không chạy command đó. -v để in ra command đó trước khi chạy. -x để in ra command đó sau khi chạy xong.
+
+![image](https://user-images.githubusercontent.com/111716161/188350752-e612139f-a8b1-46c8-90f8-b3ae7ad08a12.png)
+
