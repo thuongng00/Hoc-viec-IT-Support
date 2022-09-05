@@ -155,3 +155,4 @@ Dán nội dung sau vào
 
 Truy cập tên miền của bạn bằng trình duyệt để kiểm tra
     
+![image](https://user-images.githubusercontent.com/111716161/188391364-45725d7f-c70c-46b7-9c73-2ef9e0c89911.png)
