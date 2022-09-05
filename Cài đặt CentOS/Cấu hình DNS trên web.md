@@ -31,4 +31,35 @@ vi /etc/hosts
 cd /etc/httpd/
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/188395218-a859ab2c-62a5-4ec6-a1d6-89756b6069b7.png)
+
+### 2. Gõ ls để kiếm tra các file cấu hình:
+
+```
+ls
+```
+
+![image](https://user-images.githubusercontent.com/111716161/188395569-0d681ed4-ff60-4c47-978e-b4723cf14c42.png)
+
+### 3. Gõ cd conf để vào file cấu hình web và gõ cd /var/www/html để truy cập vào file tạo web
+
+```
+cd conf
+```
+
+![image](https://user-images.githubusercontent.com/111716161/188395791-7cf0502d-f507-4474-b5cd-c0d984dbc2a1.png)
+
+### 4. Gõ vi index.html để tạo một trang web riêng
+
+```
+vi index.html
+```
+
+![image](https://user-images.githubusercontent.com/111716161/188398599-4f2f1a74-4383-4a8d-b72a-839aaffb3fc1.png)
+
+### 5. Sau khi gõ lệnh sẽ tạo ra một thư mục để nhập nội dung hiện thị trên trang web
+
+![image](https://user-images.githubusercontent.com/111716161/188398483-5b0d0c77-5a6e-4fe9-bab1-80b9b39e55e6.png)
+
+
 
