@@ -53,3 +53,19 @@ Các file cấu hình :
 - Để quản lý tốt hơn, nên tạo một tệp cấu hình riêng (vhost) cho mỗi tên miền.
 - Các tệp vhost Apache phải kết thúc bằng ``.conf`` và được lưu trữ trong thư mục ``/etc/httpd/conf.d``. Ví dụ: nếu tên miền của bạn là mydomain.com thì tệp cấu hình sẽ được đặt tên ``/etc/httpd/conf.d/mydomain.com.conf``
 - Các file log của Apache (access_log và error_log) nằm trong thư mục ``/var/log/httpd/``. Bạn nên có file log riêng cho mỗi vhost.
+
+### 5. Tạo Virtualhost (Vhost)
+5.1. Bật userdir bằng lệnh : ``nano /etc/httpd/conf.d/userdir.conf``
+
+![image](https://user-images.githubusercontent.com/111716161/188361388-6f02c2ac-fd81-423d-9432-5ace2705bcf4.png)
+
+5.2. Tại đây, chúng ta cần sửa bằng cách nhập ``UserDir public_html``
+
+![image](https://user-images.githubusercontent.com/111716161/188361703-3a9b1212-897c-496f-a8f0-ef3135bf7227.png)
+
+5.3. Tiếp theo tìm đoạn rule
+
+![image](https://user-images.githubusercontent.com/111716161/188361964-5dd6d54b-31de-4d38-a0f9-cfe2b3f28e89.png)
+
+
+
