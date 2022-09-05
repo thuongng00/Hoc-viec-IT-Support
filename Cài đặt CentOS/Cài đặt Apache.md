@@ -67,5 +67,87 @@ Các file cấu hình :
 
 ![image](https://user-images.githubusercontent.com/111716161/188361964-5dd6d54b-31de-4d38-a0f9-cfe2b3f28e89.png)
 
+Sửa thành
 
+5.4 Chặn truy cập IP VPS tự động 
 
+Theo mặc định thì khi truy cập IP của VPS hoặc khi trỏ một tên miền về VPS mà tên miền này không được cấu hình vhost thì bạn sẽ được redirect tới một website bất kỳ trên VPS, điều này là không nên và để hạn chế điều này các bạn mở file /etc/httpd/conf/httpd.conf
+
+   `` nano /etc/httpd/conf/httpd.conf ``
+
+Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
+   
+``<VirtualHost *:80>
+	DocumentRoot /var/www/html
+  
+	ServerName www.example.com
+  
+	<Directory "/var/www/html">
+  
+		AllowOverride All
+    
+    Options None
+    
+    Require method GET POST OPTIONS
+    
+	</Directory>
+  
+</VirtualHost>
+Screenshot_113``
+
+5.5. Tạo virtual host (vhost) cho website
+
+Virtual Host là file cấu hình trong Apache để cho phép nhiều domain cùng chạy trên một máy chủ. Có một khái niệm khác được đề cập tới trong Nginx cũng có chức năng tương tự như Virtual Host được gọi là Server Block.
+
+Tất cả các file vhost sẽ nằm trong thư mục /etc/httpd/conf.d/. Để tiện quản lý mỗi website nên có một vhost riêng, ví dụ: hostvn.net.conf
+
+Trong ví dụ này sẽ tạo website thuong.com với vhost tương ứng là /etc/httpd/conf.d/thuong.com.conf
+
+`nano /etc/httpd/conf.d/thuong.com.conf`
+
+Dán nội dung sau vào
+
+```
+<VirtualHost *:80>
+ServerAdmin thuong@gmail.com
+ServerName thuong.vn
+ServerAlias www.thuong.vn
+DocumentRoot /home/thuong.vn/public_html
+ErrorLog logs/error
+CustomLog logs/access combined
+</VirtualHost>
+```
+
+Tiếp theo các bạn cần tạo thư mục chứa mã nguồn website và thư mục chứa file log bằng các lệnh sau
+
+`mkdir -p /home/thuong.com/public_html`
+
+`mkdir -p /home/thuong.com/logs`
+
+`chown -R apache:apache /home/thuong.com`
+
+Reload lại Apache để cập nhật cấu hình
+
+`systemctl reload httpd`
+
+Sau khi cấu hình hoàn tất các bạn trỏ tên miền về vps sau đó tạo file /home/hostvn.net/public_html/index.html
+
+`nano /home/thuong.com/public_html/index.html`
+
+Dán nội dung sau vào
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TRANCHINH.COM - Hướng dẫn cài đặt Apache trên CentOS 7</title>
+</head>
+<body>
+	<p><center> Hello World</center></p>
+</body>
+</html>
+```
+
+Truy cập tên miền của bạn bằng trình duyệt để kiểm tra
+    
