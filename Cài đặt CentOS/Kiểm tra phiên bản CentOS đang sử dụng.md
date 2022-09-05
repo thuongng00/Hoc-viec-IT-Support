@@ -28,7 +28,6 @@ rpm --query centos-release
 Package centos-release cung cấp file /etc/centos-release, vì vậy ta có thể kiểm tra thông tin bên trong file này.
 
 Hãy chạy lệnh sau nhé:
-
 ```
 cat /etc/centos-release
 ```
