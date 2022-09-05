@@ -34,3 +34,22 @@ firewall-cmd --reload
 ```
 
 ![image](https://user-images.githubusercontent.com/111716161/188358800-d3531ad8-f707-4311-8354-d7032b2fff0e.png)
+
+Các câu lệnh quản lý apache với systemctl :
+
+- Để dừng apache dùng lệnh : ``systemctl stop httpd``
+- Để khởi động apache dùng lệnh : ``systemctl start httpd``
+- Lệnh khởi động lại apache: ``systemctl restart httpd``
+- Tải lại dịch vụ apache sau khi thay đổi cấu hình : ``systemctl reload httpd``
+- Nếu không muốn Apache tự động chạy mỗi khi khởi động lại VPS sử dụng lệnh sau: ``systemctl disable httpd``
+- Nếu muốn Apache tự động chạy mỗi khi khởi động lại VPS sử dụng lệnh sau: ``systemctl enable httpd``
+
+Các file cấu hình :
+
+- Tất cả các file cấu hình của Apache đều nằm trong thư mục ``/etc/httpd``.
+- File cấu hình chính của Apache là ``/etc/httpd/conf/httpd.conf``.
+- Tất cả các tệp cấu hình đều phải kết thúc bằng .conf và nằm trong thư mục ``/etc/httpd/conf.d``.
+- Các tệp cấu hình chịu trách nhiệm tải các modules Apache được đặt trong thư mục ``/etc/httpd/conf.modules.d``.
+- Để quản lý tốt hơn, nên tạo một tệp cấu hình riêng (vhost) cho mỗi tên miền.
+- Các tệp vhost Apache phải kết thúc bằng ``.conf`` và được lưu trữ trong thư mục ``/etc/httpd/conf.d``. Ví dụ: nếu tên miền của bạn là mydomain.com thì tệp cấu hình sẽ được đặt tên ``/etc/httpd/conf.d/mydomain.com.conf``
+- Các file log của Apache (access_log và error_log) nằm trong thư mục ``/var/log/httpd/``. Bạn nên có file log riêng cho mỗi vhost.
