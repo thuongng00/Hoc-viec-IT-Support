@@ -24,7 +24,7 @@ Xóa nội dung trên cửa sổ làm việc.
 
 ![image](https://user-images.githubusercontent.com/111716161/188343119-04360feb-c552-4fa3-9a3c-122b91211bc2.png)
 
-## Nhóm command thao tác tệp
+## 2. Nhóm command thao tác tệp
 
 ### cat
 
@@ -134,4 +134,62 @@ Cập nhật thời gian truy cập và sửa đổi của tệp tin tới thờ
 ![image](https://user-images.githubusercontent.com/111716161/188344538-c860864c-0747-42ee-bfae-544b25ff1785.png)
 
 ## 3. Nhóm command thao tác văn bản
+
+## awk
+awk là một trong những command rất hữu ích để làm việc với các tệp tin văn bản. Nó tác động tới từng dòng nội dung của văn bản. Mặc định awk sẽ dùng khoảng trắng để phân tách các trường. Cú pháp thông dụng nhất của awk là
+
+![image](https://user-images.githubusercontent.com/111716161/188344778-9ee59bed-e154-4bff-9c55-7e882df299c2.png)
+
+### cut
+Xóa một phần nội dung ở mỗi dòng của các tệp tin văn bản.
+
+### echo
+Hiển thị một dòng văn bản lên màn hình.
+
+### egrep
+Tìm và xuất ra các dòng khớp với một pattern nào đó – Extended Expression (đại diện cho: grep -E).
+
+### fgrep
+Tìm và xuất ra các dòng khớp với một pattern nào đó – FIXED pattern matching (alias for: grep -F).
+
+### fmt
+Định dạng lại cách hiển thị văn bản.
+
+### grep
+Tìm kiếm văn bản trong các tệp tin. Bạn có thể sử dụng grep để tìm các dòng văn bản khớp với một hoặc nhiều biểu thức chính quy (regular expression). Command này sẽ chỉ xuất ra các dòng khớp với điều kiện của bạn.
+
+### nl
+Thêm số thứ tự dòng vào đầu các dòng trong tệp văn bản.
+
+### sed
+Trình chỉnh sửa phục vụ cho việc tạo bộ lọc (filter) và chuyển đổi (tranform) dữ liệu văn bản.
+
+### sort
+Sắp xếp các dòng văn bản trong một tệp tin. Sử dụng tham số -r để sắp xếp theo thứ tự đảo ngược.
+
+### tr
+Thay đổi hoặc xóa các ký tự.
+
+### uniq
+Xóa trùng lặp dữ liệu trong tệp tin văn bản
+
+### wc
+Cho chúng ta biết tệp tin có bao nhiêu dòng, bao nhiều từ và bao nhiêu ký tự trong đó.
+
+## 4. Nhóm command thao tác thư mục
+
+### cd
+cd là viết tắt của “change directory”. Nó giúp bạn di chuyển vị trí làm việc. Chạy command dưới đây
+
+![image](https://user-images.githubusercontent.com/111716161/188345371-f7a5adab-9eb0-4ecb-916f-0190de922a0a.png)
+
+### mkdir
+Tạo một thư mục mới.
+
+![image](https://user-images.githubusercontent.com/111716161/188345440-6680816f-21f2-47cb-8bc2-21fd8997cdba.png)
+
+### pwd
+Cho bạn biết đường dẫn tuyệt đối của thư mục nơi bạn đang làm việc. Viết tắt của print working directory:
+
+![image](https://user-images.githubusercontent.com/111716161/188345496-f1d58c56-9d15-48ba-b675-c164de6b0af9.png)
 
