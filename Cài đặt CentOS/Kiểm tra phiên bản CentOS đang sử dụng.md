@@ -7,7 +7,10 @@ Hãy mở Terminal của bạn lên và nhập lệnh sau:
 ```
 lsb_release -a
 ```
-Lưu ý: Nếu bạn nhận thông báo lỗi lsb_release: command not found thì tức là máy bạn chưa được cài đặt gói redhat-lsb-core nhé. Hãy chạy lệnh dưới đây để cài đặt nó:
+
+![image](https://user-images.githubusercontent.com/111716161/188342078-95214838-fe4f-4455-b208-5851cc8c1de3.png)
+
+*Lưu ý: Nếu bạn nhận thông báo lỗi lsb_release: command not found thì tức là máy bạn chưa được cài đặt gói redhat-lsb-core nhé. Hãy chạy lệnh dưới đây để cài đặt nó:*
 ```
 sudo yum install redhat-lsb-core
 ```
