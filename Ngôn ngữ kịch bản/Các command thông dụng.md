@@ -1,3 +1,5 @@
+Các command cơ bản là nền tảng để bạn có thể làm các công việc đơn giản trên môi trường Bash shell và hỗ trợ bạn trong việc tạo ra các bash script để làm các công việc phức tạp hơn. Dưới đây là liệt kê chức năng và cách sử dụng các command đó.
+
 ## 1. Nhóm command cơ bản
 ### export
 Hiển thị danh sách tất cả các biến môi trường. Nếu bạn muốn xem chi tiết một biến cụ thể, sử dụng echo $VARIABLE_NAME.
@@ -193,3 +195,119 @@ Cho bạn biết đường dẫn tuyệt đối của thư mục nơi bạn đan
 
 ![image](https://user-images.githubusercontent.com/111716161/188345496-f1d58c56-9d15-48ba-b675-c164de6b0af9.png)
 
+## 5. Nhóm command SSH, thông tin hệ thống & mạng
+### bg
+Hiển thị danh sách các backgroud job (công việc chạy trong nền).
+
+### cal
+Hiển thị lịch của tháng hiện tại.
+
+### date
+Hiển thị ngày và giờ của thời điểm hiện tại.
+
+### df
+Hiển thị mức dùng ổ đĩa: đã dùng bao nhiêu, còn trống bao nhiêu
+
+### dig
+Kiểm tra thông tin bản ghi DNS của một tên miền.
+
+![image](https://user-images.githubusercontent.com/111716161/188345666-3cdc7a4c-de6d-4f12-a426-bac7c87c1f82.png)
+
+### du
+Hiển thị mức sử dụng ổ đĩa của các tệp tin hoặc thư mục.
+
+![image](https://user-images.githubusercontent.com/111716161/188345750-12484ca1-e1d8-4b9f-954e-fb2317e3c0e5.png)
+
+Các option:
+
+-h (Dễ đọc hơn) Hiển thị mức dùng ở đơn vị (KB), (MB) và (GB).
+
+-s (Tóm tắt) Hiển thị mức dùng ổ đĩa của thư mục một cách tóm tắt.
+
+### fg
+Di chuyển các job lên foreground (chuyển từ chạy trong nền ra chạy trên màn hình console)
+
+### finger
+
+Hiển thị thông tin về một user.
+
+![image](https://user-images.githubusercontent.com/111716161/188345810-f1f80a7f-64e7-40c7-8b6e-09521d5d8b8d.png)
+
+### jobs
+Liệt kê các job đang chạy trong backgroud, cung cấp cho bạn chỉ số job (job number).
+
+### last
+Liệt kê các thông tin đăng nhập cuối cùng của bạn về người dùng được chỉ định.
+
+![image](https://user-images.githubusercontent.com/111716161/188345904-fdfb3b22-04d8-4ff2-8662-13ed7eaea229.png)
+
+### man
+Hiển thị tài liệu hướng dẫn (manual page) của command cụ thể.
+
+![image](https://user-images.githubusercontent.com/111716161/188345964-d7714e70-e6ed-42f7-8bf8-46ec2e191900.png)
+
+### passwd
+Cho phép user đang đăng nhập thay đổi mật khẩu đăng nhập.
+
+### ping
+PING tới 1 host nào đó kèm theo kết quả. Được dùng để kiểm tra xem máy của bạn có kết nối tới host đó hay không.
+
+![image](https://user-images.githubusercontent.com/111716161/188345987-37299870-40a4-49ed-9204-52dee3390ea0.png)
+
+### ps
+Liệt kê các tiến trình hiện có của bạn.
+
+![image](https://user-images.githubusercontent.com/111716161/188346027-7f67133f-6134-460d-8068-d8e33384e08a.png)
+
+### quota
+Cho biết mức dùng ổ đĩa của bạn là bao nhiêu.
+
+### scp
+Truyền dữ liệu từ máy localhost tới máy remote hoặc ngược lại.
+
+### ssh
+ssh (SSH client) là một chương trình cho phép bạn đăng nhập và thực thi các command trên 1 máy remote từ máy tính của bạn.
+
+###top
+Hiển thị các tiến trình đang được kích hoạt.
+
+### uname
+Hiển thị thông tin nhân hệ điều hành.
+
+### uptime
+Hiển thị thời gian hoạt động (uptime).
+
+### w
+Displays who is online.
+Hiển thị user nào đang online.
+
+### wget
+Download tệp tin từ internet.
+
+### whoami
+Trả về username của user đang đăng nhập.
+
+### whois
+Xem thông tin whois của một tên miền.
+
+## 6. Nhóm command thác tác tiến trình
+
+### kill
+Bắt buộc dừng (kết thúc) một tiến trình có PID mà bạn cung cấp.
+
+![image](https://user-images.githubusercontent.com/111716161/188346339-a893b72f-75c4-4ff6-8165-058558372531.png)
+
+### killall
+Bắt buộc dừng (kết thúc) tất cả các tiến trình theo tên tiến trình.
+
+![image](https://user-images.githubusercontent.com/111716161/188346361-c112524c-b282-4216-9f3a-97462b6ed406.png)
+
+### &
+Ký tự & chỉ định cho một command phải chạy ở chế độ background.
+
+![image](https://user-images.githubusercontent.com/111716161/188346415-318bb29e-fc4f-4b34-8853-7d9345f53c2a.png)
+
+### nohup
+nohup là viết tắt của “No Hang Up”. Nó cho phép bạn chạy các command hoặc tiến trình trong backgroud ngay cả khi bạn đăng xuất (logout, không đồng nghĩa với tắt máy) khỏi terminal.
+
+![image](https://user-images.githubusercontent.com/111716161/188346447-62b47394-92f8-4764-9f22-e0b4f3384b9f.png)
