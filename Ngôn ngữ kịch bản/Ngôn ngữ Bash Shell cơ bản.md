@@ -28,3 +28,32 @@ Xem một số cú pháp dưới đây để biết các thao tác thay thế ch
 
 # Hàm trong bash script
 Như hầu hết các ngôn ngữ lập trình, bạn có thể sử dụng hàm để nhóm các đoạn code vào thành tức chức năng riêng nhằm mục đích cấu trúc và tái sử dụng. Trong Bash, khai báo một hàm nó như thế này function my_func { my_code }. Còn việc gọi hàm chỉ đơn giản là viết tên hàm ra thôi.
+
+![image](https://user-images.githubusercontent.com/111716161/188348194-a171847c-99c3-4e40-8181-193232a5c847.png)
+
+# Cấu trúc điều khiển
+Cấu trúc điều khiển trong Bash tương tự như các ngôn ngữ lập trình khác. Có nhiều dạng cấu trúc điều khiển nhưng cơ bản nhất là câu lệnh if điều kiện then khối lệnh và khối lệnh chỉ được thực thi khi điều kiện là đúng (true).
+
+![image](https://user-images.githubusercontent.com/111716161/188348241-2c5e4795-8006-4c31-a651-8f7ceae4405b.png)
+
+Đôi khi việc sử dụng case statements sẽ làm code bạn rõ ràng hơn so với sử dụng if.
+
+![image](https://user-images.githubusercontent.com/111716161/188348270-8e97517c-779a-4898-9584-3dc415f47cf2.png)
+
+# Vòng lặp trong bash
+Có 3 loại vòng lặp trong Bash: for, while và until.
+
+Các cú pháp for khác nhau:
+
+![image](https://user-images.githubusercontent.com/111716161/188348329-3d713344-705b-48b1-afe5-09768c3e0960.png)
+
+Cú pháp while:
+
+![image](https://user-images.githubusercontent.com/111716161/188348357-fd919ac3-b7f6-432d-b1df-b85ca7902aac.png)
+
+Cú pháp until:
+
+![image](https://user-images.githubusercontent.com/111716161/188348420-432569f1-63df-4dd7-a739-da29775a1ae9.png)
+
+# Các mẹo dùng Bash
+
