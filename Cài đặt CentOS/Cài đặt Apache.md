@@ -156,3 +156,10 @@ Dán nội dung sau vào
 Truy cập tên miền của bạn bằng trình duyệt để kiểm tra
     
 ![image](https://user-images.githubusercontent.com/111716161/188391364-45725d7f-c70c-46b7-9c73-2ef9e0c89911.png)
+
+![image](https://user-images.githubusercontent.com/111716161/188393990-bb0b2250-d88e-4c9c-b060-031bf652efa8.png)
+
+![image](https://user-images.githubusercontent.com/111716161/188394117-382673b9-8e09-417f-bad4-60a3031412fd.png)
+
+![image](https://user-images.githubusercontent.com/111716161/188394236-fee33179-8918-4dcb-b996-c3cf5be3ce7d.png)
+
