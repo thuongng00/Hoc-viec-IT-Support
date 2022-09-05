@@ -98,68 +98,27 @@ Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
 </VirtualHost>
 Screenshot_113
 ```
+Vì CentOS là mã nguồn mở, nên Apache có sẵn trong kho lưu trữ, trước tiên cần cập nhật httpd package index để cập nhật những thay đổi mới nhất
 
-5.5. Tạo virtual host (vhost) cho website
-
-Virtual Host là file cấu hình trong Apache để cho phép nhiều domain cùng chạy trên một máy chủ. Có một khái niệm khác được đề cập tới trong Nginx cũng có chức năng tương tự như Virtual Host được gọi là Server Block.
-
-Tất cả các file vhost sẽ nằm trong thư mục /etc/httpd/conf.d/. Để tiện quản lý mỗi website nên có một vhost riêng, ví dụ: hostvn.net.conf
-
-Trong ví dụ này sẽ tạo website nganthuong.com với vhost tương ứng là /etc/httpd/conf.d/nganthuong.com.conf
-
-`nano /etc/httpd/conf.d/nganthuong.com.conf`
-
-Dán nội dung sau vào
-
-```
-<VirtualHost *:80>
-ServerAdmin nganthuong@gmail.com
-ServerName nganthuong.vn
-ServerAlias www.nganthuong.vn
-DocumentRoot /home/nganthuong.vn/public_html
-ErrorLog logs/error
-CustomLog logs/access combined
-</VirtualHost>
-```
-
-Tiếp theo các bạn cần tạo thư mục chứa mã nguồn website và thư mục chứa file log bằng các lệnh sau
-
-`mkdir -p /home/nganthuong.com/public_html`
-
-`mkdir -p /home/nganthuong.com/logs`
-
-`chown -R apache:apache /home/nganthuong.com`
-
-Reload lại Apache để cập nhật cấu hình
-
-`systemctl reload httpd`
-
-Sau khi cấu hình hoàn tất các bạn trỏ tên miền về vps sau đó tạo file /home/hostvn.net/public_html/index.html
-
-`nano /home/nganthuong.com/public_html/index.html`
-
-Dán nội dung sau vào
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>NGANTHUONG.COM - Hướng dẫn cài đặt Apache trên CentOS 7</title>
-</head>
-<body>
-	<p><center> Hello World</center></p>
-</body>
-</html>
-```
-
-Truy cập tên miền của bạn bằng trình duyệt để kiểm tra
+Sử dụng lệnh `sudo yum update httpd`
     
 ![image](https://user-images.githubusercontent.com/111716161/188391364-45725d7f-c70c-46b7-9c73-2ef9e0c89911.png)
 
+Sau đó thực hiện gói cài đặt phần mềm `sudo yum install httpd`
+
 ![image](https://user-images.githubusercontent.com/111716161/188393990-bb0b2250-d88e-4c9c-b060-031bf652efa8.png)
+
+Tiếp theo cài đặt tường lửa "Firewall" trên server và mở cổng port 80 để phục vụ cho nhu cầu qua http `sudo firewall-cmd --permanent --add-service=http`
 
 ![image](https://user-images.githubusercontent.com/111716161/188394117-382673b9-8e09-417f-bad4-60a3031412fd.png)
 
+Để cấu hình Apache web theo giao thức https, cổng 443:
+
 ![image](https://user-images.githubusercontent.com/111716161/188394236-fee33179-8918-4dcb-b996-c3cf5be3ce7d.png)
 
+Apache trên CentOS sẽ không tự khởi động, mà khởi động thử công, sử dụng lệnh `sudo systemctl start httpd`
+
+Để chắc chắn hơn thì chúng ta sử dụng `sudo systemctl status httpd`
+
+
+Như vậy đã hoàn thành cài Apache trên CentOS 7
