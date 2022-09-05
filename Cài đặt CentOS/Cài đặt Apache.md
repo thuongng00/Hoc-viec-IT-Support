@@ -69,6 +69,8 @@ Các file cấu hình :
 
 Sửa thành
 
+![image](https://user-images.githubusercontent.com/111716161/188363102-15dc4306-4dd0-456c-8cf6-051732129f75.png)
+
 5.4 Chặn truy cập IP VPS tự động 
 
 Theo mặc định thì khi truy cập IP của VPS hoặc khi trỏ một tên miền về VPS mà tên miền này không được cấu hình vhost thì bạn sẽ được redirect tới một website bất kỳ trên VPS, điều này là không nên và để hạn chế điều này các bạn mở file /etc/httpd/conf/httpd.conf
