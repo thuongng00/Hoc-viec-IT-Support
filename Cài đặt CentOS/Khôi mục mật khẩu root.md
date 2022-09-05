@@ -47,6 +47,7 @@ sh-4.2# passwd root
 ```
 
 ### Bước 4
+
 Relabel SELINUX
 Chạy lệnh sau để update lại các thông số cấu hình SELINUX, nếu bạn có sử dụng SELINUX. Nguyên nhân khi ta update file /etc/passwd chứa mật khẩu thì các thông số SELINUX security contex sẽ khác nên cần update lại.
 ```
