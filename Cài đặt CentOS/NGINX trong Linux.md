@@ -8,7 +8,7 @@ Nginx có thể triển khai phục vụ nội dung HTTP động trên internet 
 
 Nginx áp dụng cách tiếp cận theo hướng sự kiện không đồng bộ thay vì các luồng để xử lý các yêu cầu. Kiến trúc hướng sự kiện cung cấp hiệu suất dễ dự đoán hơn dưới tải trọng cao. Tệp cấu hình mặc định của Nginx có dạng là nginx.conf.
 
-Các tính năng máy chủ web và HTTP proxy
+### Các tính năng máy chủ web và HTTP proxy
 - Khả năng xử ký lên đến tối đa hơn 10000 kết nối đồng thời mức dung lượng bộ nhớ vô cùng thấp (~2.5MB mỗi 10000 kết nối HTTP không hoạt động).
 - Xử lý tập tin tĩnh (static file), index file và lập chỉ mục tập tin. 
 - Tăng tốc Reverse proxy với bộ nhớ đệm. 
@@ -21,8 +21,9 @@ Các tính năng máy chủ web và HTTP proxy
 - Nâng cấp giao thức HTTP/1.1, hỗ trợ HTTP/2.
 - Hỗ trợ nhúng mã PERL.
 
-Các tính năng Mail proxy
-- Hỗ trợ TLS/SSL.
-- Hỗ trợ STARTTLS.
-- POP3, SMTP và IMAP proxy.
+### Các tính năng Mail proxy
+- Hỗ trợ TLS/SSL, STARTTLS.
+- POP3: USER/PASS, APOP, AUTH LOGIN/PLAIN/CRAM-MD5.
+- IMAP: LOGIN, AUTH LOGIN/PLAIN/CRAM-MD5.
+- SMTP: AUTH LOGIN/PLAIN,CRAM-MD5.
 
