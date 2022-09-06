@@ -27,3 +27,5 @@ Nginx áp dụng cách tiếp cận theo hướng sự kiện không đồng b�
 - IMAP: LOGIN, AUTH LOGIN/PLAIN/CRAM-MD5.
 - SMTP: AUTH LOGIN/PLAIN,CRAM-MD5.
 
+## Cài đặt Nginx trên CentOS 7
+
