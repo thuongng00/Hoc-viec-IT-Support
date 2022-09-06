@@ -45,6 +45,7 @@ ls
 
 ```
 cd conf
+cd /var/www/html
 ```
 
 ![image](https://user-images.githubusercontent.com/111716161/188395791-7cf0502d-f507-4474-b5cd-c0d984dbc2a1.png)
