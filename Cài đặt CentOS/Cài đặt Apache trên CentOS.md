@@ -1,4 +1,4 @@
-### 1. Truy cập Teminal CenOS 7 với quyền root với câu lệnh
+### 1. Truy cập Teminal CentOS 7 với quyền root với câu lệnh
 ```
 sudo -i
 ```
@@ -98,7 +98,7 @@ Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
 </VirtualHost>
 Screenshot_113
 ```
-Vì CentOS là mã nguồn mở, nên Apache có sẵn trong kho lưu trữ, trước tiên cần cập nhật httpd package index để cập nhật những thay đổi mới nhất
+**Vì CentOS là mã nguồn mở, nên Apache có sẵn trong kho lưu trữ, trước tiên cần cập nhật httpd package index để cập nhật những thay đổi mới nhất**
 
 Sử dụng lệnh `sudo yum update httpd`
     
@@ -119,6 +119,5 @@ Tiếp theo cài đặt tường lửa "Firewall" trên server và mở cổng p
 Apache trên CentOS sẽ không tự khởi động, mà khởi động thử công, sử dụng lệnh `sudo systemctl start httpd`
 
 Để chắc chắn hơn thì chúng ta sử dụng `sudo systemctl status httpd`
-
 
 Như vậy đã hoàn thành cài Apache trên CentOS 7
