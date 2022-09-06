@@ -50,7 +50,7 @@ cd /var/www/html
 
 ![image](https://user-images.githubusercontent.com/111716161/188395791-7cf0502d-f507-4474-b5cd-c0d984dbc2a1.png)
 
-### 4. Gõ vi index.html để tạo một trang web riêng
+### 4. Gõ vi index.html để tạo một trang web riêng, nhập nội dung hiển thị và lưu lại. 
 
 ```
 vi index.html
@@ -58,8 +58,7 @@ vi index.html
 
 ![image](https://user-images.githubusercontent.com/111716161/188398599-4f2f1a74-4383-4a8d-b72a-839aaffb3fc1.png)
 
-### 5. Sau khi gõ lệnh sẽ tạo ra một thư mục để nhập nội dung hiện thị trên trang web
-
+### 5. Truy cập "thuong.com.vn"
 ![image](https://user-images.githubusercontent.com/111716161/188398483-5b0d0c77-5a6e-4fe9-bab1-80b9b39e55e6.png)
 
 
