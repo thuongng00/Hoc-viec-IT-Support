@@ -23,10 +23,15 @@ virt-manager: cung cấp giao diện đồ họa để quản lý máy ảo
 
 virt-install: Cung cấp lệnh để cài đặt máy ảo
 
+![image](https://user-images.githubusercontent.com/111716161/188543233-e00e276f-e434-4225-9b0c-abeff4c5b6da.png)
+
 Sau khi cài đặt hoàn tất, ta kiểm tra các module KVM
 ```
 lsmod | grep kvm
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/188543257-1e8d12ba-9783-4280-82d1-6bb72483bbb5.png)
+
 
 ### Bước 3: Bật libvirt và khởi động cùng hệ thống
 ```
