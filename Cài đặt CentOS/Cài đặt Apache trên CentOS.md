@@ -4,7 +4,19 @@ sudo -i
 ```
 ![image](https://user-images.githubusercontent.com/111716161/188358270-ca6f7bc9-2a10-4148-916b-8bbfc22feac3.png)
 
-### 2. Do Apache đã có sẵn trong kho lưu trữ CentOS mặc định nên việc cài đặt khá đơn giản. Để cài đặt Apache hãy chạy lệnh sau:
+### 2. Do Apache đã có sẵn trong kho lưu trữ CentOS mặc định nên việc cài đặt khá đơn giản. 
+
+Trước tiên cần cập nhật httpd package index để cập nhật những thay đổi mới nhất
+
+Sử dụng lệnh `sudo yum update httpd`
+    
+![image](https://user-images.githubusercontent.com/111716161/188391364-45725d7f-c70c-46b7-9c73-2ef9e0c89911.png)
+
+Sau đó thực hiện gói cài đặt phần mềm `sudo yum install httpd`
+
+![image](https://user-images.githubusercontent.com/111716161/188393990-bb0b2250-d88e-4c9c-b060-031bf652efa8.png)
+
+Để cài đặt Apache hãy chạy lệnh sau:
 
 ```
 yum install httpd -y
@@ -98,22 +110,5 @@ Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
 </VirtualHost>
 Screenshot_113
 ```
-**Vì CentOS là mã nguồn mở, nên Apache có sẵn trong kho lưu trữ, trước tiên cần cập nhật httpd package index để cập nhật những thay đổi mới nhất**
-
-Sử dụng lệnh `sudo yum update httpd`
-    
-![image](https://user-images.githubusercontent.com/111716161/188391364-45725d7f-c70c-46b7-9c73-2ef9e0c89911.png)
-
-Sau đó thực hiện gói cài đặt phần mềm `sudo yum install httpd`
-
-![image](https://user-images.githubusercontent.com/111716161/188393990-bb0b2250-d88e-4c9c-b060-031bf652efa8.png)
-
-Tiếp theo cài đặt tường lửa "Firewall" trên server và mở cổng port 80 để phục vụ cho nhu cầu qua http `sudo firewall-cmd --permanent --add-service=http`
-
-![image](https://user-images.githubusercontent.com/111716161/188394117-382673b9-8e09-417f-bad4-60a3031412fd.png)
-
-Để cấu hình Apache web theo giao thức https, cổng 443:
-
-![image](https://user-images.githubusercontent.com/111716161/188394236-fee33179-8918-4dcb-b996-c3cf5be3ce7d.png)
 
 Như vậy đã hoàn thành cài Apache trên CentOS 7
