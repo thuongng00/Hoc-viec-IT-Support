@@ -116,8 +116,4 @@ Tiếp theo cài đặt tường lửa "Firewall" trên server và mở cổng p
 
 ![image](https://user-images.githubusercontent.com/111716161/188394236-fee33179-8918-4dcb-b996-c3cf5be3ce7d.png)
 
-Apache trên CentOS sẽ không tự khởi động, mà khởi động thử công, sử dụng lệnh `sudo systemctl start httpd`
-
-Để chắc chắn hơn thì chúng ta sử dụng `sudo systemctl status httpd`
-
 Như vậy đã hoàn thành cài Apache trên CentOS 7
