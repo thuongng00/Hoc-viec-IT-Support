@@ -96,7 +96,7 @@ systemctl start httpd
 
 ### 4. Cấu hình firewall (nếu có)
 
-Nếu các bạn sử dụng Firewall để có thể truy cập được website các bạn sẽ cần mở port bằng các lệnh sau đây:
+Nếu sử dụng Firewall để có thể truy cập được website sẽ cần mở cổng (port) bằng các lệnh sau đây:
 ```
 firewall-cmd --permanent --zone=public --add-service=http
 firewall-cmd --permanent --zone=public --add-service=https
