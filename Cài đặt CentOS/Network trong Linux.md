@@ -76,12 +76,13 @@ Lệnh curl là 1 công cụ để truy cập trang web thông qua command, curl
 
 Mặc định curl chưa có sẵn trong Linux, để cài đặt curl từ Ubuntu repository sử dụng lệnh sau:
 
-`sudo apt-get install curl`
+`yum install curl`
 
-Và tiến hành cài đặt những thư viện liên quan:
-
-`sudo apt-get install libc6 libcurl3 zlib1g`
+![image](https://user-images.githubusercontent.com/111716161/188853828-13ef1887-625a-42eb-8175-c70c7eff7e1f.png)
 
 Và có thể curl với những lệnh thường xuyên sử dụng dưới đây, ví dụ lấy về nội dung của trang web www.google.com.
 
 `curl http://www.google.com`
+
+![image](https://user-images.githubusercontent.com/111716161/188854122-8ef91822-424e-4f0b-a740-170485c182aa.png)
+
