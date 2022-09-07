@@ -86,3 +86,32 @@ Và có thể curl với những lệnh thường xuyên sử dụng dưới đ�
 
 ![image](https://user-images.githubusercontent.com/111716161/188854122-8ef91822-424e-4f0b-a740-170485c182aa.png)
 
+# Đổi tên Network interface trong CentOS 7
+Kiểm tra tên Network interface hiện tại
+
+`ip a`
+
+![image](https://user-images.githubusercontent.com/111716161/188854689-053817a3-cc4a-4869-81b6-ca0a0128dafe.png)
+
+Ta thấy tên hiện tại của Network interface là ens33. Các bước dưới đây sẽ mô tả cách đưa tên Network interface về dạng eth0, eth1, …
+
+### 1. Chỉnh sửa tham số Kernel boot
+
+Chỉnh sửa file `/etc/default/grub`.
+
+`nano /etc/default/grub`
+
+Tìm đến dòng `GRUB_CMDLINE_LINUX` và thêm đoạn sau `net.ifnames=0 biosdevname=0`. Ta sẽ được dòng sau:
+
+`GRUB_CMDLINE_LINUX=" crashkernel=auto net.ifnames=0 biosdevname=0 rhgb quiet"`
+
+![image](https://user-images.githubusercontent.com/111716161/188855148-ae12e3b2-e2c3-41dc-86d1-36be65f500b4.png)
+
+Sinh lại tệp GRUB và ghi đè lên tệp hiện có.
+
+`grub2-mkconfig -o /boot/grub2/grub.cfg`
+
+![image](https://user-images.githubusercontent.com/111716161/188855323-b56f48f2-2813-4d26-9da0-b4415d472b86.png)
+
+
+
