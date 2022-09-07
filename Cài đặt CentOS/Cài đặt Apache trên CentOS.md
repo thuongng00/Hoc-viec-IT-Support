@@ -1,3 +1,61 @@
+# Tổng quan về Apache
+
+Apache là phần mềm web server miễn phí mã nguồn mở được sử dụng phổ biến trên toàn thế giới. Tên gọi đầy đủ của Apache là Apache HTTP Server, được sáng lập và điều hành bởi Apache Software Foundation.
+
+![image](https://user-images.githubusercontent.com/111716161/188768202-5ca28752-ef3b-4a66-b64e-a3cfd8d24a59.png)
+
+Apache giúp người quản trị website có thể đưa nội dung lên web – chính vì vậy mà có tên gọi là “web server“. Apache là một trong số những web server uy tín và lâu đời nhất, phiên bản đầu tiên đã được ra mắt từ hơn 20 năm trước, vào những năm 1995.
+
+Apache chạy trên các hệ điều hành tương tự như Unix, Microsoft Windows, Novell Netware và các hệ điều hành khác. Đóng vai trò quan trọng trong quá trình phát triển của mạng web thế giới (World Wide Web).
+
+## Web Server là gì?
+
+Web Server là 1 dịch vụ mạng hướng nội dung của người dùng lên giao diện Web.
+
+Nhiệm vụ của Web Server là đưa website lên Internet. Để làm được điều đó, nó hoạt động giống như là một người đứng giữa Server và máy khách Client. Nó sẽ kéo nội dung từ Server về cho mỗi một truy vấn xuất phát từ máy khách để hiển thị kết quả tương ứng dưới hình thức là một Website.
+
+Điểm khó khăn lớn nhất của một Web Server là kéo dữ liệu cho nhiều người dùng cùng một lúc – vì mỗi một người lại cũng đang truy vấn tới các trang web khác nhau . Web server xử lý các file này dưới ngôn ngữ lập trình như là PHP, Python, Java,… Những ngôn ngữ này biến chúng thành file HTML và file trên trình duyệt cho người dùng web thấy được.
+
+Web Server còn được gọi là HTTP server và chúng sử dụng giao thức HTTP – hypertext transport protocol ( port 80/TCP ).
+
+Các Web Server có thể cài lên CentOS 7 là :
+- Apache HTTP Server
+- Apache Tomcat
+- nginx
+- OpenLiteSpeed
+
+## Apache HTTP Server
+Trang chủ: http://httpd.apache.org/
+
+Apache là phần mềm web server mã nguồn mở đa nền tảng miễn phí , sử dụng giấy phép Apache License 2.0
+
+Ra đời năm 1995 bởi Robert McCool.
+
+Phiên bản ổn định mới nhất: 2.4.54 (08-06-2022).
+
+Apache được phát triển và duy trì bởi một cộng đồng các nhà phát triển dưới sự bảo trợ của Quỹ phần mềm Apache (Apache Software Foundation).
+
+Phần lớn các phiên bản Apache chạy trên bản phân phối Linux , nhưng các phiên bản hiện tại cũng chạy trên Microsoft Windows và nhiều hệ thống tương tự Unix. Các phiên bản trước đây cũng chạy trên OpenVMS , NetWare và các hệ điều hành khác.
+
+Là 1 thành phần của LAMP Stack – (Linux, Apache, MariaDB, Perl/Python/PHP).
+
+### Ưu điểm
+
+- Phần mềm mã nguồn mở và miễn phí, kể cả cho mục đích thương mại
+- Phần mềm đáng tin cậy, ổn định
+- Được cập nhật thường xuyên, nhiều bản vá lỗi bảo mật liên tục
+- Linh hoạt vì có cấu trúc module
+- Dễ cấu hình, thân thiện với người mới bắt đầu
+- Đa nền tảng (hoạt động được cả với server Unix và Windows )
+- Hoạt động cực kỳ hiệu quả với WordPress sites
+- Có cộng đồng lớn và sẵn sàng hỗ trợ với bất kỳ vấn đề nào
+
+### Nhược điểm 
+
+- Gặp vấn đề hiệu năng nếu website có lượng truy cập cực lớn
+- Quá nhiều lựa chọn thiết lập có thể gây ra các điểm yếu bảo mật
+
+# Cài đặt Apache trên CentOS 7
 ### 1. Truy cập Teminal CentOS 7 với quyền root với câu lệnh
 ```
 sudo -i
