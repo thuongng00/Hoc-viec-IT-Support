@@ -113,5 +113,31 @@ Sinh lại tệp GRUB và ghi đè lên tệp hiện có.
 
 ![image](https://user-images.githubusercontent.com/111716161/188855323-b56f48f2-2813-4d26-9da0-b4415d472b86.png)
 
+### 2. Chỉnh sửa file cấu hình mạng
+Chỉnh sửa file cấu hình mạng ban đầu là ens33. Tại mục NAME và DEVICE, ta đổi từ ens33 thành eth0.
 
+Lệnh sửa tên file cấu hình mạng: ifcfg-ens33 thành ifcfg-eth0:
 
+`mv /etc/sysconfig/network-scripts/ifcfg-ens33 /etc/sysconfig/network-scripts/ifcfg-eth0`
+
+### 3. Disable NetworkManager
+Đảm bảo rằng NetworkManager không hoàn nguyên các thay đổi khi khởi động lại máy hay khởi động lại mạng.
+
+`systemctl disable NetworkManager`
+
+![image](https://user-images.githubusercontent.com/111716161/188855697-2b73a6b5-5dc8-4b8b-9781-46634081c31c.png)
+
+### 4. Reboot máy và kiểm tra lại
+Reboot máy để những thay đổi được thực hiện.
+
+`reboot`
+
+### 5. Kiểm tra lại tên thiết bị đã được đổi tên
+`ip a`
+
+![image](https://user-images.githubusercontent.com/111716161/188856518-4b5e9693-fc17-4a22-929e-9177eec6437b.png)
+Kiểm tra kết nối Internet
+
+![image](https://user-images.githubusercontent.com/111716161/188856702-8f677c5d-0be8-4025-8b10-fc3a787815a2.png)
+
+Tên Network interface đã được đổi thành công từ ens33 sang eth0 và hoạt động bình thường.
