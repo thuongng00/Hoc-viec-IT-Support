@@ -67,3 +67,45 @@ Thay đổi ``enforcing`` thành ``disabled`` như hình trên.
 Sau đó dùng lệnh ``reboot`` để khởi động lại hệ thống.
 
 Tiếp theo dùng lệnh ``sestatus`` để kiểm tra SELinux đã dừng chưa (Nếu như hình dưới là đã thành công)
+
+![image](https://user-images.githubusercontent.com/111716161/188775705-d6dcf264-757e-4581-a466-c734aae8d5a4.png)
+
+Bước 3 : Cài đặt các gói cần thiết hỗ trợ NginX
+
+Để cài Nginx trên CentOS, chúng ta sẽ cần thêm EPEL repository giúp tạo, duy trì và quản lý các gói bổ sung.
+
+```
+sudo yum install epel-release -y
+```
+
+![image](https://user-images.githubusercontent.com/111716161/188775852-b3982f37-2894-4452-a423-d91616a6a377.png)
+
+Bước 3 : Tiến hành cài đặt NginX
+
+Chúng ta cài đặt nginx với câu lệnh :
+
+```
+yum install nginx -y
+```
+
+![image](https://user-images.githubusercontent.com/111716161/188775963-915145e4-e11c-4a45-b641-ed90bee5878c.png)
+
+Bước 4 : Khởi động Nginx
+
+`systemctl enable nginx` : Câu lệnh đặt mặc định khỏi động Nginx cùng với hệ thống
+
+`systemctl start nginx` : Câu lệnh khởi chạy Nginx
+
+`systemctl status nginx` : Câu lệnh kiểm tra trạng thái Nginx
+
+![image](https://user-images.githubusercontent.com/111716161/188776143-40bb96ab-95d7-49fc-9fc8-d033e58c2cf3.png)
+
+Sau đó truy cập IP/Domain hệ thống.
+
+Nếu các bạn sử dụng Firewalld để có thể truy cập được website các bạn sẽ cần mở port bằng các lệnh sau đây
+
+firewall-cmd --permanent --zone=public --add-service=http
+firewall-cmd --permanent --zone=public --add-service=https
+firewall-cmd --reload
+
+![image](https://user-images.githubusercontent.com/111716161/188776689-75f6b602-86b2-4883-a6ca-a09782fda1a7.png)
