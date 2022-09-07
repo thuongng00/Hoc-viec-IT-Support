@@ -48,5 +48,22 @@ Người dùng shared hositng có thể thích sự tiện lợi của file .hta
 
 Bất kể với web server nào, hãy chọn một nhà cung cấp hosting tốt nhất trên nền tảng Linux.
 
-## Cài đặt Nginx trên CentOS 7
+# Cài đặt Nginx trên CentOS 7
 
+Bước 1: Đăng nhập với quyền root.
+
+Bước 2 : Dừng SELinux nhằm tránh trường hợp nó chặn Nginx
+
+Truy cập SELinux bằng câu lệnh :
+
+```
+nano /etc/sysconfig/selinux
+```
+
+![image](https://user-images.githubusercontent.com/111716161/188775311-33133b0b-0aae-4c2b-8f6f-4490e818762d.png)
+
+Thay đổi ``enforcing`` thành ``disabled`` như hình trên.
+
+Sau đó dùng lệnh ``reboot`` để khởi động lại hệ thống.
+
+Tiếp theo dùng lệnh ``sestatus`` để kiểm tra SELinux đã dừng chưa (Nếu như hình dưới là đã thành công)
