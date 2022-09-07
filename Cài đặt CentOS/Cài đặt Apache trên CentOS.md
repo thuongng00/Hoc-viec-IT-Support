@@ -177,7 +177,7 @@ Tất cả các file vhost sẽ nằm trong thư mục /etc/httpd/conf.d/. Để
 
 Trong ví dụ này sẽ tạo website nganthuong.com với vhost tương ứng là /etc/httpd/conf.d/nganthuong.com.conf
 
-nano /etc/httpd/conf.d/nganthuong.com.conf
+`nano /etc/httpd/conf.d/nganthuong.com.conf`
 
 Dán nội dung sau vào
 ```
