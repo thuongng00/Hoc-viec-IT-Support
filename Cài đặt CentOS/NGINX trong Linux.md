@@ -102,10 +102,14 @@ Bước 4 : Khởi động Nginx
 
 Sau đó truy cập IP/Domain hệ thống.
 
-Nếu các bạn sử dụng Firewalld để có thể truy cập được website các bạn sẽ cần mở port bằng các lệnh sau đây
+![image](https://user-images.githubusercontent.com/111716161/188779933-669d8026-80ed-48ca-8bee-7c44203aa582.png)
 
+Nếu các bạn sử dụng Firewall để có thể truy cập được website các bạn sẽ cần mở port bằng các lệnh sau đây
+
+```
 firewall-cmd --permanent --zone=public --add-service=http
 firewall-cmd --permanent --zone=public --add-service=https
 firewall-cmd --reload
+```
 
 ![image](https://user-images.githubusercontent.com/111716161/188776689-75f6b602-86b2-4883-a6ca-a09782fda1a7.png)
