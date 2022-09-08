@@ -156,10 +156,10 @@ reboot
 ip a
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/188856518-4b5e9693-fc17-4a22-929e-9177eec6437b.png)
+![image](https://user-images.githubusercontent.com/111716161/189062150-04a55b5e-b118-4777-b04f-bf5c26532766.png)
 
-Kiểm tra kết nối Internet
+Kiểm tra kết nối Internet: `ping 8.8.8.8`
 
-![image](https://user-images.githubusercontent.com/111716161/188856702-8f677c5d-0be8-4025-8b10-fc3a787815a2.png)
+![image](https://user-images.githubusercontent.com/111716161/189062302-b24b81ec-a2b0-4ccc-8a7a-84b46ec87aed.png)
 
 Tên Network interface đã được đổi thành công từ ens33 sang eth0 và hoạt động bình thường.
