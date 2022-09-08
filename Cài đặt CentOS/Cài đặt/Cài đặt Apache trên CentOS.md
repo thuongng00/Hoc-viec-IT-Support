@@ -62,17 +62,23 @@ su
 ```
 ![image](https://user-images.githubusercontent.com/111716161/188358270-ca6f7bc9-2a10-4148-916b-8bbfc22feac3.png)
 
+Tắt Selinux
+
+```
+sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config && setenforce 0
+```
+
+
 ### 2. Do Apache đã có sẵn trong kho lưu trữ CentOS mặc định nên việc cài đặt khá đơn giản. 
 
-Trước tiên cần cập nhật httpd package index để cập nhật những thay đổi mới nhất
+Trước tiên cần cập nhật những thay đổi mới nhất
 
-Sử dụng lệnh `sudo yum update httpd`
-    
-![image](https://user-images.githubusercontent.com/111716161/188391364-45725d7f-c70c-46b7-9c73-2ef9e0c89911.png)
+```
+yum -y install epel-release
+yum -y update
+```
 
-Sau đó thực hiện gói cài đặt phần mềm `sudo yum install httpd`
-
-![image](https://user-images.githubusercontent.com/111716161/188393990-bb0b2250-d88e-4c9c-b060-031bf652efa8.png)
+![image](https://user-images.githubusercontent.com/111716161/189017122-efa75b7e-165c-4cee-9be7-629b1552abe5.png)
 
 Để cài đặt Apache hãy chạy lệnh sau:
 
@@ -82,7 +88,19 @@ yum install httpd -y
 
 ![image](https://user-images.githubusercontent.com/111716161/188358417-d00f34e4-f0c2-4e86-b340-94c4373a7411.png)
 
-### 3. Sau khi cài đặt hoàn tất, tiến hành khởi động Apache bằng cách khởi động lại nó bằng các lệnh sau :
+### 3. Cấu hình firewall (nếu có)
+
+Nếu sử dụng Firewalld để có thể truy cập được website sẽ cần mở cổng (port) bằng các lệnh sau đây:
+```
+firewall-cmd --permanent --zone=public --add-service=http
+firewall-cmd --permanent --zone=public --add-service=https
+firewall-cmd --reload
+```
+
+![image](https://user-images.githubusercontent.com/111716161/188358800-d3531ad8-f707-4311-8354-d7032b2fff0e.png)
+
+### 4. Tiến hành khởi động Apache bằng cách khởi động lại nó bằng các lệnh sau :
+
 ```
 systemctl enable httpd
 systemctl start httpd
@@ -93,17 +111,6 @@ systemctl start httpd
 *Để kiểm tra trạng thái apache chúng ta sử dụng câu lệnh ``systemctl status httpd``*
 
 ![image](https://user-images.githubusercontent.com/111716161/188358612-daaa8c7f-f825-4da5-ac68-0aaa89a925b5.png)
-
-### 4. Cấu hình firewall (nếu có)
-
-Nếu sử dụng Firewalld để có thể truy cập được website sẽ cần mở cổng (port) bằng các lệnh sau đây:
-```
-firewall-cmd --permanent --zone=public --add-service=http
-firewall-cmd --permanent --zone=public --add-service=https
-firewall-cmd --reload
-```
-
-![image](https://user-images.githubusercontent.com/111716161/188358800-d3531ad8-f707-4311-8354-d7032b2fff0e.png)
 
 Các câu lệnh quản lý apache với systemctl :
 
@@ -130,23 +137,53 @@ Như vậy đã hoàn thành cài Apache trên CentOS 7
 
 ![image](https://user-images.githubusercontent.com/111716161/188361388-6f02c2ac-fd81-423d-9432-5ace2705bcf4.png)
 
-5.2. Tại đây, chúng ta cần sửa bằng cách nhập ``UserDir public_html``
+5.2. Tại đây cần sửa các rules sau
 
-![image](https://user-images.githubusercontent.com/111716161/188361703-3a9b1212-897c-496f-a8f0-ef3135bf7227.png)
+```
+UserDir disabled
+#UserDir public_html
+```
 
-5.3. Tiếp theo tìm đoạn rule
+Sửa lại thành như sau
+
+```
+#UserDir disabled
+UserDir public_html
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189019805-f3b5c0ce-9ef4-4413-adc1-3ad728a667be.png)
+
+5.3. Tiếp theo các bạn tìm đoạn rule sau
+
+```
+<Directory "/home/*/public_html">
+    AllowOverride FileInfo AuthConfig Limit Indexes
+    Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec
+    Require method GET POST OPTIONS
+</Directory>
+```
+
+Sửa nó lại thành như sau
+
+```
+<Directory "/home/*/public_html">
+    AllowOverride All
+    Options None
+    Require method GET POST OPTIONS
+</Directory>
+```
 
 ![image](https://user-images.githubusercontent.com/111716161/188361964-5dd6d54b-31de-4d38-a0f9-cfe2b3f28e89.png)
 
 Sửa thành
 
-![image](https://user-images.githubusercontent.com/111716161/188363102-15dc4306-4dd0-456c-8cf6-051732129f75.png)
+![image](https://user-images.githubusercontent.com/111716161/189020131-f248f572-18ea-42d4-a1f9-a713636c3bc0.png)
 
 5.4 Chặn truy cập IP VPS tự động 
 
 Theo mặc định thì khi truy cập IP của VPS hoặc khi trỏ một tên miền về VPS mà tên miền này không được cấu hình vhost thì bạn sẽ được redirect tới một website bất kỳ trên VPS, điều này là không nên và để hạn chế điều này các bạn mở file /etc/httpd/conf/httpd.conf
 
-   `` nano /etc/httpd/conf/httpd.conf ``
+`` nano /etc/httpd/conf/httpd.conf ``
 
 Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
    
@@ -167,7 +204,7 @@ Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
 	</Directory>
   
 </VirtualHost>
-Screenshot_113
+
 ```
 5.5 Tạo virtual host (vhost) cho website
 
