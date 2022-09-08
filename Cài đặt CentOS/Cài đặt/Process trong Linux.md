@@ -77,4 +77,31 @@ ps aux
 
 ## Kiểm soát process
 
-Khi chúng ta gõ một lệnh và chạy nó, terminal sẽ ở trạng thái không dùng được cho đến khi chương trình chạy xong. 
+Khi chúng ta gõ một lệnh và chạy nó, terminal sẽ ở trạng thái không dùng được cho đến khi chương trình chạy xong. Để một chương trình không chiếm terminal, ta thêm `&` vào cuối câu lệnh muốn chạy, ví dụ `xlogo &`
+
+![image](https://user-images.githubusercontent.com/111716161/189052685-d0aef074-a66b-403a-a894-68cb8f4f3ffb.png)
+
+- Để list các background job: 
+```
+jobs
+```
+- Để trả một process đang chạy background về foreground:
+```
+fg
+```
+
+## Signals
+
+Signals là cách mà OS giao tiếp với chương trình. Để gửi signal đến một chương trình, sử dụng lệnh `kill`` kết hợp với số/tên của signal.
+
+| Số hiệu | Tên | Ý nghĩa |
+|---|---|---|
+| 2 | INT | Giống với Ctrl - c, thường là terminate chương trình |
+| 9 | KILL | Kernel ngay tập tức terminate chương trình mà không có một hành động clean up nào |
+| 15 | TERM | Terminate, đây là tín hiệu mặc định mà lệnh kill gửi đến chương trình |
+| 18 | CONT | continue, restore trạng thái của process sau khi nhận tín hiệu STOP |
+| ... |...|...|
+
+- `kill -l`: list ra các signal khả dụng của hệ thống. 
+- `killall`: gửi kill signal đến nhiều tiến trình chạy cùng một chương trình. 
+- `kill`: dừng process.
