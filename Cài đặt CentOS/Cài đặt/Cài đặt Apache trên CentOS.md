@@ -153,7 +153,15 @@ UserDir public_html
 
 ![image](https://user-images.githubusercontent.com/111716161/189019805-f3b5c0ce-9ef4-4413-adc1-3ad728a667be.png)
 
-5.3. Tiếp theo các bạn tìm đoạn rule sau
+5.3. Thêm 2 rules sau phía dưới dòng Listen 80
+
+```
+ServerTokens Prod
+KeepAlive On
+ServerSignature Off
+```
+
+Tiếp theo các bạn tìm đoạn rule sau
 
 ```
 <Directory "/home/*/public_html">
@@ -197,9 +205,9 @@ Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
   
 		AllowOverride All
     
-    Options None
+    		Options None
     
-    Require method GET POST OPTIONS
+    		Require method GET POST OPTIONS
     
 	</Directory>
   
@@ -219,12 +227,11 @@ Trong ví dụ này sẽ tạo website nganthuong.com với vhost tương ứng 
 Dán nội dung sau vào
 ```
 <VirtualHost *:80>
-ServerAdmin nganthuong@gmail.com
-ServerName nganthuong.vn
-ServerAlias www.nganthuong.vn
-DocumentRoot /home/nganthuong.vn/public_html
-ErrorLog logs/error
-CustomLog logs/access combined
+	ServerName nganthuong.com
+	ServerAlias www.nganthuong.com
+	DocumentRoot /home/nganthuong.com/public_html
+	ErrorLog /home/nganthuong.com/logs/error.log
+	CustomLog /home/nganthuong.com/logs/access.log combined
 </VirtualHost>
 ```
 Tiếp theo các bạn cần tạo thư mục chứa mã nguồn website và thư mục chứa file log bằng các lệnh sau:
@@ -239,7 +246,13 @@ Reload lại Apache để cập nhật cấu hình
 
 `systemctl reload httpd`
 
-Sau khi cấu hình hoàn tất các bạn trỏ tên miền về vps sau đó tạo file /home/hostvn.net/public_html/index.html
+Sau khi cấu hình hoàn tất các bạn trỏ tên miền về vps
+
+` nano /etc/hosts`
+
+![image](https://user-images.githubusercontent.com/111716161/189029848-537702bb-ba7e-453b-a510-1d2b83fcdf77.png)
+
+sau đó tạo file /home/hostvn.net/public_html/index.html
 
 `nano /home/nganthuong.com/public_html/index.html`
 
@@ -256,3 +269,5 @@ Dán nội dung sau vào
 </body>
 </html>
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/189029899-125353e9-f36f-4641-8f5a-b8cd190f15bf.png)
