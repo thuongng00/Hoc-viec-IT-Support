@@ -99,17 +99,22 @@ Ta thấy tên hiện tại của Network interface là ens33. Các bước dư�
 
 Chỉnh sửa file `/etc/default/grub`.
 
-`nano /etc/default/grub`
-
+```
+nano /etc/default/grub
+```
 Tìm đến dòng `GRUB_CMDLINE_LINUX` và thêm đoạn sau `net.ifnames=0 biosdevname=0`. Ta sẽ được dòng sau:
 
-`GRUB_CMDLINE_LINUX=" crashkernel=auto net.ifnames=0 biosdevname=0 rhgb quiet"`
+```
+GRUB_CMDLINE_LINUX=" crashkernel=auto net.ifnames=0 biosdevname=0 rhgb quiet"
+```
 
 ![image](https://user-images.githubusercontent.com/111716161/188855148-ae12e3b2-e2c3-41dc-86d1-36be65f500b4.png)
 
 Sinh lại tệp GRUB và ghi đè lên tệp hiện có.
 
-`grub2-mkconfig -o /boot/grub2/grub.cfg`
+```
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
 
 ![image](https://user-images.githubusercontent.com/111716161/188855323-b56f48f2-2813-4d26-9da0-b4415d472b86.png)
 
@@ -118,24 +123,33 @@ Chỉnh sửa file cấu hình mạng ban đầu là ens33. Tại mục NAME và
 
 Lệnh sửa tên file cấu hình mạng: ifcfg-ens33 thành ifcfg-eth0:
 
-`mv /etc/sysconfig/network-scripts/ifcfg-ens33 /etc/sysconfig/network-scripts/ifcfg-eth0`
+```
+mv /etc/sysconfig/network-scripts/ifcfg-ens33 /etc/sysconfig/network-scripts/ifcfg-eth0
+```
 
 ### 3. Disable NetworkManager
 Đảm bảo rằng NetworkManager không hoàn nguyên các thay đổi khi khởi động lại máy hay khởi động lại mạng.
 
-`systemctl disable NetworkManager`
+```
+systemctl disable NetworkManager
+```
 
 ![image](https://user-images.githubusercontent.com/111716161/188855697-2b73a6b5-5dc8-4b8b-9781-46634081c31c.png)
 
 ### 4. Reboot máy và kiểm tra lại
 Reboot máy để những thay đổi được thực hiện.
 
-`reboot`
+```
+reboot
+```
 
 ### 5. Kiểm tra lại tên thiết bị đã được đổi tên
-`ip a`
+```
+ip a
+```
 
 ![image](https://user-images.githubusercontent.com/111716161/188856518-4b5e9693-fc17-4a22-929e-9177eec6437b.png)
+
 Kiểm tra kết nối Internet
 
 ![image](https://user-images.githubusercontent.com/111716161/188856702-8f677c5d-0be8-4025-8b10-fc3a787815a2.png)
