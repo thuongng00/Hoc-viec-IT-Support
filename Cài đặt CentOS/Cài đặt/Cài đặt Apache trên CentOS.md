@@ -269,5 +269,6 @@ Dán nội dung sau vào
 </body>
 </html>
 ```
+Chạy website: 
 
 ![image](https://user-images.githubusercontent.com/111716161/189029899-125353e9-f36f-4641-8f5a-b8cd190f15bf.png)
