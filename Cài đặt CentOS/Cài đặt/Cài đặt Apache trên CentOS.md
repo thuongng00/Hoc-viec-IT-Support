@@ -153,7 +153,11 @@ UserDir public_html
 
 ![image](https://user-images.githubusercontent.com/111716161/189019805-f3b5c0ce-9ef4-4413-adc1-3ad728a667be.png)
 
-5.3. Thêm 2 rules sau phía dưới dòng Listen 80
+5.3. Truy cập file cấu hình Apache
+
+`` nano /etc/httpd/conf/httpd.conf ``
+
+Thêm 2 rules sau phía dưới dòng Listen 80
 
 ```
 ServerTokens Prod
