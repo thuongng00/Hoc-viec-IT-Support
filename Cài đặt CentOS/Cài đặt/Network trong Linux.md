@@ -127,6 +127,14 @@ Lệnh sửa tên file cấu hình mạng: ifcfg-ens33 thành ifcfg-eth0:
 mv /etc/sysconfig/network-scripts/ifcfg-ens33 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
+Chỉnh sửa file cấu hình card mạng interface “ifcfg-eth0” và thay đổi giá trị biến “NAME”  và biến ‘DEVICE‘ trong file thành giá trị tên mới tương ứng “eth0“.
+
+```
+nano /etc/sysconfig/network-scripts/ifcfg-eth0
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189061565-d17200b5-482c-4b50-8a11-020e2ca82630.png)
+
 ### 3. Disable NetworkManager
 Đảm bảo rằng NetworkManager không hoàn nguyên các thay đổi khi khởi động lại máy hay khởi động lại mạng.
 
@@ -136,7 +144,7 @@ systemctl disable NetworkManager
 
 ![image](https://user-images.githubusercontent.com/111716161/188855697-2b73a6b5-5dc8-4b8b-9781-46634081c31c.png)
 
-### 4. Reboot máy và kiểm tra lại
+### 4. Reboot máy
 Reboot máy để những thay đổi được thực hiện.
 
 ```
