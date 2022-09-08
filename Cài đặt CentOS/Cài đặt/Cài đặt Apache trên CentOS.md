@@ -153,17 +153,6 @@ UserDir public_html
 
 ![image](https://user-images.githubusercontent.com/111716161/189019805-f3b5c0ce-9ef4-4413-adc1-3ad728a667be.png)
 
-5.3. Truy cập file cấu hình Apache
-
-`` nano /etc/httpd/conf/httpd.conf ``
-
-Thêm 2 rules sau phía dưới dòng Listen 80
-
-```
-ServerTokens Prod
-KeepAlive On
-ServerSignature Off
-```
 
 Tiếp theo các bạn tìm đoạn rule sau
 
@@ -190,6 +179,18 @@ Sửa nó lại thành như sau
 Sửa thành
 
 ![image](https://user-images.githubusercontent.com/111716161/189020131-f248f572-18ea-42d4-a1f9-a713636c3bc0.png)
+
+5.3. Truy cập file cấu hình Apache
+
+`` nano /etc/httpd/conf/httpd.conf ``
+
+Thêm 2 rules sau phía dưới dòng Listen 80
+
+```
+ServerTokens Prod
+KeepAlive On
+ServerSignature Off
+```
 
 5.4 Chặn truy cập IP VPS tự động 
 
