@@ -1,5 +1,3 @@
-Link tải: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022
-
 Yêu cầu cấu hình phần cứng: 
 Bộ xử lý CPU:
 
