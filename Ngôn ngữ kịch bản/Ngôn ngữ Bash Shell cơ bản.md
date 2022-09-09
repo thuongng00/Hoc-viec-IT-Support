@@ -77,8 +77,8 @@ Lưu ý :
 - Phải sử dụng biến đã quy định trước trong biểu thức tính toán “let“, không áp dụng số rời nhau.
 - Phải viết các biến số hoặc số dính liền nhau không được tách khoảng trắng như “expr“.
 
-### 3. Sử dụng $((expression)) hoặc $[expression]
-Kiểu dữ liệu số áp dụng : số nguyên (integer) .
+### 3. Sử dụng `$((expression))` hoặc `$[expression]`
+Kiểu dữ liệu số áp dụng : số nguyên (integer).
 
 Dùng để tính toán đơn giản “+” , “-” , “*” , “/” .
 
