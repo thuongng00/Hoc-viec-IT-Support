@@ -8,17 +8,7 @@ Apache giúp người quản trị website có thể đưa nội dung lên web �
 
 Apache chạy trên các hệ điều hành tương tự như Unix, Microsoft Windows, Novell Netware và các hệ điều hành khác. Đóng vai trò quan trọng trong quá trình phát triển của mạng web thế giới (World Wide Web).
 
-## Web Server là gì?
-
-Web Server là 1 dịch vụ mạng hướng nội dung của người dùng lên giao diện Web.
-
-Nhiệm vụ của Web Server là đưa website lên Internet. Để làm được điều đó, nó hoạt động giống như là một người đứng giữa Server và máy khách Client. Nó sẽ kéo nội dung từ Server về cho mỗi một truy vấn xuất phát từ máy khách để hiển thị kết quả tương ứng dưới hình thức là một Website.
-
-Điểm khó khăn lớn nhất của một Web Server là kéo dữ liệu cho nhiều người dùng cùng một lúc – vì mỗi một người lại cũng đang truy vấn tới các trang web khác nhau . Web server xử lý các file này dưới ngôn ngữ lập trình như là PHP, Python, Java,… Những ngôn ngữ này biến chúng thành file HTML và file trên trình duyệt cho người dùng web thấy được.
-
-Web Server còn được gọi là HTTP server và chúng sử dụng giao thức HTTP – hypertext transport protocol ( port 80/TCP ).
-
-Các Web Server có thể cài lên CentOS 7 là :
+*Các Web Server có thể cài lên CentOS 7 là :*
 - Apache HTTP Server
 - Apache Tomcat
 - nginx
