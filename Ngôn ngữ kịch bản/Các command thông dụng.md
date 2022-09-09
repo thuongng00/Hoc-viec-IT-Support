@@ -252,6 +252,8 @@ Cho phép user đang đăng nhập thay đổi mật khẩu đăng nhập.
 ### ping
 PING tới 1 host nào đó kèm theo kết quả. Được dùng để kiểm tra xem máy của bạn có kết nối tới host đó hay không.
 
+![image](https://user-images.githubusercontent.com/111716161/189312637-6340628b-835b-4425-917b-15a3f9a734d3.png)
+
 ### ps
 Liệt kê các tiến trình hiện có của bạn.
 
@@ -267,15 +269,23 @@ ssh (SSH client) là một chương trình cho phép bạn đăng nhập và th�
 ### top
 Hiển thị các tiến trình đang được kích hoạt.
 
+![image](https://user-images.githubusercontent.com/111716161/189312780-8aa41618-c2fb-4bb4-abb3-40d02d9b9ace.png)
+
 ### uname
 Hiển thị thông tin nhân hệ điều hành.
+
+![image](https://user-images.githubusercontent.com/111716161/189312895-27b0d0fa-5bf1-4851-80df-2e88906bae96.png)
 
 ### uptime
 Hiển thị thời gian hoạt động (uptime).
 
+![image](https://user-images.githubusercontent.com/111716161/189312938-a53d8dd5-2b51-413a-b8d7-29fd4e97b11b.png)
+
 ### w
-Displays who is online.
+
 Hiển thị user nào đang online.
+
+![image](https://user-images.githubusercontent.com/111716161/189313033-aa4c5e8c-c6c1-4ed4-868f-da9fbad7379b.png)
 
 ### wget
 Download tệp tin từ internet.
