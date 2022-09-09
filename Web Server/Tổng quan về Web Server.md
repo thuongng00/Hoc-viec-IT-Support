@@ -59,34 +59,34 @@ Nếu không, máy chủ ứng dụng sẽ tạo tệp cần thiết. Nếu khô
 
 ![image](https://user-images.githubusercontent.com/111716161/189258022-f477db52-3693-4231-a8f8-b948c92105bc.png)
 
-1. Trình duyệt phân giải tên miền thành địa chỉ IP
+### 1. Trình duyệt phân giải tên miền thành địa chỉ IP
 
 Trình duyệt web của bạn trước tiên cần phải xác định địa chỉ IP nào mà tên miền tech.vccloud.vn trỏ về. Nếu thông tin này không được lưu trữ sẵn trong bộ nhớ cache, trình duyệt sẽ yêu cầu thông tin từ một hoặc nhiều máy chủ DNS (thông qua internet). Máy chủ DNS sẽ cho trình duyệt biết địa chỉ IP nào tên miền sẽ trỏ đến (cũng là nới đặt trang web).
 
 Lưu ý rằng địa chỉ IP sẽ được chỉ định khi trang web được tạo lần đầu trên máy chủ web.
 
-2. Trình duyệt yêu cầu URL đầy đủ
+### 2. Trình duyệt yêu cầu URL đầy đủ
 
 Bây giờ trình duyệt web đã biết địa chỉ IP của trang web, nó có thể yêu cầu URL đầy đủ từ web server.
 
-3. Web server gửi Trang được yêu cầu
+### 3. Web server gửi Trang được yêu cầu
 
 Web server phản hồi bằng cách gửi lại trang được yêu cầu. Nếu trang không tồn tại (hoặc có lỗi khác xảy ra), nó sẽ gửi lại thông báo lỗi thích hợp.
 
-4. Trình duyệt hiển thị trang web
+### 4. Trình duyệt hiển thị trang web
 
 Trình duyệt web của bạn nhận được trang và hiển thị trang theo yêu cầu.
 
 Khi nói đến các trình duyệt web và web server theo cách này, ta cũng co thể hiểu theo các khái niệm máy khách (trình duyệt web) và máy chủ (web server).
 
 # Giới thiệu về các loại web server thông dụng
-1. Nginx
+### 1. Nginx
 
 Loại web server được dùng khá là phổ biến hiện nay đó là Nginx, đây là 1 máy chủ reverse proxy mã nguồn mở cho các giao thức HTTP, HTTPS, SMTP, POP3 và IMAP, cũng như là 1 máy chủ cân bằng tải (load balancer), HTTP cache và web. 
 
 Dự án Nginx được bắt đầu với việc tập trung vào tính đồng thời cao, hiệu năng cao và sử dụng tài nguyên thấp và được phát triển bởi Igor Sysoev vào nằm 2002, được phân phối ra công chúng lần đầu vào nằm 2004.
 
-2. Internet Information Services (IIS)
+### 2. Internet Information Services (IIS)
 
 IIS do Microsoft phát triển, sản phẩm này được tích hợp cùng với hệ điều hành Windows. Server. Trong IIS bao gồm nhiều dịch vụ như: dịch vụ Web Server, dịch vụ FTP Server. 
 
@@ -100,13 +100,13 @@ Nhờ được tích hợp ASP.NET IIS có thể sử dụng toàn bộ sức m�
 
 IIS hỗ trợ chứng thực người dùng, virtual hosting, CGI, FCGI, ISAPI, php, hỗ trợ Ipv6,…
 
-3. Apache HTTP server  
+### 3. Apache HTTP server  
 
 Apache HTTP server hay còn được gọi là Apache là phần mềm web server được sử dụng rộng rãi nhất thế giới. Apache được phát triển và duy trì bởi một cộng đồng mã nguồn mở dưới sự bảo trợ của Apache Software Foundation. Apache được phát hành với giấy phép Apache License, là một phần mềm tự do, miễn phí.  
 
 Apache có các tính năng như chứng thực người dùng, virtual hosting, hỗ trợ CGI, FCGI, SCGI, WCGI, SSI, ISAPI, HTTPS, Ipv6,…  
 
-4. Apache Tomcat
+### 4. Apache Tomcat
 
 Apache Tomcat là một Java Servlet được phát triển bởi Apache Software Foundation. Tomcat thi hành các ứng dụng Java Servlet và JavaServer Pages (JSP). Tomcat cung cấp một máy chủ HTTP cho ngôn ngữ Java thuần túy. Apache Tomcat là một phần mềm mã nguồn mở để chạy các ứng dụng web có nền tảng là ngôn ngữ Java. Tomcat được hỗ trợ và tăng cường bởi một nhóm tình nguyện viên từ cộng đồng mã nguồn mở của Java. 
 
@@ -116,7 +116,7 @@ Apache Tomcat có các tính năng như chứng thực người dùng, virtual h
 
 Apache Tomcat hỗ trợ các hệ điều hành như windows, linux, OS, BSD, solaris,… 
 
-5. Lighttpd    
+### 5. Lighttpd    
 
 Lighttpd là một phần mềm mã nguồn mở, an toàn và linh hoạt, đặc biệt miễn phí và được phân phối theo giấy phép BSD.. Lighttpd được viết bởi Jan Kneschke. Lighttpd chiếm ít tài nguyên, memory thấp, CPU nhỏ. Lighttpd được phát triển bằng ngôn ngữ C. chạy trên hệ điều hành Linux, Windows, Mac OS,…  
 
