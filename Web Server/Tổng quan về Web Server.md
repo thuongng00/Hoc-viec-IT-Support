@@ -84,6 +84,8 @@ Khi nói đến các trình duyệt web và web server theo cách này, ta cũng
 
 Loại web server được dùng khá là phổ biến hiện nay đó là Nginx, đây là 1 máy chủ reverse proxy mã nguồn mở cho các giao thức HTTP, HTTPS, SMTP, POP3 và IMAP, cũng như là 1 máy chủ cân bằng tải (load balancer), HTTP cache và web. 
 
+![image](https://user-images.githubusercontent.com/111716161/189260028-3b420c14-262a-4c78-9e15-583083dc0879.png)
+
 Dự án Nginx được bắt đầu với việc tập trung vào tính đồng thời cao, hiệu năng cao và sử dụng tài nguyên thấp và được phát triển bởi Igor Sysoev vào nằm 2002, được phân phối ra công chúng lần đầu vào nằm 2004.
 
 ### 2. Internet Information Services (IIS)
@@ -91,6 +93,8 @@ Dự án Nginx được bắt đầu với việc tập trung vào tính đồng
 IIS do Microsoft phát triển, sản phẩm này được tích hợp cùng với hệ điều hành Windows. Server. Trong IIS bao gồm nhiều dịch vụ như: dịch vụ Web Server, dịch vụ FTP Server. 
 
 Tất cả các tính năng của web server được quản lí độc lập do đó chúng ta có thể dễ dàng thêm, loại bỏ hoặc thay thế các tính năng của web server.  
+
+![image](https://user-images.githubusercontent.com/111716161/189260076-f62092ac-b875-4df7-99e7-66adaf18a213.png)
 
 IIS đảm bảo an toàn cho máy chủ bằng cách giảm diện tích bề mặt tấn công. Giảm diện tích bề mặt tấn công là một trong những cách mạnh mẽ nhất để đảm bảo hệ thống máy chủ. Với IIS, chúng ta có thể loại bỏ những tính năng máy chủ không cần thiết để máy chủ đạt diện tích bề mặt nhỏ nhất mà vẫn giữ những tính năng cần thiết. Bằng cách loại bỏ một số tính năng máy chủ không sử dụng, chúng ta có thể làm giảm số lượng bộ nhớ mà máy chủ sử dụng, cải thiện hiệu suất bằng cách làm giảm số lượng đoạn code cần thực hiện. Bằng cách lựa chọn tập hợp các tính năng máy chủ chúng ta có thể xây dựng một máy chủ để tối ưu hóa một chức năng trong liên kết ứng dụng, chẵn hạn như bộ nhớ đệm hoặc cân bằng tải.  
 
@@ -104,11 +108,15 @@ IIS hỗ trợ chứng thực người dùng, virtual hosting, CGI, FCGI, ISAP
 
 Apache HTTP server hay còn được gọi là Apache là phần mềm web server được sử dụng rộng rãi nhất thế giới. Apache được phát triển và duy trì bởi một cộng đồng mã nguồn mở dưới sự bảo trợ của Apache Software Foundation. Apache được phát hành với giấy phép Apache License, là một phần mềm tự do, miễn phí.  
 
+![image](https://user-images.githubusercontent.com/111716161/189260114-fe2b2017-df56-4e29-b00f-a286c34bba50.png)
+
 Apache có các tính năng như chứng thực người dùng, virtual hosting, hỗ trợ CGI, FCGI, SCGI, WCGI, SSI, ISAPI, HTTPS, Ipv6,…  
 
 ### 4. Apache Tomcat
 
 Apache Tomcat là một Java Servlet được phát triển bởi Apache Software Foundation. Tomcat thi hành các ứng dụng Java Servlet và JavaServer Pages (JSP). Tomcat cung cấp một máy chủ HTTP cho ngôn ngữ Java thuần túy. Apache Tomcat là một phần mềm mã nguồn mở để chạy các ứng dụng web có nền tảng là ngôn ngữ Java. Tomcat được hỗ trợ và tăng cường bởi một nhóm tình nguyện viên từ cộng đồng mã nguồn mở của Java. 
+
+![image](https://user-images.githubusercontent.com/111716161/189260142-a1bfa36a-5a26-488e-9ea0-dfca7b3aa957.png)
 
 Apache Tomcat rất ổn định và có tất cả các tính năng của một ứng dụng web thương mại nhưng đi kèm theo giấy phép mã nguồn mở của Apache. Tomcat cũng cung cấp một số chức năng bổ sung như tomcat manager application, speciallized realm imlementation và tomcat valves. Các phiên bản của apache tomcat trùng với phiên bản và đặc điểm kỹ thuật của servlet java hoặc java servlet API. Tomcat 5.5X hỗ trợ Servlet API 2.3, tomcat 6.0X hỗ trợ servlet API 2.4 và tomcat 7.0 hỗ trợ servlet API 3.0. Ngoài Servlet versions API, phiên bản tomcat hỗ trợ phiên bản JSP API tương ứng.
 
@@ -119,5 +127,7 @@ Apache Tomcat hỗ trợ các hệ điều hành như windows, linux, OS, BSD, s
 ### 5. Lighttpd    
 
 Lighttpd là một phần mềm mã nguồn mở, an toàn và linh hoạt, đặc biệt miễn phí và được phân phối theo giấy phép BSD.. Lighttpd được viết bởi Jan Kneschke. Lighttpd chiếm ít tài nguyên, memory thấp, CPU nhỏ. Lighttpd được phát triển bằng ngôn ngữ C. chạy trên hệ điều hành Linux, Windows, Mac OS,…  
+
+![image](https://user-images.githubusercontent.com/111716161/189260176-c35e4f32-930f-49dd-9683-15f83815b998.png)
 
 Lighttpd hỗ trợ FastCGI, SCGI, CGI cho phép nó chạy được các ứng dụng web được viết bằng bất cứ ngôn ngữ nào. Lighttpd còn có các tính năng như chứng thực, hỗ trợ HTTPS, virtual hosting, hỗ trợ Ipv6,… Lighttpd không hỗ trợ ISAPI (Internet Service Application Programming Interface).  
