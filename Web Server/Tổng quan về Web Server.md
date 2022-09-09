@@ -57,6 +57,8 @@ Nếu không, máy chủ ứng dụng sẽ tạo tệp cần thiết. Nếu khô
 
 # Hoạt động của Web Server
 
+![image](https://user-images.githubusercontent.com/111716161/189258022-f477db52-3693-4231-a8f8-b948c92105bc.png)
+
 1. Trình duyệt phân giải tên miền thành địa chỉ IP
 
 Trình duyệt web của bạn trước tiên cần phải xác định địa chỉ IP nào mà tên miền tech.vccloud.vn trỏ về. Nếu thông tin này không được lưu trữ sẵn trong bộ nhớ cache, trình duyệt sẽ yêu cầu thông tin từ một hoặc nhiều máy chủ DNS (thông qua internet). Máy chủ DNS sẽ cho trình duyệt biết địa chỉ IP nào tên miền sẽ trỏ đến (cũng là nới đặt trang web).
