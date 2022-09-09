@@ -1,3 +1,34 @@
+# Shell của UNIX/Linux
+
+Mọi thứ được thực hiện trên Unix đều bởi tiến trình. Cũng như csc hệ điều hành làm việc kiểu ảo khác, Unix hỗ trợ một phương tiện xử ký lệnh làm giao diện giữa lệnh máy (mà người dùng đưa vào) và việc thực thi của lệnh đó (bởi Unix). Phương tiện đó gọi là **shell**.
+
+Mục đích của shell là để khởi động các tiến trình xử lý lệnh đưa vào: yêu cầu đưa dòng lệnh vào, đọc đầu vào, thông dịch dòng lệnh đó, tạo ra tiến trình để thực hiện lệnh đó. 
+
+Hệ thống cung cấp cho người dùng rất nhiều chương trình shell. Mỗi shell có một số tiện ích như hỗ trợ chế độ gõ phím, ghi nhớ lệnh. Kết hợp các tiện ích của shell để tạo ra một chương trình chạy được, thì một chương trình như vậy được lưu dưới dạng một tệp, gọi là tệp kịch bản (script). Viết được một tệp script, thực chất là đã lập trình theo shell. Một khi đã quen thuộc với một shell và cách hoạt động của shell đó, người dùng có thể làm chủ được các shell khác một cách dễ dàng. 
+
+Các shell trên Unix/Linux:
+
+| Shell | Ý nghĩa |
+|---|---|
+| sh (bourne) | shell nguyên thủy áp dụng cho Unix |
+| csh, tcsh, zsh | dòng shell sử dụng cấu trúc lệnh của C làm ngôn ngữ kịch bản, được tạo ra đầu tiên bởi Bia Joy, là shell thông dụng thứ 2 sau bash shell |
+| bash | shell chủ yếu của Linux, ra đời từ dự án GNU, bash là viết tắt của Bourne Again Shell có điểm lợi là mã nguồn được công bố rộng rãi, nếu bash chưa có sẵn trong hệ thống Unix/Linux hãy tải về và biên dịch, sử dụng miễn phí |
+| rc | shell mở rộng của csh với nhiều tương thích với ngôn ngữ C hơn, rc cũng ra đời từ dự án GNU |
+
+Shell chuẩn thường được các nhà phân phối sử dụng hiện nay là **bash shell**. Khi cài đặt Linux, trình cài đặt thường mặc định bash là shell khởi động. Có thể tìm thấy chương trình shell này trong thư mục /bin với tên chương trình là *bash*. bash đôi khi là một chương trình nhị phân đôi khi là một script gọi đến liên kết nhị phân khác. Có thể dùng lệnh `file` để xem bash là một tập tin nhị phân hay script như sau:
+
+` $ file /bin/bash `
+
+/bin/bash: ELF 32-bit LSB executable. Intel 80386
+
+Nếu kết quả kết xuất là dạng ELF thì có nghĩa bash là chương trình nhị phân. 
+
+` $ file /bin/sh `
+
+/bin/sh: symbolic link to bash
+
+Điều này có nghĩa là bash hoàn toàn có thể diễn dịch và điều khiển các lệnh của shell sh.
+
 # Biến trong bash shell
 Tạo các biến trong bash cũng tương tự như trong các ngôn ngữ lập trình. Nó không có kiểu dữ liệu. Biến trong bash có thể chưa số, ký tự, chuỗi ký tự, … Bạn cũng không cần phải khai báo biến, chỉ cần gán giá trị cho biến và tham chiếu của nó sẽ được tạo ra.
 
