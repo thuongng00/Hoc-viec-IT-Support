@@ -30,6 +30,103 @@ Nếu kết quả kết xuất là dạng ELF thì có nghĩa bash là chương 
 Điều này có nghĩa là bash hoàn toàn có thể diễn dịch và điều khiển các lệnh của shell sh.
 
 Để bắt đầu viết bash shell, nhập lệnh `! /bin/sh`
+
+# Tính toán trong bash shell
+
+### 1. Expr
+Kiểu dữ liệu số áp dụng : số nguyên (integer).
+
+Dùng để tính toán đơn giản cộng trừ nhân chia: “+” , “–” , “*” , “/” .
+
+Ví dụ:
+```
+expr 1 + 1
+myvar=$(expr 1 + 1)
+echo ${myvar}
+expr $myvar + 1
+expr $myvar / 3
+expr $myvar \* 3
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189313896-97aed689-df93-4d4d-a58e-d25989cd5804.png)
+
+Lưu ý :
+- Phải chú ý khoảng trắng, tách biệt giữa các số các biến không được để dính liền.
+- Ở phép toán nhân, các bạn phải thêm dấu “\” trước dấu “*” thì lệnh mới hiểu đó là phép nhân.
+
+### 2. Let
+Kiểu dữ liệu số áp dụng : số nguyên (integer).
+
+Dùng để tính toán đơn giản “+” , “–” , “*” , “/” .
+
+Ví dụ:
+```
+a=5
+let a+=1
+echo ${a}
+let a+1
+echo ${a}
+let b=a+5; echo ${b}
+let c=a+b; echo ${c}
+let d=$b+3; echo ${d}
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189314175-1456f287-9a41-477c-8950-975e83d30950.png)
+
+Lưu ý :
+- Phải sử dụng biến đã quy định trước trong biểu thức tính toán “let“, không áp dụng số rời nhau.
+- Phải viết các biến số hoặc số dính liền nhau không được tách khoảng trắng như “expr“.
+
+### 3. Sử dụng $((expression)) hoặc $[expression]
+Kiểu dữ liệu số áp dụng : số nguyên (integer) .
+
+Dùng để tính toán đơn giản “+” , “-” , “*” , “/” .
+
+Ví dụ:
+```
+echo $((5+6))
+echo $[5+7]
+echo $[5+7.5]
+var=10
+echo ${var}
+var=$((var+5))
+echo $var
+echo var=$[var+5]
+var=20
+echo $[var+5]
+echo $var
+var=$[var+5]
+echo $var
+var2=7
+var=$((var+${var2}))
+echo $var
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189314667-18ea15c4-ac26-4ab7-bc03-78db864d348e.png)
+
+### 4. “bc” – An arbitrary precision calculator language”
+Kiểu dữ liệu số sử dụng : integer, float (số nguyên và số thập phân).
+
+Dùng trong rất nhiều trường hợp không chỉ tính toán cơ bản, công cụ tính toán mạnh mẽ nhất trong shell, nắm tốt nó thì không sợ gì cả. Đây là công cụ bên thứ 3 nên nếu OS không có thì ta cần cài đặt vào gói ‘bc‘.
+
+Các trường hợp ngoài tính toán có thể sử dụng “bc” : đổi số nhị phân – thập phân – thập lục phân, so sánh các số với nhau, tính toán các số thập phân,… và rất nhiều tính năng khác.
+
+Ví dụ:
+```
+echo "2 + 3" | bc
+bc <<< "3.4+7/8-(5.94*3.14)"
+echo "3.4+7/8-(5.94*3.14)" | bc
+echo "2/3" | bc
+echo "scale=2; 2/3" | bc
+echo "(2/3)+(7/8)" | bc
+echo "scale=2;(2/3)+(7/8)" | bc
+echo "scale=4;(2/3)+(7/8)" | bc
+echo "scale=6;(2/3)+(7/8)" | bc
+echo "(2/3)+(7/8)" | bc -l
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189314996-ee811be0-8c5d-4158-b816-2803a1384b52.png)
+
 # Biến trong bash shell
 Tạo các biến trong bash cũng tương tự như trong các ngôn ngữ lập trình. Nó không có kiểu dữ liệu. Biến trong bash có thể chưa số, ký tự, chuỗi ký tự, … Bạn cũng không cần phải khai báo biến, chỉ cần gán giá trị cho biến và tham chiếu của nó sẽ được tạo ra.
 
