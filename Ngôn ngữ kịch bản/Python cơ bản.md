@@ -162,3 +162,54 @@ python --version
 
 Như vậy ta đã cài đặt xong Python 3 và đặt nó làm mặc định trên CentOS 7.
 
+# Lập trình Python cơ bản
+
+Để bắt đầu lập trình Python, gõ lệnh `python`
+
+1. Câu lệnh in ra màn hình
+
+```
+print('Nội dung muốn in ra màn hình')
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189563303-392ae39b-7be9-4a3f-801d-7bcfd4c1cdd9.png)
+
+2. Biến
+
+- Biến có kiểu dữ kiệu String
+
+```
+str1 = 'du lieu 1'
+str2 = 'du lieu 2'
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189563750-7660373c-53bf-4e60-b4f2-d7d7db15deac.png)
+
+Một số cách nối chuỗi:
+
+```
+print(str1 + ' ' + str2)
+print(str1 + str2, str1)
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189564023-6398a48a-f623-49ce-9e38-07fd238aff75.png)
+
+- Biến có kiểu dữ liệu integer
+
+```
+num1=3
+num2=10
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189564372-84a5e6da-bd24-44e1-add8-7da631d727ae.png)
+
+Ép kiểu
+
+```
+print (str(num1) + ' va ' + str(num2))
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189564410-bc036f11-244f-45a4-ba9d-ea28c75e8959.png)
+
+
+
