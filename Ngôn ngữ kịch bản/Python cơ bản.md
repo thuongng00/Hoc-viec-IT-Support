@@ -48,7 +48,7 @@ Bước 2: Cập nhật công cụ quản lý Yum
 
 ```
 yum -y update  (Cập nhật yum)
-yum -y install yum-utils  (Cài đặt ym utils)
+yum -y install yum-utils  (Cài đặt yum utils)
 (Cài đặt công cụ phát triển CentOs giúp xây dựng và biên dịch phần mềm từ mã nguồn)
 yum -y groupinstall development 
 yum -y install zlib zlib-devel
@@ -58,26 +58,107 @@ yum -y install zlib zlib-devel
 
 ![image](https://user-images.githubusercontent.com/111716161/189559892-0e0adf66-7c3d-4446-8b77-760d51e3bbcd.png)
 
-![image](https://user-images.githubusercontent.com/111716161/189560587-3fc8d828-4850-4ace-8993-860ab3b03df7.png)
+![image](https://user-images.githubusercontent.com/111716161/189560673-3b956a49-142d-41a6-a4d3-0f3000e198fc.png)
 
-Bước 3: Cài đặt Python 3
+Bước 3: Cài đặt tiện ích và tải phiên bản Python 3
 
-- Do Repos yum tiêu chuẩn không có bản phát hành python mới nhất, vì vậy ta cài đặt IUM (Nội tuyến với Upstream Stable) để có các gói mới nhất.
-
-```
-yum install \
-https://repo.ius.io/ius-release-e17.rpm \
-https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-```
-
-- Cài đặt python 3
+- Cài đặt tiện ích wget
 
 ```
-yum -y install python36u
+yum -y install wget
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/189560803-d1bb0ac0-c73d-406d-9b94-347c11b0f2c4.png)
 
+- Di chuyển vào đường dẫn tmp
 
+```
+cd /tmp/
+```
 
+- Tải file nén Python 3:
 
+```
+wget https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tgz
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189560983-120997fe-a54e-41ff-a98a-4124ac65783d.png)
+
+- Giải nén file vừa tải về
+
+```
+tar xvf Python-3.8.2.tgz
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189561075-3d65b08b-0b12-445f-ac8a-ff07b905f69c.png)
+
+Bước 4: Cài đặt Python 3
+
+- Di chuyển vào thư mục vừa giải nén
+
+```
+cd Python-3.8.2/
+```
+
+- Thiết lập cài đặt
+
+```
+./configure --enable-optimizations
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189561335-ef1149b0-d17a-4532-a9ff-4ebb520cc9d6.png)
+
+- Bắt đầu biên dịch Python 3.8 trên CentOS 7 
+
+```
+make altinstall
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189561353-cfb46f32-678c-4ca2-8b38-f4aa135a96b2.png)
+
+![image](https://user-images.githubusercontent.com/111716161/189561592-3a9f3e76-45b9-4f35-9479-f2856dfe45e3.png)
+
+Bước 5: Thiết lập Python 3 làm mặc định
+
+Hiện tại tuy đã cài đặt thành công Python 3 nhưng hệ thống vẫn sử dụng Python 2.7 làm mặc định. Để thay đổi phiên bản mặc định thực hiện các bước sau:
+
+- Kiểm tra vị trí Python 3 vừa cài đặt:
+
+```
+which python3.8
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189561623-ccde5728-babc-4fd6-a8a3-dbb31a73a47e.png)
+
+- Thêm bí danh (alias) vào .bash_profile
+
+```
+nano ~/.bash_profile
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189561754-d33680c0-16c2-4246-8555-1e4fcc33d700.png)
+
+Thay thế /usr/local/bin/python3.8 thành đường dẫn trên hệ thống
+
+```
+alias python='/usr/local/bin/python3.8'
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189562044-10912279-e2fc-4c48-8507-d13d4717b016.png)
+
+- Tải lại file .bash_profile bằng lệnh:
+
+```
+source ~/.bash_profile
+```
+
+Bước 6: Kiểm tra kết quả
+
+```
+python --version
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189562357-f27fc5c9-7c23-401b-a2cf-ac0b03934d5c.png)
+
+Như vậy ta đã cài đặt xong Python 3 và đặt nó làm mặc định trên CentOS 7.
 
