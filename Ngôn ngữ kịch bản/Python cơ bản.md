@@ -217,7 +217,31 @@ print (str(num1) + ' va ' + str(num2))
 - Phép trừ: -
 - Phép nhân: *
 - Phép chia: /
+- Chia lấy phần dư: %
 
-![image](https://user-images.githubusercontent.com/111716161/189564669-0df06a06-ca5d-4f43-9240-d0d4eb29932a.png)
+![image](https://user-images.githubusercontent.com/111716161/189565183-babfb1b2-0179-4c4f-afb4-c9fc647f8942.png)
+
+4. Boolean và toán tử logic
+
+Giá trị đúng và sai tương ứng là `True` và `False`
+
+- not: đảo giá trị
+- and: phép tính logic và
+- or: phép tính logic hoặc
+
+Một số phép so sánh thông thường như < (bé hơn), <= (bé hơn hoặc bằng), > (lớn hơn), >= (lớn hơn hoặc bằng), == (bằng), ~= (khác) để so sánh 2 giá trị.
+
+![image](https://user-images.githubusercontent.com/111716161/189565737-92a33981-ce5f-48a6-a0bf-0eadef808caa.png)
+
+Hỗ trợ dạng kép:
+
+![image](https://user-images.githubusercontent.com/111716161/189565642-11556cfe-ec9a-43f8-ba5c-f678faee5f0c.png)
+
+Toán tử kiểm tra phần tử trong một tập hợp: 
+
+- in: kiểm tra có tồn tại
+- not in: kiểm tra không tồn tại
+
+
 
 
