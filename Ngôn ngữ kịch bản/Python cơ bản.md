@@ -49,14 +49,32 @@ Bước 2: Cập nhật công cụ quản lý Yum
 ```
 yum -y update  (Cập nhật yum)
 yum -y install yum-utils  (Cài đặt ym utils)
-yum -y groupinstall development (Cài đặt công cụ phát triển CentOs giúp xây dựng và biên dịch phần mềm từ mã nguồn)
+(Cài đặt công cụ phát triển CentOs giúp xây dựng và biên dịch phần mềm từ mã nguồn)
+yum -y groupinstall development 
+yum -y install zlib zlib-devel
 ```
 
 ![image](https://user-images.githubusercontent.com/111716161/189559855-b21e0c64-a55d-45a7-a817-8ea0b0e2da3c.png)
 
 ![image](https://user-images.githubusercontent.com/111716161/189559892-0e0adf66-7c3d-4446-8b77-760d51e3bbcd.png)
 
+![image](https://user-images.githubusercontent.com/111716161/189560587-3fc8d828-4850-4ace-8993-860ab3b03df7.png)
 
+Bước 3: Cài đặt Python 3
+
+- Do Repos yum tiêu chuẩn không có bản phát hành python mới nhất, vì vậy ta cài đặt IUM (Nội tuyến với Upstream Stable) để có các gói mới nhất.
+
+```
+yum install \
+https://repo.ius.io/ius-release-e17.rpm \
+https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+```
+
+- Cài đặt python 3
+
+```
+yum -y install python36u
+```
 
 
 
