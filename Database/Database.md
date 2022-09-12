@@ -35,6 +35,9 @@ Khi xây dựng database việc truy xuất dữ liệu từ nhiều người c�
 
 Database được xây dựng để việc tạo lập, cập nhật và khai thác thông tin dễ dàng hơn, trong đó quá trình cập nhật dữ liệu diễn ra thường xuyên và không trùng lặp. Ứng dụng database giúp tối ưu hệ thống, tạo ra các sản phẩm chuyên nghiệp hơn, dữ liệu được lưu trữ một cách hệ thống và hoạt động quản lý trở nên đơn giản.
 
+# Hệ quản trị cơ sở dữ liệu
+
+![image](https://user-images.githubusercontent.com/111716161/189632326-ca1d7a34-d3bd-4213-a84c-8ac0b8b24d17.png)
 
 ## Cấu trúc của hệ quản trị cơ sở dữ liệu
 
