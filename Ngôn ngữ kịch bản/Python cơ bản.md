@@ -211,5 +211,13 @@ print (str(num1) + ' va ' + str(num2))
 
 ![image](https://user-images.githubusercontent.com/111716161/189564410-bc036f11-244f-45a4-ba9d-ea28c75e8959.png)
 
+3. Các phép toán số học 
+
+- Phép cộng: +
+- Phép trừ: -
+- Phép nhân: *
+- Phép chia: /
+
+![image](https://user-images.githubusercontent.com/111716161/189564669-0df06a06-ca5d-4f43-9240-d0d4eb29932a.png)
 
 
