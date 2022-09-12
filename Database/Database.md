@@ -35,6 +35,16 @@ Khi xây dựng database việc truy xuất dữ liệu từ nhiều người c�
 
 Database được xây dựng để việc tạo lập, cập nhật và khai thác thông tin dễ dàng hơn, trong đó quá trình cập nhật dữ liệu diễn ra thường xuyên và không trùng lặp. Ứng dụng database giúp tối ưu hệ thống, tạo ra các sản phẩm chuyên nghiệp hơn, dữ liệu được lưu trữ một cách hệ thống và hoạt động quản lý trở nên đơn giản.
 
+
+## Cấu trúc của hệ quản trị cơ sở dữ liệu
+
+Cấu trúc của hệ quản trị cơ sở dữ liệu gồm có những yếu tố như sau:
+- Các thao tác đối với hệ quản trị cơ sở dữ liệu với các thao tác chính bao gồm: Truy vấn, thay đổi sơ đồ dữ liệu, cập nhật dữ liệu.
+- Bộ xử lý câu hỏi. 
+- Bộ quản lý lưu trữ.
+- Bộ quản trị giao dịch. 
+- Dữ liệu, siêu dữ liệu.
+
 ## Các hệ quản trị cơ sở dữ liệu phổ biến
 
 ### Hệ quản trị cơ sở dữ liệu MySQL
