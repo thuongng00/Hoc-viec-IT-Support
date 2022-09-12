@@ -12,6 +12,8 @@
 - Viết script yeucau2.sh liệt kê tất cả tệp có trong thư mục /etc và ghi vào file danhsachtep.txt.
 - Sử dụng `ls` để liệt kê, `grep` để lọc và `>` để ghi kết quả vào file.
 
+![image](https://user-images.githubusercontent.com/111716161/189611474-2590f4b2-9ed8-4a1d-9bb6-ca97d374f7a2.png)
+
 ![image](https://user-images.githubusercontent.com/111716161/189599269-ee67a57d-efbc-434f-9afe-1cbd499c8b0e.png)
 
 ## 3. Viết script đếm số lượng
