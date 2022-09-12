@@ -286,6 +286,8 @@ else:
   statements3(s3)
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/189588987-6d8f9efd-ce39-4c22-8659-34e3a37a7f32.png)
+
 Python không có cấu trúc switch... case.
 
 7.2. For...in
@@ -297,6 +299,8 @@ for iterating_var in sequence:
   statements(s)
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/189589201-352bdde0-0309-46ef-955e-c648bf5d1e8a.png)
+
 7.3. While
 
 Câu lệnh `while` cho phép bạn liên tục thực thi một khối các câu lệnh miễn điều kiện là đúng. Một câu lệnh while là một ví dụ về câu lệnh lặp. Một câu lệnh while có thể có một mệnh đề khác tùy chọn. 
@@ -305,6 +309,9 @@ Câu lệnh `while` cho phép bạn liên tục thực thi một khối các câ
 While expression:
   statements(s)
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/189590214-cac647af-3680-438b-874b-a11e16bedb1e.png)
+
 
 
 
