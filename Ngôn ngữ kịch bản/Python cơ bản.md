@@ -278,12 +278,12 @@ Python hỗ trợ một số cấu trúc điều khiển thông dụng. Hầu h�
 Câu lệnh `if` được sử dụng để kiểm tra một điều kiện: nếu điều kiện đúng sẽ chạy một khối các câu lệnh (được gọi là if-block), nếu sai chương trình sẽ xử ký một khối các câu lệnh khác (được gọi là else-block).
 
 ```
-if expression1:
-statements1(s1)
-elif expresstion2:
-statements2(s2)
+if condition1:
+  statements1(s1)
+elif condition2:
+  statements2(s2)
 else:
-statements3(s3)
+  statements3(s3)
 ```
 
 Python không có cấu trúc switch... case.
@@ -291,17 +291,19 @@ Python không có cấu trúc switch... case.
 7.2. For...in
 
 Câu lệnh `for...in` là một câu lệnh khác, nó lặp đi lặp lại qua một chuỗi (sequences) các đối tượng tức là đi qua từng mục trong một chuỗi. Một chuỗi trình tự chỉ là một tập hợp các items.
+
 ```
 for iterating_var in sequence:
-statements(s)
+  statements(s)
 ```
 
 7.3. While
 
 Câu lệnh `while` cho phép bạn liên tục thực thi một khối các câu lệnh miễn điều kiện là đúng. Một câu lệnh while là một ví dụ về câu lệnh lặp. Một câu lệnh while có thể có một mệnh đề khác tùy chọn. 
+
 ```
 While expression:
-statements(s)
+  statements(s)
 ```
 
 
