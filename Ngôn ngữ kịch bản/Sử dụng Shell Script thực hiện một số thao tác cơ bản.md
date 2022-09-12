@@ -22,6 +22,8 @@
 - Sử dụng biến count để tính số lượng file, kiểm tra trường hợp count = 0.
 - Sử dụng lệnh ls để liệt kê, wc để đếm. 
 
+![image](https://user-images.githubusercontent.com/111716161/189619794-5beb8c0a-e361-4e95-be27-fed32fdbe3d0.png)
+
 ## 4. Viết script tìm kiếm
 
 - Viết script yeucau4.sh cho phép người dùng nhập tên file và đường dẫn, sau đó tìm kiếm file tại đường dẫn vừa nhập.
