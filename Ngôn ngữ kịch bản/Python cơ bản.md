@@ -31,7 +31,7 @@ Những điều Python có thể làm được:
 
 # Cài đặt Python 3
 
-Bước 1: Kiểm tra phiên bản Python đang sử dụng
+### Bước 1: Kiểm tra phiên bản Python đang sử dụng
 
 Mặc định Python được cài đặt trên CentOS 7 là phiên bản Python 2.7.x. 
 
@@ -44,7 +44,7 @@ python --version
 
 Phiên bản ở đây là 2.7.5, ta sẽ nâng cấp lên phiên bản Python 3.
 
-Bước 2: Cập nhật công cụ quản lý Yum
+### Bước 2: Cập nhật công cụ quản lý Yum
 
 ```
 yum -y update  (Cập nhật yum)
@@ -60,7 +60,7 @@ yum -y install zlib zlib-devel
 
 ![image](https://user-images.githubusercontent.com/111716161/189560673-3b956a49-142d-41a6-a4d3-0f3000e198fc.png)
 
-Bước 3: Cài đặt tiện ích và tải phiên bản Python 3
+### Bước 3: Cài đặt tiện ích và tải phiên bản Python 3
 
 - Cài đặt tiện ích wget
 
@@ -92,7 +92,7 @@ tar xvf Python-3.8.2.tgz
 
 ![image](https://user-images.githubusercontent.com/111716161/189561075-3d65b08b-0b12-445f-ac8a-ff07b905f69c.png)
 
-Bước 4: Cài đặt Python 3
+### Bước 4: Cài đặt Python 3
 
 - Di chuyển vào thư mục vừa giải nén
 
@@ -118,7 +118,7 @@ make altinstall
 
 ![image](https://user-images.githubusercontent.com/111716161/189561592-3a9f3e76-45b9-4f35-9479-f2856dfe45e3.png)
 
-Bước 5: Thiết lập Python 3 làm mặc định
+### Bước 5: Thiết lập Python 3 làm mặc định
 
 Hiện tại tuy đã cài đặt thành công Python 3 nhưng hệ thống vẫn sử dụng Python 2.7 làm mặc định. Để thay đổi phiên bản mặc định thực hiện các bước sau:
 
@@ -152,7 +152,7 @@ alias python='/usr/local/bin/python3.8'
 source ~/.bash_profile
 ```
 
-Bước 6: Kiểm tra kết quả
+### Bước 6: Kiểm tra kết quả
 
 ```
 python --version
@@ -166,7 +166,7 @@ Như vậy ta đã cài đặt xong Python 3 và đặt nó làm mặc định t
 
 Để bắt đầu lập trình Python, gõ lệnh `python`
 
-1. Câu lệnh in ra màn hình
+### 1. Câu lệnh in ra màn hình.
 
 ```
 print('Nội dung muốn in ra màn hình')
@@ -174,7 +174,22 @@ print('Nội dung muốn in ra màn hình')
 
 ![image](https://user-images.githubusercontent.com/111716161/189563303-392ae39b-7be9-4a3f-801d-7bcfd4c1cdd9.png)
 
-2. Biến
+### 2. Xuống dòng trong Python.
+
+Một câu lệnh trong python được viết trên một dòng và được kết thúc bởi ký tự xuống dòng tạo ra khi nhấn phím ENTER. Do vậy, trong một câu lệnh quá dài, nếu muốn xuống dòng trong câu lệnh và viết câu lệnh trên nhiều dòng cho dễ nhìn, ta không thể nhấn phím ENTER vì Python sẽ coi câu lệnh kết thúc tại vị trí nhấn phím ENTER và bỏ qua phần còn lại của câu lệnh, khiến cho câu lệnh bị lỗi khi chạy. 
+
+Để xuống dòng trong câu lệnh Python và viết câu lệnh trên nhiều dòng, ta thêm dấu backslash `\` vào trước vị trí muốn xuống dòng. 
+
+```
+abc \
+xyz
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189568658-ee67ecd5-6e66-4260-9084-9433d037b3b1.png)
+
+Dấu `...` là do python sau khi xử lý dấu `\` đã nhận định câu lệnh trên vẫn đang tiếp tục, do đó ta có thể xuống dòng và viết tiếp.
+
+### 3. Biến
 
 - Biến có kiểu dữ kiệu String
 
@@ -194,7 +209,7 @@ print(str1 + str2, str1)
 
 ![image](https://user-images.githubusercontent.com/111716161/189564023-6398a48a-f623-49ce-9e38-07fd238aff75.png)
 
-- Biến có kiểu dữ liệu integer
+- Biến có kiểu dữ liệu Integer
 
 ```
 num1=3
@@ -211,7 +226,19 @@ print (str(num1) + ' va ' + str(num2))
 
 ![image](https://user-images.githubusercontent.com/111716161/189564410-bc036f11-244f-45a4-ba9d-ea28c75e8959.png)
 
-3. Các phép toán số học 
+### 4. Lệnh nhập 
+
+
+```
+str = input('Nhap du lieu: ')
+num = int(input('Nhap vao mot so nguyen: '))
+```
+
+![image](https://user-images.githubusercontent.com/111716161/189567748-9640a5e8-9f7b-4895-80ff-77dfaaa0a075.png)
+
+![image](https://user-images.githubusercontent.com/111716161/189567598-e1f4dbbe-0c49-4103-8141-6ffa6fec35c3.png)
+
+### 5. Các phép toán số học 
 
 - Phép cộng: +
 - Phép trừ: -
@@ -221,7 +248,7 @@ print (str(num1) + ' va ' + str(num2))
 
 ![image](https://user-images.githubusercontent.com/111716161/189565183-babfb1b2-0179-4c4f-afb4-c9fc647f8942.png)
 
-4. Boolean và toán tử logic
+### 6. Boolean và toán tử logic
 
 Giá trị đúng và sai tương ứng là `True` và `False`
 
@@ -241,6 +268,41 @@ Toán tử kiểm tra phần tử trong một tập hợp:
 
 - in: kiểm tra có tồn tại
 - not in: kiểm tra không tồn tại
+
+### 7. Cấu trúc điều khiển
+
+Python hỗ trợ một số cấu trúc điều khiển thông dụng. Hầu hết các cấu trúc điều khiển đều dựa vào thụt đầu dòng (indention) để tạo thành một block xử lý (thay vì sử dụng {...} như các ngôn ngữ khác (PHP, Javascript).
+
+7.1. If...elif... else
+
+Câu lệnh `if` được sử dụng để kiểm tra một điều kiện: nếu điều kiện đúng sẽ chạy một khối các câu lệnh (được gọi là if-block), nếu sai chương trình sẽ xử ký một khối các câu lệnh khác (được gọi là else-block).
+
+```
+if expression1:
+statements1(s1)
+elif expresstion2:
+statements2(s2)
+else:
+statements3(s3)
+```
+
+Python không có cấu trúc switch... case.
+
+7.2. For...in
+
+Câu lệnh `for...in` là một câu lệnh khác, nó lặp đi lặp lại qua một chuỗi (sequences) các đối tượng tức là đi qua từng mục trong một chuỗi. Một chuỗi trình tự chỉ là một tập hợp các items.
+```
+for iterating_var in sequence:
+statements(s)
+```
+
+7.3. While
+
+Câu lệnh `while` cho phép bạn liên tục thực thi một khối các câu lệnh miễn điều kiện là đúng. Một câu lệnh while là một ví dụ về câu lệnh lặp. Một câu lệnh while có thể có một mệnh đề khác tùy chọn. 
+```
+While expression:
+statements(s)
+```
 
 
 
