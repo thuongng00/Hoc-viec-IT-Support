@@ -29,66 +29,37 @@ Những điều Python có thể làm được:
 - Lập trình ứng dụng.
 - Bảo mật mạng và máy tính. 
 
-# Cài đặt môi trường Python
+# Cài đặt Python 3
 
-Bước 1: Truy cập trang chủ của Python
+Bước 1: Kiểm tra phiên bản Python đang sử dụng
 
-https://www.python.org/
+Mặc định Python được cài đặt trên CentOS 7 là phiên bản Python 2.7.x. 
 
-Bước 2: Chọn phiên bản ở mục Downloads và nhấp chọn Python 3.10.7 để tải về.
+Sử dụng lệnh sau để kiểm tra phiên bản:
+```
+python --version
+```
 
-![image](https://user-images.githubusercontent.com/111716161/189077238-2d6380f9-396b-4e17-901d-73ffecef42d8.png)
+![image](https://user-images.githubusercontent.com/111716161/189559414-664bc7fe-8b13-4429-8840-2211baea931c.png)
 
-Bước 3: Sau khi tải xong, nhấn để chạy file và bắt đầu tiến trình cài đặt.
+Phiên bản ở đây là 2.7.5, ta sẽ nâng cấp lên phiên bản Python 3.
 
-![image](https://user-images.githubusercontent.com/111716161/189077627-0f9e115c-98bd-4311-ba8b-6ca5a372980f.png)
+Bước 2: Cập nhật công cụ quản lý Yum
 
-Bước 4: Tick vào ô Add Python 3.10 to PATH và chọn Install now.
+```
+yum -y update  (Cập nhật yum)
+yum -y install yum-utils  (Cài đặt ym utils)
+yum -y groupinstall development (Cài đặt công cụ phát triển CentOs giúp xây dựng và biên dịch phần mềm từ mã nguồn)
+```
 
-![image](https://user-images.githubusercontent.com/111716161/189077873-b7a0433d-65b0-41d0-baf3-809982d293be.png)
+![image](https://user-images.githubusercontent.com/111716161/189559855-b21e0c64-a55d-45a7-a817-8ea0b0e2da3c.png)
 
-Bước 5: Chờ cho quá trình cài đặt hoàn thành.
+![image](https://user-images.githubusercontent.com/111716161/189559892-0e0adf66-7c3d-4446-8b77-760d51e3bbcd.png)
 
-![image](https://user-images.githubusercontent.com/111716161/189078035-068545fa-8969-4513-a700-6babfc6e0ecf.png)
 
-Khi cửa sổ hiển thị Setup was successful là ta đã cài đặt thành công môi trường Python. Nhấn Close.
 
-![image](https://user-images.githubusercontent.com/111716161/189078240-b6f865e2-6b7b-4e64-8170-d2337ce9b802.png)
 
-Bước 6: Ta mở Command Prompt (CMD) để kiểm tra.
 
-- Sử dụng tổ hợp phím Windows + R để mở hộp thoại Run.
-- Gõ cmd sau đó Enter.
 
-![image](https://user-images.githubusercontent.com/111716161/189078555-b23e8fa9-69cd-4799-a031-3fff30079063.png)
 
-Bước 7: Trong cửa sổ Command Prompt, gõ Python rồi enter để kiểm tra. Nếu hiển thị ra được shell để tương tác với Python là cài đặt hoàn tất. 
-
-![image](https://user-images.githubusercontent.com/111716161/189078801-c82ba75f-4fdd-4beb-9639-0839798d9eb7.png)
-
-Ta soạn thảo code trên Sublime Text. Sau đây là cách cài đặt: 
-
-Bước 1: Vào trang chủ của Sublime Text 
-
-https://www.sublimetext.com/
-
-Bước 2: Các bạn chọn Download
-
-Bước 3: Chọn phiên bản phù hợp cho hệ điều hành của mình
-
-Bước 4: Vào file vừa tải xuống. Chọn Next để tiếp tục quá trình cài đặt
-
-![image](https://user-images.githubusercontent.com/111716161/189079719-513a738b-9d99-42a2-80b5-fbd50e4306ca.png)
-
-Bước 5: Các bạn có thể tùy chỉnh đường dẫn ở mục Browse. Mình khuyến khích chọn Next
-
-Bước 6: Tiếp tục chọn Next để cài đặt
-
-Bước 7: Tiếp theo chọn Install để quá trình cài đặt được diễn ra
-
-Bước 8: Chọn Finish để kết thúc quá trình cài đặt
-
-Bước 9: Khởi động Sublime Text
-
-![image](https://user-images.githubusercontent.com/111716161/189080047-2edac98d-2c32-4096-a925-ba99648ded0a.png)
 
