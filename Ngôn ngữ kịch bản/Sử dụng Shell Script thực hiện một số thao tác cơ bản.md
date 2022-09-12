@@ -19,3 +19,19 @@
 - Viết script yeucau3.sh đếm số lượng file có trong thư mục do người dùng truyền vào, nếu thư mục người dùng truyền vào không tồn tại hoặc không chứa tập tin nào thì xuất ra thông báo: "thu muc nay khong ton tai hoac khong chua tap tin nao".
 - Sử dụng biến count để tính số lượng file, kiểm tra trường hợp count = 0.
 - Sử dụng lệnh ls để liệt kê, wc để đếm. 
+
+## 4. Viết script tìm kiếm
+
+- Viết script yeucau4.sh cho phép người dùng nhập tên file và đường dẫn, sau đó tìm kiếm file tại đường dẫn vừa nhập.
+  - Nếu đường dẫn không tồn tại thì đưa ra thông báo "Duong dan khong ton tai"
+  - Nếu file không tồn tại thì đưa ra thông báo "File khong ton tai"
+  - Nếu file tồn tại thì đưa ra thông báo "Tim thay file tai duong dan"
+  
+## 5. Viết script kiểm tra user
+
+- Viết script yeucau5.sh cho phép người dùng nhập tên user. Sau đó hiện thông tin của user này, nếu user không tồn tại thì xuất thông báo "User khong ton tai"
+
+## 6. Viết script back up
+
+- Viết script yeucau6.sh cho phép người dùng backup thư mục /home và lưu vào thư mục /var/backups với định dạng home-yyyy-mm-dd.tgz
+
