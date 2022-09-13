@@ -49,7 +49,7 @@ Bước 6: Nhấn Close. Như vậy ta đã cài đặt xong IIS.
 <a name="web"></a>
 # Triển khai dịch vụ web với IIS trên Windows server 2016
 
-Bước 1: Sau khi cài đặt xong IIS, để quản trị dịch vụ, ban vào Server manager chọn "Tools" chọn "Internet Infomation Services (IIS) Manager".
+Bước 1: Sau khi cài đặt xong IIS, để quản trị dịch vụ, vào Server manager chọn "Tools" chọn "Internet Infomation Services (IIS) Manager".
 
 ![image](https://user-images.githubusercontent.com/111716161/189846791-94d5833e-5ee9-40ff-9948-f605b72381fa.png)
 
@@ -92,4 +92,40 @@ Như vậy, chúng ta đã hoàn thành việc cài đặt dịch vụ IIS và t
 <a name="taoweb"></a>
 
 # Tạo một trang web mới trong Windows IIS 10
+
+Bước 1: Mở Trình quản lý IIS.
+
+Vào Server manager chọn "Tools" chọn "Internet Infomation Services (IIS) Manager".
+
+![image](https://user-images.githubusercontent.com/111716161/189846791-94d5833e-5ee9-40ff-9948-f605b72381fa.png)
+
+Bước 2: Thêm trang Web
+
+Mở rộng thư mục máy tính của bạn bằng cách nhấp vào > ở bên trái của biểu tượng trong khung bên trái. Sau đó, nhấp chuột phải Các trang web và chọn Thêm trang web...
+
+![image](https://user-images.githubusercontent.com/111716161/189852767-08fc89e6-9a10-443a-987d-5908df3df7a0.png)
+
+Bước 3: Tạo tên trang web.
+
+Mô hình Thêm trang web cửa sổ sẽ mở ra. Đầu tiên, thêm một tên dễ nhớ cho trang web trong Tên trang web trường.
+
+![image](https://user-images.githubusercontent.com/111716161/189853914-8e0a66e3-bf1e-40d6-a4aa-e8c2783a32a2.png)
+
+Bước 4: Thêm đường dẫn vật lý.
+
+Điều hướng đến thư mục chứa các tệp trên trang web của bạn để nó xuất hiện trong Con đường vật lý trường.
+
+![image](https://user-images.githubusercontent.com/111716161/189855070-b7f05de7-5d7c-40cd-a2f1-e6c1b77744ed.png)
+
+Bước 5: Đặt tùy chọn ràng buộc.
+
+Theo Binding, chọn nút Kiểu (HTTP hoặc HTTPS), Địa chỉ IP, Port và Tên máy chủ.
+
+![image](https://user-images.githubusercontent.com/111716161/189855562-f84685b8-ec32-4814-a1aa-9038dbf9f77e.png)
+
+Bước 6: Quyết định có bắt đầu trang web hay không.
+
+Nếu bạn muốn bắt đầu trang web ngay lập tức, hãy chắc chắn rằng Bắt đầu trang web ngay lập tức được kiểm tra. Nếu không, bỏ chọn nó.
+
+![image](https://user-images.githubusercontent.com/111716161/189855758-1cceb959-f71d-456c-80f0-a5baee2edbc3.png)
 
