@@ -4,6 +4,8 @@
 
 [Triển khai dịch vụ web với IIS trên Windows server](#web)
 
+[Tạo một trang web mới trong Windows IIS 10](#taoweb)
+
 IIS 10.0 trên Windows Server 2016  được thiết kế để trở thành một nền tảng Web và ứng dụng linh động và an toàn nhất cho Microsoft. Microsoft đã thiết kế lại IIS từ những nền tảng đã có trước đó và trong suốt quá trình phát triển, nhóm thiết kế IIS đã tập trung vào 5 lĩnh vực lớn:
 
 - Bảo mật ( Có thể sử dụng SSL để tăng độ mã hóa và tin cậy cho website ) 
@@ -86,3 +88,8 @@ Bước 6: Để có thể truy cập web site bằng tên (DNS Name), bạn s�
 ![image](https://user-images.githubusercontent.com/111716161/189848609-be964296-ca3b-4085-bd8f-dd55b1215b42.png)
 
 Như vậy, chúng ta đã hoàn thành việc cài đặt dịch vụ IIS và triển khai web site một cách cơ bản.
+
+<a name="taoweb"></a>
+
+# Tạo một trang web mới trong Windows IIS 10
+
