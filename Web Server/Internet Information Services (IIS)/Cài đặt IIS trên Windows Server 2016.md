@@ -133,4 +133,4 @@ Bước 7: Kết thúc.
 
 Nhấn vào OK nút để hoàn thành việc tạo trang web mới của bạn.
 
-Sau Thêm trang web cửa sổ đóng lại, bạn sẽ có trang web mới của mình trong danh sách các trang web. Tại thời điểm này, bạn có thể sẽ muốn bảo vệ trang web mới của mình bằng SSL /TLS chứng chỉ.
+Sau Thêm trang web cửa sổ đóng lại, bạn sẽ có trang web mới của mình trong danh sách các trang web. Tại thời điểm này, bạn có thể sẽ muốn bảo vệ trang web mới của mình bằng SSL /TLS chứng chỉ và triển khai các dịch vụ web.
