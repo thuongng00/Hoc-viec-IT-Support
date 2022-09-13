@@ -2,7 +2,7 @@
 
 [Cài đặt DNS](#caidat)
 
-[Cấu hình DNS](#cauhinh)
+[Cấu hình DNS Server](#cauhinh)
 
 <a name="caidat"></a>
 
