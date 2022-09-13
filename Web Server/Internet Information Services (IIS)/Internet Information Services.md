@@ -1,3 +1,7 @@
+[Internet Information Services (IIS)](#iis)
+
+[So sánh IIS và Apache](#sosanh)
+<a name="iis"></a>
 # Internet Information Services (IIS)
 
 Internet Information Services (IIS) được đính kèm với các phiên bản của Windows, là các dịch vụ dành cho máy chủ chạy trên nền hệ điều hành Windows nhằm cung cấp và phân tán các thông tin lên mạng, nó bao gồm nhiều dịch vụ khác nhau như Web Server, FTP Server...
@@ -107,6 +111,7 @@ Internet Protocol Security (IPSec) Filters có thể cung cấp khả năng tố
 - Trong IIS có rất nhiều thành phần (module) bổ trợ. Nên gỡ bỏ những thành phần không cần thiết ra khỏi IIS được cài đặt, vì những thành phần này khi bị lỗi có khả năng dẫn đến IIS bị tấn công và chiếm quyền kiểm soát một cách gián tiếp.
 - Nên cài đặt URLScan để bổ sung thêm nhiều tính năng bảo mật cho IIS.
 
+<a name="sosanh"></a>
 # So sánh IIS với Apache
 
 Máy chủ web Apache rất phổ biến nó miễn phí. Điều này rất thuận lợi cho những người chỉ đang cố gắng xuất bản trên web và vẫn không chắc chắn về nó. Apache được sử dụng rộng rãi nhất trong một giải pháp máy chủ web miễn phí được gọi là LAMP (Linux / Apache / MySQL / PHP) là một bộ sưu tập của phần mềm nguồn mở hoàn toàn có thể giải quyết tất cả nhu cầu xuất bản trên web của bạn từ hệ điều hành xuống ngôn ngữ kịch bản. Ngoài việc tự do, cộng đồng mã nguồn mở cũng là một nguồn hỗ trợ tốt cho những người dùng có thời gian và kiên nhẫn để yêu cầu các câu trả lời.
