@@ -146,6 +146,7 @@ git add .
 ```
 
 Sau đó, những thay đổi này cũng cần được cập nhật lên Local Repository bằng lệnh sau:
+
 ```
 git commit -m "Message"
 ```
