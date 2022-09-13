@@ -44,7 +44,7 @@ Nhấn Close. Như vậy ta đã cài đặt xog DNS.
 
 Bước 1: Khi máy chủ DNS được cài đặt, hãy mở cửa sổ Server Manager, nhấp vào tab Tools trong menu drop-down xuất hiện và nhấp vào biểu tượng DNS để mở nó.
 
-![image](https://user-images.githubusercontent.com/111716161/189844142-2efb2374-3411-4ca4-a3d4-8bbbd4cb3d4f.png)
+![image](https://user-images.githubusercontent.com/111716161/189845271-746aa376-9d59-4caf-b9b2-0d0436df021a.png)
 
 Bước 2: Những gì chúng ta cần làm là tạo một vùng. Nó là một phần của DNS mà các bản ghi được khôi phục. Để thực hiện việc này, nhấn chuột phải vào tên máy chủ DNS trên máy tính của bạn và bấm vào New zone.
 
@@ -57,6 +57,8 @@ Bước 3: Nhấn Next trên trang chào mừng. Sang trang tiếp theo, bạn s
 - Stub zone: Vùng này cung cấp thông tin về bất cứ máy chủ nào đang nắm giữ một vùng đặc biệt.
 
 Vì đang muốn tạo một vùng chính, nên ta sẽ nhấp vào primary zone, rồi nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/189845370-6b8555c0-d7ae-498b-99fd-f75a35d6292d.png)
 
 Bước 4: Trong trang tiếp theo, bạn sẽ được hỏi về phương pháp sao chép.
 
