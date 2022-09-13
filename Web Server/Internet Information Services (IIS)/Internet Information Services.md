@@ -2,6 +2,25 @@
 
 Internet Information Services (IIS) được đính kèm với các phiên bản của Windows, là các dịch vụ dành cho máy chủ chạy trên nền hệ điều hành Windows nhằm cung cấp và phân tán các thông tin lên mạng, nó bao gồm nhiều dịch vụ khác nhau như Web Server, FTP Server...
 
+Nó có thể được sử dụng để xuất bản nội dung của các trang Web lên Internet/Intranet bằng việc sử dụng “Phương thức chuyển giao siêu văn bản“ – Hypertext Transport Protocol (HTTP).
+
+## Nhiệm vụ và hoạt động
+
+Nhiệm vụ của IIS là tiếp nhận yêu cầu của máy trạm và đáp ứng lại yêu cầu đó bằng cách gửi về máy trạm những thông tin mà máy trạm yêu cầu.
+
+Bạn có thể sử dụng IIS để:
+
+- Xuất bản một Website của bạn trên Internet
+- Tạo các giao dịch thương mại điện tử trên Internet (hiện các catalog và nhận được các đơn đặt hàng từ nguời tiêu dùng)
+- Chia sẻ file dữ liệu thông qua giao thức FTP.
+- Cho phép người ở xa có thể truy xuất database của bạn (gọi là Database remote access).Và rất nhiều khả năng khác …
+
+IIS sử dụng các giao thức mạng phổ biến là HTTP và FTP (File Transfer Protocol) để tiếp nhận yêu cầu và truyền tải thông tin trên mạng với các định dạng khác nhau.
+
+Một trong những dịch vụ phổ biến nhất của IIS mà chúng ta quan tâm trong giáo trình này là dịch vụ WWW (World Wide Web), nói tắt là dịch vụ Web.
+
+Dịch vụ Web sử dụng giao thức HTTP để tiếp nhận yêu cầu (Requests) của trình duyệt Web (Web browser) dưới dạng một địa chỉ URL (Uniform Resource Locator) của một trang Web và IIS phản hồi lại các yêu cầu bằng cách gửi về cho Web browser nội dung của trang Web tương ứng.
+
 ### 1. IIS Manager
 
 IIS Manager là một giao diện đồ hoạ được thiết kế để quản trị IIS Server. Nó quản lý tài nguyên các file, directory, và các thiết lập cho các ứng dụng như về security, performance và các tính năng khác.
