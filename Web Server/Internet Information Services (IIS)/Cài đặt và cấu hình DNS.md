@@ -78,9 +78,11 @@ Bước 6: Chỉ định tên cho khu vực, sau đó nhấp vào nút Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/189838204-18f08658-6a5c-4ec5-a6ee-147a7fb9029c.png)
 
-Tiếp tục nhấn Next.
-
-![image](https://user-images.githubusercontent.com/111716161/189838341-645fbea3-b262-44ea-a878-dd817a86be2d.png)
-
 Bước 7:  Tùy chọn được đề xuất chỉ cho phép cập nhật bảo mật. Tùy chọn này sẽ giúp bạn không bị ảnh hưởng bởi máy chủ DNS và phần mềm gián điệp (spyware). Hãy chọn tùy chọn đầu tiên và nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/189845928-d4550196-6121-4192-a5d1-eb83b98347b5.png)
+
+Bước 8: Sau khi tiếp tục, primary zone của bạn sẽ được tạo, chỉ cần nhấp vào nút Finish để bắt đầu làm việc.
+  
+![image](https://user-images.githubusercontent.com/111716161/189846151-80027442-af98-4214-8152-4a99fa08c553.png)
 
