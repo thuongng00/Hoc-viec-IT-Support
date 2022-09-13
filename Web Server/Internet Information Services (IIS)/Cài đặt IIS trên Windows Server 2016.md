@@ -40,7 +40,7 @@ Bước 6: Nhấn Close. Như vậy ta đã cài đặt xong IIS.
 
 Sau khi cài đặt xong IIS, để quản trị dịch vụ, ban vào Server manager chọn "Tools" chọn "Internet Infomation Services (IIS) Manager".
 
-![image](https://user-images.githubusercontent.com/111716161/189830985-ac422930-9f7a-4ec5-b4a5-46e4f609f8da.png)
+![image](https://user-images.githubusercontent.com/111716161/189846791-94d5833e-5ee9-40ff-9948-f605b72381fa.png)
 
 Trong Default Web Site, chọn Default Document.
 
