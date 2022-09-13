@@ -4,7 +4,7 @@ Internet Information Services (IIS) được đính kèm với các phiên bản
 
 Nó có thể được sử dụng để xuất bản nội dung của các trang Web lên Internet/Intranet bằng việc sử dụng “Phương thức chuyển giao siêu văn bản“ – Hypertext Transport Protocol (HTTP).
 
-## Nhiệm vụ và hoạt động
+## Nhiệm vụ, hoạt động và tính năng
 
 Nhiệm vụ của IIS là tiếp nhận yêu cầu của máy trạm và đáp ứng lại yêu cầu đó bằng cách gửi về máy trạm những thông tin mà máy trạm yêu cầu.
 
@@ -20,6 +20,12 @@ IIS sử dụng các giao thức mạng phổ biến là HTTP và FTP (File Tran
 Một trong những dịch vụ phổ biến nhất của IIS mà chúng ta quan tâm trong giáo trình này là dịch vụ WWW (World Wide Web), nói tắt là dịch vụ Web.
 
 Dịch vụ Web sử dụng giao thức HTTP để tiếp nhận yêu cầu (Requests) của trình duyệt Web (Web browser) dưới dạng một địa chỉ URL (Uniform Resource Locator) của một trang Web và IIS phản hồi lại các yêu cầu bằng cách gửi về cho Web browser nội dung của trang Web tương ứng.
+
+Một trong những tính năng được sử dụng nhiều nhất của IIS là tạo một ứng dụng web bằng ASP.NET. Bên cạnh đó, IIS hoàn toàn có thể chạy được với các trang web viết bằng các ngôn ngữ khác như PHP, Perl,…
+
+IIS hỗ trợ một số loại xác thực như Basic access authentication, Digest access authentication, Windows Authentication, Certificate authentication,…; các tính năng bảo mật khác bao gồm hỗ trợ SSL/TLS, Server Name Indication (SNI), thiết lập bảo mật cho máy chủ FTP,…
+
+Với thiết kế dạng module, việc mở, tắt và cài đặt một số tính năng để đáp ứng nhu cầu của người sử dụng cũng như tối ưu hiệu năng và bảo mật cho web server được đáp ứng.
 
 ### 1. IIS Manager
 
