@@ -58,11 +58,21 @@ Bước 3: Nhấn Next trên trang chào mừng. Sang trang tiếp theo, bạn s
 
 Vì đang muốn tạo một vùng chính, nên ta sẽ nhấp vào primary zone, rồi nhấn Next.
 
-Bước 4: Trong trang Forward or Reverse Lookup Zone, chọn Forward lookup zone. Forward lookup zone sẽ dịch tên DNS thành địa chỉ IP và tùy chọn thứ 2, Reverse lookup zone, sẽ dịch IP thành tên DNS. Chỉ cần chọn Forward lookup zone rồi nhấn Next. Reverse lookup zone sẽ được cấu hình sau.
+Bước 4: Trong trang tiếp theo, bạn sẽ được hỏi về phương pháp sao chép.
+
+- Tùy chọn đầu tiên, To all DNS servers running on domain controllers in the domain: <domain name>, được sử dụng khi bạn muốn sao chép với các tên miền chính và tên miền phụ trong toàn bộ domain. Lưu ý rằng điều này sẽ làm tăng lưu lượng mạng.
+- Tùy chọn thứ hai, To all DNS servers running on domain controllers in the domain: <domain name>, được sử dụng khi bạn muốn máy chủ DNS sao chép tất cả các máy chủ DNS trong domain của riêng bạn.
+- Tùy chọn thứ ba, To all domain controllers in this domain (for Windows 2000 compatibility): <domain name> được sử dụng khi bạn muốn máy chủ của mình chỉ sao chép các domain controller trong domain của riêng bạn.
+
+Hãy chọn tùy chọn thứ 2 rồi bấm Next.
+
+![image](https://user-images.githubusercontent.com/111716161/189844703-c66fe70a-1baa-4b8b-a1b2-6798a56b563a.png)
+
+Bước 5: Trong trang Forward or Reverse Lookup Zone, chọn Forward lookup zone. Forward lookup zone sẽ dịch tên DNS thành địa chỉ IP và tùy chọn thứ 2, Reverse lookup zone, sẽ dịch IP thành tên DNS. Chỉ cần chọn Forward lookup zone rồi nhấn Next. Reverse lookup zone sẽ được cấu hình sau.
 
 ![image](https://user-images.githubusercontent.com/111716161/189837831-6d88ceac-e87d-4458-bda9-1ab6c1ab4ae5.png)
 
-Bước 5: Chỉ định tên cho khu vực, sau đó nhấp vào nút Next.
+Bước 6: Chỉ định tên cho khu vực, sau đó nhấp vào nút Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/189838204-18f08658-6a5c-4ec5-a6ee-147a7fb9029c.png)
 
@@ -70,5 +80,5 @@ Tiếp tục nhấn Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/189838341-645fbea3-b262-44ea-a878-dd817a86be2d.png)
 
-Bước 6:  Tùy chọn được đề xuất chỉ cho phép cập nhật bảo mật. Tùy chọn này sẽ giúp bạn không bị ảnh hưởng bởi máy chủ DNS và phần mềm gián điệp (spyware). Hãy chọn tùy chọn đầu tiên và nhấn Next.
+Bước 7:  Tùy chọn được đề xuất chỉ cho phép cập nhật bảo mật. Tùy chọn này sẽ giúp bạn không bị ảnh hưởng bởi máy chủ DNS và phần mềm gián điệp (spyware). Hãy chọn tùy chọn đầu tiên và nhấn Next.
 
