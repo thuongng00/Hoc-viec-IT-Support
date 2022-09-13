@@ -10,7 +10,7 @@ IIS 10.0 trên Windows Server 2016  được thiết kế để trở thành m�
 
 Bước 1: Trên màn hình làm việc của Server Manager nhấn "Add roles and features", hoặc vào Manage rồi nhấn chọn. 
 
-![image](https://user-images.githubusercontent.com/111716161/189829055-8eb76e99-ce76-4611-9335-3a7ad6a3f66c.png)
+![image](https://user-images.githubusercontent.com/111716161/189834895-2d3d7f8b-7277-4be7-b5c9-11a121724a76.png)
 
 Bước 2: Chọn Server Roles, bật tùy chọn Web Server. 
 
