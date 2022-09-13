@@ -31,3 +31,44 @@ Bước 7: Nhấn Next.
 Bước 8: Để xác nhận cài đặt, bấm Install.
 
 ![image](https://user-images.githubusercontent.com/111716161/189836415-be824976-5287-4a10-b62b-b846fc90e578.png)
+
+Bước 9: Chờ cho quá trình cài đặt hoàn tất. 
+
+![image](https://user-images.githubusercontent.com/111716161/189836641-4e01dc8a-4ea6-447a-b98f-a7434adf458a.png)
+
+Nhấn Close. Như vậy ta đã cài đặt xog DNS. 
+
+![image](https://user-images.githubusercontent.com/111716161/189836769-7b184513-026e-4255-aa75-8afd00e270e8.png)
+
+# Cấu hình DNS Server trên Windows Server 2016
+
+Bước 1: Khi máy chủ DNS được cài đặt, hãy mở cửa sổ Server Manager, nhấp vào tab Tools trong menu drop-down xuất hiện và nhấp vào biểu tượng DNS để mở nó.
+
+![image](https://user-images.githubusercontent.com/111716161/189844142-2efb2374-3411-4ca4-a3d4-8bbbd4cb3d4f.png)
+
+Bước 2: Những gì chúng ta cần làm là tạo một vùng. Nó là một phần của DNS mà các bản ghi được khôi phục. Để thực hiện việc này, nhấn chuột phải vào tên máy chủ DNS trên máy tính của bạn và bấm vào New zone.
+
+![image](https://user-images.githubusercontent.com/111716161/189837436-70eee0b4-70e6-4a93-959e-25dba4f00dc9.png)
+
+Bước 3: Nhấn Next trên trang chào mừng. Sang trang tiếp theo, bạn sẽ thấy ba loại khu vực có sẵn.
+
+- Primary zone: Là vùng được viết lại, chứ không phải được sao chép từ đâu đó.
+- Secondary zone: Là bản sao của một vùng khác. Khi bạn tạo một secondary zone, bạn nên sao chép các bản ghi từ một nguồn khác.
+- Stub zone: Vùng này cung cấp thông tin về bất cứ máy chủ nào đang nắm giữ một vùng đặc biệt.
+
+Vì đang muốn tạo một vùng chính, nên ta sẽ nhấp vào primary zone, rồi nhấn Next.
+
+Bước 4: Trong trang Forward or Reverse Lookup Zone, chọn Forward lookup zone. Forward lookup zone sẽ dịch tên DNS thành địa chỉ IP và tùy chọn thứ 2, Reverse lookup zone, sẽ dịch IP thành tên DNS. Chỉ cần chọn Forward lookup zone rồi nhấn Next. Reverse lookup zone sẽ được cấu hình sau.
+
+![image](https://user-images.githubusercontent.com/111716161/189837831-6d88ceac-e87d-4458-bda9-1ab6c1ab4ae5.png)
+
+Bước 5: Chỉ định tên cho khu vực, sau đó nhấp vào nút Next.
+
+![image](https://user-images.githubusercontent.com/111716161/189838204-18f08658-6a5c-4ec5-a6ee-147a7fb9029c.png)
+
+Tiếp tục nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/189838341-645fbea3-b262-44ea-a878-dd817a86be2d.png)
+
+Bước 6:  Tùy chọn được đề xuất chỉ cho phép cập nhật bảo mật. Tùy chọn này sẽ giúp bạn không bị ảnh hưởng bởi máy chủ DNS và phần mềm gián điệp (spyware). Hãy chọn tùy chọn đầu tiên và nhấn Next.
+
