@@ -32,3 +32,34 @@ Chờ cho quá trình cài đặt hoàn tất.
 
 ![image](https://user-images.githubusercontent.com/111716161/189830470-2e351736-f2e1-4ec2-9b46-d97f79471824.png)
 
+Bước 6: Nhấn Close. Như vậy ta đã cài đặt xong IIS.
+
+![image](https://user-images.githubusercontent.com/111716161/189830629-bb1756fe-a33f-458e-b3ac-16d3dfdf813a.png)
+
+## Quản trị IIS
+
+Sau khi cài đặt xong IIS, để quản trị dịch vụ, ban vào Server manager chọn "Tools" chọn "Internet Infomation Services (IIS) Manager".
+
+![image](https://user-images.githubusercontent.com/111716161/189830985-ac422930-9f7a-4ec5-b4a5-46e4f609f8da.png)
+
+Trong Default Web Site, chọn Default Document.
+
+![image](https://user-images.githubusercontent.com/111716161/189831240-50051032-4618-4290-807d-a836d00cc485.png)
+
+Default Document quy định tên trang chủ mà bạn sẽ  sử dụng cho web site của mình.
+
+![image](https://user-images.githubusercontent.com/111716161/189831654-2e4c5021-d072-4774-a037-029053feb1af.png)
+
+Thư mục chứa web site mặc định khi cài dịch vụ là C:\inetpub\wwwroot. Nếu bạn không có các tùy chỉnh riêng, bạn chỉ cần bỏ trực tiếp web site mà bạn đã thiết kế vào đây.
+
+![image](https://user-images.githubusercontent.com/111716161/189831974-b4de6a43-959c-44fd-a6d3-5a6a03af9e23.png)
+
+Mặc định thư mục C:\inetpub\wwwroot chứa file iisstart. Khi đó, nếu bạn truy cập vào địa chỉ IP của máy chứa website bạn sẽ thấy nội dung của file này.
+
+![image](https://user-images.githubusercontent.com/111716161/189832739-0c6d82e3-9043-4f0e-9898-2e033bfa4267.png)
+
+Bạn tiến hành dùng notepad để tạo một file index.html trong C:\inetpub\wwwroot. Đây là dạng tên file đã được quy định ở phần Default Document.
+
+![image](https://user-images.githubusercontent.com/111716161/189833525-250096f3-e369-4fe7-b577-741f74f2d694.png)
+
+Để có thể truy cập web site bằng tên (DNS Name), bạn sẽ tiến hành tạo một record CNAME trong dịch vụ DNS của Domain Controller.
