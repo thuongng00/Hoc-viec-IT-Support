@@ -6,7 +6,9 @@
 
 Internet Information Services (IIS) được đính kèm với các phiên bản của Windows, là các dịch vụ dành cho máy chủ chạy trên nền hệ điều hành Windows nhằm cung cấp và phân tán các thông tin lên mạng, nó bao gồm nhiều dịch vụ khác nhau như Web Server, FTP Server...
 
-![image](https://user-images.githubusercontent.com/111716161/189873293-7ac350cd-2197-4b60-bc5a-938449543ce6.png)
+<p align="center">
+  <img width="600" src="https://user-images.githubusercontent.com/111716161/189873293-7ac350cd-2197-4b60-bc5a-938449543ce6.png"/>
+</p>
 
 Nó có thể được sử dụng để xuất bản nội dung của các trang Web lên Internet/Intranet bằng việc sử dụng “Phương thức chuyển giao siêu văn bản“ – Hypertext Transport Protocol (HTTP).
 
