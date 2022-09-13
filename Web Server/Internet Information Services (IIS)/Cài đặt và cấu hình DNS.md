@@ -1,3 +1,11 @@
+# Mục Lục
+
+[Cài đặt DNS](#caidat)
+
+[Cấu hình DNS](#cauhinh)
+
+<a name="caidat"></a>
+
 # Cài đặt DNS trên Windows Server 2016
 
 Bước 1: Mở Server Manager và nhấp vào Add Roles and Features, hoặc vào Manage rồi chọn Add Roles and Features.
@@ -39,6 +47,8 @@ Bước 9: Chờ cho quá trình cài đặt hoàn tất.
 Nhấn Close. Như vậy ta đã cài đặt xog DNS. 
 
 ![image](https://user-images.githubusercontent.com/111716161/189836769-7b184513-026e-4255-aa75-8afd00e270e8.png)
+
+<a name="cauhinh"></a>
 
 # Cấu hình DNS Server trên Windows Server 2016
 
