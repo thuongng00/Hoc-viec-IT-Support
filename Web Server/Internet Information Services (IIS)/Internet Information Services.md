@@ -6,6 +6,8 @@
 
 Internet Information Services (IIS) được đính kèm với các phiên bản của Windows, là các dịch vụ dành cho máy chủ chạy trên nền hệ điều hành Windows nhằm cung cấp và phân tán các thông tin lên mạng, nó bao gồm nhiều dịch vụ khác nhau như Web Server, FTP Server...
 
+![image](https://user-images.githubusercontent.com/111716161/189873182-bfa88e43-4dc2-4237-926f-b31e3406b373.png)
+
 Nó có thể được sử dụng để xuất bản nội dung của các trang Web lên Internet/Intranet bằng việc sử dụng “Phương thức chuyển giao siêu văn bản“ – Hypertext Transport Protocol (HTTP).
 
 ## Nhiệm vụ, hoạt động và tính năng
@@ -117,6 +119,8 @@ Internet Protocol Security (IPSec) Filters có thể cung cấp khả năng tố
 Máy chủ web Apache rất phổ biến nó miễn phí. Điều này rất thuận lợi cho những người chỉ đang cố gắng xuất bản trên web và vẫn không chắc chắn về nó. Apache được sử dụng rộng rãi nhất trong một giải pháp máy chủ web miễn phí được gọi là LAMP (Linux / Apache / MySQL / PHP) là một bộ sưu tập của phần mềm nguồn mở hoàn toàn có thể giải quyết tất cả nhu cầu xuất bản trên web của bạn từ hệ điều hành xuống ngôn ngữ kịch bản. Ngoài việc tự do, cộng đồng mã nguồn mở cũng là một nguồn hỗ trợ tốt cho những người dùng có thời gian và kiên nhẫn để yêu cầu các câu trả lời.
 
 IIS là từ Microsoft và do đó nó sẽ chỉ chạy trên hệ điều hành Microsoft Windows, cần phải mua Windows để sử dụng nó. Lợi thế rõ ràng khi chạy IIS là hầu hết mọi người đã quen thuộc với hệ điều hành Windows và IIS sẽ dễ dàng hơn nhiều để tìm hiểu cho người dùng Windows. IIS cũng đi kèm với sự hỗ trợ của .NET Framework được phát hành bởi Microsoft; trên thực tế, kịch bản ASPX chỉ dành cho IIS. Hỗ trợ cho IIS được cung cấp bởi Microsoft là một đảm bảo rằng bạn sẽ có câu trả lời cho vấn đề của bạn trực tiếp từ các nhà sản xuất mình.
+
+![image](https://user-images.githubusercontent.com/111716161/189873060-bdc91b52-2a18-4a0e-999f-9d3d3acc4eb8.png)
 
 - IIS được đi kèm với Windows còn Apache là một mã nguồn mở miễn phí.
 - IIS dành cho Windows còn Apache dành cho tất cả các hệ điều hành như macOS, UNIX và Linux.
