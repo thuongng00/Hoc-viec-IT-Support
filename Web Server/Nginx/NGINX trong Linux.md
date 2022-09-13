@@ -1,4 +1,15 @@
+# Mục lục
+
+[NGINX](#nginx)
+
+[So sánh NGINX và APACHE](#sosanh)
+
+[Cài đặt Nginx trên CentOS 7](#caidat)
+
+<a name="nginx"></a>
+
 # NGINX
+
 **NGINX** là một web server mạnh mẽ mã nguồn mở. Nginx sử dụng kiến trúc đơn luồng, hướng sự kiện vì thế nó hiệu quả hơn Apache server. Nó cũng có thể làm những thứ quan trọng khác, chẳng hạn như load balancing, HTTP caching, hay sử dụng như một reverse proxy, media streaming và email proxy như IMAP, POP3, và SMTP….  
 
 Vì NGINX server đáng tin cậy, tốc độ và có khả năng mở rộng lớn nên những ông lớn công nghệ dùng nó là Google, Netflix, Adobe, Cloudflare, WordPress,..đã lựa chọn NGINX.
@@ -28,6 +39,8 @@ Nginx áp dụng cách tiếp cận theo hướng sự kiện không đồng b�
 - IMAP: LOGIN, AUTH LOGIN/PLAIN/CRAM-MD5.
 - SMTP: AUTH LOGIN/PLAIN,CRAM-MD5.
 
+<a name="sosanh"></a>
+
 # So sánh NGINX và APACHE
 
 ![image](https://user-images.githubusercontent.com/111716161/188770245-b53e3cec-e4e2-47b7-98f7-af5a02de4567.png)
@@ -47,6 +60,8 @@ Cả hai web server hiện nay đều có thể cạnh tranh với nhau trong h�
 Người dùng shared hositng có thể thích sự tiện lợi của file .htaccess Apache. Và Apache có khá nhiều dynamic module (NGINX mới chỉ bắt đầu thêm dynamic module). NGINX được sử dụng chủ yếu cho VPS hosting, dedicated hosting, hoặc container cluster. Với các website có lượt truy cập cao có nhu cầu phục vụ rất nhiều nội dung tĩnh và / hoặc streaming media sẽ hướng tới NGINX. Nhưng đa phần cả 2 sẽ hoạt động tốt trong hầu hết mọi trường hợp.
 
 Bất kể với web server nào, hãy chọn một nhà cung cấp hosting tốt nhất trên nền tảng Linux.
+
+<a name="caidat"></a>
 
 # Cài đặt Nginx trên CentOS 7
 
