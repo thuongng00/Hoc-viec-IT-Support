@@ -1,3 +1,9 @@
+# Mục lục
+
+[Cấu hình IIS](#iis)
+
+[Triển khai dịch vụ web với IIS trên Windows server](#web)
+
 IIS 10.0 trên Windows Server 2016  được thiết kế để trở thành một nền tảng Web và ứng dụng linh động và an toàn nhất cho Microsoft. Microsoft đã thiết kế lại IIS từ những nền tảng đã có trước đó và trong suốt quá trình phát triển, nhóm thiết kế IIS đã tập trung vào 5 lĩnh vực lớn:
 
 - Bảo mật ( Có thể sử dụng SSL để tăng độ mã hóa và tin cậy cho website ) 
@@ -5,6 +11,8 @@ IIS 10.0 trên Windows Server 2016  được thiết kế để trở thành m�
 - Cấu hình và triển khai 
 - Quản trị và chuẩn đoán 
 - Hiệu suất cao
+
+<a name="iis"></a>
 
 # Cấu hình IIS Web Server trên Windows Server 2016
 
@@ -36,7 +44,8 @@ Bước 6: Nhấn Close. Như vậy ta đã cài đặt xong IIS.
 
 ![image](https://user-images.githubusercontent.com/111716161/189830629-bb1756fe-a33f-458e-b3ac-16d3dfdf813a.png)
 
-## Quản trị IIS
+<a name="web"></a>
+# Triển khai dịch vụ web với IIS trên Windows server 2016
 
 Bước 1: Sau khi cài đặt xong IIS, để quản trị dịch vụ, ban vào Server manager chọn "Tools" chọn "Internet Infomation Services (IIS) Manager".
 
