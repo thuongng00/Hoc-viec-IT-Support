@@ -129,3 +129,8 @@ Nếu bạn muốn bắt đầu trang web ngay lập tức, hãy chắc chắn r
 
 ![image](https://user-images.githubusercontent.com/111716161/189855758-1cceb959-f71d-456c-80f0-a5baee2edbc3.png)
 
+Bước 7: Kết thúc.
+
+Nhấn vào OK nút để hoàn thành việc tạo trang web mới của bạn.
+
+Sau Thêm trang web cửa sổ đóng lại, bạn sẽ có trang web mới của mình trong danh sách các trang web. Tại thời điểm này, bạn có thể sẽ muốn bảo vệ trang web mới của mình bằng SSL /TLS chứng chỉ.
