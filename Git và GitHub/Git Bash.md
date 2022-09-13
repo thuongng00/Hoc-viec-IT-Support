@@ -1,3 +1,15 @@
+# Mục lục
+
+[Git bash](#gitbash)
+
+[Khái niệm cơ bản trong Git bash](#khainiem)
+
+[Cài đặt Git bash](#caidat)
+
+[Các câu lệnh thường dùng trong Git bash](#caulenh)
+
+<a name="gitbash"></a>
+
 # Git bash
 
 **Git bash** là một tập hợp các chương trình tiện ích command line được thiết kế để thực thi trên môi trường Windows. Nhiều hệ điều hành như Linux và macOS có tích hợp sẵn các UNIX command line terminal. Nó làm cho hệ điều hành Linux và macOS bổ sung cho nhau khi làm việc với Git.
@@ -7,6 +19,8 @@
 Windows không có giao diện UNIX style command. Thay vào đó, Microsoft Windows sử dụng command prompt của Windows, không phải là một thiết bị UNIX terminal. Do đó, Git for Windows cung cấp một giả lập Bash để chạy Git từ command line. 
 
 Git Bash là một ứng dụng bổ sung thêm một layer giả lập trên môi trường Microsoft Windows để trải nghiệm Git command line. Nó giống như một package cài đặt một số tiện ích bash phổ biến trên hệ điều hành Windows. Mặt khác, nó cho phép chúng ta sử dụng tất cả tính năng Git cũng như hầu hết các UNIX command tiêu chuẩn trong giao diện command line trên Windows.
+
+<a name="khainiem"></a>
 
 # Khái niệm cơ bản trong Git bash
 
@@ -33,6 +47,8 @@ Index là khái niệm dùng để miêu tả trạng thái dự án, cấu trú
 *Các lợi ích khi dùng Git bash*:
 - *Tối ưu hóa công việc: Git bash cho phép người dùng giải quyết từng Task mà không sợ ảnh hưởng tới những Task liên quan. Điều đó giúp bạn chủ động sắp xếp công việc linh hoạt khi thực hiện nhiều Task cùng lúc.*
 - *Phát triển những ý tưởng mới: Git bash giúp bạn tự tin hơn trong việc sáng tạo và phát triển những ý tưởng mới.*
+
+<a name="caidat"></a>
 
 # Cài đặt Git bash
 
@@ -68,7 +84,9 @@ Bước 7: Nhấn Install để tiến hành cài đặt.
 
 Như vậy là ta đã cài đặt xong Git bash cho Windows.
 
-# Các câu lệnh trong Git bash thường sử dụng
+<a name="caulenh"></a>
+
+# Các câu lệnh thường dùng trong Git bash
 
 1. Thiết lập chứng thực cá nhân
 
