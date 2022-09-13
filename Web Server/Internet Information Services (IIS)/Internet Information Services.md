@@ -6,7 +6,7 @@
 
 Internet Information Services (IIS) được đính kèm với các phiên bản của Windows, là các dịch vụ dành cho máy chủ chạy trên nền hệ điều hành Windows nhằm cung cấp và phân tán các thông tin lên mạng, nó bao gồm nhiều dịch vụ khác nhau như Web Server, FTP Server...
 
-![image](https://user-images.githubusercontent.com/111716161/189873182-bfa88e43-4dc2-4237-926f-b31e3406b373.png)
+![image](https://user-images.githubusercontent.com/111716161/189873293-7ac350cd-2197-4b60-bc5a-938449543ce6.png)
 
 Nó có thể được sử dụng để xuất bản nội dung của các trang Web lên Internet/Intranet bằng việc sử dụng “Phương thức chuyển giao siêu văn bản“ – Hypertext Transport Protocol (HTTP).
 
@@ -120,7 +120,9 @@ Máy chủ web Apache rất phổ biến nó miễn phí. Điều này rất thu
 
 IIS là từ Microsoft và do đó nó sẽ chỉ chạy trên hệ điều hành Microsoft Windows, cần phải mua Windows để sử dụng nó. Lợi thế rõ ràng khi chạy IIS là hầu hết mọi người đã quen thuộc với hệ điều hành Windows và IIS sẽ dễ dàng hơn nhiều để tìm hiểu cho người dùng Windows. IIS cũng đi kèm với sự hỗ trợ của .NET Framework được phát hành bởi Microsoft; trên thực tế, kịch bản ASPX chỉ dành cho IIS. Hỗ trợ cho IIS được cung cấp bởi Microsoft là một đảm bảo rằng bạn sẽ có câu trả lời cho vấn đề của bạn trực tiếp từ các nhà sản xuất mình.
 
-![image](https://user-images.githubusercontent.com/111716161/189873060-bdc91b52-2a18-4a0e-999f-9d3d3acc4eb8.png)
+<p align="center">
+  <img width="600" src="https://user-images.githubusercontent.com/111716161/189873060-bdc91b52-2a18-4a0e-999f-9d3d3acc4eb8.png"/>
+</p>
 
 - IIS được đi kèm với Windows còn Apache là một mã nguồn mở miễn phí.
 - IIS dành cho Windows còn Apache dành cho tất cả các hệ điều hành như macOS, UNIX và Linux.
