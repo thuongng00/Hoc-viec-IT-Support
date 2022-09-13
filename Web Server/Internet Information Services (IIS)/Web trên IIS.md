@@ -1,8 +1,8 @@
-<a name="web"><a/>
+# Triển khai dịch vụ web cơ bản với IIS trên Windows server 2016
 
-# Triển khai dịch vụ web với IIS trên Windows server 2016
-
-Bước 1: Sau khi cài đặt xong IIS, để quản trị dịch vụ, vào Server manager chọn "Tools" chọn "Internet Infomation Services (IIS) Manager".
+<a name="html"></a>
+## 1. Web html
+Bước 1: Để quản trị dịch vụ, vào Server manager chọn "Tools" chọn "Internet Infomation Services (IIS) Manager".
 
 ![image](https://user-images.githubusercontent.com/111716161/189846791-94d5833e-5ee9-40ff-9948-f605b72381fa.png)
 
@@ -42,3 +42,8 @@ Bước 6: Để có thể truy cập web site bằng tên (DNS Name), bạn s�
 
 Như vậy, chúng ta đã hoàn thành việc cài đặt dịch vụ IIS và triển khai web site một cách cơ bản.
 
+## 2. Web ASP Basic
+
+## 3. Web ASP .NET
+
+## 4. Web PHP
