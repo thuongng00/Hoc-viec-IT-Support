@@ -106,3 +106,15 @@ Internet Protocol Security (IPSec) Filters có thể cung cấp khả năng tố
 - Nên cài đặt thư mục gốc của ứng dụng web trên phân vùng đĩa có định dạng NTFS, bởi vì khả năng kiểm soát quyền truy cập trên hệ thống tập tin với phân vùng định dạng NTFS mạnh hơn so với các định dạng FAT, FAT32. Khi đã cài đặt thư mục gốc trên phân vùng NTFS thì cũng phải thiết lập quyền truy cập thấp nhất cho thư mục gốc này, tránh trường hợp thư mục gốc của ứng dụng web được mặc định là Everyone: Full Control.
 - Trong IIS có rất nhiều thành phần (module) bổ trợ. Nên gỡ bỏ những thành phần không cần thiết ra khỏi IIS được cài đặt, vì những thành phần này khi bị lỗi có khả năng dẫn đến IIS bị tấn công và chiếm quyền kiểm soát một cách gián tiếp.
 - Nên cài đặt URLScan để bổ sung thêm nhiều tính năng bảo mật cho IIS.
+
+# So sánh IIS với Apache
+
+IIS và Apache có một số đặc điểm khác nhau như:
+
+- IIS được đi kèm với Windows còn Apache là một mã nguồn mở miễn phí.
+- IIS dành cho Windows còn Apache dành cho tất cả các hệ điều hành như macOS, UNIX và Linux.
+- IIS tích hợp với các dịch vụ của Microsoft như .NET và ASPX.
+- IIS có khả năng xử lý các vấn đề từ bộ phận trợ giúp còn Apache dựa vào cộng đồng.
+- IIS bảo mật an toàn hơn Apache.
+- IIS với các công nghệ hiện đại có sự tương thích cao hơn so với Apache.
+
