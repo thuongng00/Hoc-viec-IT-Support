@@ -46,4 +46,25 @@ Như vậy, chúng ta đã hoàn thành việc cài đặt dịch vụ IIS và t
 
 ## 3. Web ASP .NET
 
+Bước 1: Vào Start / Control Panel
+
+![image](https://user-images.githubusercontent.com/111716161/190043895-9a81258b-2e13-4431-bcbc-f10fbc73b34a.png)
+
+Bước 2: Chọn Turn Windows features on or off.
+
+![image](https://user-images.githubusercontent.com/111716161/190044127-f8422e13-2d92-4aa4-9ac3-2dcefea40114.png)
+
+Bước 3: Chọn các dịch vụ cần cài đặt.
+
+![image](https://user-images.githubusercontent.com/111716161/190044322-770e2886-b96d-4f8e-8ee8-3fbafc1ed2d4.png)
+
+Bước 4: Tiếp tục chọn. Nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/190044490-d192f216-d8f2-4a94-9990-b9bca9c4e897.png)
+
+Bước 5: Nhấn Install và chờ cho quá trình cài đặt hoàn tất.
+
+![image](https://user-images.githubusercontent.com/111716161/190044549-4b087735-a5f5-4021-b4fb-f6ccb14cd414.png)
+
+
 ## 4. Web PHP
