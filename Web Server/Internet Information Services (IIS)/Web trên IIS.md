@@ -1,4 +1,4 @@
-# Triển khai dịch vụ web cơ bản với IIS trên Windows server 2016
+# Triển khai dịch vụ web cơ bản với IIS trên Windows server
 
 <a name="html"></a>
 ## 1. Web html
