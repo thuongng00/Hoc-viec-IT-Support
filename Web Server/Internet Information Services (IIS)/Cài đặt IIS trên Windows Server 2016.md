@@ -70,22 +70,24 @@ Bước 4: Thêm đường dẫn vật lý.
 
 Điều hướng đến thư mục chứa các tệp trên trang web của bạn để nó xuất hiện trong Con đường vật lý trường.
 
-![image](https://user-images.githubusercontent.com/111716161/189855070-b7f05de7-5d7c-40cd-a2f1-e6c1b77744ed.png)
+![image](https://user-images.githubusercontent.com/111716161/190038672-c4130dd7-8ff3-48c0-83b2-797ec8e36011.png)
 
 Bước 5: Đặt tùy chọn ràng buộc.
 
 Theo Binding, chọn nút Kiểu (HTTP hoặc HTTPS), Địa chỉ IP, Port và Tên máy chủ.
 
-![image](https://user-images.githubusercontent.com/111716161/189855562-f84685b8-ec32-4814-a1aa-9038dbf9f77e.png)
+![image](https://user-images.githubusercontent.com/111716161/190038893-dc880898-f471-4a1f-84b3-510977f109a1.png)
 
 Bước 6: Quyết định có bắt đầu trang web hay không.
 
 Nếu bạn muốn bắt đầu trang web ngay lập tức, hãy chắc chắn rằng Bắt đầu trang web ngay lập tức được kiểm tra. Nếu không, bỏ chọn nó.
 
-![image](https://user-images.githubusercontent.com/111716161/189855758-1cceb959-f71d-456c-80f0-a5baee2edbc3.png)
+![image](https://user-images.githubusercontent.com/111716161/190038959-11cf4db6-e824-4c6c-b8c6-86badd63e488.png)
 
 Bước 7: Kết thúc.
 
 Nhấn vào OK nút để hoàn thành việc tạo trang web mới của bạn.
+
+![image](https://user-images.githubusercontent.com/111716161/190039043-f3f2923b-196c-4172-afa5-2d8a89798208.png)
 
 Sau Thêm trang web cửa sổ đóng lại, bạn sẽ có trang web mới của mình trong danh sách các trang web. Tại thời điểm này, bạn có thể sẽ muốn bảo vệ trang web mới của mình bằng SSL /TLS chứng chỉ và triển khai các dịch vụ web.
