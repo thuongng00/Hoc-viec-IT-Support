@@ -153,5 +153,10 @@ Bước 14: Nhấn Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/190106142-a19d2691-43a4-4a9a-b6bf-b869da0ae51b.png)
 
+Quá trình cài đặt đang diễn ra...
+
+![image](https://user-images.githubusercontent.com/111716161/190107788-2cf60bd2-e735-4dfa-aa0a-ee316cf46ac3.png)
+
+
 Bước 15: Nhập password.
 
