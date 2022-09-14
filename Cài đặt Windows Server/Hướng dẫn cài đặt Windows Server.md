@@ -1,3 +1,7 @@
+[Cách cài đặt Windows Server 2016 trên máy ảo VMware](#2016)
+
+[Cách cài đặt Windows Server 2019 trên máy ảo VMware](#2019)
+
 Yêu cầu cấu hình phần cứng: 
 Bộ xử lý CPU:
 
@@ -14,8 +18,9 @@ Bộ nhớ RAM:
 - 512 MB (2 GB với tùy chọn máy chủ cài đặt Desktop Experience)
 - ECC (Error Correcting Code – mã sửa lỗi) hoặc công nghệ tương tự
 
-# Cách cài đặt Windows Server 2016 trên máy ảo VMware
+<a name="2016"></a>
 
+# Cách cài đặt Windows Server 2016 trên máy ảo VMware
 
 Bước 1: Khởi động phần mềm VMware Workstation, chọn File, chọn New Virtual Machine hoặc nhấn vào Create a new virtual machine. Chọn Custom, nhấn Next.
 
@@ -87,6 +92,8 @@ Chờ đợi quá trình cài đặt.
 Giao diện Windows Server 2016 sau khi cài đặt hoàn tất: 
 
 ![image](https://user-images.githubusercontent.com/111716161/187338092-07438da7-da49-463f-aa19-91d475f54fb8.png)
+
+<a name="2019"></a>
 
 # Cách cài đặt Windows Server 2019 trên máy ảo VMware
 
