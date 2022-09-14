@@ -74,14 +74,17 @@ Bước 7: Mở IIS bằng cách vào Server Manager/ Tools / chọn Internet In
 
 ![image](https://user-images.githubusercontent.com/111716161/190047541-7a646adc-bae0-4300-9a3b-afd250944879.png)
 
-Bước 8: Tạo Application Pools phù hợp với .NET Framework v4.0.30319 bằng cách nhấn chuột phải vào Application Pools, chọn Add Application Pool.
+Bước 8: Bạn tiến hành dùng notepad để tạo một file index.aspx trong C:\inetpub\wwwroot. Đây là dạng tên file đã được quy định ở phần Default Document.
 
-![image](https://user-images.githubusercontent.com/111716161/190047698-66b889c3-058d-4ce9-8346-7e33d1109560.png)
+![image](https://user-images.githubusercontent.com/111716161/190063102-319af005-8ada-42a2-81ad-ccd8736cf516.png)
 
-![image](https://user-images.githubusercontent.com/111716161/190047821-e207b614-94b5-4984-8d84-ac72f8e2ad11.png)
+Bước 9: Vào Default Document, chọn Add, thêm file vừa tạo. 
 
-Bước 9: Tạo Application để trỏ tới website ASPNET. Lưu ý: Website đã được Publish thành tập tin .DLL
+![image](https://user-images.githubusercontent.com/111716161/190063307-ab2b9b86-c3e4-4684-abdf-743a4b6d4205.png)
 
+Bước 10: Truy cập website
+
+![image](https://user-images.githubusercontent.com/111716161/190062770-37b71b07-e6f7-4f47-bdc2-151c98dfcb2b.png)
 
 
 
