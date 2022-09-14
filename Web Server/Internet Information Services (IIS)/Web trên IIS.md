@@ -42,50 +42,42 @@ Bước 6: Để có thể truy cập web site bằng tên (DNS Name), bạn s�
 
 Như vậy, chúng ta đã hoàn thành việc cài đặt dịch vụ IIS và triển khai web site một cách cơ bản.
 
-## 2. Web ASP Basic
+## 2. Web ASP .NET
 
-## 3. Web ASP .NET
-
-Bước 1: Vào Start / Control Panel
-
-![image](https://user-images.githubusercontent.com/111716161/190043895-9a81258b-2e13-4431-bcbc-f10fbc73b34a.png)
-
-Bước 2: Chọn Turn Windows features on or off.
+Bước 1: Vào Start / Control Panel / Chọn Turn Windows features on or off.
 
 ![image](https://user-images.githubusercontent.com/111716161/190044127-f8422e13-2d92-4aa4-9ac3-2dcefea40114.png)
 
-Bước 3: Chọn các dịch vụ cần cài đặt.
+Bước 2: Chọn các dịch vụ cần cài đặt. Nhấn Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/190044322-770e2886-b96d-4f8e-8ee8-3fbafc1ed2d4.png)
 
-Bước 4: Tiếp tục chọn. Nhấn Next.
+Bước 3: Tiếp tục chọn. Nhấn Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/190044490-d192f216-d8f2-4a94-9990-b9bca9c4e897.png)
 
-Bước 5: Nhấn Install và chờ cho quá trình cài đặt hoàn tất.
+Bước 4: Nhấn Install và chờ cho quá trình cài đặt hoàn tất.
 
 ![image](https://user-images.githubusercontent.com/111716161/190044549-4b087735-a5f5-4021-b4fb-f6ccb14cd414.png)
 
-Bước 6: Mở Command Prompt với quyền Administrator, chuyển đến đường dẫn `C:/Windows/Microsoft.NET/Framework/v4.0.30319`, đăng ký asp.net vào hệ thống với mã lệnh `aspnet_regiis –i`
+Bước 5: Mở Command Prompt với quyền Administrator, chuyển đến đường dẫn `C:/Windows/Microsoft.NET/Framework/v4.0.30319`, đăng ký asp.net vào hệ thống với mã lệnh `aspnet_regiis –i`
 
 ![image](https://user-images.githubusercontent.com/111716161/190047202-82abba21-6f25-4272-913f-0e2f93bb7038.png)
 
-Bước 7: Mở IIS bằng cách vào Server Manager/ Tools / chọn Internet Information Services (IIS) Manager.
+Bước 6: Mở IIS bằng cách vào Server Manager/ Tools / chọn Internet Information Services (IIS) Manager.
 
 ![image](https://user-images.githubusercontent.com/111716161/190047541-7a646adc-bae0-4300-9a3b-afd250944879.png)
 
-Bước 8: Bạn tiến hành dùng notepad để tạo một file index.aspx trong C:\inetpub\wwwroot. Đây là dạng tên file đã được quy định ở phần Default Document.
+Bước 7: Bạn tiến hành dùng notepad để tạo một file index.aspx trong C:\inetpub\wwwroot. Đây là dạng tên file đã được quy định ở phần Default Document.
 
 ![image](https://user-images.githubusercontent.com/111716161/190063102-319af005-8ada-42a2-81ad-ccd8736cf516.png)
 
-Bước 9: Vào Default Document, chọn Add, thêm file vừa tạo. 
+Bước 8: Vào Default Document, chọn Add, thêm file vừa tạo. 
 
 ![image](https://user-images.githubusercontent.com/111716161/190063307-ab2b9b86-c3e4-4684-abdf-743a4b6d4205.png)
 
-Bước 10: Truy cập website
+Bước 9: Truy cập website.
 
 ![image](https://user-images.githubusercontent.com/111716161/190062770-37b71b07-e6f7-4f47-bdc2-151c98dfcb2b.png)
-
-
 
 ## 4. Web PHP
