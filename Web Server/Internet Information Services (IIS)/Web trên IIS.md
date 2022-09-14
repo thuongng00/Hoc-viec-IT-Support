@@ -86,6 +86,18 @@ Bước 1: Vào Server manager chọn "Tools" chọn "Internet Infomation Servic
 
 ![image](https://user-images.githubusercontent.com/111716161/190083497-f649b200-09a3-46f7-90d5-32faffdfd78a.png)
 
-Bước 2: 
+Bước 2: Tải Web Platform và cài đặt bằng cách nhấn vào Install this extention.
 
-![image](https://user-images.githubusercontent.com/111716161/190084511-aa625298-8060-405a-bdd6-21d553649d28.png)
+![image](https://user-images.githubusercontent.com/111716161/190116240-b086acda-989f-4bbe-9f55-484cc0edcd3a.png)
+
+Bước 3: Check ô I accept the terms in the License Agreement. Nhấn Install.
+
+![image](https://user-images.githubusercontent.com/111716161/190116805-4b8866bb-4bfe-4a8d-be58-b222d7f38a4b.png)
+
+Bước 4: Cài đặt hoàn tất. Nhấn finish.
+
+![image](https://user-images.githubusercontent.com/111716161/190116932-ee96453d-0204-4574-bfc6-a0a842e17983.png)
+
+Bước 5: Vào Kiểm tra.
+
+![image](https://user-images.githubusercontent.com/111716161/190117471-f16d1a35-0a93-46df-aa47-114ad585093a.png)
