@@ -80,4 +80,12 @@ Bước 9: Truy cập website.
 
 ![image](https://user-images.githubusercontent.com/111716161/190062770-37b71b07-e6f7-4f47-bdc2-151c98dfcb2b.png)
 
-## 4. Web PHP
+## 3. Web PHP
+
+Bước 1: Vào Server manager chọn "Tools" chọn "Internet Infomation Services (IIS) Manager". Chọn Get New Web Platform Components.
+
+![image](https://user-images.githubusercontent.com/111716161/190083497-f649b200-09a3-46f7-90d5-32faffdfd78a.png)
+
+Bước 2: 
+
+![image](https://user-images.githubusercontent.com/111716161/190084511-aa625298-8060-405a-bdd6-21d553649d28.png)
