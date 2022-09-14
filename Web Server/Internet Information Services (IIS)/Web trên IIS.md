@@ -98,6 +98,35 @@ Bước 4: Cài đặt hoàn tất. Nhấn finish.
 
 ![image](https://user-images.githubusercontent.com/111716161/190116932-ee96453d-0204-4574-bfc6-a0a842e17983.png)
 
-Bước 5: Vào Kiểm tra.
+Bước 5: Vào Web Platform Installer.
 
 ![image](https://user-images.githubusercontent.com/111716161/190117471-f16d1a35-0a93-46df-aa47-114ad585093a.png)
+
+Bước 6: Add phiên bản PHP phù hợp rồi nhấn Install.
+
+![image](https://user-images.githubusercontent.com/111716161/190118075-414eed3a-3b36-4e69-af38-87f4c865db42.png)
+
+Bước 7: Chọn I accept.
+
+![image](https://user-images.githubusercontent.com/111716161/190118185-59e818f7-4538-4fa3-a68e-87853897e115.png)
+
+Quá trình cài đặt đang diễn ra.
+
+![image](https://user-images.githubusercontent.com/111716161/190118455-b704a67c-b23c-4e8a-ab99-ad9ee75ce277.png)
+
+Bước 8: Nhấn Finish.
+
+![image](https://user-images.githubusercontent.com/111716161/190118721-e505156a-6f3c-4a21-bfcb-e5eeb976812b.png)
+
+Bước 9: Tạo file index.php ở trong C:/interput/wwwroot.
+
+![image](https://user-images.githubusercontent.com/111716161/190120638-922280b7-6ea6-44eb-9774-fe3dea57a5a7.png)
+
+Bước 10: Add file vừa tạo vào Default document.
+
+![image](https://user-images.githubusercontent.com/111716161/190120899-1012d641-9c0e-4cf6-a58e-5bcd36504f1e.png)
+
+Bước 11: Truy cập vào Website
+
+![image](https://user-images.githubusercontent.com/111716161/190121032-222cd6a4-217c-4788-a1ba-dc6efa696e83.png)
+
