@@ -66,5 +66,23 @@ Bước 5: Nhấn Install và chờ cho quá trình cài đặt hoàn tất.
 
 ![image](https://user-images.githubusercontent.com/111716161/190044549-4b087735-a5f5-4021-b4fb-f6ccb14cd414.png)
 
+Bước 6: Mở Command Prompt với quyền Administrator, chuyển đến đường dẫn `C:/Windows/Microsoft.NET/Framework/v4.0.30319`, đăng ký asp.net vào hệ thống với mã lệnh `aspnet_regiis –i`
+
+![image](https://user-images.githubusercontent.com/111716161/190047202-82abba21-6f25-4272-913f-0e2f93bb7038.png)
+
+Bước 7: Mở IIS bằng cách vào Server Manager/ Tools / chọn Internet Information Services (IIS) Manager.
+
+![image](https://user-images.githubusercontent.com/111716161/190047541-7a646adc-bae0-4300-9a3b-afd250944879.png)
+
+Bước 8: Tạo Application Pools phù hợp với .NET Framework v4.0.30319 bằng cách nhấn chuột phải vào Application Pools, chọn Add Application Pool.
+
+![image](https://user-images.githubusercontent.com/111716161/190047698-66b889c3-058d-4ce9-8346-7e33d1109560.png)
+
+![image](https://user-images.githubusercontent.com/111716161/190047821-e207b614-94b5-4984-8d84-ac72f8e2ad11.png)
+
+Bước 9: Tạo Application để trỏ tới website ASPNET. Lưu ý: Website đã được Publish thành tập tin .DLL
+
+
+
 
 ## 4. Web PHP
