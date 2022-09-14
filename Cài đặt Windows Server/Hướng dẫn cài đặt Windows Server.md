@@ -88,3 +88,63 @@ Giao diện Windows Server 2016 sau khi cài đặt hoàn tất:
 
 ![image](https://user-images.githubusercontent.com/111716161/187338092-07438da7-da49-463f-aa19-91d475f54fb8.png)
 
+# Cách cài đặt Windows Server 2019 trên máy ảo VMware
+
+Bước 1: Tại màn hình VMware, vào File chọn New Virtual Machine hoặc nhấn Create a New Virtual Machine.
+
+![image](https://user-images.githubusercontent.com/111716161/190100394-8ae8e2a8-e9e4-4a0f-9783-9b0adedc1c04.png)
+
+Bước 2: Tại Tab Welcome to the New Virtual Machine Wizard, chọn Typical.
+
+![image](https://user-images.githubusercontent.com/111716161/190100614-2b915c28-49d4-4756-bae0-fb9c03e6d1cd.png)
+
+Bước 3: Tại Tab Guest Operating System Installation, chọn I will install operating system later.
+
+![image](https://user-images.githubusercontent.com/111716161/190100878-36a8be76-7df9-4e0d-9d78-d2f9fbe39dc2.png)
+
+Bước 4: Tại Tab Select a Guest Operating System, chọn Microsoft Windows với Version là Windows Server 2019.
+
+![image](https://user-images.githubusercontent.com/111716161/190101128-a69d67e2-7dea-42e4-af10-12f2d75ecc46.png)
+
+Bước 5: Đặt tên là Windows Server 2019, chọn vị trí lưu File.
+
+![image](https://user-images.githubusercontent.com/111716161/190101298-4dff9d96-8e7d-4a2f-a9bd-5c02d37836ec.png)
+
+Bước 6: Chọn 60 GB và Split virtual disk into multiple files.
+
+![image](https://user-images.githubusercontent.com/111716161/190101438-3e0ebdd5-e0c0-4d64-88ce-3fe4549031d3.png)
+
+Bước 7: Chọn Customize Hardware... 
+
+![image](https://user-images.githubusercontent.com/111716161/190101629-632bc12e-19d6-4362-bb37-27cee216d104.png)
+
+Bước 8: Chọn New CD/DVD (SATA) và Use ISO image file, Browse đến File windows server 2019. Nhấn Close, sau đó nhấn Finish.
+
+![image](https://user-images.githubusercontent.com/111716161/190103292-9594836a-ffe3-4a69-a168-2ef5a9c9ef9e.png)
+
+Bước 9: Khởi động Windows Server 2019. Nhấn Next
+
+![image](https://user-images.githubusercontent.com/111716161/190104591-20093883-5203-40d3-a9e6-e6e327d68285.png)
+
+Bước 10: Chọn Install Now
+
+![image](https://user-images.githubusercontent.com/111716161/190104783-d4838b6d-f3d8-4582-9266-34569fe092c4.png)
+
+Bước 11: Chọn phiên bản. Ở đây chọn phiên bản Windows Server 2019 Datacenter (Desktop Experience). Nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/190105069-1bafc106-43fa-40b7-9e7d-b19394400419.png)
+
+Bước 12: Check vào ô I accept the license terms.
+
+![image](https://user-images.githubusercontent.com/111716161/190105651-7084d9ad-fef6-4e57-a1e8-9040bee365fa.png)
+
+Bước 13: Chọn Custom: Install Windows only (advanced)
+
+![image](https://user-images.githubusercontent.com/111716161/190105951-995352f9-0fcb-4a50-929a-ea2fbd096449.png)
+
+Bước 14: Nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/190106142-a19d2691-43a4-4a9a-b6bf-b869da0ae51b.png)
+
+Bước 15: Nhập password.
+
