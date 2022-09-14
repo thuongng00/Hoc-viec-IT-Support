@@ -157,6 +157,13 @@ Quá trình cài đặt đang diễn ra...
 
 ![image](https://user-images.githubusercontent.com/111716161/190107788-2cf60bd2-e735-4dfa-aa0a-ee316cf46ac3.png)
 
+Bước 15: Nhập password. Nhấn Finish.
 
-Bước 15: Nhập password.
+![image](https://user-images.githubusercontent.com/111716161/190109669-2a519468-f2d9-4911-a393-5fd5115900c1.png)
+
+Như vậy ta đã cài đặt xong Windows Server 2019.
+
+Giao diện Windows Server 2019
+
+![image](https://user-images.githubusercontent.com/111716161/190110142-2c810d62-6dc9-4047-89d5-ce03f9ccfbd2.png)
 
