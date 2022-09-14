@@ -14,7 +14,7 @@ IIS 10.0 trên Windows Server 2016  được thiết kế để trở thành m�
 
 <a name="iis"></a>
 
-# Cấu hình IIS Web Server trên Windows Server 2016
+# Cấu hình IIS Web Server trên Windows Server
 
 Bước 1: Trên màn hình làm việc của Server Manager nhấn "Add roles and features", hoặc vào Manage rồi nhấn chọn. 
 
