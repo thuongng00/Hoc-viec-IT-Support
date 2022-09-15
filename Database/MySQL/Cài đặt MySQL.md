@@ -129,35 +129,60 @@ Bước 1: Dừng MySQL server
 sudo systemctl stop mysqld
 ```
 
-Bước 2: Khởi động lại MySQL trong `safe mode` hoặc dùng lệnh sau mà không cần đến mật khẩu:
+Bước 2: Cài đặt tùy chọn môi trường MySQL
 
 ```
-sudo mysqld_safe --skip-grant-tables
+sudo systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
 ```
 
-Bước 3: Nhấn ENTER nếu MySQL server đã bắt đầu nhưng dường như bị treo.
-
-Bước 4: Kết nối tới MySQL dưới root user
-
-```
-mysql -uroot
-```
-
-Bước 5: Đổi mật khẩu root
-
-```
-USE MYSQL;
-UPDATE USER SET PASSWORD=PASSWORD(“newpassword”) WHERE USER=’root’;
-FLUSH PRIVILEGES;
-EXIT
-```
-
-Bước 7: Khởi động lại MySQL
+Bước 3: Khởi động MySQL sử dụng các tùy chọn vừa cài đặt
 
 ```
 sudo systemctl start mysqld
-``` 
+```
 
-Bây giờ ta có thể đăng nhập MySQL bằng mật khẩu mới. 
+Bước 4: Đăng nhập với root
 
+```
+mysql -u root
 
+![image](https://user-images.githubusercontent.com/111716161/190318241-592073c3-a7b5-4a27-a892-300f29e60da0.png)
+
+Bước 5: Cập nhật mật khẩu người dùng root bằng các lệnh MySQL
+
+```
+mysql> UPDATE mysql.user SET authentication_string = PASSWORD('NewPassword')
+    -> WHERE User = 'root' AND Host = 'localhost';
+mysql> FLUSH PRIVILEGES;
+mysql> quit
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190332320-2e9cbb99-3fda-41f7-bfbe-b995a29e69a4.png)
+
+Bước 6: Dừng MySQL
+
+```
+sudo systemctl stop mysqld
+```
+
+Bước 7: Bỏ cài đặt tùy chọn môi trường MySQL để nó khởi động bình thường vào lần sau
+
+```
+sudo systemctl unset-environment MYSQLD_OPTS
+```
+
+Bước 8: Khởi động MySQL bình thường
+
+```
+sudo systemctl start mysqld
+```
+
+Bước 9: Đăng nhập bằng mật khẩu mới
+
+```
+mysql -u root -p
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190332495-a12d0dc6-a3c1-4586-b5d6-6e86faf6d1b5.png)
+
+Như vậy ta đã reset password cho MySQL root user thành công. 
