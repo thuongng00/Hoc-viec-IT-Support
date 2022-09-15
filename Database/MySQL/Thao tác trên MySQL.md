@@ -4,25 +4,47 @@ Là user root trong MySQL, bạn có toàn quyền truy cập vào mọi databas
 
 Tuy nhiên, nếu bạn làm việc trong một nhóm, có nhiều trường hợp bạn cần áp dụng hạn chế. Bạn sẽ cần tạo database mới hoặc user mới với phân quyền đặc biệt.
 
-Tạo mới database.
+### 1. Tạo mới database.
+
+- Tạo một database mới
 
 ```
-CREATE DATABSE newdb
+CREATE DATABSE dbname;
 ```
 
-Xóa database
+- Xem các database
 
 ```
-DROP DATABASE database_name
+show databases;
 ```
 
-Tạo user mới
+- Bắt đầu làm việc với database
+
+```
+USE dbname;
+```
+
+- Xóa database
+
+```
+DROP DATABASE dbname;
+```
+
+### 2. Tạo mới User
+
+- Tạo một user mới
 
 ```
 CREATE USER 'username'@'localhost' IDENTIFIED BY 'password'
 ```
 
-Xóa user
+- Hiển thị toàn bộ user
+
+```
+SELECT * FROM mysql.user;
+```
+
+- Xóa user
 
 ```
 DROP USER ‘username’@‘localhost’
@@ -33,7 +55,7 @@ DROP USER ‘username’@‘localhost’
 Gán quyền truy cập vào database cho user mới:
 
 ```
-GRANT ALL PRIVILEGES ON newdb.* TO 'username'@'localhost'
+GRANT ALL PRIVILEGES ON dbname.* TO 'username'@'localhost'
 ```
 
 Bạn cũng có thể gán từng quyền riêng biệt, bao gồm:
@@ -49,13 +71,13 @@ Bạn cũng có thể gán từng quyền riêng biệt, bao gồm:
 Ví dụ, để gán quyền CREATE: 
 
 ```
-GRANT CREATE ON newdb.* TO 'username'@'localhost'
+GRANT CREATE ON dbname.* TO 'username'@'localhost'
 ```
 
 Mặt khác, nếu bạn muốn xóa quyền truy cập của ai đó, sử dụng lệnh sau:
 
 ```
-REVOKE permission_type ON newdb.* TO 'username'@'localhost'
+REVOKE permission_type ON dbname.* TO 'username'@'localhost'
 ```
 
 Kiểm tra quyền mà user có
