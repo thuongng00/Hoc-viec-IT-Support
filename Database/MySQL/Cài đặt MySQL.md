@@ -26,6 +26,12 @@ sudo rpm -Uvh mysql57-community-release-el7-9.noarch.rpm
 
 ![image](https://user-images.githubusercontent.com/111716161/190305229-7689acc6-3724-47f3-b9bf-33e0058e3269.png)
 
+Bước 4: Các khóa GPG cho bản phát hành mới đã được thay đổi, cần nhập khóa trước khi chạy trình cài đặt.
+
+```
+rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+```
+
 ### 2. Cài đặt MySQL
 
 Bước 1: Cài đặt MySQL bằng dòng lệnh yum install:
@@ -36,4 +42,7 @@ sudo yum install mysql-server
 
 ![image](https://user-images.githubusercontent.com/111716161/190305498-a3747c0c-0d3c-485c-97eb-63bbf7f9ae1d.png)
 
-Bước 2: Danh sách file cài sẽ được đưa ra và cần xác nhận để tải chúng. Gõ Y rồi nhấn ENTER. Sau khi tải file xong, 
+Bước 2: Danh sách file cài sẽ được đưa ra và cần xác nhận để tải chúng. Gõ Y rồi nhấn ENTER. Sau khi tải file xong cần nhấn Y để cài đặt. Kết quả Complete! ở cuối trang nghĩa là MySQL đã được cài đặt thành công. 
+
+![image](https://user-images.githubusercontent.com/111716161/190308070-5ba52174-5fba-46dc-a69e-fae1f4a80ac1.png)
+
