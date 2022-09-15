@@ -100,7 +100,7 @@ FLUSH PRIVILEGES
 ### 1. Tạo bảng table
 
 ```
-CREATE TABLE [IF NOT EXISTS] mytable(mycolumn) TYPE=mytabletype;
+CREATE TABLE [IF NOT EXISTS] tablename(columnname) TYPE=tabletype;
 ```
 
 # Các command trong MySQL
