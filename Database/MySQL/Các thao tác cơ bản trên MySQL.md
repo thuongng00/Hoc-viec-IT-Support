@@ -95,6 +95,13 @@ Khi đã quản lý user xong, để áp dụng thay đổi
 ```
 FLUSH PRIVILEGES
 ```
+# Thao tác với cơ sở dữ liệu
+
+### 1. Tạo bảng table
+
+```
+CREATE TABLE [IF NOT EXISTS] mytable(mycolumn) TYPE=mytabletype;
+```
 
 # Các command trong MySQL
 
