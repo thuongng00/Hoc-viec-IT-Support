@@ -95,7 +95,11 @@ sudo mysql_secure_installation
 
 Bước 2: Nhập mật khẩu tạm và điền mật khẩu tạm.
 
-Bước 3: Nhập mật khẩu mới
+Bước 3: Nhập mật khẩu mới, chú ý các chính sách mật khẩu. 
+
+(Abcd.1234)
+
+![image](https://user-images.githubusercontent.com/111716161/190310085-0b926337-933a-475b-88b8-ad2d7e88e24b.png)
 
 Bước 4: Nhấn Y sau đó Enter để hoàn tất.
 
