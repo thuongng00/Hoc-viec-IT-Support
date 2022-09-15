@@ -102,4 +102,4 @@ MySQL cũng có danh sách command hữu dụng. Bạn chỉ cần gõ \h hoặc
 | charset (\C) | Chuyển sang bộ ký tự khác. Có thể cần thiết để xử lý binlog với các bộ ký tự nhiều byte |
 | warnings (\W) | Hiển thị cảnh báo sau mỗi câu lệnh |
 | nowarning (\w) | Không hiển thị cảnh báo sau mỗi câu lệnh |
-
+| resetconnection (\x) | Làm sạch phiên hoạt động | 
