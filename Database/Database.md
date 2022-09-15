@@ -1,7 +1,9 @@
 # Database
 Database (cơ sở dữ liệu) là một tập hợp có tổ chức các thông tin có cấu trúc hoặc dữ liệu, thường được lưu trữ trực tuyến trong một hệ thống máy tính. Một cơ sở dữ liệu thường được kiểm soát bởi hẹ thống quản lý cơ sở dữu liệu (DBMS). Cùng với nhau, dữ liệu và DBMS, cùng với các ứng dụng được liên kết với chúng, được gọi là một hệ thống cơ sở dữ liệu, thường được rút ngắn thành cơ sở dữ liệu. 
 
-![image](https://user-images.githubusercontent.com/111716161/190381406-e85e06d8-2182-4854-a79e-cf2a0eb64120.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/190381406-e85e06d8-2182-4854-a79e-cf2a0eb64120.png" width="500"/>
+</p>
 
 Dữ liệu trong các loại cơ sở dữ liệu phổ biến nhất đang hoạt động hiện nay thường được mô hình hóa theo hàng và cột trong một loạt các bảng để giúp xử lý và truy vấn dữ liệu hiệu quả. Dữ liệu sau đó có thể dễ dàng truy cập, quản lý, sửa đổi, cập nhật, kiểm soát và tổ chức. Hầu hết các cơ sở dữ liệu sử dụng ngôn ngữ truy vấn có cấu trúc (SQL) để viết và truy vấn dữ liệu. 
 
