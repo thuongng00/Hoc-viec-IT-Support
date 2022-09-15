@@ -30,6 +30,8 @@ USE dbname;
 DROP DATABASE dbname;
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190344207-3c14d4b2-1678-4aaf-aa81-fa476dfa3957.png)
+
 ### 2. Tạo mới User
 
 - Tạo một user mới
@@ -37,6 +39,8 @@ DROP DATABASE dbname;
 ```
 CREATE USER 'username'@'localhost' IDENTIFIED BY 'password'
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190346011-99bb48eb-ec48-4154-b783-167fa437ea09.png)
 
 - Hiển thị toàn bộ user
 
@@ -61,9 +65,9 @@ GRANT ALL PRIVILEGES ON dbname.* TO 'username'@'localhost'
 Bạn cũng có thể gán từng quyền riêng biệt, bao gồm:
 
 - SELECT – user có quyền đọc (read) database bằng lệnh select
-- CREATE – họ có thể tạo bảng mới
+- CREATE – user có thể tạo bảng mới
 - DROP – cho phép người dùng xóa bảng
-- DELETE – users có thể xóa dòng khỏi bảng
+- DELETE – user có thể xóa dòng khỏi bảng
 - INSERT – giúp user thêm dòng vào bảng
 - UPDATE – giúp cập nhật dòng
 - GRANT OPTION – có thể gán hoặc xóa quyền của user khác
