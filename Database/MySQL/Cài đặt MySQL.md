@@ -1,6 +1,6 @@
 [Cài đặt MySQL](#caidat)
 
-[Cấu hình MySQL)(#cauhinh)
+[Cấu hình MySQL](#cauhinh)
 
 <a name="caidat"></a>
 # Cài đặt MySQL
@@ -102,5 +102,11 @@ Bước 3: Nhập mật khẩu mới, chú ý các chính sách mật khẩu.
 ![image](https://user-images.githubusercontent.com/111716161/190310085-0b926337-933a-475b-88b8-ad2d7e88e24b.png)
 
 Bước 4: Nhấn Y sau đó Enter để hoàn tất.
+
+![image](https://user-images.githubusercontent.com/111716161/190310612-3d3aa6bb-5871-4586-8f44-b181578acaf3.png)
+
+![image](https://user-images.githubusercontent.com/111716161/190310646-232b1461-6005-4cbe-81aa-2f9f8575f078.png)
+
+![image](https://user-images.githubusercontent.com/111716161/190310687-cf1b3cd1-6563-4aca-a0e2-f29be4eb50dc.png)
 
 Như vậy ta đã thay đổi mật khẩu MySQL root user thành công. 
