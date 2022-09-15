@@ -145,6 +145,7 @@ Bước 4: Đăng nhập với root
 
 ```
 mysql -u root
+```
 
 ![image](https://user-images.githubusercontent.com/111716161/190318241-592073c3-a7b5-4a27-a892-300f29e60da0.png)
 
