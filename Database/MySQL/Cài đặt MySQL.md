@@ -110,3 +110,54 @@ Bước 4: Nhấn Y sau đó Enter để hoàn tất.
 ![image](https://user-images.githubusercontent.com/111716161/190310687-cf1b3cd1-6563-4aca-a0e2-f29be4eb50dc.png)
 
 Như vậy ta đã thay đổi mật khẩu MySQL root user thành công. 
+
+### 2. Kiểm tra phiên bản MySQL hiện hành
+
+```
+mysql -u root -p
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190310871-3dfd2072-6609-4f6a-af5f-372a161dfd41.png)
+
+### 3. Đặt lại MySQL Root Password
+
+Trong trường hợp quên mật khẩu và muốn reset password, ta thực hiện các bước sau:
+
+Bước 1: Dừng MySQL server
+
+```
+sudo systemctl stop mysqld
+```
+
+Bước 2: Khởi động lại MySQL trong `safe mode` hoặc dùng lệnh sau mà không cần đến mật khẩu:
+
+```
+sudo mysqld_safe --skip-grant-tables
+```
+
+Bước 3: Nhấn ENTER nếu MySQL server đã bắt đầu nhưng dường như bị treo.
+
+Bước 4: Kết nối tới MySQL dưới root user
+
+```
+mysql -uroot
+```
+
+Bước 5: Đổi mật khẩu root
+
+```
+USE MYSQL;
+UPDATE USER SET PASSWORD=PASSWORD(“newpassword”) WHERE USER=’root’;
+FLUSH PRIVILEGES;
+EXIT
+```
+
+Bước 7: Khởi động lại MySQL
+
+```
+sudo systemctl start mysqld
+``` 
+
+Bây giờ ta có thể đăng nhập MySQL bằng mật khẩu mới. 
+
+
