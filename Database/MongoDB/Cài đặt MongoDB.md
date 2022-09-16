@@ -63,5 +63,53 @@ Như vậy ta đã cài đặt xong MongoDB trên CentOS 7.
 
 Thiết lập cấu hình MongoDB bằng cách chỉnh sửa tệp cấu hình /etc/mongod.conf.
 
-Các thiết lập cấu hình mặc định khá đầy đủ trong hầu hết các trường hợp. Để tìm thêm thông tin về các tùy chọn cấu hình có sẵn trong MongoDB, truy cập: mongodb.com/docs/manual/reference/configuration-options/
+Các thiết lập cấu hình mặc định khá đầy đủ trong hầu hết các trường hợp. Để tìm thêm thông tin về các tùy chọn cấu hình có sẵn trong MongoDB, truy cập: https://www.mongodb.com/docs/manual/reference/configuration-options/
+
+Sau khi thay đổi tệp cấu hình, khởi động lại dịch vụ mongod:
+
+```
+systemctl restart mongod
+```
+
+## 4. Tạo user Admin
+
+Tạo một người dùng MongoDB sử dụng để truy cập và quản lý MongoDB của mình
+
+```
+mongo
+```
+
+Kết nối với cơ sở dữ liệu quản trị viên
+
+```
+use admin
+```
+
+Tạo người dùng mới với vai trò userAdminAnyDatabase
+
+```
+db.createUser( { user: "Username", pwd: "Mật-khẩu", roles: [{role: "userAdminAnyDatabase", db: "admin"}]})
+```
+
+Thoát khỏi mongo
+
+```
+quit()
+```
+
+Kiểm tra các thay đổi, truy cập shell mongo bằng người dùng quản trị đã tạo:
+
+```
+mongo -u username -p --authenticationDatabase admin
+```
+
+In người dùng
+
+```
+use admin
+show users
+```
+
+
+
 
