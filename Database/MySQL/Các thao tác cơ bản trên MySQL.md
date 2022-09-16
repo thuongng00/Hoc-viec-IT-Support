@@ -150,6 +150,14 @@ SELECT * from table_name;
 
 ![image](https://user-images.githubusercontent.com/111716161/190593912-8b188179-2887-4eba-8828-ff59321cae82.png)
 
+### 6. Xóa bảng
+
+```
+drop table table_name;
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190598467-99a00449-4c03-471e-8984-ce3b75d2ce32.png)
+
 # Các command trong MySQL
 
 MySQL cũng có danh sách command hữu dụng. Bạn chỉ cần gõ \h hoặc help để xem bảng bên dưới:
