@@ -97,11 +97,15 @@ mongo
 use admin
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190556436-e2048caf-b34f-4959-9224-5738363f9d43.png)
+
 - Tạo người dùng mới với vai trò userAdminAnyDatabase
 
 ```
 db.createUser( { user: "Username", pwd: "Mật-khẩu", roles: [{role: "userAdminAnyDatabase", db: "admin"}]})
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190556877-93f3b402-8754-4b3e-84e3-d31886037b23.png)
 
 - Thoát khỏi mongo
 
@@ -115,13 +119,16 @@ quit()
 mongo -u username -p --authenticationDatabase admin
 ```
 
-- In người dùng
+![image](https://user-images.githubusercontent.com/111716161/190556991-058eebb1-6c7f-4bd6-b1c9-002421117005.png)
+
+- In người dùng bằng lệnh: 
 
 ```
 use admin
 show users
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190557065-85fc43bf-ad6b-41bb-a7b0-d91287636816.png)
 
 
 
