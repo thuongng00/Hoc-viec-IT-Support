@@ -100,7 +100,42 @@ FLUSH PRIVILEGES
 ### 1. Tạo bảng table
 
 ```
-CREATE TABLE [IF NOT EXISTS] tablename(columnname) TYPE=tabletype;
+CREATE TABLE table_name(
+column_name1 data_type1(size),
+column_name2 data_type2(size),
+column_name3 data_type3(size),
+...
+);
+```
+
+### 2. Kiểm tra bảng vừa tạo
+
+```
+show tables;
+```
+
+- Xem cột đã tạo:
+
+```
+show columns from table_name;
+```
+
+### 3. Thêm cột vào bảng
+
+```
+ALTER TABLE table_name ADD new _column data_type (size) AFTER old_column; 
+```
+
+### 4. Thêm giá trị vào các trường dữ liệu
+
+```
+INSERT INTO table_name VALUES (value1, value2...);
+```
+
+### 5. Xem giá trị trong bảng
+
+```
+SELECT * from table_name
 ```
 
 # Các command trong MySQL
