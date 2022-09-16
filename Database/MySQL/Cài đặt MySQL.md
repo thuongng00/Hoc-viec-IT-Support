@@ -2,6 +2,8 @@
 
 [Cấu hình MySQL](#cauhinh)
 
+[Gỡ MySQL](#go)
+
 <a name="caidat"></a>
 # Cài đặt MySQL
 
@@ -187,3 +189,22 @@ mysql -u root -p
 ![image](https://user-images.githubusercontent.com/111716161/190332495-a12d0dc6-a3c1-4586-b5d6-6e86faf6d1b5.png)
 
 Như vậy ta đã reset password cho MySQL root user thành công. 
+
+<a name="go"></a>
+# Gỡ MySQL khỏi CentOS 7
+
+Bước 1: Backup toàn bộ dữ liệu đang có trong Mysql ra
+
+```
+mysqldump -u root -p –all-databases > /tmp/backup-all-db.sql
+```
+Bước 2: Gỡ các gói cài đặt Mysql
+
+```
+service mysqld stop
+
+cp /etc/my.cnf /tmp/
+
+yum remove mysql*
+```
+
