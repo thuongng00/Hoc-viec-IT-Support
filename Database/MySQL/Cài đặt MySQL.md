@@ -233,4 +233,6 @@ rm -rf /etc/my.cnf
 
 ![image](https://user-images.githubusercontent.com/111716161/190601630-6bbe92b0-8da7-4c2b-9449-41d82b887e50.png)
 
+Bước 3: Kiểm tra xem MySQL đã bị gỡ hay chưa
 
+![image](https://user-images.githubusercontent.com/111716161/190602928-7c0458eb-4025-47ac-89d2-743aa435033a.png)
