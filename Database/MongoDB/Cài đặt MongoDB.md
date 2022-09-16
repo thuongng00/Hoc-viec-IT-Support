@@ -21,6 +21,8 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190556034-fdd9bf16-809a-425f-b35d-aac5a445442a.png)
+
 ## 2. Cài đặt MongoDB
 
 Bước 1: Bây giờ kho lưu trữ đã được thêm, ta tiến hành cài đặt gói mongodb-org.
@@ -28,6 +30,8 @@ Bước 1: Bây giờ kho lưu trữ đã được thêm, ta tiến hành cài �
 ```
 yum install mongodb-org -y
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190556164-174cd14a-d94b-4b25-87ea-0253bd39a4da.png)
 
 Các gói sau sẽ được cài đặt trên hệ thống của bạn như là một phần của gói mongodb-org:
 
@@ -45,17 +49,23 @@ systemctl start mongod
 systemctl enable mongod
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190556237-2920fb12-e5ab-4b56-9b75-cb5ee99e2c3f.png)
+
 Bước 3: Xác minh cài đặt 
 
 ```
 mongo
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190556308-c11c883b-8885-4313-ad25-5cde99865f06.png)
+
 Hiển thị phiên bản MongoDB
 
 ```
 db.version()
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190556338-89b587d4-31dd-4ca7-be2f-ccb3d1499275.png)
 
 Như vậy ta đã cài đặt xong MongoDB trên CentOS 7.
 
