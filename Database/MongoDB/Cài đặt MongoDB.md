@@ -73,37 +73,39 @@ systemctl restart mongod
 
 ## 4. Tạo user Admin
 
-Tạo một người dùng MongoDB sử dụng để truy cập và quản lý MongoDB của mình
+Tạo một người dùng MongoDB sử dụng để truy cập và quản lý MongoDB của mình.
+
+- Bắt đầu với mongodb
 
 ```
 mongo
 ```
 
-Kết nối với cơ sở dữ liệu quản trị viên
+- Kết nối với cơ sở dữ liệu quản trị viên
 
 ```
 use admin
 ```
 
-Tạo người dùng mới với vai trò userAdminAnyDatabase
+- Tạo người dùng mới với vai trò userAdminAnyDatabase
 
 ```
 db.createUser( { user: "Username", pwd: "Mật-khẩu", roles: [{role: "userAdminAnyDatabase", db: "admin"}]})
 ```
 
-Thoát khỏi mongo
+- Thoát khỏi mongo
 
 ```
 quit()
 ```
 
-Kiểm tra các thay đổi, truy cập shell mongo bằng người dùng quản trị đã tạo:
+- Kiểm tra các thay đổi, truy cập shell mongo bằng người dùng quản trị đã tạo:
 
 ```
 mongo -u username -p --authenticationDatabase admin
 ```
 
-In người dùng
+- In người dùng
 
 ```
 use admin
