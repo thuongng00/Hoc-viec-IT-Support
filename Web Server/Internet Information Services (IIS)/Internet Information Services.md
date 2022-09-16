@@ -12,6 +12,18 @@ Internet Information Services (IIS) được đính kèm với các phiên bản
 
 Nó có thể được sử dụng để xuất bản nội dung của các trang Web lên Internet/Intranet bằng việc sử dụng “Phương thức chuyển giao siêu văn bản“ – Hypertext Transport Protocol (HTTP).
 
+## Lịch sử hình thành
+
+IIS được tạo ra bởi Microsoft và đến nay đã cho ra đời rất nhiều phiên bản. Phiên bản đầu tiên (IIS 1.0) được phát hành dạng add-on miễn phí hoạt động trên Windows NT 3.51. nhằm hỗ trợ Microsoft trong việc xử lý lưu lượng truy cập vào Microsoft.com.
+
+Tính đến thời điểm hiện tại, IIS đã cho ra mắt phiên bản 10, mang lại sự hỗ trợ tuyệt vời cho việc xuất bản web. Một vài phiên bản nổi bật mà bạn không thể bỏ qua là:
+
+- IIS 3.0: Phát hành năm 1996, trong lần đầu giới thiệu về ngôn ngữ kịch bản server-side Active Server Pages, nằm trong gói dịch vụ Service Pack 2 của hệ điều hành Window NT 4.0
+- IIS 6.0: Hỗ trợ về IP 6 và được cải tiến khá nhiều về khả năng bảo mật, tích hợp trong các hệ điều hành Windows Server 2003, Windows XP Professional x64 Edition.
+- IIS 7.0: Dùng cấu trúc module mang lại khả năng hoạt động tách rời giữa các phần, giúp nâng cao hiệu suất, đồng thời cho phép lập trình viên code thêm add-on để tích hợp với IIS. Bên cạnh đó, trình quản lý dạng Windows Forms, hỗ trợ quản lý theo hình thức dòng lệnh, đồng thời tăng khả năng tương thích đối với Framework .NET. Phiên bản này có trong Windows Vista, Windows Server 2008. 
+- IIS 10.0: Có khả năng hỗ trợ container, giao thức HTTP/2, chạy IIS tại Nano Server,... và được tích hợp cho Windows Server 2016, Windows Server 2019 và Windows 10
+- IIS Express: Một dạng rút gọn của IIS. Phiên bản này được cung cấp miễn phí và có thể cài đặt cho Windows XP Service Pack 3 trở lên. Nó đi kèm các tính năng chính, cơ bản của một máy chủ web, hỗ trợ về HTTP, HTTPS, URL Rewrite và file đa phương tiện,…
+
 ## Nhiệm vụ, hoạt động và tính năng
 
 Nhiệm vụ của IIS là tiếp nhận yêu cầu của máy trạm và đáp ứng lại yêu cầu đó bằng cách gửi về máy trạm những thông tin mà máy trạm yêu cầu.
