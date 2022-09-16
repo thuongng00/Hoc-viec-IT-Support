@@ -108,11 +108,15 @@ column_name3 data_type3(size),
 );
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190592846-0a076e48-64b0-4023-8d76-d0ef4aff8e54.png)
+
 ### 2. Kiểm tra bảng vừa tạo
 
 ```
 show tables;
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190592903-178cc162-685c-4ac7-b555-23ba2852410f.png)
 
 - Xem cột đã tạo:
 
@@ -120,23 +124,31 @@ show tables;
 show columns from table_name;
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190592996-42b80885-e900-4192-9006-10ca1cbeb989.png)
+
 ### 3. Thêm cột vào bảng
 
 ```
 ALTER TABLE table_name ADD new _column data_type (size) AFTER old_column; 
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190593255-7dcd0086-4c9a-46f3-8822-90020ec5cf1b.png)
+
 ### 4. Thêm giá trị vào các trường dữ liệu
 
 ```
-INSERT INTO table_name VALUES (value1, value2...);
+INSERT INTO table_name (column1, columns2,...) VALUES (value1, value2...);
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190593844-ef95d9f4-abfc-409c-84d8-58774566e3a1.png)
 
 ### 5. Xem giá trị trong bảng
 
 ```
-SELECT * from table_name
+SELECT * from table_name;
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190593912-8b188179-2887-4eba-8828-ff59321cae82.png)
 
 # Các command trong MySQL
 
