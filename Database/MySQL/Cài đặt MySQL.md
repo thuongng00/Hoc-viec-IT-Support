@@ -193,18 +193,44 @@ Như vậy ta đã reset password cho MySQL root user thành công.
 <a name="go"></a>
 # Gỡ MySQL khỏi CentOS 7
 
-Bước 1: Backup toàn bộ dữ liệu đang có trong Mysql ra
+Bước 1: Gỡ tất cả các phụ thuộc của MySQL
 
 ```
-mysqldump -u root -p –all-databases > /tmp/backup-all-db.sql
+yum list installed | grep mysql
 ```
-Bước 2: Gỡ các gói cài đặt Mysql
+
+![image](https://user-images.githubusercontent.com/111716161/190600269-00a71e8a-f435-4be0-a5b2-172270d3f9e8.png)
+
+- Để loại bỏ một gói, cần cài đặt plugin yum:
 
 ```
-service mysqld stop
-
-cp /etc/my.cnf /tmp/
-
-yum remove mysql*
+yum install yum-plugin-remove-with-leaves
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190600633-06f3dfcd-2761-4ca5-9e66-18a260801167.png)
+
+- Để loại bỏ một gói với các phụ thuộc của nó: 
+```
+yum remove mysql-server --remove-leaves
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190600951-882682b5-4d4f-46f4-9e06-f34b0e1e5377.png)
+
+- Gỡ cài đặt repo mysql-community-release
+
+```
+yum remove mysql57-community-release-el7-9
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190601412-856085fa-cdf7-4ee9-ae70-c945ecdb51aa.png)
+
+Bước 2: Xóa thư mục MySQL
+
+```
+rm -rf /var/lib/mysql/
+rm -rf /etc/my.cnf
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190601630-6bbe92b0-8da7-4c2b-9449-41d82b887e50.png)
+
 
