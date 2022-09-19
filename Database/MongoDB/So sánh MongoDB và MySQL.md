@@ -7,6 +7,17 @@
 - MySQL là một hệ quản lý cơ sở dữ liệu quan hệ mã nguồn mở phổ biến (RDBMS) được phát triển, phân phối và hỗ trợ bởi Oracle Corporation. Giống như các hệ thống quan hệ khác, MySQL lưu trữ dữ liệu trong bảng và sử dụng ngôn ngữ truy vấn có cấu trúc (SQL) để truy cập cơ sở dữ liệu. Trong MySQL, bạn định nghĩa sơ đồ cơ sở dữ liệu của bạn dựa trên yêu cầu của bạn và thiết lập các quy tắc để điều chỉnh mối quan hệ giữa các trường trong bảng của bạn. Bất kỳ thay đổi nào trong lược đồ đòi hỏi một thủ tục chuyển đổi có thể làm cho cơ sở dữ liệu ngoại tuyến hoặc giảm đáng kể hiệu suất ứng dụng. 
 - MongoDB là một cơ sở dữ liệu nguồn mở, không quan hệ được phát triển bởi MongoDB, Inc MongoDB lưu trữ dữ liệu dưới dạng các tài liệu trong một biểu diễn nhị phân được gọi là BSON (Binary JSON). Thông tin liên quan được lưu trữ cùng nhau để truy cập truy vấn nhanh thông qua ngôn ngữ truy vấn MongoDB. Các trường có thể khác nhau từ tài liệu này sang tài liệu khác; không cần khai báo cấu trúc của tài liệu vào hệ thống - các tài liệu tự mô tả. Nếu một lĩnh vực mới cần phải được thêm vào một tài liệu, sau đó lĩnh vực này có thể được tạo ra mà không ảnh hưởng đến tất cả các tài liệu khác trong collection, mà không cần cập nhật một danh mục hệ thống trung ương, và không cần dùng hệ thống ngoại tuyến. Theo tùy chọn, tính hợp lệ của lược đồ có thể được sử dụng để thực thi kiểm soát quản trị dữ liệu đối với mỗi collection.
 
+| | MySQL | MongoDB |
+|---|---|---|
+| Viết bởi ngôn ngữ | C++, C | C++, C và Javascript |
+| Kiểu | RDBMS(Hệ thống quản lý cơ sở dữ liệu quan hệ) | Hướng tài liệu |
+| Các điểm chính | Table, Row, Column | Collection, Document, Field |
+| License | 	GPL v2 / Giấy phép thương mại có sẵn OD | OD GNU AGPL v3.0 / Giấy phép thương mại có sẵn OD |
+| Lược đồ | Strict | Dynamic |
+| Scaling | Theo chiều dọc | Theo chiều ngang |
+| Các tính năng chính | Tìm kiếm và đánh chỉ số full text, Hỗ trợ nhân rộng tích hợp, Trigger, SubSELECT, Truy vấn bộ nhớ đệm, Hỗ trợ SSL, Hỗ trợ Unicode, Công cụ lưu trữ khác nhau với các đặc tính hiệu suất khác nhau | Auto-sharding, Native replication, Hỗ trợ mô hình dữ liệu nhúng, Chỉ số phụ toàn diện, Hỗ trợ ngôn ngữ truy vấn phong phú, Hỗ trợ công cụ lưu trữ khác nhau |
+| Sử dụng tốt nhất cho | Cấu trúc dữ liệu phù hợp với bảng và hàng, Sự phụ thuộc mạnh mẽ vào,các giao dịch nhiều hàng,Cập nhật thường xuyên và sửa đổi khối lượng lớn bản ghi, Bộ dữ liệu tương đối nhỏ | Tải ghi cao, Lược đồ không ổn định, DB của bạn được thiết lập để phát triển lớn,Dữ liệu dựa trên vị trí, HA (tính sẵn sàng cao) trong môi trường không ổn định là bắt buộc,Không có quản trị viên cơ sở dữ liệu (DBA) |
+
 ## 2. Thuật ngữ và khái niệm
 
 Nhiều khái niệm trong MySQL có các khái niệm tương tự gần nhau trong MongoDB. Bảng dưới đây phác thảo các khái niệm chung trên MySQL và MongoDB.
@@ -54,5 +65,5 @@ So sánh hiệu năng MongoDB và MySQL là khó khăn, vì cả hai hệ thốn
 
 | | MongoDB | MySQL | 
 |---|---|---|
-| Ưu điểm | Xác thực tài liệu,Công cụ lưu trữ tích hợp,Rút ngắn thời gian giữa thất bại chính và phục hồi | Hỗ trợ giao dịch Atomic, Hỗ trợ JOIN, Giải pháp Mature,Hệ thống bảo mật đặc quyền và mật khẩu |
+| Ưu điểm | Xác thực tài liệu, Công cụ lưu trữ tích hợp, Rút ngắn thời gian giữa thất bại chính và phục hồi | Hỗ trợ giao dịch Atomic, Hỗ trợ JOIN, Giải pháp Mature,Hệ thống bảo mật đặc quyền và mật khẩu |
 | Nhược điểm | Không phải là lựa chọn tốt nhất cho các ứng dụng có giao dịch phức tạp, Không phải là một thay thế snap-in cho các giải pháp cũ, Giải pháp trẻ | Mở rộng quy mô, Mối quan tâm ổn định, Phát triển dựa vào cộng đồng |
