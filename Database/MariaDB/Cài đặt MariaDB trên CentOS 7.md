@@ -16,7 +16,7 @@ gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/190965075-01ae97ae-c522-471a-b38a-081490a8da11.png)
+![image](https://user-images.githubusercontent.com/111716161/190969958-412d3f6a-2b1c-49b5-83c1-27e23b2509fe.png)
 
 ***Lưu ý:*** *Tại thời điểm này phiên bản MariaDB 10 mới nhất là 10.10. Trước khi tạo repo các bạn có thể truy cập http://yum.mariadb.org để kiểm tra phiên bản.*
 
