@@ -35,6 +35,8 @@ yum update
 
 ![image](https://user-images.githubusercontent.com/111716161/190965980-92c20400-15ef-4b4d-94aa-12076522ecc4.png)
 
+![image](https://user-images.githubusercontent.com/111716161/190966283-5ed31d81-1dce-4739-aa22-ae9bf65b1bfb.png)
+
 ## 2. Cài đặt MariaDB
 
 Sau khi tạo file repo các bạn tiến hành cài đặt MariaDB bằng lệnh sau
