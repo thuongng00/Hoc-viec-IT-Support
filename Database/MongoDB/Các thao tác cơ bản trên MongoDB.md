@@ -8,23 +8,39 @@ Database là một container vật lý cho các collection. Mỗi DB được th
 USE database_name
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190946017-fb07d90d-7f59-4f11-ae35-65ccd58cdd8b.png)
+
+- Kiểm tra đang sử dụng database nào. 
+
+```
+db
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190946058-fea0b789-0519-4be6-a8ae-be02d5ce9b5a.png)
+
+- Xem danh sách database trong server. 
+
+```
+SHOW dbs
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190946130-aba677b4-c856-44f2-8fbf-737a081e28f9.png)
+
+DB của bạn vừa mới create ko có ở đây. Bạn phải insert một documents về nó vào list.
+
+```
+db.movie.insert({"name":"tutorials point"})
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190946357-0d8b8859-ac22-455e-853b-723c480967c7.png)
+
 - Xóa database.
 
 ```
 db.dropDatabase()
 ```
 
-- Xem danh sách database. 
-
-```
-SHOW dbs
-```
-
-- Xem database đang sử dụng. 
-
-```
-db
-```
+![image](https://user-images.githubusercontent.com/111716161/190946393-e11b0ac2-ebb3-4e50-bacf-e9390544b166.png)
 
 ## 2. Thao tác với Collection
 
@@ -62,11 +78,23 @@ Trong đó:
 
 `autoIndexID` sẽ tự động tạo một index trên biến _id field.s Mặc định giá trị này là false.
 
+![image](https://user-images.githubusercontent.com/111716161/190946613-ddca19e8-8665-4f98-83ec-92d61c8110e1.png)
+
+**Xem các collection**
+
+```
+show collections
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190946703-452a5d48-ea22-421b-8c07-f68799e359c8.png)
+
 **Xóa một collection**
 
 ```
 db.COLLECTION_NAME.drop()
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190946765-451e0559-8a3a-4baa-bae5-9b64fe329cb6.png)
 
 ## 3. Thao tác với Document
 
