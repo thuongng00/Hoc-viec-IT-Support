@@ -4,7 +4,9 @@
 
 Ngoài ra, MongoDB là một cơ sở dữ liệu đa nền tảng, hoạt động trên các khái niệm Collection và Document, nó cung cấp hiệu suất cao, tính khả dụng cao và khả năng mở rộng dễ dàng.
 
-![image](https://user-images.githubusercontent.com/111716161/190937097-c8202fa0-5feb-4f68-88f3-0d9080535c77.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/190937097-c8202fa0-5feb-4f68-88f3-0d9080535c77.png" width=500/>
+</p>
 
 MongoDB lần đầu ra đời bởi MongoDB Inc., tại thời điểm đó là thế hệ 10, vào tháng 10 năm 2007. Nó là một phần của sản phẩm PaaS (Platform as a Service) tương tự như Windows Azure và Google App Engine. Sau đó nó đã được chuyển thành nguồn mở từ năm 2009. 
 
@@ -17,7 +19,9 @@ Các feature của MongoDB gồm cso:
 - Aggregation: Các Aggregation operation xử lý các bản ghi dữ liệu và trả về kết quả đã được tính toán. Các phép toán tập hợp nhóm các giá trị từ nhiều document lại với nhau, và có thể thực hiện nhiều phép toán đa dạng trên dữ liệu đã được nhóm đó để trả về một kết quả duy nhất. Trong SQL, count và GROUP BY là tương đương với Aggregation trong MongoDB.
 - Lưu trữ file: MongoDB được dùng như một hệ thống file tận dụng những function trên và hoạt động như một cách phân phối qua sharding.
 
-![image](https://user-images.githubusercontent.com/111716161/190937073-cb966be1-1e63-41e2-b3cd-05c2aa0eab7f.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/190937073-cb966be1-1e63-41e2-b3cd-05c2aa0eab7f.png" width=500/>
+</p>
 
 # Khi nào sử dụng MongoDB?
 ### Quản lý và truyền tải content
