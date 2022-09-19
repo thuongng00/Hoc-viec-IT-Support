@@ -20,6 +20,6 @@ Bất kỳ công ty lớn nào cũng đều sử dụng xây dựng cho mình m�
 - 2006 – ISO / IEC SQL: 2006 mở rộng chức năng liên quan đến XML.
 - 2008 – ISO / IEC SQL: 2008 bổ sung hỗ trợ cho các JOIN được phân vùng, một phương pháp để liên kết hai hoặc nhiều bảng coi các bảng đã nối là một bảng duy nhất.
 - 2011 – ISO / IEC SQL: 2011 cải thiện hỗ trợ cho cơ sở dữ liệu quan hệ chứa dữ liệu liên quan đến thời gian.
-- 2016. ISO / IEC SQL: 2016 bổ sung các tính năng mới tùy chọn, bao gồm các thay đổi liên quan đến ký hiệu đối tượng JavaScript, hỗ trợ các hàm bảng đa hình và đối sánh mẫu hàng.
+- 2016 – ISO / IEC SQL: 2016 bổ sung các tính năng mới tùy chọn, bao gồm các thay đổi liên quan đến ký hiệu đối tượng JavaScript, hỗ trợ các hàm bảng đa hình và đối sánh mẫu hàng.
 
 
