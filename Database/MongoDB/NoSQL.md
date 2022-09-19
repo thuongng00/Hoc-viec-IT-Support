@@ -5,7 +5,9 @@
 <a name="nosql"></a>
 # NOSQL
 
-![image](https://user-images.githubusercontent.com/111716161/190938721-a4be036a-b954-4352-a468-84ec6102e7d4.png)
+<p align="center">
+  <img src = "https://user-images.githubusercontent.com/111716161/190938721-a4be036a-b954-4352-a468-84ec6102e7d4.png" width=500/>
+</p>
 
 NoSQL là một dạng cơ sở dữ liệu mã nguồn mở và được viết tắt bởi Non-Relational SQL hay có nơi thường gọi là Not-Only SQL.
 
@@ -22,7 +24,9 @@ NoSQL được sử dụng ở rất nhiều công ty, tập đoàn lớn, ví d
 <a name="sosanh"></a>
 # So sánh SQL và NoSQL
 
-![image](https://user-images.githubusercontent.com/111716161/190938736-31f17f36-2a07-4595-8e13-4bf753b8be3a.png)
+<p align="center">
+  <img src = "https://user-images.githubusercontent.com/111716161/190938736-31f17f36-2a07-4595-8e13-4bf753b8be3a.png" width=500/>
+</p>
 
 | | SQL | NoSQL |
 |---|---|---|
