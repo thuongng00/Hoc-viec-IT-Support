@@ -132,6 +132,27 @@ show users
 
 ## 5. Gỡ cài đặt MongoDB
 
+Bước 1: Dừng tiến trình MongoDB
+
 ```
-sudo yum reinstall -y mongodb-org-server.x86_64
+sudo service mongod stop
 ```
+
+Bước 2: Gỡ bỏ hoàn toàn các gói MongoDB đã cài đặt
+
+```
+sudo apt-get purge mongodb-org*
+```
+
+Bước 3: Xóa các thư mục dữ liệu, (các) cơ sở dữ liệu MongoDB và các tệp nhật ký
+
+```
+sudo rm -r /var/log/mongodb /var/lib/mongodb
+```
+
+Bước 4: Kiểm tra xem MongoDb đã được gỡ cài đặt thành công hay không
+
+```
+service mongod status
+```
+
