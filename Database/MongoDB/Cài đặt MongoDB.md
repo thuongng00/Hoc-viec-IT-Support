@@ -130,5 +130,8 @@ show users
 
 ![image](https://user-images.githubusercontent.com/111716161/190557065-85fc43bf-ad6b-41bb-a7b0-d91287636816.png)
 
+## 5. Gỡ cài đặt MongoDB
 
-
+```
+sudo yum reinstall -y mongodb-org-server.x86_64
+```
