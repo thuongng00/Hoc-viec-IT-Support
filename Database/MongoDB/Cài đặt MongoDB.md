@@ -159,12 +159,16 @@ yum remove mongodb-org*
 Bước 4: Xóa các thư mục dữ liệu, (các) cơ sở dữ liệu MongoDB và các tệp nhật ký
 
 ```
-sudo rm -r /var/log/mongodb /var/lib/mongodb
+rm -rf /var/log/mongodb /var/lib/mongodb
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190952385-17bcdd55-f446-4bbb-b4db-f10e2faa78b7.png)
 
 Bước 4: Kiểm tra xem MongoDB đã được gỡ cài đặt thành công hay không
 
 ```
-service mongod status
+mongo
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190952412-49f1a959-3ba0-49ba-b84e-bbce5cdfd79b.png)
 
