@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/111716161/190943942-08496340-144a-4ed6-9c67-37391a1f7f05.png" width=500/>
+  <img src="https://user-images.githubusercontent.com/111716161/190943942-08496340-144a-4ed6-9c67-37391a1f7f05.png" width=700/>
 </p>
 
 ## 1. Định nghĩa
@@ -76,7 +76,7 @@ Một trong số rất ít điểm chung của chúng là chúng đều là mã 
 
 **MongoDB**, một cơ sở dữ liệu tài liệu, là giải pháp phù hợp nhất cho các môi trường có dung lượng lớn, vì nó không giới hạn số lượng và loại dữ liệu mà người ta muốn lưu trữ. Nó đặc biệt có lợi cho các dịch vụ dựa trên đám mây vì khả năng mở rộng theo chiều ngang của MongoDB hoàn toàn phù hợp với tính linh hoạt của đám mây. Thêm vào đó, nó làm giảm khối lượng công việc, giảm quy mô trong một doanh nghiệp hoặc dự án, đồng thời cung cấp tính khả dụng cao và phục hồi dữ liệu nhanh chóng.
 
-Mặc dù có nhiều lợi thế mà hệ thống này có thể có, nhưng MySQL vượt qua MongoDB ở một số khía cạnh, chẳng hạn như độ tin cậy và tính nhất quán của dữ liệu. Hơn nữa, nếu bảo mật cũng là một ưu tiên, thì MySQL thực sự là một trong những DBMS an toàn nhất.
+Mặc dù có nhiều lợi thế mà hệ thống này có thể có, nhưng **MySQL** vượt qua MongoDB ở một số khía cạnh, chẳng hạn như độ tin cậy và tính nhất quán của dữ liệu. Hơn nữa, nếu bảo mật cũng là một ưu tiên, thì MySQL thực sự là một trong những DBMS an toàn nhất.
 
 Hơn nữa, khi loại ứng dụng yêu cầu giao dịch nhiều hàng (ví dụ, trong hệ thống kế toán và ngân hàng), cơ sở dữ liệu quan hệ là lựa chọn thích hợp nhất. Ngoài việc cung cấp sự an toàn, MySQL cũng cho phép tỷ lệ giao dịch cao. Trên thực tế, trong khi MongoDB tập trung vào việc cho phép tỷ lệ chèn cao, thì ngược lại, MySQL hỗ trợ các giao dịch ACID và tập trung vào việc cung cấp an toàn giao dịch.
 
