@@ -140,22 +140,16 @@ db.COLLECTION_NAME.find(
 ).pretty()
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190950215-4b49bdbe-34ea-471b-a385-0c852672bbd4.png)
+
 - Sửa đổi một collection
 
 ```
 db.COLLECTION_NAME.update(SELECTIOIN_CRITERIA, UPDATED_DATA)
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190950491-c666d674-dd20-4d47-a37f-3a5f378b72da.png)
+
 Có thể update nhiều documents bằng cach truyền một param 'multi' cho nó true.
 
-```
-db.mycol.update({'title':'MongoDB Overview'},
-   {$set:{'title':'New MongoDB Tutorial'}},{multi:true})
-```
-
-- Lưu collection
-
-```
-db.COLLECTION_NAME.save({_id:ObjectId(),NEW_DATA})
-```
 
