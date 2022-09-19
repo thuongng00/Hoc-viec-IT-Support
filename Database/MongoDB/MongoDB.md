@@ -4,6 +4,8 @@
 
 Ngoài ra, MongoDB là một cơ sở dữ liệu đa nền tảng, hoạt động trên các khái niệm Collection và Document, nó cung cấp hiệu suất cao, tính khả dụng cao và khả năng mở rộng dễ dàng.
 
+![image](https://user-images.githubusercontent.com/111716161/190937097-c8202fa0-5feb-4f68-88f3-0d9080535c77.png)
+
 MongoDB lần đầu ra đời bởi MongoDB Inc., tại thời điểm đó là thế hệ 10, vào tháng 10 năm 2007. Nó là một phần của sản phẩm PaaS (Platform as a Service) tương tự như Windows Azure và Google App Engine. Sau đó nó đã được chuyển thành nguồn mở từ năm 2009. 
 
 MongoDB đã trở thành một trong những NoSQL database nổi trội nhất bấy giờ, được dùng làm backend cho rất nhiều website như eBay, SourceForge và The New York Times. 
@@ -14,6 +16,8 @@ Các feature của MongoDB gồm cso:
 - Replication: có nghĩa là "nhân bản", là có một phiên bản giống hệt phiên bản đang tồn tại, đang sử dụng. Với cơ sở dữ liệu, nhu cầu lưu trữ lớn, đòi hỏi cơ sở dữ liệu toàn vẹn, không bị mất mát trước những sự cố ngoài dự đoán là rất cao. Vì vậy người ta nghĩ ra khái niệm "nhân bản", tạo một phiên bản cơ sở dữ liệu giống hệt cơ sở dữ liệu đang tồn tại, và lưu trữ ở một nơi khác, đề phòng có sự cố.
 - Aggregation: Các Aggregation operation xử lý các bản ghi dữ liệu và trả về kết quả đã được tính toán. Các phép toán tập hợp nhóm các giá trị từ nhiều document lại với nhau, và có thể thực hiện nhiều phép toán đa dạng trên dữ liệu đã được nhóm đó để trả về một kết quả duy nhất. Trong SQL, count và GROUP BY là tương đương với Aggregation trong MongoDB.
 - Lưu trữ file: MongoDB được dùng như một hệ thống file tận dụng những function trên và hoạt động như một cách phân phối qua sharding.
+
+![image](https://user-images.githubusercontent.com/111716161/190937073-cb966be1-1e63-41e2-b3cd-05c2aa0eab7f.png)
 
 # Khi nào sử dụng MongoDB?
 ### Quản lý và truyền tải content
