@@ -61,3 +61,22 @@ Khi bạn thao tác lệnh SQL trên bất kì CSDL quan hệ nào, hệ thống
 
 Có rất nhiều thành phần trong suốt quá trình này phải kể đến như: Classic Query Engine, Query Dispatcher, SQL Query Engine, Optimization Engines.
 
+## Ưu, nhược điểm
+
+### Ưu điểm
+
+- Xử lý truy vấn nhanh hơn: Một lượng lớn dữ liệu được truy xuất một cách nhanh chóng và hiệu quả. Các thao tác như chèn, xóa, thao tác dữ liệu cũng được thực hiện gần như không tốn thời gian. 
+- Không có kỹ năng mã hóa: Để truy xuất dữ liệu, không cần số lượng lớn dòng mã. Tất cả các từ khóa cơ bản như SELECT, INSERT INTO, UPDATE,…. đều được sử dụng và các quy tắc cú pháp trong SQL cũng không phức tạp, điều này làm cho nó trở thành một ngôn ngữ thân thiện với người dùng. 
+- Ngôn ngữ chuẩn hóa: Do lịch sự thành lập lâu đời trong nhiều năm và có hệ thống tài liệu hướng dẫn đầy đủ, SQL cung cấp một nền tảng thống nhất trên toàn thế giới cho tất cả người dùng. 
+- Portable: Được sử dụng trong PC, máy chủ, máy tính xách tay độc lập có bất kỳ hệ điều hành nào như Windows, Linux, Mac,…. Nó cũng có thể được nhúng với các ứng dụng khác.
+- Ngôn ngữ tương tác: Dễ học và dễ hiểu, có thể nhận được câu trả lời cho các truy vấn phức tạp trong vài giây.
+
+### Nhược điểm
+
+- Giao diện phức tạp: SQL có một giao diện phức tạp, khiến một số người dùng cảm thấy khó khăn trong khi xử lý cơ sở dữ liệu. 
+- Chi phí: Một số phiên bản đắt tiền, khiến các lập trình viên không thể truy cập nó. 
+- Chỉ được kiểm soát một phần: Do các quy tắc nghiệp vụ ẩn, cơ sở dữ liệu không được kiểm soát hoàn toàn. 
+
+# Các lệnh SQL
+
+![image](https://user-images.githubusercontent.com/111716161/190940560-4a5277d3-4fa4-4932-bf1b-bd0f03e5ef75.png)
