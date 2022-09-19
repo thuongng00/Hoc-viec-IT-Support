@@ -103,6 +103,6 @@ Tải lại bảng đặc quyền ngay bây giờ
 
 ![image](https://user-images.githubusercontent.com/111716161/190971849-289288db-8bb8-4439-9916-89da753c023f.png)
 
+![image](https://user-images.githubusercontent.com/111716161/190972187-f43282ce-ab50-46eb-8896-107c78270675.png)
 
-![image](https://user-images.githubusercontent.com/111716161/190971912-5de93760-3cab-4c59-b8b4-a4b43de92800.png)
 
