@@ -73,5 +73,36 @@ systemctl status mariadb
 
 ![image](https://user-images.githubusercontent.com/111716161/190969675-4972eef8-8e06-46a1-90fc-b3eba1ee7e71.png)
 
+MariaDB active và chạy thành công, như vậy ta đã cài đặt và khởi động được MariaDB trên CentOS 7.
 
+# Cấu hình MariaDB
+
+## 1. Đặt mật khẩu root
+
+- Chạy lệnh dưới đây:
+
+```
+mariadb-secure-installation
+```
+
+- Khi được nhắc nhập mật khẩu, ta có thể nhấn Enter để trống hoặc cập nhật mật khẩu mới.
+
+![image](https://user-images.githubusercontent.com/111716161/190971327-a2fcc1b5-0203-4e0c-b712-6580835b81df.png)
+
+Làm các bước để thiết lập mật khẩu. 
+
+![image](https://user-images.githubusercontent.com/111716161/190971573-7f7a31fd-9f1d-4fa0-9f67-20005a5fa75a.png)
+
+Cuối cùng, tập lệnh sẽ yêu cầu định cấu hình một số biện pháp bảo mật, bao gồm:
+```
+Xóa người dùng ẩn danh?
+Không cho phép đăng nhập từ xa?
+Xóa cơ sở dữ liệu thử nghiệm và truy cập vào nó?
+Tải lại bảng đặc quyền ngay bây giờ
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190971849-289288db-8bb8-4439-9916-89da753c023f.png)
+
+
+![image](https://user-images.githubusercontent.com/111716161/190971912-5de93760-3cab-4c59-b8b4-a4b43de92800.png)
 
