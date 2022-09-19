@@ -160,7 +160,7 @@ db.COLLECTION_NAME.save({_id:ObjectId(),NEW_DATA})
 
 - Projection
 
-Trong mongodb, projection có nghĩa là bạn chỉ cần chọn những dữ liệu cần hthieets thay vì select hết mọi dữ liệu của documents. Nó khác find trong find Collection ở chỗ là find thì tìm kiếm dữ liệu document trong collection. Còn khía niệm này sẽ tìm kiếm kết quả fields trong documents. ví dụ bạn cần hiển thị 3 fields kết quả trong 5 fields của một documents.
+Trong MongoDB, projection có nghĩa là bạn chỉ cần chọn những dữ liệu cần thiết thay vì select hết mọi dữ liệu của documents. Nó khác find trong find Collection ở chỗ là find thì tìm kiếm dữ liệu document trong collection. Còn khía niệm này sẽ tìm kiếm kết quả fields trong documents. 
 
 ```
 db.COLLECTION_NAME.find({},{KEY:1})
