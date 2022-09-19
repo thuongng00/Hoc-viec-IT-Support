@@ -28,38 +28,71 @@ Email Server được đánh giá cao hơn các máy chủ khác bởi những l
 
 ![image](https://user-images.githubusercontent.com/111716161/190990648-3f2e0e09-bc07-4519-a834-1e4fbdffd2cb.png)
 
-1. Outgoing Mail Server
+### 1. Outgoing Mail Server
 
 Outgoing Mail Server hay Mail Server gửi đi sử dụng giao thức SMTP (Simple Mail Transfer Protocol). Đây là giao thức dịch chuyển mail đơn giản được dùng để liên lạc với server từ xa. Đồng thời cho phép gửi nhiều thư cùng một lúc tới các server khác nhau.
 
-2. Incoming Mail Server 
+### 2. Incoming Mail Server 
+
 Giao thức này hay còn được biết đến dưới 2 hình thức:
 
 - POP3 (Post Office Protocol phiên bản 3): chuyển email tới lưu ở máy tính chứa Mail Client, thường là nội bộ máy tính của người dùng thông qua một ứng dụng email như Outlook, Mac Mail, Windows Mail…
 - IMAP (Internet Message Access Protocol) là phương thức phức tạp hơn cho phép nhiều client cùng lúc kết nối tới một Mailbox. Email từ Mailbox sẽ được sao chép tới máy client và bản gốc của Email vẫn sẽ được lưu trên Mail Server.
 
-3. TLS Mail Server
+### 3. TLS Mail Server
+
 TLS là bảo mật tầng truyền tải (Transport Layer Security). TLS hoạt động cùng với tầng ổ bảo mật SHL (Secure Sockets Layer). Mục đích chính cung cấp phương thức vận chuyển mã hoá cho đăng nhập được chứng thực của SASL.
 
-4. SASL Mail Server 
+### 4. SASL Mail Server 
+
 SASL là lớp xác thực và bảo mật đơn giản (Simple Authentication and Security Layer). Để xác thực người dùng. SASL thực hiện xác thực, sau đó TLS cung cấp vận chuyển mã hoá dữ liệu xác thực.
 
-5. Webmail
+### 5. Webmail
+
 Webmail là email trên nền website. Một số Webmail mà các bạn có thường thấy như Hotmail, gmail, yahoo mail. Webmail cho phép người dùng truy cập email bất cứ lúc nào.
 
-6. SMTP-IN Queue 
+### 6. SMTP-IN Queue 
+
 Trước khi phân tán thư đến các Local queue hoặc Remote Queue. Giao thức SMTP sẽ làm một thao tác sao lưu toàn bộ thư điện tử gửi đi từ email server của doanh nghiệp ở SMTP-IN Queue. Nói cách khác, SMTP-IN Queue chính là kho lưu trữ thông tin thư từ trước khi được gửi đi.
 
-7. Local Queue
+### 7. Local Queue
+
 Sau khi tiếp nhận thông tin thư từ, hệ thống sẽ tự động điều phối phân loại và xếp thư từ theo thứ tự ngay hàng thẳng lối trước khi chuyến vào hộp thư của người nhận. Việc xếp hàng các bức thư chính là Local Queue.
 
 Để tăng cường khả năng bảo mật và giữ an toàn cho hệ thống email server. Trước khi thư được gửi đến người dùng, local queue và remote queue sẽ tiến hành quét virut. Sau đó kiểm tra spam để chắc chắn về chất lượng thư gửi đi. Tránh trường hợp mail server bị các Blacklist liệt vào danh sách IP spam.
 
-8. Local Mailboxes
+### 8. Local Mailboxes
+
 Local Mailboxes là hộp thư của các Account có đăng kí tài khoản mail server của công ty.
 
-9. Email Authentication
+### 9. Email Authentication
+
 Email Authentication là tính năng xác nhận danh tính của các user khi truy cập vào hộp thư email. Tính năng này giúp bạn bảo mật thông tin thư từ của chính mình. Nói cách khác Alternate Email là một dạng email dự phòng. Khi quên mật khẩu của mail server, bạn có thể sử dụng email này để giúp bạn lấy lại mật khẩu một cách nhanh chóng.
 
-10. Mail Exchanger Record (MX)
+### 10. Mail Exchanger Record (MX)
+
 MX record có nhiệm vụ là chỉ đường cho email đi đến mail server của bạn. MX Record thường đi kèm theo một A record sẽ trỏ về địa chỉ IP của mail server. Một thông số pref có giá trị số để chỉ ra mức độ ưu tiên của các mail server. Giá trị pref càng nhỏ thì mức độ ưu tiên càng cao.
+
+# Các dịch vụ mail server hiện nay
+
+### 1. Mail Server độc lập
+
+Hệ thống Mail Server độc lập được thiết kế cho các tổ chức riêng biệt nhằm mục đích sử lý khối lượng lớn công việc, xử lý linh hoạt hơn đối với dịch vụ thư và dữ liệu.
+
+Đối với một số doanh nghiệp lớn muốn dữ liệu của mình chỉ bản thân mình quản lý nên sử dụng Mail Server độc lập. Chúng ta chỉ đơn giản thuê dịch vụ đến cấu hình cài đặt, vận hành và duy trì hệ thống.
+
+Các mail server độc lập này có thể đồng bộ hóa Outlook quản trị từ xa và quản trị Web kết nối với cơ sở dự liệu, cung cấp cho bạn sức mạnh và kiểm soát cần thiết cho các hoạt động quy mô lớn.
+
+### 2. Mail server Outlook
+
+Mail Server Outlook là dịch vụ email miễn phí được phát triển và cung cấp bởi Microsoft. Mặc dù thường được sử dụng chủ yếu như là một ứng dụng e-mail, Outlook cũng tích hợp các tính năng khác như lịch, quản lý công việc, quản lý liên lạc, ghi chú….
+
+Ngoài ra Outlook còn có một số tính năng nâng cao cần cho nhiều người dùng trong một tổ chức. Chẳng hạn như chia sẻ các hộp thư và lịch biểu, trao đổi thư mục công cộng, danh sách SharePoint và lịch trình cuộc họp.
+
+Mail Outlook được phát triển trên nền điện toán đám mây an toàn và bảo mật tuyệt đối.
+
+### 3. Mail Cloud Google
+
+Mail Cloud Google có tên là Google Workspace là một dịch vụ mail trả phí được Goolge ra mắt 2016. G Suite được các doanh nghiệp sử dụng rộng rãi. Với các công cụ trực tuyến dành cho doanh nghiệp bao gồm Gmail, Drive, Documents và Meet.
+
+Google Workspace mang tham vọng mang đến cho người dùng một không gian làm việc chỉ trong một ứng dụng.
