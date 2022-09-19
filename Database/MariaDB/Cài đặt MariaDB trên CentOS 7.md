@@ -105,4 +105,25 @@ Tải lại bảng đặc quyền ngay bây giờ
 
 ![image](https://user-images.githubusercontent.com/111716161/190972187-f43282ce-ab50-46eb-8896-107c78270675.png)
 
+## 2. Kiểm tra phiên bản MariaDB hiện hành
+
+```
+mariadb -u root -p
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190972586-9083f972-2546-4fe2-9fcf-42c0e292827c.png)
+
+## 3. Đặt lại mật khẩu MariaDB
+
+- Dừng MariaDB
+
+```
+systemctl stop mariadb
+```
+
+- Cài đặt tùy chọn môi trường 
+
+```
+sudo systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+```
 
