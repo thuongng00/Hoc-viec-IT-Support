@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/111716161/190548475-104b22c9-e767-477b-8366-d811a2dc5bf2.png" width="600"/>
+  <img src="https://user-images.githubusercontent.com/111716161/190937247-23f326fd-0703-42c8-a0db-aa857c66bc95.png" width="600"/>
 </p>
 
 ## 1. Tạo MongoDB repository
