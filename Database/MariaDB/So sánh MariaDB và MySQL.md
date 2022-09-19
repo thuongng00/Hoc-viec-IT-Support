@@ -1,4 +1,4 @@
-MariaDB và MySQL là hai trong số những hệ quản trị cơ sở dữ liệu đang được sử dụng rộng rãi nhất trên thế giới hiện nay.
+**MariaDB** và **MySQL** là hai trong số những hệ quản trị cơ sở dữ liệu đang được sử dụng rộng rãi nhất trên thế giới hiện nay.
 
 MySQL là một trong những cơ sở dữ liệu được sử dụng rộng rãi nhất trên thế giới được phát triển dựa trên C/C++. MySQL sau đó được Sun Microsystems mua lại vào năm 2008. Tiếp đó vào sau năm 2010 Sun Microsystems đã được Oracle mua lại và kể từ đó MySQL được suy trì quản lý bởi đội ngũ Oracle.
 
