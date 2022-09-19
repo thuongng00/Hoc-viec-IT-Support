@@ -14,7 +14,7 @@ Ngỗ ngữ lập trình hỗ trợ của hai hệ quản trị cơ sở dữ li
 
 Công cụ hỗ trợ lưu trữ của 2 ứng dụng khá giống nhau chỉ có điều là MariaDB có thể hỗ trợ nhiều phần mềm lưu trữ hơn như CSV, INNODB, MYISAM, ARCHIVE, MERGE, MyRocks, TokuDB, Aria, Sequence, Connect vì MariaDB là sự tích hợp ưu điểm của cả 2 thư viện SQL và NoSQL nên tính năng lưu trữ được mở rộng hỗ trợ người dùng nhiều hơn.
 
-MariaDB là một hệ quản trị cơ sở dữ liệu được cộng đồng người sử dụng đánh giá cao nhất thế giới hiện nay. Hy vọng thông qua bài viết mà Dizibrand đã cung cấp cho người sử dụng những thông tin cần thiết. Từ đó hỗ trợ một phần nào giúp người sử dụng sẽ có được sự lựa chọn phù hợp nhất cho hệ thống máy tính của mình.
+MariaDB là một hệ quản trị cơ sở dữ liệu được cộng đồng người sử dụng đánh giá cao nhất thế giới hiện nay.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/111716161/190974344-f247dc0a-dcfe-497f-8466-2b2fe60821a1.png" width=600/>
