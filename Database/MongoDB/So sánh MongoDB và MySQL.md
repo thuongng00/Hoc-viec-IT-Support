@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/111716161/190942151-27119286-e9bc-44be-b864-81b0f0b286e6.png" width=500/>
+  <img src="https://user-images.githubusercontent.com/111716161/190943942-08496340-144a-4ed6-9c67-37391a1f7f05.png" width=500/>
 </p>
 
 ## 1. Định nghĩa
@@ -67,3 +67,19 @@ So sánh hiệu năng MongoDB và MySQL là khó khăn, vì cả hai hệ thốn
 |---|---|---|
 | Ưu điểm | Xác thực tài liệu, Công cụ lưu trữ tích hợp, Rút ngắn thời gian giữa thất bại chính và phục hồi | Hỗ trợ giao dịch Atomic, Hỗ trợ JOIN, Giải pháp Mature,Hệ thống bảo mật đặc quyền và mật khẩu |
 | Nhược điểm | Không phải là lựa chọn tốt nhất cho các ứng dụng có giao dịch phức tạp, Không phải là một thay thế snap-in cho các giải pháp cũ, Giải pháp trẻ | Mở rộng quy mô, Mối quan tâm ổn định, Phát triển dựa vào cộng đồng |
+
+## 6. MongoDB Vs. MySQL: Sử dụng khi nào?
+
+Thật khó để nói cơ sở dữ liệu nào tốt hơn khi tất cả phụ thuộc vào ngữ cảnh mà chúng đang được khám phá. Sự thật mà nói, cả MySQL và MongoDB đều là những hệ thống quản lý hữu ích và hữu ích hoạt động hoàn toàn khác nhau. Do đó, ngay cả khi một trong những cơ sở dữ liệu là lựa chọn phù hợp nhất cho một doanh nghiệp hoặc dự án cụ thể, nó có thể không phải là giải pháp tốt nhất cho một mục đích khác. Một số công ty dựa vào cả hai hệ thống theo các nhiệm vụ riêng biệt.
+
+Một trong số rất ít điểm chung của chúng là chúng đều là mã nguồn mở và dễ truy cập. Hơn nữa, cả hai hệ thống đều cung cấp các phiên bản thương mại với các tính năng bổ sung. Ngoài những điểm tương đồng này, cốt lõi của hiệu suất của chúng là bản chất quan hệ và không quan hệ.
+
+**MongoDB**, một cơ sở dữ liệu tài liệu, là giải pháp phù hợp nhất cho các môi trường có dung lượng lớn, vì nó không giới hạn số lượng và loại dữ liệu mà người ta muốn lưu trữ. Nó đặc biệt có lợi cho các dịch vụ dựa trên đám mây vì khả năng mở rộng theo chiều ngang của MongoDB hoàn toàn phù hợp với tính linh hoạt của đám mây. Thêm vào đó, nó làm giảm khối lượng công việc, giảm quy mô trong một doanh nghiệp hoặc dự án, đồng thời cung cấp tính khả dụng cao và phục hồi dữ liệu nhanh chóng.
+
+Mặc dù có nhiều lợi thế mà hệ thống này có thể có, nhưng MySQL vượt qua MongoDB ở một số khía cạnh, chẳng hạn như độ tin cậy và tính nhất quán của dữ liệu. Hơn nữa, nếu bảo mật cũng là một ưu tiên, thì MySQL thực sự là một trong những DBMS an toàn nhất.
+
+Hơn nữa, khi loại ứng dụng yêu cầu giao dịch nhiều hàng (ví dụ, trong hệ thống kế toán và ngân hàng), cơ sở dữ liệu quan hệ là lựa chọn thích hợp nhất. Ngoài việc cung cấp sự an toàn, MySQL cũng cho phép tỷ lệ giao dịch cao. Trên thực tế, trong khi MongoDB tập trung vào việc cho phép tỷ lệ chèn cao, thì ngược lại, MySQL hỗ trợ các giao dịch ACID và tập trung vào việc cung cấp an toàn giao dịch.
+
+Nhìn chung, MySQL rất được khuyến khích cho các doanh nghiệp hoặc dự án có lược đồ dữ liệu cố định và không có ý định mở rộng quy mô đa dạng dữ liệu, do đó yêu cầu bảo trì dễ dàng và thấp trong khi đảm bảo tính toàn vẹn và độ tin cậy của dữ liệu.
+
+Mặt khác, MongoDB là sự lựa chọn phù hợp nhất cho các doanh nghiệp hoặc dự án đang phát triển nhưng có lược đồ dữ liệu không ổn định . Bản chất dữ liệu phi quan hệ của hệ thống này cho phép các tài liệu được sử dụng và lưu trữ tự do mà không cần cấu trúc, giúp dễ dàng cập nhật và truy xuất. MongoDB thường được sử dụng trong các dự án yêu cầu quản lý nội dung, xử lý IoT (Internet-of-Things), thực hiện phân tích thời gian thực, v.v.
