@@ -125,13 +125,13 @@ db.COLLECTION_NAME.find()
 - Cách sử dụng find AND trong MongoDB
 
 ```
-db.mycol.find({key1:value1, key2:value2}).pretty()
+db.COLLECTION_NAME.find({key1:value1, key2:value2}).pretty()
 ```
 
 - Cách sử dụng find OR trong MongoDB
 
 ```
-db.mycol.find(
+db.COLLECTION_NAME.find(
    {
       $or: [
          {key1: value1}, {key2:value2}
