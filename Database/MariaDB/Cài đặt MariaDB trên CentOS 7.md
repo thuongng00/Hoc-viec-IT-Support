@@ -39,9 +39,39 @@ yum update
 
 ## 2. Cài đặt MariaDB
 
-Sau khi tạo file repo các bạn tiến hành cài đặt MariaDB bằng lệnh sau
+- Sau khi tạo file repo các bạn tiến hành cài đặt MariaDB bằng lệnh sau
 
 ```
-yum install MariaDB-server MariaDB-client -y
+yum install MariaDB-server MariaDB-client
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/190968959-225e5c28-6ee3-46ab-9f05-52bea45d2bcc.png)
+
+- Kiểm tra các gói cài đặt MariaDB
+
+```
+yum list installed | grep mariadb
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190969835-626c9d46-e758-48f9-bbed-11b313ea67ef.png)
+
+## 3. Khởi động MariaDB
+
+- MariaDB chưa được khởi động sau khi cài đặt nên cần gõ lệnh sau:
+
+```
+systemctl start mariadb
+systemctl enable mariadb
+```
+![image](https://user-images.githubusercontent.com/111716161/190969562-2ae26324-a79d-4936-bf95-d98e96a61a81.png)
+
+- Kiểm tra tình trạng MariaDB sau khi khởi động:
+
+```
+systemctl status mariadb
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190969675-4972eef8-8e06-46a1-90fc-b3eba1ee7e71.png)
+
+
 
