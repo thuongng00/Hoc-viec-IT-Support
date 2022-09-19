@@ -96,3 +96,17 @@ Mail Outlook được phát triển trên nền điện toán đám mây an toà
 Mail Cloud Google có tên là Google Workspace là một dịch vụ mail trả phí được Goolge ra mắt 2016. G Suite được các doanh nghiệp sử dụng rộng rãi. Với các công cụ trực tuyến dành cho doanh nghiệp bao gồm Gmail, Drive, Documents và Meet.
 
 Google Workspace mang tham vọng mang đến cho người dùng một không gian làm việc chỉ trong một ứng dụng.
+
+# Lý do nên sử dụng Email Server
+
+Bởi tình trạng spam mail, email gửi kèm những phần mềm độc hại đã làm ảnh hưởng đến tình hình an ninh mạng tại Việt Nam. Vì thế, việc bảo mật và an toàn luôn là vấn đề nhiều doanh nghiệp quan tâm. Và điều này đã khiến Mail Server được đánh giá cao hơn cả so với những máy chủ mail khác.
+
+- Email tên miền riêng của riêng công ty thể hiện sự chuyên nghiệp trong hoạt động.
+- Tốc độ, bảo mật cao, kèm theo nhiều tiện ích.
+- Kiểm tra mail mọi nơi: tại văn phòng (thông qua phần mềm duyệt mail) và tại bất kỳ nơi đâu (khi đi công tác), trên tất cả các loại trình duyệt mail (Outlook…)
+- Có thể tùy biến các thông số và chức năng cho từng User.
+- Ngăn chặn spam và virus cực kỳ hiệu quả.
+- Có không gian lưu trữ riêng biệt, bất khả xâm phạm.
+- Tính bảo mật cao nhờ trang bị giao thức SSL.
+- Sử dụng IP riêng nên sẽ chống được việc vô cớ bị vào black list.
+- Hỗ trợ tính năng Fowarder Email để cài đặt Email Offline.
