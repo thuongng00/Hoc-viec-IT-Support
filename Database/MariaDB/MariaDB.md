@@ -4,6 +4,10 @@
 
 MariaDB có sẵn để cài đặt trên các hệ điều hành như Linux CentOS, Ubuntu và Window và được phát triển nhằm thay thế cho công nghệ cơ sở dữ liệu MySQL bởi nó có độ tương thích và cho hiệu suất cao hơn so với MySQL.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/190963811-67a07fb4-b917-4068-bf3a-9b926377b422.png" width=600/>
+</p>
+
 MariaDB dựa trên SQL và hỗ trợ xử lý dữ liệu kiểu ACID. Trong số các tính năng khác, cơ sở dữ liệu cũng hỗ trợ các API JSON, sao chép dữ liệu song song và nhiều công cụ lưu trữ bao gồm InnoDB, MyRocks, Spider, Aria, TokuDB và MariaDB ColumnStore.
 
 Phần lớn công việc phát triển trên Open Source Database tập trung vào việc đạt được feature parity giữa MariaDB và MySQL. MariaDB Corp đã tuyên bố rằng cơ sở dữ liệu sẽ tương thích nhị phân với MySQL có nghĩa là hầu hết người dùng có thể chuyển đổi giữa hai công nghệ đơn giản bằng cách gỡ cài đặt MySQL và cài đặt MariaDB vào vị trí của nó.
