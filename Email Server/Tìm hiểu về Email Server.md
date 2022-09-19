@@ -1,4 +1,4 @@
-# Emial Server
+# Email Server (Mail Server)
 
 Email Server hay Mail Server là một  máy chủ thư điện tử dùng để gửi và nhận thư điện tử (Email). Là giải pháp Email chuyên nghiệp để giao tiếp thư tín nội bộ, trao đổi thư tín với khách hàng và đối tác bên ngoài cần yêu cầu sự ổn định, liên tục với tốc độ nhanh đồng thời đảm bảo an toàn dữ liệu, khả năng khôi phục dữ liệu cao…
 
