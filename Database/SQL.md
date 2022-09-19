@@ -2,6 +2,8 @@
 
 SQL là viết tắt của Structured Query Language là ngôn ngữ truy vấn dữ liệu mang tính cấu trúc. SQL là loại ngôn ngữ máy tính phổ biến để tạo, sửa và lấy dữ liệu từ một hệ quản trị cơ sở dữ liệu quan hệ như: MySQL, Oracle, Database, MySQL Server.
 
+![image](https://user-images.githubusercontent.com/111716161/190941313-dff6b7ef-883e-4f35-8c17-e6c33f2a88a0.png)
+
 Bất kỳ công ty lớn nào cũng đều sử dụng xây dựng cho mình một hệ thống để lữu trữ dữ liệu. Mọi thứ trong cơ sở dữ liệu này sẽ diễn ra thành nhiều bảng và có mối quan hệ với nhau. Để truy vấn và lấy dữ liệu từ bảng này nhằm tổng hợp thành thông tin khi người dùng sử dụng SQL qua câu query.
 
 SQL đã được viện tiêu chuẩn Quốc gia Mỹ (ANSI) và viện tiêu chuẩn quốc tế (ISO) chấp nhận như một ngôn ngữ đại diện chuẩn CSDL quan hệ, nhưng cho đến nay các tiêu chuẩn này vẫn chưa hoàn thiện. Nên các SQL nhúng trong các ngôn ngữ lập trình khác nhau đã được bổ sung các SQL chuẩn , để phù hợp với các ứng dụng của mình. Do vậy mới sự khác nhau rõ rệt giữa các SQL.
