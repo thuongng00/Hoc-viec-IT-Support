@@ -42,6 +42,7 @@ Giống như MySQL, MongoDB cung cấp nhiều tính năng và chức năng vư�
 Cả MySQL và MongoDB có một ngôn ngữ truy vấn phong phú. Một danh sách đầy đủ các báo cáo có thể được tìm thấy trong tài liệu MongoDB.
 
 | MySql	| MongoDB | 
+|---|---|
 | INSERT INTO users (user_id, age, status)VALUES ('bcd001', 45, 'A') | db.users.insert({ user_id: 'bcd001', age: 45, status: 'A'}) | 
 | SELECT * FROM users	| db.users.find() | 
 | UPDATE users SET status = 'C' WHERE age > 25	| db.users.update( { age: { $gt: 25 } }, { $set: { status: 'C' } }, { multi: true }) | 
