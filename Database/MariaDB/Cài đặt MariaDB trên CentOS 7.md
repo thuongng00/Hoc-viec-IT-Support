@@ -1,6 +1,6 @@
 ## 1. Tạo file repo
 
-Theo mặc định repo của CentOS chỉ có sẵn MariaDB 5. Để cài đặt MariaDB 10 các bạn cần tạo repo riêng.
+- Theo mặc định repo của CentOS chỉ có sẵn MariaDB 5. Để cài đặt MariaDB 10 các bạn cần tạo repo riêng.
 
 ```
 nano /etc/yum.repos.d/mariadb.repo
@@ -20,14 +20,14 @@ gpgcheck=1
 
 ***Lưu ý:*** *Tại thời điểm này phiên bản MariaDB 10 mới nhất là 10.10. Trước khi tạo repo các bạn có thể truy cập http://yum.mariadb.org để kiểm tra phiên bản.*
 
-Xóa cache của yum:
+- Xóa cache của yum:
 
 ```
 yum clean all
 ```
 ![image](https://user-images.githubusercontent.com/111716161/190965601-17bb6d5e-c4eb-46f8-bc1f-7971e67b3482.png)
 
-Cập nhật 
+- Cập nhật các gói mới nhất
 
 ```
 yum update
