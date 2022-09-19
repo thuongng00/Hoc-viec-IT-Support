@@ -26,6 +26,7 @@ Nhiều khái niệm trong MySQL có các khái niệm tương tự gần nhau t
 Giống như MySQL, MongoDB cung cấp nhiều tính năng và chức năng vượt xa những tính năng được cung cấp bởi các kho dữ liệu NoSQL đơn giản. MongoDB có một ngôn ngữ truy vấn phong phú, các chỉ mục phụ có chức năng cao (bao gồm tìm kiếm văn bản và không gian địa lý), một khung kết hợp mạnh mẽ để phân tích dữ liệu, tìm kiếm nhiều mặt, xử lý biểu đồ và hơn thế nữa. Với MongoDB bạn cũng có thể sử dụng các tính năng này trên các loại dữ liệu đa dạng hơn là cơ sở dữ liệu quan hệ và bạn có thể thực hiện nó theo quy mô.
 
 | | MongoDB | MySQL |
+|---|---|---|
 | Open source | có | có |
 | ACID transaction | có | có |
 | Mô hình dữ liệu linh hoạt và phong phú | có | không |
