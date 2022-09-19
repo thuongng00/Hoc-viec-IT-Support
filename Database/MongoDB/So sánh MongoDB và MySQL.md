@@ -47,3 +47,12 @@ Cả MySQL và MongoDB có một ngôn ngữ truy vấn phong phú. Một danh s
 | INSERT INTO users (user_id, age, status)VALUES ('bcd001', 45, 'A') | db.users.insert({ user_id: 'bcd001', age: 45, status: 'A'}) | 
 | SELECT * FROM users	| db.users.find() | 
 | UPDATE users SET status = 'C' WHERE age > 25	| db.users.update( { age: { $gt: 25 } }, { $set: { status: 'C' } }, { multi: true }) | 
+
+## 5. Ưu và nhược điểm
+
+So sánh hiệu năng MongoDB và MySQL là khó khăn, vì cả hai hệ thống quản lý đều cực kỳ hữu ích và sự khác biệt cốt lõi làm nền tảng cho các hoạt động cơ bản và cách tiếp cận ban đầu của chúng. Tuy nhiên, MongoDB vs MySQL là một đối số nóng đang diễn ra trong một thời gian: cơ sở dữ liệu quan hệ trưởng thành chống lại một hệ thống phi quan hệ trẻ. Cả hai đều là nguồn mở và dễ dàng có sẵn, cũng như cả hai hệ thống cung cấp các phiên bản thương mại với hàng tấn các tính năng bổ sung.
+
+| | MongoDB | MySQL | 
+|---|---|---|
+| Ưu điểm | Xác thực tài liệu,Công cụ lưu trữ tích hợp,Rút ngắn thời gian giữa thất bại chính và phục hồi | Hỗ trợ giao dịch Atomic, Hỗ trợ JOIN, Giải pháp Mature,Hệ thống bảo mật đặc quyền và mật khẩu |
+| Nhược điểm | Không phải là lựa chọn tốt nhất cho các ứng dụng có giao dịch phức tạp, Không phải là một thay thế snap-in cho các giải pháp cũ, Giải pháp trẻ | Mở rộng quy mô, Mối quan tâm ổn định, Phát triển dựa vào cộng đồng |
