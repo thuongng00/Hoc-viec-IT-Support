@@ -115,3 +115,91 @@ Danh sách các lệnh DCL:
 
 - GRANT: Lệnh này cung cấp cho người dùng đặc quyền truy cập vào cơ sở dữ liệu.
 - REVOKE: Lệnh này thu hồi các đặc quyền truy cập của người dùng được cấp bằng cách sử dụng lệnh GRANT.
+
+### Một số lệnh cơ bản khác của SQL
+
+- INSERT INTO –  chèn dữ liệu mới vào cơ sở dữ liệu.
+- CREATE DATABASE – tạo cơ sở dữ liệu mới.
+- ALTER DATABASE – sửa đổi cơ sở dữ liệu.
+- CREATE TABLE – tạo một bảng mới.
+- ALTER TABLE – sửa đổi bảng.
+- DROP TABLE – xóa bảng.
+- CREATE INDEX – tạo một chỉ mục (khóa tìm kiếm).
+- DROP INDEX – xóa một chỉ mục.
+
+# Một số mệnh đề truy vấn cơ bản trong SQL
+
+### Mệnh đề WHERE
+
+Mệnh đề này trong SQL để xác định một điều kiện trong khi lấy dữ liệu từ bảng đơn hoặc có thể là nhiều bảng kết hợp lại.
+
+Nếu điều kiện đã cho được thỏa mãn xong,từ bảng đó  nó sẽ trả về các giá trị cụ thể. Bạn sẽ sử dụng mệnh đề WHERE để lọc và chỉ lấy các bản ghi thiết yếu.
+
+Mệnh đề WHERE không chỉ được sử dụng trong lệnh SELECT, ngoài ra nó còn hữu dụng trong các lệnh UPDATE, DELETE, …
+
+Cú pháp của lệnh SELECT với mệnh đề WHERE trong SQL như sau:
+```
+SELECT cot1, cot2, cotN
+FROM ten_bang
+WHERE [dieu_kien]
+```
+
+### Mệnh đề SELECT
+
+Lệnh SELECT trong SQL được dùng để lấy dữ liệu từ một bảng trong Cơ sở dữ liệu mà trả về dữ liệu ở dạng bảng dữ liệu kết quả. Những bảng này được gọi chung là các tập hợp kết quả.
+
+Cú pháp của lệnh SELECT trong SQL:
+
+```
+SELECT cot1, cot2, cotN FROM ten_bang;
+```
+
+Ở đây, cot1, cot2, … là các trường của một bảng có các giá trị mà bạn muốn lấy. Nếu bạn muốn lấy tất cả các trường có sẵn trong bảng, bạn có thể sử dụng cú pháp sau:
+
+```
+SELECT * FROM ten_bang;
+```
+
+### Mệnh đề Order By và Group By
+**Order By**
+
+ORDER BY trong SQL được sử dụng để sắp xếp dữ liệu tùy theo thứ tự tăng dần hoặc là theo thứ tự giảm dần, nằm trên cùng một hoặc nhiều cột. Một số trường hợp khác, Database đã sắp xếp kết quả truy vấn theo thứ tự tăng dần mặc định.
+
+Cú pháp cơ bản của mệnh đề ORDER BY trong SQL:
+
+```
+SELECT danh_sach_cot
+FROM ten_bang
+[WHERE dieu_kien]
+[ORDER BY cot1, cot2, .. cotN] [ASC | DESC];
+```
+
+Chúng ta còn có thể sử dụng nhiều hơn một cột trong mệnh đề ORDER BY. Chắn chắn rằng, cho dù bạn đang sắp xếp cột nào thì nó đều phải có mặt xuất hiện trong danh sách cột.
+
+**Group By**
+
+Mệnh đề GROUP BY trong SQL sử dụng kết hợp với lệnh SELECT nhằm sắp xếp dữ liệu đồng nhất vào trong các nhóm.
+
+Trong SQL, mệnh đề GROUP BY  đi sau mệnh đề WHERE trong một lệnh SELECT và ở phía trước mệnh đề ORDER BY.
+
+Mệnh đề GROUP BY phải tuân sau các điều kiện tiên quyết trong mệnh đề WHERE và buộc phải đứng trước ORDER BY nếu được sử dụng.
+
+```
+SELECT cot1, cot2
+FROM ten_bang
+WHERE [ dieu_kien ]
+GROUP BY cot1, cot2
+ORDER BY cot1, cot2
+```
+
+### Mệnh đề JOIN , INNER JOIN , LEFT JOIN VÀ RIGHT JOIN
+
+Các mệnh đề JOIN trong SQL được sử dụng với việc kết hợp các bản ghi từ hai bảng trở lên trong một Database. Một JOIN là một hình thức phương tiện để kết hợp các trường từ hai bảng bằng việc sử dụng các giá trị chung của mỗi bảng.
+
+Trong SQL, một số loại JOIN có sẵn là:
+- INNER JOIN : Đưa về các hàng khi có một so khớp (match) trong các bảng.
+- LEFT JOIN :Từ bảng bên trái đưa trả về tất cả các hàng, mặc dù gặp trường hợp không có so khớp nào trong bảng bên phải.
+- RIGHT JOIN : như LEFT JOIN , cho dù không có so khớp nào bên bảng trái
+- FULL JOIN trong SQL: Khi xuất hiện một so khớp trong các hàng sẽ trả về các hàng
+- SELF JOIN : Được sử dụng cho việc kết hợp một bảng với chính bản thân nó, khi nếu table đó là hai bảng dữ liệu, phải thay tên tạm thời cho một trong hai bảng có trong lệnh SQL.
+- CARTESIAN JOIN : Hoàn về tích Đề-các của tập hợp các bản ghi từ hai bảng kết hợp trở lên.
