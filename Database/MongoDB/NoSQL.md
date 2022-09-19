@@ -19,7 +19,7 @@ NoSQL bỏ qua tính toàn vẹn của dữ liệu và transaction để đổi 
 
 NoSQL được sử dụng ở rất nhiều công ty, tập đoàn lớn, ví dụ như Facebook sử dụng Cassnadra, do Facebook phát triển, Google phát triển và sử dụng BigTable,...
 
-
+<a name="sosanh"></a>
 # So sánh SQL và NoSQL
 
 ![image](https://user-images.githubusercontent.com/111716161/190938736-31f17f36-2a07-4595-8e13-4bf753b8be3a.png)
