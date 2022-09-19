@@ -80,3 +80,38 @@ Có rất nhiều thành phần trong suốt quá trình này phải kể đến
 # Các lệnh SQL
 
 ![image](https://user-images.githubusercontent.com/111716161/190940560-4a5277d3-4fa4-4932-bf1b-bd0f03e5ef75.png)
+
+### DDL (Ngôn ngữ Định nghĩa Dữ liệu)
+
+DDL (Data Definition Language) bao gồm các lệnh SQL có thể được sử dụng để xác định lược đồ cơ sở dữ liệu. Danh sách các lệnh DDL: 
+- CREATE: Lệnh này được sử dụng để tạo cơ sở dữ liệu hoặc các đối tượng của nó (như bảng, chỉ mục, hàm, dạng xem, thủ tục lưu trữ và trình kích hoạt).
+- DROP: Lệnh này dùng để xóa các đối tượng khỏi cơ sở dữ liệu.
+- ALTER: Sử dụng để thay đổi cấu trúc của cơ sở dữ liệu.
+- TRUNCATE: Sử dụng để xóa tất cả các bản ghi khỏi một bảng, bao gồm tất cả các khoảng trống được cấp cho các bản ghi sẽ bị xóa.
+- COMMENT: Sử dụng để thêm nhận xét vào từ điển dữ liệu.
+- RENAME: Sử dụng để đổi tên một đối tượng hiện có trong cơ sở dữ liệu.
+
+### DQL (Ngôn ngữ truy vấn dữ liệu)
+Các câu lệnh DQL (Data Query Language) được sử dụng để thực hiện các truy vấn về dữ liệu trong các đối tượng lược đồ. Mục đích của lệnh DQL là lấy một số quan hệ lược đồ dựa trên truy vấn được chuyển đến nó. 
+
+Danh sách DQL: 
+
+- SELECT : Nó được sử dụng để lấy dữ liệu từ cơ sở dữ liệu.
+
+### DML (Ngôn ngữ thao tác dữ liệu)
+DML (Data Manipulation Language) là ngôn ngữ thao tác dữ liệu. Danh sách các lệnh DML bao gồm: 
+
+- INSERT: Nó được sử dụng để chèn dữ liệu vào bảng.
+- UPDATE: Nó được sử dụng để cập nhật dữ liệu hiện có trong bảng.
+- DELETE: Nó được sử dụng để xóa các bản ghi khỏi một bảng cơ sở dữ liệu.
+- LOCK: Đồng thời điều khiển bảng.
+- CALL: Gọi một chương trình con PL/SQL hoặc JAVA.
+- EXPLAIN PLAN: Nó mô tả đường dẫn truy cập đến dữ liệu.
+
+### DCL (Ngôn ngữ điều khiển dữ liệu):
+DCL (Data Control Language) là ngôn ngữ điều khiển dữ liệu, bao gồm các lệnh như GRANT và REVOKE chủ yếu giải quyết các quyền, quyền hạn và các điều khiển khác của hệ thống cơ sở dữ liệu. 
+
+Danh sách các lệnh DCL: 
+
+- GRANT: Lệnh này cung cấp cho người dùng đặc quyền truy cập vào cơ sở dữ liệu.
+- REVOKE: Lệnh này thu hồi các đặc quyền truy cập của người dùng được cấp bằng cách sử dụng lệnh GRANT.
