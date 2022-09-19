@@ -152,4 +152,50 @@ db.COLLECTION_NAME.update(SELECTIOIN_CRITERIA, UPDATED_DATA)
 
 Có thể update nhiều documents bằng cach truyền một param 'multi' cho nó true.
 
+- Lệnh SAVE
 
+```
+db.COLLECTION_NAME.save({_id:ObjectId(),NEW_DATA})
+```
+
+- Projection
+
+Trong mongodb, projection có nghĩa là bạn chỉ cần chọn những dữ liệu cần hthieets thay vì select hết mọi dữ liệu của documents. Nó khác find trong find Collection ở chỗ là find thì tìm kiếm dữ liệu document trong collection. Còn khía niệm này sẽ tìm kiếm kết quả fields trong documents. ví dụ bạn cần hiển thị 3 fields kết quả trong 5 fields của một documents.
+
+```
+db.COLLECTION_NAME.find({},{KEY:1})
+```
+
+- Limit Records
+
+Để giới hạn số lượng records trong MongoDB, bạn sẽ dùng phương thức limit(). Limit() sẽ chấp nhận số lượng record giới hạn thông qua argument mà bạn truyền vào. Nó sẽ thể hiện số lượng documents bạn muốn hiển thị.
+
+```
+db.COLLECTION_NAME.find().limit(NUMBER)
+```
+
+- Sort Records
+
+Để sort các document trong MongoDB, bạn cần phải sử dụng sort(). sort() cho pehsp một document trong chứa các fields theo thứ tự order. có 2 loại thứ tự, 1 sẽ tương đương với ascending và -1 sẽ tương đương với descending.
+
+```
+db.COLLECTION_NAME.find().sort({KEY:1})
+```
+
+- Indexing
+
+Index hỗ trợ độ phân tích một cách hiệu quả các truy vấn. Nếu không có chỉ mục, MongoDB sẽ phải quét tất cả các documents của collection để chọn ra những document phù hợp với câu truy vấn. Quá trình quét này là không hiệu quả và yêu cầu MongoDB để xử lý một khối lượng lớn dữ liệu.
+
+Index là những cấu trúc dữ liệu đặc biệt, dùng để chứa một phần nhỏ của các tập dữ liệu một cách dễ dàng để quét. Chỉ số lưu trữ giá trị của một fields cụ thể hoặc thiết lập các fields, sắp xếp theo giá trị của các fields này.
+
+```
+db.COLLECTION_NAME.ensureIndex({KEY:1})
+```
+
+- Aggregation
+
+Aggregation xử lý các record dữ liệu va trả về kết quả đã tính toán rồi. Aggregation sẽ group giá trị từ nhiều documents khác nhau và có thể tiến hành xử lý rất nhiều nhóm dư liệu để trả về một kết quả đơn lẻ. Xử lý này tương đương với count trong SQL.
+
+```
+db.COLLECTION_NAME.aggregate(AGGREGATE_OPERATION)
+```
