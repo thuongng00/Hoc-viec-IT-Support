@@ -51,11 +51,11 @@ SQL cung cấp các tập lệnh đa dạng cho việc hỏi đáp dữ liệu:
 
 Điều kiện tiên quyết để tiện lợi cho việc sử dụng các hỏi đáp là phải nắm vững được các cấu trúc cơ sở dữ liệu của mình.
 
-### 2/Đối tượng làm việc của SQL
+### 2. Đối tượng làm việc của SQL
 
 Là các bảng (tổng quan là các quan hệ dữ liệu 2 chiều) . Các bảng này thường chứa nhiều cột (gọi là trường) và nhiều hàng (gọi là bản ghi). Cột với tên gọi và kiểu dữ liệu xác định tạo nên cấu trúc của bảng (kiểu dữ liệu của cột là dạng duy nhất). Ta có thể dùng lệnh Desc[ribe] TABLE-name để tra xem cấu trúc của bảng. Phần tùy chọn [] có thể được để trong Oracle. Khi bảng đã được hệ thống cho một mục đích nào đó ta có một cơ sở dữ liệu.
 
-### 3/Cách thức thực hiệu lệnh SQL 
+### 3. Cách thức thực hiện lệnh SQL 
 
 Khi bạn thao tác lệnh SQL trên bất kì CSDL quan hệ nào, hệ thống sẽ tự động chọn lọc quyết định cách thức tốt nhất để tiến hành lệnh đó. Và engine SQL sẽ giúp bạn hiểu rõ nhiệm vụ được thông dịch như thế nào.
 
