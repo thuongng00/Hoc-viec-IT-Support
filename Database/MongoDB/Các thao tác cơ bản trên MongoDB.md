@@ -106,6 +106,8 @@ Một document là một tập hợp các cặp key-value. Documents có schema 
 db.COLLECTION_NAME.insert(document)
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/190947776-78da775d-3fda-463a-99ff-bbd2bd405983.png)
+
 Nếu muốn insert nhiều documents trong một lệnh, bạn cần cho array vào trong lệnh insert().
 
 - Tìm kiếm Collection
@@ -113,7 +115,12 @@ Nếu muốn insert nhiều documents trong một lệnh, bạn cần cho array 
 ```
 db.COLLECTION_NAME.find()
 ```
-Để hiện thể kết quả đẹp hơn. Bạn có thể dùng thêm phương thức pretty()
+
+![image](https://user-images.githubusercontent.com/111716161/190947911-ffd6476f-7e57-48fc-bbfd-2cd0c214a77e.png)
+
+Để hiện thể kết quả đẹp hơn. Bạn có thể dùng thêm phương thức pretty().
+
+![image](https://user-images.githubusercontent.com/111716161/190948202-b3ef0573-d4d9-447e-9d47-6b842964e654.png)
 
 - Cách sử dụng find AND trong MongoDB
 
