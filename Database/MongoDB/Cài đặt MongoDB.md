@@ -4,7 +4,7 @@
 
 ## 1. Tạo MongoDB repository
 
-Để thêm kho lưu trữ MongoDB vào hệ thống, cần tạp file `mongodb-org.repo` trong thư mục /etc/yum.repos.d/:
+Để thêm kho lưu trữ MongoDB vào hệ thống, cần tập file `mongodb-org.repo` trong thư mục /etc/yum.repos.d/:
 
 ```
 nano /etc/yum.repos.d/mongodb-org.repo
