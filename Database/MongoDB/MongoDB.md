@@ -34,6 +34,11 @@ MongoDB cung cấp một platform có sẵn, phản xạ nhanh, và dễ mở r�
 Tận dụng khả năng query nhanh chóng cho phân tích real-time trên cơ sở dữ liệu người dùng cực lớn với các mô hình data phức tạp bằng các schema linh hoạt và tự động sharding cho mở rộng chiều ngang.
 
 # Ưu, nhược điểm
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111716161/190937196-e8a1cdb1-a41a-4122-9b78-91994f81110a.png" width=500/>
+</p>
+
 ### Ưu điểm
 - Dữ liệu lưu trữ phi cấu trúc, không có tính ràng buộc, toàn vẹn nên tính sẵn sàng cao, hiệu suất lớn và dễ dàng mở rộng lưu trữ. 
 - Dữ liệu được caching (ghi đệm) lên RAM, hạn chế truy cập vào ổ cứng nên tốc độ đọc và ghi cao.
