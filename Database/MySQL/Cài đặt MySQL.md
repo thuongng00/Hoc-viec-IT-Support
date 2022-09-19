@@ -216,6 +216,14 @@ yum remove mysql-server --remove-leaves
 
 ![image](https://user-images.githubusercontent.com/111716161/190600951-882682b5-4d4f-46f4-9e06-f34b0e1e5377.png)
 
+- Gỡ cài đặt mysql community common và các phụ thuộc của nó
+
+```
+yum remove mysql-community-common
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190968455-60fd5c1f-650c-4bde-adbc-38e2fc215a7b.png)
+
 - Gỡ cài đặt repo mysql-community-release
 
 ```
