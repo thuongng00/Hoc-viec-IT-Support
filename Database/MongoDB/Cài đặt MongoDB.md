@@ -135,22 +135,34 @@ show users
 Bước 1: Dừng tiến trình MongoDB
 
 ```
-sudo service mongod stop
+systemctl stop mongod
 ```
 
-Bước 2: Gỡ bỏ hoàn toàn các gói MongoDB đã cài đặt
+Bước 2: Kiểm tra các gói MongoDB đã cài đặt
 
 ```
-sudo apt-get purge mongodb-org*
+rpm -qa | grep mongodb-org*
 ```
 
-Bước 3: Xóa các thư mục dữ liệu, (các) cơ sở dữ liệu MongoDB và các tệp nhật ký
+![image](https://user-images.githubusercontent.com/111716161/190951835-04b70d31-f7a8-4928-b3c5-099e04f38a4f.png)
+
+Bước 3: Gỡ bỏ hoàn toàn các gói MongoDB đã cài đặt
+
+```
+yum remove mongodb-org*
+```
+
+![image](https://user-images.githubusercontent.com/111716161/190951925-bbfa6558-331b-459d-82f1-9cd3f4dec639.png)
+
+![image](https://user-images.githubusercontent.com/111716161/190951940-b87175bb-e194-45f2-916e-4dd116dcf2b9.png)
+
+Bước 4: Xóa các thư mục dữ liệu, (các) cơ sở dữ liệu MongoDB và các tệp nhật ký
 
 ```
 sudo rm -r /var/log/mongodb /var/lib/mongodb
 ```
 
-Bước 4: Kiểm tra xem MongoDb đã được gỡ cài đặt thành công hay không
+Bước 4: Kiểm tra xem MongoDB đã được gỡ cài đặt thành công hay không
 
 ```
 service mongod status
