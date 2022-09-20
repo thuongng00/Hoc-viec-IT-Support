@@ -121,6 +121,12 @@ mysql -u root -p
 
 ![image](https://user-images.githubusercontent.com/111716161/190310871-3dfd2072-6609-4f6a-af5f-372a161dfd41.png)
 
+- Thoát khỏi MySQL
+
+```
+exit
+```
+
 ### 3. Đặt lại MySQL Root Password
 
 Trong trường hợp quên mật khẩu và muốn reset password, ta thực hiện các bước sau:
