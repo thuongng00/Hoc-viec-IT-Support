@@ -141,6 +141,8 @@ Bước 6: Khởi động lại máy và đăng nhập vào SSMS.
 <a name="go"></a>
 # Gỡ cài đặt MS SQL Server và SSMS
 
+## Gỡ cài đặt SQL Server
+
 Bước 1: Vào Setting, chọn App tìm kiếm Microsoft SQL Server
 
 ![image](https://user-images.githubusercontent.com/111716161/191193408-5d49ebc0-77d2-404e-b2e1-d56fdd893b99.png)
@@ -190,4 +192,22 @@ Bước 9: Quay lại bước 1, chọn MSSQL Server 2019 T-SQL Language Service
 
 ![image](https://user-images.githubusercontent.com/111716161/191199034-b3a0c750-1c48-4bec-ba23-e83a99883e34.png)
 
-Bước 
+Như vậy ta đã gỡ cài đặt SQL Server thành công. 
+
+## Gỡ cài đặt SSMS
+
+Bước 1: Vào Setting, chọn App tìm kiếm Microsoft SQL Server Management Studio
+
+![image](https://user-images.githubusercontent.com/111716161/191199946-b99097a6-2f27-442d-9c60-ad5991d67ee1.png)
+
+Bước 2: Sau khi cửa sổ hiện lên, chọn Uninstall. 
+
+![image](https://user-images.githubusercontent.com/111716161/191200094-6e70ff09-8ac9-4f01-b317-7e015b205d85.png)
+
+Bước 3: Chờ quá trình gỡ cài đặt hoàn tất, sau đó nhấn Close
+
+![image](https://user-images.githubusercontent.com/111716161/191200164-ac972c94-406b-43ea-82be-c5d88dad05dd.png)
+
+![image](https://user-images.githubusercontent.com/111716161/191200280-9eb4c145-5e0b-4cd6-bd32-84ca427cdb29.png)
+
+
