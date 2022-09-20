@@ -2,6 +2,8 @@
 
 [Cài đặt SQL Server Management Studio (SSMS)](#ssms)
 
+[Gỡ cài đặt SQL Server và SSMS](#go)
+
 <a name="sql"></a>
 # Cài đặt SQL Server 2019 trên Windows Server 2019.
 
@@ -130,13 +132,14 @@ Bước 5: Chờ quá trình cài đặt hoàn tất, sau đó nhấn Close.
 
 ![image](https://user-images.githubusercontent.com/111716161/191190455-201565d4-69cf-4343-970a-c7f945b0b667.png)
 
-Bước 6: Khởi động và đăng nhập vào SSMS.
+Bước 6: Khởi động lại máy và đăng nhập vào SSMS.
 
 ![image](https://user-images.githubusercontent.com/111716161/191191188-47b98d5e-fa22-4b2b-bffd-b078ce11d07a.png)
 
 ![image](https://user-images.githubusercontent.com/111716161/191192069-5cee0e13-e24e-4581-b2e9-c9c12a40bffb.png)
 
-# Gỡ cài đặt MS SQL Server
+<a name="go"></a>
+# Gỡ cài đặt MS SQL Server và SSMS
 
 Bước 1: Vào Setting, chọn App tìm kiếm Microsoft SQL Server
 
@@ -150,4 +153,20 @@ Bước 3: Chọn Remove.
 
 ![image](https://user-images.githubusercontent.com/111716161/191193694-fd840b73-37b1-4fee-89a7-fda989d2f50e.png)
 
-Bước 4: 
+Bước 4: Chọn MSSQLSERVER rồi nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/191196265-c06c888b-ae44-4417-ac74-98e6107fbdc7.png)
+
+Bước 5: Chọn Select All, nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/191196399-1c5838f2-1794-461e-b7ff-75e8e18585f4.png)
+
+Bước 6: Nhấn Remove
+
+![image](https://user-images.githubusercontent.com/111716161/191196487-4bd84676-6e0e-473a-ad6a-90e61a53e444.png)
+
+Bước 7: Chờ quá trình gỡ cài đặt hoàn tất, sau đó Close. 
+
+![image](https://user-images.githubusercontent.com/111716161/191196553-725eb37b-8304-42fc-9e85-152fd5e59150.png)
+
+![image](https://user-images.githubusercontent.com/111716161/191196867-e66165ad-08c3-440b-a6f0-198713e6a809.png)
