@@ -1,4 +1,9 @@
-# Cài đặt SQL Server
+[Cài đặt SQL Server 2019](#sql)
+
+[Cài đặt SQL Server Management Studio (SSMS)](#ssms)
+
+<a name="sql"></a>
+# Cài đặt SQL Server 2019
 
 Bước 1: Tải SQL Server về máy.
 
@@ -102,3 +107,23 @@ Bước 18: Đợi đến khi file cài đặt xong và bấm close để hoàn 
 
 Như vậy ta đã cài đặt thành công SQL Server 2019.
 
+<a name="ssms"></a>
+# Cài đặt SQL Server Management Studio (SSMS)
+
+Bước 1: Tại màn hình Developer Edition, chọn Install SSMS để mở link tải. 
+
+![image](https://user-images.githubusercontent.com/111716161/191188004-bfd36b7d-fd6d-4247-985d-77b65418d89d.png)
+
+Bước 2: Tải SSMS 18.12.1.
+
+![image](https://user-images.githubusercontent.com/111716161/191188286-72f45eeb-98b8-4c2f-8967-cf36fd87a773.png)
+
+Bước 3: Sau khi tải xong, mở file vừa tải về. 
+
+![image](https://user-images.githubusercontent.com/111716161/191188774-41f0c585-f110-47e3-8f50-b4d656c3b4a5.png)
+
+Bước 4: Chọn nơi lưu trữ, sau đó nhấn Install để cài đặt.
+
+![image](https://user-images.githubusercontent.com/111716161/191188995-286f3f67-672b-4d87-812c-d3baf584b15e.png)
+
+Bước 5: 
