@@ -3,7 +3,7 @@
 [Cài đặt SQL Server Management Studio (SSMS)](#ssms)
 
 <a name="sql"></a>
-# Cài đặt SQL Server 2019
+# Cài đặt SQL Server 2019 trên Windows Server 2019.
 
 Bước 1: Tải SQL Server về máy.
 
@@ -126,4 +126,10 @@ Bước 4: Chọn nơi lưu trữ, sau đó nhấn Install để cài đặt.
 
 ![image](https://user-images.githubusercontent.com/111716161/191188995-286f3f67-672b-4d87-812c-d3baf584b15e.png)
 
-Bước 5: 
+Bước 5: Chờ quá trình cài đặt hoàn tất, sau đó nhấn Close. 
+
+![image](https://user-images.githubusercontent.com/111716161/191190455-201565d4-69cf-4343-970a-c7f945b0b667.png)
+
+Bước 6: Đăng nhập vào SSMS.
+
+
