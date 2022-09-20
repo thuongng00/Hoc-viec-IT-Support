@@ -149,3 +149,12 @@ DELETE FROM table_name [WHERE …]
 ```
 
 ![image](https://user-images.githubusercontent.com/111716161/191153315-6a924ce5-3ab5-4634-833a-6cc5bd9b4362.png)
+
+## 5. Thao tác với user
+
+- Hiển thị toàn bộ user:
+
+```
+SELECT USER, HOST, PASSWORD FROM MYSQL.USER;
+```
+
