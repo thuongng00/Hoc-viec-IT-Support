@@ -189,5 +189,3 @@ FLUSH PRIVILEGES;
 ```
 REVOKE <permission> ON <database name>.<table name> FROM <user name>@<host name>;
 ```
-
-REVOKE ALL PRIVILEGES ON * . * TO 'thuong'@'localhost';
