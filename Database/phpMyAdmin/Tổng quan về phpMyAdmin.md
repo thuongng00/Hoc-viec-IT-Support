@@ -12,6 +12,8 @@ PhpMyAdmin là phần mềm mã nguồn mở được viết bằng ngôn ngữ 
 - Thực hiện các truy vấn MySQL, giám sát quá trình và theo dõi.
 - Sao lưu và khôi phục(Backup/Restore): Thao tác thủ công.
 
+![image](https://user-images.githubusercontent.com/111716161/191209758-7eec41c9-5de7-420b-9426-1271954458e2.png)
+
 ## Ưu, nhược điểm 
 
 ### Ưu điểm
