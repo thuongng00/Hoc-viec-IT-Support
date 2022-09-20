@@ -2,10 +2,10 @@
 
 [Cấu hình MySQL](#cauhinh)
 
-[Gỡ MySQL](#go)
+[Gỡ cài đặt MySQL](#go)
 
 <a name="caidat"></a>
-# Cài đặt MySQL
+# Cài đặt MySQL trên CentOS 7
 
 ### 1. Tải và chuẩn bị MySQL repository
 
@@ -113,7 +113,7 @@ Bước 4: Nhấn Y sau đó Enter để hoàn tất.
 
 Như vậy ta đã thay đổi mật khẩu MySQL root user thành công. 
 
-### 2. Kiểm tra phiên bản MySQL hiện hành
+### 2. Đăng nhập và kiểm tra phiên bản MySQL hiện hành
 
 ```
 mysql -u root -p
