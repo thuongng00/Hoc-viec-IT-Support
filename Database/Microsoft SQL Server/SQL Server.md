@@ -92,5 +92,5 @@ SQL Server R Services được đổi tên thành Machine Learning Services và 
 
 Bản 2019 cho phép người được sử dụng để tham gia vào các thùng chứa SQL Server, HDFS và Spark cùng nhau bằng nhiều tính năng. Ngoài ra, nó còn giới thiệu cho việc xây dựng chỉ mục cột, xây dựng lại cũng như che giấu đi dữ liệu tĩnh. Từ đó, phục hồi dữ liệu tăng tốc mới và thực hiện, hoàn tác các giai đoạn làm lại số thứ tự nhật ký trang. 
 
-![image](https://user-images.githubusercontent.com/111716161/191167581-57dd1c74-3e8e-47f3-adda-c7ec3b0ba093.png)
+![image](https://user-images.githubusercontent.com/111716161/191168396-83ad42c1-fafb-4c0c-a22e-0a78f81f655e.png)
 
