@@ -134,9 +134,9 @@ Bước 5: Chờ quá trình cài đặt hoàn tất, sau đó nhấn Close.
 
 Bước 6: Khởi động lại máy và đăng nhập vào SSMS.
 
-![image](https://user-images.githubusercontent.com/111716161/191191188-47b98d5e-fa22-4b2b-bffd-b078ce11d07a.png)
+![image](https://user-images.githubusercontent.com/111716161/191207746-b7d8e4d6-f78b-4caa-b074-abf89979f175.png)
 
-![image](https://user-images.githubusercontent.com/111716161/191192069-5cee0e13-e24e-4581-b2e9-c9c12a40bffb.png)
+![image](https://user-images.githubusercontent.com/111716161/191207828-03b98f50-1174-4b87-987d-9313a5edf434.png)
 
 <a name="go"></a>
 # Gỡ cài đặt MS SQL Server và SSMS
