@@ -153,7 +153,7 @@ Bước 3: Chọn Remove.
 
 ![image](https://user-images.githubusercontent.com/111716161/191193694-fd840b73-37b1-4fee-89a7-fda989d2f50e.png)
 
-Bước 4: Chọn MSSQLSERVER rồi nhấn Next.
+Bước 4: Ở mục "Instance to remove features from" chọn MSSQLSERVER rồi nhấn Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/191196265-c06c888b-ae44-4417-ac74-98e6107fbdc7.png)
 
@@ -170,3 +170,15 @@ Bước 7: Chờ quá trình gỡ cài đặt hoàn tất, sau đó Close.
 ![image](https://user-images.githubusercontent.com/111716161/191196553-725eb37b-8304-42fc-9e85-152fd5e59150.png)
 
 ![image](https://user-images.githubusercontent.com/111716161/191196867-e66165ad-08c3-440b-a6f0-198713e6a809.png)
+
+Bước 8: Quay lại bước 1 và thao tác tương tự. Tại màn hình Select Instance, nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/191198155-886e3b95-2885-493d-9f2f-303dcb66cd75.png)
+
+Nhấn Select All -> Next.
+
+![image](https://user-images.githubusercontent.com/111716161/191198236-5421c9d8-6426-4cd8-90e7-3f49a098385a.png)
+
+Nhấn Remove.
+
+![image](https://user-images.githubusercontent.com/111716161/191198347-ef4ae754-2a6c-4268-b4c5-dc40409fb9d8.png)
