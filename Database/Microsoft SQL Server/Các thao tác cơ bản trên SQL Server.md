@@ -165,3 +165,24 @@ Bảng sau khi được cập nhật:
 
 ![image](https://user-images.githubusercontent.com/111716161/191224161-3929d0d8-c3b6-4651-a719-ce894c5d8a47.png)
 
+- Xóa dữ liệu:
+
+Cách 1: Sử dụng lệnh DELETE
+
+```
+DELETE FROM table_name [WHERE …]
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191227920-aafa0781-c1a1-48b6-b219-2a018d85c42c.png)
+
+Cách 2: Nhấn chuột phải vào tên bảng, chọn Edit Top 200 Rows.
+
+![image](https://user-images.githubusercontent.com/111716161/191223955-953e6b2a-eaf7-4e04-8456-cb87c233d1ed.png)
+
+Chuột phải vào hàng muốn xóa, chọn Delete hoặc chọn hàng rồi nhấn phím Del. 
+
+![image](https://user-images.githubusercontent.com/111716161/191228325-b1e67736-cc67-4e87-9abf-45be564c12b5.png)
+
+Nhấn Yes để xóa.
+
+![image](https://user-images.githubusercontent.com/111716161/191228574-245cb9c3-39b0-474e-9b89-9fd324e20e54.png)
