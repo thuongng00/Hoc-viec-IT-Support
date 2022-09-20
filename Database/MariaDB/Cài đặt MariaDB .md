@@ -124,6 +124,12 @@ mariadb -u root -p
 
 ![image](https://user-images.githubusercontent.com/111716161/190972586-9083f972-2546-4fe2-9fcf-42c0e292827c.png)
 
+- Thoát khỏi MariaDB
+
+```
+exit
+```
+
 ## 3. Đặt lại mật khẩu MariaDB
 
 - Dừng MariaDB
