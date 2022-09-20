@@ -116,7 +116,7 @@ Tải lại bảng đặc quyền ngay bây giờ
 
 ![image](https://user-images.githubusercontent.com/111716161/190972187-f43282ce-ab50-46eb-8896-107c78270675.png)
 
-## 2. Kiểm tra phiên bản MariaDB hiện hành
+## 2. Đăng nhập và kiểm tra phiên bản MariaDB hiện hành
 
 ```
 mariadb -u root -p
