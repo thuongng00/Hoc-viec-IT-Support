@@ -132,18 +132,68 @@ exit
 
 ## 3. Đặt lại mật khẩu MariaDB
 
-- Dừng MariaDB
+Trong trường hợp quên mật khẩu và muốn reset password, ta thực hiện các bước sau:
+
+Bước 1: Dừng MariaDB
 
 ```
-systemctl stop mariadb
+sudo systemctl stop mariadb
 ```
 
-- Cài đặt tùy chọn môi trường 
+Bước 2: Cài đặt tùy chọn môi trường MySQL
 
 ```
 sudo systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
 ```
 
+Bước 3: Khởi động MariaDB sử dụng các tùy chọn vừa cài đặt
+
+```
+sudo systemctl start mariadb
+```
+
+Bước 4: Đăng nhập với root
+
+```
+mariadb -u root
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191159860-a011a0b9-796d-4a4c-afe6-a9f9e848d91f.png)
+
+Bước 5: Cập nhật mật khẩu người dùng root bằng các lệnh MariaDB
+
+```
+MariaDB [(none)]> FLUSH PRIVILEGES;
+MariaDB [(none)]> ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
+MariaDB [(none)]> FLUSH PRIVILEGES;
+MariaDB [(none)]> quit
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191160657-e5074ba3-543a-4527-9fce-18c51f933a2f.png)
+
+Bước 6: Dừng MariaDB
+```
+sudo systemctl stop mariadb
+```
+
+Bước 7: Bỏ cài đặt tùy chọn môi trường MySQL để nó khởi động bình thường vào lần sau:
+
+```
+sudo systemctl unset-environment MYSQLD_OPTS
+```
+
+Bước 8: Khởi động MariaDB bình thường
+
+```
+sudo systemctl start mariadb
+```
+
+Bước 9: Đăng nhập bằng mật khẩu mới
+
+mariadb -u root -p
+
+![image](https://user-images.githubusercontent.com/111716161/191161158-df5b53fc-90dd-4199-a106-c8bcc11855ee.png)
+ 
 <a name="go"></a>
 # Gỡ cài đặt MariaDB trên CentOS 7
 
