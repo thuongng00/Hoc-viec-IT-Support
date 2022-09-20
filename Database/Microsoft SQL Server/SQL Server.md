@@ -35,3 +35,62 @@ SQL Server thông thường được sử dụng cho mục đích lưu trữ d�
 
 ![image](https://user-images.githubusercontent.com/111716161/191167051-34dc4b37-021e-4626-948d-f3b8488fec60.png)
 
+## Lý do nên sử dụng SQL Server
+
+- Nó cho phép người sử dụng có thể dùng để truy cập dữ liệu bên trong hệ thống quản lý cơ sở dữ liệu quan hệ. 
+- Người ta cho phép người dùng mô tả dữ liệu. 
+- Cho phép người dùng thực hiện xác định dữ liệu bên trong cơ sở dữ liệu và thực hiện các thao tác dữ liệu. 
+- Nó cho phép nhúng trong các ngôn ngữ khác có thể sử dụng mô-đun SQL, thư viện và thực hiện trình biên dịch trước. 
+- Nó sẽ cho phép người dùng tạo và thả cho các cơ sở dữ liệu cũng như bảng. 
+- SQL cho phép người sử dụng để thực hiện tạo ra các chế độ view, các thủ tục lưu trữ và chức năng trong cơ sở dữ liệu. 
+- Nó sẽ cho phép người dùng để thực hiện thiết lập quyền trên các bảng, view và thủ tục. 
+
+# Các phiên bản SQL Server
+
+Trong  khoảng từ năm 1995 đến năm 2916 thì Microsoft đã cho phát hành nhiều phiên bản cơ sở dữ liệu SQL. Ngoài ra, Microsoft đã kết hợp được với nhiều  công cụ cho việc thực hiện quản lý dữ liệu cũng như phân tích được dữ liệu vào SQL Server. Một số chức năng và công nghệ mới được xuất hiện bao gồm: web, điện toán đám mây và các thiết bị di động.
+
+## Microsoft SQL Server 2012
+
+Bản 2012 được cung cấp các tính năng mới như chỉ mục cột, có thể được sử dụng để thực hiện các lưu trữ theo hướng định dạng trên cột dành cho các ứng dụng. Ngoài ra, việc phân tích dữ liệu luôn được sẵn sàng và trang bị công nghệ để có thể khắc phục các thảm họa.
+
+![image](https://user-images.githubusercontent.com/111716161/191167281-eddc1ba1-fb8a-4a11-885f-daf040723426.png)
+
+## Microsoft SQL Server 2014
+
+SQL 2014 đã được thêm OLTP trong bộ nhớ nên người dùng có thể thực hiện chạy cho các ứng dụng xử lý giao dịch trực tuyến. Quá trình thực hiện sẽ dựa trên dữ liệu lưu trữ bên trong những bảng đã được tối ưu hóa cho bộ nhớ thay vì phải sử dụng các tệp dựa trên bộ đĩa tiêu chuẩn.
+
+![image](https://user-images.githubusercontent.com/111716161/191167356-6b5ab9aa-c3b6-4445-b5d1-add2a0f32319.png)
+
+Một trong những tính năng khác của bản 2014 sở hữu phần mở rộng nhóm bộ đệm và được tích hợp thêm bộ nhớ ở vùng đệm cho máy chủ SQL nhờ vào ổ đĩa có trạng thái rắn cũng như được thiết kế với thông lượng I/O nhờ việc giảm tải đi các dữ liệu từ những đĩa cứng có dạng thông thường khác. 
+
+## Microsoft SQL Server 2016
+
+Microsoft của máy chủ SQL 2016 nó đã có sẵn từ tháng 6/2016. Nó được phát triển như một phần của các chiến lược công nghệ đầu tiên đối với một thiết bị di động đầu tiên trên nền tảng đám mây (nó được Microsoft áp dụng vào khoảng 2 năm trước đó).
+
+![image](https://user-images.githubusercontent.com/111716161/191167454-f97e888e-78b7-4f2e-9c38-7afa81bc5398.png)
+
+Phiên bản này cũng có thêm nhiều tính năng bao gồm sự điều chỉnh hiệu suất, phân tích hoạt động cho thời gian thực, sự hỗ trợ của đám mây.
+
+Từ đó, cho phép DBA chạy dựa trên cơ sở dữ liệu được kết hợp hệ thống tại chỗ và dịch vụ đám mây có khả năng giảm thiểu được các chi phí CNTT. SQL Server 2016 có khả năng tăng hỗ trợ cho việc phân tích luồng dữ liệu lớn và ứng dụng nhiều trong việc phân tích các ứng dụng nâng cao khác thông qua hệ thống máy chủ cơ sở dữ liệu SQL R Services.
+
+Nó còn cho phép DBMS chạy ứng dụng phân tích được viết bằng loại ngôn ngữ lập trình R nguồn mở và polyBase. Công nghệ này cho phép người sử dụng máy chủ SQL truy cập dữ liệu trong cụm Hadoop hoặc lưu trữ Azure blob để thực hiện phân tích.
+
+## Microsoft SQL Server 2017
+
+Bản cập nhật chính thức và đổi mới được phát hành vào tháng 10 năm 2017. Việc hỗ trợ cho máy chủ SQL trên Linux đã chuyển nền tảng cho cơ sở dữ liệu lên một hệ điều hành nguồn mở thường thấy ở trong các doanh nghiệp.
+
+Từ đó, nó mang lại tiềm năng cho Microsoft với những khách hàng không sử dụng Windows hoặc ở trong môi trường máy chủ hỗn hợp.
+
+![image](https://user-images.githubusercontent.com/111716161/191167517-3149f32c-a40d-4c17-953b-4162b5b63cb7.png)
+
+SQL Server 2017 đã được mở rộng để hỗ trợ Docker được thêm các hệ thống Windows dựa trên phiên bản trước để bao gồm các thùng chứa dựa trên Linux. 
+SQL Server 2017 hỗ trợ lập trình Python, vì là ngôn ngữ mở nguồn và được sử dụng tương đối rộng rãi trong các ứng dụng phân tích. 
+
+SQL Server R Services được đổi tên thành Machine Learning Services và được mở rộng để thực hiện chạy cho cả ứng dụng R và Python. Ban đầu thì bộ công cụ máy và một loạt tính năng khác chỉ có trong các phiên bản Windows của phần mềm cơ sở dữ liệu với các tính năng hạn chế hơn được hỗ trợ trên Linux. 
+
+## Microsoft SQL Server 2019
+
+Bản 2019 cho phép người được sử dụng để tham gia vào các thùng chứa SQL Server, HDFS và Spark cùng nhau bằng nhiều tính năng. Ngoài ra, nó còn giới thiệu cho việc xây dựng chỉ mục cột, xây dựng lại cũng như che giấu đi dữ liệu tĩnh. Từ đó, phục hồi dữ liệu tăng tốc mới và thực hiện, hoàn tác các giai đoạn làm lại số thứ tự nhật ký trang. 
+
+![image](https://user-images.githubusercontent.com/111716161/191167581-57dd1c74-3e8e-47f3-adda-c7ec3b0ba093.png)
+
