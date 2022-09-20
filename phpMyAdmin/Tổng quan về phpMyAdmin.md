@@ -28,8 +28,12 @@ Phần mềm PHPMyAdmin hiện vẫn chỉ hỗ trợ sao lưu vào Local Drive 
 
 ## Điểm yếu trong việc sao lưu dữ liệu của phpMyAdmin
 
-Dù có nhiều ưu điểm song phpMyAdmin vẫn khó tránh khỏi một vài điểm yếu cố hữu. Đặc biệt, trong việc sao lưu dữ liệu thủ công sẽ không có một vài tính năng cần thiết.
+Trong quá trình sử dụng các chức năng trong phần mềm phpMyAdmin, người dùng vẫn phải phải đối mặt với vấn đề bảo mật và sao lưu.
 
-Scheduling(sao lưu tự động theo lịch đặt trước): Một tính năng khá phổ biến ở những công cụ quản trị cơ sở dữ liệu.
+Cho đến nay, hạn chế lớn nhất của phpMyAdmin vẫn nằm ở khả năng bảo mật. Bởi đây là phần mềm xây dựng trên mã nguồn mở. Quá trình truy cập đến URL của phpMyAdmin xuất phát từ IP cố định chưa thực sự được mượt.
 
-Storage media support(hỗ trợ lưu trữ các phương tiện truyền thông): phpMyAdmin chỉ cho phép lưu các bản sao lưu vào các local drive có sẵn trên hệ thống, qua hộp thoại Save as của trình duyệt.
+Ngoài ra khi tiến hành sao lưu, khôi phục dữ liệu thủ công thông qua phpMyAdmin vẫn tồn tại một vài yếu điểm. Chẳng hạn như:
+
+- Chưa thể tự động xuất database.
+- Chỉ hỗ trợ kết nối qua trình duyệt có nghĩa chúng chỉ có thể sao lưu vào Local Drive tích hợp sẵn trên hệ thống.
+- File xuất thông qua phpMyAdmin chưa thể xuất mã an toàn, tiêu tốn tài nguyên đĩa cứng 
