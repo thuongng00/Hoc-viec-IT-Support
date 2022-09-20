@@ -232,9 +232,23 @@ yum remove MariaDB-common
 
 ![image](https://user-images.githubusercontent.com/111716161/191163192-91265fa1-3c46-455b-92f6-ab84f4605a18.png)
 
-- Gỡ cài đặt repo
+- Xóa file repo đã tạo
 
 ```
-
+rm /etc/yum.repos.d/mariadb.repo
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191164665-3aa858c1-ceba-47c0-a2d2-ee4b2a1f63db.png)
+
+Bước 2: Xóa thư mục MariaDB
+
+```
+rm -rf /var/lib/mysql/
+rm -rf /etc/my.cnf
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191165841-9c1121cf-a58d-4769-8997-d5dc60266662.png)
+
+Bước 3: Kiểm tra Maria đã bị gỡ hay chưa
+
+![image](https://user-images.githubusercontent.com/111716161/191165946-c0be31f9-3b54-44ac-9c91-fefb9c588f5f.png)
