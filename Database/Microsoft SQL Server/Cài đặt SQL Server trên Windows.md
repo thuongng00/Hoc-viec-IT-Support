@@ -130,6 +130,7 @@ Bước 5: Chờ quá trình cài đặt hoàn tất, sau đó nhấn Close.
 
 ![image](https://user-images.githubusercontent.com/111716161/191190455-201565d4-69cf-4343-970a-c7f945b0b667.png)
 
-Bước 6: Đăng nhập vào SSMS.
+Bước 6: Khởi động và đăng nhập vào SSMS.
 
+![image](https://user-images.githubusercontent.com/111716161/191191188-47b98d5e-fa22-4b2b-bffd-b078ce11d07a.png)
 
