@@ -108,4 +108,24 @@ Bản 2019 cho phép người được sử dụng để tham gia vào các thù
   <img src="https://user-images.githubusercontent.com/111716161/191168396-83ad42c1-fafb-4c0c-a22e-0a78f81f655e.png" width="600"/>
 </p>
 
+# Các ấn bản SQL Server
+
+Thuật ngữ ấn bản (Edition) là tên gọi sản phẩm được xuất bản từ SQL Server. Còn phiên bản (version) thể hiện số thứ tự ra đời ví dụ 1.0, 2016, 2017, 2019.
+
+## Ấn bản thương mại (cho DN, nhà nước, giáo dục, tổ chức)
+
+SQL Server 2017, 2019 có hai ấn bản chính rất phù hợp với cách thức khách hàng sử dụng SQL Server để xử lý các khối lượng công việc. SQL 2019 giúp chuyển đổi doanh nghiệp của bạn với một nền tảng dữ liệu thống nhất đi kèm với Hệ thống tệp phân tán Apache Spark và Hadoop (HDFS) để giúp dữ liệu thông minh.
+
+SQL Server 2017, 2019 cung cấp giấy phép cho phép bạn tận dụng các lợi ích của nền tảng điện toán đám mây công cộng và riêng dễ dàng hơn thông qua ảo hóa và chuyển giấy phép hỗ trợ cả Windows, Linux. Mô hình mới của Microsoft đã đơn giản hóa việc cấp phép, mang đến sự linh hoạt và cải tiến cùng tổng chi phí sở hữu (TCO) đầu ngành.
+
+- **Enterprise** – bản cao cấp nhất với đầy đủ tính năng. Trước đây gọi là Datacenter
+- **Standard** – ít tính năng hơn Enterprise, sử dụng khi không cần dùng tới các tính năng nâng cao.
+- **Web** – thiết kế riêng cho các ứng dụng web.
+
+## Ấn bản miễn phí (không cho sản xuất, kinh doanh)
+
+- **Developer** – tương tự như Enterprise nhưng chỉ cấp quyền cho một người dùng duy nhất để phát triển, thử nghiệm, demo. Có thể dễ dàng nâng cấp lên bản Enterprise mà không cần cài lại.
+- **Express** – bản này chỉ dùng ở mức độ đơn giản, tối đa 1 CPU và bộ nhớ 1GB, kích thước tối đa của cơ sở dữ liệu là 10GB.
+- **Business Intelligence** – Business Intelligence Edition mới được giới thiệu trên SQL Server 2012. Phiên bản này có các tính năng của bản Standard và hỗ trợ một số tính năng nâng cao về BI như Power View và PowerPivot nhưng không hỗ trợ những tính năng nâng cao về mức độ sẵn sàng như AlwaysOn Availability Groups…
+- **Enterprise Evaluation/ Trial** – bản SQL Server Evaluation Edition là lựa chọn tuyệt vời để dùng được mọi tính năng và có được bản cài miễn phí của SQL Server đánh giá và dùng thử.  Phiên bản này có thời gian hết hạn là 180 ngày từ ngày cài. DN khi cài xong phải tiến hành mua bản quyền gói Standard/Enterprise.
 
