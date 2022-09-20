@@ -95,3 +95,5 @@ Bước 17: Nhấn Install.
 ![image](https://user-images.githubusercontent.com/111716161/191187125-622bfc4d-1ffe-42fc-9a5a-7cfadc792ee5.png)
 
 Bước 18: Đợi đến khi file cài đặt xong và bấm close để hoàn tất.
+
+![image](https://user-images.githubusercontent.com/111716161/191187277-7423336e-3e16-4738-9ac8-a7f62f4756c9.png)
