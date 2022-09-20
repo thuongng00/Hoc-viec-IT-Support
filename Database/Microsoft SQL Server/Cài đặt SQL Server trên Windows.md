@@ -134,3 +134,4 @@ Bước 6: Khởi động và đăng nhập vào SSMS.
 
 ![image](https://user-images.githubusercontent.com/111716161/191191188-47b98d5e-fa22-4b2b-bffd-b078ce11d07a.png)
 
+![image](https://user-images.githubusercontent.com/111716161/191192069-5cee0e13-e24e-4581-b2e9-c9c12a40bffb.png)
