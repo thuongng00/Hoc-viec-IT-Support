@@ -2,6 +2,8 @@
 
 [Cấu hình MariaDB](#cauhinh)
 
+[Gỡ cài đặt MariaDB](#go)
+
 <a name="caidat"></a>
 # Cài đặt MariaDB trên CentOS 7
 
@@ -25,7 +27,7 @@ gpgcheck=1
 
 ![image](https://user-images.githubusercontent.com/111716161/190969958-412d3f6a-2b1c-49b5-83c1-27e23b2509fe.png)
 
-***Lưu ý:*** *Tại thời điểm này phiên bản MariaDB 10 mới nhất là 10.10. Trước khi tạo repo các bạn có thể truy cập http://yum.mariadb.org để kiểm tra phiên bản.*
+***Lưu ý:*** *Tại thời điểm này phiên bản MariaDB 10 mới nhất là 10.10. Trước khi tạo repo bạn có thể truy cập http://yum.mariadb.org để kiểm tra phiên bản.*
 
 - Xóa cache của yum:
 
@@ -46,7 +48,7 @@ yum update
 
 ## 2. Cài đặt MariaDB
 
-- Sau khi tạo file repo các bạn tiến hành cài đặt MariaDB bằng lệnh sau
+- Sau khi tạo file repo các bạn tiến hành cài đặt MariaDB bằng lệnh sau:
 
 ```
 yum install MariaDB-server MariaDB-client
@@ -70,6 +72,7 @@ yum list installed | grep mariadb
 systemctl start mariadb
 systemctl enable mariadb
 ```
+
 ![image](https://user-images.githubusercontent.com/111716161/190969562-2ae26324-a79d-4936-bf95-d98e96a61a81.png)
 
 - Kiểm tra tình trạng MariaDB sau khi khởi động:
@@ -134,4 +137,7 @@ systemctl stop mariadb
 ```
 sudo systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
 ```
+
+<a name="go"></a>
+# Gỡ cài đặt MariaDB trên CentOS 7
 
