@@ -116,11 +116,15 @@ ALTER TABLE table_name MODIFY column_name VARCHAR(50);
 INSERT INTO table_name (field1, field2,...) VALUES (value1, value2,...);
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191152905-4e7f8de3-a662-4564-934c-f881589e68ed.png)
+
 - Cập nhật dữ liệu:
 
 ```
 UPDATE table_name SET field1=new_value1, field2=new_value2,... [WHERE ...]
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/191153041-4803c667-4db6-4af1-ae4f-d34da97fdadc.png)
 
 - Xem dữ liệu:
 
@@ -128,11 +132,15 @@ UPDATE table_name SET field1=new_value1, field2=new_value2,... [WHERE ...]
 SELECT field, field2,... FROM table_name WHERE...
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191153108-6f4ba386-b451-4f95-9690-7d6b5959b00f.png)
+
 - Sao chép dữ liệu từ bảng này sang bảng mới
 
 ```
 CREATE TABLE IF NOT EXISTS new_table SELECT * FROM old_table;
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/191153227-fda1ea9d-e236-43f8-89e3-ec48651b3cf1.png)
 
 - Xóa dữ liệu:
 
@@ -140,3 +148,4 @@ CREATE TABLE IF NOT EXISTS new_table SELECT * FROM old_table;
 DELETE FROM table_name [WHERE …]
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191153315-6a924ce5-3ab5-4634-833a-6cc5bd9b4362.png)
