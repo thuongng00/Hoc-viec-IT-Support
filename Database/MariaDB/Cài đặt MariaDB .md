@@ -194,6 +194,47 @@ mariadb -u root -p
 
 ![image](https://user-images.githubusercontent.com/111716161/191161158-df5b53fc-90dd-4199-a106-c8bcc11855ee.png)
  
+Như vậy ta đã reset password cho MariaDB root user thành công.
+
 <a name="go"></a>
 # Gỡ cài đặt MariaDB trên CentOS 7
+
+Bước 1: Gỡ tất cả các phụ thuộc của MariaDB
+
+- Xem các gói đã cài đặt
+
+```
+yum list installed | grep mariadb
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191161741-df9ecbe8-93b4-4b46-bcc2-4c021a7338c2.png)
+
+- Để loại bỏ một gói, cần cài đặt plugin yum:
+```
+yum install yum-plugin-remove-with-leaves
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191162545-a882cbaa-ee0f-4894-bb07-006ff7fd8ff8.png)
+
+- Gỡ bỏ một gói với các phụ thuộc của nó
+
+```
+yum remove mariadb-server --remove-leaves
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191162783-6ee3d0a9-fc29-4f31-88c5-1688d99e1a63.png)
+
+- Gỡ cài đặt MariaDB-common và gói phụ thuộc của nó:
+
+```
+yum remove MariaDB-common
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191163192-91265fa1-3c46-455b-92f6-ab84f4605a18.png)
+
+- Gỡ cài đặt repo
+
+```
+
+```
 
