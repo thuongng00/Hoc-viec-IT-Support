@@ -95,7 +95,7 @@ Bước 15: Nhấn Next.
 
 Bước 16:  Ở màn hình Database Engine Configuration, chọn Mixed Mode và thiết lập password cho tài khoản > Add Current User để thêm user quản lý SQL vào ô "Specify SQL Server administrators". Nhấn Next để tới màn hình tiếp theo
 
-![image](https://user-images.githubusercontent.com/111716161/191186874-29cd44a3-93ff-49a2-baa9-8fa412c7353b.png)
+![image](https://user-images.githubusercontent.com/111716161/191203873-2950b4b7-512a-4f94-b098-df4f8119e0cf.png)
 
 Bước 17: Nhấn Install.
 
