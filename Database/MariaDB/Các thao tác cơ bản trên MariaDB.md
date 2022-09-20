@@ -32,4 +32,37 @@ DROP DATABASE database_name;
 
 ![image](https://user-images.githubusercontent.com/111716161/191149569-f89de10f-0573-45f9-a8f2-3e1d66c51ed8.png)
 
-## 2. 
+## 2. Thao tác với bảng
+
+- Tạo bảng
+
+```
+CREATE TABLE table_name(column_name column_type);
+```
+
+- Hiển thị toàn bộ bảng:
+
+```
+SHOW TABLES;
+```
+
+- Xóa bảng
+
+```
+DROP DATABASE table_name;
+```
+
+- Sao chép dữ liệu từ bảng này sang bảng mới
+
+```
+CREATE TABLE IF NOT EXISTS new_table SELECT * FROM old_table
+```
+
+- Đổi tên bảng
+
+```
+RENAME TABLE old_table TO new_table
+```
+
+
+
