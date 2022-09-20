@@ -4,7 +4,7 @@ SQL server hay còn được gọi là Microsoft SQL Server, nó từ viết t�
 
 Từ đó, người ta sẽ lưu trữ dữ liệu dựa vào tiêu chuẩn RDBMS và nó cũng là một  trong những hệ quản trị cơ sở dữ liệu dạng quan hệ đối tượng. 
 
-![image](https://user-images.githubusercontent.com/111716161/191166885-850b60b0-4162-469b-8133-3b1a55d6351a.png)
+![image](https://user-images.githubusercontent.com/111716161/191168485-affbfc3c-dbbc-410a-9bf3-2a872f30a2d2.png)
 
 SQL Server có khả năng cung cấp đầy đủ các công cụ cho việc quản lý từ giao diện GUI đến sử dụng ngôn ngữ cho việc truy vấn SQL. Điểm mạnh của SQL điểm mạnh của nó là có nhiều nền tảng được kết hợp cùng như: ASP.NET, C# để xây dựng Winform cũng chính nó có khả năng hoạt động độc lập. 
 
