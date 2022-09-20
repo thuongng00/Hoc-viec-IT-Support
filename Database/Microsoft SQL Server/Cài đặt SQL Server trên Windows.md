@@ -182,3 +182,12 @@ Nhấn Select All -> Next.
 Nhấn Remove.
 
 ![image](https://user-images.githubusercontent.com/111716161/191198347-ef4ae754-2a6c-4268-b4c5-dc40409fb9d8.png)
+
+Nhấn Close.
+![image](https://user-images.githubusercontent.com/111716161/191198823-3989ee73-cfd7-4223-8b43-86f2907c88ba.png)
+
+Bước 9: Quay lại bước 1, chọn MSSQL Server 2019 T-SQL Language Service, nhấn Uninstall.
+
+![image](https://user-images.githubusercontent.com/111716161/191199034-b3a0c750-1c48-4bec-ba23-e83a99883e34.png)
+
+Bước 
