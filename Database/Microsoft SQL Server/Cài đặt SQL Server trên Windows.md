@@ -100,5 +100,5 @@ Bước 18: Đợi đến khi file cài đặt xong và bấm close để hoàn 
 
 ![image](https://user-images.githubusercontent.com/111716161/191187521-b74f31b7-0ae8-4761-9b03-e4a5bc57b0a8.png)
 
-Như vậy ta đã cài đặt xong SQL Server 2019.
+Như vậy ta đã cài đặt thành công SQL Server 2019.
 
