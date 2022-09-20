@@ -3,7 +3,7 @@
 [Cấu hình MariaDB](#cauhinh)
 
 <a name="caidat"></a>
-# Cài đặt MariaDB
+# Cài đặt MariaDB trên CentOS 7
 
 ## 1. Tạo file repo
 
