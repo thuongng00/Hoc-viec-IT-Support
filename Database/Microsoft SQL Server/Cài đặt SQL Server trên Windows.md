@@ -135,3 +135,17 @@ Bước 6: Khởi động và đăng nhập vào SSMS.
 ![image](https://user-images.githubusercontent.com/111716161/191191188-47b98d5e-fa22-4b2b-bffd-b078ce11d07a.png)
 
 ![image](https://user-images.githubusercontent.com/111716161/191192069-5cee0e13-e24e-4581-b2e9-c9c12a40bffb.png)
+
+# Gỡ cài đặt MS SQL Server
+
+Bước 1: Vào Setting, chọn App tìm kiếm Microsoft SQL Server
+
+![image](https://user-images.githubusercontent.com/111716161/191193408-5d49ebc0-77d2-404e-b2e1-d56fdd893b99.png)
+
+Bước 2: Nhấn Uninstall
+
+![image](https://user-images.githubusercontent.com/111716161/191193579-4b9eb9af-8151-45d2-979a-9ed1ebc67e0b.png)
+
+Bước 3: Chọn Remove.
+
+![image](https://user-images.githubusercontent.com/111716161/191193694-fd840b73-37b1-4fee-89a7-fda989d2f50e.png)
