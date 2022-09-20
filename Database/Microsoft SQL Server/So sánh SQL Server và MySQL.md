@@ -1,6 +1,6 @@
 # SQL Server và MySQL
 
-![image](https://user-images.githubusercontent.com/111716161/191230052-e1a345d4-c639-47c4-a31b-13a2d218a51a.png)
+<img src="https://user-images.githubusercontent.com/111716161/191230052-e1a345d4-c639-47c4-a31b-13a2d218a51a.png" width=600/>
 
 ## 1. SQL Server
 
@@ -20,7 +20,7 @@ MySQL thường được sử dụng cùng với PHP và Apache Web Server, trê
 
 # Những điểm khác biệt giữa SQL Server và MySQL
 
-![image](https://user-images.githubusercontent.com/111716161/191230192-477d0638-664c-407e-b65d-ce8b135f55f0.png)
+<img src="https://user-images.githubusercontent.com/111716161/191230192-477d0638-664c-407e-b65d-ce8b135f55f0.png" width="600"/>
 
 ## 1. Bản chất
  
