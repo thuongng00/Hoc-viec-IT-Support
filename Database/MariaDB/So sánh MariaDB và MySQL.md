@@ -37,8 +37,3 @@ Maria DB có một số tối ưu hóa có xu hướng cải thiện hiệu su�
 | Ngôn ngữ lập trình hỗ trợ | Ada, C, C#, C++, D, Eiffel, Erlang, Go, Haskell, Java, Javascript (Node.js), Objective-C, Ocaml, Perl, PHP, Python, Ruby, Scheme, Tcl | Ada, C, C#, C++, D, Eiffel, Erlang, Delphi, Haskell, Java, Javascript (Node.js), Objective-C, Ocaml, Perl, PHP, Python, Ruby, Scheme, Tcl | 
 | Khách hàng | Booking.com, Wikipedia, Google, Canal+, ClubMed, Deutsche, Telekom, La Poste, Virgin...| NASA, US NAvy, Spotify, Netflix, Nokia, Joomla, Uber, PHP-Nuke, Tesla, Fujitsu...|
 |Thị trường | MariaDB mặc định trong LAMP | MySQL mặc định trong AppServ |
-
-
-
-
-
