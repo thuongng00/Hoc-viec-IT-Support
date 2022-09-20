@@ -1,6 +1,7 @@
 Nhập và xuất cơ sở dữ liệu là một nhiệm vụ phổ biến trong phát triển phần mềm. Bạn có thể sử dụng kết xuất dữ liệu để sao lưu và khôi phục thông tin của mình. Bạn cũng có thể sử dụng chúng để di chuyển dữ liệu sang máy chủ hoặc môi trường phát triển mới.
 
-Điều kiện tiên quyết
+**Điều kiện tiên quyết:**
+
 Để nhập hoặc xuất cơ sở dữ liệu MySQL hoặc MariaDB cần:
 
 - Một máy ảo với người dùng sudo không root
@@ -33,11 +34,11 @@ MYSQLDUMP - u username -p database_name > data-dump.sql
 
 *Trong đó*:
 
-`username` là tên người user bạn có thể đăng nhập vào database. 
+`username` *là tên người user bạn có thể đăng nhập vào database.*
 
-`database_name` là tên của cơ sở dữ liệu để xuất nhập.
+`database_name` *là tên của cơ sở dữ liệu để xuất nhập.*
 
-`data-dump.sql` là tên tệp trong thư mục hiện tại lưu trữ đầu ra. 
+`data-dump.sql` *là tên tệp trong thư mục hiện tại lưu trữ đầu ra.*
 
 Lệnh này sẽ không tạo ra kết quả trực quan, nhưng bạn có thể kiểm tra nội dung của filename.sql để kiểm tra xem đó có phải là file kết xuất SQL hợp lệ hay không. 
 
@@ -77,11 +78,11 @@ mysql -u username -p new_database < data-dump.sql
 
 *Trong đó:*
 
-`username` là tên user bạn có thể đăng nhập vào database bằng.
+`username` *là tên user bạn có thể đăng nhập vào database bằng.*
 
-`newdatabase` là tên của database mới được tạo.
+`newdatabase` *là tên của database mới được tạo.*
 
-`data-dump.sql` là file kết xuất dữ liệu sẽ được nhập, nằm trong folder hiện tại.
+`data-dump.sql` *là file kết xuất dữ liệu sẽ được nhập, nằm trong folder hiện tại.*
 
 ![image](https://user-images.githubusercontent.com/111716161/191158332-2f44ce15-368a-4064-8490-e3400552ea75.png)
 
