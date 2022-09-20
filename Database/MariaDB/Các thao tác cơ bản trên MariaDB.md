@@ -64,5 +64,60 @@ CREATE TABLE IF NOT EXISTS new_table SELECT * FROM old_table
 RENAME TABLE old_table TO new_table
 ```
 
+## 3. Thao tác với cột trong bảng
 
+- Hiển thị toàn bộ cột trong bảng:
 
+```
+SHOW COLUMNS FROM table_name;
+```
+
+- Thêm mới cột:
+
+```
+ALTER TABLE table_name ADD column_name column_definition;
+```
+
+- Đổi tên cột:
+
+```
+ALTER TABLE table_name CHANGE COLUMN old_column new_column VARCHAR(25)
+```
+
+- Xóa cột:
+
+```
+ALTER TABLE table_name DROP COLUMN column_name;
+```
+
+- Thay đổi kiểu dữ liệu của cột:
+
+```
+ALTER TABLE table_name MODIFY column_name VARCHAR(50);
+```
+
+## 4. Thao tác với dữ liệu trong bảng
+
+- Xem dữ liệu:
+
+```
+SELECT field, field2,... FROM table_name WHERE...
+```
+
+- Thêm mới dữ liệu:
+
+```
+INSERT INTO table_name (field1, field2,...) VALUES (value1, value2,...);
+```
+
+- Cập nhật dữ liệu:
+
+```
+UPDATE table_name SET field1=new_value1, field2=new_value2,... [WHERE ...]
+```
+
+- Xóa dữ liệu:
+
+```
+DELETE FROM table_name [WHERE …]
+```
