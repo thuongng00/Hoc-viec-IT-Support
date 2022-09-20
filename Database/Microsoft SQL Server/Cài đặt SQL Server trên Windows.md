@@ -132,9 +132,16 @@ Bước 5: Chờ quá trình cài đặt hoàn tất, sau đó nhấn Close.
 
 ![image](https://user-images.githubusercontent.com/111716161/191190455-201565d4-69cf-4343-970a-c7f945b0b667.png)
 
-Bước 6: Khởi động lại máy và đăng nhập vào SSMS.
+Bước 6: Khởi động lại máy và mở SSMS.
 
 ![image](https://user-images.githubusercontent.com/111716161/191207746-b7d8e4d6-f78b-4caa-b074-abf89979f175.png)
+
+Có 2 chế độ xác thực: 
+
+- Chế độ Windows Authentication: Là chế độ xác thực người dùng windows, chỉ cần có user vào windows là được, không cần nhập Password.
+- Chế độ SQL Server Authentication: Là chế độ xác thực người dùng mức SQL Server, do SQL server quản lý user và password, người dùng phải có user và password mới có thể truy cập vào SQL Server - SQL Server có 1 user mặc định full quyền là security admin- viết tắt là sa. - Password của user sa do người dùng nhập vào khi cài đặt SQL Server
+
+Khi đăng nhập vào thì sẽ có giao diện chính:
 
 ![image](https://user-images.githubusercontent.com/111716161/191207828-03b98f50-1174-4b87-987d-9313a5edf434.png)
 
