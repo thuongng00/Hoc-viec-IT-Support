@@ -149,3 +149,5 @@ Bước 2: Nhấn Uninstall
 Bước 3: Chọn Remove.
 
 ![image](https://user-images.githubusercontent.com/111716161/191193694-fd840b73-37b1-4fee-89a7-fda989d2f50e.png)
+
+Bước 4: 
