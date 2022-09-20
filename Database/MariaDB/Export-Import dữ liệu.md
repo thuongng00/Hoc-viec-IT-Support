@@ -47,6 +47,14 @@ head -n 5 data-dump.sql
 
 ![image](https://user-images.githubusercontent.com/111716161/191157370-7a5ec0c4-cf25-4e4d-9998-64033f2823e4.png)
 
+Để xem toàn bộ nội dung file, sử dụng lệnh:
+
+```
+cat filename.sql
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191158698-a4dbb86a-cd2e-4218-b4a8-3a3849affc8d.png)
+
 ## 2. Import database
 
 Để nhập file kết xuất hiện có vào MySQL hoặc MariaDB, bạn sẽ phải tạo database mới. Đây là nơi nội dung của file kết xuất sẽ được nhập. 
