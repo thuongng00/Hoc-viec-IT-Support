@@ -47,7 +47,7 @@ SQL Server thông thường được sử dụng cho mục đích lưu trữ d�
 
 # Các phiên bản SQL Server
 
-Trong  khoảng từ năm 1995 đến năm 2916 thì Microsoft đã cho phát hành nhiều phiên bản cơ sở dữ liệu SQL. Ngoài ra, Microsoft đã kết hợp được với nhiều  công cụ cho việc thực hiện quản lý dữ liệu cũng như phân tích được dữ liệu vào SQL Server. Một số chức năng và công nghệ mới được xuất hiện bao gồm: web, điện toán đám mây và các thiết bị di động.
+Trong  khoảng từ năm 1995 đến năm 2019 thì Microsoft đã cho phát hành nhiều phiên bản cơ sở dữ liệu SQL. Ngoài ra, Microsoft đã kết hợp được với nhiều  công cụ cho việc thực hiện quản lý dữ liệu cũng như phân tích được dữ liệu vào SQL Server. Một số chức năng và công nghệ mới được xuất hiện bao gồm: web, điện toán đám mây và các thiết bị di động.
 
 ## Microsoft SQL Server 2012
 
