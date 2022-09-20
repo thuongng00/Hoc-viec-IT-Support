@@ -158,3 +158,36 @@ DELETE FROM table_name [WHERE …]
 SELECT USER, HOST, PASSWORD FROM MYSQL.USER;
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191154021-b26694f9-f3f8-4b91-b946-67f327680cda.png)
+
+- Tạo user mới:
+
+```
+CREATE USER '<user_name>'@'<hostname>' IDENTIFIED BY '<user_password>';
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191154123-b5bc8092-60e5-4151-b38d-730fbac9bd08.png)
+
+- Gán quyền cho user
+
+```
+GRANT <permision> ON <database name>.<table name> TO <user name>@<host name>;
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191154228-f66fa3ef-7dc7-4708-9259-6d218f95dbef.png)
+
+Sau khi hoàn tất cần reload lại toàn bộ quyền của user
+
+```
+FLUSH PRIVILEGES;
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191154325-1af38ae5-b658-48e2-8093-a3cdd9ab787f.png)
+
+- Gỡ bỏ quyền của một user:
+
+```
+REVOKE <permission> ON <database name>.<table name> FROM <user name>@<host name>;
+```
+
+REVOKE ALL PRIVILEGES ON * . * TO 'thuong'@'localhost';
