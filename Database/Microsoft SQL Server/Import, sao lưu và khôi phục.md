@@ -34,6 +34,14 @@ C:\Program Files\Microsoft SQL Server\MSSQL15.THUONG\MSSQL\DATA
 
 Chuột phải Database -> Attach... -> Add -> tên tệp -> OK
 
+![image](https://user-images.githubusercontent.com/111716161/191418034-6fe6dcb6-2da5-440b-b07b-e955a916c500.png)
+
+![image](https://user-images.githubusercontent.com/111716161/191418100-794d6a43-0747-49cb-8e51-5e74301113e1.png)
+
+![image](https://user-images.githubusercontent.com/111716161/191418141-60dde6af-d6ef-4b9b-99f4-d1e9a500ed76.png)
+
+![image](https://user-images.githubusercontent.com/111716161/191418185-8c49086d-4fb4-4516-a474-c8d1e7a60c77.png)
+
 ### Cách 2: Cách thức xuất file
 
 Cách làm này sẽ xuất file định hình .sql từ máy này và chạy file .sql này trên máy khác để có được “Cơ sở dữ liệu” cần khôi phục.
