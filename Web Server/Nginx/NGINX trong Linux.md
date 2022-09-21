@@ -141,7 +141,7 @@ systemctl disable nginx    // Vô hiệu hoá Nginx khởi động cùng hệ th
 systemctl status nginx     // Xem trạng thái dịch vụ Nginx
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/191457664-ddb6459a-c8f2-49f9-99e0-5f710684ed1c.png)
+![image](https://user-images.githubusercontent.com/111716161/191458512-69ca87b0-0ca2-4572-b0ed-1856ce62ffe9.png)
 
 Bước 6: Kiểm tra, hãy truy cập http://IP-VPS bằng trình duyệt sẽ thấy trang chào mừng của Nginx
 
