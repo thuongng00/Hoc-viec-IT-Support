@@ -98,8 +98,7 @@ Update những thay đổi mới nhất
 yum -y update
 ```
 
-
-# Bước 3: Cài đặt Nginx
+Bước 3: Cài đặt Nginx
 
 ```
 yum install nginx -y
@@ -107,7 +106,15 @@ yum install nginx -y
 
 ![image](https://user-images.githubusercontent.com/111716161/191454622-cfbac531-1124-40f0-80d7-6765fd817b28.png)
 
-Bước 3: Khởi động dịch vụ
+Bước 4: Cấu hình Firewalld
+
+```
+firewall-cmd --permanent --add=service=http
+firewall-cmd --permanent --add=service=https
+firewall-cmd --reload
+```
+
+Bước 5: Khởi động dịch vụ
 
 ```
 systemctl start nginx
@@ -128,15 +135,6 @@ systemctl disable nginx    // Vô hiệu hoá Nginx khởi động cùng hệ th
 systemctl status nginx     // Xem trạng thái dịch vụ Nginx
 ```
 
-# Bước 4: Mở dịch vụ trên Firewalld
-
-```
-firewall-cmd --permanent --add=service=http
-firewall-cmd --permanent --add=service=https
-firewall-cmd --reload
-```
-
-
-- Kiểm tra, hãy truy cập http://IP-VPS bằng trình duyệt sẽ thấy trang chào mừng của Nginx
+Bước 6: Kiểm tra, hãy truy cập http://IP-VPS bằng trình duyệt sẽ thấy trang chào mừng của Nginx
 
 
