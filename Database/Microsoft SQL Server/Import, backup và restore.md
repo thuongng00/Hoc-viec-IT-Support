@@ -126,11 +126,11 @@ Xem file backup.
 
 Bước 1: Chuột phải database -> Task -> Restore -> Database...
 
-![image](https://user-images.githubusercontent.com/111716161/191443516-453b9cc8-0f20-41f2-bf94-2ebdbea53431.png)
+![image](https://user-images.githubusercontent.com/111716161/191444928-8b11becc-2606-4e0d-af47-63b36a303e54.png)
 
 Bước 2: Chọn Device -> Dấu "..."
 
-![image](https://user-images.githubusercontent.com/111716161/191443819-668eb1e6-61b7-46a1-ae41-aedf5f77a6db.png)
+![image](https://user-images.githubusercontent.com/111716161/191445319-4748eb7e-2037-4d7c-8e6e-8c65f31330d0.png)
 
 Bước 3: Chọn Add -> chọn file backup -> OK.
 
@@ -142,5 +142,5 @@ Bước 4: Nhấn Ok.
 
 Bước 5: Nhấn Ok để hoàn tất.
 
-![image](https://user-images.githubusercontent.com/111716161/191444141-ac7a6952-4596-421f-b72e-02e4d9f9bed6.png)
+![image](https://user-images.githubusercontent.com/111716161/191445500-93817707-ebe8-43e4-9922-23c7c8271730.png)
 
