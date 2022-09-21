@@ -48,6 +48,34 @@ Cách làm này sẽ xuất file định hình .sql từ máy này và chạy fi
 
 Bước 1: Chuột phải vào Database -> Task -> Generate Scripts...
 
+![image](https://user-images.githubusercontent.com/111716161/191432292-8d66ba81-9cda-47e1-a1ab-e85cd6acccc5.png)
+
+- Nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/191432790-78850796-c785-48ce-8b79-4e403ee99c97.png)
+
+Có 2 lựa chọn: 
+
+`Script entire database and all database objects`: Chọn toàn bộ cơ sở dữ liệu và tất cả đối tượng trong CSDL.
+
+`Select specific database objects`: Chọn các đối tượng CSDL cụ thể. 
+
+- Sau khi chọn, nhấn Next. 
+
+![image](https://user-images.githubusercontent.com/111716161/191433357-c4d49e9f-afde-4756-838f-5b65e73771d9.png)
+
+- Chọn cách lưu tệp, nhấn Next. 
+
+![image](https://user-images.githubusercontent.com/111716161/191433659-9b79c796-4e57-412a-8c95-6e35bca9bef3.png)
+
+- Nhấn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/191433768-e7ec4032-84a0-49d8-832b-e11704170be3.png)
+
+- Nhấn Finish.
+
+![image](https://user-images.githubusercontent.com/111716161/191433832-e12744a5-8c0a-492a-b7a3-65ad1c73b213.png)
+
 Bước 2: Nhấn Next để tiếp tục.
 
 
