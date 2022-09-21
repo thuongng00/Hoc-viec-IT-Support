@@ -64,17 +64,14 @@ Bất kể với web server nào, hãy chọn một nhà cung cấp hosting tố
 <a name="caidat"></a>
 # Cài đặt Nginx trên CentOS 7
 
-## Bước 1: Cài đặt các gói cần thiết:
-`yum install yum-utils -y`
+Bước 1: Thêm repository
 
-
-
-# Bước 2:Thêm yum repository
-`nano /etc/yum.repos.d/nginx.repo`
-
-
+```
+nano /etc/yum.repos.d/nginx.repo
+```
 
 Dán nội dung dưới đây vào
+
 ```
 [nginx-stable]
 name=nginx stable repo
@@ -85,16 +82,43 @@ gpgkey=https://nginx.org/keys/nginx_signing.key
 module_hotfixes=true
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191454285-0079a703-c2dd-48c0-9ba5-8126486c10c6.png)
+
+Bước 2: Cài đặt các gói cần thiết
+
+```
+yum install yum-utils -y
+```
+
+![image](https://user-images.githubusercontent.com/111716161/191454418-6bb18d4a-966a-4b2b-8406-ff82fce0fe4b.png)
+
+Update những thay đổi mới nhất
+
+```
+yum -y update
+```
+
 
 # Bước 3: Cài đặt Nginx
 
-`yum install nginx -y`
+```
+yum install nginx -y
+```
 
+![image](https://user-images.githubusercontent.com/111716161/191454622-cfbac531-1124-40f0-80d7-6765fd817b28.png)
 
+Bước 3: Khởi động dịch vụ
 
+```
+systemctl start nginx
+systemctl enable nginx
+```
 
-Sau khi hoàn tất ta có thể sử dụng các lệnh sau để quản lý Nginx
-```sh
+![image](https://user-images.githubusercontent.com/111716161/191454800-43d27291-b32a-49a0-b7d8-a07e6567b773.png)
+
+Các lệnh quản lý Nginx:
+
+```
 systemctl start nginx      // Khởi động dịch vụ Nginx
 systemctl stop nginx       // Dừng dịch vụ Nginx
 systemctl reload nginx     // Tải lại dịch vụ Nginx
@@ -104,15 +128,8 @@ systemctl disable nginx    // Vô hiệu hoá Nginx khởi động cùng hệ th
 systemctl status nginx     // Xem trạng thái dịch vụ Nginx
 ```
 
-
-# Bước 3: Khởi động dịch vụ
-```
-systemctl start nginx
-systemctl enable nginx
-```
-
-
 # Bước 4: Mở dịch vụ trên Firewalld
+
 ```
 firewall-cmd --permanent --add=service=http
 firewall-cmd --permanent --add=service=https
