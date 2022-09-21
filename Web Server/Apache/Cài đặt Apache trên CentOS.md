@@ -99,11 +99,11 @@ firewall-cmd --reload
 ### 4. Tiến hành khởi động Apache bằng cách khởi động lại nó bằng các lệnh sau :
 
 ```
-systemctl enable httpd
 systemctl start httpd
+systemctl enable httpd
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/188358524-4ebccdd3-ea77-40d7-a566-6772c2d55139.png)
+![image](https://user-images.githubusercontent.com/111716161/191462192-501e0e1a-acd0-4b04-b751-7966c60f77c6.png)
 
 *Để kiểm tra trạng thái apache chúng ta sử dụng câu lệnh ``systemctl status httpd``*
 
@@ -129,6 +129,7 @@ Các file cấu hình :
 - Các file log của Apache (access_log và error_log) nằm trong thư mục ``/var/log/httpd/``. Bạn nên có file log riêng cho mỗi vhost.
 
 Như vậy đã hoàn thành cài Apache trên CentOS 7
+
 ### 5. Tạo Virtualhost (Vhost)
 5.1. Bật userdir bằng lệnh : ``nano /etc/httpd/conf.d/userdir.conf``
 
