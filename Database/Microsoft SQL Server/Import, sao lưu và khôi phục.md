@@ -54,27 +54,31 @@ Bước 1: Chuột phải vào Database -> Task -> Generate Scripts...
 
 ![image](https://user-images.githubusercontent.com/111716161/191432790-78850796-c785-48ce-8b79-4e403ee99c97.png)
 
-Có 2 lựa chọn: 
+- Có 2 lựa chọn: 
 
 `Script entire database and all database objects`: Chọn toàn bộ cơ sở dữ liệu và tất cả đối tượng trong CSDL.
 
 `Select specific database objects`: Chọn các đối tượng CSDL cụ thể. 
 
-- Sau khi chọn, nhấn Next. 
+Sau khi chọn, nhấn Next. 
 
-![image](https://user-images.githubusercontent.com/111716161/191433357-c4d49e9f-afde-4756-838f-5b65e73771d9.png)
+![image](https://user-images.githubusercontent.com/111716161/191435724-26f00aa2-486c-430e-828d-9c545a796532.png)
 
-- Chọn cách lưu tệp, nhấn Next. 
+- Để xuất file .sql kèm dữ liệu thì cần cấu hình như sau: Chọn Save as notebook -> Advanced -> Tại: Types of data to script chọn Schema and data (Có cả dữ liệu trong file xuất ra) -> OK -> Next.
 
-![image](https://user-images.githubusercontent.com/111716161/191433659-9b79c796-4e57-412a-8c95-6e35bca9bef3.png)
+![image](https://user-images.githubusercontent.com/111716161/191435984-8ba7520d-74ef-4230-89d9-8863193db7f1.png)
 
 - Nhấn Next.
 
-![image](https://user-images.githubusercontent.com/111716161/191433768-e7ec4032-84a0-49d8-832b-e11704170be3.png)
+![image](https://user-images.githubusercontent.com/111716161/191436227-5e429e4f-aec6-4d81-9497-8ad611132361.png)
 
-- Nhấn Finish.
+- Kiểm tra tình trạng xuất file, sau đó nhấn Finish để hoàn tất.
 
-![image](https://user-images.githubusercontent.com/111716161/191433832-e12744a5-8c0a-492a-b7a3-65ad1c73b213.png)
+![image](https://user-images.githubusercontent.com/111716161/191436286-130f306a-6f70-4f1c-8080-40f9700f8a23.png)
+
+Một file .sql đã được tạo.
+
+![image](https://user-images.githubusercontent.com/111716161/191434235-31efbed9-3b21-4224-a63b-d20290f68a57.png)
 
 Bước 2: Nhấn Next để tiếp tục.
 
