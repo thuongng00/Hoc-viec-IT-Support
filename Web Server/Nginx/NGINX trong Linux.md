@@ -100,6 +100,8 @@ yum -y update
 
 ![image](https://user-images.githubusercontent.com/111716161/191456579-05b5092d-03b7-4cd3-a586-50887f47d345.png)
 
+![image](https://user-images.githubusercontent.com/111716161/191457271-92ab7684-947c-4009-b7aa-1c35cef48990.png)
+
 Bước 3: Cài đặt Nginx
 
 ```
@@ -111,10 +113,12 @@ yum install nginx -y
 Bước 4: Cấu hình Firewalld
 
 ```
-firewall-cmd --permanent --add=service=http
-firewall-cmd --permanent --add=service=https
+firewall-cmd --permanent --zone=public --add-service=http
+firewall-cmd --permanent --zone=public --add-service=https
 firewall-cmd --reload
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/191457512-9b338548-e4e4-4c4f-a84e-64b88f1d5485.png)
 
 Bước 5: Khởi động dịch vụ
 
@@ -137,6 +141,9 @@ systemctl disable nginx    // Vô hiệu hoá Nginx khởi động cùng hệ th
 systemctl status nginx     // Xem trạng thái dịch vụ Nginx
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191457664-ddb6459a-c8f2-49f9-99e0-5f710684ed1c.png)
+
 Bước 6: Kiểm tra, hãy truy cập http://IP-VPS bằng trình duyệt sẽ thấy trang chào mừng của Nginx
 
+![image](https://user-images.githubusercontent.com/111716161/191458316-a39ccf41-52f5-467e-a7d9-9df1150df5a8.png)
 
