@@ -64,13 +64,17 @@ Sau khi chọn, nhấn Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/191435724-26f00aa2-486c-430e-828d-9c545a796532.png)
 
-- Để xuất file .sql kèm dữ liệu thì cần cấu hình như sau: Chọn Save as notebook -> Advanced -> Tại: Types of data to script chọn Schema and data (Có cả dữ liệu trong file xuất ra) -> OK -> Next.
+- Để xuất file .sql kèm dữ liệu thì cần cấu hình như sau: Chọn Save as script file.
+
+![image](https://user-images.githubusercontent.com/111716161/191436955-fefc46ae-ecea-4caa-aa1e-fd39a3e89134.png)
+
+Chọn Advanced -> Tại: Types of data to script chọn Schema and data (Có cả dữ liệu trong file xuất ra) -> OK -> Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/191435984-8ba7520d-74ef-4230-89d9-8863193db7f1.png)
 
 - Nhấn Next.
 
-![image](https://user-images.githubusercontent.com/111716161/191436227-5e429e4f-aec6-4d81-9497-8ad611132361.png)
+![image](https://user-images.githubusercontent.com/111716161/191437028-38fac58d-db33-48a9-843a-47d56781a3ea.png)
 
 - Kiểm tra tình trạng xuất file, sau đó nhấn Finish để hoàn tất.
 
