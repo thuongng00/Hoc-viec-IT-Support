@@ -104,35 +104,19 @@ Bước 2: Mở file trong SQL Server
 
 ![image](https://user-images.githubusercontent.com/111716161/191439933-e947be86-9e6f-4205-9c55-afcfd3ddc518.png)
 
-# Sao lưu database
+# Back up database
 
-Thực hiện sao lưu đầy đủ (dữ liệu, log) của một Database vào một file backup để có thể phục hồi lại chỉ cần sử dụng một file này.
+Bước 1: Chuột phải database -> Task -> Backup...
 
-Thực hiện lệnh sau:
+![image](https://user-images.githubusercontent.com/111716161/191442511-073c550c-5339-4aff-b3e7-cc1e5a1bbc8f.png)
 
-```
-USE database_name
-BACKUP DATABASE database_name TO DISK='/var/opt/mssql/backup/database_name.bak'
-```
+Bước 2: Chọn đường dẫn mặc định để lưu file hoặc thêm đường dẫn mới. 
 
-# Phục hồi database
+![image](https://user-images.githubusercontent.com/111716161/191442920-fedac984-261b-4527-b33d-3038a7449f0e.png)
 
-- Tạo database mới từ file backup
+Backup thành công. 
 
-Trường hợp tạo mới Database từ bản fullbackup
+![image](https://user-images.githubusercontent.com/111716161/191443018-b9adbdec-7406-41e9-b83a-4ef325ccf43c.png)
 
-```
-RESTORE DATABASE database_name FROM DISK='/var/opt/mssql/backup/database_name.bak'
-```
-
-- Phục hồi dữ liệu, ghi đè dữ liệu
-
-Ghi đè từ một file backup
-
-```
-RESTORE DATABASE database_name FROM DISK='/var/opt/mssql/baclup/database_name.bak' WITH REPLACE
-```
-
-Cấu trúc file data, log trong CSDL đang có và trong file .bak giống nhau. Có nghĩa là file .bak là bản lưu trước đây của chính CSDL đang tồn tại.
 
 
