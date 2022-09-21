@@ -1,3 +1,8 @@
+[Apache](#apache)
+
+[Cài đặt Apache](#caidat)
+
+<a name="apache"></a>
 # Apache
 
 Apache là phần mềm web server miễn phí mã nguồn mở được sử dụng phổ biến trên toàn thế giới. Tên gọi đầy đủ của Apache là Apache HTTP Server, được sáng lập và điều hành bởi Apache Software Foundation.
@@ -45,7 +50,9 @@ Là 1 thành phần của LAMP Stack – (Linux, Apache, MariaDB, Perl/Python/PH
 - Gặp vấn đề hiệu năng nếu website có lượng truy cập cực lớn
 - Quá nhiều lựa chọn thiết lập có thể gây ra các điểm yếu bảo mật
 
+<a name="caidat"></a>
 # Cài đặt Apache trên CentOS 7
+
 ### 1. Truy cập Teminal CentOS 7 với quyền root với câu lệnh
 ```
 su
