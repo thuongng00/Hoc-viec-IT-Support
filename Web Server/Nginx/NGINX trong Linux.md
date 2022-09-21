@@ -62,69 +62,64 @@ Người dùng shared hositng có thể thích sự tiện lợi của file .hta
 Bất kể với web server nào, hãy chọn một nhà cung cấp hosting tốt nhất trên nền tảng Linux.
 
 <a name="caidat"></a>
-
 # Cài đặt Nginx trên CentOS 7
 
-Bước 1: Đăng nhập với quyền root.
+## Bước 1: Cài đặt các gói cần thiết:
+`yum install yum-utils -y`
 
-Bước 2 : Dừng SELinux nhằm tránh trường hợp nó chặn Nginx
 
-Truy cập SELinux bằng câu lệnh :
 
+# Bước 2:Thêm yum repository
+`nano /etc/yum.repos.d/nginx.repo`
+
+
+
+Dán nội dung dưới đây vào
 ```
-nano /etc/sysconfig/selinux
-```
-
-![image](https://user-images.githubusercontent.com/111716161/188775311-33133b0b-0aae-4c2b-8f6f-4490e818762d.png)
-
-Thay đổi ``enforcing`` thành ``disabled`` như hình trên.
-
-Sau đó dùng lệnh ``reboot`` để khởi động lại hệ thống.
-
-Tiếp theo dùng lệnh ``sestatus`` để kiểm tra SELinux đã dừng chưa (Nếu như hình dưới là đã thành công)
-
-![image](https://user-images.githubusercontent.com/111716161/188775705-d6dcf264-757e-4581-a466-c734aae8d5a4.png)
-
-Bước 3 : Cài đặt các gói cần thiết hỗ trợ NginX
-
-Để cài Nginx trên CentOS, chúng ta sẽ cần thêm EPEL repository giúp tạo, duy trì và quản lý các gói bổ sung.
-
-```
-sudo yum install epel-release -y
+[nginx-stable]
+name=nginx stable repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=https://nginx.org/keys/nginx_signing.key
+module_hotfixes=true
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/188775852-b3982f37-2894-4452-a423-d91616a6a377.png)
 
-Bước 3 : Tiến hành cài đặt NginX
+# Bước 3: Cài đặt Nginx
 
-Chúng ta cài đặt nginx với câu lệnh :
+`yum install nginx -y`
 
+
+
+
+Sau khi hoàn tất ta có thể sử dụng các lệnh sau để quản lý Nginx
+```sh
+systemctl start nginx      // Khởi động dịch vụ Nginx
+systemctl stop nginx       // Dừng dịch vụ Nginx
+systemctl reload nginx     // Tải lại dịch vụ Nginx
+systemctl restart nginx    // Khởi động lại dịch vụ Nginx
+systemctl enable nginx     // Thiết lập Nginx khởi động cùng hệ thống
+systemctl disable nginx    // Vô hiệu hoá Nginx khởi động cùng hệ thống
+systemctl status nginx     // Xem trạng thái dịch vụ Nginx
 ```
-yum install nginx -y
+
+
+# Bước 3: Khởi động dịch vụ
+```
+systemctl start nginx
+systemctl enable nginx
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/188775963-915145e4-e11c-4a45-b641-ed90bee5878c.png)
 
-Bước 4 : Khởi động Nginx
-
-`systemctl enable nginx` : Câu lệnh đặt mặc định khỏi động Nginx cùng với hệ thống
-
-`systemctl start nginx` : Câu lệnh khởi chạy Nginx
-
-`systemctl status nginx` : Câu lệnh kiểm tra trạng thái Nginx
-
-![image](https://user-images.githubusercontent.com/111716161/188776143-40bb96ab-95d7-49fc-9fc8-d033e58c2cf3.png)
-
-Sau đó truy cập IP/Domain hệ thống.
-
-![image](https://user-images.githubusercontent.com/111716161/188779933-669d8026-80ed-48ca-8bee-7c44203aa582.png)
-
-Nếu các bạn sử dụng Firewall để có thể truy cập được website các bạn sẽ cần mở port bằng các lệnh sau đây
-
+# Bước 4: Mở dịch vụ trên Firewalld
 ```
-firewall-cmd --permanent --zone=public --add-service=http
-firewall-cmd --permanent --zone=public --add-service=https
+firewall-cmd --permanent --add=service=http
+firewall-cmd --permanent --add=service=https
 firewall-cmd --reload
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/188776689-75f6b602-86b2-4883-a6ca-a09782fda1a7.png)
+
+- Kiểm tra, hãy truy cập http://IP-VPS bằng trình duyệt sẽ thấy trang chào mừng của Nginx
+
+
