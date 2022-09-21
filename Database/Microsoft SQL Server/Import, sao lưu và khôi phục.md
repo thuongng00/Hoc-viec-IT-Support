@@ -82,8 +82,26 @@ Chọn Advanced -> Tại: Types of data to script chọn Schema and data (Có c�
 
 Một file .sql đã được tạo.
 
-![image](https://user-images.githubusercontent.com/111716161/191434235-31efbed9-3b21-4224-a63b-d20290f68a57.png)
+![image](https://user-images.githubusercontent.com/111716161/191437186-b7e14db5-33b3-4be4-88e7-c862b3ba4c4c.png)
 
-Bước 2: Nhấn Next để tiếp tục.
+Bước 2: Mở file trong SQL Server
+
+- Chọn File -> Open -> File...
+
+![image](https://user-images.githubusercontent.com/111716161/191439277-c1591451-b6ef-4d2d-ba3d-c834fea918b7.png)
+
+- Chọn file script.sql để mở. 
+
+![image](https://user-images.githubusercontent.com/111716161/191439430-6dc99941-7e78-44f3-ad6d-fe9ff6ea8f60.png)
+
+![image](https://user-images.githubusercontent.com/111716161/191439569-918c7aa7-7b9b-46e4-a20f-e9aae626e94a.png)
+
+- Tạo một database giống với tên của database cũ để chứa dữ liệu sắp nhập vào.
+
+![image](https://user-images.githubusercontent.com/111716161/191439775-7b0077da-d8da-4375-90df-c457dea29947.png)
+
+-  Chọn all câu lệnh và nhấn Execute. Như vậy toàn bộ dữ liệu của database đã được chuyển qua thành công. 
+
+![image](https://user-images.githubusercontent.com/111716161/191439933-e947be86-9e6f-4205-9c55-afcfd3ddc518.png)
 
 
