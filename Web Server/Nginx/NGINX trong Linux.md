@@ -98,6 +98,8 @@ Update những thay đổi mới nhất
 yum -y update
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191456579-05b5092d-03b7-4cd3-a586-50887f47d345.png)
+
 Bước 3: Cài đặt Nginx
 
 ```
