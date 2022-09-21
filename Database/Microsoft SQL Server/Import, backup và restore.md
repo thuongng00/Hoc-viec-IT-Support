@@ -118,5 +118,29 @@ Backup thành công.
 
 ![image](https://user-images.githubusercontent.com/111716161/191443018-b9adbdec-7406-41e9-b83a-4ef325ccf43c.png)
 
+Xem file backup. 
 
+![image](https://user-images.githubusercontent.com/111716161/191443205-be37275a-db43-4592-a854-5fb3809c3916.png)
+
+# Restore Database
+
+Bước 1: Chuột phải database -> Task -> Restore -> Database...
+
+![image](https://user-images.githubusercontent.com/111716161/191443516-453b9cc8-0f20-41f2-bf94-2ebdbea53431.png)
+
+Bước 2: Chọn Device -> Dấu "..."
+
+![image](https://user-images.githubusercontent.com/111716161/191443819-668eb1e6-61b7-46a1-ae41-aedf5f77a6db.png)
+
+Bước 3: Chọn Add -> chọn file backup -> OK.
+
+![image](https://user-images.githubusercontent.com/111716161/191443923-2103a75c-6ade-4e2c-bec6-7c4fd44ce3bf.png)
+
+Bước 4: Nhấn Ok.
+
+![image](https://user-images.githubusercontent.com/111716161/191444021-d5c2704c-f5fd-4f31-92cd-e95c0bde7bc4.png)
+
+Bước 5: Nhấn Ok để hoàn tất.
+
+![image](https://user-images.githubusercontent.com/111716161/191444141-ac7a6952-4596-421f-b72e-02e4d9f9bed6.png)
 
