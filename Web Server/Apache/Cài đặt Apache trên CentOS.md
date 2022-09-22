@@ -128,6 +128,8 @@ Các file cấu hình :
 - Các tệp vhost Apache phải kết thúc bằng ``.conf`` và được lưu trữ trong thư mục ``/etc/httpd/conf.d``. Ví dụ: nếu tên miền của bạn là mydomain.com thì tệp cấu hình sẽ được đặt tên ``/etc/httpd/conf.d/mydomain.com.conf``
 - Các file log của Apache (access_log và error_log) nằm trong thư mục ``/var/log/httpd/``. Bạn nên có file log riêng cho mỗi vhost.
 
+![image](https://user-images.githubusercontent.com/111716161/191659522-0a7f08f7-82b9-40a8-b3db-71930302a1d6.png)
+
 Như vậy đã hoàn thành cài Apache trên CentOS 7
 
 ### 5. Tạo Virtualhost (Vhost)
