@@ -1,3 +1,8 @@
+[Cài đặt PHP](#php)
+
+[Cài đặt phpMyAdmin](#phpmyadmin)
+
+<a name="php"></a>
 # Cài đặt PHP 7.3
 
 ### Bước 1: 
@@ -82,6 +87,7 @@ phpinfo();
 
 ![image](https://user-images.githubusercontent.com/111716161/191649960-47ec414f-6dd3-4638-a17e-f91b08198cf0.png)
 
+<a name="phpmyadmin"></a>
 # Cài đặt phpMyAdmin
 
 ### Bước 1:
