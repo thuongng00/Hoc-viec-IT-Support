@@ -71,3 +71,16 @@ Cả hai công cụ đều tuân thủ EC2, có nghĩa là chúng tuân thủ c�
 - SQL Server sử dụng Management Studio (SSMS).
 
 Cả 2 RDMBSs đều hỗ trợ công cụ Integrated Development Environment (IDE). Công cụ này tạo ra môi trường lập trình cho lập trình viên, bạn nên chọn loại phù hợp nhất cho mình.
+
+**Tổng kết**
+
+
+| | SQL Server | MySQL |
+|---|---|---|
+| Bản chất | Được phát triển bởi Microsoft. Microsoft đã xây dựng nhiều công cụ mạnh mẽ cho SQL Server, hỗ trợ lớn hơn cho RDBMS, bao gồm các công cụ phân tích dữ liệu. SQL Server hoạt động tốt trong môi trường .NET | Thuộc sở hữu của Oracle, là một phần mềm mã nguồn mở, chạy trên hơn 20 nền tảng bao gồm Linux, Windows, OS / X, HP-UX, AIX, Netware. MySQL có thể kết hợp với mọi ngôn ngữ lập trình khác, thông thường là PHP. |
+| Chi phí | Microsoft yêu cầu người dùng mua giấy phép để truy cập các tính năng đầy đủ của SQL Server. | Sử dụng General Public License (mã nguồn mở), điều này làm cho nó hoàn toàn miễn phí để sử dụng. |
+| Lưu trữ dữ liệu | Sử dụng một công cụ lưu trữ duy nhất do Microsoft phát triển. | Cung cấp cho các nhà phát triển sự linh hoạt hơn nhiều, vì họ có thể sử dụng các công cụ khác nhau cho các bảng khác nhau dựa trên tốc độ, độ tin cậy hoặc một số thứ nguyên khác. Hai trong số các công cụ lưu trữ MySQL phổ biến nhất là InnoDB và MyISAM. |
+| Sao lưu và phục hồi | Không khóa cơ sở dữ liệu, vì vậy bạn vẫn có thể sử dụng nó trong quá trình sao lưu. | Khi sao lưu cơ sở dữ liệu MySQL, dữ liệu được trích xuất dưới dạng câu lệnh SQL. Việc sao lưu và khôi phục một lượng lớn dữ liệu có thể mất vĩnh viễn do thực hiện nhiều câu lệnh SQL. Để tránh sự mâu thuẫn, MySQL sẽ khóa cơ sở dữ liệu trong quá trình sao lưu. Khóa này làm cho cơ sở dữ liệu của bạn không sử dụng được. | 
+| Bảo mật | Ít bị hack hơn vì dữ liệu không thể được thao tác hoặc truy cập trực tiếp. | Cho phép các tệp cơ sở dữ liệu của nó được chỉnh sửa và truy cập bởi các quy trình khác trong thời gian chạy. | 
+| Cộng đồng hỗ trợ | Chủ yếu từ Microsoft | Từ cộng đồng đông đảo |
+| IDEs | Sử dụng Management Studio (SSMS). | Sử dụng Enterprise Manager của Oracle. | 
