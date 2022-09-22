@@ -6,11 +6,15 @@ Bước 1: Liệt kê thông tin card mạng
 ip link show
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191690206-f7b28c2a-b1b5-441c-af0c-d1c9d313ad54.png)
+
 Hoặc
 
 ```
 nmcli -p dev
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/191690272-c7e5035d-c7e9-43aa-a355-e40c49fa7b60.png)
 
 Bước 2: Cấu hình IP tĩnh
 
@@ -22,6 +26,8 @@ Mở file cấu hình card mạng:
 nano /etc/sysconfig/network-scripts/ifcfg-ens33
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191690481-c7e57861-efa4-4890-8250-972485a0691e.png)
+
 Các option cần cấu hình:
 
 `DEVICE`: tên card mạng, cần điền chính xác tên card mạng thì hệ thống mới nhận biết được card nào để cấu hình cho nó. 
@@ -30,7 +36,7 @@ Các option cần cấu hình:
 
 `ONBOOT`: phải để "yes" thì khi reboot hệ thống, network mới tự động được bật lên với cấu hình card mạng tương ứng. 
 
-`BOOTPROTO`: Cấu hình IP tĩnh hay DHCP, nếu là DHCP thì để giá trị DHCP.
+`BOOTPROTO`: Cấu hình IP tĩnh hay DHCP, nếu là DHCP thì để giá trị DHCP, nếu là IP tĩnh thì để STATIC
 
 `IPV6INIT`: tắt chức năng hỗ trợ sử dụng IPv6.
 
@@ -41,6 +47,8 @@ Các option cần cấu hình:
 `GATEWAY`: địa chỉ IP cổng gateway.
 
 `DNS1`: thông tin DNS server.
+
+![image](https://user-images.githubusercontent.com/111716161/191691483-52fda53d-6dff-48e0-b560-fbc1e8f3341b.png)
 
 - Cách 2: Cấu hình IP tĩnh với chương trình dịch vụ Network Manager
 
@@ -132,12 +140,15 @@ IP ở đây là 192.168.30.130
 ```
 vi /etc/hosts
 ```
+
 ![image](https://user-images.githubusercontent.com/111716161/188356557-bbdcdfec-370b-4bdd-bd20-f20e9efa4cdd.png)
 
 ### 3. Sử dụng phím tắt Insert trên bàn phím để sửa tập tin và thêm DNS và miền
+
 ![image](https://user-images.githubusercontent.com/111716161/188356663-7fce0b58-99c6-48e9-8555-c59a884634c6.png)
 
 ### 4. Tiếp theo ấn phím tắt Esc trên bàn phím để thoát chế độ chỉnh sửa và sử dụng lệnh :wq để lưu lại và gõ Enter để lưu
+
 ![image](https://user-images.githubusercontent.com/111716161/188356750-78a91011-3851-4098-920a-3aaad34f9570.png)
 
 # Tạo file trên DNS
