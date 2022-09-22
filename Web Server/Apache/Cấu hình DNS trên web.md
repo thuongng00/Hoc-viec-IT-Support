@@ -1,3 +1,120 @@
+# Cấu hình IP tĩnh
+
+Bước 1: Liệt kê thông tin card mạng
+
+```
+ip link show
+```
+
+Hoặc
+
+```
+nmcli -p dev
+```
+
+Bước 2: Cấu hình IP tĩnh
+
+- Cách 1: Cấu hình bằng tay
+
+Mở file cấu hình card mạng:
+
+```
+nano /etc/sysconfig/network-scripts/ifcfg-ens33
+```
+
+Các option cần cấu hình:
+
+`DEVICE`: tên card mạng, cần điền chính xác tên card mạng thì hệ thống mới nhận biết được card nào để cấu hình cho nó. 
+
+`NAME`: như DEVICE
+
+`ONBOOT`: phải để "yes" thì khi reboot hệ thống, network mới tự động được bật lên với cấu hình card mạng tương ứng. 
+
+`BOOTPROTO`: Cấu hình IP tĩnh hay DHCP, nếu là DHCP thì để giá trị DHCP.
+
+`IPV6INIT`: tắt chức năng hỗ trợ sử dụng IPv6.
+
+`IPADDR`: địa chỉ IP tĩnh.
+
+`PREFIX`: subnet mask của lớp mạng IP sử dụng.
+
+`GATEWAY`: địa chỉ IP cổng gateway.
+
+`DNS1`: thông tin DNS server.
+
+- Cách 2: Cấu hình IP tĩnh với chương trình dịch vụ Network Manager
+
+Network Manager là một chương trình/dịch vụ hỗ trợ điều khiển quản lý mạng cũng như cấu hình hệ thống mạng trên CentOS 7. 
+
+Mặc định khi sử dụng OS CentOS 7/RHEL 7 thì chương trình này đã được cài đặt từ ban đầu. Nhưng ta cần phải cài đặt chương trình "NetworkManager Text User Interface (TUI) -**nmtui**" nhằm cung cấp một giao diện text cấu hình linh động tương tác với NEtwork Manager ngay trên Terminal hoặc Console kết nối đến hệ thống thay vì phải dùng lệnh riêng của NetworkManager.
+
+Từ chương trình **mntui**, ta có thể cấu hình IP tĩnh cho card mạng, tắt mở kết nối mạng, thiết lập hostname cho OS, tạo card bonding, cấu hình VLAN bằng NM,...
+
+Để cài đặt chương trình **nmtui**, dùng lệnh sau:
+
+```
+yum install NetworkManager-tui -y
+```
+
+Thêm dòng sau vào file cấu hình card mạng:
+
+```
+nano /etc/sysconfig/network-scripts/ifcfg-ens33
+...
+...
+NM_CONTROLLERD="yes"
+...
+...
+```
+
+Khởi động dịch vụ Network Manager
+
+```
+systemctl start NetworkManager.service
+```
+
+Cấu hình IP tĩnh cho card mạng
+
+```
+nmtui edit ens33
+```
+
+Cửa sổ giao diện trên terminal của Network Manager xuất hiện cho phép ta cấu hình địa chỉ IP của ens33. 
+
+Sử dụng các phím tab, space, phím di chuyển để thay đổi, chỉnh sửa các giá trị cấu hình. Sau khi xong ta bấm chọn nút OK.
+
+Bước 3: Khởi động network và kiểm tra cấu hình
+
+- Khởi động lại dịch vụ network
+
+```
+systemctl restart network
+```
+
+- Kiểm tra thông tin IP tĩnh đã cấu hình cho card mạng
+
+```
+ip a s ens33
+```
+
+- Kiểm tra thông tin routing
+
+```
+ip r
+```
+
+- Kiểm tra thông tin DNS
+
+```
+cat /etc/resolv.conf
+```
+
+- Ping gateway
+
+```
+ping IP-VPS
+```
+
 # Gắn miền cho IP
 
 ### 1. Sử dụng lệnh ip add để check IP của Centos 7
