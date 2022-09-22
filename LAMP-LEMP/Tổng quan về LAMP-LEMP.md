@@ -43,7 +43,7 @@ Với các máy tính có máy chủ cài đặt Linux, chi phí để duy trì 
 
 Các thành phần cấu thành LEMP stack cũng gần tương tự với LAMP, chỉ khác là Apache sẽ được thay thế bởi Nginx. Nginx được đọc là “engine-x”, giải thích cho chữ E trong “LEPM”. Nginx có ưu điểm là cho phép xử lý tốc độ tải cao hơn đối với các HTTP request.
 
-![image](https://user-images.githubusercontent.com/111716161/191681253-64172ba2-193e-40bd-b5dc-686fea337a8a.png)
+<img src="https://user-images.githubusercontent.com/111716161/191681253-64172ba2-193e-40bd-b5dc-686fea337a8a.png" width=700/>
 
 Hiện tại, Nginx đã đạt được thành tựu đáng kể khi nó bắt đầu được nhiều người sử dụng từ năm 2008 và hiện trở thành ứng dụng web server tiếng tăm thứ 2 sau Apache.
 
