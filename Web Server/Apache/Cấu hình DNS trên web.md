@@ -64,6 +64,8 @@ Từ chương trình **mntui**, ta có thể cấu hình IP tĩnh cho card mạn
 yum install NetworkManager-tui -y
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191697263-bd55b221-4f94-4fef-9273-7c55fa1a1acc.png)
+
 Thêm dòng sau vào file cấu hình card mạng:
 
 ```
@@ -75,11 +77,15 @@ NM_CONTROLLERD="yes"
 ...
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191697460-eaaa6d9a-a56a-4d16-8547-c67ebcdb5de7.png)
+
 Khởi động dịch vụ Network Manager
 
 ```
 systemctl start NetworkManager.service
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/191697344-61c9948b-42dd-45ee-a254-0697aa5793f5.png)
 
 Cấu hình IP tĩnh cho card mạng
 
@@ -89,7 +95,11 @@ nmtui edit ens33
 
 Cửa sổ giao diện trên terminal của Network Manager xuất hiện cho phép ta cấu hình địa chỉ IP của ens33. 
 
+![image](https://user-images.githubusercontent.com/111716161/191697545-74bbc61b-4be7-44bb-a0e0-74f55dd2d9af.png)
+
 Sử dụng các phím tab, space, phím di chuyển để thay đổi, chỉnh sửa các giá trị cấu hình. Sau khi xong ta bấm chọn nút OK.
+
+![image](https://user-images.githubusercontent.com/111716161/191697848-5bc92fa7-28c9-41ac-87ed-531661a55ed6.png)
 
 Bước 3: Khởi động network và kiểm tra cấu hình
 
@@ -99,17 +109,23 @@ Bước 3: Khởi động network và kiểm tra cấu hình
 systemctl restart network
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191698039-ba0bcff1-302f-424e-8d5b-cf727ce4bc40.png)
+
 - Kiểm tra thông tin IP tĩnh đã cấu hình cho card mạng
 
 ```
 ip a s ens33
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/191698940-36b1f3b3-8248-4344-b369-2266a3100efc.png)
+
 - Kiểm tra thông tin routing
 
 ```
 ip r
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/191699021-8f43a81f-04e1-4744-8ac0-a36a89ed947a.png)
 
 - Kiểm tra thông tin DNS
 
