@@ -125,4 +125,25 @@ Kiểm tra xem phpMyAdmin có hoạt động hay không.
 
 Mở tiện ích phpMyAdmin bằng cách nhập địa chỉ IP máy chủ vào thanh địa chỉ của trình duyệt bằng thêm chuỗi bổ sung /phpmyadmin. 
 
+`http://IP-VPS/phpmyadmin`
+
 Màn hình đăng nhập hiển thị.
+
+![image](https://user-images.githubusercontent.com/111716161/191650709-e490cc72-274c-451f-94a1-f7c13e350487.png)
+
+### Bước 6: 
+Xác định tên người dùng và mật khẩu
+
+Tên người dùng và mật khẩu sẽ nằm trong tệp config.inc.php. Tệp sẽ nằm trong thư mục phpMyAdmin installation. 
+
+Mở tệp:
+
+```
+cd /etc/phpMyAdmin
+nano config.inc.php
+```
+
+Đặt tên người dùng và mật khẩu.
+
+![image](https://user-images.githubusercontent.com/111716161/191651728-08b053a1-6aa4-45de-8e4d-566c20066744.png)
+
