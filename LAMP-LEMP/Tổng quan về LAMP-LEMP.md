@@ -1,6 +1,6 @@
 # LAMP stack
 
-**LAMP** là viết tắt của Linux, Apache, MySQL và PHP (cũng có thể là Python, Perl nhưng bài này chỉ nói về Php), mỗi trong số đó là các gói phần mềm riêng lẻ được kết hợp để tạo thành một giải pháp máy chủ web linh hoạt. Các thành phần này, được sắp xếp theo các lớp hỗ trợ lẫn nhau, tạo thành các stack phần mềm.
+**LAMP** là viết tắt của Linux, Apache, MySQL (hoặc MariaDB) và PHP (cũng có thể là Python, Perl), mỗi trong số đó là các gói phần mềm riêng lẻ được kết hợp để tạo thành một giải pháp máy chủ web linh hoạt. Các thành phần này, được sắp xếp theo các lớp hỗ trợ lẫn nhau, tạo thành các stack phần mềm.
 
 <img src = "https://user-images.githubusercontent.com/111716161/190982341-210e87ad-c896-4f76-92f6-b4b38f7c38f5.png" width=700/>
 
