@@ -4,6 +4,8 @@ Kerio MailServer đại diện cho một thế hệ các máy chủ thư điện
 
 Để đối phó với các mối đe dọa bảo mật đang gia tăng, Kerio MailServer cung cấp hàng loạt các tính năng để bảo vệ email khỏi sự ngăn chặn và lây nhiễm do virus máy tính hoặc gởi email rác. 
 
+![image](https://user-images.githubusercontent.com/111716161/191893416-1689d340-af7c-4ed1-a425-a7a53c43a622.png)
+
 Kerio MailServer là một máy chủ thư điện tử an toàn hiện đại cho phép các công ty cộng tác với nhau qua email, các địa chỉ liên lạc, các lịch biểu và công việc chia sẻ. 
 
 Đối với các doanh nghiệp vừa và nhỏ, các trường học, cơ quan nhà nước và các tổ chức phi lợi nhuận cần các tính năng, công cụ cần thiết để trao đổi thông tin, Kerio Mailserver là một lựa chọn hợp lý. Sản phẩm rất dễ cài đặt, quản trị và chi phí thấp hơn so với sử dụng Microsoft Exchange.
@@ -32,6 +34,8 @@ Chương trình này chạy trên hệ điều hành Mac OS X 10.3.9 hoặc các
 
 **Email, lịch làm việc và cộng tác:** Nhằm thay thế cho Microsoft Exchange, Kerio MailServer cung cấp cách truy cập đến các lịch biểu, các địa chỉ liên lạc và các công việc đã được chia sẻ từ Microsoft Outlook, Microsoft Entourage, và Kerio WebMail, trong khi đó làm giảm chi phí của chủ sở hữu (TCO – Total Cost of Ownership) và mang lại kinh nghiệm sử dụng tốt hơn cho các doanh nghiệp vừa và nhỏ (SMEs – Small to Medium-sized Enterprises).
 
+![image](https://user-images.githubusercontent.com/111716161/191893494-1e91b7d1-c979-4b1d-9dd2-da233b7f2086.png)
+
 **Kerio WebMail & Kerio WebMail Mini:** Hai email clients có cơ sở web khác nhau, một có hình thức giống Microsoft Outlook và trình kia được tối ưu hóa để xem email trên các thiết bị PDA, mang đến cho người dùng cả hai cảm giác thoải mái và tốc độ trong khi trong khi vẫn có thể làm việc trên các trình duyệt web hiện đại nhất, như Safari và Firefox.
 
 **Dễ quản trị:** Các quản trị viên có thể tải về cài đặt và cấu hình chỉ trong vài phút. Các hướng dẫn trực quan đơn giản trợ giúp hầu hết các công việc quản trị thông dụng nhất. Bảng điều khiển quản trị cho phép truy cập từ xa an toàn và cung cấp các bookmarks cho nhiều máy chủ.
@@ -45,6 +49,8 @@ Chương trình này chạy trên hệ điều hành Mac OS X 10.3.9 hoặc các
 **Các hệ điều hành hỗ trợ:** Kerio MailServer chạy trên nền Windows 2000/XP/2003/Vista, các phiên bản dành cho máy chủ và không có máy chủ, Red Hat Linux, SUSE Linux và Mac OS X. Kerio Outlook Connector cho Microsoft Outlook chạy trên nền Windows 2000/XP/2003/Vista. Kerio MailServer cũng đi kèm trong một ứng dụng ảo Fedora Core 6.
 
 ### Kerio MailServer 6.7:
+
+![image](https://user-images.githubusercontent.com/111716161/191893381-22174f64-a456-4101-b979-a2efed90d49e.png)
 
 Version mới nhất của Kerio MailServer với các tính năng mới như:
 
