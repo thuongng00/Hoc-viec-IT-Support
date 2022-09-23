@@ -47,3 +47,28 @@ WorldClient Instant Messenger là ứng dụng khách đóng gói Tin nhắn t�
 ### Khả năng di chuyển Exchange
 
 Di chuyển từ máy chủ email này sang máy chủ email khác thường đặt ra một thách thức đáng kể nhưng MDaemon Messaging Server làm cho nó trở nên đơn giản. Tính năng MDMigrator tích hợp, đi kèm với MDaemon, được thiết kế đặc biệt để di chuyển dữ liệu của bạn từ Exchange sang MDaemon với một vài bước đơn giản để bạn có thể chạy và chạy trên MDaemon với thời gian ngừng hoạt động tối thiểu.
+
+## Triển khai Mdaemon trong doanh nghiệp
+
+Mdaemon được công nhận là giải pháp hoàn hảo cho hệ thống mail, với khả năng cài đặt, đưa và hoạt động và mở rộng đơn giản, nhanh chóng, phục vụ cho quá trình hoạt động của doanh nghiệp một cách suôn sẻ.
+
+### DỊCH VỤ TRIỂN KHAI CÀI ĐẶT MỚI MAIL SERVER
+
+- Tư vấn dịch vụ Mail Server Mdaemon phù hợp với nhu cầu
+- Tư vấn số lượng user, gói mail box, dung lượng file đính kèm
+- Tư vấn các dịch vụ bảo mật đi kèm như chống virus, chống spam, backup dữ liệu mail
+- Cung cấp bản quyền chính hãng với giá ưu đãi cho gói Email khách hàng đã lựa chọn
+- Triển khai cài đặt và vận hành ổn định hệ thống cho khách hàng.
+
+### DỊCH VỤ MIGRATE MAIL – CHUYỂN ĐỔI DỮ LIỆU EMAIL SANG MAIL SERVER MỚI
+
+- Tư vấn các dịch vụ Mail Server mới, bảo mật , nhiều tính năng phù hợp cho doanh nghiệp.
+- Cung cấp bản quyền chính hãng với giá ưu đãi nhất của dịch vụ Mail Server.
+- Backup các dữ liệu từ Mail Server cũ, đảm bảo an toàn, đầy đủ dữ liệu người dùng.
+- Triển khai dịch vụ Mail Server mới và chuyển dữ liệu người dùng tới Mail Server mới, đảm bảo vận hành hệ thống ổn định cho người dùng, dữ liệu cá nhân đầy đủ.
+
+### DỊCH VỤ HỖ TRỢ KỸ THUẬT, BẢO TRÌ, VẬN HÀNH HỆ THỐNG MAIL SERVER
+
+- Hỗ trợ triển khai, cấu hình các giao thức mail server, cấu hình bộ lọc spam, antivirus cho mail server, webmail, cập nhật hệ thống…
+- Hỗ trợ khắc phục các lỗi khi triển khai mới, các lỗi xảy ra trong quá trình vận hành hệ thống Mail Server.
+- Bảo vệ hệ thống Mail Server khách hàng khỏi danh sách Blacklist. Khi bị rơi vào danh sách này, các email từ server khách hàng sẽ không thể gửi đi hoặc bị chuyển vào mục Spam mail hoặc Junk mail.
