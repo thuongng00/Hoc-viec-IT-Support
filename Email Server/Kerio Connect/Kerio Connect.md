@@ -2,7 +2,7 @@
 
 Kerio MailServer đại diện cho một thế hệ các máy chủ thư điện tử mới được thiết kế cho các mạng công ty. 
 
-Để đối phó với các mối đe dọa bảo mật đang gia tăng, Kerio MailServer cung cấp hàng loạt các tính năng để bảo vệ email khỏi sự ngăn chặn và lây nhiễm do virus máy tính hoặc gởi email rác. 
+Để đối phó với các mối đe dọa bảo mật đang gia tăng, Kerio MailServer cung cấp hàng loạt các tính năng để bảo vệ email khỏi sự ngăn chặn và lây nhiễm do virus máy tính hoặc gửi email rác. 
 
 ![image](https://user-images.githubusercontent.com/111716161/191893416-1689d340-af7c-4ed1-a425-a7a53c43a622.png)
 
