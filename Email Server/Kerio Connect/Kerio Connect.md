@@ -51,6 +51,7 @@ Version mới nhất của Kerio MailServer với các tính năng mới như:
 **Danh sách địa chỉ toàn cầu:** Đồng bộ hóa với Active Directory hoặc Apple Open Directory
 
 • Thêm tài khoản mới và tự động gỡ bỏ các tài khoản bị xóa
+
 • Xem các địa chỉ liên lạc toàn cầu ngoại tuyến bằng Outlook, Entourage và Apple Address Book
 
 **Các Công cụ chuyển đổi:** Kerio cung cấp Kerio IMAP Migration Tool (KIMT) để giúp khách hàng chuyển các máy chủ email IMAP sang Kerio MailServer (máy chủ email Kerio). Có thể cài đặt công cụ chuyển đổi này trên hệ điều hành Windows, Linux hay máy tính Mac và chỉ bằng một vài cú nhấp chuột, công cụ này sẽ kéo dữ liệu từ bất kỳ máy chủ tuân theo IMAP nào và di chuyển chúng đến Kerio MailServer.
@@ -58,9 +59,13 @@ Version mới nhất của Kerio MailServer với các tính năng mới như:
 Các nội dụng di chuyển bao gồm:
 
 • Các tên miền
+
 • Các tài khoản người dùng
+
 • Các email
+
 • Các thư mục
+
 Chạy trên Mac, Windows và Linux
 
 **Trải nghiệm tốt hơn từ Mac:**
@@ -74,6 +79,7 @@ Chạy trên Mac, Windows và Linux
 **Cải tiến mới trên Linux:** Kerio MailServer bây giờ cũng được cài đặt trên
 
 • Ubuntu Linux 8,04 LTS
+
 • Bian 5,0
 
 **Hiệu suất chống thư rác tốt hơn**
@@ -81,10 +87,15 @@ Chạy trên Mac, Windows và Linux
 Hơn 14 lớp chống thư rác
 
 • DHA (Bảo vệ chống tấn công vào danh bạ)
+
 • SpamAssassin (Bayes, heuristic, và SURBL)
+
 • Chống lừa đảo / chống giả mạo
+
 • RBL (các máy chủ lập danh sách đen thời gian thực)
+
 • Tuỳ chọn whitelists(danh sách trắng và blacklists (danh sách đen).
+
 • Các giới hạn SMTP và nhiều hơn nữa ...
 
 **Giảm tiêu thụ tài nguyên máy chủ :** Ngăn chặn tới 80% thư rác thậm chí trước khi nó có thể tới được máy chủ. Tiết kiệm không gian ổ cứng, RAM và sử dụng CPU.
@@ -92,7 +103,9 @@ Hơn 14 lớp chống thư rác
 **Bảo vệ chống virus:** Khởi động phần mềm McAfee tích hợp bảo vệ chống virus cho phép
 
 • Triển khai nhanh hơn
+
 • Khả năng tương thích tốt hơn
+
 • Bảo trì ít hơn
 
 **Chương trình nhúng chống virus bên thứ 3 :** Sử dụng hệ thống chống virus hiện tại của bạn với Kerio MailServer dễ dàng thông qua chương trình nhúng chống virus có sẵn của Kerio.
@@ -100,7 +113,9 @@ Hơn 14 lớp chống thư rác
 **Sẵn sàng với kỹ thuật chống virus kép:** McAfee kết hợp với một bộ máy chống virus thứ hai mang đến cho bạn giải pháp bảo vệ kép chống virus.
 
 • Tối ưu hóa cho hệ thống máy chủ đa bộ vi xử lý
+
 • Một hệ thống mới nhanh hơn cho quá trình xử lý song song các tin nhắn email
+
 • SpamAssassin mới, cập nhật với độ chính xác cao hơn
 
 **Microsoft Active Directory 64-bit**
@@ -110,4 +125,5 @@ Hơn 14 lớp chống thư rác
 **Hỗ trợ RoadSync 4,0**
 
 • Đồng bộ hóa nhiệm vụ
+
 • Duyệt thư HTML
