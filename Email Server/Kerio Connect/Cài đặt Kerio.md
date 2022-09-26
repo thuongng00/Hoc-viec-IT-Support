@@ -1,6 +1,4 @@
-### Bước 1: 
-
-Kiểm tra trạng thái Selinux và cập nhật hệ thống
+### Bước 1: Kiểm tra trạng thái Selinux và cập nhật hệ thống
 
 - Tắt Selinux:
 
@@ -18,9 +16,7 @@ yum -y update
 
 ![image](https://user-images.githubusercontent.com/111716161/192212508-bf607b8f-8f46-40bb-bb9d-d6c0e64b2c2d.png)
 
-### Bước 2: 
-
-Gỡ cài đặt postfix
+### Bước 2: Gỡ cài đặt postfix
 
 Postfix là một phầm mềm nguồn mở được dùng để gửi mail (Mail Transfer Agent-MTA). Được phát hành bởi IBM với mục tiêu thay thế trình gửi mail phổ biến là sendmail.
 
@@ -54,9 +50,7 @@ yum remove postfix -y
 reboot
 ```
 
-### Bước 3: 
-
-Cài đặt Kerio Connect
+### Bước 3: Cài đặt Kerio Connect
 
 - Tải file rpm Kerio Connect:
 
@@ -94,9 +88,7 @@ firewall-cmd --reload
 
 ![image](https://user-images.githubusercontent.com/111716161/192214411-e0ba1746-1ab2-46d9-985e-e9bc2dc6940d.png)
 
-### Bước 5: 
-
-Đăng nhập Email Server trên trình duyệt:
+### Bước 5: Đăng nhập Email Server trên trình duyệt
 
 - Truy cập: 
 
