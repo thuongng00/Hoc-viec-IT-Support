@@ -144,3 +144,8 @@ Chờ hệ thống tự khởi động lại
 
 ![image](https://user-images.githubusercontent.com/111716161/192239578-0b4e383f-0dcc-40bb-8266-1138bebff5fd.png)
 
+- Đăng nhập vào trang quản trị
+
+![image](https://user-images.githubusercontent.com/111716161/192240440-8eb041ce-06aa-4aa8-9e6e-6e1bcd27d41d.png)
+
+![image](https://user-images.githubusercontent.com/111716161/192240518-98b6868b-d8cc-4c10-83cb-91daa8ccca9e.png)
