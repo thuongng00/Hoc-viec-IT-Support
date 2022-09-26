@@ -1,160 +1,3 @@
-# Cài đặt DNS
-
-Bước 1: Cài đặt gói bind vào máy
-
-```
-yum install bind bind-utils –y
-```
-
-![image](https://user-images.githubusercontent.com/111716161/192222273-d5bc3350-71a5-4d54-9bfb-bbc736369a1c.png)
-
-Bước 2: Chỉnh sửa file `/etc/named.conf`
-
-```
-nano /etc/named.conf
-```
-
-Thêm các dòng như hình:
-
-![image](https://user-images.githubusercontent.com/111716161/192223171-d555663a-237d-4282-b1e3-b1d058b4e160.png)
-
-![image](https://user-images.githubusercontent.com/111716161/192223717-52d664be-3def-4d75-a952-1ead18b15f6e.png)
-
-![image](https://user-images.githubusercontent.com/111716161/192224653-57453625-05d4-41c3-a12a-07a68c142aa3.png)
-
-Bước 3: Tạo Zone file
-
-- Tạo file forward
-
-```
-nano /var/named/forward.nganthuong
-```
-
-Thêm nội dung sau:
-
-```
-$TTL 86400
-
-@   IN  SOA     masterdns.nganthuong.com. root.nganthuong.com. (
-
-2011071001  ;Serial
-
-3600        ;Refresh
-
-1800        ;Retry
-
-604800      ;Expire
-
-86400       ;Minimum TTL
-
-)
-
-@       IN  NS          masterdns.nganthuong.com.
-
-@       IN  A           192.168.30.144
-
-masterdns       IN  A   192.168.30.144
-```
-
-![image](https://user-images.githubusercontent.com/111716161/192226335-724a482d-6a8d-402b-9790-f2a133d32c9c.png)
-
-- Tạo file reverse:
-
-```
-nano /var/named/reverse.nganthuong
-```
-
-Thêm nội dung sau:
-
-```
-$TTL 86400
-
-@   IN  SOA     masterdns.nganthuong.com. root.nganthuong.com. (
-
-2011071001  ;Serial
-
-3600        ;Refresh
-
-1800        ;Retry
-
-604800      ;Expire
-
-86400       ;Minimum TTL
-
-)
-
-@       IN  NS          masterdns.nganthuong.com.
-
-masterdns       IN  A   192.168.30.144
-
-1     IN  PTR         masterdns.nganthuong.com.
-```
-
-![image](https://user-images.githubusercontent.com/111716161/192227370-e0765bb9-dd97-4afd-80a2-9486859cb9e2.png)
-
-Bước 4: Khởi chạy dịch vụ DNS Server :
-
-```
-systemctl enable named
-
-systemctl start named
-```
-
-![image](https://user-images.githubusercontent.com/111716161/192227571-f67dd542-9777-416d-99df-0fdf59a1f4f5.png)
-
-Bước 5: Cấu hình Firewall :
-
-- Mở Port 53 trên Firewall để dịch vụ DNS có thể được thông qua :
-
-```
-firewall-cmd --permanent --add-port=53/tcp
-
-firewall-cmd --permanent --add-port=53/udp
-```
-
-![image](https://user-images.githubusercontent.com/111716161/192227855-dbf43b7c-9dad-4bf1-8cb8-7f1a6b3bf3ac.png)
-
-- Restart lại Firewall để thay đổi có hiệu lực :
-
-```
-firewall-cmd --reload
-```
-
-![image](https://user-images.githubusercontent.com/111716161/192227908-c2a5226d-1a39-4daa-b045-c95dc17e4084.png)
-
-Bước 6: Cấu hình SELinux, Permissions, Ownership 
-
-Chạy từng dòng lệnh dưới đây:
-
-```
-chgrp named -R /var/named
-
-chown -v root:named /etc/named.conf
-
-restorecon -rv /var/named
-
-restorecon /etc/named.conf
-```
-
-Bước 7: Kiểm tra
-
-- Chạy dòng lệnh để check DNS Server :
-
-```
-named-checkconf /etc/named.conf
-```
-
-Nếu dòng lệnh không có gì trả về, tức là bạn đã cấu hình đúng.
-
-![image](https://user-images.githubusercontent.com/111716161/192228400-5a04b44a-bd79-4a5f-bbae-f70d484b1d74.png)
-
-
-
-
-
-
-
-
 ### Bước 1: 
 
 Kiểm tra trạng thái Selinux và cập nhật hệ thống
@@ -271,4 +114,33 @@ https://IP-VPS:4040
 
 ![image](https://user-images.githubusercontent.com/111716161/192216678-43edaa08-c01f-4376-9071-78941a1ed786.png)
 
+- Nhập mật khẩu
+
+![image](https://user-images.githubusercontent.com/111716161/192238388-9d596c53-a210-42cd-80aa-57c763b6651c.png)
+
+- Nhấn Next
+
+![image](https://user-images.githubusercontent.com/111716161/192238547-da35b2b8-f1d3-4a92-9e58-7d794e38b9fb.png)
+
+- Chọn thư mục lưu trữ mail
+
+![image](https://user-images.githubusercontent.com/111716161/192238943-25aea7ba-eda6-4b7f-92dc-88c79790c33b.png)
+
+- Chọn mua bản quyền hoặc dùng thử 30 ngày. 
+
+![image](https://user-images.githubusercontent.com/111716161/192239012-5659fda3-506a-4969-84e1-6bc0e3952b6d.png)
+
+KEY BẢN QUYỀN: 10512-1XWX7-44R91
+
+![image](https://user-images.githubusercontent.com/111716161/192239300-d02299d6-b2a4-44e6-9580-f394d081fd8e.png)
+
+![image](https://user-images.githubusercontent.com/111716161/192239372-63cd33d5-bb9f-41e9-a0b0-37b717dd9634.png)
+
+- Nhấn Finish để hoàn tất.
+
+![image](https://user-images.githubusercontent.com/111716161/192239454-e7712c5b-6dec-4363-a1dd-b963a9d25304.png)
+
+Chờ hệ thống tự khởi động lại
+
+![image](https://user-images.githubusercontent.com/111716161/192239578-0b4e383f-0dcc-40bb-8266-1138bebff5fd.png)
 
