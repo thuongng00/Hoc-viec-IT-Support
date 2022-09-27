@@ -167,3 +167,36 @@ Hiển thị các thông báo cảnh báo về các lỗi có ý nghĩa nhỏ. C
 - Audit log
 
 Hiển thị thông tin về tất cả các lần xác thực thành công tài khoản Kerio Connect, bao gồm quản trị Kerio Connect, Kerio Connecy Client, Microsoft Outlook...
+
+# Các thao tác cơ bản trên Kerio Connect
+
+### 1. Thêm domain mới
+
+Vào Configuration -> Domain -> Add -> Local Domain...
+
+![image](https://user-images.githubusercontent.com/111716161/192424386-362fa569-f972-494e-93f1-72fa808f9cf4.png)
+
+- Tab General
+   - Domain: tên domain của bạn.
+   - Description: mô tả về domain.
+   - Limit maximum number of users in the domain: Giới hạn số user trong domain.
+
+![image](https://user-images.githubusercontent.com/111716161/192425152-59254203-973c-48a6-8304-8772c254dadd.png)
+
+- Tab Sercurity
+
+![image](https://user-images.githubusercontent.com/111716161/192425267-32d65c8d-6dc5-4bcf-9627-26a9884f87a6.png)
+
+- Tab Message
+
+![image](https://user-images.githubusercontent.com/111716161/192425348-1aba4cef-7d68-4392-9fce-d13d43415ba7.png)
+
+- Tab Custom Logo
+
+![image](https://user-images.githubusercontent.com/111716161/192425467-677164ba-928c-443d-b2b9-d0c1ada895eb.png)
+
+Muốn set domain nào thành domain chính thì nhấn chuột phải vào domain, chọn Set as Primary.
+
+![image](https://user-images.githubusercontent.com/111716161/192425717-0ef6b962-95fe-4b08-b723-7087f6a7650f.png)
+
+
