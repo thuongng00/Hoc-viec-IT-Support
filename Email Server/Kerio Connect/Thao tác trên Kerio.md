@@ -199,4 +199,32 @@ Muốn set domain nào thành domain chính thì nhấn chuột phải vào doma
 
 ![image](https://user-images.githubusercontent.com/111716161/192425717-0ef6b962-95fe-4b08-b723-7087f6a7650f.png)
 
+### 2. Thêm User mới
 
+Vào Account -> User -> Chọn domain -> Add
+
+![image](https://user-images.githubusercontent.com/111716161/192428040-9595d08b-e1c5-4968-ba5b-f6ced9b55cee.png)
+
+- Tab General
+
+![image](https://user-images.githubusercontent.com/111716161/192428275-a4d7aee4-11b2-4397-b0d8-06931e2883f0.png)
+
+- Tab Contact
+
+![image](https://user-images.githubusercontent.com/111716161/192428418-63b5d7a4-5715-48b7-8016-591189d5e2bc.png)
+
+- Tab Groups
+
+![image](https://user-images.githubusercontent.com/111716161/192428784-0d3a420b-48d1-48ad-aaa1-aa7ab32760cd.png)
+
+- Tab Right
+
+![image](https://user-images.githubusercontent.com/111716161/192428849-5faa17e6-35bd-425c-a7d6-7d922d80b5fe.png)
+
+- Tab Quota
+
+![image](https://user-images.githubusercontent.com/111716161/192429034-e7aba9cc-72ef-44ab-8c0d-dc116d913d4b.png)
+
+- Tab Message
+
+![image](https://user-images.githubusercontent.com/111716161/192428958-d7e30579-68ca-4738-915e-f9ee5436123e.png)
