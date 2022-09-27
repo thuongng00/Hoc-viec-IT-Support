@@ -229,11 +229,25 @@ Vào Account -> User -> Chọn domain -> Add
 
 ![image](https://user-images.githubusercontent.com/111716161/192428958-d7e30579-68ca-4738-915e-f9ee5436123e.png)
 
-Đăng nhập bằng user vừa tạo.
+Đăng nhập trang quản trị bằng user vừa tạo.
 
 ![image](https://user-images.githubusercontent.com/111716161/192429654-e85c2e0c-9eb1-4284-a07c-31e6caded410.png)
 
 Đăng nhập thành công.
 
 ![image](https://user-images.githubusercontent.com/111716161/192429716-42815708-62fa-4c0c-9657-7251cd1153ab.png)
+
+### 3. Gửi mail 
+
+Gửi mail từ user vừa tạo đến admin.
+
+- Đăng nhập vào user vừa tạo, soạn mail. 
+
+![image](https://user-images.githubusercontent.com/111716161/192434193-84e50eb3-7b3d-42ed-b7d4-43cb10ae0e95.png)
+
+- Gửi mail
+
+![image](https://user-images.githubusercontent.com/111716161/192434309-eb4bf887-a9cd-4ec8-a7ee-97db078fe94f.png)
+
+- Đăng nhập tài khoản admin để kiểm tra. 
 
