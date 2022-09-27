@@ -126,6 +126,8 @@ Dịch vụ trò chuyện tức thời trên Kerio Connect.
 
 ### 4. Log
 
+![image](https://user-images.githubusercontent.com/111716161/192415060-0e733edf-57cf-45dd-abf8-1f2be4de894f.png)
+
 - Config log: Lưu giữ lịch sử đầy đủ của các thay đổi điều chỉnh config. Nó cho ta biết người dùng nào đã thực hiện các tác vụ quản trị cá nhân và thời gian người đó thực hiện.
 
 - Debug log: Giám sát nhiều loại thông tin khác nhau và được sử dụng để giải quyết vấn đề.
