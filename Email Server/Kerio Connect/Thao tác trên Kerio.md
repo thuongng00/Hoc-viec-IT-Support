@@ -98,3 +98,24 @@ Hiển thị mức độ sử dụng Ram, CPU của hệ thống, tổng dung l�
 
 Hiển thị các dịch vụ, port và trạng thái các dịch vụ của mail server.
 
+![image](https://user-images.githubusercontent.com/111716161/192412089-7e043dba-3f48-4cdd-8736-c704d913328d.png)
+
+- Domains
+
+Hiển thị các domain đã được tạo, tại đây có thể tạo, sửa, xóa domain và thiết lập các tùy chọn cho domain đó.
+
+![image](https://user-images.githubusercontent.com/111716161/192412193-ebcd7172-e9a1-4392-9e21-baf12ab8f1f0.png)
+
+-  SMTP server
+
+Máy chủ SMTP xác định ai có thể gửi thư đi qua Kerio Connect và họ có thể thực hiện những hành động nào.
+
+Để thiết lập gửi tin nhắn từ bên ngoài server Kerio Connect ta làm như sau: 
+  - Trong giao diện Configuration chọn SMTP server -> Relay Control
+  - Nhấp vào option Allow relay only for:
+    - Để chỉ định một nhóm địa chỉ IP mà từ đó người dùng có thể gửi đi, chọn Users from IP address group và thiết lập như mong muốn.
+    - Để cho phép người dùng đã xác thực gửi thư đi, chọn User authenticated through SMTP for outgoing mail.
+    - Để cho phép người dùng đã xác thực trước đó qua POP3 gửi thư đi từ cùng một địa chỉ IP, chọn Users previously authenticated through POP3 from the same IP address.
+    - Nhấp vào Apply để lưu thiết lập.
+    
+    
