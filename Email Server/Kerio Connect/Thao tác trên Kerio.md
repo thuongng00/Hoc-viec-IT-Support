@@ -228,3 +228,12 @@ Vào Account -> User -> Chọn domain -> Add
 - Tab Message
 
 ![image](https://user-images.githubusercontent.com/111716161/192428958-d7e30579-68ca-4738-915e-f9ee5436123e.png)
+
+Đăng nhập bằng user vừa tạo.
+
+![image](https://user-images.githubusercontent.com/111716161/192429654-e85c2e0c-9eb1-4284-a07c-31e6caded410.png)
+
+Đăng nhập thành công.
+
+![image](https://user-images.githubusercontent.com/111716161/192429716-42815708-62fa-4c0c-9657-7251cd1153ab.png)
+
