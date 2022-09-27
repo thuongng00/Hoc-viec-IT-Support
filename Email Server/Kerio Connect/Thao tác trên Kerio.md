@@ -126,22 +126,44 @@ Dịch vụ trò chuyện tức thời trên Kerio Connect.
 
 ### 4. Log
 
+- Config log
+
+Lưu giữ lịch sử đầy đủ của các thay đổi điều chỉnh config. Nó cho ta biết người dùng nào đã thực hiện các tác vụ quản trị cá nhân và thời gian người đó thực hiện.
+
 ![image](https://user-images.githubusercontent.com/111716161/192415060-0e733edf-57cf-45dd-abf8-1f2be4de894f.png)
 
-- Config log: Lưu giữ lịch sử đầy đủ của các thay đổi điều chỉnh config. Nó cho ta biết người dùng nào đã thực hiện các tác vụ quản trị cá nhân và thời gian người đó thực hiện.
+- Debug log
 
-- Debug log: Giám sát nhiều loại thông tin khác nhau và được sử dụng để giải quyết vấn đề.
+Giám sát nhiều loại thông tin khác nhau và được sử dụng để giải quyết vấn đề.
 
-- Error log: Hiển thị các lỗi có ý nghĩa quan trọng, thường ảnh hưởng đến hoạt động của mail server. Thông báo lỗi điển hình được hiển thị trong lần khởi tạo dịch vụ liên quan đến Error log, phân bổ dung lượng đĩa, khởi tạo kiểm tra chống virus, xác thực người dùng không đúng cách ...
+![image](https://user-images.githubusercontent.com/111716161/192415396-fae3ed25-21a5-4b9b-a12e-b4cfd1465b36.png)
 
-- Mail log: Chứa thông tin về các thư riêng lẻ được Kerio Connect xử lý.
+- Error log
 
-- Operations log: Thu thập thông tin về các mục đã loại bỏ và di chuyển (thư mục, tin nhắn, danh bạ, sự kiện, tác vụ và ghi chú) trong hộp thư người dùng. Nó rất hữu ích, đặc biệt nếu người dùng không thể tìm thấy một thư cụ thể trong hộp của họ.
+Hiển thị các lỗi có ý nghĩa quan trọng, thường ảnh hưởng đến hoạt động của mail server. Thông báo lỗi điển hình được hiển thị trong lần khởi tạo dịch vụ liên quan đến Error log, phân bổ dung lượng đĩa, khởi tạo kiểm tra chống virus, xác thực người dùng không đúng cách ...
 
-- Security log: Chứa thông tin liên quan đến bảo mật của Kerio Connect. Nó cũng chứa các bản ghi về tất cả các thư không gửi được.
+![image](https://user-images.githubusercontent.com/111716161/192415419-1055b773-123b-4b90-b2d4-af07c8e294c5.png)
 
-- Spam log: Hiển thị thông tin về tất cả các email spam được lưu trữ (hoặc được đánh dấu) trong Kerio Connect.
+- Mail log
 
-- Warning log: Hiển thị các thông báo cảnh báo về các lỗi có ý nghĩa nhỏ. Các sự kiện hiển thị trong Security log không ảnh hưởng nhiều đến hoạt động của Kerio Connect.
+Chứa thông tin về các thư riêng lẻ được Kerio Connect xử lý.
 
-- Audit log: Hiển thị thông tin về tất cả các lần xác thực thành công tài khoản Kerio Connect, bao gồm quản trị Kerio Connect, Kerio Connecy Client, Microsoft Outlook...
+- Operations log
+
+Thu thập thông tin về các mục đã loại bỏ và di chuyển (thư mục, tin nhắn, danh bạ, sự kiện, tác vụ và ghi chú) trong hộp thư người dùng. Nó rất hữu ích, đặc biệt nếu người dùng không thể tìm thấy một thư cụ thể trong hộp của họ.
+
+- Security log
+
+Chứa thông tin liên quan đến bảo mật của Kerio Connect. Nó cũng chứa các bản ghi về tất cả các thư không gửi được.
+
+- Spam log
+
+Hiển thị thông tin về tất cả các email spam được lưu trữ (hoặc được đánh dấu) trong Kerio Connect.
+
+- Warning log
+
+Hiển thị các thông báo cảnh báo về các lỗi có ý nghĩa nhỏ. Các sự kiện hiển thị trong Security log không ảnh hưởng nhiều đến hoạt động của Kerio Connect.
+
+- Audit log
+
+Hiển thị thông tin về tất cả các lần xác thực thành công tài khoản Kerio Connect, bao gồm quản trị Kerio Connect, Kerio Connecy Client, Microsoft Outlook...
