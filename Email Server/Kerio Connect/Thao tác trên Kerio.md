@@ -115,5 +115,29 @@ Hiển thị các domain đã được tạo, tại đây có thể tạo, sửa
          - Để cho phép người dùng đã xác thực gửi thư đi, chọn User authenticated through SMTP for outgoing mail.
          - Để cho phép người dùng đã xác thực trước đó qua POP3 gửi thư đi từ cùng một địa chỉ IP, chọn Users previously authenticated through POP3 from the same IP address.
          - Nhấp vào Apply để lưu thiết lập.
-    
-    
+
+![image](https://user-images.githubusercontent.com/111716161/192413147-4f059937-a0e1-4bba-9ee7-4ae1f7c442fb.png)
+
+- Instant Messaging
+
+Dịch vụ trò chuyện tức thời trên Kerio Connect.
+
+![image](https://user-images.githubusercontent.com/111716161/192413264-de3eb1df-3547-4dae-bc21-478f0dee3d16.png)
+
+### 4. Log
+
+- Config log: Lưu giữ lịch sử đầy đủ của các thay đổi điều chỉnh config. Nó cho ta biết người dùng nào đã thực hiện các tác vụ quản trị cá nhân và thời gian người đó thực hiện
+
+- Debug log: Giám sát nhiều loại thông tin khác nhau và được sử dụng để giải quyết vấn đề
+
+- Error log: Hiển thị các lỗi có ý nghĩa quan trọng, thường ảnh hưởng đến hoạt động của mail server. Thông báo lỗi điển hình được hiển thị trong lần khởi tạo dịch vụ liên quan đến Error log, phân bổ dung lượng đĩa, khởi tạo kiểm tra chống virus, xác thực người dùng không đúng cách ...
+
+- Mail log: Chứa thông tin về các thư riêng lẻ được Kerio Connect xử lý
+
+- Operations log: Thu thập thông tin về các mục đã loại bỏ và di chuyển (thư mục, tin nhắn, danh bạ, sự kiện, tác vụ và ghi chú) trong hộp thư người dùng. Nó rất hữu ích, đặc biệt nếu người dùng không thể tìm thấy một thư cụ thể trong hộp của họ
+- Security log: Chứa thông tin liên quan đến bảo mật của Kerio Connect. Nó cũng chứa các bản ghi về tất cả các thư không gửi được
+- Spam log: Hiển thị thông tin về tất cả các email spam được lưu trữ (hoặc được đánh dấu) trong Kerio Connect
+
+- Warning log: Hiển thị các thông báo cảnh báo về các lỗi có ý nghĩa nhỏ. Các sự kiện hiển thị trong Security log không ảnh hưởng nhiều đến hoạt động của Kerio Connect
+
+- Audit log: Hiển thị thông tin về tất cả các lần xác thực thành công tài khoản Kerio Connect, bao gồm quản trị Kerio Connect, Kerio Connecy Client, Microsoft Outlook...
