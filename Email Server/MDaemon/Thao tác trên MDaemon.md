@@ -1,6 +1,6 @@
 ## 1. Tạo user
 
-Đăng nhập vào giao diện webadmin với link ip:1000.
+Đăng nhập vào giao diện webadmin với link ip:1000: http://localhost:1000/
 
 ![image](https://user-images.githubusercontent.com/111716161/192672644-e7ca4351-b41e-4cab-a64f-61d392066cb7.png)
 
