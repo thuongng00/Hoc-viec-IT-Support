@@ -34,6 +34,24 @@ Một trial key sẽ được gửi về mail, nhập key -> Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/192667381-01f86444-f245-4037-993e-55ee6c14d090.png)
 
-Bước 6: 
+Bước 6: Sau khi cài đặt xong, nhập domain.
 
 ![image](https://user-images.githubusercontent.com/111716161/192667471-b992df6d-02a0-4045-ad29-057b682fdad0.png)
+
+![image](https://user-images.githubusercontent.com/111716161/192668285-843359c6-1cc3-470b-b7a1-f66070160f9c.png)
+
+Bước 7: Set up tài khoản đầu tiên. 
+
+![image](https://user-images.githubusercontent.com/111716161/192668776-93ac25cc-d2b9-4213-9c4d-987578a69600.png)
+
+Chọn Next.
+
+![image](https://user-images.githubusercontent.com/111716161/192668811-eca3e98c-8780-4644-8118-4e1b70266220.png)
+
+Chọn Finish. Cài đặt hoàn tất.
+
+![image](https://user-images.githubusercontent.com/111716161/192668910-cb50830a-149b-46f3-8e11-8f89de8e5759.png)
+
+Đăng nhập vào MDaemon bằng tài khoản đầu tiên. 
+
+![image](https://user-images.githubusercontent.com/111716161/192669019-025ad936-3e87-4d4a-86cc-782b5ac65b2d.png)
