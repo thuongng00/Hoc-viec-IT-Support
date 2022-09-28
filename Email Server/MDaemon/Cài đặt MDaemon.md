@@ -56,6 +56,6 @@ Chọn Finish. Cài đặt hoàn tất.
 
 Đăng nhập vào MDaemon bằng tài khoản đầu tiên. 
 
-![image](https://user-images.githubusercontent.com/111716161/192669868-b74fa9cc-fe71-4dac-a844-ac5c94e36fb7.png)
+![image](https://user-images.githubusercontent.com/111716161/192672674-064cb0c4-f5c0-438c-90ec-30a4c486446b.png)
 
 ![image](https://user-images.githubusercontent.com/111716161/192669803-ec9f7a9f-15d9-4497-b3e5-0ba1dc1e40db.png)
