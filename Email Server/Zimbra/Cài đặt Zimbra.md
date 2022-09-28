@@ -1,6 +1,6 @@
 ### Chuẩn bị
 
-Trước tiên bạn muốn tạo một email server yêu cầu bạn cần có một VPS có IP public và một domain name. Các bạn có thể đăng kí các dịch vụ tại <a href="nhanhoa.com">Nhân Hòa</a> 
+Trước tiên bạn muốn tạo một email server yêu cầu bạn cần có một VPS có IP public và một domain name. Các bạn có thể đăng kí các dịch vụ tại <a href="https://nhanhoa.com/">Nhân Hòa</a> 
 
 
 
