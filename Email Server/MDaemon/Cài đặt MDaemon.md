@@ -1,4 +1,4 @@
-Bước 1: Tải MDaemon
+### Bước 1: Tải MDaemon
 
 Link tải: https://www.altn.com/Downloads/MDaemon-Mail-Server-Free-Trial/
 
@@ -8,21 +8,21 @@ Chọn phiên bản tiếng anh.
 
 ![image](https://user-images.githubusercontent.com/111716161/192664854-d4c1b888-4b2c-4e3d-bd62-d8e099228cf4.png)
 
-Bước 2: Mở file vừa cài đặt. 
+### Bước 2: Mở file vừa cài đặt. 
 
 ![image](https://user-images.githubusercontent.com/111716161/192665044-9cdb267e-bd89-4463-b83c-c11573c8c52b.png)
 
 Chọn Next.
 
-Bước 3: Chọn I Agree.
+### Bước 3: Chọn I Agree.
 
 ![image](https://user-images.githubusercontent.com/111716161/192665189-e8aa077c-d119-49c7-becf-90120b0c6bba.png)
 
-Bước 4: Chọn thư mục lưu trữ -> Next.
+### Bước 4: Chọn thư mục lưu trữ -> Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/192665423-d29f668e-16f8-4a20-9e38-48692c82064b.png)
 
-Bước 5: Nhập key bản quyền hoặc chọn dùng thử 30 ngày. 
+### Bước 5: Nhập key bản quyền hoặc chọn dùng thử 30 ngày. 
 
 ![image](https://user-images.githubusercontent.com/111716161/192665945-05908b46-21f3-4f09-a16d-9a4e8b0f5c53.png)
 
@@ -34,13 +34,13 @@ Một trial key sẽ được gửi về mail, nhập key -> Next.
 
 ![image](https://user-images.githubusercontent.com/111716161/192667381-01f86444-f245-4037-993e-55ee6c14d090.png)
 
-Bước 6: Sau khi cài đặt xong, nhập domain.
+### Bước 6: Sau khi cài đặt xong, nhập domain.
 
 ![image](https://user-images.githubusercontent.com/111716161/192667471-b992df6d-02a0-4045-ad29-057b682fdad0.png)
 
 ![image](https://user-images.githubusercontent.com/111716161/192668285-843359c6-1cc3-470b-b7a1-f66070160f9c.png)
 
-Bước 7: Set up tài khoản đầu tiên. 
+### Bước 7: Set up tài khoản đầu tiên. 
 
 ![image](https://user-images.githubusercontent.com/111716161/192668776-93ac25cc-d2b9-4213-9c4d-987578a69600.png)
 
