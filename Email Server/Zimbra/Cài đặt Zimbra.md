@@ -27,11 +27,15 @@ hostnamectl set-hostname "mail.xn--thng-mgb3g.vn"
 exec bash
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/192747392-9f914b4b-2c5a-42a3-9c7c-9c217e2357c6.png)
+
 - Sửa file /etc/hosts
 
 ```
 nano /etc/hosts
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/192747768-a9d62a3d-bb51-4bff-bb63-81c26e87581f.png)
 
 - Kiểm tra xem có dịch vụ nào đang sử dụng port mà Zimbra sử dụng hay không. 
 
