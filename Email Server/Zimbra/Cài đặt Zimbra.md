@@ -46,6 +46,8 @@ yum -y install net-tools
 netstat -tulpn | grep -E -w '25|80|110|143|443|465|587|993|995|5222|5223|9071|7071'
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/192748310-b9a76a60-ebf0-45c2-8204-6ff3cf2d0936.png)
+
 Nếu có service nào đang chạy trên các port trên thì tìm cách tắt đi hoặc thay thế, nếu chưa có thì thực hiện cài đặt.
 
 ```
@@ -59,4 +61,7 @@ dig -t A mail.xn--thng-mgb3g.vn
 dig -t MX xn--thng-mgb3g.vn
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/192748741-9a3f965b-80ba-4fd1-9d15-be184235d442.png)
+
+![image](https://user-images.githubusercontent.com/111716161/192748806-0652eb33-1f9a-4023-8580-9154cfec4a5d.png)
 
