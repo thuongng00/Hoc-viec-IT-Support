@@ -91,3 +91,12 @@ wget https://files.zimbra.com/downloads/8.8.10_GA/zcs-8.8.10_GA_3039.RHEL7_64.20
 
 ![image](https://user-images.githubusercontent.com/111716161/192749568-3310635b-74b0-43af-8db2-fc13e6f10d1a.png)
 
+- Cài đặt Zimbra
+
+```
+tar zxpvf zcs-8.8.10_GA_3039.RHEL7_64.20180928094617.tgz
+
+cd zcs-8.8.10_GA_3039.RHEL7_64.20180928094617
+./install.sh
+```
+
