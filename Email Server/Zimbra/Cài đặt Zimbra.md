@@ -65,3 +65,29 @@ dig -t MX xn--thng-mgb3g.vn
 
 ![image](https://user-images.githubusercontent.com/111716161/192748806-0652eb33-1f9a-4023-8580-9154cfec4a5d.png)
 
+### Bước 3: Cài đặt Zimbra
+
+- Cài đặt các gói cần thiết
+
+```
+yum install unzip net-tools sysstat openssh-clients perl-core libaio nmap-ncat libstdc++.so.6 wget -y
+```
+
+![image](https://user-images.githubusercontent.com/111716161/192749345-2ed257d0-f93d-443a-bd83-6a9482e91f68.png)
+
+- Cài đặt wget
+
+```
+yum install wget -y
+```
+
+- Tải và giải nén Zimbra
+
+```
+mkdir zimbra && cd zimbra
+
+wget https://files.zimbra.com/downloads/8.8.10_GA/zcs-8.8.10_GA_3039.RHEL7_64.20180928094617.tgz --no-check-certificate
+```
+
+![image](https://user-images.githubusercontent.com/111716161/192749568-3310635b-74b0-43af-8db2-fc13e6f10d1a.png)
+
