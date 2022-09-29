@@ -119,3 +119,18 @@ Q2CtYKjX1
 
 Chọn `r` để xem lại cài đặt, chọn `a` để áp dụng thay đổi. 
 
+![image](https://user-images.githubusercontent.com/111716161/192979678-074e9b98-f37b-4330-97e8-7aea5c660089.png)
+
+- Mở firewalld
+
+```
+firewall-cmd --permanent --add-port={25,80,110,143,443,465,587,993,995,5222,5223,9071,7071}/tcp
+
+firewall-cmd --reload
+```
+
+### Bước 4: Thiết lập các bản ghi DKIM, DMARC.
+
+- Trên VPS sử dụng user zimbra thực hiện lệnh sau 
+
+https://mail.xn--thng-mgb3g.vn:7071
