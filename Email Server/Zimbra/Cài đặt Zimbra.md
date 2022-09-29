@@ -133,4 +133,4 @@ firewall-cmd --reload
 
 - Trên VPS sử dụng user zimbra thực hiện lệnh sau 
 
-https://mail.xn--thng-mgb3g.vn:7071
+https://mail.xn--thng-mgb3g.vn:7071/zimbraAdmin/
