@@ -107,3 +107,15 @@ cd zcs-8.8.10_GA_3039.RHEL7_64.20180928094617
 
 ![image](https://user-images.githubusercontent.com/111716161/192752724-7320cc5a-0783-4b0c-91e5-b79a4d77bc44.png)
 
+Nhấn Y, create lại tên domain.
+
+![image](https://user-images.githubusercontent.com/111716161/192973864-177ce397-5c82-411d-93be-4aa8ac54a503.png)
+
+Chọn 7 sau đó chọn 4 để thiết lập tài khoản admin.
+
+Q2CtYKjX1
+
+![image](https://user-images.githubusercontent.com/111716161/192974369-ecbf4fd1-ed60-4670-a7fe-23388e30c50b.png)
+
+Chọn `r` để xem lại cài đặt, chọn `a` để áp dụng thay đổi. 
+
