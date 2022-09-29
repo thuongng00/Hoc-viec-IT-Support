@@ -96,7 +96,9 @@ wget https://files.zimbra.com/downloads/8.8.10_GA/zcs-8.8.10_GA_3039.RHEL7_64.20
 ```
 tar zxpvf zcs-8.8.10_GA_3039.RHEL7_64.20180928094617.tgz
 
-cd zcs-8.8.10_GA_3039.RHEL7_64.20180928094617 ./install.sh
+cd zcs-8.8.10_GA_3039.RHEL7_64.20180928094617 
+
+./install.sh
 ```
 
 ![image](https://user-images.githubusercontent.com/111716161/192752119-9d189922-6cd0-42dc-8e66-bd6effeaf8d0.png)
