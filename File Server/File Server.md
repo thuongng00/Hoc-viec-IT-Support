@@ -31,6 +31,20 @@ Các giao thức được sử dụng trong File server, chúng cung cấp các 
 - NFS chủ yếu được sử dụng bởi hệ điều hành Linux và Unix. Vì thế, nó không phổ biến đối với máy chủ tệp người dùng cuối nhưng có thể được sử dụng để truy cập tệp máy chủ.
 - FTP và SFTP (FTP security) được thiết kế để cung cấp tệp qua Internet. FTP thường được sử dụng để tải xuống và tải lên các tệp; nó không được thiết kế để máy khách thực thi dữ liệu từ hệ thống tệp từ xa một cách trực tiếp.
 
+## Cấu trúc của File Server
+
+**Storage**
+
+Vì chức năng quan trọng nhất trong file server là storage, nên hiện nay đã có các công nghệ được phát triển cho phép vận hành nhiều ổ đĩa theo nhóm, hình thành một disk array. 1 disk array điển hình sẽ chứa cache (bộ nhớ tạm thời có tốc độ nhanh hơn magnetic disk), cũng như các chức năng tiên tiến hơn như RAID hay ảo hóa lưu trữ. Bên cạnh đó, disk array cũng giúp nâng cao độ sẵn sàng nhờ các yếu tố dự phòng khác ngoài RAID như nguồn điện. Các disk array có thể được hợp nhất hoặc ảo hóa trong môi trường SAN.
+
+**Network-attached storage (NAS)**
+
+Network-attached storage (NAS) là máy tính lưu trữ dữ liệu cấp độ tệp tin được kết nối với mạng máy tính cho phép truy cập dữ liệu trên một nhóm máy khách không đồng nhất. NAS device – thiết bị lưu trữ gắn vào mạng (phân biệt với file server trong mạng NAS) là một thiết bị/máy tính chuyên dụng chỉ dùng để serve các tập tin thay vì dùng cho các mục đích chung.
+
+Cho đến năm 2010, các thiết bị NAS đã dần trở nên phổ biến nhờ mang đến một phương thức tiện lợi để chia sẻ tệp giữa nhiều máy tính. Lợi ích của NAS so với các file server không chuyên dụng, bao gồm các tính năng như truy cập dữ liệu nhanh hơn, quản trị dễ dàng hơn và cấu hình đơn giản hơn.
+
+Hệ thống NAS là các thiết bị nối mạng với 1 hay nhiều ổ cứng, thường được sắp xếp thành các storage container dự phòng hoặc các RAID array. Network Attached Storage loại bỏ việc phân phát tệp từ các máy chủ khác trên mạng. NAS thường cấp quyền truy cập files sử dụng các giao thức chia sẻ file qua mạng như NFS, SMB/CIFS (Server Message Block/Common Internet File System) hoặc AFP.
+
 ## Bảo mật
 
 File server lưu trữ giữ liệu quan trọng nhất trong một tổ chức. Việc mất dữ liệu sẽ làm ảnh hưởng cũng như để lại hậu quả vô cùng nghiêm trọng đến bất kì hoạt động kinh doanh nào. Do đó file server cần được bảo vệ khỏi sự cố thảm họa hay tấn công.
