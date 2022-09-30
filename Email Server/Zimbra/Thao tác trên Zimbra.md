@@ -78,3 +78,14 @@ https://mail.thương.vn/
 
 ![image](https://user-images.githubusercontent.com/111716161/193219591-764370f1-fe10-469b-a378-55d8e6178dbb.png)
 
+## 4. Tạo chữ ký mail
+
+- Vào Preferences -> Signatures -> Nhập chữ ký mail -> Save.
+
+![image](https://user-images.githubusercontent.com/111716161/193221601-3bb83035-66f1-4c1b-8e65-b58bb8e68261.png)
+
+- Để áp dụng chữ ký mail, vào Options -> Signature -> tên chữ ký mail.
+
+![image](https://user-images.githubusercontent.com/111716161/193222500-6fdb8a98-8a07-4d25-9842-3e45a856dbc6.png)
+
+
