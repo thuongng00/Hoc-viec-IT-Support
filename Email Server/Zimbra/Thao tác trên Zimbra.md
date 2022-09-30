@@ -44,5 +44,26 @@ Nhập mật khẩu mới, nhấn OK.
 
 ![image](https://user-images.githubusercontent.com/111716161/193193067-4afe424e-6bbb-4743-bdbe-f661c49392c0.png)
 
+## 2. Gửi mail trong Zimbra
+
+- Truy cập đường dẫn: 
+
+```
+https://mail.thương.vn/
+```
+
+- Đăng nhập vào tài khoản gửi.
+
+![image](https://user-images.githubusercontent.com/111716161/193193657-8c4d133e-8d8d-4c9c-916f-089520338467.png)
+
+- Để tạo mail mới, nhấn New Message.
+
+![image](https://user-images.githubusercontent.com/111716161/193216826-f6861e17-813f-4969-81cb-c2d78fed03cd.png)
+
+- Nhấn Send để gửi. 
+
+- Đăng nhập vào tài khoản nhận để kiểm tra mail đã gửi được hay chưa. 
+
+![image](https://user-images.githubusercontent.com/111716161/193216941-b2b35369-823d-40b2-a7c4-2f24fd9d3d82.png)
 
 
