@@ -94,7 +94,7 @@ Blacklist (danh sách đen), là danh sách bao gồm những địa chỉ IP ho
 
 Whitelist: Một danh sách “trắng” bao gồm các địa chỉ IP được phép gửi email đến người nhận. Là khái niệm đối lập với blacklist.
 
-Để thêm một IP domain vào whitelist/blacklist, vào Preferences -> Mail.
+- Để thêm một IP domain vào whitelist/blacklist, vào Preferences -> Mail.
 
 ![image](https://user-images.githubusercontent.com/111716161/193237835-e715c9dd-41c1-4767-8d26-4d46839a9006.png)
 
@@ -106,6 +106,6 @@ Add: Thêm mới.
 
 Remove: Xóa bỏ. 
 
-Sau khi thêm IP domain, nhấn Save để lưu. 
+- Sau khi thêm IP domain, nhấn Save để lưu. 
 
 
