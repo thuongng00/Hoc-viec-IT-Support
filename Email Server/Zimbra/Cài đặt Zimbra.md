@@ -133,26 +133,29 @@ cd zcs-8.8.10_GA_3039.RHEL7_64.20180928094617
 
 ./install.sh
 ```
+![image](https://user-images.githubusercontent.com/111716161/193173986-cfbfd5e6-1fba-45ec-a60d-b77e9ae8b663.png)
 
-![image](https://user-images.githubusercontent.com/111716161/192752119-9d189922-6cd0-42dc-8e66-bd6effeaf8d0.png)
+![image](https://user-images.githubusercontent.com/111716161/193174017-e476cc71-e476-45ab-a648-55bbac69c731.png)
 
-![image](https://user-images.githubusercontent.com/111716161/192752289-c09423ce-633c-4424-9548-6451c852af03.png)
+Nhấn Y để tải xuống các gói liên quan đến Zimbra.
 
-![image](https://user-images.githubusercontent.com/111716161/192752724-7320cc5a-0783-4b0c-91e5-b79a4d77bc44.png)
+![image](https://user-images.githubusercontent.com/111716161/193174115-199fa180-e187-4ce1-9949-25ff56ba088e.png)
 
 Nhấn Y, create lại tên domain.
 
-![image](https://user-images.githubusercontent.com/111716161/192973864-177ce397-5c82-411d-93be-4aa8ac54a503.png)
+![image](https://user-images.githubusercontent.com/111716161/193174242-d00747bd-24dd-4c50-aba2-b90ee38b35bb.png)
 
 Chọn 7 sau đó chọn 4 để thiết lập tài khoản admin.
 
-Q2CtYKjX1
+![image](https://user-images.githubusercontent.com/111716161/193174295-4fe3ca9b-20d7-4f8a-8b98-e4352c080ef2.png)
 
-![image](https://user-images.githubusercontent.com/111716161/192974369-ecbf4fd1-ed60-4670-a7fe-23388e30c50b.png)
+![image](https://user-images.githubusercontent.com/111716161/193174323-6d427f62-45f4-4745-91a3-6b9243847356.png)
 
 Chọn `r` để xem lại cài đặt, chọn `a` để áp dụng thay đổi. 
 
-![image](https://user-images.githubusercontent.com/111716161/192979678-074e9b98-f37b-4330-97e8-7aea5c660089.png)
+![image](https://user-images.githubusercontent.com/111716161/193174362-f8198c54-16cf-44ec-8b46-cb75ef8f5dc6.png)
+
+![image](https://user-images.githubusercontent.com/111716161/193174399-eb1a1fb8-7820-4e55-bff0-2f800b21d5c2.png)
 
 - Mở firewalld
 
