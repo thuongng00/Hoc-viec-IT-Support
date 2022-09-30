@@ -187,11 +187,15 @@ firewall-cmd --reload
 zmprov gaaa
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/193182481-2f706339-e2b6-4366-bfb3-02f81078d96b.png)
+
 - Thay đổi mật khẩu:
 
 ```
 zmprov sp <admin email address> <new password>
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/193182820-c7e43fe9-94de-45dd-bc38-c0457f73b6dc.png)
 
 Truy cập đường link sau để vào Zimbra: 
 
