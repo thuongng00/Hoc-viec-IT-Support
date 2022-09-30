@@ -8,7 +8,7 @@ Domain name: XN--THNG-MGB3G.VN
 
 Truy cập vào trang <a href="https://zonedns.vn/">ZoneDNS</a> để thiết lập các bản ghi:
 
-![image](https://user-images.githubusercontent.com/111716161/192745259-e2221a6e-130c-4092-8857-171bb4d8978d.png)
+![image](https://user-images.githubusercontent.com/111716161/193174454-2a8073cb-ea4c-4470-b5c9-4c27febe0e23.png)
 
 ### Bước 2: Chuẩn bị môi trường trên máy chủ mail
 
@@ -91,12 +91,13 @@ yum install bind-utils
 
 ```
 dig -t A mail.xn--thng-mgb3g.vn
+
 dig -t MX xn--thng-mgb3g.vn
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/192748741-9a3f965b-80ba-4fd1-9d15-be184235d442.png)
+![image](https://user-images.githubusercontent.com/111716161/193174564-4d3bc0ec-37cd-4fe0-ac6c-11f0b852c929.png)
 
-![image](https://user-images.githubusercontent.com/111716161/192748806-0652eb33-1f9a-4023-8580-9154cfec4a5d.png)
+![image](https://user-images.githubusercontent.com/111716161/193174612-fb31e623-d892-4cb6-abbd-62794c02d09d.png)
 
 ### Bước 3: Cài đặt Zimbra
 
