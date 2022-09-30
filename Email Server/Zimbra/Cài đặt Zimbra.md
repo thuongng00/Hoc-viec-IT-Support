@@ -23,11 +23,11 @@ sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config && setenforc
 ```
 yum update -y
 
-reboot
 ```
+
 - Postfix là một phầm mềm nguồn mở được dùng để gửi mail (Mail Transfer Agent-MTA). Được phát hành bởi IBM với mục tiêu thay thế trình gửi mail phổ biến là sendmail.
 
-- Kiểm tra trạng thái của postfix:
+Kiểm tra trạng thái của postfix:
 
 ```
 systemctl status postfix
@@ -52,6 +52,7 @@ yum remove postfix -y
 ```
 reboot
 ```
+
 - Sửa hostname
 
 ```
