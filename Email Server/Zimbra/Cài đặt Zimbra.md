@@ -179,10 +179,19 @@ firewall-cmd --reload
 
 ![image](https://user-images.githubusercontent.com/111716161/193176371-f8a624a0-0c7f-4651-89a5-3e47878b8bcc.png)
 
-- 
 ### Bước 4: Thay đổi mật khẩu cho tài khoản admin
 
+- Kiểm tra những quyền admin sử dụng
 
+```
+zmprov gaaa
+```
+
+- Thay đổi mật khẩu:
+
+```
+zmprov sp <admin email address> <new password>
+```
 
 Truy cập đường link sau để vào Zimbra: 
 
