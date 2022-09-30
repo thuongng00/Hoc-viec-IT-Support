@@ -42,3 +42,47 @@ cp -rp /opt/zimbra /mnt/zimbra_backup.$(date "+%Y%m%d")
 su zimbra
 ```
 
+- Dừng các chương trình đang chạy
+
+```
+zmcontrol stop
+```
+
+- Sao chép bản sao lưu đã tạo trước đó vào thư mục /otp
+
+```
+cp -rp /mnt/zimbra_backup/ /opt
+```
+
+- Đổi tên thư bản sao lưu thành Zimbra
+
+```
+mv /opt/zimbra_backup/ /opt/zimbra
+```
+
+- Cài đặt lại Zimbra
+
+Lưu ý: Không chạy tập lệnh với option -u. Nó sẽ xóa dữ liệu sao lưu và chạy với quyền root Nếu không gặp lỗi nào, sẽ có thông báo hiện thị như sau:
+
+```
+The Zimbra Collaboration Suite appears already to be installed.
+
+It can be upgraded with no effect on existing accounts,
+
+or the current installation can be completely removed prior
+
+to installation for a clean install.
+
+Do you wish to upgrade? [Y]
+```
+
+- Tập lệnh sẽ xóa bỏ các gói hiện tại và cài đặt lại chúng. Nó sẽ dừng dịch vụ Zimbra cũ và chạy với file đã sao lưu trước đó.
+
+- Đặt lại quyền
+
+```
+chown -R zimbra:zimbra /opt/zimbra/store
+chown -R zimbra:zimbra /opt/zimbra/index
+/opt/zimbra/libexec/zmfixperms
+```
+
