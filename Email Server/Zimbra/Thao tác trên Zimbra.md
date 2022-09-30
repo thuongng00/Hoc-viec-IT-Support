@@ -60,10 +60,21 @@ https://mail.thương.vn/
 
 ![image](https://user-images.githubusercontent.com/111716161/193216826-f6861e17-813f-4969-81cb-c2d78fed03cd.png)
 
-- Nhấn Send để gửi. 
+- Muốn lưu mail thì nhấn Save Draft. Nhấn Send để gửi. 
 
 - Đăng nhập vào tài khoản nhận để kiểm tra mail đã gửi được hay chưa. 
 
 ![image](https://user-images.githubusercontent.com/111716161/193216941-b2b35369-823d-40b2-a7c4-2f24fd9d3d82.png)
 
+## 3. Thêm liên hệ mới
+
+- Vào Contacts -> New Contact
+
+![image](https://user-images.githubusercontent.com/111716161/193218837-e5561d97-c4a3-465f-9eb9-a7b684261ac9.png)
+
+- Nhập thông tin người liên hệ rồi Save để lưu lại.
+
+![image](https://user-images.githubusercontent.com/111716161/193219511-a27847ce-8391-4efc-bef2-63538e4e5b94.png)
+
+![image](https://user-images.githubusercontent.com/111716161/193219591-764370f1-fe10-469b-a378-55d8e6178dbb.png)
 
