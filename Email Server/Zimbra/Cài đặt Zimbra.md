@@ -68,7 +68,7 @@ exec bash
 nano /etc/hosts
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/192747768-a9d62a3d-bb51-4bff-bb63-81c26e87581f.png)
+![image](https://user-images.githubusercontent.com/111716161/193174747-3cd6660a-bc33-40ac-902f-841a8953da84.png)
 
 - Kiểm tra xem có dịch vụ nào đang sử dụng port mà Zimbra sử dụng hay không. 
 
@@ -134,6 +134,7 @@ cd zcs-8.8.10_GA_3039.RHEL7_64.20180928094617
 
 ./install.sh
 ```
+
 ![image](https://user-images.githubusercontent.com/111716161/193173986-cfbfd5e6-1fba-45ec-a60d-b77e9ae8b663.png)
 
 ![image](https://user-images.githubusercontent.com/111716161/193174017-e476cc71-e476-45ab-a648-55bbac69c731.png)
@@ -146,7 +147,7 @@ Nhấn Y, create lại tên domain.
 
 ![image](https://user-images.githubusercontent.com/111716161/193174242-d00747bd-24dd-4c50-aba2-b90ee38b35bb.png)
 
-Chọn 7 sau đó chọn 4 để thiết lập tài khoản admin.
+Chọn 7 sau đó chọn 4 để thiết lập tài khoản admin. (Nso01_8HMj)
 
 ![image](https://user-images.githubusercontent.com/111716161/193174295-4fe3ca9b-20d7-4f8a-8b98-e4352c080ef2.png)
 
