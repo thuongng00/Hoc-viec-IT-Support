@@ -88,4 +88,24 @@ https://mail.thương.vn/
 
 ![image](https://user-images.githubusercontent.com/111716161/193222500-6fdb8a98-8a07-4d25-9842-3e45a856dbc6.png)
 
-## 5. 
+## 5. Danh sách đen và danh sách trắng
+
+Blacklist (danh sách đen), là danh sách bao gồm những địa chỉ IP hoặc domain bị đánh dấu là nguồn spam của các tổ chức thống kê các server gửi spam.
+
+Whitelist: Một danh sách “trắng” bao gồm các địa chỉ IP được phép gửi email đến người nhận. Là khái niệm đối lập với blacklist.
+
+Để thêm một IP domain vào whitelist/blacklist, vào Preferences -> Mail.
+
+![image](https://user-images.githubusercontent.com/111716161/193237835-e715c9dd-41c1-4767-8d26-4d46839a9006.png)
+
+Block messages from: Chặn các thư từ
+
+Allow messages from: Cho phép gửi thư từ
+
+Add: Thêm mới.
+
+Remove: Xóa bỏ. 
+
+Sau khi thêm IP domain, nhấn Save để lưu. 
+
+
