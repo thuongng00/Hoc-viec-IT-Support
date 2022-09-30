@@ -1,4 +1,9 @@
-### Giới thiệu về Let’s Encrypt
+[Giới thiệu về Let's Encrypt](#gioithieu)
+
+[Cài đặt Let's Encrypt](#caidat)
+
+<a name="gioithieu"></a>
+# Giới thiệu về Let’s Encrypt
 
 ## 1. Giới thiệu về SSL
 
@@ -17,6 +22,7 @@ Let’s Encrypt là một tổ chức xác thực SSL giống như Comodo, GeoTr
 
 Chứng chỉ SSL tại Let’s Encrypt sẽ không khác gì với các loại chứng chỉ SSL khác mà chỉ khác ở chỗ bạn phải gia hạn mỗi 90 ngày một lần.
 
+<a name="caidat"></a>
 # Cài đặt Let’ Encrypt cho Zimbra
 
 - Truy cập vào server zimbra và stop hết các service.
@@ -26,9 +32,19 @@ su zimbra
 zmcontrol stop
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/193246984-3d058d66-9fba-42d3-bad9-8b6546d038a7.png)
+
 - Cài đặt Git cho Server
 
 ```
+yum install epel-release -y
+
+yum groupinstall "Development Tools" -y
+
+yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel -y
+
+yum update
+
 yum install git -y
 ```
 
