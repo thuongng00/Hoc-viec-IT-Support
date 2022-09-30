@@ -12,6 +12,12 @@ Truy cập vào trang <a href="https://zonedns.vn/">ZoneDNS</a> để thiết l�
 
 ### Bước 2: Chuẩn bị môi trường trên máy chủ mail
 
+- Tắt SELinux
+
+```
+sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config && setenforce 0
+```
+
 - Update
 
 ```
