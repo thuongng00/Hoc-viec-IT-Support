@@ -25,7 +25,33 @@ yum update -y
 
 reboot
 ```
+- Postfix là một phầm mềm nguồn mở được dùng để gửi mail (Mail Transfer Agent-MTA). Được phát hành bởi IBM với mục tiêu thay thế trình gửi mail phổ biến là sendmail.
 
+- Kiểm tra trạng thái của postfix:
+
+```
+systemctl status postfix
+```
+
+Dừng dịch vụ postfix:
+
+```
+systemctl stop postfix
+```
+
+Gỡ cài đặt postfix:
+
+```
+yum remove postfix -y
+```
+
+![image](https://user-images.githubusercontent.com/111716161/192213076-500e9148-4fda-4fb6-b4fa-4b3b29ed7cd5.png)
+
+- Reboot lại máy: 
+
+```
+reboot
+```
 - Sửa hostname
 
 ```
