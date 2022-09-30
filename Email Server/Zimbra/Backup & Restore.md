@@ -12,6 +12,8 @@ su zimbra
 zmcontrol stop
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/193241626-95284e79-d84d-4b2d-bda6-ea12d78f3d4c.png)
+
 - Kiểm tra để đảm bảo rằng Zimbra đã dừng hoàn toàn
 
 ```
@@ -33,6 +35,8 @@ Tất cả thành phần Zimbra cần đều được lưu trữ trong thư mụ
 ```
 cp -rp /opt/zimbra /mnt/zimbra_backup.$(date "+%Y%m%d")
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/193243414-93a80268-b397-4f04-a39e-e340a4083521.png)
 
 # Restore
 
