@@ -48,7 +48,7 @@ Các option cần cấu hình:
 
 `DNS1`: thông tin DNS server.
 
-![image](https://user-images.githubusercontent.com/111716161/191691483-52fda53d-6dff-48e0-b560-fbc1e8f3341b.png)
+![image](https://user-images.githubusercontent.com/111716161/193211148-c43abeef-2841-421b-8574-f48da8194228.png)
 
 - Cách 2: Cấu hình IP tĩnh với chương trình dịch vụ Network Manager
 
