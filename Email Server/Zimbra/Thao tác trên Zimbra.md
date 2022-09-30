@@ -28,4 +28,15 @@ https://mail.thương.vn
 
 ![image](https://user-images.githubusercontent.com/111716161/193190895-a20d3bc4-09f6-4ba3-bd4a-8959040f354f.png)
 
-## 2. 
+### Thay đổi mật khẩu user
+
+Chuột phải vào user -> Change Password
+
+![image](https://user-images.githubusercontent.com/111716161/193193028-ade7795c-81b1-4bce-9f86-b53731e2d010.png)
+
+Nhập mật khẩu mới, nhấn OK.
+
+![image](https://user-images.githubusercontent.com/111716161/193193067-4afe424e-6bbb-4743-bdbe-f661c49392c0.png)
+
+
+
