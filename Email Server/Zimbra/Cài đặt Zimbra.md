@@ -180,8 +180,22 @@ firewall-cmd --reload
 ![image](https://user-images.githubusercontent.com/111716161/193176371-f8a624a0-0c7f-4651-89a5-3e47878b8bcc.png)
 
 - 
-### Bước 4: Thiết lập các bản ghi DKIM, DMARC.
+### Bước 4: Thay đổi mật khẩu cho tài khoản admin
 
-- Trên VPS sử dụng user zimbra thực hiện lệnh sau 
 
+
+Truy cập đường link sau để vào Zimbra: 
+
+```
 https://mail.xn--thng-mgb3g.vn:7071/zimbraAdmin/
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193181528-3dfdd2db-44db-42b7-b944-0211708951f1.png)
+
+Đăng nhập bằng tài khoản admin
+
+![image](https://user-images.githubusercontent.com/111716161/193181865-c032b4e0-6627-47e7-a125-03858eaf9cf5.png)
+
+![image](https://user-images.githubusercontent.com/111716161/193181804-a608a6d3-3897-4a27-9020-e0a11a11aeb8.png)
+
+
