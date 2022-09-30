@@ -205,10 +205,17 @@ https://mail.xn--thng-mgb3g.vn:7071/zimbraAdmin/
 
 ![image](https://user-images.githubusercontent.com/111716161/193181528-3dfdd2db-44db-42b7-b944-0211708951f1.png)
 
-Đăng nhập bằng tài khoản admin
+Đăng nhập bằng tài khoản admin vào trang quản trị. 
 
 ![image](https://user-images.githubusercontent.com/111716161/193181865-c032b4e0-6627-47e7-a125-03858eaf9cf5.png)
 
 ![image](https://user-images.githubusercontent.com/111716161/193181804-a608a6d3-3897-4a27-9020-e0a11a11aeb8.png)
 
+Đăng nhập tài khoản admin vào trang user
+
+```
+https://mail.thương.vn/
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193190990-5184cc55-4d03-4363-bac5-78bd38259f6f.png)
 
