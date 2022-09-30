@@ -159,6 +159,16 @@ Chọn `r` để xem lại cài đặt, chọn `a` để áp dụng thay đổi.
 
 ![image](https://user-images.githubusercontent.com/111716161/193174399-eb1a1fb8-7820-4e55-bff0-2f800b21d5c2.png)
 
+![image](https://user-images.githubusercontent.com/111716161/193176261-782bd3dc-fa45-42b9-bcf8-15dfe2a0eaaf.png)
+
+- Sau khi cài đặt xong khởi động lại dịch vụ zimbar bằng lệnh:
+
+```
+su zimbra
+
+zmcontrol restart
+```
+
 - Mở firewalld
 
 ```
@@ -167,6 +177,9 @@ firewall-cmd --permanent --add-port={25,80,110,143,443,465,587,993,995,5222,5223
 firewall-cmd --reload
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/193176371-f8a624a0-0c7f-4651-89a5-3e47878b8bcc.png)
+
+- 
 ### Bước 4: Thiết lập các bản ghi DKIM, DMARC.
 
 - Trên VPS sử dụng user zimbra thực hiện lệnh sau 
