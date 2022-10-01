@@ -106,7 +106,7 @@ Bước 3: Khởi động network và kiểm tra cấu hình
 - Khởi động lại dịch vụ network
 
 ```
-systemctl restart NetworkManager.service
+service network restart
 ```
 
 ![image](https://user-images.githubusercontent.com/111716161/191698039-ba0bcff1-302f-424e-8d5b-cf727ce4bc40.png)
