@@ -34,123 +34,46 @@ zmcontrol stop
 
 ![image](https://user-images.githubusercontent.com/111716161/193246984-3d058d66-9fba-42d3-bad9-8b6546d038a7.png)
 
-- Cài đặt máy chủ Apache. 
-
-- Cài đặt Git cho Server
-
-```
-
-yum groupinstall "Development Tools" -y
-
-yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel -y
-
-yum install git -y
-```
-
 - Cài đặt Snap
 
 ```
-yum install epel-release
-yum install snapd
+yum install epel-release.noarch -y
+yum install snapd -y
 sudo systemctl enable --now snapd.socket
 ln -s /var/lib/snapd/snap /snap
 snap install core
 snap refresh core
 ```
 
-- Tiến hành clone project letsencrypt vào thư mục bất kì 
-
-```
-cd /mnt
-git clone https://github.com/certbot/certbot
-cd certbot
-```
-
 - Cài đặt Certbot
 
 ```
-sudo snap install --classic certbot
+snap install --classic certbot
+ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
-- Chạy Let’s Encrypt trong chế độ auto và sử dụng tùy chọn certonly
+- Đứng ở user root bạn chạy lệnh sau để yêu cầu cấp phát chứng chỉ SSL
 
 ```
-./letsencrypt-auto certonly --standalone
+certbot certonly --standalone 
 ```
 
-Sau khi chạy lệnh trên hệ thống sẽ hiển thị thông tin cần nhập là domain bạn đang sử dụng cài đặt SSL.
-
-
-Nhấn Enter.
-
-Người dùng có thể kiểm tra lại key đã được tạo ra trong đường dẫn /etc/letsencrypt/live/$domain với $domain là tên domain bạn vừa nhập ở bước trên. 
-
-- Cần sửa lại file chain.pem trong thư mục trên để trust root CA.
-
-Mở file /etc/letsencrypt/live/$domain/chain.pem và chèn thêm đoạn mã sau vào cuối file (Thay thế $domain bằng tên miền bạn sử dụng ở bước trên)
+- Tạo một thư mục sau đó di chuyển các chứng chỉ vào để tiện quản lý. Và tải chứng chỉ trung gian về để xác minh
 
 ```
------BEGIN CERTIFICATE-----
-MIIDSjCCAjKgAwIBAgIQRK+wgNajJ7qJMDmGLvhAazANBgkqhkiG9w0BAQUFADA/
-MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT
-DkRTVCBSb290IENBIFgzMB4XDTAwMDkzMDIxMTIxOVoXDTIxMDkzMDE0MDExNVow
-PzEkMCIGA1UEChMbRGlnaXRhbCBTaWduYXR1cmUgVHJ1c3QgQ28uMRcwFQYDVQQD
-Ew5EU1QgUm9vdCBDQSBYMzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
-AN+v6ZdQCINXtMxiZfaQguzH0yxrMMpb7NnDfcdAwRgUi+DoM3ZJKuM/IUmTrE4O
-rz5Iy2Xu/NMhD2XSKtkyj4zl93ewEnu1lcCJo6m67XMuegwGMoOifooUMM0RoOEq
-OLl5CjH9UL2AZd+3UWODyOKIYepLYYHsUmu5ouJLGiifSKOeDNoJjj4XLh7dIN9b
-xiqKqy69cK3FCxolkHRyxXtqqzTWMIn/5WgTe1QLyNau7Fqckh49ZLOMxt+/yUFw
-7BZy1SbsOFU5Q9D8/RhcQPGX69Wam40dutolucbY38EVAjqr2m7xPi71XAicPNaD
-aeQQmxkqtilX4+U9m5/wAl0CAwEAAaNCMEAwDwYDVR0TAQH/BAUwAwEB/zAOBgNV
-HQ8BAf8EBAMCAQYwHQYDVR0OBBYEFMSnsaR7LHH62+FLkHX/xBVghYkQMA0GCSqG
-SIb3DQEBBQUAA4IBAQCjGiybFwBcqR7uKGY3Or+Dxz9LwwmglSBd49lZRNI+DT69
-ikugdB/OEIKcdBodfpga3csTS7MgROSR6cz8faXbauX+5v3gTt23ADq1cEmv8uXr
-AvHRAosZy5Q6XkjEGB5YGV8eAlrwDPGxrancWYaLbumR9YbK+rlmM6pZW87ipxZz
-R8srzJmwN0jP41ZL9c8PDHIyh8bwRLtTcm1D9SZImlJnt1ir/md2cXjbDaJWFBM5
-JDGFoqgCWjBH4d1QB7wCCZAA62RjYJsWvIjJEubSfZGL+T0yjWW06XyxV3bqxbYo
-Ob8VZRzI9neWagqNdwvYkQsEjgfbKbYK7p2CNTUQ
------END CERTIFICATE-----
+mkdir -p /opt/zimbra/ssl/letsencrypt
+cp /etc/letsencrypt/live/mail.xn--thng-mgb3g.vn/* /opt/zimbra/ssl/letsencrypt/
+wget -P /opt/zimbra/ssl/letsencrypt https://tool.xn--thng-mgb3g.vn/share/ssl/CA.pem
+chown -R zimbra:zimbra /opt/zimbra/ssl/letsencrypt/
 ```
 
-- Tiếp theo tiến hành verify certificate
-
-Copy Let’s Encrypt folder trong /etc/letsencrypt/live/$domain tới thư mục /opt/zimbra/ssl/letsencrypt với các lệnh bên dưới
+- Deploy SSL
 
 ```
-mkdir /opt/zimbra/ssl/letsencrypt
-cp /etc/letsencrypt/live/$domain/* /opt/zimbra/ssl/letsencrypt/
-chown zimbra:zimbra /opt/zimbra/ssl/letsencrypt/*
-```
-
-- Tiếp tục chạy lệnh sau với phiên bản zimbra 8.7 trở lên:
-
-```
-su zimbra
-cd /opt/zimbra/ssl/letsencrypt
-/opt/zimbra/bin/zmcertmgr verifycrt comm privkey.pem cert.pem chain.pem
-```
-
-- Deploy Let’s Encrypt SSL certificate mới, lệnh bên dưới sử dụng với quyền user root
-
-Backup thư mục SSL của zimbra
-
-```
-cp -a /opt/zimbra/ssl/zimbra /opt/zimbra/ssl/zimbra.$(date "+%Y%m%d")
-```
-
-Copy private key tới đường dẫn Zimbra SSL commercial:
-
-```
+mv /opt/zimbra/ssl/zimbra/commercial/commercial.key /opt/zimbra/ssl/zimbra/commercial/commercial.key.bak
 cp /opt/zimbra/ssl/letsencrypt/privkey.pem /opt/zimbra/ssl/zimbra/commercial/commercial.key
-chown zimbra:zimbra /opt/zimbra/ssl/zimbra/commercial/commercial.key
-```
-
-Deploy SSL
-
-```
-su zimbra
-cd /opt/zimbra/ssl/letsencrypt
-/opt/zimbra/bin/zmcertmgr deploycrt comm cert.pem chain.pem
+cd /opt/zimbra/ssl/letsencrypt/
+/opt/zimbra/bin/zmcertmgr deploycrt comm cert.pem CA.pem
 ```
 
 Restart lại service Zimbra
