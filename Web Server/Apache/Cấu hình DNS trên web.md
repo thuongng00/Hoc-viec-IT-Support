@@ -48,6 +48,16 @@ Các option cần cấu hình:
 
 `DNS1`: thông tin DNS server.
 
+Thêm nội dung sau: 
+
+```
+IPADDR=192.168.30.132
+GATEWAY=192.168.30.255
+NETMASK=255.255.255.0
+DNS1=8.8.8.8
+DNS2=8.8.4.4
+```
+
 ![image](https://user-images.githubusercontent.com/111716161/193211148-c43abeef-2841-421b-8574-f48da8194228.png)
 
 - Cách 2: Cấu hình IP tĩnh với chương trình dịch vụ Network Manager
