@@ -23,7 +23,7 @@ Let’s Encrypt là một tổ chức xác thực SSL giống như Comodo, GeoTr
 Chứng chỉ SSL tại Let’s Encrypt sẽ không khác gì với các loại chứng chỉ SSL khác mà chỉ khác ở chỗ bạn phải gia hạn mỗi 90 ngày một lần.
 
 <a name="caidat"></a>
-# Cài đặt Let’ Encrypt cho Zimbra
+# Cài đặt Let’s Encrypt cho Zimbra
 
 - Truy cập vào server zimbra và stop hết các service.
 
