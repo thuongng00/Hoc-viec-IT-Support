@@ -34,18 +34,28 @@ zmcontrol stop
 
 ![image](https://user-images.githubusercontent.com/111716161/193246984-3d058d66-9fba-42d3-bad9-8b6546d038a7.png)
 
+- Cài đặt máy chủ Apache. 
+
 - Cài đặt Git cho Server
 
 ```
-yum install epel-release -y
 
 yum groupinstall "Development Tools" -y
 
 yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel -y
 
-yum update
-
 yum install git -y
+```
+
+- Cài đặt Snap
+
+```
+yum install epel-release
+yum install snapd
+sudo systemctl enable --now snapd.socket
+ln -s /var/lib/snapd/snap /snap
+snap install core
+snap refresh core
 ```
 
 - Tiến hành clone project letsencrypt vào thư mục bất kì 
@@ -54,6 +64,12 @@ yum install git -y
 cd /mnt
 git clone https://github.com/certbot/certbot
 cd certbot
+```
+
+- Cài đặt Certbot
+
+```
+sudo snap install --classic certbot
 ```
 
 - Chạy Let’s Encrypt trong chế độ auto và sử dụng tùy chọn certonly
