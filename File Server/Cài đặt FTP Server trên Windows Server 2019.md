@@ -30,15 +30,29 @@ Bước 5: Nhấn Install
 
 ## Tạo một trang FTP trên máy chủ Windows
 
-Bước 1: Mở “IIS Manager”. Nhấp chuột phải vào “Sites” và chọn "Add FTP Site".
+Bước 1: Mở "IIS Manager". Nhấp chuột phải vào “Sites” và chọn "Add FTP Site...".
+
+![image](https://user-images.githubusercontent.com/111716161/193487922-915541dc-f2a7-4423-8797-cf5826c9bfaf.png)
 
 Bước 2: Nhập tên trang web và đường dẫn đến thư mục chứa trang web.
 
+![image](https://user-images.githubusercontent.com/111716161/193488045-45ff8c92-c086-47a3-8d87-21a1c36a85bc.png)
+
 Bước 3: Chọn địa chỉ IP trong danh sách thả xuống, tích vào "No SSL".
+
+![image](https://user-images.githubusercontent.com/111716161/193488155-5154178e-9c1b-4e14-8bbc-da05c0ac87cf.png)
 
 Bước 4: Chọn "Basic for authentication". Chọn "Authorization Specified roles or groups", nhập tên của nhóm người dùng FTP. Tích chọn cho phép đọc và ghi. Nhấn "finish".
 
+![image](https://user-images.githubusercontent.com/111716161/193488274-2e359351-dfca-4665-9c9b-bdf631d0f0f3.png)
+
 Như vậy ta đã tạo xong một FTP site. 
 
+![image](https://user-images.githubusercontent.com/111716161/193488302-51ae2efd-0895-43f2-b1b6-95400a403bae.png)
+
 ## Tạo nhóm người dùng
+
+Tạo một nhóm Windows là cần thiết để xác định người dùng có quyền truy cập vào máy chủ ftp. 
+
+Bước 1: Mở Computer Management, chọn Groups. Chuột phải chọn new group. 
 
