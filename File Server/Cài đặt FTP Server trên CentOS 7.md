@@ -48,6 +48,8 @@ cp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf.default
 nano /etc/vsftpd/vsftpd.conf
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/193547395-4a4ca025-917e-4724-a7cb-4ee11aec4d34.png)
+
 ### Bước 3: Tìm và sửa các mục dưới đây
 
 ```
@@ -57,9 +59,63 @@ local_enable=YES
 
 write_enable=YES
 
-chroot_local_user=YES
-
-allow_writeable_chroot=YES
-
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/193549721-53565898-ac5a-418f-8db6-9ef897aca38e.png)
+
+```
+chroot_local_user=YES
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193550055-e1353f78-5bf7-45b7-b783-efcf24400c2e.png)
+
+```
+userlist_enable=YES
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193550601-62910739-d8fb-4320-85d8-1a1617993b8f.png)
+
+### bước 4: Lưu thay đổi và reset lại dịch vụ 
+
+```
+systemctl restart vsftpd
+```
+
+# Tạo người dùng FTP mới
+
+- Tạo tài khoản user mới:
+
+```
+sudo adduser username
+
+sudo passwd username
+```
+
+Sau khi tạo người dùng mới, hệ thống sẽ nhắc bạn nhập và xác nhận mật khẩu người dùng mới.
+
+![image](https://user-images.githubusercontent.com/111716161/193551923-5ff9823c-462e-43ef-90fb-1457eb0f571b.png)
+
+- Thêm người dùng vào userlist
+
+```
+echo "username" | sudo tee -a /etc/vsftpd/user_list
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193552140-05172e72-3f36-4e4c-ac60-295d81e9919b.png)
+
+- Tạo một thư mục cho người dùng mới, điều chỉnh các quyền:
+
+```
+sudo mkdir –p /home/username/ftp/upload
+sudo chmod 550 /home/usename/ftp
+sudo chmod 750 /home/username/ftp/upload
+sudo chown –R username: /home/username/ftp
+```
+
+- Truy cập vào FTP
+
+```
+ftp localhost
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193553475-6cc25e7b-1d5e-42f1-9d14-3046450596e7.png)
