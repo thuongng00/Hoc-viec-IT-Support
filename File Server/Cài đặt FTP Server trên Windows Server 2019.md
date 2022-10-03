@@ -62,4 +62,16 @@ Bước 2: Nhập tên nhóm và mô tả. Nhấn Add để thêm user.
 
 ![image](https://user-images.githubusercontent.com/111716161/193496396-d90564fd-6915-4b4b-93c6-0b48240f2499.png)
 
-Bước 3: Nhập user, nhấn 
+Bước 3: Nhập user, nhấn Check Names để kiểm tra người dùng có tồn tại hay không. 
+
+Bước 4: Sau khi thêm user, nhấn Create để tạo nhóm. 
+
+## Phân vùng người dùng
+
+Để mỗi user có được thư mục riêng của mình và không có quyền truy cập vào các tệp khác sau khi kết nối với máy chủ, cần phải thiết lập isolation. 
+
+Bước 1: Mở IIS Manager -> vào trang web ftp -> FTP User Isolation. 
+
+Bước 2: Tích chọn User name directory -> Apply. 
+
+Bước 3: 
