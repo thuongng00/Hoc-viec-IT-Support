@@ -54,5 +54,12 @@ Như vậy ta đã tạo xong một FTP site.
 
 Tạo một nhóm Windows là cần thiết để xác định người dùng có quyền truy cập vào máy chủ ftp. 
 
-Bước 1: Mở Computer Management, chọn Groups. Chuột phải chọn new group. 
+Bước 1: Mở Computer Management, chọn Groups. Chuột phải chọn tạo nhóm mới.
 
+![image](https://user-images.githubusercontent.com/111716161/193496333-2fadb3cc-23fb-4d32-b602-cf5cd80e90c7.png)
+
+Bước 2: Nhập tên nhóm và mô tả. Nhấn Add để thêm user.
+
+![image](https://user-images.githubusercontent.com/111716161/193496396-d90564fd-6915-4b4b-93c6-0b48240f2499.png)
+
+Bước 3: Nhập user, nhấn 
