@@ -74,4 +74,12 @@ Bước 1: Mở IIS Manager -> vào trang web ftp -> FTP User Isolation.
 
 Bước 2: Tích chọn User name directory -> Apply. 
 
-Bước 3: 
+Bước 3: Chuột phải vào tên ftp site, chọn Add Virtual Directory.
+
+Bước 4: Trong trường Alias, nhập tên hiệu hoặc tên, trường đường dẫn nhập đường dẫn đến thư mục người dùng. 
+
+Bước 5: Cài đặt quyền truy cập cho folder ảo, chọn ftp site của bạn và chọn Edit Permission. 
+
+Bước 6: Chọn Security tab, nhấn Advanced -> disalbe inheritance -> Convert inherited... 
+
+
