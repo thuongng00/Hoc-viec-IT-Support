@@ -2,6 +2,8 @@
 
 **cPanel** là web hosting control panel (công cụ quản trị web hosting) trên nền tảng Linux phổ biến nhất hiện nay. cPanel có giao diện đơn giản, linh hoạt, giúp người dùng quản lý tất cả các dịch vụ của web hosting một cách dễ dàng.
 
+Web Hosting Manager viết tắt là WHM. Đây là hệ thống cho phép quản lý đơn giản để bạn kiểm soát tất cả những gì trên web server. Giao diện của nó thường dễ dùng, cung cấp nhiều tiện ích với chức năng web server. WHM quản lý Server, quản lý DNS tên miền, quản lý khách hàng, quản lý đơn hàng,…
+
 ![image](https://user-images.githubusercontent.com/111716161/193789116-6269f544-a8c0-4ce0-b31c-c737753b7310.png)
 
 Công cụ quản trị web hosting này có giao diện thân thiện với người dùng và hoạt động trên hệ thống phân cấp ba lớp như sau:
@@ -124,3 +126,19 @@ Track DNS (Theo dõi DNS) – Kiểm tra cài đặt DNS bằng cách truy tìm 
 - User Preferences (Tùy chọn người dùng) – Đặt tùy chọn người dùng.
 - User Manager (Trình quản lý người dùng) – Đặt và chỉnh sửa quyền và quyền của người dùng.
 
+# Ưu, nhược điểm của cPanel
+
+### Ưu điểm
+
+- Dễ sử dụng và ổn định cho người dùng.
+- cPanel không có vấn đề gì về thời gian.
+- Công nghệ tiên tiến và tính bảo mật cao.
+- Hỗ trợ toàn cầu và vô cùng thân thiện với người dùng.
+- Chạy được trên nền tảng máy tính và di động.
+
+### Nhược điểm
+
+- cPanel có nhiều tính năng không cần thiết.
+- Dễ làm thay đổi các thông số quan trọng.
+- Một số host vẫn chạy bản cPanel cũ.
+- Tốn kém hơn cho người sử dụng.
