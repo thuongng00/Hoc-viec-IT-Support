@@ -1,3 +1,12 @@
+[Log](#log)
+
+[Syslog](#sys)
+
+[Rsyslog](#rsys)
+
+[Log tập trung](#logtt)
+
+<a name="log"></a>
 # Log
 
 **Log** ghi lại liên tục các thông báo về hoạt động của cả hệ thống hoặc của các dịch vụ được triển khai trên hệ thống và file tương ứng. 
@@ -70,6 +79,7 @@ lastb -f /var/log/btmp | more
 
 ![image](https://user-images.githubusercontent.com/111716161/193737227-c4347354-c23c-45d6-accb-c754d8c77d02.png)
 
+<a name="sys"></a>
 # Syslog
 
 ![image](https://user-images.githubusercontent.com/111716161/193737331-554713c2-fd88-40d4-b1b6-6f360a17853c.png)
@@ -108,6 +118,7 @@ Hầu hết thời gian, quản trị viên hệ thống không giám sát một
 
 Kết quả là, việc gửi nhật ký đến một máy ở xa, được gọi là máy chủ ghi log tập trung, sử dụng các giao thức truyền thông khác nhau như UDP hoặc TCP.
 
+<a name="rsys"></a>
 # Rsyslog
 
 **Rsyslog** – “The rocket-fast system for log processing” được bắt đầu phát triển từ năm 2004 bởi Rainer Gerhards. 
@@ -133,6 +144,7 @@ Rsyslog có thiết kế kiểu mô-đun. Điều này cho phép chức năng đ
 5. String Generator Modules
 6. Library Modules
 
+<a name="logtt"></a>
 # Log tập trung
 
 ![image](https://user-images.githubusercontent.com/111716161/193752159-fbefb738-abb8-4901-a4f8-da11a1833d9e.png)
