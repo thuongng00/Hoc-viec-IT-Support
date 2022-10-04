@@ -4,7 +4,7 @@ SIEM được viết tắt từ cụm từ Security Information and Event Manage
 
 SIEM là một giải pháp cung cấp lại một cái nhìn toàn diện về cái gì đang diễn ra bên trong hệ thống của bạn một cách real-time và từ đó giúp IT Team chủ động hơn trong việc chống lại các mối đe dọa tiềm tàng trong hệ thống.
 
-![image](https://user-images.githubusercontent.com/111716161/193769141-eeed977e-1c8b-4bbb-b23b-9fe86a426ef4.png)
+![image](https://user-images.githubusercontent.com/111716161/193772375-20bcc4f9-a588-4bbe-a771-031ee7d72b7b.png)
 
 ## Tầm quan trọng của SIEM
 
@@ -17,6 +17,8 @@ Ngoài ra trong thời gian gần đây, các loại hình tấn công kiểu m�
 Do đó, giải pháp SIEM có thể giải quyết được các bài toán phức tạp như trên.
 
 ## Vai trò của SIEM
+
+![image](https://user-images.githubusercontent.com/111716161/193769141-eeed977e-1c8b-4bbb-b23b-9fe86a426ef4.png)
 
 SIEM quản lý log và sự kiện tập trung, cung cấp các chức năng chính như:
 
