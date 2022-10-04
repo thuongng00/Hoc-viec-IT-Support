@@ -34,6 +34,8 @@ Zabbix Agent là chương trình zabbix dùng để cài đặt lên các máy c
 
 Cung cấp giao diện Web trên nền tảng mã nguồn PHP cùng phong cách metro tinh tế. Hiện tại có thể xem Zabbix là một trong những ứng dụng có giao diện đẹp nhất, thiết kế vị trí tính năng bắt mắt và hợp lý. 
 
+![image](https://user-images.githubusercontent.com/111716161/193796390-9f2b0584-cc8a-4cee-b6a8-755819fe95f7.png)
+
 # Ưu, nhược điểm của Zabbix
 
 ### Ưu điểm
