@@ -4,7 +4,7 @@ DirectAdmin là một trong những Bảng điều khiển (Control Panel) dành
 
 DirectAdmin hướng đến sự đơn giản, tiện dụng, tốc độ và sự ổn định. Nhưng vẫn có đầy đủ các tính năng cần thiết cho một quản trị hosting server. Đặc biệt khi sử dụng DirectAdmin, các nhiệm vụ đều sẽ được tự động hoá. Việc quản trị máy chủ và chia sẻ trang web sẽ được thực hiện một cách dễ dàng hơn.
 
-<img src="https://user-images.githubusercontent.com/111716161/193791956-5d04e6aa-151f-44bd-8306-695c6ecfb5d9.png) width=500"/>
+<img src="https://user-images.githubusercontent.com/111716161/193791956-5d04e6aa-151f-44bd-8306-695c6ecfb5d9.png)" width=500/>
 
 DirectAdmin được thiết kế và vận hành bởi JBMC Software, phần mềm được phát hành lần đầu tiên vào ngày 1 tháng 3 năm 2003. Hiện nay, phiên bản mới nhất và ổn định nhất là bản 1.59.1 phát hành vào ngày 25 tháng 9 năm 2019.
 
