@@ -219,5 +219,4 @@ Lúc này tất các log từ info của tiến trình hệ thống sẽ đượ
 - Nguy cơ quá tải máy chủ syslog của mình: với cấu trúc này, bạn đang đẩy các bản ghi đến một máy chủ từ xa. Hậu quả là, nếu một máy bị tấn công và bắt đầu gửi hàng ngàn log messages, có nguy cơ làm quá tải máy chủ log.
 - Nếu máy chủ nhật ký bị hỏng, bạn sẽ mất khả năng xem tất cả các nhật ký được gửi bởi khách hàng. Hơn nữa, nếu máy chủ ngừng hoạt động, máy khách sẽ bắt đầu lưu trữ thư cục bộ cho đến khi máy chủ khả dụng trở lại, do đó không gian đĩa ở phía máy khách sẽ dần bị đầy.
 
-egrep -v "^#|^$|^*#" /etc/rsyslog.conf
 
