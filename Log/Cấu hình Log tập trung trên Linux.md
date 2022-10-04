@@ -1,4 +1,4 @@
-# Cấu hình Rsyslog Server
+# Cấu hình Rsyslog Server trên CentOS 7
 
 ### Bước 1: Chỉnh sửa trong file cấu hình.
 - Chỉnh sửa file máy chủ Syslog-server để nó có thể nhận các bản tin log từ các client gửi về.
@@ -66,8 +66,8 @@ nano /etc/rsyslog.conf
 
 Thêm dòng:
 
-- *.* @IPserver:514 : Đối với giao thức UDP
-- *.* @@IPserver:514 : Đối với giao thức TCP
+- `*.* @IPserver:514` : Đối với giao thức UDP
+- `*.* @@IPserver:514` : Đối với giao thức TCP
 
 ![image](https://user-images.githubusercontent.com/111716161/193761087-6ca6dae8-3f49-47ac-8907-93f7b8d2b61f.png)
 
