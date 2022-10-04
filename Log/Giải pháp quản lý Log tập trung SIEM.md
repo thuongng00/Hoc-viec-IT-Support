@@ -35,3 +35,22 @@ Giải pháp SIEM Thế Hệ Mới đem đến cho khách hàng một hệ thố
 2. Khả năng phân tích chuyên sâu theo “thời gian thực” đưa ra cảnh báo kịp thời và chính xác, rút ngắn thời gian phát hiện và xử lý sự cố.
 3. Kết hợp khả năng phản ứng nhanh với các loại hình tấn công hay vi phạm chính sách hoặc các tuân thủ.
 4. Xây dựng sẵn các bộ báo cáo theo chuẩn hoặc tùy biến theo nhu cầu của khách hàng.
+
+## Các khó khăn gặp phải khi triển khai và vận hành SIEM?
+Để có được giải pháp SIEM phù hợp đã là vấn đề  rất nan giải rồi. Có 5 khó khăn mà doanh nghiệp hay gặp phải:
+
+### Thiếu security analysts được đào tạo chuyên sâu
+Doanh nghiệp đã sở hữu một giải pháp SIEM xịn chưa chắc sẽ khai thác hết điểm mạnh của nó.  Một hệ thống SIEM để hoạt động trơn tru nó cần có những con người xịn tương ứng. Nên việc tìm được chuyên gia vận hành SIEM có am hiểu sâu về Cyber Security là vấn đề rất nan giải với rất nhiều doanh nghiệp. Thậm chí có nhiều doanh nghiệp đầu từ SIEM đơn giản là chỉ để đối phó.
+
+### Không được training đầy đủ để vận hành hệ thống SIEM
+Đây là vấn đề doanh nghiệp thường gặp phải khi triển khai giải pháp SIEM. Việc không được training đầy đủ sẽ dẫn đến doanh nghiệp không khác thác hết sức mạnh mà giải pháp.
+
+### Security Team không đủ nhân lực để cover 24/7
+Security Team không đủ nhân lực để cover 24/7. Hacker thường tấn công vào những thời điểm mà đội ngũ security không túc trực. Vì vậy để hệ thống vận hành một cách an toàn việc có một đội ngủ túc trực 24/7.
+
+### Những cảnh báo được thiết lập chưa hợp lý
+Những cảnh báo mà bạn thiết lập chưa hợp lý hoặc quá nhiều đến nỗi bạn bị lụt thông tin. Và điều đó làm cho thật sự bị rối trong 1 đống thông tin.
+
+### Các thông báo riêng lẻ không chính xác
+Các thông báo riêng lẻ không được tương quan chính xác bởi  vậy hệ thống SIEM sẽ không notify.
+
