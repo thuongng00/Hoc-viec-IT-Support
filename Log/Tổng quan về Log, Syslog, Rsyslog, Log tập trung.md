@@ -146,6 +146,48 @@ Rsyslog có thiết kế kiểu mô-đun. Điều này cho phép chức năng đ
 5. String Generator Modules
 6. Library Modules
 
+## Tìm hiểu file cấu hình rsyslog
+
+```
+egrep -v "^#|^$|^*#" /etc/rsyslog.conf
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193753992-17e90dd7-f73c-4ad5-a26c-2f404e895ebd.png)
+
+Cấu hình trên được chia ra làm 2 trường: 
+- Trường 1: Seletor.
+
+Trường Seletor chỉ ra nguồn tạo ra log và mức cảnh báo của log đó. Trong trường seletor có 2 thành phần và được tách nhau bằng dấu `.`.
+
+![image](https://user-images.githubusercontent.com/111716161/193754247-764acfdb-dd0a-4722-88c1-9baa6f15ec4f.png)
+
+- Trường 2: Trường Action.
+
+Trường Action là trường để chỉ ra nơi lưu log của tiến trình đó. Có 2 loại là lưu tại file trong localhost hoặc gửi đến IP của máy chủ log. 
+
+![image](https://user-images.githubusercontent.com/111716161/193754419-80531910-6565-4020-8c6c-60e855bbd0f3.png)
+
+***Ý nghĩa các dòng lệnh***
+
+```
+mail.info         /var/log/maillog
+```
+
+Khi đó lúc này bản tin log sẽ mail lại với mức cảnh báo từ info trở lên. Cụ thể là mức notice,warn,… nếu bạn chỉ muốn nó log lại mail với mức là info bạn phải sử dụng như sau: `mail.=info /var/log/maillog`
+
+
+```
+mail.* 
+```
+
+Lúc này kí tự * đại diên cho các mức cảnh báo. Lúc này nó sẽ lưu hết các level của mail vào trong thư mục. Tượng tự khi đặt *. thì lúc này nó sẽ log lại tất cả các tiến trình của hệ thống vào một file. Nếu bạn muốn log lại tiến trình của mail ngoại trừ mức info bạn có thể dùng kí tự “!”
+
+```
+*.info;mail.none;authpriv.none;cron.none                /var/log/messages
+```
+
+Lúc này tất các log từ info của tiến trình hệ thống sẽ được lưu vào trong file log messages nhưng đối với các log của mail, authpriv và cron sẽ không lưu vào trong messages. Đó là ý nghĩa của dòng mail.none;authpriv.none;cron.none
+
 <a name="logtt"></a>
 # Log tập trung
 
@@ -176,3 +218,6 @@ Rsyslog có thiết kế kiểu mô-đun. Điều này cho phép chức năng đ
 
 - Nguy cơ quá tải máy chủ syslog của mình: với cấu trúc này, bạn đang đẩy các bản ghi đến một máy chủ từ xa. Hậu quả là, nếu một máy bị tấn công và bắt đầu gửi hàng ngàn log messages, có nguy cơ làm quá tải máy chủ log.
 - Nếu máy chủ nhật ký bị hỏng, bạn sẽ mất khả năng xem tất cả các nhật ký được gửi bởi khách hàng. Hơn nữa, nếu máy chủ ngừng hoạt động, máy khách sẽ bắt đầu lưu trữ thư cục bộ cho đến khi máy chủ khả dụng trở lại, do đó không gian đĩa ở phía máy khách sẽ dần bị đầy.
+
+egrep -v "^#|^$|^*#" /etc/rsyslog.conf
+
