@@ -68,15 +68,19 @@ Nhấn Finish -> OK.
 
 ![image](https://user-images.githubusercontent.com/111716161/193726055-06725d6a-8a2f-48ea-a668-3dd4cd544561.png)
 
-Chuột phải chọn tạo nhóm mới.
+Chuột phải Groups -> New Group...
+
+![image](https://user-images.githubusercontent.com/111716161/193726599-19fa1828-34bc-4269-a880-2052c3f53adc.png)
 
 Bước 2: Nhập tên nhóm và mô tả. Nhấn Add để thêm user.
 
-![image](https://user-images.githubusercontent.com/111716161/193496396-d90564fd-6915-4b4b-93c6-0b48240f2499.png)
-
 Bước 3: Nhập user, nhấn Check Names để kiểm tra người dùng có tồn tại hay không. 
 
+![image](https://user-images.githubusercontent.com/111716161/193726917-e4397774-0922-4b65-9b5e-449afac3b23a.png)
+
 Bước 4: Sau khi thêm user, nhấn Create để tạo nhóm. 
+
+![image](https://user-images.githubusercontent.com/111716161/193726953-ee766c65-3954-48b3-9975-6684da4ece71.png)
 
 ## Phân vùng người dùng
 
@@ -144,11 +148,14 @@ Bước 4: Tích chọn Allow the connection -> finish. Khởi động lại má
 
 ## Kết nối với máy chủ FTP
 
-Kết nối thông qua Exploer. Trong thanh địa chỉ nhập:
+Kết nối thông qua Explorer. Trong thanh địa chỉ nhập:
 
 ```
-frp: // ip address
+ftp: // ip address
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/193727172-aaf6e48e-fbae-49b1-9fe2-3ec04b3e4e8b.png)
 
 Cửa sổ đăng nhập mở ra, nhập tài khoản đã tạo để truy cập. 
 
+![image](https://user-images.githubusercontent.com/111716161/193727216-fc88b13f-79d6-4981-a167-dfdd60eef9a7.png)
