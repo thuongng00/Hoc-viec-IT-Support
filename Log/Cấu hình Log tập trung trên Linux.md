@@ -83,3 +83,4 @@ tcpdump -nni ens33 port 514
 cd /var/log/ | ls -al
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/193761337-8d72c37e-541f-4844-a695-d9c8882e81c8.png)
