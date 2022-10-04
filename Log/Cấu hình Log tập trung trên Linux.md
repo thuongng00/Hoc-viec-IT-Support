@@ -9,7 +9,11 @@ nano /etc/rsyslog.conf
 
 - Bỏ comment 2 dòng dưới giao thức, có thể chọn sử dụng UDP hoặc TCP, mặc định `syslog` sử dụng port 514 để gửi và nhận thông tin log.
 
+![image](https://user-images.githubusercontent.com/111716161/193762419-48ceba37-f43b-413f-a61b-00c3b0d19ba1.png)
+
 Ở đây sử dụng giao thức UDP.
+
+![image](https://user-images.githubusercontent.com/111716161/193762514-eaa3518b-62e5-4d45-be84-4496d452083c.png)
 
 - Để máy chủ log tạo thành các thư mục lưu riêng log đối với từng máy Client gửi về, thêm dòng sau vào cuối file cấu hình. 
 
