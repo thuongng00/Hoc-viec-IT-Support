@@ -70,16 +70,73 @@ Bước 4: Sau khi thêm user, nhấn Create để tạo nhóm.
 
 Để mỗi user có được thư mục riêng của mình và không có quyền truy cập vào các tệp khác sau khi kết nối với máy chủ, cần phải thiết lập isolation. 
 
-Bước 1: Mở IIS Manager -> vào trang web ftp -> FTP User Isolation. 
+Bước 1: Mở IIS Manager -> vào trang web ftp -> FTP User Isolation -> Open Feature.
+
+![image](https://user-images.githubusercontent.com/111716161/193722472-1c14e23e-37b9-4fdc-b0b3-7e9254379c14.png)
 
 Bước 2: Tích chọn User name directory -> Apply. 
 
+![image](https://user-images.githubusercontent.com/111716161/193722648-91f7fbe0-355b-423c-9a03-2df741c4ba4c.png)
+
 Bước 3: Chuột phải vào tên ftp site, chọn Add Virtual Directory.
+
+![image](https://user-images.githubusercontent.com/111716161/193722734-31fa7490-db5c-4bd7-a0f6-1f070f32b4c6.png)
 
 Bước 4: Trong trường Alias, nhập tên hiệu hoặc tên, trường đường dẫn nhập đường dẫn đến thư mục người dùng. 
 
+![image](https://user-images.githubusercontent.com/111716161/193722797-e4441900-f4ba-40e9-863d-1c5c1f857d37.png)
+
 Bước 5: Cài đặt quyền truy cập cho folder ảo, chọn ftp site của bạn và chọn Edit Permission. 
 
-Bước 6: Chọn Security tab, nhấn Advanced -> disalbe inheritance -> Convert inherited... 
+![image](https://user-images.githubusercontent.com/111716161/193722877-f8c92d24-a380-4bea-ae43-44742132efcf.png)
 
+Bước 6: Chọn Security tab, nhấn Advanced -> disalbe inheritance -> Convert inherited... để chuyển sang trạng thái Enable. Nhấn Apply -> OK để lưu thay đổi. 
+
+![image](https://user-images.githubusercontent.com/111716161/193723081-c0ad64a2-3268-45bd-9ea6-8f15378ac76f.png)
+
+![image](https://user-images.githubusercontent.com/111716161/193723225-db205e16-368c-4135-bdeb-e806b91a3c13.png)
+
+Bước 7: Quay lại tab Security -> Edit.
+
+![image](https://user-images.githubusercontent.com/111716161/193723477-92380857-6b65-4b6d-93ab-a4853f7dcebf.png)
+
+Xóa các nhóm người dùng không cần thiết để đảm bảo chỉ chủ sở hữu thư mục mới được truy cập, chọn user/group -> nhấn Remove.
+
+![image](https://user-images.githubusercontent.com/111716161/193723667-06bda564-0195-4717-852d-727aa8b33e93.png)
+
+Trong trường hợp muốn thêm một người dùng để người dùng này có quyền truy cập vào thư mục với các quyền, nhấn Add. 
+
+![image](https://user-images.githubusercontent.com/111716161/193724045-dcc987f0-da76-41cf-9ae1-ecaba117b37c.png)
+
+Chỉnh sửa các quyền của user/group tại đây. 
+
+![image](https://user-images.githubusercontent.com/111716161/193724183-f2394b86-8801-4f82-9443-4a2e011a52a7.png)
+
+## Thiết lập rule Firewall
+
+Bước 1: Mở Windows Firewall with Advanced Security -> Inbound rules -> New Rule.
+
+![image](https://user-images.githubusercontent.com/111716161/193724414-8daced0f-d94e-41c9-98c9-7be299a645be.png)
+
+Bước 2: Chọn Predefined -> Next.
+
+![image](https://user-images.githubusercontent.com/111716161/193724577-0b130a3c-e717-4e15-8679-e0c59fa87220.png)
+
+Bước 3: Tích chọn tất cả các dòng -> Next.
+
+![image](https://user-images.githubusercontent.com/111716161/193724783-0d2c0f7a-605f-41bd-b055-906c60caca57.png)
+
+Bước 4: Tích chọn Allow the connection -> finish. Khởi động lại máy. 
+
+![image](https://user-images.githubusercontent.com/111716161/193724810-60be6941-e42d-4ae6-8752-164b1eebf258.png)
+
+## Kết nối với máy chủ FTP
+
+Kết nối thông qua Exploer. Trong thanh địa chỉ nhập:
+
+```
+frp: // ip address
+```
+
+Cửa sổ đăng nhập mở ra, nhập tài khoản đã tạo để truy cập. 
 
