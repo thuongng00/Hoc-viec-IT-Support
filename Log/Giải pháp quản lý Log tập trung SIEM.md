@@ -1,10 +1,20 @@
 # SIEM
 
-SIEM được viết tắt từ cụm từ Security Information and Event Management.  Đây là nơi tập trung event và log trong toàn thể hệ thống của doanh nghiệp, thay vì phải manual từng thiết bị một, từng thiết bị một, thì SIEM sẽ giúp chúng ta tập hợp chúng lại.
+SIEM được viết tắt từ cụm từ Security Information and Event Management. Đây là nơi tập trung event và log trong toàn thể hệ thống của doanh nghiệp, thay vì phải manual từng thiết bị một, từng thiết bị một, thì SIEM sẽ giúp chúng ta tập hợp chúng lại.
 
-SIEM là một giải pháp cung cấp lại 1 cái nhìn toàn diện về cái gì đang diễn ra bên trong hệ thống của bạn một cách real-time và từ đó giúp IT Team chủ động hơn trong việc chống lại các mối đe dọa tiềm tàng trong hệ thống.
+SIEM là một giải pháp cung cấp lại một cái nhìn toàn diện về cái gì đang diễn ra bên trong hệ thống của bạn một cách real-time và từ đó giúp IT Team chủ động hơn trong việc chống lại các mối đe dọa tiềm tàng trong hệ thống.
 
 ![image](https://user-images.githubusercontent.com/111716161/193769141-eeed977e-1c8b-4bbb-b23b-9fe86a426ef4.png)
+
+## Tầm quan trọng của SIEM
+
+Khi hệ thống IT của các doanh nghiệp được trang bị nhiều hãng và thiết bị công nghệ khác nhau như Router, Switch, máy chủ, cơ sở dữ liệu, SAN, hệ điều hành máy trạm, ứng dụng ngân hàng, … Hơn nữa, các thiết bị, ứng dụng này đều đưa ra dạng log khác nhau tương ứng với từng nhà cung cấp.
+
+Hệ thống IT được quản trị bởi nhiều phòng ban như System, Network, Application, … để tổng hợp lại sự kiện tại thời điểm diễn ra sự cố rất khó, vì không có giải pháp chuyên dụng và lưu trữ các sự kiện dài hạn cho việc phân tích sau này, dẫn đến các khó khăn như các thông báo của hệ thống bị “tràn”, một lượng lớn thông tin được sinh ra từ hệ thống log, một số cảnh báo quan trọng có thể bị bỏ nhỡ, không được xử lý kịp thời. Việc điều tra về nguồn tấn công, đích tấn công, nguyên lý tấn công, thường phải làm thủ công, mất nhiều thời gian và công sức nhưng lại không có hiệu quả kịp thời.
+
+Ngoài ra trong thời gian gần đây, các loại hình tấn công kiểu mới như: Advanced Persistent Thread (ATP), Zero-day, tấn công từ bên trong và các loại hình Malware kiểu mới đã gia tăng dữ dội, cả ở số lượng máy bị tấn công và lây nhiêm cũng như mà cách thức máy bị điều khiển. Cùng với số lượng bùng nổ, các loại hình này cũng trở nên khó phát hiện hơn, với các thủ thuật tinh vi để tránh bị phát hiện và phân tích. Các giải pháp bảo mật truyền thống gần như không tác dụng trước loại nguy cơ mới.
+
+Do đó, giải pháp SIEM có thể giải quyết được các bài toán phức tạp như trên.
 
 ## Vai trò của SIEM
 
@@ -36,8 +46,9 @@ Giải pháp SIEM Thế Hệ Mới đem đến cho khách hàng một hệ thố
 3. Kết hợp khả năng phản ứng nhanh với các loại hình tấn công hay vi phạm chính sách hoặc các tuân thủ.
 4. Xây dựng sẵn các bộ báo cáo theo chuẩn hoặc tùy biến theo nhu cầu của khách hàng.
 
-## Các khó khăn gặp phải khi triển khai và vận hành SIEM?
-Để có được giải pháp SIEM phù hợp đã là vấn đề  rất nan giải rồi. Có 5 khó khăn mà doanh nghiệp hay gặp phải:
+## Các khó khăn gặp phải khi triển khai và vận hành SIEM
+
+Để có được giải pháp SIEM phù hợp đã là vấn đề rất nan giải. Có 5 khó khăn mà doanh nghiệp hay gặp phải:
 
 ### Thiếu security analysts được đào tạo chuyên sâu
 Doanh nghiệp đã sở hữu một giải pháp SIEM xịn chưa chắc sẽ khai thác hết điểm mạnh của nó.  Một hệ thống SIEM để hoạt động trơn tru nó cần có những con người xịn tương ứng. Nên việc tìm được chuyên gia vận hành SIEM có am hiểu sâu về Cyber Security là vấn đề rất nan giải với rất nhiều doanh nghiệp. Thậm chí có nhiều doanh nghiệp đầu từ SIEM đơn giản là chỉ để đối phó.
