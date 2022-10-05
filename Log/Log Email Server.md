@@ -1,6 +1,6 @@
 # Zimbra Log
 
-Tất cả log nội bộ của server Zimbra được lưu trong thư mục /otp/zimbra/log, trong đó mailbox.log là nơi lưu trữ thời gian sự việc, mức độ của sự việc, tác vụ, tên tài khoản và địa chỉ IP cũng như mô tả liên quan đến sự việc. 
+Tất cả log nội bộ của server Zimbra được lưu trong thư mục /opt/zimbra/log, trong đó mailbox.log là nơi lưu trữ thời gian sự việc, mức độ của sự việc, tác vụ, tên tài khoản và địa chỉ IP cũng như mô tả liên quan đến sự việc. 
 
 Log level thể hiện mức độ ảnh hưởng của event đến server. Mặc định có 4 mức độ được sử dụng:
 - INFO: Các event tại mức độ này có mục đích thông báo về các tiến trình của Zimbra như việc tạo, xóa message, v.v...
@@ -33,6 +33,10 @@ zgrep -i "triggers filter" /var/log/zimbra.* | grep -ioE 'from=.*to=.*>[ \t]' | 
 tail -f mailbox.log -f trace_log.2015_03_11 -f access_log.2015-03-11 -f sync.log -f ews.log | grep -i user1   #giám sát user1 từ nhiều log file khác nhau theo thời gian thực
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/193978787-5c069d4a-4dcb-438e-877c-be5a39c80d2d.png)
+
+![image](https://user-images.githubusercontent.com/111716161/193978964-eadb4302-d9f6-438c-9e60-b210544354d6.png)
+
 Zimbra cung cấp công cụ giúp theo dấu các email đã gửi nhận: zmmsgtrace, chạy với quyền root.
 
 ```
@@ -61,7 +65,7 @@ Việc kiểm tra log gửi/nhận của email server zimbra là rất cần thi
 
 ![image](https://user-images.githubusercontent.com/111716161/193975709-a6f9eaa0-dae5-4bcb-ac5b-1ff34a953386.png)
 
-- Để kiểm tra việc gửi email tới một domain cụ thể:
+- Để kiểm tra việc gửi email tới một domain cụ thể (kiểm tra theo địa chỉ nhận):
 
 ```
 /opt/zimbra/libexec/zmmsgtrace -r '@xn--thng-mgb3g.vn'
@@ -69,6 +73,10 @@ Việc kiểm tra log gửi/nhận của email server zimbra là rất cần thi
 
 ![image](https://user-images.githubusercontent.com/111716161/193976503-b63f9bc3-659c-4a24-8601-889516e85d56.png)
 
+- Để kiểm tra từ các file log khác nhau:
 
+```
+/opt/zimbra/libexec/zmmsgtrace -r '@xn--thng-mgb3g.vn' /var/log/zimbra*
+```
 
 
