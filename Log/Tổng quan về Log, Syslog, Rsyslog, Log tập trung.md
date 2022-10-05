@@ -15,6 +15,26 @@ Log file thường là các file văn bản thông thường dưới dạng “c
 
 Các file log có thể nói cho bạn bất cứ thứ gì bạn cần biết, để giải quyết các rắc rối mà bạn gặp phải miễn là bạn biết ứng dụng nào. Mỗi ứng dụng được cài đặt trên hệ thống có cơ chế tạo log file riêng của mình để bất cứ khi nào bạn cần thông tin cụ thể thì các log file là nơi tốt nhất để tìm.
 
+### Một vòng đời của Log
+
+Bao gồm 5 bước chính:
+
+![image](https://user-images.githubusercontent.com/111716161/193981732-e46a1632-55f2-4ca9-ac5d-6563f15e9590.png)
+
+- Đầu tiên log sẽ được ghi lại tại chính máy local sau đó nó sẽ được vận chuyển sang máy chủ quản lý log.
+- Người quản trị mạng sẽ từ những bản ghi đó mà tiến hành phân tích, từ đó có thể giám sát được hoạt động của các máy client.
+- Qua bước phân tích này mà người quản trị có thể phát hiện các hoạt động, hành vi xâm nhập không được phép.
+- Sau khi phân tích, dữ liệu log sẽ được lưu trữ để sử dụng lại nếu cần.
+- Bước cuối cùng là xóa, thường những tập tin log không cần thiết có thể được xóa bởi người quản trị nhằm giảm bớt lượng thông tin log không cần thiết.
+
+### Công dụng của Log
+
+- Phân tích nguyên nhân khi có sự cố xảy ra.
+- Giúp cho việc khắc phục sự cố nhanh hơn khi hệ thống gặp vấn đề.
+- Giúp cho việc phát hiện, dự đoán một vấn đề có thể xảy ra đối với hệ thống.
+- Khi xử lý log, thường quản trị viên có thể sử dụng 1 trong 2 phương pháp, đó là: xử lý log trên local và xử lý log tập trung.
+- Log trên Local: chỉ lưu lại bản thân Server, dùng command find, tail... để xem log.
+
 Các tập tin log được đặt trong thư mục /var/log. Bất kỳ ứng dụng khác mà sau này bạn có thể cài đặt trên hệ thống của bạn có thể sẽ tạo tập tin log của chúng tại /var/log. Dùng lệnh ls -l /var/log để xem nội dung của thư mục này.
 
 ## Ý nghĩa một số file log thông dụng có mặc định trên /var/log
