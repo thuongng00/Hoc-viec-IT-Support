@@ -23,7 +23,7 @@ https://github.com/thuongng00/Hoc-viec-IT-Support/blob/main/Web%20Server/Apache/
 <a name="mariadb"></a>
 # 3. Cài đặt MariaDB
 
-https://github.com/thuongng00/Hoc-viec-IT-Support/blob/main/Database/MariaDB/C%C3%A0i%20%C4%91%E1%BA%B7t%20MariaDB%20tr%C3%AAn%20CentOS%207.md
+https://github.com/thuongng00/Hoc-viec-IT-Support/blob/main/Database/MariaDB/C%C3%A0i%20%C4%91%E1%BA%B7t%20MariaDB%20.md
 
 ![image](https://user-images.githubusercontent.com/111716161/191659713-76d3584d-2060-422b-a060-98ce544c0417.png)
 
