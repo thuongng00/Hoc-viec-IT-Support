@@ -51,3 +51,11 @@ Yêu cầu tài nguyên tỷ lệ với nhiều yếu tố như sau:
     +Yêu cầu về redundancy (number of replicas)
 
   - Nhìn chung là không có công thức nào để tính trước về mặt tài nguyên. Mỗi nhu cầu sử dụng sẽ yêu cầu tài nguyên khác nhau.
+
+### Mô hình hệ thống theo dõi Log
+
+Cơ bản nhất là dùng beats thu thập log từ máy tính và gửi thẳng về Logstash để xử lý. Ngoài ra , nếu sử dụng nxlog bản Enterprise có thể gửi thẳng log vào ES (chắc có thể dùng Ingest pipeline để xử lý), tuy nhiên thường thì chúng ta dùng Logstash để normalize và enrich log events.
+
+Với hệ thống có nhiều lớp mạng riêng biệt, nếu để beats gửi log trực tiếp đến Logstash thì ta phải tạo firewall access rule cho tất cả máy tính đến Logstash TCP port. Chúng ta có thể tránh điều này bằng cách thêm vào một nxlog tập trung ở mỗi lớp mạng.
+
+Trên mỗi nxlog tập trung mình có thể sử dụng disk buffer để queue log trong trường hợp nxlog không kết nối được với Logstash.
