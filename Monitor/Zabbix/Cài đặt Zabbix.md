@@ -96,3 +96,6 @@ firewall-cmd --reload
 
 ### Bước 7: Thiết lập Zabbix Dashboard
 
+Sau khi cài đặt hoàn tất, mở trình duyệt và truy cập: http://IP-VPS/zabbix.
+
+
