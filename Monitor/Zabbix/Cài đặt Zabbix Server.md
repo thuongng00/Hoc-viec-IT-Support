@@ -92,7 +92,7 @@ nano /etc/zabbix/zabbix_server.conf
 
 ![image](https://user-images.githubusercontent.com/111716161/194005567-fbddd9e6-5790-4957-b936-3c8443df3e56.png)
 
-![image](https://user-images.githubusercontent.com/111716161/194005744-ae626c25-8129-4e7e-94a1-7285bd4f71c0.png)
+![image](https://user-images.githubusercontent.com/111716161/194024725-1d57725b-2318-4043-8a3b-3a1abf6463d1.png)
 
 ### Bước 4: Cấu hình PHP
 
@@ -157,4 +157,6 @@ firewall-cmd --reload
 ![image](https://user-images.githubusercontent.com/111716161/194005062-261b2693-1209-4983-b7e4-07899399a0b6.png)
 
 Giao diện Zabbix.
-![image](https://user-images.githubusercontent.com/111716161/194005182-f4ce3593-f306-4cb5-9945-75b8d335cadc.png)
+
+![image](https://user-images.githubusercontent.com/111716161/194024333-d86198ca-07f9-4b57-9eee-519877d320c3.png)
+
