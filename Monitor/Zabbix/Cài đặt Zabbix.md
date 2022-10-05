@@ -89,6 +89,10 @@ Nhập password đã tạo ở trên.
 nano /etc/zabbix/zabbix_server.conf
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/194005567-fbddd9e6-5790-4957-b936-3c8443df3e56.png)
+
+![image](https://user-images.githubusercontent.com/111716161/194005744-ae626c25-8129-4e7e-94a1-7285bd4f71c0.png)
+
 ### Bước 4: Cấu hình PHP
 
 - Mở tập tin `zabbix.conf`
