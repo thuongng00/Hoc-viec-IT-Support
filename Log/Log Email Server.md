@@ -1,6 +1,6 @@
 # Zimbra Log
 
-Tất cả log nội bộ của server Zimbra được lưu trong thư mục /otp/zimbra/log, trong đó mailbox.log là nowiluwu trữ thời gian sự việc, mức độ của sự việc, tác vụ, tên tài khoản và địa chỉ IP cũng như mô tả liên quan đến sự việc. 
+Tất cả log nội bộ của server Zimbra được lưu trong thư mục /otp/zimbra/log, trong đó mailbox.log là nơi lưu trữ thời gian sự việc, mức độ của sự việc, tác vụ, tên tài khoản và địa chỉ IP cũng như mô tả liên quan đến sự việc. 
 
 Log level thể hiện mức độ ảnh hưởng của event đến server. Mặc định có 4 mức độ được sử dụng:
 - INFO: Các event tại mức độ này có mục đích thông báo về các tiến trình của Zimbra như việc tạo, xóa message, v.v...
@@ -53,13 +53,22 @@ Logger server sẽ thu thập thông tin thống kê, trạng thái của các s
 
 Việc kiểm tra log gửi/nhận của email server zimbra là rất cần thiết, giúp xác định được một email đã gửi/nhận thành công hay chưa và nếu chưa thành công thì bị dừng ở bước nào và báo lỗi ra sao.
 
-- Truy cập file log:
+- Để kiểm tra việc gửi email của 1 địa chỉ email:
 
 ```
-/var/log/maillog
+/opt/zimbra/libexec/zmmsgtrace -s user1@xn--thng-mgb3g.vn
 ```
 
-- Chu trình gửi: Khi click gửi thư -> Connect tới email server -> MTA kiểm tra địa chỉ người nhận -> Kiểm tra qua các rule filter, đánh giá spam, virus -> Xếp vào queue -> Gửi thư -> Xóa khỏi queue -> Thông báo Message accepted for delivery
+![image](https://user-images.githubusercontent.com/111716161/193975709-a6f9eaa0-dae5-4bcb-ac5b-1ff34a953386.png)
 
-- Chu trình nhận: Chấp nhận kết nối từ email server gửi -> Kiểm tra qua các rule filter, đánh giá spam, virus -> Xếp vào queue => Nhận thư và xóa khỏi queue -> Thông báo nhận thư 250 2.1.5 Delivery OK
+- Để kiểm tra việc gửi email tới một domain cụ thể:
+
+```
+/opt/zimbra/libexec/zmmsgtrace -r '@xn--thng-mgb3g.vn'
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193976503-b63f9bc3-659c-4a24-8601-889516e85d56.png)
+
+
+
 
