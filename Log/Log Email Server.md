@@ -53,6 +53,48 @@ Zimbra cung cấp công cụ giúp theo dấu các email đã gửi nhận: zmms
 
 Logger server sẽ thu thập thông tin thống kê, trạng thái của các service trên các server khác, zimbra.log được lưu tập trung nhưng các log khác như mailbox.log và audit.log được lưu theo kiểu round robin trên các mailstore server. Muốn tập trung các log này về một log server riêng, zimico khuyến cáo bạo dùng 1 giải pháp lưu và phân tích log tập trung của bên thứ 3 như Graylog.
 
+Bước 1: Cài đặt logger của zimbra trên mailbox server này.
+
+Bước 2: Chỉnh sửa file `/etc/sysconfig/rsyslog`, cấu hình `SYSLOGD_OPTIONS="-r -c 2"`
+
+![image](https://user-images.githubusercontent.com/111716161/193980165-cbffd5df-0bf7-4e77-859b-c5864870ce1f.png)
+
+Bước 3: Chỉnh sửa file `/etc/rsyslog.conf` và kích hoạt 2 dòng sau:
+```
+$ModLoad imupd
+$UDPServerRun 514
+```
+
+Bước 3: Khởi động lại rsyslog
+
+```
+systemctl restart rsyslog
+```
+
+Bước 4: Chạy các lệnh sau:
+
+```
+su - zimbra
+
+/opt/zimbra/bin/zmsshkeygen
+
+/opt/zimbra/bin/zmupdateauthkeys
+
+/opt/zimbra/libexec/zmloggerinit
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193980297-e02c1e63-f297-4d74-b29a-c623ce815be6.png)
+
+![image](https://user-images.githubusercontent.com/111716161/193980370-b20a5085-e541-428c-8fb6-044f84b59d7b.png)
+
+Bước 5: Kiểm tra thông số:
+
+```
+zmprov gacf | grep zimbraLogHostname
+```
+
+![image](https://user-images.githubusercontent.com/111716161/193980424-e0c5d4e8-1cac-4cab-b6d9-f5340ca3dbc5.png)
+
 # Kiểm tra log gửi/nhận email Zimbra
 
 Việc kiểm tra log gửi/nhận của email server zimbra là rất cần thiết, giúp xác định được một email đã gửi/nhận thành công hay chưa và nếu chưa thành công thì bị dừng ở bước nào và báo lỗi ra sao.
@@ -79,4 +121,5 @@ Việc kiểm tra log gửi/nhận của email server zimbra là rất cần thi
 /opt/zimbra/libexec/zmmsgtrace -r '@xn--thng-mgb3g.vn' /var/log/zimbra*
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/193979324-dcfbbbf2-4541-4db0-a110-29ebabc6ffb1.png)
 
