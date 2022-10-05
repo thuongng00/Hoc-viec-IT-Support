@@ -66,20 +66,21 @@ Tạo user và database cho Zabbix.
 MariaDB [(none)]> create database zabbix character set utf8 collate utf8_bin;
 MariaDB [(none)]> create user zabbix@localhost identified by 'password';
 MariaDB [(none)]> grant all privileges on zabbix.* to zabbix@localhost;
+MariaDB [(none)]> flush privileges;
 MariaDB [(none)]> quit;
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/194000012-80f97f4d-21cf-4ef3-99ba-cefdcf2bb960.png)
+![image](https://user-images.githubusercontent.com/111716161/194013676-f1ed8579-6ac2-4aba-a7cc-893fb13c89af.png)
 
 - Import database Zabbix
 
 ```
-zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix
+zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -u zabbix -p zabbix
 ```
 
 Nhập password đã tạo ở trên.
 
-![image](https://user-images.githubusercontent.com/111716161/194001683-4c526a15-090c-4980-b834-39bb84514907.png)
+![image](https://user-images.githubusercontent.com/111716161/194013917-a8c7f409-11a2-4380-b57a-0f8905759d09.png)
 
 ### Bước 3: Cấu hình Zabbix
 
@@ -101,6 +102,7 @@ nano /etc/zabbix/zabbix_server.conf
 nano /etc/opt/rh/rh-php72/php-fpm.d/zabbix.conf
 ```
 
+nano ./conf/zabbix.conf.php
 - Sửa [date.timezone] thành Asia/Ho_Chi_Minh
 
 ![image](https://user-images.githubusercontent.com/111716161/194003256-cd629827-2b5b-466f-9f0f-38c8dead9b0e.png)
