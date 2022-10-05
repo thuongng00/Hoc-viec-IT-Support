@@ -33,3 +33,33 @@ zgrep -i "triggers filter" /var/log/zimbra.* | grep -ioE 'from=.*to=.*>[ \t]' | 
 tail -f mailbox.log -f trace_log.2015_03_11 -f access_log.2015-03-11 -f sync.log -f ews.log | grep -i user1   #giám sát user1 từ nhiều log file khác nhau theo thời gian thực
 ```
 
+Zimbra cung cấp công cụ giúp theo dấu các email đã gửi nhận: zmmsgtrace, chạy với quyền root.
+
+```
+/opt/zimbra/libexec/zmmsgtrace -s user@example.com  #Trace theo địa chỉ gửi
+
+/opt/zimbra/libexec/zmmsgtrace -r '@gmail.com'  #Trace theo địa chỉ nhận
+
+/opt/zimbra/libexec/zmmsgtrace -r '@gmail.com' /var/log/zimbra*   #Trace từ các file log khác nhau
+```
+
+## 
+
+Để thiết lập ghi log tập trung trong một hệ thống Zimbra có nhiều server bạn cần cấu hình một host để thu nhận log. Thường bạn sẽ dùng mailbox server, cài đặt logger để thu thập log.
+
+Logger server sẽ thu thập thông tin thống kê, trạng thái của các service trên các server khác, zimbra.log được lưu tập trung nhưng các log khác như mailbox.log và audit.log được lưu theo kiểu round robin trên các mailstore server. Muốn tập trung các log này về một log server riêng, zimico khuyến cáo bạo dùng 1 giải pháp lưu và phân tích log tập trung của bên thứ 3 như Graylog.
+
+# Kiểm tra log gửi/nhận email Zimbra
+
+Việc kiểm tra log gửi/nhận của email server zimbra là rất cần thiết, giúp xác định được một email đã gửi/nhận thành công hay chưa và nếu chưa thành công thì bị dừng ở bước nào và báo lỗi ra sao.
+
+- Truy cập file log:
+
+```
+/var/log/maillog
+```
+
+- Chu trình gửi: Khi click gửi thư -> Connect tới email server -> MTA kiểm tra địa chỉ người nhận -> Kiểm tra qua các rule filter, đánh giá spam, virus -> Xếp vào queue -> Gửi thư -> Xóa khỏi queue -> Thông báo Message accepted for delivery
+
+- Chu trình nhận: Chấp nhận kết nối từ email server gửi -> Kiểm tra qua các rule filter, đánh giá spam, virus -> Xếp vào queue => Nhận thư và xóa khỏi queue -> Thông báo nhận thư 250 2.1.5 Delivery OK
+
