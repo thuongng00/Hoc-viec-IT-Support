@@ -18,31 +18,14 @@
 
 ![image](https://user-images.githubusercontent.com/111716161/194245954-2d362409-5775-4a25-b78c-b2b509e36c1c.png)
 
-Như vậy ta đã tạo thành công host. 
+Như vậy ta đã tạo thành công host Zabbix Client trên CentOS7.
 
 ![image](https://user-images.githubusercontent.com/111716161/194245113-69b0b9da-c93a-41ae-b500-f3f0dc6357e6.png)
 
-### Bước 4: Tạo Application, Item giám sát process
+### Bước 4: Kiểm tra thông số monitor
 
-![image](https://user-images.githubusercontent.com/111716161/194246113-b6194150-e615-44a6-8cbb-2759ddbfcc0a.png)
+Chọn tab Monitoring -> Lastest data -> Lựa chọn host -> Apply.
 
-- Vào Applications -> Create Application -> Nhập tên -> Add.
-
-![image](https://user-images.githubusercontent.com/111716161/194247109-afbffa35-54f2-4c58-800a-df6a8310924c.png)
-
-- Vào Items -> Create Item -> Nhập các tham số -> Add.
-
-`Name`: Đặt tên tùy ý
-`Type`: Zabbix Agent
-`Key`: Lựa chọn key tùy vào process muốn giám sát
-`Type of Information`: Numeric (Unsigned)
-`Update interval`: 1m
-`Show value`: As is
-`Application`: Application đã tạo ở trên
-
-![image](https://user-images.githubusercontent.com/111716161/194247420-2e7cd387-2032-4c90-b77e-b151cff78f6e.png)
-
-### Bước 5: Kiểm tra kết quả
-
+![image](https://user-images.githubusercontent.com/111716161/194249289-2e55af3b-3db0-433e-a7e1-1db36857da39.png)
 
 
