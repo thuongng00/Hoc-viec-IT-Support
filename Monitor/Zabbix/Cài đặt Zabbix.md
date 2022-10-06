@@ -227,5 +227,23 @@ systemctl status zabbix-agent
 
 ![image](https://user-images.githubusercontent.com/111716161/194214563-64c08219-3f98-4cd8-9d01-5232dc2795e1.png)
 
+- Thực hiện trên Zabbix Server
+
+Cài đặt zabbix-get
+
+```
+yum install zabbix-get
+```
+
+![image](https://user-images.githubusercontent.com/111716161/194253798-2089c06e-a3db-4b20-a7da-5cbb86dff942.png)
+
+Kiểm tra kết nối:
+
+```
+zabbix_get -s <ZABBIX_AGENT_IP> -k agent.version
+```
+
+![image](https://user-images.githubusercontent.com/111716161/194254236-374a3897-8f77-448b-8a4b-996e4afc496a.png)
+
 
 
