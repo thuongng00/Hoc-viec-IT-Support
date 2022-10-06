@@ -8,7 +8,7 @@ yum install -y epel-release wget
 
 ![image](https://user-images.githubusercontent.com/111716161/194260012-d43b1c49-0b1a-43a3-9118-1a750642d88e.png)
 
-Tải file cài đặt:
+- Tải file cài đặt:
 
 ```
 wget https://download.checkmk.com/checkmk/2.1.0p13/check-mk-raw-2.1.0p13-el7-38.x86_64.rpm
@@ -16,13 +16,15 @@ wget https://download.checkmk.com/checkmk/2.1.0p13/check-mk-raw-2.1.0p13-el7-38.
 
 ![image](https://user-images.githubusercontent.com/111716161/194260315-4079d4a7-02ad-455a-a8ca-8d64d0f0f321.png)
 
+### Bước 2: Cài đặt checkmk
+
 ```
 yum install -y check-mk-raw-2.1.0p13-el7-38.x86_64.rpm
 ```
 
 ![image](https://user-images.githubusercontent.com/111716161/194261273-43c0ee64-b5c0-418e-9e02-b5e42bb01d11.png)
 
-### Bước 2: Tạo mới site
+### Bước 3: Tạo mới site
 
 ```
 omd create nganthuong
@@ -46,7 +48,7 @@ omd start nganthuong
 
 ![image](https://user-images.githubusercontent.com/111716161/194261870-115a7124-96e6-4c65-a9d8-7c5a1e05be28.png)
 
-### Bước 3: Truy cập checkmk
+### Bước 4: Truy cập checkmk server
 
 Truy cập đường dẫn:
 
