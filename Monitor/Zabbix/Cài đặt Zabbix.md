@@ -182,6 +182,8 @@ rpm -Uvh https://repo.zabbix.com/zabbix/4.4/rhel/7/x86_64/zabbix-agent-4.4.0-1.e
 yum install zabbix-agent -y
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/194214045-836080b1-3e49-4b5b-8897-ac380435d8bc.png)
+
 ### Bước 3: Cấu hình Zabbix agent
 
 Sửa file cấu hình:
@@ -197,6 +199,12 @@ ServerActive=<IP_ZABBIX_SERVER>
 Hostname=<ZABBIX_SERVER_HOSTNAME>
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/194214154-d7619597-3154-4a3e-a58c-02395cfaea7a.png)
+
+![image](https://user-images.githubusercontent.com/111716161/194214249-1bad1374-f274-4742-801e-0679324bb305.png)
+
+![image](https://user-images.githubusercontent.com/111716161/194214325-9efb8822-dbd1-4fbc-84c0-b25c17681225.png)
+
 ### Bước 4: Bước 4: Cấu hình firewalld
 
 ```
@@ -206,10 +214,15 @@ firewall-cmd --reload
 
 ### Bước 5: Kiểm tra việc cài đặt
 
-Thực hiện trên Zabbix Server, sử dụng zabbix-get để kiểm tra
+Khởi động lại dịch vụ
 
 ```
-zabbix_get -s <ZABBIX_AGENT_IP> -k agent.version
+systemctl enable zabbix-agent
+systemctl restart zabbix-agent
+systemctl status zabbix-agent
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/194214563-64c08219-3f98-4cd8-9d01-5232dc2795e1.png)
+
 
 
