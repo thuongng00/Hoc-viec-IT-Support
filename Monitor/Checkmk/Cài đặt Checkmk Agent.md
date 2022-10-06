@@ -59,3 +59,5 @@ firewall-cmd --reload
 
 ## Thêm host trên Checkmk Server
 
+Vào Setup ->  Host -> Add host -> Nhập thông tin: Hostname, IP, các cấu hình phù hợp -> Save & go to service configuration. 
+
