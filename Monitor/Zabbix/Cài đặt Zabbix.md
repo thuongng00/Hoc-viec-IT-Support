@@ -1,3 +1,10 @@
+[Cài đặt Zabbix Server](#sv)
+
+[Cài đặt Zabbix Agent](#agent)
+
+<a name="sv"></a>
+# Cài đặt Zabbix Server
+
 **Yêu cầu hệ thống:**
 - Đã cài đặt máy chủ web Apache.
 - PHP và các extension cần thiết.
@@ -82,7 +89,7 @@ Nhập password đã tạo ở trên.
 
 ![image](https://user-images.githubusercontent.com/111716161/194013917-a8c7f409-11a2-4380-b57a-0f8905759d09.png)
 
-### Bước 3: Cấu hình Zabbix
+### Bước 3: Cấu hình Zabbix server
 
 - Chỉnh sửa file `zabbix_server.conf`, thay đổi các thông số: database host, database name, database username, database password.
 
@@ -156,7 +163,53 @@ firewall-cmd --reload
 
 ![image](https://user-images.githubusercontent.com/111716161/194005062-261b2693-1209-4983-b7e4-07899399a0b6.png)
 
-Giao diện Zabbix.
+Giao diện Zabbix Server
 
 ![image](https://user-images.githubusercontent.com/111716161/194024333-d86198ca-07f9-4b57-9eee-519877d320c3.png)
+
+<a name="agnet"></a>
+# Cài đặt Zabbix Agent
+
+### Bước 1: Tải về Zabbix-Agent
+
+```
+rpm -Uvh https://repo.zabbix.com/zabbix/4.4/rhel/7/x86_64/zabbix-agent-4.4.0-1.el7.x86_64.rpm
+```
+
+### Bước 2: Cài đặt Zabbix-agent
+
+```
+yum install zabbix-agent -y
+```
+
+### Bước 3: Cấu hình Zabbix agent
+
+Sửa file cấu hình:
+
+```
+nano /etc/zabbix/zabbix_agentd.conf
+```
+
+Sửa theo các tham số sau: 
+```
+Server=<IP_ZABBIX_SERVER>
+ServerActive=<IP_ZABBIX_SERVER>
+Hostname=<ZABBIX_SERVER_HOSTNAME>
+```
+
+### Bước 4: Bước 4: Cấu hình firewalld
+
+```
+firewall-cmd --zone=public --add-port=10050/tcp --permanent
+firewall-cmd --reload
+```
+
+### Bước 5: Kiểm tra việc cài đặt
+
+Thực hiện trên Zabbix Server, sử dụng zabbix-get để kiểm tra
+
+```
+zabbix_get -s <ZABBIX_AGENT_IP> -k agent.version
+```
+
 
