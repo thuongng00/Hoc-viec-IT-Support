@@ -1,4 +1,4 @@
-# Giao diện Zabbix
+# Giao diện Zabbix Server
 
 ![image](https://user-images.githubusercontent.com/111716161/194026123-ee0512d8-f352-4ad5-8a41-3ac8493cdbaa.png)
 
