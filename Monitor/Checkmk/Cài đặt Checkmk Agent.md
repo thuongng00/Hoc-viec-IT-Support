@@ -44,8 +44,11 @@ rpm -ivh check-mk-agent-2.1.0p13-1.noarch.rpm
 nano /etc/xinetd.d/check_mk
 ```
 
-Bước 6: Khởi động lại xinetd
+### Bước 6: Khởi động lại xinetd
 
 ```
 systemctl restart xinetd
 ```
+
+## Thêm host trên Checkmk Server
+
