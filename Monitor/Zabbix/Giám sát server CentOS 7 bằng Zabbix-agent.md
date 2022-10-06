@@ -1,62 +1,18 @@
-## 1. Thêm host cần giám sát
+### Bước 1: Đăng nhập vào dashboard Zabbix Server
 
-Chọn Tab Configuration -> Host -> Create Host, nhập thông tin server cần giám sát process.
+### Bước 2: Tạo host
 
-![image](https://user-images.githubusercontent.com/111716161/194197629-046c7d29-ef3a-4393-b0f3-6c845f21469d.png)
+- Chọn tab Configuration -> Host -> Create host.
 
-`Hostname`: Đặt tên cho host.
-`Visible Hostname`: Đặt tên hiển thị.
-`New group`: Bắt buộc phải thêm vào một group
-Agent Interface: IP Client cần giám sát
+- Điền các thông số của host, bắt buộc phải điền Hostname, Group, IP -> Add.
 
-![image](https://user-images.githubusercontent.com/111716161/194197932-f934e889-3588-49e3-bce6-4486ee6dea9e.png)
+### Bước 3: Tạo Template cho host
 
-Nhấn Add để thêm host.
+- Chọn Template -> Template OS Linux -> Add.
 
-![image](https://user-images.githubusercontent.com/111716161/194198045-b32ff76f-1a79-44c8-9293-fcc8bb2ab326.png)
+### Bước 4: Tạo Application, Item.
 
-## 2. Tạo Templates
-
-Chọn Tab Configuration -> Templates -> Create template.
-
-![image](https://user-images.githubusercontent.com/111716161/194204947-2d1ccbef-5ac2-42c4-9fbc-d4aa0a9d9885.png)
-
-Nhập các thông tin: tên, nhóm, mô tả -> Add.
-
-![image](https://user-images.githubusercontent.com/111716161/194205107-744c8230-da16-483c-9492-89770828f147.png)
-
-![image](https://user-images.githubusercontent.com/111716161/194205199-452e558c-c49c-4428-912b-4b63efb56374.png)
-
-## 3. Tạo Applications
-
-Chọn Applications -> Create application -> Nhập Name -> Add.
-
-![image](https://user-images.githubusercontent.com/111716161/194198544-5778ada7-7045-472c-a831-acf926bfa1ab.png)
-
-![image](https://user-images.githubusercontent.com/111716161/194198799-a4bb1f46-ec2e-4047-8195-843569b93214.png)
-
-![image](https://user-images.githubusercontent.com/111716161/194198901-f389e8e3-26fd-48e4-9e9e-f581f64fb5d6.png)
-
-## 4. Tạo Items
-
-Chọn Items -> Create item -> Nhập các tham số -> Add.
-
-`Name`: Tên item.
-`Type`: Zabbix Agent.
-`Key`: Chọn key tùy vào process muốn giám sát.
-`Type of Information`: Numeric (Unsigned).
-`Update interval`: 1m
-`Show value`: As is.
-`Application`: Application đã tạo trở trên.
-
-![image](https://user-images.githubusercontent.com/111716161/194199400-7fd55573-cceb-4beb-a562-ce5ec441d7fa.png)
-
-![image](https://user-images.githubusercontent.com/111716161/194199475-963bf84e-cd7c-45bc-89c7-dfdc38284006.png)
-
-![image](https://user-images.githubusercontent.com/111716161/194199765-f5c1fd3f-3ce2-4e9a-b8cd-e0e4833b3b0b.png)
-
-## 5. Tạo Triggers
+### Bước 5: Kiểm tra kết quả
 
 
-## 6. Tạo Ghaphs
 
