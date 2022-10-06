@@ -167,7 +167,7 @@ Giao diện Zabbix Server
 
 ![image](https://user-images.githubusercontent.com/111716161/194024333-d86198ca-07f9-4b57-9eee-519877d320c3.png)
 
-<a name="agnet"></a>
+<a name="agent"></a>
 # Cài đặt Zabbix Agent
 
 ### Bước 1: Tải về Zabbix-Agent
