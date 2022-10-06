@@ -1,5 +1,7 @@
 ### Bước 1: Đăng nhập vào dashboard Zabbix Server
 
+![image](https://user-images.githubusercontent.com/111716161/194249561-1c09a671-9d53-4658-b772-e9051b6d3da5.png)
+
 ### Bước 2: Tạo host
 
 - Chọn tab Configuration -> Host -> Create host.
