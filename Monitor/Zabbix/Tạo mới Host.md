@@ -1,14 +1,6 @@
-# Giám sát Windows process
+## 1. Thêm host cần giám sát
 
-### Bước 1: Thêm host windows cần giám sát
-
-Chọn Tab Configuration -> Host -> Create Host, nhập thông tin server Linux cần giám sát process.
-
-# Giám sát Linux process
-
-### Bước 1: Thêm host linux cần giám sát
-
-Chọn Tab Configuration -> Host -> Create Host, nhập thông tin server Linux cần giám sát process.
+Chọn Tab Configuration -> Host -> Create Host, nhập thông tin server cần giám sát process.
 
 ![image](https://user-images.githubusercontent.com/111716161/194197629-046c7d29-ef3a-4393-b0f3-6c845f21469d.png)
 
@@ -23,9 +15,21 @@ Nhấn Add để thêm host.
 
 ![image](https://user-images.githubusercontent.com/111716161/194198045-b32ff76f-1a79-44c8-9293-fcc8bb2ab326.png)
 
-### Bước 2: Tạo application, item giám sát process
+## 2. Tạo Templates
 
-Tạo application: Chọn Applications -> Create application -> Nhập Name -> Add.
+Chọn Tab Configuration -> Templates -> Create template.
+
+![image](https://user-images.githubusercontent.com/111716161/194204947-2d1ccbef-5ac2-42c4-9fbc-d4aa0a9d9885.png)
+
+Nhập các thông tin: tên, nhóm, mô tả -> Add.
+
+![image](https://user-images.githubusercontent.com/111716161/194205107-744c8230-da16-483c-9492-89770828f147.png)
+
+![image](https://user-images.githubusercontent.com/111716161/194205199-452e558c-c49c-4428-912b-4b63efb56374.png)
+
+## 3. Tạo Applications
+
+Chọn Applications -> Create application -> Nhập Name -> Add.
 
 ![image](https://user-images.githubusercontent.com/111716161/194198544-5778ada7-7045-472c-a831-acf926bfa1ab.png)
 
@@ -33,7 +37,9 @@ Tạo application: Chọn Applications -> Create application -> Nhập Name -> A
 
 ![image](https://user-images.githubusercontent.com/111716161/194198901-f389e8e3-26fd-48e4-9e9e-f581f64fb5d6.png)
 
-Tạo item: Chọn Items -> Create item -> Nhập các tham số -> Add.
+## 4. Tạo Items
+
+Chọn Items -> Create item -> Nhập các tham số -> Add.
 
 `Name`: Tên item.
 `Type`: Zabbix Agent.
@@ -49,16 +55,8 @@ Tạo item: Chọn Items -> Create item -> Nhập các tham số -> Add.
 
 ![image](https://user-images.githubusercontent.com/111716161/194199765-f5c1fd3f-3ce2-4e9a-b8cd-e0e4833b3b0b.png)
 
-### Bước 3: Kiểm tra kết quả
-
-Chọn tab Monitoring -> Lastest data -> Hosts.
+## 5. Tạo Triggers
 
 
-# Giám sát UDP port
-
-# Giám sát TCP port
-
-# Giám sát Windows Server sử dụng SMNP
-
-# Giám sát Windows Server bằng zabbix-agent
+## 6. Tạo Ghaphs
 
