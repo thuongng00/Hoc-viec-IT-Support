@@ -170,10 +170,13 @@ Giao diện Zabbix Server
 <a name="agent"></a>
 # Cài đặt Zabbix Agent
 
-### Bước 1: Tải về Zabbix-Agent
+Yêu cầu: Máy client CentOS7 đã cài đặt Apache.
+
+### Bước 1: Cài đặt Zabbix repository
 
 ```
-rpm -Uvh https://repo.zabbix.com/zabbix/4.4/rhel/7/x86_64/zabbix-agent-4.4.0-1.el7.x86_64.rpm
+rpm -Uvh https://repo.zabbix.com/zabbix/5.0/rhel/7/x86_64/zabbix-release-5.0-1.el7.noarch.rpm
+yum clean all
 ```
 
 ### Bước 2: Cài đặt Zabbix-agent
@@ -182,7 +185,7 @@ rpm -Uvh https://repo.zabbix.com/zabbix/4.4/rhel/7/x86_64/zabbix-agent-4.4.0-1.e
 yum install zabbix-agent -y
 ```
 
-![image](https://user-images.githubusercontent.com/111716161/194214045-836080b1-3e49-4b5b-8897-ac380435d8bc.png)
+![image](https://user-images.githubusercontent.com/111716161/194243644-601f4621-3382-4f7a-b75a-7a61c95f2c45.png)
 
 ### Bước 3: Cấu hình Zabbix agent
 
@@ -203,7 +206,7 @@ Hostname=<ZABBIX_SERVER_HOSTNAME>
 
 ![image](https://user-images.githubusercontent.com/111716161/194214249-1bad1374-f274-4742-801e-0679324bb305.png)
 
-![image](https://user-images.githubusercontent.com/111716161/194214325-9efb8822-dbd1-4fbc-84c0-b25c17681225.png)
+![image](https://user-images.githubusercontent.com/111716161/194244602-9f5002b0-2f00-4b60-b213-42a30cca34c2.png)
 
 ### Bước 4: Bước 4: Cấu hình firewalld
 
