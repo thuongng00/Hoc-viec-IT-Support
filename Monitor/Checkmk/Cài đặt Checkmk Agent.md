@@ -50,7 +50,7 @@ nano /etc/xinetd.d/check_mk
 systemctl restart xinetd
 ```
 
-## Bước 7: Cấu hình firewalld
+### Bước 7: Cấu hình firewalld
 
 ```
 firewall-cmd --add-port=6556/tcp --permanent
