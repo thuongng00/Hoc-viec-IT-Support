@@ -1,4 +1,4 @@
-Yêu cầu: Máy client CentOS7 đã cài đặt Apache, tắt SELinux.
+**Yêu cầu hệ thống**: Máy client chạy hệ điều hành CentOS7 đã cài đặt Apache, tắt SELinux.
 
 ### Bước 1: Cài đặt Zabbix repository
 
