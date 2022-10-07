@@ -4,6 +4,8 @@ Tường lửa hay còn được gọi với cái tên là FireWall thuật ng�
 
 Tường lửa tồn tại ở 2 loại phần cứng và phần mềm được tích hợp vào bên trong hệ thống và nó hoạt động như một rào chắn phân cách giữa truy cập an toàn và truy cập không an toàn, chống lại truy cập trái phép, ngăn chặn virus… đảm bảo thông tin nội bộ được an toàn không bị truy cập xấu đánh cắp.
 
+![image](https://user-images.githubusercontent.com/111716161/194461679-d352f5d1-a033-47a1-92c8-8237091f4c91.png)
+
 # Vai trò của firewall
 
 Tường lửa có vai trò như nào?
