@@ -2,7 +2,7 @@
 
 [Cấu hình FirewallD](#cauhinh)
 
-[Cấu hình nâng cao](#nangcao)
+[Lệnh cơ bản](#lenh)
 
 <a name="caidat"></a>
 # Cài đặt FirewallD
@@ -291,12 +291,14 @@ firewall-cmd –get-zone-of-interface=ens33
 firewall-cmd –zone=public –add-interface=ens33
 ```
 
+- Mở tất cả các gói:
 
+```
+firewall-cmd –panic-on|off 
+```
 
+- Xem các dịch vụ có sẵn mặc định
 
-
-
-
-
-
-
+```
+firewall-cmd –get-services
+```
