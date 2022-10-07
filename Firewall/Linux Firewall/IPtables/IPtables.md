@@ -1,6 +1,6 @@
 # IPtables
 
-Iptables chính là một chương trình Firewall – Tường lửa miễn phí. Chương trình này được phát triển chủ yếu cho hệ điều hành Linux. 
+**IPtables** chính là một chương trình Firewall – Tường lửa miễn phí. Chương trình này được phát triển chủ yếu cho hệ điều hành Linux. 
 
 Chương trình cho phép hệ điều hành thiết lập các quy tắc riêng để kiểm soát truy cập và tăng tính bảo mật cho hệ thống gồm: VPS/Hosting/Server.
 
@@ -72,3 +72,4 @@ Các Target có thể là một chuỗi khác để khớp với một trong cá
 - ACCEPT: Gói tin được phép đi qua
 - DROP: Gói tín không được phép đi qua
 - RETURN: Bỏ qua chuỗi hiện tại. Quy trở lại quy tắc tiếp theo từ chuỗi được gọi
+
