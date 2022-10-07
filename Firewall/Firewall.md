@@ -67,7 +67,7 @@ Hệ thống Network Firewall được cấu tạo bởi các thành phần chí
 
 ![image](https://user-images.githubusercontent.com/111716161/194461126-cf1c7e34-1fed-48fb-8ae2-d3744fe9ddb5.png)
 
-### Phân loại dựa vào phương thức hoạt động và tính năng 
+## Phân loại dựa vào phương thức hoạt động và tính năng 
 
 Gồm 5 loại: bộ lọc gói, cổng vòng (circuit gateway), cổng ứng dụng (application-level gateway), tường lửa kiểm tra trạng thái và tường lửa thế hệ tiếp theo.
 
@@ -87,3 +87,43 @@ Tường lửa kiểm tra trạng thái giám sát trạng thái của kết n�
 
 ### 5. Tường lửa thế hệ tiếp theo (NGFW)
 Loại tường lửa mới nhất, tường lửa thế hệ tiếp theo, kết hợp tất cả các tính năng của những loại tường lửa trước đó để tạo ra một tường lửa toàn diện giám sát tất cả lưu lượng mạng và bảo vệ khỏi những cuộc tấn công bên trong và bên ngoài.
+
+# Những tùy chọn triển khai firewall
+
+### Tường lửa có trạng thái (Stateful firewall)
+Khi tường lửa được tạo ra lần đầu tiên, chúng không có trạng thái, nghĩa là phần cứng mà lưu lượng truy cập đi qua trong khi được kiểm tra sẽ theo dõi từng gói lưu lượng mạng riêng và chặn hoặc cho phép nó.
+
+Bắt đầu từ giữa đến cuối những năm 1990, những tiến bộ đầu tiên về tường lửa đã được ra đời. Tường lửa có trạng thái kiểm tra lưu lượng truy cập, liên quan đến trạng thái hoạt động và đặc điểm kết nối mạng để cung cấp tường lửa toàn diện hơn. Việc duy trì trạng thái này cho phép tường lửa cho lưu lượng nhất định truy cập đến người dùng cụ thể trong khi chặn lượng truy cập tương tự đến người dùng khác.
+
+### Tường lửa thế hệ tiếp theo (Next-generation firewalls - NGFW)
+Qua nhiều năm tường lửa đã bổ sung thêm vô số tính năng mới, bao gồm phân tích sâu các gói (Deep Packet Inspection - DPI), phát hiện xâm nhập, ngăn và kiểm tra lưu lượng được mã hóa. Tường lửa thế hệ tiếp theo đề cập đến tường lửa được tích hợp nhưng tính năng tiên tiến này.
+
+### Tường lửa dựa trên proxy (Proxy-based firewall)
+Các tường lửa này hoạt động như một cổng nối giữa những người dùng cuối yêu cầu dữ liệu và nguồn của dữ liệu đó. Tất cả lưu lượng truy cập được lọc qua proxy này trước khi được chuyển cho người dùng cuối. Điều này nhằm bảo vệ máy khách khỏi tiếp xúc với các mối đe dọa bằng cách che giấu danh tính của người yêu cầu thông tin ban đầu.
+
+### Tường lửa ứng dụng web (Web application firewall - WAF)
+Các tường lửa được sử dụng cho các ứng dụng cụ thể thay vì được đặt trên một điểm vào hoặc ra của một mạng lưới rộng hơn. Trong khi các tường lửa dựa trên proxy thường bảo vệ máy khách người dùng cuối, thì tường lửa ứng dụng web bảo vệ máy chủ ứng dụng.
+
+### Phần cứng tường lửa
+Phần cứng tường lửa thường là một máy chủ đơn giản có thể hoạt động như một router lọc lưu lượng truy cập và chạy phần mềm tường lửa. Những thiết bị này được đặt ở trong mạng công ty, giữa router và điểm kết nối của nhà cung cấp dịch vụ Internet. Một doanh nghiệp có thể triển khai hàng chục tường lửa vật lý trong một trung tâm dữ liệu. Người dùng cần xác định dung lượng thông qua mà họ cần tường lửa hỗ trợ dựa trên kích thước cơ sở người dùng và tốc độ kết nối Internet.
+
+### Phần mềm tường lửa
+Thông thường người dùng cuối triển khai nhiều điểm cuối phần cứng tường lửa và hệ thống phần mềm tường lửa trung tâm để quản lý việc triển khai. Hệ thống trung tâm này là nơi các chính sách và tính năng được cấu hình, nơi có thể thực hiện phân tích và phản hồi lại các mối đe dọa.
+
+### Kiểm tra trạng thái
+Đây là chức năng tường lửa cơ bản trong đó thiết bị chặn lưu lượng truy cập không mong muốn đã biết.
+
+### Diệt virus
+Nhờ vào các bản cập nhật các mối đe dọa mới nhất mà tường lửa có thể phát hiện virus, lỗ hổng đã biết trong lưu lượng mạng, từ đó bảo vệ chúng khỏi những mối nguy hại này.
+
+### Hệ thống phòng chống xâm nhập (Intrusion Prevention Systems - IPS)
+Lớp bảo mật này có thể được triển khai như một sản phẩm độc lập hoặc được tích hợp vào tường lửa thế hệ tiếp theo. Trong khi công nghệ tường lửa cơ bản xác định và chặn các loại lưu lượng mạng nhất định, hệ thống IPS sử dụng nhiều biện pháp bảo mật chi tiết hơn như truy tìm chữ ký, phát hiện bất thường để ngăn chặn các mối đe dọa không mong muốn xâm nhập vào mạng công ty.
+
+### Phân tích sâu các gói (DPI)
+DPI có thể là một phần hoặc được sử dụng kết hợp với hệ thống IPS, nhưng nó trở thành một tính năng quan trọng của tường lửa thế hệ tiếp theo vì khả năng phân tích lưu lượng truy cập chi tiết, đặc biệt là các tiêu đề của các gói và dữ liệu lưu lượng. DPI cũng có thể được sử dụng để theo dõi lưu lượng gửi đi để đảm bảo thông tin nhạy cảm không rời khỏi mạng công ty, một công nghệ được gọi là ngăn chặn mất dữ liệu (Data Loss Prevention - DLP).
+
+### Kiểm tra SSL
+Kiểm tra tầng ổ bảo mật (SSL) được sử dụng để kiểm tra lưu lượng được mã hóa xem có các mối đe dọa không. Khi ngày càng nhiều lưu lượng được mã hóa, kiểm tra SSL trở thành một phần quan trọng của công nghệ DPI đang được triển khai trong tường lửa thế hệ mới. Kiểm tra SSL hoạt động như một buffer giải mã hóa lưu lượng trước khi nó được chuyển đến địa điểm cuối để kiểm tra.
+
+### Sandboxing
+Sandboxing là một trong những tính năng mới được triển khai trong tường lửa thế hệ tiếp theo, đề cập đến khả năng của tường lửa để nhận lưu lượng hoặc mã không xác định nhất định và chạy nó trong môi trường thử nghiệm để xác định xem nó có vấn đề gì hay không.
