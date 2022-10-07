@@ -8,7 +8,8 @@ Tường lửa tồn tại ở 2 loại phần cứng và phần mềm được 
 
 # Vai trò của firewall
 
-Tường lửa có vai trò như nào?
+![image](https://user-images.githubusercontent.com/111716161/194461931-50a1a403-9bfd-48f5-9c7c-0e006926dbe7.png)
+
 Firewall giúp kiểm soát luồng thông tin giữa Intranet và Internet, chúng phát hiện và phán xét những hành vi được truy cập và không được truy cập vào bên trong hệ thống, đảm bảo tối đa sự an toàn thông tin.
 
 Tính năng chính của dòng thiết bị này có thể được tóm tắt ở những gạch đầu dòng dưới đây:
