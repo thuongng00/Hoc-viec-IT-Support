@@ -36,3 +36,33 @@ Tính năng chính của dòng thiết bị này có thể được tóm tắt �
 - Bảo vệ tài nguyên của hệ thống bởi các mối đe dọa bảo mật.
 
 - Cân bằng tải: Bạn có thể sử dụng nhiều đường truyền internet cùng một lúc, việc chia tải sẽ giúp đường truyền internet ổn định hơn rất nhiều.
+
+# Phân loại firewall
+
+## Phân loại dựa trên nhu cầu sử dụng hệ thống
+
+Gồm 2 loại chính: Personal Firewall và Network Firewall.
+
+### Personal Firewall
+
+Loại này được thiết kế để bảo vệ một máy tính trước sự truy cập trái phép từ bên ngoài. Bên cạnh đó thì Personal Firewall còn được tích hợp thêm tính năng như theo dõi các phần mềm chống virus, phần mềm chống xâm nhập để bảo vệ dữ liệu. 
+
+Một số Personal Firewall thông dụng như: Microsoft Internet connection firewall, Symantec personal firewall, Cisco Security Agent…. Loại Firewall này thì thích hợp với cá nhân bởi vì thông thường họ chỉ cần bảo vệ máy tính của họ, thường được tích hợp sẵn trong máy tính Laptop, máy tính PC..
+
+Personal firewall chỉ bảo vệ cho một máy duy nhất.
+
+### Network Firewalls
+
+Được thiết kế ra để bảo vệ các host trong mạng trước sự tấn công từ bên ngoài. Chúng ta có các Appliance-Based network Firewalls như Cisco PIX, Cisco ASA, Juniper NetScreen firewall, Nokia firewalls, Symantec’s Enterprise Firewall. Hoặc một số ví dụ về Software-Base firewalls include Check Point’s Firewall, Microsoft ISA Server, Linux-based IPTables.
+
+Network firewall bảo vệ cho cả một hệ thống mạng máy tính.
+
+Hệ thống Network Firewall được cấu tạo bởi các thành phần chính như sau:
+
+- Bộ lọc Packet (Packet- Filtering Router)
+
+- Cổng ứng dụng ( đó là Application-Level Gateway hay Proxy Server).
+
+- Cổng mạch (Circuite Level Gateway).
+
+![image](https://user-images.githubusercontent.com/111716161/194461126-cf1c7e34-1fed-48fb-8ae2-d3744fe9ddb5.png)
