@@ -19,3 +19,13 @@ IPtables bao gồm các thành phần khác nhau:
   - Hoặc target của các extension module, phổ biến nhất là DNAT, LOG, MASQUERADE, REJECT, SNAT, TRACE và TTL.
   - Các target được chia thành có kết thúc và không kết thúc. Các target có kết thúc chấm dứt rule và các packet sẽ bị ngừng ở đó. Nhưng các target không kết thúc sẽ xử lý packet theo một cách nào đó và rule sẽ  được thực hiện tiếp tục sau đó.
   
+# Table IPtables
+
+Hầu hết thao tác bạn sẽ sử dụng chính trên table filter. Nếu khi viết rule, bạn không chỉ định bất kỳ table nào, filter được sử dụng theo mặc định. Vì vậy, hãy ghi nhớ điều đó. Và tiếp tục dưới đây, tôi sẽ giải thích từng table:
+
+- filter: là table được sử dụng nhiều nhất hàng ngày. Đó là lý do tại sao nó là table mặc định. Trong table này, bạn sẽ quyết định xem packet có được phép vào (input) hoặc ra (output) khỏi máy tính của bạn hay không. Nếu bạn muốn chặn một port để ngừng nhận bất cứ thứ gì, đây là điểm table bạn cần.
+- nat: Table này là table phổ biến thứ hai và chịu trách nhiệm tạo kết nối mới. Đó là cách viết tắt của Network Address Translation.
+- mangle: table này dùng để thay đổi dữ liệu bên trong các packet trước khi chúng đến hoặc ra khỏi máy tính.
+- raw: table này xử lý packet raw chưa qua xử lý như tên gọi của nó. Chủ yếu là để theo dõi trạng thái kết nối. Chúng ta sẽ thấy các ví dụ về điều này bên dưới khi muốn cho các packet thành công từ kết nối SSH.
+- security: có nhiệm vụ đánh dấu những gói tin có liên quan đến context của SELinux, nó giúp cho SELinux hoặc các thành phần khác hiểu được context SELinux và xử lý gói tin.
+
