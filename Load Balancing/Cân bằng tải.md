@@ -4,6 +4,8 @@ Load Balancing hay “Cân bằng tải” là một trong những tính năng r
 
 Khi máy chủ down hoặc không thể xử lý, một Load Balancer sẽ được bổ sung. Người dùng truy cập vào load balancer. Tiếp tục được chuyển đến một máy chủ khác để thực hiện tác vụ. Dù máy chủ chính bị down hoặc nghẽn thì tất cả các yêu cầu của người dùng đều được giải quyết.
 
+![image](https://user-images.githubusercontent.com/111716161/194447446-5b422642-fc28-4c18-9ce0-454426add4a1.png)
+
 Load Balancing là tính năng giúp máy chủ ảo hoạt động đồng bộ và hiệu quả hơn thông qua việc phân phối đồng đều tài nguyên. 
 
 # Lợi ích khi có Load Balancing
