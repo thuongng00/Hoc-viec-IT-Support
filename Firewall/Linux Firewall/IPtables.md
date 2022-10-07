@@ -1,5 +1,7 @@
 # IPtables
 
+Iptables chính là một chương trình Firewall – Tường lửa miễn phí. Chương trình này được phát triển chủ yếu cho hệ điều hành Linux. Chương trình cho phép hệ điều hành thiết lập các quy tắc riêng để kiểm soát truy cập và tăng tính bảo mật cho hệ thống gồm: VPS/Hosting/Server.
+
 ![image](https://user-images.githubusercontent.com/111716161/194467691-b53fe1e2-249a-4862-af33-590306b2c111.png)
 
 Trong hệ điều hành Linux, tường lửa được thực thi tốt nhất bằng cách sử dụng netfilter. Đây là một kernel module quyết định packet nào được phép đi vào (input) hoặc đi ra bên ngoài (output).
