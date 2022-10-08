@@ -121,7 +121,7 @@ iptables -A INPUT -s IP_ADDRESS -j DROP
 iptables -A INPUT -p tcp -s IP_ADDRESS –dport PORT -j DROP
 ```
 
-## Bước cuối :
+## Reload IPtables
 
 - Sau khi đã thiết lập đầy đủ, bao gồm mở các port cần thiết hay hạn chế các kết nối, cần block toàn bộ các kết nối còn lại và cho phép toàn bộ các kết nối ra ngoài từ VPS.
 
