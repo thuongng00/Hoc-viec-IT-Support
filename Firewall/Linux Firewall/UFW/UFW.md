@@ -29,3 +29,55 @@ sudo ufw default
 ```
 
 Chính sách tường lửa là nền tảng để xây dựng các quy tắc chi tiết hơn và do người dùng xác định. Trong hầu hết các trường hợp, Chính sách mặc định UFW ban đầu là điểm khởi đầu tốt.
+
+# Hồ sơ ứng dụng
+
+Khi cài đặt một gói với apt nó sẽ thêm một hồ sơ ứng dụng vào thư mục `/etc/ufw/applications.d`. Hồ sơ mô tả dịch vụ và chứa các cài đặt UFW.
+
+- Liệt kê các hồ sơ ứng dụng có sẵn trên máy chủ:
+
+```
+sudo ufw app list
+```
+
+- Tìm thêm thông tin về một hồ sơ cụ thể và các quy tắc bao gồm:
+
+```
+sudo ufw app info 'Nginx Full'
+```
+
+# Cho phép kết nối SSH
+
+Trước khi bật tường lửa UFW, chúng ta cần thêm một quy tắc cho phép kết nối SSH đến. Nếu bạn đang kết nối với máy chủ của mình từ một địa điểm từ xa, điều này gần như luôn luôn như vậy và bạn kích hoạt tường lửa UFW trước khi cho phép rõ ràng các kết nối SSH đến, bạn sẽ không thể kết nối với máy chủ Ubuntu của mình nữa.
+
+Để định cấu hình tường lửa UFW của bạn để cho phép các kết nối SSH đến, hãy nhập lệnh sau:
+
+```
+sudo ufw allow ssh
+```
+
+# Kích hoạt UFW
+
+```
+sudo ufw enable
+```
+
+Bạn sẽ được cảnh báo rằng việc bật tường lửa có thể phá vỡ các kết nối ssh hiện có, chỉ cần gõ y và nhấn Enter .
+
+# Cho phép kết nối trên các cổng khác
+
+## Mở cổng 80 - http
+
+Kết nối HTTP có thể được cho phép bằng lệnh sau:
+
+```
+sudo ufw allow
+```
+
+thay vì http, bạn có thể sử dụng số cổng, 80:
+
+```
+sudo ufw allow 80/tcp
+```
+
+
