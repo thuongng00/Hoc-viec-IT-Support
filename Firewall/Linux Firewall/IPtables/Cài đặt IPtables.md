@@ -1,7 +1,7 @@
 ### Bước 1: Tắt FirewallD
 
 - Trên CentOS, mặc định sử dụng tường lửa là firewalld. Để cài đặt IPTABLES thì trước tiên phải tắt service firewalld:
-- 
+
 ```
 systemctl stop firewalld
 ```
