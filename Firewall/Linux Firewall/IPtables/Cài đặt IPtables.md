@@ -18,12 +18,16 @@ systemctl disable firewalld
 systemctl mask --now firewalld
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/194684463-9b5ee107-79d3-497f-8ae5-13ee1f63f5ff.png)
+
 ### Bước 2: Cài đặt packages iptables-services từ CentOS repositories:
 
 ```
-yum install iptables-services
+yum install iptables-services -y
 ```
  
+![image](https://user-images.githubusercontent.com/111716161/194684483-337cdea4-df6c-4faf-8b9b-18a035efc59a.png)
+
 ### Bước 3: Khởi động dịch vụ iptables
 
 ```
@@ -42,3 +46,4 @@ systemctl enable iptables
 systemctl status iptables
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/194684513-64bf26af-b8c6-49c8-b85d-a985caa4f1bc.png)
