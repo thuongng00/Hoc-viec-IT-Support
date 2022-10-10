@@ -1,4 +1,4 @@
-# Một số nguyên tắc áp dụng trong Iptables
+## Xác định các port, rule
 
 - Đầu tiên cần xác định các service muốn đóng/mở và các port tương ứng. 
 
