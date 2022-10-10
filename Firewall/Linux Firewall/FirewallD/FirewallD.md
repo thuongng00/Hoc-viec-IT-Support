@@ -6,6 +6,8 @@ FirewallD là giải pháp tường lửa mạnh mẽ, toàn diện được cà
 
 - FirewallD quản lý các quy tắc được thiết lập tự động, có tác dụng ngay lập tức mà không làm mất đi các kết nối và session hiện có.
 
+![image](https://user-images.githubusercontent.com/111716161/194788584-9d935a67-7c3a-48c0-987e-9dae64e9fc48.png)
+
 Firewalld cung cấp một firewall động có thể quản lý được, hỗ trợ cho các vùng mạng/ tường lửa xác định mức độ tin cậy của các kết nối hoặc giao diện. Nó có hỗ trợ cài đặt tường lửa IPv4, IPv6, ethernet bridge và IP set. Các tùy chọn cấu hình giữa runtime và  permanent là tách biệt. Nó cũng cung cấp một giao diện cho các dịch vụ hoặc ứng dụng để thêm các rule một cách trực tiếp.
 
 # Lợi ích của việc sử dụng FirewallD
@@ -47,3 +49,5 @@ Các zone được xác định trước theo mức độ tin cậy, theo thứ 
 - Runtime ( mặc định ): có tác dụng ngay lập tức , mất hiệu lực khi reboot hệ thống .
 
 - Permanent : không áp dụng cho hệ thống đang chạy, cần reload mới có hiệu lực , tác dụng vĩnh viễn cả khi reboot hệ thống .
+
+Việc Restart/Reload sẽ hủy bộ các thiết lập Runtime đồng thời áp dụng thiết lập Permanent mà không hề phá vỡ các kết nối và session hiện tại. Điều này giúp kiểm tra hoạt động của các quy tắc trên tường lửa và dễ dàng khởi động lại nếu có vấn đề xảy ra.
