@@ -70,11 +70,15 @@ Khi cài đặt một gói với apt nó sẽ thêm một hồ sơ ứng dụng 
 sudo ufw app list
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/194792302-be81ba5f-1a4e-49c0-b5fd-def9797a81ce.png)
+
 - Tìm thêm thông tin về một hồ sơ cụ thể và các quy tắc bao gồm:
 
 ```
-sudo ufw app info 'Nginx Full'
+sudo ufw app info 'CUPS'
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/194792285-7574aa5a-e7bb-4980-9e74-8e0febd353ed.png)
 
 # Cho phép kết nối SSH
 
@@ -85,6 +89,8 @@ Trước khi bật tường lửa UFW, chúng ta cần thêm một quy tắc cho
 ```
 sudo ufw allow ssh
 ```
+
+![image](https://user-images.githubusercontent.com/111716161/194792322-bd8037ba-098e-478a-b6c3-dcfced79eda7.png)
 
 # Sử dụng ufw để quản lý quy tắc
 
