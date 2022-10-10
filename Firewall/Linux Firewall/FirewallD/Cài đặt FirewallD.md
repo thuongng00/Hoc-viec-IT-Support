@@ -2,7 +2,7 @@
 
 [Cấu hình FirewallD](#cauhinh)
 
-[Lệnh cơ bản](#lenh)
+[Các lệnh cơ bản](#lenh)
 
 <a name="caidat"></a>
 # Cài đặt FirewallD
@@ -211,7 +211,7 @@ firewall-cmd --zone=public --remove-port=9999/tcp --permanent
 ![image](https://user-images.githubusercontent.com/111716161/194524482-0929872e-96f7-4c3c-aa4c-b050f5d5bc2c.png)
 
 <a name="lenh"></a>
-# Lệnh cơ bản của FirewallD
+# Các lệnh cơ bản của FirewallD
 
 - Lưu cấu hình mặc định để tránh sửa đổi chúng:
 
