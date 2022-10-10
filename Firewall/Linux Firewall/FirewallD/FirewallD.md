@@ -10,6 +10,16 @@ FirewallD là giải pháp tường lửa mạnh mẽ, toàn diện được cà
 
 Firewalld cung cấp một firewall động có thể quản lý được, hỗ trợ cho các vùng mạng/ tường lửa xác định mức độ tin cậy của các kết nối hoặc giao diện. Nó có hỗ trợ cài đặt tường lửa IPv4, IPv6, ethernet bridge và IP set. Các tùy chọn cấu hình giữa runtime và  permanent là tách biệt. Nó cũng cung cấp một giao diện cho các dịch vụ hoặc ứng dụng để thêm các rule một cách trực tiếp.
 
+# Tính năng
+
+Firewalld hỗ trợ cả mạng IPv4 và IPv6 và có thể quản lý các vùng tường lửa riêng biệt với các mức độ tin cậy khác nhau như được xác định trong hồ sơ vùng . Quản trị viên có thể định cấu hình Trình quản lý mạng để tự động chuyển đổi cấu hình vùng dựa trên các mạng Wi-Fi (không dây) và Ethernet (có dây) đã biết, nhưng firewalld không thể tự thực hiện việc này. 
+
+Các dịch vụ và ứng dụng có thể sử dụng giao diện D-Bus để truy vấn và cấu hình tường lửa. Firewalld hỗ trợ các quy tắc hẹn giờ, có nghĩa là số lượng kết nối (hoặc "số lần truy cập") đến một dịch vụ có thể bị giới hạn trên toàn cầu. Không có hỗ trợ tính lần truy cập và từ chối kết nối tiếp theo trên mỗi IP nguồn; một kỹ thuật phổ biến được triển khai để hạn chế tác động của hack brute-force và các cuộc tấn công từ chối dịch vụ phân tán.
+
+Cú pháp lệnh của firewalld tương tự nhưng dài dòng hơn các giao diện người dùng iptables khác như Tường lửa không phức tạp của Ubuntu (ufw). Giao diện dòng lệnh cho phép quản lý các bộ quy tắc tường lửa cho giao thức, cổng, nguồn và đích; hoặc các dịch vụ được xác định trước theo tên.
+
+Các dịch vụ được định nghĩa là các tệp XML có chứa các ánh xạ cổng và giao thức, và các thông tin bổ sung tùy chọn như chỉ định các mạng con và liệt kê các mô-đun trợ giúp Kernel cần thiết. Cú pháp tương tự như cú pháp của các tệp dịch vụ của systemd.
+
 # Lợi ích của việc sử dụng FirewallD
 
 Các thay đổi có thể được thực hiện ngay lập tức trong môi trường runtime. Không cần khởi động lại dịch vụ hoặc daemon.
