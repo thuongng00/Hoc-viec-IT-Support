@@ -10,13 +10,43 @@ Tường lửa không biến chứng nên được cài đặt theo mặc địn
 sudo apt install ufw
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/194789242-443fbff4-78f7-4cf1-b3fb-f11525106c45.png)
+
+- Sau khi cài đặt hoàn tất, kiểm tra trạng thái của UFW:
+
+```
+sudo ufw status verbose
+```
+
 - UFW bị tắt theo mặc định. Nếu bạn chưa bao giờ kích hoạt UFW trước đó, đầu ra sẽ như thế này:
 
+![image](https://user-images.githubusercontent.com/111716161/194789300-5786c86a-0221-496b-837f-ab27a65c51d5.png)
+
+- Khi đó bạn phải kích hoạt thủ công:
+
 ```
-Status: inactive
+sudo ufw enable
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/194789404-c248e4f9-6811-4a3a-a81b-a450d68b4bf3.png)
+
 - Nếu UFW được kích hoạt, đầu ra sẽ trông giống như sau:
+
+![image](https://user-images.githubusercontent.com/111716161/194789422-9fb76ac9-be4c-41cd-836f-928b5be049a4.png)
+
+- Để khôi phục ufw về mặc định:
+
+Vì một lý do nào đó bạn cần phục hồi, xóa tất cả các rule hiện có để đưa về mặc định ban đầu, hãy sử dụng tùy chọn reset để thực hiện.
+
+```
+sudo ufw reset
+```
+
+- Để vô hiệu hóa kích hoạt ufw:
+
+```
+sudo ufw disable
+```
 
 # Chính sách mặc định của UFW
 
@@ -56,28 +86,103 @@ Trước khi bật tường lửa UFW, chúng ta cần thêm một quy tắc cho
 sudo ufw allow ssh
 ```
 
-# Kích hoạt UFW
+# Sử dụng ufw để quản lý quy tắc
+
+## Cho phép mở port kết nối
 
 ```
-sudo ufw enable
+sudo ufw allow <port>/<optional: protocol>
 ```
 
-Bạn sẽ được cảnh báo rằng việc bật tường lửa có thể phá vỡ các kết nối ssh hiện có, chỉ cần gõ y và nhấn Enter .
-
-# Cho phép kết nối trên các cổng khác
-
-## Mở cổng 80 - http
-
-Kết nối HTTP có thể được cho phép bằng lệnh sau:
-
-```
-sudo ufw allow
-```
-
-thay vì http, bạn có thể sử dụng số cổng, 80:
+Ví dụ: Sử dụng ufw để mở cổng 80, 443, 8080:
 
 ```
 sudo ufw allow 80/tcp
+
+sudo ufw allow https
+
+sudo ufw allow 8080/tcp
 ```
 
+![image](https://user-images.githubusercontent.com/111716161/194791241-ec672523-a928-49c6-987d-c1a4243c1388.png)
+
+## Từ chối, đóng port kết nối
+
+```
+sudo ufw deny <port>/<optional: protocol> 
+```
+
+Ví dụ: đóng cổng kết nối là 3306 và 8080
+
+```
+sudo ufw deny 3306
+sudo ufw deny 8080
+```
+
+Ngoài ra ufw còn hỗ trợ cú pháp đơn giản như sau. Nếu bạn xác định được cổng thuộc dịch vụ nào bạn có thể deny dịch vụ thay vì cổng thuộc dịch vụ đó.
+
+```
+sudo ufw deny mysql
+```
+
+## Cho phép IP truy cập đến cổng nhất định
+
+Với cú pháp này sẽ cho phép một IP cụ thể được quyền truy cập vào cổng đã được chỉ định. 
+
+```
+sudo ufw allow from 192.168.0.1 to any port 22
+sudo ufw allow from 192.168.0.1 to any port 3306
+```
+
+## Xóa bỏ các quy tắc
+
+Để quản lý các quy tắc trên UFW của bạn, bạn có thể liệt kê chúng ra theo dạng menu danh sách. Để thực hiện được bạn sử dụng lệnh sau, màn hình hiển thị các quy tắc kèm số thứ tự và bạn sẽ chọn các số thứ tự hoặc tên quy tắc để xoá bỏ.
+
+```
+sudo ufw status numbered
+```
+
+![image](https://user-images.githubusercontent.com/111716161/194791865-d8256ca0-77ea-4311-87e8-701588f54732.png)
+
+- Dùng lệnh sau để xóa:
+
+```
+sudo ufw delete [number]
+```
+
+![image](https://user-images.githubusercontent.com/111716161/194791926-d5939de4-844f-4a5c-aaec-ae75b3544bc8.png)
+
+## Cho phép phạm vi cổng
+
+UFW cho phép bạn truy cập vào phạm vi cổng kết nối thay vì bạn mở cho từng cổng riêng biệt. Và khi bạn cho phép phạm vi cổng bạn cần xác định phạm vi cổng thuộc giao thức TCP hay là UDP để mở.
+
+```
+sudo ufw allow 35000:35999/tcp
+sudo ufw allow 35000:35999/udp
+```
+
+![image](https://user-images.githubusercontent.com/111716161/194792091-5ca159ea-f97c-472b-8df0-a6dadbee6c9f.png)
+
+## Đóng phạm vi cổng
+
+```
+sudo ufw deny 35000:35999/tcp
+sudo ufw deny 35000:35999/udp
+```
+
+![image](https://user-images.githubusercontent.com/111716161/194792138-2a081296-b9f2-4b1a-a044-b0c08cf2ddba.png)
+
+## Cho phép và từ chối IP
+
+- Để cho phép, mở IP bạn sử dụng lệnh:
+
+```
+sudo ufw allow from $Your_IP
+```
+
+- Để từ chối IP truy cập bạn sử dụng lệnh:
+
+```
+sudo ufw deny from $Your_IP
+```
 
