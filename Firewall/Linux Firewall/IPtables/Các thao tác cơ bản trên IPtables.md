@@ -48,9 +48,9 @@ iptables -A INPUT -p tcp -m tcp --dport xxx -j ACCEPT
 iptables -I INPUT -p tcp -m tcp --dport xxx -j ACCEPT
 ```
 
-- A tức Append – chèn vào chuỗi INPUT (chèn xuống cuối)
-- I tức Insert - chèn vào chuỗi INPUT (chèn vào dòng chỉ định rulenum)
-- Để tránh xung đột với rule gốc, các bạn nên chèn rule vào đầu, sử dụng -I
+- A tức Append – chèn vào chuỗi INPUT (chèn xuống cuối).
+- I tức Insert - chèn vào chuỗi INPUT (chèn vào dòng chỉ định rulenum).
+- Để tránh xung đột với rule gốc, các bạn nên chèn rule vào đầu, sử dụng -I.
 
 ![image](https://user-images.githubusercontent.com/111716161/194684730-90f73bed-18e4-496b-95bf-e559ef655373.png)
 
