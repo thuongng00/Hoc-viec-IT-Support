@@ -191,4 +191,3 @@ sudo ufw allow from $Your_IP
 ```
 sudo ufw deny from $Your_IP
 ```
-
